@@ -389,3 +389,19 @@ at least99% statement and95% branch coverage including private implementation,
 and review of every uncovered statement/branch with documented exclusions.
 Earlier notes saying the numbers were unconfirmed are superseded. No current
 coverage result is claimed. The instrumentation worker has been notified.
+
+## Partial-parsing integration checkpoint
+
+Integrated71 original partial-parsing requests after independent repair. Ten OO
+failure getters now preserve empty text, error-clear sequence is explicit, versions
+come from public calls, installed-module hashes are recorded, and unsupported
+Perl references are in a separate binding-only feature. Root checker verifies
+71IDs,51 date/time outline literals,10failure carriers and11hashes. Drafts remain
+unapproved; larger grammar and usage coverage still requires completion.
+
+pattern_repair now reviews the stable52-case partial-parsing-edges batch.
+partial_parsing independently reviews the20-case object-lifecycle batch.
+language_completion terminated with a model-capacity error during coverage setup;
+replacement coverage_setup (terra/high) owns tools/coverage and
+docs/research/public-call-coverage, inspecting existing partial work before
+continuing. This is an authoritative terminal failure, not a timeout restart.

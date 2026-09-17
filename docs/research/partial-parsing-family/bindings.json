@@ -1,0 +1,90 @@
+{
+  "schema_version": 2,
+  "status": "research-only raw source binding map; excluded from portable handoff",
+  "reference": "Date-Manip 7.00",
+  "fixture": "dm700-english-ascii-utc-us-2040",
+  "bindings": [
+    {
+      "operation_id": "date.parse-date-only",
+      "profile": "current-value",
+      "module": "Date::Manip::Date",
+      "callable": "parse_date",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:409",
+      "setup_calls": [
+        "Date::Manip::Obj->config at Obj.pm:273",
+        "Date::Manip::Date->parse at Date.pm:97"
+      ],
+      "observer_calls_in_order": [
+        "Date::Manip::Obj->err at Obj.pm:331",
+        "Date::Manip::Date->value in scalar context at Date.pm:2607",
+        "Date::Manip::Obj->err at Obj.pm:331",
+        "on failure only: Date::Manip::Obj->err(1) at Obj.pm:331",
+        "on failure only: Date::Manip::Obj->err at Obj.pm:331",
+        "on failure only: Date::Manip::Date->value in scalar context at Date.pm:2607",
+        "on failure only: Date::Manip::Obj->err at Obj.pm:331"
+      ],
+      "metadata_calls": [
+        "Date::Manip::Obj->version at Obj.pm:351",
+        "Date::Manip::Obj->tz at Obj.pm:261",
+        "Date::Manip::TZ->tzdata at TZ.pm:212",
+        "Date::Manip::TZ->tzcode at TZ.pm:217",
+        "Date::Manip::TZ->zone at TZ.pm:861"
+      ],
+      "return": "numeric status; scalar text receiver read; public err channel"
+    },
+    {
+      "operation_id": "time.parse-text",
+      "profile": "current-value",
+      "module": "Date::Manip::Date",
+      "callable": "parse_time",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:375",
+      "setup_calls": [
+        "Date::Manip::Obj->config at Obj.pm:273",
+        "Date::Manip::Date->parse at Date.pm:97"
+      ],
+      "observer_calls_in_order": [
+        "Date::Manip::Obj->err at Obj.pm:331",
+        "Date::Manip::Date->value in scalar context at Date.pm:2607",
+        "Date::Manip::Obj->err at Obj.pm:331",
+        "on failure only: Date::Manip::Obj->err(1) at Obj.pm:331",
+        "on failure only: Date::Manip::Obj->err at Obj.pm:331",
+        "on failure only: Date::Manip::Date->value in scalar context at Date.pm:2607",
+        "on failure only: Date::Manip::Obj->err at Obj.pm:331"
+      ],
+      "metadata_calls": [
+        "Date::Manip::Obj->version at Obj.pm:351",
+        "Date::Manip::Obj->tz at Obj.pm:261",
+        "Date::Manip::TZ->tzdata at TZ.pm:212",
+        "Date::Manip::TZ->tzcode at TZ.pm:217",
+        "Date::Manip::TZ->zone at TZ.pm:861"
+      ],
+      "return": "numeric status; scalar text receiver read; public err channel"
+    },
+    {
+      "operation_id": "date.parse-leading-tokens",
+      "profile": "current-text",
+      "module": "Date::Manip::DM6",
+      "callable": "ParseDate",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm:119",
+      "setup_calls": ["Date_Init at DM6.pm:86"],
+      "metadata_calls": ["DateManipVersion at DM6.pm:81"],
+      "return": "scalar text; token-array mutation; stdout diagnostic for an unsupported reference"
+    },
+    {
+      "operation_id": "date.parse-leading-tokens",
+      "profile": "legacy-text",
+      "module": "Date::Manip::DM5",
+      "callable": "ParseDate",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm:1346",
+      "setup_calls": ["Date_Init at DM5.pm:265"],
+      "metadata_calls": ["DateManipVersion at DM5.pm:260"],
+      "return": "scalar text or absent value; token-array mutation; stdout diagnostic for an unsupported reference"
+    }
+  ],
+  "binding_only_feature": {
+    "path": "spec/drafts/partial-parsing/leading-tokens-perl-binding.feature",
+    "tags": ["source-binding", "perl-binding", "excluded-from-portable-handoff"],
+    "case_ids": ["PP-PREFIX-DM6-UNSUPPORTED", "PP-PREFIX-DM5-UNSUPPORTED"],
+    "reason": "Perl hash-reference type acceptance and exact stdout diagnostics are binding behavior, not portable date semantics."
+  }
+}
