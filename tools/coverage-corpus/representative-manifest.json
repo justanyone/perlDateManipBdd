@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "purpose": "bounded public-call coverage diagnostic; neither a BDD suite nor coverage completion evidence",
+  "families": [
+    {
+      "name": "date-set",
+      "probe": "tools/probes/date-set-family/probe.pl",
+      "case_ids": ["DSET-ZONE-001-EXPLICIT-NAMED", "DSET-ZONE-013-OVERLAP-DEFAULT", "DSET-ZONE-016-GAP-DEFAULT", "DSET-ZDATE-008-GAP", "DSET-DATE-004-OVERLAP-DEFAULT", "DSET-DATE-008-INVALID-DATE", "DSET-TIME-006-GAP-DEFAULT", "DSET-TIME-017-MINUTE-60", "DSET-FIELD-011-DAY-31-COMPAT", "DSET-FIELD-021-UNKNOWN", "DSET-FIELD-030-GAP-DEFAULT", "DSET-FIELD-034-NEGATIVE-DAY"]
+    },
+    {
+      "name": "completeness",
+      "probe": "tools/probes/completeness-family/probe.pl",
+      "case_ids": ["COMP-FULL", "COMP-MINUTE", "COMP-DATE", "COMP-YEAR-MONTH", "COMP-YEAR", "COMP-MONTH-DAY", "COMP-TIME", "COMP-RELATIVE", "COMP-UNSET", "COMP-INVALID", "COMP-EMPTY"]
+    },
+    {
+      "name": "partial-parsing",
+      "probe": "tools/probes/partial-parsing-family/probe.pl",
+      "case_ids": ["PP-DATE-01", "PP-DATE-13", "PP-TIME-I01", "PP-TIME-T01", "PP-TIME-DEFAULT", "PP-TIME-EMPTY", "PP-TIME-INVALID"]
+    }
+  ]
+}

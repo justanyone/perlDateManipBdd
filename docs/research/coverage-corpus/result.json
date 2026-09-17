@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-09-17",
+  "status": "bounded public-probe coverage diagnostic; not a full suite or completion claim",
+  "selection": {
+    "case_count": 30,
+    "families": [
+      "date-set",
+      "completeness",
+      "partial-parsing"
+    ]
+  },
+  "fidelity": {
+    "plain_and_instrumented_native_json_identical_for_all_cases": true,
+    "plain_and_instrumented_process_stderr_identical_for_all_cases": true,
+    "process_stderr_empty_for_all_cases": true
+  },
+  "source_inventory": {
+    "file_count": 804,
+    "loaded_file_count": 14,
+    "unloaded_file_count": 790,
+    "unloaded_rows_note": "Unloaded installed source files have no Devel::Cover criteria and are explicitly retained as unloaded, not invented as zero-valued rows."
+  },
+  "date_manip_only_totals": {
+    "statement": {
+      "covered": 2231,
+      "error": 3569,
+      "uncoverable": 2,
+      "raw_structural_total": 5802,
+      "raw_percentage": 38.45225784212341,
+      "tool_effective_denominator": 5800,
+      "tool_effective_percentage": 38.46551724137931
+    },
+    "branch": {
+      "covered": 333,
+      "error": 2746,
+      "uncoverable": 1,
+      "raw_structural_total": 3080,
+      "raw_percentage": 10.811688311688311,
+      "tool_effective_denominator": 3079,
+      "tool_effective_percentage": 10.815199740175382
+    }
+  },
+  "hashes": {
+    "Date/Manip.pm": "4cd2da318687b9b820244c875efef9f484e690270d649ecf64de65bb1b7640e9",
+    "Devel/Cover.pm": "ae1600669575616d506b80ddb0ebb061871da0de7e9f40cab8eea6d17564bc5e",
+    "collect.py": "ffed6c475d35e0e4a58cbf5a74de46af0a83686e7bf5b47814173d85cedba048",
+    "representative-manifest.json": "6c460e26ab4348a507acded95c75c3b1332a3c4741e7bf1a85b3f413b168a648"
+  },
+  "limits": [
+    "The raw denominator covers only the 14 loaded files; 790 unloaded installed modules remain explicit.",
+    "Devel::Cover's two statement and one branch upstream uncoverable annotations are reported, not approved exclusions.",
+    "This diagnostic makes no 99% statement, 95% branch, full-suite, or behavioral-completeness claim."
+  ],
+  "coordinator_verification": {
+    "output_directory": "/tmp/public-coverage-corpus-root-review",
+    "summary_sha256": "6977b787d1fc72f64c762d8006908f5981cffa1a624d35fe685023ae0b750152",
+    "comparison": "30 plain/instrumented pairs match; exact loaded/unloaded counts and all statement/branch totals reproduce"
+  }
+}

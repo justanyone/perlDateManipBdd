@@ -620,3 +620,19 @@ NEW replace-time-family research. Navigation and value-serialization workers rem
 active. Source diagnostic paths are not yet integrated. Next: review returned worker
 batches, complete missing public partitions and implement the actual BDD adapter
 once the reviewed contract is ready. Final coverage/completeness gates remain open.
+
+
+## Public-probe coverage diagnostic integration
+
+Root reran all 30 selected cases using isolated plain/instrumented processes and
+separate coverage databases. All native stdout pairs matched and stderr was empty.
+Merged results reproduced 2231/5802 raw statements and 333/3080 raw branches across
+14 loaded files, with 790 unloaded files explicitly retained. This is a diagnostic
+subset, not whole-library or BDD-suite coverage. Two statement/one branch upstream
+annotations remain unapproved exclusions. The committed result records the root
+summary hash. Broader corpus and exact uncovered-path disposition remain required.
+
+Serialization returned 73 cases for review. Its reviewer currently verifies output
+presence but needs exact input/options correspondence; compatibility context and
+binding examples need review before integration. Root must not treat its internal
+check as semantic approval. pattern_repair now owns NEW day-ordinal-family research.
