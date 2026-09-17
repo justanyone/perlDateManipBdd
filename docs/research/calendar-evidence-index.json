@@ -1,0 +1,3514 @@
+{
+  "interpretation": "Mapped observed requests are not completed partitions, approved portable contracts, BDD execution, or source-coverage proof.",
+  "partitions": [
+    {
+      "catalogue_snapshot_status": "unobserved",
+      "completion_status": "unresolved",
+      "description": "normal: 31-, 30-, and February months",
+      "effective_research_status": "observed-partial",
+      "evidence": [
+        {
+          "case_id": "CL-BASE-M-2039-01",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2039-02",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2039-03",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2039-04",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2039-05",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2039-06",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2039-07",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2039-08",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2039-09",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2039-10",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2039-11",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2039-12",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2040-01",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2040-02",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2040-03",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2040-04",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2040-05",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2040-06",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2040-07",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2040-08",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2040-09",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2040-10",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2040-11",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2040-12",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2039-01",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2039-02",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2039-03",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2039-04",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2039-05",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2039-06",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2039-07",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2039-08",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2039-09",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2039-10",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2039-11",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2039-12",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2040-01",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2040-02",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2040-03",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2040-04",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2040-05",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2040-06",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2040-07",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2040-08",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2040-09",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2040-10",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2040-11",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2040-12",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2039-01",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2039-02",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2039-03",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2039-04",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2039-05",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2039-06",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2039-07",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2039-08",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2039-09",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2039-10",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2039-11",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2039-12",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2040-01",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2040-02",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2040-03",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2040-04",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2040-05",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2040-06",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2040-07",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2040-08",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2040-09",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2040-10",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2040-11",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2040-12",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        }
+      ],
+      "mapped_request_count": 72,
+      "partition_id": "calendar.days-in-month.p1"
+    },
+    {
+      "catalogue_snapshot_status": "unobserved",
+      "completion_status": "unresolved",
+      "description": "boundary: February in common and leap years",
+      "effective_research_status": "observed-partial",
+      "evidence": [
+        {
+          "case_id": "CL-BASE-M-2039-02",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-M-2040-02",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2039-02",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-M-2040-02",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2039-02",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-M-2040-02",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/month-lengths.feature"
+        }
+      ],
+      "mapped_request_count": 6,
+      "partition_id": "calendar.days-in-month.p2"
+    },
+    {
+      "catalogue_snapshot_status": "unobserved",
+      "completion_status": "unresolved",
+      "description": "normal: Base month-zero list and ordering",
+      "effective_research_status": "observed-partial",
+      "evidence": [
+        {
+          "case_id": "CL-BASE-M0-2039-LIST",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/all-months-and-short-years.feature"
+        },
+        {
+          "case_id": "CL-BASE-M0-2039-SCALAR",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-M0-2040-LIST",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/all-months-and-short-years.feature"
+        },
+        {
+          "case_id": "CL-BASE-M0-2040-SCALAR",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-M0-2039-LIST",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-M0-2039-SCALAR",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-M0-2040-LIST",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-M0-2040-SCALAR",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-M0-2039-LIST",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-M0-2039-SCALAR",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-M0-2040-LIST",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-M0-2040-SCALAR",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        }
+      ],
+      "mapped_request_count": 12,
+      "partition_id": "calendar.days-in-month.p3"
+    },
+    {
+      "catalogue_snapshot_status": "unobserved",
+      "completion_status": "unresolved",
+      "description": "invalid: month below/above range, noninteger, missing, and year variants",
+      "effective_research_status": "observed-partial",
+      "evidence": [
+        {
+          "case_id": "CL-BASE-SHORT-M-DEFAULT",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-SHORT-M-C19",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-SHORT-M-C20",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-M-OMITTED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-M-UNDEFINED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-M-TEXT",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-M-FRACTION",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-M-NEGATIVE",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-M-HIGH",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-M-YEAR-OMITTED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-M-YEAR-UNDEFINED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-M-YEAR-TEXT",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-M-YEAR-NEGATIVE",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-M-YEAR-HIGH",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-SHORT-M-DEFAULT",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-SHORT-M-C19",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-SHORT-M-C20",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-M-OMITTED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-M-UNDEFINED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-M-TEXT",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-M-FRACTION",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-M-NEGATIVE",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-M-HIGH",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-M-YEAR-OMITTED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-M-YEAR-UNDEFINED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-M-YEAR-TEXT",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-M-YEAR-NEGATIVE",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-M-YEAR-HIGH",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-SHORT-M-DEFAULT",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/all-months-and-short-years.feature"
+        },
+        {
+          "case_id": "CL-DM5-SHORT-M-C19",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/all-months-and-short-years.feature"
+        },
+        {
+          "case_id": "CL-DM5-SHORT-M-C20",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/all-months-and-short-years.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-M-OMITTED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-M-UNDEFINED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-M-TEXT",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-M-FRACTION",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-M-NEGATIVE",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-M-HIGH",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-M-YEAR-OMITTED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-M-YEAR-UNDEFINED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-M-YEAR-TEXT",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-M-YEAR-NEGATIVE",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-M-YEAR-HIGH",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        }
+      ],
+      "mapped_request_count": 42,
+      "partition_id": "calendar.days-in-month.p4"
+    },
+    {
+      "catalogue_snapshot_status": "unobserved",
+      "completion_status": "unresolved",
+      "description": "normal: common year",
+      "effective_research_status": "observed-partial",
+      "evidence": [
+        {
+          "case_id": "CL-BASE-Y-2039",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/year-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-Y-2039",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/year-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-Y-2039",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/year-lengths.feature"
+        }
+      ],
+      "mapped_request_count": 3,
+      "partition_id": "calendar.days-in-year.p1"
+    },
+    {
+      "catalogue_snapshot_status": "unobserved",
+      "completion_status": "unresolved",
+      "description": "boundary: leap and century rules",
+      "effective_research_status": "observed-partial",
+      "evidence": [
+        {
+          "case_id": "CL-BASE-Y-1900",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/year-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-Y-2000",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/year-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-Y-2040",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/year-lengths.feature"
+        },
+        {
+          "case_id": "CL-BASE-Y-2100",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/year-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-Y-1900",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/year-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-Y-2000",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/year-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-Y-2040",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/year-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM6-Y-2100",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/year-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-Y-1900",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/year-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-Y-2000",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/year-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-Y-2040",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/year-lengths.feature"
+        },
+        {
+          "case_id": "CL-DM5-Y-2100",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/year-lengths.feature"
+        }
+      ],
+      "mapped_request_count": 12,
+      "partition_id": "calendar.days-in-year.p2"
+    },
+    {
+      "catalogue_snapshot_status": "unobserved",
+      "completion_status": "unresolved",
+      "description": "invalid: missing, nonnumeric, zero/negative, out-of-supported-range, and two-digit functional year",
+      "effective_research_status": "observed-partial",
+      "evidence": [
+        {
+          "case_id": "CL-BASE-SHORT-Y-DEFAULT",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-SHORT-Y-C19",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-SHORT-Y-C20",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-Y-OMITTED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-Y-UNDEFINED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-Y-TEXT",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-Y-FRACTION",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-Y-ZERO",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-Y-NEGATIVE",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-BASE-INVALID-Y-HIGH",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-SHORT-Y-DEFAULT",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-SHORT-Y-C19",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-SHORT-Y-C20",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-Y-OMITTED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-Y-UNDEFINED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-Y-TEXT",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-Y-FRACTION",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-Y-ZERO",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-Y-NEGATIVE",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM6-INVALID-Y-HIGH",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-SHORT-Y-DEFAULT",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/all-months-and-short-years.feature"
+        },
+        {
+          "case_id": "CL-DM5-SHORT-Y-C19",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/all-months-and-short-years.feature"
+        },
+        {
+          "case_id": "CL-DM5-SHORT-Y-C20",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/all-months-and-short-years.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-Y-OMITTED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-Y-UNDEFINED",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-Y-TEXT",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-Y-FRACTION",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-Y-ZERO",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-Y-NEGATIVE",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        },
+        {
+          "case_id": "CL-DM5-INVALID-Y-HIGH",
+          "family": "calendar-lengths-family",
+          "portable_draft": "spec/drafts/calendar-lengths/observed-compatibility.feature"
+        }
+      ],
+      "mapped_request_count": 30,
+      "partition_id": "calendar.days-in-year.p3"
+    },
+    {
+      "catalogue_snapshot_status": "unobserved",
+      "completion_status": "unresolved",
+      "description": "normal: divisible-by-four and ordinary common years",
+      "effective_research_status": "observed-partial",
+      "evidence": [
+        {
+          "case_id": "LY-CYCLE-2000-2399-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-CYCLE-2000-2399-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-CYCLE-2000-2399-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-0001-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-0001-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-0001-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-0004-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-0004-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-0004-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-9996-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-9996-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-9996-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-9999-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-9999-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-9999-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        }
+      ],
+      "mapped_request_count": 15,
+      "partition_id": "calendar.is-leap-year.p1"
+    },
+    {
+      "catalogue_snapshot_status": "unobserved",
+      "completion_status": "unresolved",
+      "description": "boundary: century divisible by 100 and 400",
+      "effective_research_status": "observed-partial",
+      "evidence": [
+        {
+          "case_id": "LY-CYCLE-2000-2399-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-CYCLE-2000-2399-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-CYCLE-2000-2399-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-1600-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-1600-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-1600-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-1900-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-1900-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-1900-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-2400-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-2400-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        },
+        {
+          "case_id": "LY-BOUNDARY-2400-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/gregorian-cycle.feature"
+        }
+      ],
+      "mapped_request_count": 12,
+      "partition_id": "calendar.is-leap-year.p2"
+    },
+    {
+      "catalogue_snapshot_status": "unobserved",
+      "completion_status": "unresolved",
+      "description": "invalid: missing, nonnumeric, signed/zero, out-of-range, and two-digit functional year",
+      "effective_research_status": "observed-partial",
+      "evidence": [
+        {
+          "case_id": "LY-SHORT-DEFAULT-00-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-DEFAULT-00-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-DEFAULT-00-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-DEFAULT-40-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-DEFAULT-40-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-DEFAULT-40-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-c-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-c-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-c-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-c19-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-c19-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-c19-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-c20-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-c20-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-c20-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-c2000-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-c2000-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-c2000-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-0-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-0-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-0-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-99-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-99-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-SHORT-99-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/short-year-compatibility.feature"
+        },
+        {
+          "case_id": "LY-EDGE-OMITTED-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-OMITTED-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-OMITTED-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-UNDEFINED-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-UNDEFINED-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-UNDEFINED-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-EMPTY-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-EMPTY-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-EMPTY-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-SPACE-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-SPACE-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-SPACE-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-NONNUMERIC4-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-NONNUMERIC4-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-NONNUMERIC4-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-NONNUMERIC3-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-NONNUMERIC3-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-NONNUMERIC3-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-FRACTION-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-FRACTION-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-FRACTION-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-ZERO-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-ZERO-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-ZERO-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-NEGATIVE4-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-NEGATIVE4-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-NEGATIVE4-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-NEGATIVE400-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-NEGATIVE400-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-NEGATIVE400-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-NEGATIVE100-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-NEGATIVE100-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-NEGATIVE100-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-OUTSIDE10000-BASE",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-OUTSIDE10000-DM6",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        },
+        {
+          "case_id": "LY-EDGE-OUTSIDE10000-DM5",
+          "family": "leap-year-family",
+          "portable_draft": "spec/drafts/leap-years/invalid-and-outside.feature"
+        }
+      ],
+      "mapped_request_count": 60,
+      "partition_id": "calendar.is-leap-year.p3"
+    },
+    {
+      "catalogue_snapshot_status": "unobserved",
+      "completion_status": "unresolved",
+      "description": "normal: each weekday partition",
+      "effective_research_status": "observed-partial",
+      "evidence": [
+        {
+          "case_id": "WD-P1-BASE-1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-BASE-2",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-BASE-3",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-BASE-4",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-BASE-5",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-BASE-6",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-BASE-7",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-DM6-1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-DM6-2",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-DM6-3",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-DM6-4",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-DM6-5",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-DM6-6",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-DM6-7",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-DM5-1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-DM5-2",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-DM5-3",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-DM5-4",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-DM5-5",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-DM5-6",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        },
+        {
+          "case_id": "WD-P1-DM5-7",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/weekdays.feature"
+        }
+      ],
+      "mapped_request_count": 21,
+      "partition_id": "calendar.weekday.p1"
+    },
+    {
+      "catalogue_snapshot_status": "unobserved",
+      "completion_status": "unresolved",
+      "description": "boundary: Gregorian leap/century and year transitions",
+      "effective_research_status": "observed-partial",
+      "evidence": [
+        {
+          "case_id": "WD-P2-TYPE-BASE-COMMON-JAN1-1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-BASE-COMMON-JAN1-2",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-BASE-COMMON-JAN1-3",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-BASE-COMMON-JAN1-4",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-BASE-COMMON-JAN1-5",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-BASE-COMMON-JAN1-6",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-BASE-COMMON-JAN1-7",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-BASE-LEAP-JAN1-1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-BASE-LEAP-JAN1-2",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-BASE-LEAP-JAN1-3",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-BASE-LEAP-JAN1-4",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-BASE-LEAP-JAN1-5",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-BASE-LEAP-JAN1-6",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-BASE-LEAP-JAN1-7",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM6-COMMON-JAN1-1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM6-COMMON-JAN1-2",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM6-COMMON-JAN1-3",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM6-COMMON-JAN1-4",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM6-COMMON-JAN1-5",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM6-COMMON-JAN1-6",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM6-COMMON-JAN1-7",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM6-LEAP-JAN1-1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM6-LEAP-JAN1-2",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM6-LEAP-JAN1-3",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM6-LEAP-JAN1-4",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM6-LEAP-JAN1-5",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM6-LEAP-JAN1-6",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM6-LEAP-JAN1-7",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM5-COMMON-JAN1-1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM5-COMMON-JAN1-2",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM5-COMMON-JAN1-3",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM5-COMMON-JAN1-4",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM5-COMMON-JAN1-5",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM5-COMMON-JAN1-6",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM5-COMMON-JAN1-7",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM5-LEAP-JAN1-1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM5-LEAP-JAN1-2",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM5-LEAP-JAN1-3",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM5-LEAP-JAN1-4",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM5-LEAP-JAN1-5",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM5-LEAP-JAN1-6",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-TYPE-DM5-LEAP-JAN1-7",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-BASE-LOWER-ENDPOINT",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-BASE-EARLY-LEAP",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-BASE-CENTURY-1900",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-BASE-CENTURY-2000",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-BASE-CENTURY-2100",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-BASE-CENTURY-2400",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-BASE-UPPER-ENDPOINT",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-BASE-NUMERIC-YEAR-40",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-DM6-LOWER-ENDPOINT",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-DM6-EARLY-LEAP",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-DM6-CENTURY-1900",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-DM6-CENTURY-2000",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-DM6-CENTURY-2100",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-DM6-CENTURY-2400",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-DM6-UPPER-ENDPOINT",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-DM6-NUMERIC-YEAR-40",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-DM5-LOWER-ENDPOINT",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-DM5-EARLY-LEAP",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-DM5-CENTURY-1900",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-DM5-CENTURY-2000",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-DM5-CENTURY-2100",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-DM5-CENTURY-2400",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-DM5-UPPER-ENDPOINT",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        },
+        {
+          "case_id": "WD-P2-CONTROL-DM5-NUMERIC-YEAR-40",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/gregorian-boundaries.feature"
+        }
+      ],
+      "mapped_request_count": 66,
+      "partition_id": "calendar.weekday.p2"
+    },
+    {
+      "catalogue_snapshot_status": "unobserved",
+      "completion_status": "unresolved",
+      "description": "invalid: invalid date, list shape, missing/non-numeric fields, and functional short-year resolution",
+      "effective_research_status": "observed-partial",
+      "evidence": [
+        {
+          "case_id": "WD-P3-FIELD-BASE-MONTH-ZERO",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-MONTH-13",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-MONTH-NEG1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-MONTH-FRACTION",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-DAY-ZERO",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-DAY-NEG1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-DAY-32",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-DAY-FRACTION",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-COMMON-FEB29",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-LEAP-FEB30",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-APRIL31",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-YEAR-ZERO",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-YEAR-NEG1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-YEAR-10000",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-YEAR-FRACTION",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-YEAR-EMPTY",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-MONTH-EMPTY",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-DAY-EMPTY",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-YEAR-NONNUMERIC",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-MONTH-NONNUMERIC",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-DAY-NONNUMERIC",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-YEAR-ABSENT",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-MONTH-ABSENT",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-BASE-DAY-ABSENT",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-MONTH-ZERO",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-MONTH-13",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-MONTH-NEG1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-MONTH-FRACTION",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-DAY-ZERO",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-DAY-NEG1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-DAY-32",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-DAY-FRACTION",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-COMMON-FEB29",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-LEAP-FEB30",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-APRIL31",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-YEAR-ZERO",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-YEAR-NEG1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-YEAR-10000",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-YEAR-FRACTION",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-YEAR-EMPTY",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-MONTH-EMPTY",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-DAY-EMPTY",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-YEAR-NONNUMERIC",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-MONTH-NONNUMERIC",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-DAY-NONNUMERIC",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-YEAR-ABSENT",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-MONTH-ABSENT",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM6-DAY-ABSENT",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-MONTH-ZERO",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-MONTH-13",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-MONTH-NEG1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-MONTH-FRACTION",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-DAY-ZERO",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-DAY-NEG1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-DAY-32",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-DAY-FRACTION",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-COMMON-FEB29",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-LEAP-FEB30",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-APRIL31",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-YEAR-ZERO",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-YEAR-NEG1",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-YEAR-10000",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-YEAR-FRACTION",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-YEAR-EMPTY",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-MONTH-EMPTY",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-DAY-EMPTY",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-YEAR-NONNUMERIC",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-MONTH-NONNUMERIC",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-DAY-NONNUMERIC",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-YEAR-ABSENT",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-MONTH-ABSENT",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-FIELD-DM5-DAY-ABSENT",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-MISSING-BASE-ALL",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-MISSING-BASE-AFTER-FIRST",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-MISSING-BASE-AFTER-SECOND",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-EXTRA-BASE",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-MISSING-DM6-ALL",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-MISSING-DM6-AFTER-FIRST",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-MISSING-DM6-AFTER-SECOND",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-EXTRA-DM6",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-MISSING-DM5-ALL",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-MISSING-DM5-AFTER-FIRST",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-MISSING-DM5-AFTER-SECOND",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-EXTRA-DM5",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-CARRIER-BASE-OMITTED",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-CARRIER-BASE-UNDEFINED",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-CARRIER-BASE-TEXT",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-CARRIER-BASE-MAPPING",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-CARRIER-BASE-EXTRA-METHOD-ARG",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-SHORT-DM6-C20-40",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-SHORT-DM6-WINDOW89-40",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-SHORT-DM6-C20-00",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-SHORT-DM6-C19-40",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-SHORT-DM5-C20-00",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-SHORT-DM5-C20-40",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-SHORT-DM5-C20-99",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-SHORT-DM5-C19-40",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-SHORT-DM5-C2000-40",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-SHORT-DM5-WINDOW89-50",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-SHORT-DM5-WINDOW89-51",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-SHORT-DM5-C-40",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-SHORT-DM5-LENGTH1-4",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        },
+        {
+          "case_id": "WD-P3-SHORT-DM5-LENGTH3-040",
+          "family": "weekday-family",
+          "portable_draft": "spec/drafts/weekdays/invalid-and-short-years.feature"
+        }
+      ],
+      "mapped_request_count": 103,
+      "partition_id": "calendar.weekday.p3"
+    },
+    {
+      "catalogue_snapshot_status": "unobserved",
+      "completion_status": "unresolved",
+      "description": "normal: default rules",
+      "effective_research_status": "observed-partial",
+      "evidence": [
+        {
+          "case_id": "WC-F1-JAN4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        }
+      ],
+      "mapped_request_count": 1,
+      "partition_id": "calendar.weeks-in-year.p1"
+    },
+    {
+      "catalogue_snapshot_status": "unobserved",
+      "completion_status": "unresolved",
+      "description": "boundary: candidate 52- and 53-week years",
+      "effective_research_status": "observed-partial",
+      "evidence": [
+        {
+          "case_id": "WC-F1-JAN1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-JAN2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-JAN3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-JAN4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-JAN5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-JAN6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-JAN7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-DOW1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-DOW2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-DOW3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-DOW4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-DOW5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-DOW6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-DOW7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-FIRSTDAY",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-JAN1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-JAN2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-JAN3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-JAN4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-JAN5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-JAN6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-JAN7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-DOW1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-DOW2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-DOW3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-DOW4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-DOW5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-DOW6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-DOW7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-FIRSTDAY",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-JAN1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-JAN2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-JAN3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-JAN4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-JAN5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-JAN6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-JAN7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-DOW1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-DOW2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-DOW3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-DOW4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-DOW5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-DOW6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-DOW7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-FIRSTDAY",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-JAN1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-JAN2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-JAN3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-JAN4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-JAN5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-JAN6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-JAN7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-DOW1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-DOW2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-DOW3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-DOW4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-DOW5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-DOW6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-DOW7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-FIRSTDAY",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-JAN1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-JAN2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-JAN3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-JAN4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-JAN5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-JAN6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-JAN7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-DOW1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-DOW2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-DOW3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-DOW4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-DOW5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-DOW6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-DOW7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-FIRSTDAY",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-JAN1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-JAN2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-JAN3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-JAN4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-JAN5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-JAN6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-JAN7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-DOW1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-DOW2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-DOW3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-DOW4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-DOW5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-DOW6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-DOW7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-FIRSTDAY",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-JAN1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-JAN2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-JAN3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-JAN4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-JAN5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-JAN6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-JAN7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-DOW1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-DOW2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-DOW3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-DOW4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-DOW5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-DOW6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-DOW7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-FIRSTDAY",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        }
+      ],
+      "mapped_request_count": 105,
+      "partition_id": "calendar.weeks-in-year.p2"
+    },
+    {
+      "catalogue_snapshot_status": "unobserved",
+      "completion_status": "unresolved",
+      "description": "configuration: FirstDay/Week1ofYear alternatives",
+      "effective_research_status": "observed-partial",
+      "evidence": [
+        {
+          "case_id": "WC-F1-JAN1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-JAN2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-JAN3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-JAN4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-JAN5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-JAN6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-JAN7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-DOW1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-DOW2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-DOW3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-DOW4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-DOW5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-DOW6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-DOW7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F1-FIRSTDAY",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-JAN1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-JAN2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-JAN3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-JAN4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-JAN5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-JAN6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-JAN7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-DOW1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-DOW2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-DOW3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-DOW4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-DOW5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-DOW6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-DOW7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F2-FIRSTDAY",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-JAN1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-JAN2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-JAN3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-JAN4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-JAN5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-JAN6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-JAN7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-DOW1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-DOW2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-DOW3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-DOW4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-DOW5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-DOW6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-DOW7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F3-FIRSTDAY",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-JAN1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-JAN2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-JAN3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-JAN4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-JAN5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-JAN6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-JAN7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-DOW1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-DOW2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-DOW3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-DOW4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-DOW5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-DOW6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-DOW7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F4-FIRSTDAY",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-JAN1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-JAN2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-JAN3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-JAN4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-JAN5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-JAN6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-JAN7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-DOW1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-DOW2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-DOW3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-DOW4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-DOW5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-DOW6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-DOW7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F5-FIRSTDAY",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-JAN1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-JAN2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-JAN3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-JAN4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-JAN5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-JAN6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-JAN7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-DOW1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-DOW2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-DOW3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-DOW4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-DOW5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-DOW6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-DOW7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F6-FIRSTDAY",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-JAN1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-JAN2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-JAN3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-JAN4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-JAN5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-JAN6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-JAN7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-DOW1",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-DOW2",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-DOW3",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-DOW4",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-DOW5",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-DOW6",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-DOW7",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        },
+        {
+          "case_id": "WC-F7-FIRSTDAY",
+          "family": "week-count-family",
+          "portable_draft": "spec/drafts/week-counts/week-counts.feature"
+        }
+      ],
+      "mapped_request_count": 105,
+      "partition_id": "calendar.weeks-in-year.p3"
+    },
+    {
+      "catalogue_snapshot_status": "unobserved",
+      "completion_status": "unresolved",
+      "description": "invalid: unsupported year and invalid context",
+      "effective_research_status": "unobserved",
+      "evidence": [],
+      "mapped_request_count": 0,
+      "partition_id": "calendar.weeks-in-year.p4"
+    }
+  ],
+  "remaining_domain_review": "docs/research/calendar-gap-priorities.md",
+  "schema_version": 1,
+  "scope": "Five recently reviewed calendar operations only; other catalogue operations unchanged",
+  "source_sha256": {
+    "docs/research/calendar-lengths-family/feature-map.json": "ec82695a3dfe56f44ee21ce7c91bf2d4d7e038b12a7c31f41f9b3081cb265194",
+    "docs/research/calendar-lengths-family/observations.json": "50048d2cd2ee915ef687427958151429c54b6d93453007b061c3dc9885b2bfd6",
+    "docs/research/contracts/calendar.json": "40d1dd7eabc7a5db9b16716a99a355dece17cbebc65c0dd2b8e11e71f8b04ad2",
+    "docs/research/leap-year-family/feature-map.json": "225d7f3bd3bb3ddd6fca6c689dfcccd3186998ed0792244091e9c01ab2c0f4db",
+    "docs/research/leap-year-family/observations.json": "2fb6a85e63a4ce7e81cada4a7aec91a178fa1f9e13985654c909e3d56d2d77d0",
+    "docs/research/week-count-family/cases.json": "b67fe0100f5cb02d5d065f2e4f6712b774840fb4de34231f94a7323e2b81b866",
+    "docs/research/week-count-family/feature-map.json": "8400bf0babbec734e3941fa7a810a7edb4cf81528f14cd54b30bf8728dcaacd8",
+    "docs/research/week-count-family/observations.json": "b60bd76e3b6e863f8f018dcca3712cb705ba1569423495e62185b57064e85b90",
+    "docs/research/weekday-family/feature-map.json": "2a126ba7296cb5bd478a34007b28139be71761f6344c9695d8836f125164dac9",
+    "docs/research/weekday-family/observations.json": "c5ece0bc73cc42e8f1230a2ed2ea0cf6c3c4bcc57a1cbf7265d071f2c5b9457a"
+  }
+}

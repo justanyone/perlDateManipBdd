@@ -1101,3 +1101,24 @@ check_time); partial_parsing year-day-conversion-family; week_edges_finish
 nth-weekday-family. Root owns integration/queue. Audit replay58954 terminated exit0
 and byte-compares equal with persisted broad-result.json. No root capture process
 remains. All final gates remain open.
+
+## Calendar evidence reconciliation and validation review
+
+Root added non-mutating calendar-evidence-index:17partitions across5recent
+operations,16observed-partial and1unobserved. Exact mapping/observation identities
+and source hashes verified. All remain unresolved; original capture-time contract
+JSON preserved because prior evidence hashes it. Default week-count partition
+maps only default setting; February partition only February requests.
+
+Root started14case week-count-edges manifest/probe/runner; two-attempt capture
+/tmp/week-count-edges-root.json repeatable. Base omits unsupported ForceDate and
+records exact requested config. Ajan4→Bjan1→Ajan4 year2000 counts52→53→52;
+invalid setting attempts retain52. Root handed all three new family dirs to
+pattern_repair for features, review and repeat capture; root will not edit them.
+
+Calendar-check worker released36case batch. Root reviewer/parser passes and
+replay5203 exit0 byte-equals observations.json. Root added explicit36case
+coverage-manifest and launched collector session38875, output
+/tmp/calendar-check-coverage-root. Poll same handle; validate target Base602..623
+branch claims before integrating. Other workers retain year-day-conversion-family
+and nth-weekday-family. All final gates open.

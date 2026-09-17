@@ -159,7 +159,10 @@
         "docs/research/weekday-family/README.md",
         "docs/research/weekday-family/feature-map.json",
         "docs/research/weekday-family/observations.json",
-        "docs/research/weekday-family/coverage-map.json"
+        "docs/research/weekday-family/coverage-map.json",
+        "docs/research/calendar-evidence-index.md",
+        "docs/research/calendar-evidence-index.json",
+        "tools/review/calendar_evidence_index.py"
       ],
       "partial_parsing_edges_review": "52 repeatable public edge requests integrated after independent repair and root review. Explicit setup, 48 outline-row comparisons, native failure lifecycle and binding-only warnings checked; broader domains and source coverage remain open.",
       "input_history_review": "17 repeatable public Date::input cases integrated after provenance repair, canonical-binding correction and explicit not-called configuration metadata. Reviewer requires runtime/profile/module/process evidence and checks feature literals. Constructor retention added; wider transitions remain open.",
@@ -168,7 +171,7 @@
       "calendar_lengths_leap_year_review": "Root independently reproduced 84 leap-year requests (including three 400-year cycles) and 171 month/year-length requests; captures byte-identical. Exact literal reviewers and nine-feature Gherkin parser pass. Remaining domains explicit; drafts only, no BDD execution or completeness claim.",
       "weekday_review": "190 public requests replay byte-identical; 265 independent Gregorian checks,350 completed calls and8 failures. Exact190 portable/190 binding rows and all14year types verified. Explicit remaining domains; not complete.",
       "active_calendar_workers": {
-        "pattern_repair": "calendar-check-family: Base public check/check_time branch cases",
+        "pattern_repair": "week-count-edges: root14-case probe handed off for full mapping/Gherkin review; calendar-check-family released for root review",
         "partial_parsing": "year-day-conversion-family: forward/inverse/fractional day-of-year",
         "week_edges_finish": "nth-weekday-family: ordinal weekday month/year and no-match"
       }
