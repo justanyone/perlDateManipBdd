@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "seven reviewed portable examples mapped to durable public observations",
+  "feature": "spec/drafts/fixed-offsets/fixed-offsets.feature",
+  "selected_observations": "docs/research/fixed-offset-family/selected-observations.json",
+  "bindings": "docs/research/fixed-offset-family/bindings.json",
+  "primary_operation": "date.create",
+  "supporting_operations": ["error.read-state", "date.read-value", "date.render-pattern"],
+  "examples": [
+    {"example_id":"FO-SUPPORTED-ZERO","input_offset":"+00:00:00","outcome":"success"},
+    {"example_id":"FO-SUPPORTED-MINUTES","input_offset":"+05:30:00","outcome":"success"},
+    {"example_id":"FO-SUPPORTED-45-MIN","input_offset":"+05:45:00","outcome":"success"},
+    {"example_id":"FO-SUPPORTED-PLUS14","input_offset":"+14:00:00","outcome":"success"},
+    {"example_id":"FO-SUPPORTED-MINUS30","input_offset":"-03:30:00","outcome":"success"},
+    {"example_id":"FO-SUPPORTED-MINUS14","input_offset":"-14:00:00","outcome":"success"},
+    {"example_id":"FO-REJECT-SECONDS","input_offset":"+00:06:04","outcome":"observed rejection; value observers not called"}
+  ],
+  "research_scope": {
+    "external_manifest_entries": 408,
+    "successful_observations": 40,
+    "rejected_observations": 368,
+    "portable_success_examples": 6,
+    "portable_rejection_examples": 1,
+    "unselected_success_observations": 34,
+    "unselected_rejection_observations": 367,
+    "claim": "all 408 generated modules reached; seven selected portable behaviors; no complete behavior claim"
+  }
+}

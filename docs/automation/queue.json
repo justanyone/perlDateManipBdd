@@ -207,7 +207,14 @@
         "Feature text remains language-neutral."
       ],
       "owner": "coordinator-review",
-      "progress": "33 repeated raw cases retained after coordinator fixes to exact event/period assertions, backend profile selection, missing DM6 working-date call, absent holiday result and raw nested carriers. Targeted literals checked; all broader partitions still incomplete."
+      "progress": "33 repeated raw cases retained after coordinator fixes to exact event/period assertions, backend profile selection, missing DM6 working-date call, absent holiday result and raw nested carriers. Targeted literals checked; all broader partitions still incomplete.",
+      "evidence": [
+        "docs/research/fixed-offset-family/README.md",
+        "docs/research/fixed-offset-family/selected-observations.json",
+        "docs/research/fixed-offset-review.md",
+        "spec/drafts/fixed-offsets"
+      ],
+      "fixed_offset_review": "408 public loading routes verified with40parse successes/368rejections and3672/3672 generated-offset statement criteria. Seven durable English examples verified; remaining401 routes are research-only. Not whole-library or behavior completeness."
     },
     {
       "id": "spec-configuration-objects",

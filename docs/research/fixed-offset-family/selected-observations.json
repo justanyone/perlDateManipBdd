@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "status": "seven reviewed public observations; excludes the source-derived 408-row module manifest",
+  "reference": {
+    "distribution": "Date-Manip",
+    "version": "7.00"
+  },
+  "fixture": {
+    "constructor": "Date::Manip::Date->new_date(text)",
+    "configuration": [
+      [
+        "Defaults",
+        1
+      ],
+      [
+        "ForceDate",
+        "2040-02-28-10:20:30,Etc/UTC"
+      ],
+      [
+        "Language",
+        "English"
+      ],
+      [
+        "Encoding",
+        "ASCII"
+      ],
+      [
+        "DateFormat",
+        "non-US"
+      ]
+    ],
+    "format_pattern": "%Y-%m-%d %H:%M:%S %z %Z"
+  },
+  "full_external_observation_sha256": "cf1ba8408db938c197615baa3c83e7831e16186d49a8722420ce425989fa3c0c",
+  "observations": [
+    {
+      "example_id": "FO-SUPPORTED-ZERO",
+      "input_text": "2040-02-29 12:34:56 +00:00:00",
+      "public_result": {
+        "error_after_parse": "",
+        "value_observers_called": true,
+        "parsed_scalar": "2040022912:34:56",
+        "parsed_list": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ],
+        "gmt_scalar": "2040022912:34:56",
+        "gmt_list": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ],
+        "formatted": "2040-02-29 12:34:56 +0000 GMT",
+        "error_after_reads": ""
+      },
+      "independent_expected_gmt": "2040022912:34:56"
+    },
+    {
+      "example_id": "FO-SUPPORTED-MINUTES",
+      "input_text": "2040-02-29 12:34:56 +05:30:00",
+      "public_result": {
+        "error_after_parse": "",
+        "value_observers_called": true,
+        "parsed_scalar": "2040022912:34:56",
+        "parsed_list": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ],
+        "gmt_scalar": "2040022907:04:56",
+        "gmt_list": [
+          2040,
+          2,
+          29,
+          7,
+          4,
+          56
+        ],
+        "formatted": "2040-02-29 12:34:56 +0530 +0530",
+        "error_after_reads": ""
+      },
+      "independent_expected_gmt": "2040022907:04:56"
+    },
+    {
+      "example_id": "FO-SUPPORTED-45-MIN",
+      "input_text": "2040-02-29 12:34:56 +05:45:00",
+      "public_result": {
+        "error_after_parse": "",
+        "value_observers_called": true,
+        "parsed_scalar": "2040022912:34:56",
+        "parsed_list": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ],
+        "gmt_scalar": "2040022906:49:56",
+        "gmt_list": [
+          2040,
+          2,
+          29,
+          6,
+          49,
+          56
+        ],
+        "formatted": "2040-02-29 12:34:56 +0545 +0545",
+        "error_after_reads": ""
+      },
+      "independent_expected_gmt": "2040022906:49:56"
+    },
+    {
+      "example_id": "FO-SUPPORTED-PLUS14",
+      "input_text": "2040-02-29 12:34:56 +14:00:00",
+      "public_result": {
+        "error_after_parse": "",
+        "value_observers_called": true,
+        "parsed_scalar": "2040022912:34:56",
+        "parsed_list": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ],
+        "gmt_scalar": "2040022822:34:56",
+        "gmt_list": [
+          2040,
+          2,
+          28,
+          22,
+          34,
+          56
+        ],
+        "formatted": "2040-02-29 12:34:56 +1400 +14",
+        "error_after_reads": ""
+      },
+      "independent_expected_gmt": "2040022822:34:56"
+    },
+    {
+      "example_id": "FO-SUPPORTED-MINUS30",
+      "input_text": "2040-02-29 12:34:56 -03:30:00",
+      "public_result": {
+        "error_after_parse": "",
+        "value_observers_called": true,
+        "parsed_scalar": "2040022912:34:56",
+        "parsed_list": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ],
+        "gmt_scalar": "2040022916:04:56",
+        "gmt_list": [
+          2040,
+          2,
+          29,
+          16,
+          4,
+          56
+        ],
+        "formatted": "2040-02-29 12:34:56 -0330 NST",
+        "error_after_reads": ""
+      },
+      "independent_expected_gmt": "2040022916:04:56"
+    },
+    {
+      "example_id": "FO-SUPPORTED-MINUS14",
+      "input_text": "2040-02-29 12:34:56 -14:00:00",
+      "public_result": {
+        "error_after_parse": "",
+        "value_observers_called": true,
+        "parsed_scalar": "2040022912:34:56",
+        "parsed_list": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ],
+        "gmt_scalar": "2040030102:34:56",
+        "gmt_list": [
+          2040,
+          3,
+          1,
+          2,
+          34,
+          56
+        ],
+        "formatted": "2040-02-29 12:34:56 -1400 GMT-14",
+        "error_after_reads": ""
+      },
+      "independent_expected_gmt": "2040030102:34:56"
+    },
+    {
+      "example_id": "FO-REJECT-SECONDS",
+      "input_text": "2040-02-29 12:34:56 +00:06:04",
+      "public_result": {
+        "error_after_parse": "[parse] Unable to determine timezone",
+        "value_observers_called": false
+      },
+      "independent_expected_gmt": null
+    }
+  ]
+}

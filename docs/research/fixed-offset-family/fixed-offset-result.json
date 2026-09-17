@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "verified_on": "2026-09-17",
+  "status": "public fixed-offset reachability plus seven durable reviewed behaviors; not complete timezone behavior coverage",
+  "archives": {
+    "Date-Manip-7.00.tar.gz": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+    "Devel-Cover-1.52.tar.gz": "9d90b44ab602ca373fa221255708de4d19df86026f4d7110bef608846eed44fb"
+  },
+  "runtime": {
+    "date_manip_version": "7.00",
+    "devel_cover_version": "1.52",
+    "perl_version": "v5.40.1",
+    "perl_archname": "x86_64-linux-gnu-thread-multi",
+    "environment": {
+      "PATH": "/usr/bin:/bin",
+      "LANG": "C.UTF-8",
+      "LC_ALL": "C.UTF-8",
+      "TZ": "Etc/UTC",
+      "PERL5LIB": "profile-specific only",
+      "HOME_and_PERL5OPT_inherited": false
+    }
+  },
+  "reachability": {
+    "generated_offset_entry_count": 408,
+    "target_offset_module_rows": 408,
+    "missing_target_offset_module_rows": [],
+    "two_isolated_plain_runs_identical": true,
+    "instrumented_behavioral_records_identical": true,
+    "successful_parse_count": 40,
+    "rejected_parse_count": 368,
+    "rejected_parse_error": "[parse] Unable to determine timezone",
+    "target_offset_modules_newly_loaded_by_matching_public_call": 408,
+    "target_offset_statement_coverage": {
+      "covered": 3672,
+      "per_module_covered": 9,
+      "per_module_total": 9,
+      "total": 3672
+    },
+    "rejected_value_observers_called": false
+  },
+  "external_artifact_hashes": {
+    "cover_db_tree": "7123137d13c22b9883835f3d41da8fbd32b9312ea7912923ff057bfb0850a4e6",
+    "coverage-observations.json": "961a3baee77f685df53483e12aae5a846dccf7a6d1b577d5838d659d0aa96433",
+    "observations.json": "cf1ba8408db938c197615baa3c83e7831e16186d49a8722420ce425989fa3c0c",
+    "offset-manifest.json": "35b37df80233188a6e0e22908d40a30aac4d50d6ea9a662a79f3e921d066d31d",
+    "report/cover.json": "643706fd152cf82c47ccc8cfc3ed2138d89233cd6d3403550de8763f47edafa1",
+    "run-one.json": "cf1ba8408db938c197615baa3c83e7831e16186d49a8722420ce425989fa3c0c",
+    "run-two.json": "cf1ba8408db938c197615baa3c83e7831e16186d49a8722420ce425989fa3c0c",
+    "selected-observations.json": "83699db79f5709316be0429803c39eda507f9ef027e6f17343ee37a43be43bea",
+    "summary.json": "7e8b98661f7dec7b038ae01b847c14dd7bdeaa66e6d93249188e9e836e2d435b"
+  },
+  "installed_source_sha256": {
+    "Date/Manip.pm": "4cd2da318687b9b820244c875efef9f484e690270d649ecf64de65bb1b7640e9",
+    "Date/Manip/Date.pm": "c181a8d908efbc2c18cc0a59e10e90628161dc3acf811c9c0292985280953d85",
+    "Date/Manip/Zones.pm": "363adb17d51c28fea9ca66b9716d01ccc193b88c36be24da85323d351f53f6e6",
+    "Devel/Cover.pm": "ae1600669575616d506b80ddb0ebb061871da0de7e9f40cab8eea6d17564bc5e"
+  },
+  "probe_sha256": {
+    "manifest.pl": "5d2b67cd8055afd20c4fedf938e80682343fee8434066f2f773abc22ac611f5d",
+    "probe.pl": "6a50b124fd53becd3d759fe0d03a365f63117f8eb3d90f243757745399e35e10",
+    "coverage_batch.pl": "e52a2d44fcdf710b4e98b15c33ca1ac35ebb85be98dcae10acd203abdb660289",
+    "run.py": "fcb2a446dadb0879c072fac891f47689313dd275cacd894e08723af1b9b22517",
+    "review.py": "a34cf6bb4d080dd2a3fc80e2bb00f4a04c21241a9904aec96d43be05f4467071"
+  },
+  "limits": [
+    "Each generated entry is newly loaded by its matching public construction call, but module reachability is not behavioral completeness.",
+    "The 368 parse rejections are retained with explicit value-observers-not-called metadata; no unobserved values are manufactured.",
+    "The source-derived 408-row manifest remains external and is excluded from the seven-row portable public observation record.",
+    "The portable feature reviews six of 40 successes and one of 368 rejections.",
+    "This batch makes no whole-library coverage percentage or complete timezone-behavior claim."
+  ],
+  "coordinator_review": "External run-v7 artifacts and seven durable examples verified. Reviewer tightened to compare exact outline-row outputs. Parsed-zone and configured-local value meanings distinguished. Execution tools and observed results unchanged."
+}

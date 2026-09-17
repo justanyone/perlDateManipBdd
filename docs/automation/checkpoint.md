@@ -578,3 +578,16 @@ remaining method partitions are not declared complete.
 partial_parsing now owns NEW navigation-family public previous/next cases.
 coverage_setup still repairs zone-transition; pattern_repair repairs fixed-offset.
 Keep those active paths unstaged until their returned evidence is reviewed.
+
+## Fixed-offset integration
+
+Integrated408module public reachability evidence after independent repair.
+Root verified external hashes and7durable examples; each outline row now matches
+its own native channels, and parsed-zone wording no longer implies localUTC.
+Collector proves target newly loaded and unique9/9 criteria,408modules total.
+40parse successes/368rejections remain explicit; only7examples are portable drafts.
+No final whole-library coverage or behavior-completeness claim.
+
+Zone-transition repair returned stable for root review. coverage_setup now owns
+NEW coverage-corpus diagnostic collector and public-case branch-gap analysis.
+partial_parsing owns navigation-family; pattern_repair owns value-serialization.

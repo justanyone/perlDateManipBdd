@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "status": "research-only public binding map; excluded from portable handoff",
+  "reference": "Date-Manip 7.00",
+  "profile": "fresh OO context; English; ASCII; non-US; ForceDate 2040-02-28 10:20:30 Etc/UTC",
+  "primary_binding": {
+    "operation_id": "date.create",
+    "module": "Date::Manip::Obj",
+    "callable": "new_date",
+    "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:232",
+    "context": "scalar object",
+    "arguments": [
+      "complete date-time text containing a numeric UTC offset"
+    ],
+    "outcome": "date object; parse outcome observed immediately through the public err method"
+  },
+  "observers": [
+    {
+      "operation_id": "error.read-state",
+      "module": "Date::Manip::Obj",
+      "callable": "err",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:331",
+      "context": "scalar",
+      "order": "immediately after construction; again after successful value and formatting reads"
+    },
+    {
+      "operation_id": "date.read-value",
+      "module": "Date::Manip::Date",
+      "callable": "value",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:2607",
+      "contexts": [
+        "scalar parsed-zone value",
+        "list parsed-zone fields",
+        "scalar GMT value",
+        "list GMT fields"
+      ],
+      "failure_policy": "not called when the immediate parse error is nonempty"
+    },
+    {
+      "operation_id": "date.render-pattern",
+      "module": "Date::Manip::Date",
+      "callable": "printf",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:4494",
+      "context": "scalar",
+      "pattern": "%Y-%m-%d %H:%M:%S %z %Z",
+      "failure_policy": "not called when the immediate parse error is nonempty"
+    }
+  ],
+  "setup_calls": [
+    {
+      "callable": "Date::Manip::Date->new",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:31",
+      "purpose": "create a fresh configured anchor",
+      "operation_id": "date.create"
+    },
+    {
+      "callable": "Date::Manip::Obj->config",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:273",
+      "context": "scalar",
+      "native_return": "absent value",
+      "purpose": "apply the exact five-setting fixture",
+      "operation_id": "config.apply-settings"
+    }
+  ],
+  "coverage_instrumentation": {
+    "module_load_inspection": "Perl %INC before and after the public constructor call",
+    "classification": "research coverage evidence only",
+    "portable_requirement": false
+  }
+}
