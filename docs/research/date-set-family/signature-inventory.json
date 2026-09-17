@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "status": "public Date::Manip::Date set signature inventory for the bounded batch",
+  "reference": {
+    "distribution_version": "7.00",
+    "documentation": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pod:602",
+    "implementation": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:2719"
+  },
+  "entrypoint": {
+    "contract_id": "date.replace-field",
+    "class": "Date::Manip::Date",
+    "callable": "set",
+    "documented_signature": "$date->set($field,@vals [,$isdst])",
+    "return_convention": "zero on success; one on a reported error; an uncaught exception interrupts the call before a status is returned",
+    "receiver_rule": "a valid date is required except when field is date or zdate"
+  },
+  "documented_forms": [
+    {
+      "selector": "zone",
+      "forms": ["set('zone')", "set('zone', ZONE)", "set('zone', ISDST)", "set('zone', ZONE, ISDST)"],
+      "value_shape": "ZONE is a name, alias, documented offset text, or documented offset list; ISDST is 0 or 1",
+      "effect": "preserve wall fields and replace the zone without conversion",
+      "case_prefix": "DSET-ZONE"
+    },
+    {
+      "selector": "zdate",
+      "forms": ["set('zdate', DATE)", "set('zdate', DATE, ISDST)", "set('zdate', ZONE, DATE)", "set('zdate', ZONE, DATE, ISDST)"],
+      "value_shape": "DATE is [Y,M,D,H,MN,S]; ZONE and ISDST use the zone rules",
+      "effect": "replace all six fields and the zone; the local zone is used when ZONE is omitted",
+      "case_prefix": "DSET-ZDATE"
+    },
+    {
+      "selector": "date",
+      "forms": ["set('date', DATE)", "set('date', DATE, ISDST)"],
+      "value_shape": "DATE is [Y,M,D,H,MN,S]; ISDST is 0 or 1",
+      "effect": "replace all six fields while retaining an existing zone or choosing local for an unset/error receiver",
+      "case_prefix": "DSET-DATE"
+    },
+    {
+      "selector": "time",
+      "forms": ["set('time', TIME)", "set('time', TIME, ISDST)"],
+      "value_shape": "TIME is [H,MN,S]; ISDST is 0 or 1",
+      "effect": "replace the three clock fields on a valid receiver",
+      "case_prefix": "DSET-TIME"
+    },
+    {
+      "selector": "individual field",
+      "forms": ["set(FIELD, VALUE)", "set(FIELD, VALUE, ISDST)"],
+      "value_shape": "FIELD is y, m, d, h, mn, or s; ISDST is 0 or 1",
+      "effect": "replace one field on a valid receiver",
+      "case_prefix": "DSET-FIELD"
+    }
+  ],
+  "documented_shared_rules": [
+    "zone names and aliases are accepted",
+    "zone offsets may be text or list references",
+    "an omitted zone uses the configured local zone",
+    "an omitted ISDST request is documented to choose standard time in an overlap",
+    "ISDST is ignored outside an ambiguous civil time",
+    "invalid argument lists and invalid resulting dates return an error"
+  ],
+  "observed_reference_binding_departures": [
+    {
+      "behavior": "offset and unresolved zone inputs reach a missing Date::Manip::Base::__zone method and raise an exception",
+      "classification": "reference-binding disputed behavior",
+      "cases": ["DSET-ZONE-003-OFFSET-TEXT", "DSET-ZONE-004-OFFSET-LIST", "DSET-ZONE-009-INVALID-ZONE", "DSET-ZONE-020-TWO-AS-SINGLE-ARG", "DSET-ZDATE-003-OFFSET-LIST", "DSET-ZDATE-010-INVALID-ZONE", "DSET-ZDATE-015-OFFSET-TEXT"]
+    },
+    {
+      "behavior": "partial time and individual-field changes with omitted ISDST retain the receiver's daylight side in the tested overlap",
+      "classification": "observed compatibility disputed against the documented standard-side default",
+      "cases": ["DSET-TIME-003-OVERLAP-DEFAULT", "DSET-FIELD-027-OVERLAP-DEFAULT"]
+    },
+    {
+      "behavior": "ISDST value 2 is accepted in the explicit three/four-argument forms and acts truthy",
+      "classification": "observed compatibility outside the documented 0-or-1 domain",
+      "cases": ["DSET-ZONE-019-ISDST-TWO", "DSET-ZDATE-013-ISDST-TWO", "DSET-DATE-014-ISDST-TWO", "DSET-TIME-014-ISDST-TWO", "DSET-FIELD-033-ISDST-TWO"]
+    },
+    {
+      "behavior": "individual-field forms accept several malformed values without field validation",
+      "classification": "reference-binding disputed behavior",
+      "cases": ["DSET-FIELD-008-MONTH-ZERO", "DSET-FIELD-009-DAY-ZERO", "DSET-FIELD-010-MONTH-13", "DSET-FIELD-011-DAY-31-COMPAT", "DSET-FIELD-012-DAY-32", "DSET-FIELD-013-HOUR-24", "DSET-FIELD-014-MINUTE-60", "DSET-FIELD-015-SECOND-60", "DSET-FIELD-016-NONNUMERIC", "DSET-FIELD-017-UNDEFINED", "DSET-FIELD-034-NEGATIVE-DAY"]
+    }
+  ],
+  "supporting_public_calls": [
+    {"contract_id": "object.create", "callable": "Date::Manip::Date::new", "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:31"},
+    {"contract_id": "context.zone-service", "callable": "Date::Manip::Obj::tz", "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:261"},
+    {"contract_id": "meta.zone-data-version", "callable": "Date::Manip::TZ::tzdata", "source": "local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm:212"},
+    {"contract_id": "meta.zone-rule-version", "callable": "Date::Manip::TZ::tzcode", "source": "local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm:217"},
+    {"contract_id": "date.create", "callable": "Date::Manip::Obj::new_date", "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:232"},
+    {"contract_id": "date.parse-text", "callable": "Date::Manip::Date::parse", "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:97"},
+    {"contract_id": "date.read-value", "callable": "Date::Manip::Date::value", "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:2607"},
+    {"contract_id": "error.read-state", "callable": "Date::Manip::Obj::err", "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:331"},
+    {"contract_id": "config.apply-settings", "callable": "Date::Manip::Obj::config", "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:273"},
+    {"contract_id": "config.read-settings", "callable": "Date::Manip::Obj::get_config", "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:292"}
+  ]
+}

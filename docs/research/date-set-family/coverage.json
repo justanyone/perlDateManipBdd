@@ -1,0 +1,1943 @@
+{
+  "schema_version": 1,
+  "status": "bounded reviewed mapping; repeatable reference observations remain unapproved",
+  "fixture_sha256": "90ce311773684e7e56bc5656ae950520d11c096458bcd0e0034c326068ced8e5",
+  "features": [
+    "spec/drafts/date-set/zone-and-zoned-date.feature",
+    "spec/drafts/date-set/date-and-time.feature",
+    "spec/drafts/date-set/individual-fields.feature"
+  ],
+  "case_mappings": [
+    {
+      "case_id": "DSET-ZONE-001-EXPLICIT-NAMED",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Documented zone requests preserve wall fields and choose the expected instant",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-002-OMITTED-LOCAL",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Documented zone requests preserve wall fields and choose the expected instant",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-003-OFFSET-TEXT",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Offset and unresolved zone inputs raise a Date-Manip 7.00 binding exception",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-004-OFFSET-LIST",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Offset and unresolved zone inputs raise a Date-Manip 7.00 binding exception",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-005-ALIAS",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Documented zone requests preserve wall fields and choose the expected instant",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-006-ZERO-AS-ISDST",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Documented zone requests preserve wall fields and choose the expected instant",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-007-ONE-AS-ISDST",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Documented zone requests preserve wall fields and choose the expected instant",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-008-EMPTY-ZONE",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Undocumented zone option values are accepted as compatibility behavior",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-009-INVALID-ZONE",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Offset and unresolved zone inputs raise a Date-Manip 7.00 binding exception",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-010-EXTRA-ARGUMENT",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Zone arity, receiver-state, and gap failures clear or retain state as observed",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-011-UNSET-RECEIVER",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Zone arity, receiver-state, and gap failures clear or retain state as observed",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-012-ERROR-RECEIVER",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Zone arity, receiver-state, and gap failures clear or retain state as observed",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.parse-text",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-013-OVERLAP-DEFAULT",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Documented zone requests preserve wall fields and choose the expected instant",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-014-OVERLAP-STANDARD",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Documented zone requests preserve wall fields and choose the expected instant",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-015-OVERLAP-DAYLIGHT",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Documented zone requests preserve wall fields and choose the expected instant",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-016-GAP-DEFAULT",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Zone arity, receiver-state, and gap failures clear or retain state as observed",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-017-GAP-STANDARD",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Zone arity, receiver-state, and gap failures clear or retain state as observed",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-018-GAP-DAYLIGHT",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Zone arity, receiver-state, and gap failures clear or retain state as observed",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-019-ISDST-TWO",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Undocumented zone option values are accepted as compatibility behavior",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZONE-020-TWO-AS-SINGLE-ARG",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Offset and unresolved zone inputs raise a Date-Manip 7.00 binding exception",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZDATE-001-LOCAL-UNSET",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Whole zoned-date requests initialize, replace, recover, and disambiguate",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZDATE-002-NAMED-ZONE",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Whole zoned-date requests initialize, replace, recover, and disambiguate",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZDATE-003-OFFSET-LIST",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Zoned-date offsets and unresolved names raise the same binding exception",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZDATE-004-OVERLAP-DEFAULT",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Whole zoned-date requests initialize, replace, recover, and disambiguate",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZDATE-005-OVERLAP-STANDARD",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Whole zoned-date requests initialize, replace, recover, and disambiguate",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZDATE-006-OVERLAP-DAYLIGHT",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Whole zoned-date requests initialize, replace, recover, and disambiguate",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZDATE-007-LOCAL-OVERLAP-ISDST",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Whole zoned-date requests initialize, replace, recover, and disambiguate",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZDATE-008-GAP",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Invalid zoned-date requests leave the carrier empty",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZDATE-009-INVALID-DATE",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Invalid zoned-date requests leave the carrier empty",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZDATE-010-INVALID-ZONE",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Zoned-date offsets and unresolved names raise the same binding exception",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZDATE-011-OMITTED-DATE",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Invalid zoned-date requests leave the carrier empty",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZDATE-012-EXTRA-ARGUMENT",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Invalid zoned-date requests leave the carrier empty",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZDATE-013-ISDST-TWO",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "A whole zoned-date request accepts daylight value 2 as truthy",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZDATE-014-ERROR-RECOVERY",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Whole zoned-date requests initialize, replace, recover, and disambiguate",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.parse-text",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-ZDATE-015-OFFSET-TEXT",
+      "feature": "zone-and-zoned-date.feature",
+      "scenario": "Zoned-date offsets and unresolved names raise the same binding exception",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-001-RETAIN-ZONE",
+      "feature": "date-and-time.feature",
+      "scenario": "Whole-date replacement initializes, recovers, preserves a zone, and selects overlap sides",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-002-UNSET-LOCAL",
+      "feature": "date-and-time.feature",
+      "scenario": "Whole-date replacement initializes, recovers, preserves a zone, and selects overlap sides",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-003-ERROR-RECOVERY",
+      "feature": "date-and-time.feature",
+      "scenario": "Whole-date replacement initializes, recovers, preserves a zone, and selects overlap sides",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.parse-text",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-004-OVERLAP-DEFAULT",
+      "feature": "date-and-time.feature",
+      "scenario": "Whole-date replacement initializes, recovers, preserves a zone, and selects overlap sides",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-005-OVERLAP-STANDARD",
+      "feature": "date-and-time.feature",
+      "scenario": "Whole-date replacement initializes, recovers, preserves a zone, and selects overlap sides",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-006-OVERLAP-DAYLIGHT",
+      "feature": "date-and-time.feature",
+      "scenario": "Whole-date replacement initializes, recovers, preserves a zone, and selects overlap sides",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-007-GAP",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid whole-date requests clear the previous carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-008-INVALID-DATE",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid whole-date requests clear the previous carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-009-SHORT-ARRAY",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid whole-date requests clear the previous carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-010-LONG-ARRAY",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid whole-date requests clear the previous carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-011-SCALAR",
+      "feature": "date-and-time.feature",
+      "scenario": "A scalar whole-date carrier raises a binding exception",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-012-OMITTED-DATE",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid whole-date requests clear the previous carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-013-EXTRA-ARGUMENT",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid whole-date requests clear the previous carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-014-ISDST-TWO",
+      "feature": "date-and-time.feature",
+      "scenario": "Whole-date replacement accepts daylight value 2 as truthy",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-015-YEAR-ZERO",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid whole-date requests clear the previous carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-016-MONTH-ZERO",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid whole-date requests clear the previous carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-017-DAY-ZERO",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid whole-date requests clear the previous carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-018-HOUR-24-MIDNIGHT",
+      "feature": "date-and-time.feature",
+      "scenario": "Whole-date replacement initializes, recovers, preserves a zone, and selects overlap sides",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-DATE-019-HOUR-24-NONZERO",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid whole-date requests clear the previous carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-001-VALID",
+      "feature": "date-and-time.feature",
+      "scenario": "Time replacement changes only the three clock fields",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-002-ALL-ZERO",
+      "feature": "date-and-time.feature",
+      "scenario": "Time replacement changes only the three clock fields",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-003-OVERLAP-DEFAULT",
+      "feature": "date-and-time.feature",
+      "scenario": "Time replacement preserves the receiver's daylight side when omitted and accepts value 2",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-004-OVERLAP-STANDARD",
+      "feature": "date-and-time.feature",
+      "scenario": "Time replacement changes only the three clock fields",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-005-OVERLAP-DAYLIGHT",
+      "feature": "date-and-time.feature",
+      "scenario": "Time replacement changes only the three clock fields",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-006-GAP-DEFAULT",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid time requests reject the input and leave the carrier empty",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-007-GAP-STANDARD",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid time requests reject the input and leave the carrier empty",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-008-GAP-DAYLIGHT",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid time requests reject the input and leave the carrier empty",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-009-HOUR-24",
+      "feature": "date-and-time.feature",
+      "scenario": "Time replacement changes only the three clock fields",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-010-SHORT-ARRAY",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid time requests reject the input and leave the carrier empty",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-011-SCALAR",
+      "feature": "date-and-time.feature",
+      "scenario": "A scalar time carrier raises a binding exception",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-012-OMITTED-TIME",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid time requests reject the input and leave the carrier empty",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-013-EXTRA-ARGUMENT",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid time requests reject the input and leave the carrier empty",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-014-ISDST-TWO",
+      "feature": "date-and-time.feature",
+      "scenario": "Time replacement preserves the receiver's daylight side when omitted and accepts value 2",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-015-UNSET-RECEIVER",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid time requests reject the input and leave the carrier empty",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-016-ERROR-RECEIVER",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid time requests reject the input and leave the carrier empty",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.parse-text",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-017-MINUTE-60",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid time requests reject the input and leave the carrier empty",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-018-SECOND-60",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid time requests reject the input and leave the carrier empty",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-019-HOUR-24-NONZERO",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid time requests reject the input and leave the carrier empty",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-TIME-020-NEGATIVE-HOUR",
+      "feature": "date-and-time.feature",
+      "scenario": "Invalid time requests reject the input and leave the carrier empty",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-001-YEAR",
+      "feature": "individual-fields.feature",
+      "scenario": "Each documented field can be replaced, including zero clock fields",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-002-MONTH",
+      "feature": "individual-fields.feature",
+      "scenario": "Each documented field can be replaced, including zero clock fields",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-003-DAY",
+      "feature": "individual-fields.feature",
+      "scenario": "Each documented field can be replaced, including zero clock fields",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-004-HOUR-ZERO",
+      "feature": "individual-fields.feature",
+      "scenario": "Each documented field can be replaced, including zero clock fields",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-005-MINUTE-ZERO",
+      "feature": "individual-fields.feature",
+      "scenario": "Each documented field can be replaced, including zero clock fields",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-006-SECOND-ZERO",
+      "feature": "individual-fields.feature",
+      "scenario": "Each documented field can be replaced, including zero clock fields",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-007-YEAR-ZERO",
+      "feature": "individual-fields.feature",
+      "scenario": "Invalid selectors, arities, receiver states, and gap times fail with an empty carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-008-MONTH-ZERO",
+      "feature": "individual-fields.feature",
+      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-009-DAY-ZERO",
+      "feature": "individual-fields.feature",
+      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-010-MONTH-13",
+      "feature": "individual-fields.feature",
+      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-011-DAY-31-COMPAT",
+      "feature": "individual-fields.feature",
+      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-012-DAY-32",
+      "feature": "individual-fields.feature",
+      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-013-HOUR-24",
+      "feature": "individual-fields.feature",
+      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-014-MINUTE-60",
+      "feature": "individual-fields.feature",
+      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-015-SECOND-60",
+      "feature": "individual-fields.feature",
+      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-016-NONNUMERIC",
+      "feature": "individual-fields.feature",
+      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-017-UNDEFINED",
+      "feature": "individual-fields.feature",
+      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-018-OMITTED-VALUE",
+      "feature": "individual-fields.feature",
+      "scenario": "Invalid selectors, arities, receiver states, and gap times fail with an empty carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-019-EXTRA-ARGUMENT",
+      "feature": "individual-fields.feature",
+      "scenario": "Invalid selectors, arities, receiver states, and gap times fail with an empty carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-020-UPPERCASE",
+      "feature": "individual-fields.feature",
+      "scenario": "Field names are accepted without regard to letter case",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-021-UNKNOWN",
+      "feature": "individual-fields.feature",
+      "scenario": "Invalid selectors, arities, receiver states, and gap times fail with an empty carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-022-EMPTY-NAME",
+      "feature": "individual-fields.feature",
+      "scenario": "Invalid selectors, arities, receiver states, and gap times fail with an empty carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-023-OMITTED-NAME",
+      "feature": "individual-fields.feature",
+      "scenario": "Invalid selectors, arities, receiver states, and gap times fail with an empty carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-024-MULTIPLE-FIELDS",
+      "feature": "individual-fields.feature",
+      "scenario": "Invalid selectors, arities, receiver states, and gap times fail with an empty carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-025-UNSET-RECEIVER",
+      "feature": "individual-fields.feature",
+      "scenario": "Invalid selectors, arities, receiver states, and gap times fail with an empty carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-026-ERROR-RECEIVER",
+      "feature": "individual-fields.feature",
+      "scenario": "Invalid selectors, arities, receiver states, and gap times fail with an empty carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.parse-text",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-027-OVERLAP-DEFAULT",
+      "feature": "individual-fields.feature",
+      "scenario": "Omitting the daylight request on a partial change retains the daylight side",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-028-OVERLAP-STANDARD",
+      "feature": "individual-fields.feature",
+      "scenario": "An explicit daylight request selects either side of an overlap",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-029-OVERLAP-DAYLIGHT",
+      "feature": "individual-fields.feature",
+      "scenario": "An explicit daylight request selects either side of an overlap",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-030-GAP-DEFAULT",
+      "feature": "individual-fields.feature",
+      "scenario": "Invalid selectors, arities, receiver states, and gap times fail with an empty carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-031-GAP-STANDARD",
+      "feature": "individual-fields.feature",
+      "scenario": "Invalid selectors, arities, receiver states, and gap times fail with an empty carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-032-GAP-DAYLIGHT",
+      "feature": "individual-fields.feature",
+      "scenario": "Invalid selectors, arities, receiver states, and gap times fail with an empty carrier",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-033-ISDST-TWO",
+      "feature": "individual-fields.feature",
+      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "DSET-FIELD-034-NEGATIVE-DAY",
+      "feature": "individual-fields.feature",
+      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    }
+  ],
+  "canonical_public_operations": [
+    {
+      "id": "object.create",
+      "callable": "Date::Manip::Date::new",
+      "role": "reference context and configured anchor construction",
+      "exercised_by": "all 108 cases"
+    },
+    {
+      "id": "context.zone-service",
+      "callable": "Date::Manip::Obj::tz",
+      "role": "pinned zone service observation",
+      "exercised_by": "all 108 cases"
+    },
+    {
+      "id": "meta.zone-data-version",
+      "callable": "Date::Manip::TZ::tzdata",
+      "role": "pinned tzdata assertion",
+      "exercised_by": "all 108 cases"
+    },
+    {
+      "id": "meta.zone-rule-version",
+      "callable": "Date::Manip::TZ::tzcode",
+      "role": "pinned tzcode assertion",
+      "exercised_by": "all 108 cases"
+    },
+    {
+      "id": "date.replace-field",
+      "callable": "Date::Manip::Date::set",
+      "role": "operation under characterization",
+      "exercised_by": "all 108 cases"
+    },
+    {
+      "id": "date.create",
+      "callable": "Date::Manip::Obj::new_date",
+      "role": "receiver construction",
+      "exercised_by": "all 108 cases"
+    },
+    {
+      "id": "date.read-value",
+      "callable": "Date::Manip::Date::value",
+      "role": "scalar, list, local, and GMT observations",
+      "exercised_by": "all 108 cases"
+    },
+    {
+      "id": "error.read-state",
+      "callable": "Date::Manip::Obj::err",
+      "role": "error read before and after every public call",
+      "exercised_by": "all 108 cases"
+    },
+    {
+      "id": "config.apply-settings",
+      "callable": "Date::Manip::Obj::config",
+      "role": "fixed profile setup",
+      "exercised_by": "all 108 cases"
+    },
+    {
+      "id": "config.read-settings",
+      "callable": "Date::Manip::Obj::get_config",
+      "role": "effective profile observation",
+      "exercised_by": "all 108 cases"
+    },
+    {
+      "id": "date.parse-text",
+      "callable": "Date::Manip::Date::parse",
+      "role": "creation of the explicit error-bearing receiver precondition",
+      "exercised_by": "the five ERROR-RECEIVER or ERROR-RECOVERY cases"
+    }
+  ],
+  "contract_mapping_source": "docs/research/api/contract-map.json (complete operation map)",
+  "contract_mapping_gaps": [],
+  "binding_assertions": [
+    {
+      "assertion_id": "DSET-BIND-SHORT-LISTS",
+      "feature": "date-and-time.feature",
+      "source_case_ids": [
+        "DSET-DATE-009-SHORT-ARRAY",
+        "DSET-TIME-010-SHORT-ARRAY"
+      ],
+      "scenario": "Perl reports each missing field while validating short date and time lists"
+    },
+    {
+      "assertion_id": "DSET-BIND-FIELD-WARNINGS",
+      "feature": "individual-fields.feature",
+      "source_case_ids": [
+        "DSET-FIELD-007-YEAR-ZERO",
+        "DSET-FIELD-023-OMITTED-NAME"
+      ],
+      "scenario": "Perl reports binding warnings for year zero and an omitted selector"
+    }
+  ]
+}

@@ -565,3 +565,16 @@ reviewer and real parser pass. Remains draft and incomplete for wider transition
 
 Current workers retain repairs: coverage_setup zone-transition, partial_parsing
 date-set, pattern_repair fixed-offset. None of those batches is integrated yet.
+
+## Date mutation integration
+
+Integrated108 public Date::set cases after concrete-input repairs. Every feature
+request matches exact fixture receiver/type/arguments; coordinator strengthened
+per-row result/status/error/list/warning comparisons. Two warning-only scenarios
+have separate IDs and mappings. Real parser accepts24scenarios across3files.
+Disputed field validation and binding exceptions remain explicit. Coverage and
+remaining method partitions are not declared complete.
+
+partial_parsing now owns NEW navigation-family public previous/next cases.
+coverage_setup still repairs zone-transition; pattern_repair repairs fixed-offset.
+Keep those active paths unstaged until their returned evidence is reviewed.

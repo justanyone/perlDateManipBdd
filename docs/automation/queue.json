@@ -237,9 +237,14 @@
         "docs/research/object-lifecycle-family/README.md",
         "docs/research/object-lifecycle-review.md",
         "spec/drafts/object-lifecycle",
-        "tools/probes/object-lifecycle-family/review.py"
+        "tools/probes/object-lifecycle-family/review.py",
+        "docs/research/date-set-family/README.md",
+        "docs/research/date-set-family/coverage.json",
+        "tools/probes/date-set-family/review.py",
+        "spec/drafts/date-set"
       ],
-      "lifecycle_review": "20 repeated original public lifecycle cases integrated after independent repair and coordinator review; exact error/carrier sequence, effective configuration isolation, full public-operation mappings and normalized portable civil dates verified. Broader constructor/mutation partitions remain open."
+      "lifecycle_review": "20 repeated original public lifecycle cases integrated after independent repair and coordinator review; exact error/carrier sequence, effective configuration isolation, full public-operation mappings and normalized portable civil dates verified. Broader constructor/mutation partitions remain open.",
+      "date_set_review": "108 original repeated public set requests integrated with exact typed feature inputs, per-row literal comparisons, native observer boundaries and explicit disputed binding behavior. Real parser accepts24 scenarios across3features. Remaining domains remain open."
     },
     {
       "id": "coverage-review",
