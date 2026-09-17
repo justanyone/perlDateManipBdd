@@ -288,9 +288,6 @@ Feature: Interpret complete and truncated date text in explicit compatibility pr
       | PARSE-COMMON-MONTHYEAR-03-DISABLED-DM6 | current-text | default | Feb/2040 |
       | PARSE-COMMON-MONTHYEAR-04-DISABLED-OO | current-value | default | 2040/Feb |
       | PARSE-COMMON-MONTHYEAR-04-DISABLED-DM6 | current-text | default | 2040/Feb |
-      | PARSE-INVALID-EMPTY-OO | current-value | default |  |
-      | PARSE-INVALID-EMPTY-DM6 | current-text | default |  |
-      | PARSE-INVALID-EMPTY-DM5 | legacy-text | default |  |
       | PARSE-INVALID-INVALID-LEAP-OO | current-value | default | 2039-02-29 |
       | PARSE-INVALID-INVALID-LEAP-DM6 | current-text | default | 2039-02-29 |
       | PARSE-INVALID-INVALID-LEAP-DM5 | legacy-text | default | 2039-02-29 |
@@ -312,3 +309,14 @@ Feature: Interpret complete and truncated date text in explicit compatibility pr
       | PARSE-INVALID-MIXED-DASHES-OO | current-value | default | 2040-0229 |
       | PARSE-INVALID-MIXED-DASHES-DM6 | current-text | default | 2040-0229 |
 
+  Scenario Outline: Reject an explicitly empty text input for <case>
+    Given date-parsing profile "<profile>"
+    And the month-year interpretation setting is "<month-year mode>"
+    When I interpret empty text as a date
+    Then parsing rejects the text and returns no date value
+
+    Examples:
+      | case | profile | month-year mode |
+      | PARSE-INVALID-EMPTY-OO | current-value | default |
+      | PARSE-INVALID-EMPTY-DM6 | current-text | default |
+      | PARSE-INVALID-EMPTY-DM5 | legacy-text | default |

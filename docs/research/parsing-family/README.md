@@ -59,3 +59,10 @@ all languages and encodings; year-pivot and alternate separator/order boundaries
 ambiguous zones and DST interactions; absent arguments; and detailed public
 status/error normalization. The eight configuration exceptions also need portable
 configuration-profile disposition before any feature promotion.
+
+Empty-input portability repair: the three empty-string cases now use an explicit
+empty-text step in a dedicated outline instead of blank cells. Case IDs, profiles,
+mode and rejection outcomes remain unchanged. parsing_literals.py now checks all
+283 authored table rows in both parsing features against their own recorded input,
+profile, month-year mode and expected result; eight configuration exceptions remain
+separate. This verifies literals, not behavioral completeness or BDD execution.

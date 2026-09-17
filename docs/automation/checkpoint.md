@@ -907,3 +907,13 @@ real parser accepts17 scenarios without warnings. Probes/evidence/hashes unchang
 This defines the public output-shape variant without requiring Perl call contexts;
 it does not complete the remaining input-history domains or promote the draft.
 Workers continue configuration, recurrence, and language completion semantics.
+
+## Explicit empty parsing inputs
+
+Root moved three blank-text rows into an explicit empty-text outline, preserving
+IDs/profiles/modes/rejection outcomes. Expanded parsing reviewer now ties all283
+feature rows across both files to exact recorded inputs/profiles/modes/results;
+223 successful civil values and8 separate configuration exceptions still pass.
+Real parser accepts276 cases in the changed file with no errors/warnings. Probes
+and observations unchanged. Recurrence worker is fixing interrupted-call capture
+placeholders and strengthening fixture/request checks; other workers retain scope.
