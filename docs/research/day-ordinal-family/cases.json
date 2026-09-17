@@ -1,0 +1,855 @@
+{
+  "schema_version": 1,
+  "status": "Original public-call requests; outputs are frozen separately after review.",
+  "fixture_source": "docs/automation/reference-profiles.json",
+  "request_sets": {
+    "days-1-through-31": [
+      {
+        "request_id": "D01",
+        "arguments": [
+          1
+        ]
+      },
+      {
+        "request_id": "D02",
+        "arguments": [
+          2
+        ]
+      },
+      {
+        "request_id": "D03",
+        "arguments": [
+          3
+        ]
+      },
+      {
+        "request_id": "D04",
+        "arguments": [
+          4
+        ]
+      },
+      {
+        "request_id": "D05",
+        "arguments": [
+          5
+        ]
+      },
+      {
+        "request_id": "D06",
+        "arguments": [
+          6
+        ]
+      },
+      {
+        "request_id": "D07",
+        "arguments": [
+          7
+        ]
+      },
+      {
+        "request_id": "D08",
+        "arguments": [
+          8
+        ]
+      },
+      {
+        "request_id": "D09",
+        "arguments": [
+          9
+        ]
+      },
+      {
+        "request_id": "D10",
+        "arguments": [
+          10
+        ]
+      },
+      {
+        "request_id": "D11",
+        "arguments": [
+          11
+        ]
+      },
+      {
+        "request_id": "D12",
+        "arguments": [
+          12
+        ]
+      },
+      {
+        "request_id": "D13",
+        "arguments": [
+          13
+        ]
+      },
+      {
+        "request_id": "D14",
+        "arguments": [
+          14
+        ]
+      },
+      {
+        "request_id": "D15",
+        "arguments": [
+          15
+        ]
+      },
+      {
+        "request_id": "D16",
+        "arguments": [
+          16
+        ]
+      },
+      {
+        "request_id": "D17",
+        "arguments": [
+          17
+        ]
+      },
+      {
+        "request_id": "D18",
+        "arguments": [
+          18
+        ]
+      },
+      {
+        "request_id": "D19",
+        "arguments": [
+          19
+        ]
+      },
+      {
+        "request_id": "D20",
+        "arguments": [
+          20
+        ]
+      },
+      {
+        "request_id": "D21",
+        "arguments": [
+          21
+        ]
+      },
+      {
+        "request_id": "D22",
+        "arguments": [
+          22
+        ]
+      },
+      {
+        "request_id": "D23",
+        "arguments": [
+          23
+        ]
+      },
+      {
+        "request_id": "D24",
+        "arguments": [
+          24
+        ]
+      },
+      {
+        "request_id": "D25",
+        "arguments": [
+          25
+        ]
+      },
+      {
+        "request_id": "D26",
+        "arguments": [
+          26
+        ]
+      },
+      {
+        "request_id": "D27",
+        "arguments": [
+          27
+        ]
+      },
+      {
+        "request_id": "D28",
+        "arguments": [
+          28
+        ]
+      },
+      {
+        "request_id": "D29",
+        "arguments": [
+          29
+        ]
+      },
+      {
+        "request_id": "D30",
+        "arguments": [
+          30
+        ]
+      },
+      {
+        "request_id": "D31",
+        "arguments": [
+          31
+        ]
+      }
+    ],
+    "invalid-dm6-omitted": [
+      {
+        "request_id": "OMITTED",
+        "arguments": []
+      }
+    ],
+    "invalid-dm6-undefined": [
+      {
+        "request_id": "UNDEFINED",
+        "arguments": [
+          null
+        ]
+      }
+    ],
+    "invalid-dm6-zero": [
+      {
+        "request_id": "ZERO",
+        "arguments": [
+          0
+        ]
+      }
+    ],
+    "invalid-dm6-negative": [
+      {
+        "request_id": "NEGATIVE",
+        "arguments": [
+          -1
+        ]
+      }
+    ],
+    "invalid-dm6-out32": [
+      {
+        "request_id": "OUT32",
+        "arguments": [
+          32
+        ]
+      }
+    ],
+    "invalid-dm6-large": [
+      {
+        "request_id": "LARGE",
+        "arguments": [
+          100
+        ]
+      }
+    ],
+    "invalid-dm6-fraction": [
+      {
+        "request_id": "FRACTION",
+        "arguments": [
+          1.5
+        ]
+      }
+    ],
+    "invalid-dm6-numeric-text": [
+      {
+        "request_id": "NUMERIC-TEXT",
+        "arguments": [
+          "02"
+        ]
+      }
+    ],
+    "invalid-dm6-empty": [
+      {
+        "request_id": "EMPTY",
+        "arguments": [
+          ""
+        ]
+      }
+    ],
+    "invalid-dm6-nonnumeric": [
+      {
+        "request_id": "NONNUMERIC",
+        "arguments": [
+          "x"
+        ]
+      }
+    ],
+    "invalid-dm6-array": [
+      {
+        "request_id": "ARRAY",
+        "arguments": [
+          [
+            1
+          ]
+        ]
+      }
+    ],
+    "invalid-dm6-hash": [
+      {
+        "request_id": "HASH",
+        "arguments": [
+          {}
+        ]
+      }
+    ],
+    "invalid-dm6-extra": [
+      {
+        "request_id": "EXTRA",
+        "arguments": [
+          1,
+          99
+        ]
+      }
+    ],
+    "invalid-dm5-omitted": [
+      {
+        "request_id": "OMITTED",
+        "arguments": []
+      }
+    ],
+    "invalid-dm5-undefined": [
+      {
+        "request_id": "UNDEFINED",
+        "arguments": [
+          null
+        ]
+      }
+    ],
+    "invalid-dm5-zero": [
+      {
+        "request_id": "ZERO",
+        "arguments": [
+          0
+        ]
+      }
+    ],
+    "invalid-dm5-negative": [
+      {
+        "request_id": "NEGATIVE",
+        "arguments": [
+          -1
+        ]
+      }
+    ],
+    "invalid-dm5-out32": [
+      {
+        "request_id": "OUT32",
+        "arguments": [
+          32
+        ]
+      }
+    ],
+    "invalid-dm5-large": [
+      {
+        "request_id": "LARGE",
+        "arguments": [
+          100
+        ]
+      }
+    ],
+    "invalid-dm5-fraction": [
+      {
+        "request_id": "FRACTION",
+        "arguments": [
+          1.5
+        ]
+      }
+    ],
+    "invalid-dm5-numeric-text": [
+      {
+        "request_id": "NUMERIC-TEXT",
+        "arguments": [
+          "02"
+        ]
+      }
+    ],
+    "invalid-dm5-empty": [
+      {
+        "request_id": "EMPTY",
+        "arguments": [
+          ""
+        ]
+      }
+    ],
+    "invalid-dm5-nonnumeric": [
+      {
+        "request_id": "NONNUMERIC",
+        "arguments": [
+          "x"
+        ]
+      }
+    ],
+    "invalid-dm5-array": [
+      {
+        "request_id": "ARRAY",
+        "arguments": [
+          [
+            1
+          ]
+        ]
+      }
+    ],
+    "invalid-dm5-hash": [
+      {
+        "request_id": "HASH",
+        "arguments": [
+          {}
+        ]
+      }
+    ],
+    "invalid-dm5-extra": [
+      {
+        "request_id": "EXTRA",
+        "arguments": [
+          1,
+          99
+        ]
+      }
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "DO-DM6-CATALAN-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "Catalan",
+      "request_set": "days-1-through-31",
+      "classification": "portable"
+    },
+    {
+      "case_id": "DO-DM6-DANISH-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "Danish",
+      "request_set": "days-1-through-31",
+      "classification": "portable"
+    },
+    {
+      "case_id": "DO-DM6-DUTCH-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "Dutch",
+      "request_set": "days-1-through-31",
+      "classification": "portable"
+    },
+    {
+      "case_id": "DO-DM6-ENGLISH-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "English",
+      "request_set": "days-1-through-31",
+      "classification": "portable"
+    },
+    {
+      "case_id": "DO-DM6-FINNISH-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "Finnish",
+      "request_set": "days-1-through-31",
+      "classification": "portable"
+    },
+    {
+      "case_id": "DO-DM6-FRENCH-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "French",
+      "request_set": "days-1-through-31",
+      "classification": "portable"
+    },
+    {
+      "case_id": "DO-DM6-GERMAN-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "German",
+      "request_set": "days-1-through-31",
+      "classification": "portable"
+    },
+    {
+      "case_id": "DO-DM6-ITALIAN-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "Italian",
+      "request_set": "days-1-through-31",
+      "classification": "portable"
+    },
+    {
+      "case_id": "DO-DM6-NORWEGIAN-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "Norwegian",
+      "request_set": "days-1-through-31",
+      "classification": "portable"
+    },
+    {
+      "case_id": "DO-DM6-POLISH-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "Polish",
+      "request_set": "days-1-through-31",
+      "classification": "portable"
+    },
+    {
+      "case_id": "DO-DM6-PORTUGUESE-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "Portuguese",
+      "request_set": "days-1-through-31",
+      "classification": "portable"
+    },
+    {
+      "case_id": "DO-DM6-ROMANIAN-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "Romanian",
+      "request_set": "days-1-through-31",
+      "classification": "portable"
+    },
+    {
+      "case_id": "DO-DM6-RUSSIAN-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "Russian",
+      "request_set": "days-1-through-31",
+      "classification": "portable"
+    },
+    {
+      "case_id": "DO-DM6-SPANISH-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "Spanish",
+      "request_set": "days-1-through-31",
+      "classification": "portable"
+    },
+    {
+      "case_id": "DO-DM6-SWEDISH-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "Swedish",
+      "request_set": "days-1-through-31",
+      "classification": "portable"
+    },
+    {
+      "case_id": "DO-DM6-TURKISH-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "Turkish",
+      "request_set": "days-1-through-31",
+      "classification": "portable"
+    },
+    {
+      "case_id": "DO-DM5-CATALAN-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "Catalan",
+      "request_set": "days-1-through-31",
+      "classification": "setup-failure"
+    },
+    {
+      "case_id": "DO-DM5-DANISH-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "Danish",
+      "request_set": "days-1-through-31",
+      "classification": "compatibility"
+    },
+    {
+      "case_id": "DO-DM5-DUTCH-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "Dutch",
+      "request_set": "days-1-through-31",
+      "classification": "compatibility"
+    },
+    {
+      "case_id": "DO-DM5-ENGLISH-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "English",
+      "request_set": "days-1-through-31",
+      "classification": "compatibility"
+    },
+    {
+      "case_id": "DO-DM5-FRENCH-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "French",
+      "request_set": "days-1-through-31",
+      "classification": "compatibility"
+    },
+    {
+      "case_id": "DO-DM5-GERMAN-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "German",
+      "request_set": "days-1-through-31",
+      "classification": "compatibility"
+    },
+    {
+      "case_id": "DO-DM5-ITALIAN-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "Italian",
+      "request_set": "days-1-through-31",
+      "classification": "suspected-bug"
+    },
+    {
+      "case_id": "DO-DM5-POLISH-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "Polish",
+      "request_set": "days-1-through-31",
+      "classification": "compatibility"
+    },
+    {
+      "case_id": "DO-DM5-PORTUGUESE-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "Portuguese",
+      "request_set": "days-1-through-31",
+      "classification": "compatibility"
+    },
+    {
+      "case_id": "DO-DM5-ROMANIAN-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "Romanian",
+      "request_set": "days-1-through-31",
+      "classification": "compatibility"
+    },
+    {
+      "case_id": "DO-DM5-RUSSIAN-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "Russian",
+      "request_set": "days-1-through-31",
+      "classification": "compatibility"
+    },
+    {
+      "case_id": "DO-DM5-SPANISH-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "Spanish",
+      "request_set": "days-1-through-31",
+      "classification": "compatibility"
+    },
+    {
+      "case_id": "DO-DM5-SWEDISH-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "Swedish",
+      "request_set": "days-1-through-31",
+      "classification": "compatibility"
+    },
+    {
+      "case_id": "DO-DM5-TURKISH-DAYS",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "Turkish",
+      "request_set": "days-1-through-31",
+      "classification": "compatibility"
+    },
+    {
+      "case_id": "DO-DM6-OMITTED",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "English",
+      "request_set": "invalid-dm6-omitted",
+      "classification": "perl-binding"
+    },
+    {
+      "case_id": "DO-DM6-UNDEFINED",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "English",
+      "request_set": "invalid-dm6-undefined",
+      "classification": "perl-binding"
+    },
+    {
+      "case_id": "DO-DM6-ZERO",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "English",
+      "request_set": "invalid-dm6-zero",
+      "classification": "suspected-bug"
+    },
+    {
+      "case_id": "DO-DM6-NEGATIVE",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "English",
+      "request_set": "invalid-dm6-negative",
+      "classification": "suspected-bug"
+    },
+    {
+      "case_id": "DO-DM6-OUT32",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "English",
+      "request_set": "invalid-dm6-out32",
+      "classification": "portable-invalid"
+    },
+    {
+      "case_id": "DO-DM6-LARGE",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "English",
+      "request_set": "invalid-dm6-large",
+      "classification": "portable-invalid"
+    },
+    {
+      "case_id": "DO-DM6-FRACTION",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "English",
+      "request_set": "invalid-dm6-fraction",
+      "classification": "suspected-bug"
+    },
+    {
+      "case_id": "DO-DM6-NUMERIC-TEXT",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "English",
+      "request_set": "invalid-dm6-numeric-text",
+      "classification": "perl-binding"
+    },
+    {
+      "case_id": "DO-DM6-EMPTY",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "English",
+      "request_set": "invalid-dm6-empty",
+      "classification": "perl-binding"
+    },
+    {
+      "case_id": "DO-DM6-NONNUMERIC",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "English",
+      "request_set": "invalid-dm6-nonnumeric",
+      "classification": "perl-binding"
+    },
+    {
+      "case_id": "DO-DM6-ARRAY",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "English",
+      "request_set": "invalid-dm6-array",
+      "classification": "perl-binding"
+    },
+    {
+      "case_id": "DO-DM6-HASH",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "English",
+      "request_set": "invalid-dm6-hash",
+      "classification": "perl-binding"
+    },
+    {
+      "case_id": "DO-DM6-EXTRA",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm6",
+      "language": "English",
+      "request_set": "invalid-dm6-extra",
+      "classification": "perl-binding"
+    },
+    {
+      "case_id": "DO-DM5-OMITTED",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "English",
+      "request_set": "invalid-dm5-omitted",
+      "classification": "perl-binding"
+    },
+    {
+      "case_id": "DO-DM5-UNDEFINED",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "English",
+      "request_set": "invalid-dm5-undefined",
+      "classification": "perl-binding"
+    },
+    {
+      "case_id": "DO-DM5-ZERO",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "English",
+      "request_set": "invalid-dm5-zero",
+      "classification": "suspected-bug"
+    },
+    {
+      "case_id": "DO-DM5-NEGATIVE",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "English",
+      "request_set": "invalid-dm5-negative",
+      "classification": "suspected-bug"
+    },
+    {
+      "case_id": "DO-DM5-OUT32",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "English",
+      "request_set": "invalid-dm5-out32",
+      "classification": "compatibility-invalid"
+    },
+    {
+      "case_id": "DO-DM5-LARGE",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "English",
+      "request_set": "invalid-dm5-large",
+      "classification": "compatibility-invalid"
+    },
+    {
+      "case_id": "DO-DM5-FRACTION",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "English",
+      "request_set": "invalid-dm5-fraction",
+      "classification": "suspected-bug"
+    },
+    {
+      "case_id": "DO-DM5-NUMERIC-TEXT",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "English",
+      "request_set": "invalid-dm5-numeric-text",
+      "classification": "perl-binding"
+    },
+    {
+      "case_id": "DO-DM5-EMPTY",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "English",
+      "request_set": "invalid-dm5-empty",
+      "classification": "perl-binding"
+    },
+    {
+      "case_id": "DO-DM5-NONNUMERIC",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "English",
+      "request_set": "invalid-dm5-nonnumeric",
+      "classification": "perl-binding"
+    },
+    {
+      "case_id": "DO-DM5-ARRAY",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "English",
+      "request_set": "invalid-dm5-array",
+      "classification": "perl-binding"
+    },
+    {
+      "case_id": "DO-DM5-HASH",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "English",
+      "request_set": "invalid-dm5-hash",
+      "classification": "perl-binding"
+    },
+    {
+      "case_id": "DO-DM5-EXTRA",
+      "operation_id": "date.localized-day-ordinal",
+      "profile": "dm5",
+      "language": "English",
+      "request_set": "invalid-dm5-extra",
+      "classification": "perl-binding"
+    }
+  ]
+}

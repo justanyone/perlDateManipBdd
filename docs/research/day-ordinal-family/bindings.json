@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "status": "research-only source binding; excluded from portable implementation handoff",
+  "reference": "Date-Manip 7.00",
+  "operation_id": "date.localized-day-ordinal",
+  "bindings": [
+    {
+      "profile": "dm6",
+      "module": "Date::Manip::DM6",
+      "distribution_version": "7.00",
+      "backend_version": "7.00",
+      "callable": "Date_DaySuffix",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm:819",
+      "setup": {
+        "operation_id": "config.apply-settings",
+        "call": "Date::Manip::DM6::Date_Init",
+        "source": "Date/Manip/DM6.pm:86"
+      },
+      "metadata": {
+        "operation_id": "meta.reference-version",
+        "call": "Date::Manip::DM6::DateManipVersion",
+        "source": "Date/Manip/DM6.pm:81"
+      }
+    },
+    {
+      "profile": "dm5",
+      "module": "Date::Manip::DM5",
+      "distribution_version": "7.00",
+      "backend_version": "5.66",
+      "callable": "Date_DaySuffix",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm:3307",
+      "setup": {
+        "operation_id": "config.apply-settings",
+        "call": "Date::Manip::DM5::Date_Init",
+        "source": "Date/Manip/DM5.pm:265"
+      },
+      "metadata": {
+        "operation_id": "meta.reference-version",
+        "call": "Date::Manip::DM5::DateManipVersion",
+        "source": "Date/Manip/DM5.pm:260"
+      }
+    }
+  ],
+  "public_call_order": [
+    "config.apply-settings through the profile-specific Date_Init",
+    "meta.reference-version through the profile-specific DateManipVersion",
+    "for each executed request, date.localized-day-ordinal once in scalar context and once in list context"
+  ],
+  "error_protocol": "Neither documented facade exposes a public error observer for Date_DaySuffix. Warnings, stdout, exceptions, and process stderr are captured without inventing an error value.",
+  "return_fidelity": "Defined empty text, undefined values, text, one-element list returns, and absence of a return after exception are distinct. The configuration return is also preserved: DM6 success returns defined empty text while DM5 success returns undef.",
+  "isolation": "Each observation attempt loads and configures one backend/language in a fresh process and fresh temporary working directory. Calls never cross profiles or languages.",
+  "binding_only_feature": {
+    "path": "spec/drafts/day-ordinal/perl-binding.feature",
+    "case_ids": [
+      "DO-DM6-OMITTED",
+      "DO-DM6-UNDEFINED",
+      "DO-DM6-NUMERIC-TEXT",
+      "DO-DM6-EMPTY",
+      "DO-DM6-NONNUMERIC",
+      "DO-DM6-ARRAY",
+      "DO-DM6-HASH",
+      "DO-DM6-EXTRA",
+      "DO-DM5-OMITTED",
+      "DO-DM5-UNDEFINED",
+      "DO-DM5-NUMERIC-TEXT",
+      "DO-DM5-EMPTY",
+      "DO-DM5-NONNUMERIC",
+      "DO-DM5-ARRAY",
+      "DO-DM5-HASH",
+      "DO-DM5-EXTRA"
+    ],
+    "reason": "Omitted/undef/reference/extra Perl argument shapes, warnings, and scalar/list calling contexts are source-binding behavior."
+  }
+}

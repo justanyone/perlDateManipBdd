@@ -137,7 +137,10 @@
         "tools/probes/input-history/review.py",
         "docs/research/completeness-family/README.md",
         "spec/drafts/completeness",
-        "tools/probes/completeness-family/review.py"
+        "tools/probes/completeness-family/review.py",
+        "docs/research/day-ordinal-family/README.md",
+        "docs/research/day-ordinal-family/observations.json",
+        "docs/research/day-ordinal-family/feature-map.json"
       ],
       "partial_parsing_edges_review": "52 repeatable public edge requests integrated after independent repair and root review. Explicit setup, 48 outline-row comparisons, native failure lifecycle and binding-only warnings checked; broader domains and source coverage remain open.",
       "input_history_review": "17 repeatable public Date::input cases integrated after provenance repair, canonical-binding correction and explicit not-called configuration metadata. Reviewer requires runtime/profile/module/process evidence and checks feature literals. Constructor retention added; wider transitions remain open.",

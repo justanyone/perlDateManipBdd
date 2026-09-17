@@ -674,3 +674,20 @@ exceptions. Do not stage its three paths until repaired. pattern_repair returned
 partial_parsing owns behavior-gap-ledger. Both audits are read-only for existing
 families. Root next reviews day-ordinal and returned repairs; final executable
 adapter, whole-library coverage and all remaining obligations are still open.
+
+
+## Day ordinal integration
+
+Reviewed 56 isolated cases containing 925 public ordinal requests /1850 native
+scalar+list calls. All normal days1–31 cover16 current languages and13 successfully
+configured legacy languages. Declared legacy Catalan setup failure has no dependent
+calls and, after root repair, no fabricated return fields. Root fixed PATH and
+verified every row's exact language/profile/arguments/result/map, module hashes and
+configuration. Fresh two-attempt capture preserves all behavior. Four concrete
+binding cases replace a generic carrier statement. Real parser accepts930 examples
+including one setup failure. Legacy Italian30 and invalid numeric quirks remain
+disputed; remaining aliases/encodings/sequences/numeric partitions remain open.
+
+Active owners unchanged: coverage_setup repairs replace-time; partial_parsing builds
+behavior-gap-ledger; pattern_repair audits portable drafts. Await their stable
+results before integration. Full executable BDD suite and final coverage incomplete.
