@@ -478,3 +478,17 @@ and plain/instrumented fidelity. TZdata.pod explicitly disclaims public use;
 coordinator accepts existing generation-tool scope exclusion, retaining804raw
 files and803runtime files in accounting. Finite offset/zone/language route plan
 is documented. The whole-runtime coverage denominator is still incomplete.
+
+## Partial-parsing edge integration checkpoint
+
+Integrated52 repaired edge cases after fresh coordinator repeatability comparison.
+Corrected implicit holiday definition, default/overlap local-zone setup, initial
+overlap clock and native-versus-normalized presentation. New reviewer checks48
+outline rows,52 mappings,11 hashes,14 failure sequences,24 scalar/list success
+pairs and3 binding-only warning assertions. No BDD-run or coverage claim.
+
+All three worker handles were confirmed running this turn: partial_parsing owns
+date-set-family; coverage_setup owns fixed-offset-family; pattern_repair owns
+zone-transition-boundaries. Their outputs are not yet integrated. Continue these
+partitions and source-coverage gap discovery; complete specification and then
+harness remain required.

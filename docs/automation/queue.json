@@ -127,8 +127,13 @@
         "docs/research/partial-parsing-family/bindings.json",
         "tools/review/partial_parsing_literals.py",
         "spec/drafts/partial-parsing/",
-        "docs/research/language-family/selector-feature-map.json"
-      ]
+        "docs/research/language-family/selector-feature-map.json",
+        "docs/research/partial-parsing-edges/README.md",
+        "docs/research/partial-parsing-edges-review.md",
+        "tools/review/partial_parsing_edge_literals.py",
+        "spec/drafts/partial-parsing-edges"
+      ],
+      "partial_parsing_edges_review": "52 repeatable public edge requests integrated after independent repair and root review. Explicit setup, 48 outline-row comparisons, native failure lifecycle and binding-only warnings checked; broader domains and source coverage remain open."
     },
     {
       "id": "spec-arithmetic-deltas",

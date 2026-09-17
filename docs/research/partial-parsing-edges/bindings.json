@@ -1,0 +1,144 @@
+{
+  "schema_version": 2,
+  "status": "research-only public binding map; excluded from portable handoff",
+  "reference": "Date-Manip 7.00",
+  "fixture": "dm700-english-ascii-utc-us-2040",
+  "bindings": [
+    {
+      "operation_id": "date.parse-date-only",
+      "profile": "current-value",
+      "module": "Date::Manip::Date",
+      "callable": "parse_date",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:409",
+      "return": "numeric status; receiver mutation; public err channel",
+      "case_scope": "date gate controls, explicit zone suffixes, and retained-clock DST transitions"
+    },
+    {
+      "operation_id": "time.parse-text",
+      "profile": "current-value",
+      "module": "Date::Manip::Date",
+      "callable": "parse_time",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:375",
+      "return": "numeric status; receiver mutation; public err channel",
+      "case_scope": "zone forms, DST transitions, fractions, and invalid boundaries"
+    },
+    {
+      "operation_id": "date.parse-text",
+      "profile": "current-value",
+      "module": "Date::Manip::Date",
+      "callable": "parse",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:97",
+      "return": "numeric status; receiver mutation; public err channel",
+      "purpose": "public control for the two date-only option-reachability requests"
+    },
+    {
+      "operation_id": "date.parse-leading-tokens",
+      "profile": "current-text",
+      "module": "Date::Manip::DM6",
+      "callable": "ParseDate",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm:119",
+      "return": "scalar text; token-array mutation"
+    },
+    {
+      "operation_id": "date.parse-leading-tokens",
+      "profile": "legacy-text",
+      "module": "Date::Manip::DM5",
+      "callable": "ParseDate",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm:1346",
+      "return": "scalar text or absent value; token-array mutation"
+    }
+  ],
+  "supporting_public_calls": [
+    {
+      "callable": "Date::Manip::Obj->config",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:273",
+      "context": "scalar",
+      "purpose": "OO fixture setup; native return and err are recorded"
+    },
+    {
+      "callable": "Date::Manip::Date->parse",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:97",
+      "context": "scalar",
+      "purpose": "OO receiver initialization; also the gate-control operation"
+    },
+    {
+      "callable": "Date::Manip::Date->value",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:2607",
+      "contexts": ["scalar parsed-zone value", "list parsed-zone fields", "scalar GMT value", "list GMT fields"],
+      "purpose": "success values and ordered failure lifecycle observations"
+    },
+    {
+      "callable": "Date::Manip::Date->printf",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:4494",
+      "context": "scalar %Z|%z",
+      "purpose": "public abbreviation and numeric-offset observation"
+    },
+    {
+      "callable": "Date::Manip::Obj->err and err(1)",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:331",
+      "context": "scalar",
+      "purpose": "error snapshots, native clear return, and post-clear state"
+    },
+    {
+      "callable": "Date::Manip::Obj->version",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:351",
+      "context": "scalar",
+      "purpose": "observed OO backend version"
+    },
+    {
+      "callable": "Date::Manip::Obj->tz",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:261",
+      "context": "scalar",
+      "purpose": "public configured-zone service"
+    },
+    {
+      "callable": "Date::Manip::TZ->tzdata, tzcode, and zone",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm:212,217,861",
+      "context": "scalar",
+      "purpose": "observed zone-data versions and configured context zone"
+    },
+    {
+      "callable": "Date::Manip::DM6::Date_Init",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm:86",
+      "context": "scalar",
+      "purpose": "current functional fixture setup; native return recorded"
+    },
+    {
+      "callable": "Date::Manip::DM5::Date_Init",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm:265",
+      "context": "scalar",
+      "purpose": "legacy functional fixture setup; native return recorded"
+    },
+    {
+      "callable": "Date::Manip::DM6::DateManipVersion",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm:81",
+      "context": "scalar",
+      "purpose": "observed current functional backend version"
+    },
+    {
+      "callable": "Date::Manip::DM5::DateManipVersion",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm:260",
+      "context": "scalar",
+      "purpose": "observed legacy functional backend version"
+    }
+  ],
+  "failure_observer_order": [
+    "err after operation",
+    "value in scalar context while error is present",
+    "err after that value read",
+    "err(1) clear and its native return",
+    "err immediately after clear",
+    "value in scalar context after clear",
+    "err after the post-clear value read"
+  ],
+  "binding_only_feature": {
+    "path": "spec/drafts/partial-parsing-edges/perl-binding-warnings.feature",
+    "tags": ["source-binding", "perl-binding", "excluded-from-portable-handoff"],
+    "assertion_ids": [
+      "PPE-BIND-WARN-HOLIDAY",
+      "PPE-BIND-WARN-UNDEFINED-DM6",
+      "PPE-BIND-WARN-UNDEFINED-DM5"
+    ],
+    "reason": "Perl uninitialized-value and deprecation warnings are binding compatibility evidence, not portable date-time semantics."
+  }
+}

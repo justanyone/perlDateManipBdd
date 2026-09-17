@@ -1,0 +1,88 @@
+{
+  "schema_version": 2,
+  "status": "original public edge requests; outcomes recorded separately",
+  "fixture": "dm700-english-ascii-utc-us-2040",
+  "cases": [
+    {
+      "case_id": "PPE-DATE-GATE-NODELTA",
+      "kind": "date_gate",
+      "initial": "2039-12-31 07:08:09 Etc/UTC",
+      "text": "2 days ago",
+      "gate": "nodelta",
+      "calls": [
+        {"label":"full-enabled","operation":"parse","options":[]},
+        {"label":"full-gated","operation":"parse","options":["nodelta"]},
+        {"label":"date-only-enabled","operation":"parse_date","options":[]},
+        {"label":"date-only-gated","operation":"parse_date","options":["nodelta"]}
+      ]
+    },
+    {
+      "case_id": "PPE-DATE-GATE-NOHOLIDAYS",
+      "kind": "date_gate",
+      "initial": "2039-12-31 07:08:09 Etc/UTC",
+      "text": "Founders Day",
+      "gate": "noholidays",
+      "holiday_lines": ["Feb 29 = Founders Day"],
+      "calls": [
+        {"label":"full-enabled","operation":"parse","options":[]},
+        {"label":"full-gated","operation":"parse","options":["noholidays"]},
+        {"label":"date-only-enabled","operation":"parse_date","options":[]},
+        {"label":"date-only-gated","operation":"parse_date","options":["noholidays"]}
+      ]
+    },
+
+    {"case_id":"PPE-DATE-ZONE-RESET","kind":"oo","operation":"parse_date","initial":"2039-12-31 07:08:09 America/New_York","text":"2040-02-29","options":[]},
+    {"case_id":"PPE-DATE-ZONE-NAME","kind":"oo","operation":"parse_date","initial":"2039-12-31 07:08:09 America/New_York","text":"2040-02-29 America/New_York","options":[]},
+    {"case_id":"PPE-DATE-ZONE-OFFSET","kind":"oo","operation":"parse_date","initial":"2039-12-31 07:08:09 America/New_York","text":"2040-02-29 -05:00","options":[]},
+    {"case_id":"PPE-DATE-DST-GAP","kind":"oo","operation":"parse_date","configuration":["ForceDate=2040-02-28-10:20:30,America/New_York"],"initial":"2040-03-10 02:30:00 America/New_York","text":"2040-03-11","options":[]},
+    {"case_id":"PPE-DATE-DST-BEFORE-GAP","kind":"oo","operation":"parse_date","configuration":["ForceDate=2040-02-28-10:20:30,America/New_York"],"initial":"2040-03-10 01:30:00 America/New_York","text":"2040-03-11","options":[]},
+    {"case_id":"PPE-DATE-DST-AFTER-GAP","kind":"oo","operation":"parse_date","configuration":["ForceDate=2040-02-28-10:20:30,America/New_York"],"initial":"2040-03-10 03:30:00 America/New_York","text":"2040-03-11","options":[]},
+    {"case_id":"PPE-DATE-DST-OVERLAP","kind":"oo","operation":"parse_date","configuration":["ForceDate=2040-02-28-10:20:30,America/New_York"],"initial":"2040-11-03 01:30:00 America/New_York","text":"2040-11-04","options":[]},
+
+    {"case_id":"PPE-TIME-ZONE-NAME","kind":"oo","operation":"parse_time","initial":"2040-02-29 10:20:30 Etc/UTC","text":"16:05:09 America/New_York","options":[]},
+    {"case_id":"PPE-TIME-ZONE-OFFSET","kind":"oo","operation":"parse_time","initial":"2040-02-29 10:20:30 Etc/UTC","text":"16:05:09-05:00","options":[]},
+    {"case_id":"PPE-TIME-ZONE-ABBREVIATION","kind":"oo","operation":"parse_time","initial":"2040-02-29 10:20:30 Etc/UTC","text":"16:05:09 EST","options":[]},
+    {"case_id":"PPE-TIME-ZONE-NONISO","kind":"oo","operation":"parse_time","initial":"2040-02-29 10:20:30 Etc/UTC","text":"4:05 PM America/New_York","options":[]},
+    {"case_id":"PPE-TIME-ZONE-TRUNCATED","kind":"oo","operation":"parse_time","initial":"2040-02-29 10:20:30 Etc/UTC","text":"16 America/New_York","options":[]},
+    {"case_id":"PPE-TIME-DST-GAP","kind":"oo","operation":"parse_time","configuration":["ForceDate=2040-02-28-10:20:30,America/New_York"],"initial":"2040-03-11 01:30:00 America/New_York","text":"02:30:00","options":[]},
+    {"case_id":"PPE-TIME-DST-GAP-EXPLICIT","kind":"oo","operation":"parse_time","initial":"2040-03-11 01:30:00 America/New_York","text":"02:30:00 America/New_York","options":[]},
+    {"case_id":"PPE-TIME-DST-OVERLAP-DEFAULT","kind":"oo","operation":"parse_time","configuration":["ForceDate=2040-02-28-10:20:30,America/New_York"],"initial":"2040-11-04 00:30:00 America/New_York","text":"01:30:00","options":[]},
+    {"case_id":"PPE-TIME-DST-OVERLAP-EDT","kind":"oo","operation":"parse_time","initial":"2040-11-04 00:30:00 America/New_York","text":"01:30:00 EDT","options":[]},
+    {"case_id":"PPE-TIME-DST-OVERLAP-EST","kind":"oo","operation":"parse_time","initial":"2040-11-04 00:30:00 America/New_York","text":"01:30:00 EST","options":[]},
+
+    {"case_id":"PPE-TIME-FRAC-SECOND-ZERO","kind":"oo","operation":"parse_time","initial":"2040-02-28 10:20:30 Etc/UTC","text":"23:59:59.0","options":[]},
+    {"case_id":"PPE-TIME-FRAC-SECOND-NINE","kind":"oo","operation":"parse_time","initial":"2040-02-28 10:20:30 Etc/UTC","text":"23:59:59.9","options":[]},
+    {"case_id":"PPE-TIME-FRAC-SECOND-MANY","kind":"oo","operation":"parse_time","initial":"2040-02-28 10:20:30 Etc/UTC","text":"23:59:59.999999","options":[]},
+    {"case_id":"PPE-TIME-FRAC-MINUTE-ZERO","kind":"oo","operation":"parse_time","initial":"2040-02-28 10:20:30 Etc/UTC","text":"23:59.0","options":[]},
+    {"case_id":"PPE-TIME-FRAC-MINUTE-HALF","kind":"oo","operation":"parse_time","initial":"2040-02-28 10:20:30 Etc/UTC","text":"23:59.5","options":[]},
+    {"case_id":"PPE-TIME-FRAC-MINUTE-BELOW-SECOND","kind":"oo","operation":"parse_time","initial":"2040-02-28 10:20:30 Etc/UTC","text":"23:59.016666","options":[]},
+    {"case_id":"PPE-TIME-FRAC-MINUTE-AT-SECOND","kind":"oo","operation":"parse_time","initial":"2040-02-28 10:20:30 Etc/UTC","text":"23:59.016667","options":[]},
+    {"case_id":"PPE-TIME-FRAC-MINUTE-NEAR-CARRY","kind":"oo","operation":"parse_time","initial":"2040-02-28 10:20:30 Etc/UTC","text":"23:59.999999","options":[]},
+    {"case_id":"PPE-TIME-FRAC-HOUR-HALF","kind":"oo","operation":"parse_time","initial":"2040-02-28 10:20:30 Etc/UTC","text":"23.5","options":[]},
+    {"case_id":"PPE-TIME-FRAC-HOUR-BELOW-MINUTE","kind":"oo","operation":"parse_time","initial":"2040-02-28 10:20:30 Etc/UTC","text":"23.016666","options":[]},
+    {"case_id":"PPE-TIME-FRAC-HOUR-AT-MINUTE","kind":"oo","operation":"parse_time","initial":"2040-02-28 10:20:30 Etc/UTC","text":"23.016667","options":[]},
+    {"case_id":"PPE-TIME-FRAC-HOUR-NEAR-CARRY","kind":"oo","operation":"parse_time","initial":"2040-02-28 10:20:30 Etc/UTC","text":"23.999999","options":[]},
+    {"case_id":"PPE-TIME-24-HOUR","kind":"oo","operation":"parse_time","initial":"2040-02-28 10:20:30 Etc/UTC","text":"24:00:00","options":[]},
+    {"case_id":"PPE-TIME-FRAC-INVALID-24","kind":"oo","operation":"parse_time","initial":"2040-02-28 10:20:30 Etc/UTC","text":"24:00.1","options":[]},
+    {"case_id":"PPE-TIME-FRAC-INVALID-DOUBLE","kind":"oo","operation":"parse_time","initial":"2040-02-28 10:20:30 Etc/UTC","text":"23:59.1.2","options":[]},
+
+    {"case_id":"PPE-PREFIX-DM6-TOKEN-WHOLE-WORDS","kind":"prefix","profile":"dm6","carrier":"token-array","value":["March 1 2040","tail"],"options":[]},
+    {"case_id":"PPE-PREFIX-DM5-TOKEN-WHOLE-WORDS","kind":"prefix","profile":"dm5","carrier":"token-array","value":["March 1 2040","tail"],"options":[]},
+    {"case_id":"PPE-PREFIX-DM6-EMPTY-FIRST","kind":"prefix","profile":"dm6","carrier":"token-array","value":["","2040-02-29","tail"],"options":[]},
+    {"case_id":"PPE-PREFIX-DM5-EMPTY-FIRST","kind":"prefix","profile":"dm5","carrier":"token-array","value":["","2040-02-29","tail"],"options":[]},
+    {"case_id":"PPE-PREFIX-DM6-EMPTY-MIDDLE","kind":"prefix","profile":"dm6","carrier":"token-array","value":["March","","1","2040","tail"],"options":[]},
+    {"case_id":"PPE-PREFIX-DM5-EMPTY-MIDDLE","kind":"prefix","profile":"dm5","carrier":"token-array","value":["March","","1","2040","tail"],"options":[]},
+    {"case_id":"PPE-PREFIX-DM6-DATE-TIME-LONGEST","kind":"prefix","profile":"dm6","carrier":"token-array","value":["March","1","2040","16:05","tail"],"options":[]},
+    {"case_id":"PPE-PREFIX-DM5-DATE-TIME-LONGEST","kind":"prefix","profile":"dm5","carrier":"token-array","value":["March","1","2040","16:05","tail"],"options":[]},
+    {"case_id":"PPE-PREFIX-DM6-AMBIGUOUS-NUMERIC","kind":"prefix","profile":"dm6","carrier":"token-array","value":["10","11","12","tail"],"options":[]},
+    {"case_id":"PPE-PREFIX-DM5-AMBIGUOUS-NUMERIC","kind":"prefix","profile":"dm5","carrier":"token-array","value":["10","11","12","tail"],"options":[]},
+    {"case_id":"PPE-PREFIX-DM6-SCALAR-SUFFIX","kind":"prefix","profile":"dm6","carrier":"scalar-ref","value":"March 1 2040 tail","options":[]},
+    {"case_id":"PPE-PREFIX-DM5-SCALAR-SUFFIX","kind":"prefix","profile":"dm5","carrier":"scalar-ref","value":"March 1 2040 tail","options":[]},
+    {"case_id":"PPE-PREFIX-DM6-PLAIN-SUFFIX","kind":"prefix","profile":"dm6","carrier":"plain","value":"March 1 2040 tail","options":[]},
+    {"case_id":"PPE-PREFIX-DM5-PLAIN-SUFFIX","kind":"prefix","profile":"dm5","carrier":"plain","value":"March 1 2040 tail","options":[]},
+    {"case_id":"PPE-PREFIX-DM6-NUMERIC-TOKEN","kind":"prefix","profile":"dm6","carrier":"token-array","value":[2040,"tail"],"options":[]},
+    {"case_id":"PPE-PREFIX-DM5-NUMERIC-TOKEN","kind":"prefix","profile":"dm5","carrier":"token-array","value":[2040,"tail"],"options":[]},
+    {"case_id":"PPE-PREFIX-DM6-UNDEFINED-TOKEN","kind":"prefix","profile":"dm6","carrier":"token-array","value":[null,"2040-02-29","tail"],"options":[]},
+    {"case_id":"PPE-PREFIX-DM5-UNDEFINED-TOKEN","kind":"prefix","profile":"dm5","carrier":"token-array","value":[null,"2040-02-29","tail"],"options":[]}
+  ]
+}

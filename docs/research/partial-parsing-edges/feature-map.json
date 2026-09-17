@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "status": "manually reviewed portable case map and excluded Perl binding assertions",
+  "portable_features": {
+    "spec/drafts/partial-parsing-edges/date-only-zones-and-gates.feature": [
+      "PPE-DATE-GATE-NODELTA", "PPE-DATE-GATE-NOHOLIDAYS", "PPE-DATE-ZONE-RESET",
+      "PPE-DATE-ZONE-NAME", "PPE-DATE-ZONE-OFFSET", "PPE-DATE-DST-GAP",
+      "PPE-DATE-DST-BEFORE-GAP", "PPE-DATE-DST-AFTER-GAP", "PPE-DATE-DST-OVERLAP"
+    ],
+    "spec/drafts/partial-parsing-edges/time-only-zones-and-fractions.feature": [
+      "PPE-TIME-ZONE-NAME", "PPE-TIME-ZONE-OFFSET", "PPE-TIME-ZONE-ABBREVIATION",
+      "PPE-TIME-ZONE-NONISO", "PPE-TIME-ZONE-TRUNCATED", "PPE-TIME-DST-GAP",
+      "PPE-TIME-DST-GAP-EXPLICIT", "PPE-TIME-DST-OVERLAP-DEFAULT",
+      "PPE-TIME-DST-OVERLAP-EDT", "PPE-TIME-DST-OVERLAP-EST",
+      "PPE-TIME-FRAC-SECOND-ZERO", "PPE-TIME-FRAC-SECOND-NINE",
+      "PPE-TIME-FRAC-SECOND-MANY", "PPE-TIME-FRAC-MINUTE-ZERO",
+      "PPE-TIME-FRAC-MINUTE-HALF", "PPE-TIME-FRAC-MINUTE-BELOW-SECOND",
+      "PPE-TIME-FRAC-MINUTE-AT-SECOND", "PPE-TIME-FRAC-MINUTE-NEAR-CARRY",
+      "PPE-TIME-FRAC-HOUR-HALF", "PPE-TIME-FRAC-HOUR-BELOW-MINUTE",
+      "PPE-TIME-FRAC-HOUR-AT-MINUTE", "PPE-TIME-FRAC-HOUR-NEAR-CARRY",
+      "PPE-TIME-24-HOUR", "PPE-TIME-FRAC-INVALID-24", "PPE-TIME-FRAC-INVALID-DOUBLE"
+    ],
+    "spec/drafts/partial-parsing-edges/leading-token-shapes.feature": [
+      "PPE-PREFIX-DM6-TOKEN-WHOLE-WORDS", "PPE-PREFIX-DM5-TOKEN-WHOLE-WORDS",
+      "PPE-PREFIX-DM6-EMPTY-FIRST", "PPE-PREFIX-DM5-EMPTY-FIRST",
+      "PPE-PREFIX-DM6-EMPTY-MIDDLE", "PPE-PREFIX-DM5-EMPTY-MIDDLE",
+      "PPE-PREFIX-DM6-DATE-TIME-LONGEST", "PPE-PREFIX-DM5-DATE-TIME-LONGEST",
+      "PPE-PREFIX-DM6-AMBIGUOUS-NUMERIC", "PPE-PREFIX-DM5-AMBIGUOUS-NUMERIC",
+      "PPE-PREFIX-DM6-SCALAR-SUFFIX", "PPE-PREFIX-DM5-SCALAR-SUFFIX",
+      "PPE-PREFIX-DM6-PLAIN-SUFFIX", "PPE-PREFIX-DM5-PLAIN-SUFFIX",
+      "PPE-PREFIX-DM6-NUMERIC-TOKEN", "PPE-PREFIX-DM5-NUMERIC-TOKEN",
+      "PPE-PREFIX-DM6-UNDEFINED-TOKEN", "PPE-PREFIX-DM5-UNDEFINED-TOKEN"
+    ]
+  },
+  "binding_only_feature": {
+    "path": "spec/drafts/partial-parsing-edges/perl-binding-warnings.feature",
+    "tags": ["source-binding", "perl-binding", "excluded-from-portable-handoff"],
+    "assertions": [
+      {
+        "assertion_id": "PPE-BIND-WARN-HOLIDAY",
+        "source_case_id": "PPE-DATE-GATE-NOHOLIDAYS"
+      },
+      {
+        "assertion_id": "PPE-BIND-WARN-UNDEFINED-DM6",
+        "source_case_id": "PPE-PREFIX-DM6-UNDEFINED-TOKEN"
+      },
+      {
+        "assertion_id": "PPE-BIND-WARN-UNDEFINED-DM5",
+        "source_case_id": "PPE-PREFIX-DM5-UNDEFINED-TOKEN"
+      }
+    ]
+  }
+}
