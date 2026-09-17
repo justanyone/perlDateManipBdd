@@ -2,7 +2,18 @@
 Feature: Retrieve recurrence events through indexed, navigated, and functional routes
 
   Background:
-    Given the named recurrence fixture "utc-working-week-2040"
+    Given the named recurrence fixture "utc-working-week-2040" has:
+      | setting                 | value                       |
+      | input language          | English                     |
+      | time zone               | Etc/UTC                     |
+      | reference clock         | 2040-02-28 10:20:30         |
+      | numeric date ordering   | month then day              |
+      | omitted time            | midnight                    |
+      | first day of week       | Monday                      |
+      | first week rule         | week containing January 4   |
+      | working days            | Monday through Friday       |
+      | working hours           | 09:00 through 17:00         |
+      | holidays and events     | none                        |
 
   @RECUR-NTH-MISSING
   Scenario: An absent calendar position has no event without a lookup error

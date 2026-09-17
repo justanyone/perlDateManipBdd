@@ -928,3 +928,19 @@ scope wording to exclude direct entrypoints only, retaining source coverage. The
 fixed-commit397-partition ledger remains historical until next deliberate refresh.
 Language worker was confirmed terminal, then explicitly restarted to correct six
 failed setup return placeholders; recurrence/configuration workers remain active.
+
+## Recurrence portability and interrupted-call evidence integration
+
+Root accepted all69 original portable recurrence IDs,49 table rows and one excluded
+native diagnostic scenario. Every feature defines the recurrence fixture; reviewer
+derives it from recorded OO profile and checks exact impossible-February request
+literals. Six modifier errors are typed. Probe now distinguishes interrupted next
+lookup (no returned fields) from completed absent values. Root fixed runner PATH,
+repeated every case twice in session20955 (terminal exit0), and proved all36 old
+observations equal after only correcting that return-presence representation.
+Current evidence /tmp/recurrence-root-final.json copied into observations. Historical
+coverage unchanged. Reviewer and70 expanded parser cases pass without warnings.
+
+partial_parsing now owns new leap-year public behavior batch. Configuration worker
+is clarifying kind-query predicate order/service availability; language worker
+repairs failed initialization return semantics. All final gates remain open.

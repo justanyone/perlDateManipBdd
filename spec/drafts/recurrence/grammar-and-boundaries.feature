@@ -3,7 +3,18 @@ Feature: Interpret finite recurrence frequency and field inputs
   Each assertion below is a pinned-reference observation awaiting semantic review.
 
   Background:
-    Given the named recurrence fixture "utc-working-week-2040"
+    Given the named recurrence fixture "utc-working-week-2040" has:
+      | setting                 | value                       |
+      | input language          | English                     |
+      | time zone               | Etc/UTC                     |
+      | reference clock         | 2040-02-28 10:20:30         |
+      | numeric date ordering   | month then day              |
+      | omitted time            | midnight                    |
+      | first day of week       | Monday                      |
+      | first week rule         | week containing January 4   |
+      | working days            | Monday through Friday       |
+      | working hours           | 09:00 through 17:00         |
+      | holidays and events     | none                        |
 
   Scenario Outline: Interpret frequency form <case>
     Given a fresh recurrence without an anchor
@@ -89,9 +100,9 @@ Feature: Interpret finite recurrence frequency and field inputs
     And enumeration returns exactly "2040-02-28 00:00:00" in "Etc/UTC"
 
   @RECUR-MAX-ATTEMPTS-EXCEPTION @compatibility @disputed
-  Scenario: A one-attempt impossible February selection raises a runtime exception
+  Scenario: A one-attempt impossible February selection does not complete its public lookup
     Given the maximum recurrence attempts setting is 1
     And a recurrence with frequency text "1*2:0:30:0:0:0" is anchored at "2040-02-01 00:00:00" in "Etc/UTC"
     When I request the next event
-    Then execution raises a diagnostic containing "Can't use an undefined value as an ARRAY reference"
-    And no lookup error is returned
+    Then the public lookup call does not complete
+    And neither an event value nor a lookup-error value is returned

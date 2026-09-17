@@ -291,11 +291,17 @@ if ($case =~ /^modifier-(pd|pt|nd|nt|wd|fd|bd|fw|bw|cwd|cwn|cwp|nwd|pwd|dwd|ibd|
     $out{attempt_frequency_status} = $attempt->frequency('1*2:0:30:0:0:0');
     $out{attempt_base_status} = $attempt->basedate('2040-02-01 00:00:00');
     my ($attempt_date, $attempt_error);
-    my $attempt_exception = eval { ($attempt_date, $attempt_error) = $attempt->next(); 1 } ? undef : $@;
-    $out{attempt_next} = {
-        date => date_value($attempt_date), lookup_error => $attempt_error,
+    my $attempt_completed = eval { ($attempt_date, $attempt_error) = $attempt->next(); 1 };
+    my $attempt_exception = $attempt_completed ? undef : $@;
+    my %attempt_next = (
+        call_completed => $attempt_completed ? JSON::PP::true : JSON::PP::false,
         object_error => scalar $attempt->err(), exception => $attempt_exception,
-    };
+    );
+    if ($attempt_completed) {
+        $attempt_next{date} = date_value($attempt_date);
+        $attempt_next{lookup_error} = $attempt_error;
+    }
+    $out{attempt_next} = \%attempt_next;
     $out{attempt_state} = recurrence_state($attempt);
 } elsif ($case eq 'modifier-boundaries-order-and-recovery') {
     my @boundary_rows;

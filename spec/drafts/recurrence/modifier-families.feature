@@ -4,7 +4,18 @@ Feature: Apply one recurrence modifier to a candidate event
   repeatable observation awaiting semantic review.
 
   Background:
-    Given the named recurrence fixture "utc-working-week-2040"
+    Given the named recurrence fixture "utc-working-week-2040" has:
+      | setting                 | value                       |
+      | input language          | English                     |
+      | time zone               | Etc/UTC                     |
+      | reference clock         | 2040-02-28 10:20:30         |
+      | numeric date ordering   | month then day              |
+      | omitted time            | midnight                    |
+      | first day of week       | Monday                      |
+      | first week rule         | week containing January 4   |
+      | working days            | Monday through Friday       |
+      | working hours           | 09:00 through 17:00         |
+      | holidays and events     | none                        |
     And a recurrence has frequency text "0:0:0:1:0:0:0"
 
   Scenario Outline: Apply modifier family <case>
@@ -75,18 +86,18 @@ Feature: Apply one recurrence modifier to a candidate event
     And its requested anchor is "2040-04-13 12:34:56" in "Etc/UTC"
     When I ask for indexed event 0
     Then modifier installation reports status <status>
-    And the object error is "<error>"
+    And the object error is <error>
     And the returned event value is "<event>"
     And the lookup error is "<lookup>"
 
     Examples:
-      | case                    | modifier | status | error                              | event               | lookup             |
-      | RECUR-MOD-PD-ZERO       | PD0      | 1      | [modifiers] Invalid modifier: pd0 | absent              | Invalid recurrence |
-      | RECUR-MOD-PD-EIGHT      | PD8      | 1      | [modifiers] Invalid modifier: pd8 | absent              | Invalid recurrence |
-      | RECUR-MOD-FD-ZERO       | FD0      | 0      |                                    | 2040-04-13 12:34:56 | 0                  |
-      | RECUR-MOD-FW-ZERO       | FW0      | 0      |                                    | 2040-04-13 12:34:56 | 0                  |
-      | RECUR-MOD-IW-ZERO       | IW0      | 1      | [modifiers] Invalid modifier: iw0 | absent              | Invalid recurrence |
-      | RECUR-MOD-IW-EIGHT      | IW8      | 1      | [modifiers] Invalid modifier: iw8 | absent              | Invalid recurrence |
+      | case                    | modifier | status | error                                     | event               | lookup             |
+      | RECUR-MOD-PD-ZERO       | PD0      | 1      | text "[modifiers] Invalid modifier: pd0" | absent              | Invalid recurrence |
+      | RECUR-MOD-PD-EIGHT      | PD8      | 1      | text "[modifiers] Invalid modifier: pd8" | absent              | Invalid recurrence |
+      | RECUR-MOD-FD-ZERO       | FD0      | 0      | empty text                                | 2040-04-13 12:34:56 | 0                  |
+      | RECUR-MOD-FW-ZERO       | FW0      | 0      | empty text                                | 2040-04-13 12:34:56 | 0                  |
+      | RECUR-MOD-IW-ZERO       | IW0      | 1      | text "[modifiers] Invalid modifier: iw0" | absent              | Invalid recurrence |
+      | RECUR-MOD-IW-EIGHT      | IW8      | 1      | text "[modifiers] Invalid modifier: iw8" | absent              | Invalid recurrence |
 
   Scenario Outline: Modifier order changes a candidate outcome for <case>
     Given a recurrence with frequency text "0:0:0:1:0:0:0"

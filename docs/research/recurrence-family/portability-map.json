@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "status": "review map for the recurrence portability repairs; no new behavior or evidence",
+  "fixture": {
+    "fixture_id": "utc-working-week-2040",
+    "settings": {
+      "input language": "English",
+      "time zone": "Etc/UTC",
+      "reference clock": "2040-02-28 10:20:30",
+      "numeric date ordering": "month then day",
+      "omitted time": "midnight",
+      "first day of week": "Monday",
+      "first week rule": "week containing January 4",
+      "working days": "Monday through Friday",
+      "working hours": "09:00 through 17:00",
+      "holidays and events": "none"
+    },
+    "defined_in": [
+      "spec/drafts/recurrence/lifecycle.feature",
+      "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "spec/drafts/recurrence/modifier-families.feature",
+      "spec/drafts/recurrence/enumeration-and-compatibility.feature",
+      "spec/drafts/recurrence/perl-binding.feature"
+    ]
+  },
+  "impossible_february": {
+    "portable": {
+      "case_id": "RECUR-MAX-ATTEMPTS-EXCEPTION",
+      "classification": "compatibility/disputed",
+      "public_operation_id": "recur.next-occurrence",
+      "request": {
+        "maximum_recurrence_attempts": 1,
+        "frequency_text": "1*2:0:30:0:0:0",
+        "requested_anchor": "2040-02-01 00:00:00 Etc/UTC",
+        "direction": "next"
+      },
+      "normalized_outcome": {
+        "call_completion": "interrupted before return",
+        "event_return": "no return value",
+        "lookup_error_return": "no return value"
+      },
+      "normalization_rule": "Call completion and return presence are portable adapter observations. The diagnostic text and exception type are not portable.",
+      "evidence": {
+        "selector": "range-and-attempt-limits:attempt_next",
+        "call_completed": false,
+        "return_fields_present": false,
+        "exception_present": true,
+        "capture_interpretation": "No event or lookup-error return field is emitted when the public call is interrupted. Historical null fields were unassigned probe placeholders, not returned absent values."
+      }
+    },
+    "perl_binding": {
+      "binding_case_id": "RECUR-BIND-MAX-ATTEMPTS-DIAGNOSTIC",
+      "excluded_from_portable_handoff": true,
+      "public_operation_id": "recur.next-occurrence",
+      "source_binding": "Date::Manip::Recur public next() call",
+      "diagnostic_contains": "Can't use an undefined value as an ARRAY reference",
+      "evidence_selector": "range-and-attempt-limits:attempt_next.exception"
+    }
+  },
+  "modifier_boundary_rows": [
+    {
+      "case_id": "RECUR-MOD-PD-ZERO",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "request": {
+        "frequency_text": "0:0:0:1:0:0:0",
+        "modifier_text": "PD0",
+        "requested_anchor": "2040-04-13 12:34:56 Etc/UTC",
+        "index": 0
+      },
+      "outcome": {
+        "modifier_status": 1,
+        "object_error_literal": "text \"[modifiers] Invalid modifier: pd0\"",
+        "event_literal": "absent value",
+        "lookup_error_literal": "text \"Invalid recurrence\""
+      },
+      "evidence_selector": "modifier-boundaries-order-and-recovery:modifier_boundaries[PD0]"
+    },
+    {
+      "case_id": "RECUR-MOD-PD-EIGHT",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "request": {
+        "frequency_text": "0:0:0:1:0:0:0",
+        "modifier_text": "PD8",
+        "requested_anchor": "2040-04-13 12:34:56 Etc/UTC",
+        "index": 0
+      },
+      "outcome": {
+        "modifier_status": 1,
+        "object_error_literal": "text \"[modifiers] Invalid modifier: pd8\"",
+        "event_literal": "absent value",
+        "lookup_error_literal": "text \"Invalid recurrence\""
+      },
+      "evidence_selector": "modifier-boundaries-order-and-recovery:modifier_boundaries[PD8]"
+    },
+    {
+      "case_id": "RECUR-MOD-FD-ZERO",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "request": {
+        "frequency_text": "0:0:0:1:0:0:0",
+        "modifier_text": "FD0",
+        "requested_anchor": "2040-04-13 12:34:56 Etc/UTC",
+        "index": 0
+      },
+      "outcome": {
+        "modifier_status": 0,
+        "object_error_literal": "empty text",
+        "event_literal": "civil date-time \"2040-04-13 12:34:56 Etc/UTC\"",
+        "lookup_error_literal": "number 0"
+      },
+      "evidence_selector": "modifier-boundaries-order-and-recovery:modifier_boundaries[FD0]"
+    },
+    {
+      "case_id": "RECUR-MOD-FW-ZERO",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "request": {
+        "frequency_text": "0:0:0:1:0:0:0",
+        "modifier_text": "FW0",
+        "requested_anchor": "2040-04-13 12:34:56 Etc/UTC",
+        "index": 0
+      },
+      "outcome": {
+        "modifier_status": 0,
+        "object_error_literal": "empty text",
+        "event_literal": "civil date-time \"2040-04-13 12:34:56 Etc/UTC\"",
+        "lookup_error_literal": "number 0"
+      },
+      "evidence_selector": "modifier-boundaries-order-and-recovery:modifier_boundaries[FW0]"
+    },
+    {
+      "case_id": "RECUR-MOD-IW-ZERO",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "request": {
+        "frequency_text": "0:0:0:1:0:0:0",
+        "modifier_text": "IW0",
+        "requested_anchor": "2040-04-13 12:34:56 Etc/UTC",
+        "index": 0
+      },
+      "outcome": {
+        "modifier_status": 1,
+        "object_error_literal": "text \"[modifiers] Invalid modifier: iw0\"",
+        "event_literal": "absent value",
+        "lookup_error_literal": "text \"Invalid recurrence\""
+      },
+      "evidence_selector": "modifier-boundaries-order-and-recovery:modifier_boundaries[IW0]"
+    },
+    {
+      "case_id": "RECUR-MOD-IW-EIGHT",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "request": {
+        "frequency_text": "0:0:0:1:0:0:0",
+        "modifier_text": "IW8",
+        "requested_anchor": "2040-04-13 12:34:56 Etc/UTC",
+        "index": 0
+      },
+      "outcome": {
+        "modifier_status": 1,
+        "object_error_literal": "text \"[modifiers] Invalid modifier: iw8\"",
+        "event_literal": "absent value",
+        "lookup_error_literal": "text \"Invalid recurrence\""
+      },
+      "evidence_selector": "modifier-boundaries-order-and-recovery:modifier_boundaries[IW8]"
+    }
+  ],
+  "preservation": {
+    "original_portable_case_ids": 69,
+    "new_portable_behaviors": 0,
+    "new_reference_observations": 0
+  },
+  "capture_schema_repair": {
+    "case_id": "range-and-attempt-limits",
+    "field": "attempt_next",
+    "prior_representation": {
+      "date": null,
+      "lookup_error": null,
+      "meaning": "unassigned capture placeholders after interruption"
+    },
+    "current_representation": {
+      "call_completed": false,
+      "date_field": "omitted",
+      "lookup_error_field": "omitted"
+    },
+    "fresh_independent_captures": 2,
+    "fresh_captures_identical": true,
+    "comparison": "All fields in all 36 observations were identical after ignoring the probe hash and the corrected attempt_next completion/return-presence representation."
+  }
+}

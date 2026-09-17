@@ -4,14 +4,14 @@
   "reference_profile_record": "docs/automation/reference-profiles.json",
   "reference_profile_sha256": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
   "probe": "tools/probes/recurrence-family/probe.pl",
-  "probe_sha256": "b20c68a3bd63884a21c89c8eebf645d1625dfb56e37e236bcbebd594fdcf8ad0",
+  "probe_sha256": "ed7b09cbbd14f8ac4ec1c01273d9892872a86b7b13020f23b50edfc6b5954906",
   "execution": {
     "command": "python3 tools/probes/recurrence-family/run.py",
     "separate_process_per_case": true,
     "repetitions": 2,
     "timeout_seconds": 15,
     "environment": {
-      "PATH": "/home/kevin/.local/bin:/home/kevin/.codex/tmp/arg0/codex-arg0F2Ouqr:/home/kevin/.local/bin:/home/kevin/.cargo/bin:/home/kevin/.local/bin:/home/kevin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/kevin/.vscode/extensions/openai.chatgpt-26.908.40401-linux-x64/bin/linux-x86_64",
+      "PATH": "/usr/bin:/bin",
       "PERL5LIB": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5",
       "TZ": "Etc/UTC",
       "LANG": "C.UTF-8",
@@ -1469,9 +1469,8 @@
       "attempt_base_status": 0,
       "attempt_frequency_status": 0,
       "attempt_next": {
-        "date": null,
+        "call_completed": false,
         "exception": "Can't use an undefined value as an ARRAY reference at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm line 2682, <$profile_fh> line 1.\n",
-        "lookup_error": null,
         "object_error": ""
       },
       "attempt_state": {

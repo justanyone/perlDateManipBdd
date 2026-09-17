@@ -1,0 +1,975 @@
+{
+  "schema_version": 1,
+  "status": "research mapping; preserves all 69 original portable case IDs and separates one Perl-only diagnostic case",
+  "evidence": "docs/research/recurrence-family/observations.json plus the legacy ambiguity record named by coverage.json",
+  "portable_case_count": 69,
+  "portable_cases": [
+    {
+      "case_id": "RECUR-CREATE-EMPTY",
+      "feature": "spec/drafts/recurrence/lifecycle.feature",
+      "public_operation_ids": [
+        "recur.create"
+      ],
+      "contract_partitions": [
+        "recur.create.01"
+      ],
+      "evidence_selector": "create-and-empty-read",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-CREATE-DERIVED",
+      "feature": "spec/drafts/recurrence/lifecycle.feature",
+      "public_operation_ids": [
+        "recur.create"
+      ],
+      "contract_partitions": [
+        "recur.create.02",
+        "recur.create.04"
+      ],
+      "evidence_selector": "create-from-date-context",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-PARSE-RECOVER",
+      "feature": "spec/drafts/recurrence/lifecycle.feature",
+      "public_operation_ids": [
+        "recur.parse",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.parse.02",
+        "recur.parse.08",
+        "recur.parse.09",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "parse-serialized-and-recovery",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-FIELD-RESET",
+      "feature": "spec/drafts/recurrence/lifecycle.feature",
+      "public_operation_ids": [
+        "recur.set-frequency",
+        "recur.set-start",
+        "recur.set-end",
+        "recur.set-base-date",
+        "recur.set-modifiers"
+      ],
+      "contract_partitions": [
+        "recur.set-frequency.01",
+        "recur.set-frequency.03",
+        "recur.set-start.01",
+        "recur.set-end.01",
+        "recur.set-base-date.01",
+        "recur.set-modifiers.01"
+      ],
+      "evidence_selector": "field-read-replace",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-PD",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-pd",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-PT",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-pt",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-ND",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-nd",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-NT",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-nt",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-WD",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-wd",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-FD",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-fd",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-BD",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-bd",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-FW",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-fw",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-BW",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-bw",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-CWD",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-cwd",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-CWN",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-cwn",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-CWP",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-cwp",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-NWD",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-nwd",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-PWD",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-pwd",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-DWD",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-dwd",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-IBD",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-ibd",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-NBD",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-nbd",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-IW",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-iw",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-NW",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.03"
+      ],
+      "evidence_selector": "modifier-nw",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-EASTER",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-easter",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-CARRIER-UPPERCASE",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.03",
+        "recur.set-modifiers.04",
+        "recur.set-modifiers.08",
+        "recur.occurrence-at-index.10"
+      ],
+      "evidence_selector": "modifier-uppercase-string; modifier-uppercase-list",
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "RECUR-MOD-CLEARS-ANCHOR",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.set-base-date",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.09",
+        "recur.set-base-date.06",
+        "recur.occurrence-at-index.06"
+      ],
+      "evidence_selector": "modifier-clears-anchor",
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "RECUR-NTH-MISSING",
+      "feature": "spec/drafts/recurrence/enumeration-and-compatibility.feature",
+      "public_operation_ids": [
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.occurrence-at-index.01",
+        "recur.occurrence-at-index.03"
+      ],
+      "evidence_selector": "nth-missing-and-indexes",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-NAV-SKIP",
+      "feature": "spec/drafts/recurrence/enumeration-and-compatibility.feature",
+      "public_operation_ids": [
+        "recur.next-occurrence",
+        "recur.previous-occurrence"
+      ],
+      "contract_partitions": [
+        "recur.next-occurrence.03",
+        "recur.next-occurrence.04",
+        "recur.previous-occurrence.03",
+        "recur.previous-occurrence.04"
+      ],
+      "evidence_selector": "navigation-and-bounds",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-DATES-TEMPORARY",
+      "feature": "spec/drafts/recurrence/enumeration-and-compatibility.feature",
+      "public_operation_ids": [
+        "recur.list-occurrences"
+      ],
+      "contract_partitions": [
+        "recur.list-occurrences.01",
+        "recur.list-occurrences.04",
+        "recur.list-occurrences.05"
+      ],
+      "evidence_selector": "dates-temporary-range-and-empty-filter",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-DATES-EMPTY",
+      "feature": "spec/drafts/recurrence/enumeration-and-compatibility.feature",
+      "public_operation_ids": [
+        "recur.list-occurrences",
+        "recur.set-modifiers"
+      ],
+      "contract_partitions": [
+        "recur.list-occurrences.06",
+        "recur.set-modifiers.02"
+      ],
+      "evidence_selector": "dates-temporary-range-and-empty-filter",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-FUNC-DM5-ENDPOINT",
+      "feature": "spec/drafts/recurrence/enumeration-and-compatibility.feature",
+      "public_operation_ids": [
+        "recur.parse-and-enumerate"
+      ],
+      "contract_partitions": [
+        "recur.parse-and-enumerate.06"
+      ],
+      "evidence_selector": "functional-dm5-endpoint",
+      "classification": "reference-observed draft",
+      "profile": "dm5-compatibility"
+    },
+    {
+      "case_id": "RECUR-FUNC-DM6-ENDPOINT",
+      "feature": "spec/drafts/recurrence/enumeration-and-compatibility.feature",
+      "public_operation_ids": [
+        "recur.parse-and-enumerate"
+      ],
+      "contract_partitions": [
+        "recur.parse-and-enumerate.06"
+      ],
+      "evidence_selector": "functional-dm6-endpoint",
+      "classification": "reference-observed draft",
+      "profile": "dm6-reference"
+    },
+    {
+      "case_id": "RECUR-FUNC-DM5-DESCRIPTION",
+      "feature": "spec/drafts/recurrence/enumeration-and-compatibility.feature",
+      "public_operation_ids": [
+        "recur.parse-and-enumerate"
+      ],
+      "contract_partitions": [
+        "recur.parse-and-enumerate.01"
+      ],
+      "evidence_selector": "functional-dm5-description",
+      "classification": "reference-observed draft",
+      "profile": "dm5-compatibility"
+    },
+    {
+      "case_id": "RECUR-FUNC-DM6-DESCRIPTION",
+      "feature": "spec/drafts/recurrence/enumeration-and-compatibility.feature",
+      "public_operation_ids": [
+        "recur.parse-and-enumerate"
+      ],
+      "contract_partitions": [
+        "recur.parse-and-enumerate.01"
+      ],
+      "evidence_selector": "functional-dm6-description",
+      "classification": "reference-observed draft",
+      "profile": "dm6-reference"
+    },
+    {
+      "case_id": "RECUR-GRAMMAR-DAILY-INTERVAL",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-frequency",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-frequency.02",
+        "recur.set-frequency.05",
+        "recur.occurrence-at-index.01"
+      ],
+      "evidence_selector": "frequency-numeric-and-written-shapes:daily-two-day-interval",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-GRAMMAR-MONTHLY-DAY",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-frequency",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-frequency.05",
+        "recur.occurrence-at-index.03"
+      ],
+      "evidence_selector": "frequency-numeric-and-written-shapes:monthly-selected-day",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-GRAMMAR-WEEKLY-DAY",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-frequency",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-frequency.05",
+        "recur.occurrence-at-index.01"
+      ],
+      "evidence_selector": "frequency-numeric-and-written-shapes:weekly-selected-weekday",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-GRAMMAR-FIXED-DATE",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-frequency",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-frequency.05",
+        "recur.occurrence-at-index.02"
+      ],
+      "evidence_selector": "frequency-numeric-and-written-shapes:fixed-calendar-selection",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-GRAMMAR-WRITTEN-WEEK",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-frequency",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-frequency.02",
+        "recur.set-frequency.05"
+      ],
+      "evidence_selector": "frequency-numeric-and-written-shapes:written-weekday-in-month",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-GRAMMAR-WRITTEN-ORDINAL",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-frequency",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-frequency.02",
+        "recur.set-frequency.05"
+      ],
+      "evidence_selector": "frequency-numeric-and-written-shapes:written-ordinal-weekday",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-GRAMMAR-WRITTEN-LAST",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-frequency",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-frequency.02",
+        "recur.set-frequency.05"
+      ],
+      "evidence_selector": "frequency-numeric-and-written-shapes:written-last-day",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-GRAMMAR-WRITTEN-EVERY",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-frequency",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-frequency.02",
+        "recur.set-frequency.05"
+      ],
+      "evidence_selector": "frequency-numeric-and-written-shapes:written-ordinal-day-interval",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-FREQ-INVALID-TOKEN",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-frequency"
+      ],
+      "contract_partitions": [
+        "recur.set-frequency.04",
+        "recur.set-frequency.05"
+      ],
+      "evidence_selector": "frequency-invalid-and-recovery:invalid_frequency_rows[0]",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-FREQ-INVALID-FIELDS",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-frequency"
+      ],
+      "contract_partitions": [
+        "recur.set-frequency.04",
+        "recur.set-frequency.05"
+      ],
+      "evidence_selector": "frequency-invalid-and-recovery:invalid_frequency_rows[1]",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-FREQ-INVALID-SPLITS",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-frequency"
+      ],
+      "contract_partitions": [
+        "recur.set-frequency.04",
+        "recur.set-frequency.05"
+      ],
+      "evidence_selector": "frequency-invalid-and-recovery:invalid_frequency_rows[2]",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-FREQ-INVALID-WEEKDAY",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-frequency"
+      ],
+      "contract_partitions": [
+        "recur.set-frequency.04",
+        "recur.set-frequency.05"
+      ],
+      "evidence_selector": "frequency-invalid-and-recovery:invalid_frequency_rows[3]",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-FREQ-RECOVERY",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-frequency"
+      ],
+      "contract_partitions": [
+        "recur.set-frequency.04"
+      ],
+      "evidence_selector": "frequency-invalid-and-recovery",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-SETTER-START-TEXT",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-start"
+      ],
+      "contract_partitions": [
+        "recur.set-start.02"
+      ],
+      "evidence_selector": "typed-setter-equivalence:start/text",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-SETTER-START-TYPED",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-start"
+      ],
+      "contract_partitions": [
+        "recur.set-start.02"
+      ],
+      "evidence_selector": "typed-setter-equivalence:start/typed-date",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-SETTER-END-TEXT",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-end"
+      ],
+      "contract_partitions": [
+        "recur.set-end.02"
+      ],
+      "evidence_selector": "typed-setter-equivalence:end/text",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-SETTER-END-TYPED",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-end"
+      ],
+      "contract_partitions": [
+        "recur.set-end.02"
+      ],
+      "evidence_selector": "typed-setter-equivalence:end/typed-date",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-SETTER-BASE-TEXT",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-base-date"
+      ],
+      "contract_partitions": [
+        "recur.set-base-date.02"
+      ],
+      "evidence_selector": "typed-setter-equivalence:basedate/text",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-SETTER-BASE-TYPED",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-base-date"
+      ],
+      "contract_partitions": [
+        "recur.set-base-date.02"
+      ],
+      "evidence_selector": "typed-setter-equivalence:basedate/typed-date",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-SETTER-START-INVALID",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-start"
+      ],
+      "contract_partitions": [
+        "recur.set-start.04"
+      ],
+      "evidence_selector": "frequency-invalid-and-recovery:invalid_date_fields[start]",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-SETTER-END-INVALID",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-end"
+      ],
+      "contract_partitions": [
+        "recur.set-end.04"
+      ],
+      "evidence_selector": "frequency-invalid-and-recovery:invalid_date_fields[end]",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-SETTER-BASE-INVALID",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.set-base-date"
+      ],
+      "contract_partitions": [
+        "recur.set-base-date.04"
+      ],
+      "evidence_selector": "frequency-invalid-and-recovery:invalid_date_fields[basedate]",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-RANGE-DAY-DEFAULT",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.parse",
+        "recur.list-occurrences"
+      ],
+      "contract_partitions": [
+        "recur.parse.10",
+        "recur.list-occurrences.10"
+      ],
+      "evidence_selector": "range-and-attempt-limits:range",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MAX-ATTEMPTS-EXCEPTION",
+      "feature": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "public_operation_ids": [
+        "recur.occurrence-at-index",
+        "recur.next-occurrence"
+      ],
+      "contract_partitions": [
+        "recur.occurrence-at-index.07",
+        "recur.next-occurrence.08"
+      ],
+      "evidence_selector": "range-and-attempt-limits:attempt_next",
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "RECUR-MOD-PD-ZERO",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.06"
+      ],
+      "evidence_selector": "modifier-boundaries-order-and-recovery:PD0",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-PD-EIGHT",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.06"
+      ],
+      "evidence_selector": "modifier-boundaries-order-and-recovery:PD8",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-FD-ZERO",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-boundaries-order-and-recovery:FD0",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-FW-ZERO",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-boundaries-order-and-recovery:FW0",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-IW-ZERO",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.06"
+      ],
+      "evidence_selector": "modifier-boundaries-order-and-recovery:IW0",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-IW-EIGHT",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.06"
+      ],
+      "evidence_selector": "modifier-boundaries-order-and-recovery:IW8",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-ORDER-MOVE-FILTER",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.07",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-boundaries-order-and-recovery:move-then-filter",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-ORDER-FILTER-MOVE",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.07",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-boundaries-order-and-recovery:filter-then-move",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-APPEND",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.05",
+        "recur.occurrence-at-index.08"
+      ],
+      "evidence_selector": "modifier-boundaries-order-and-recovery:append",
+      "classification": "reference-observed draft"
+    },
+    {
+      "case_id": "RECUR-MOD-REJECTED-RECOVERY",
+      "feature": "spec/drafts/recurrence/modifier-families.feature",
+      "public_operation_ids": [
+        "recur.set-modifiers",
+        "recur.set-frequency",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.set-modifiers.08",
+        "recur.set-frequency.04",
+        "recur.occurrence-at-index.10"
+      ],
+      "evidence_selector": "modifier-boundaries-order-and-recovery:recovery",
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "RECUR-PARSE-TEXT-SECOND-ARGUMENT",
+      "feature": "spec/drafts/recurrence/enumeration-and-compatibility.feature",
+      "public_operation_ids": [
+        "recur.parse",
+        "recur.occurrence-at-index"
+      ],
+      "contract_partitions": [
+        "recur.parse.03",
+        "recur.parse.06",
+        "recur.parse.08",
+        "recur.occurrence-at-index.06"
+      ],
+      "evidence_selector": "anchor-positional-text",
+      "classification": "compatibility/disputed"
+    }
+  ],
+  "binding_cases": [
+    {
+      "binding_case_id": "RECUR-BIND-MAX-ATTEMPTS-DIAGNOSTIC",
+      "feature": "spec/drafts/recurrence/perl-binding.feature",
+      "portable_case_id": "RECUR-MAX-ATTEMPTS-EXCEPTION",
+      "public_operation_ids": [
+        "recur.next-occurrence"
+      ],
+      "evidence_selector": "range-and-attempt-limits:attempt_next.exception",
+      "classification": "Perl binding compatibility diagnostic; excluded from portable handoff"
+    }
+  ],
+  "mapping_limit": "An operation or partition link shows exercised evidence, not complete usage-domain coverage."
+}

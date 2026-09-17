@@ -2,7 +2,6 @@
 """Run bounded, original recurrence probes twice in isolated reference processes."""
 import hashlib
 import json
-import os
 from pathlib import Path
 import subprocess
 import tempfile
@@ -24,7 +23,7 @@ cases = [f'modifier-{name}' for name in modifier_cases] + [
     'functional-dm5-endpoint', 'functional-dm6-endpoint',
 ]
 env = {
-    'PATH': os.environ['PATH'],
+    'PATH': '/usr/bin:/bin',
     'PERL5LIB': str(root / 'local/date-manip-7.00/lib/perl5'),
     'TZ': 'Etc/UTC', 'LANG': 'C.UTF-8', 'LC_ALL': 'C.UTF-8',
 }
