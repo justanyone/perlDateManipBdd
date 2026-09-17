@@ -1,0 +1,132 @@
+{
+  "schema_version": 2,
+  "status": "research-only public binding map; excluded from portable handoff",
+  "reference": "Date-Manip 7.00",
+  "profile": "dm700-english-ascii-utc-us-2040",
+  "bindings": [
+    {
+      "operation_id": "date.parse-text",
+      "module": "Date::Manip::Date",
+      "callable": "parse",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:97",
+      "context": "scalar",
+      "return": "numeric status; receiver mutation; public err channel",
+      "case_scope": "complete UTC inputs at one second before, at, and one second after each boundary"
+    },
+    {
+      "operation_id": "zone.convert-value",
+      "module": "Date::Manip::Date",
+      "callable": "convert",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:4028",
+      "context": "scalar",
+      "return": "numeric status; receiver mutation; public err channel",
+      "case_scope": "named-zone conversion after successful UTC parsing"
+    },
+    {
+      "operation_id": "zone.convert-from-utc",
+      "module": "Date::Manip::TZ",
+      "callable": "convert_from_gmt",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm:1520",
+      "context": "list",
+      "return": "error code, numeric date fields, numeric offset fields, daylight flag, abbreviation"
+    },
+    {
+      "operation_id": "zone.period-for-date",
+      "module": "Date::Manip::TZ",
+      "callable": "date_period",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm:1343",
+      "context": "scalar",
+      "return": "period record array reference or absent value",
+      "case_scope": "absolute UTC points and exact wall-clock gap/overlap limits"
+    },
+    {
+      "operation_id": "zone.list-periods",
+      "module": "Date::Manip::TZ",
+      "callable": "periods",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm:1279",
+      "context": "list",
+      "return": "ordered period record array references that begin during the UTC year"
+    },
+    {
+      "operation_id": "zone.list-all-periods",
+      "module": "Date::Manip::TZ",
+      "callable": "all_periods",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm:1197",
+      "context": "list",
+      "return": "ordered period record array references intersecting the UTC year"
+    }
+  ],
+  "supporting_public_calls": [
+    {
+      "operation_id": "object.create",
+      "callable": "Date::Manip::Date->new",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:31",
+      "context": "scalar",
+      "purpose": "construct the configured base receiver; object and immediate exception boundary are recorded"
+    },
+    {
+      "operation_id": "config.apply-settings",
+      "callable": "Date::Manip::Obj->config",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:273",
+      "context": "scalar",
+      "purpose": "apply the exact OO profile; native absent return and immediate error are recorded"
+    },
+    {
+      "operation_id": "meta.reference-version",
+      "callable": "Date::Manip::Obj->version",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:351",
+      "context": "scalar",
+      "purpose": "observe the backend version"
+    },
+    {
+      "operation_id": "context.zone-service",
+      "callable": "Date::Manip::Obj->tz",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:261",
+      "context": "scalar",
+      "purpose": "obtain the configured public zone service"
+    },
+    {
+      "operation_ids": ["meta.zone-data-version", "meta.zone-rule-version", "zone.resolve"],
+      "callable": "Date::Manip::TZ->tzdata, tzcode, and zone",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm:212,217,861",
+      "context": "scalar",
+      "purpose": "observe zone-data versions and the configured context zone"
+    },
+    {
+      "operation_id": "date.create",
+      "callable": "Date::Manip::Obj->new_date",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:232",
+      "context": "scalar",
+      "purpose": "construct each fresh Date receiver; object and immediate exception boundary are recorded"
+    },
+    {
+      "operation_id": "date.read-value",
+      "callable": "Date::Manip::Date->value",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:2607",
+      "contexts": ["scalar", "list"],
+      "purpose": "record the parsed and converted receiver through supported public carriers"
+    },
+    {
+      "operation_id": "date.render-pattern",
+      "callable": "Date::Manip::Date->printf",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:4494",
+      "context": "scalar",
+      "purpose": "render exact civil fields, abbreviation, and numeric offset"
+    },
+    {
+      "operation_id": "error.read-state",
+      "callable": "Date::Manip::Obj->err",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:331",
+      "context": "scalar",
+      "purpose": "capture errors immediately after parse and convert and after successful reads"
+    }
+  ],
+  "period_record_fields": [
+    "inclusive UTC start fields", "inclusive wall-clock start fields",
+    "offset text", "numeric offset fields", "abbreviation", "daylight flag",
+    "inclusive UTC end fields", "inclusive wall-clock end fields",
+    "compact UTC start text", "compact wall-clock start text",
+    "compact UTC end text", "compact wall-clock end text"
+  ],
+  "direct_private_entrypoints": []
+}

@@ -212,9 +212,14 @@
         "docs/research/fixed-offset-family/README.md",
         "docs/research/fixed-offset-family/selected-observations.json",
         "docs/research/fixed-offset-review.md",
-        "spec/drafts/fixed-offsets"
+        "spec/drafts/fixed-offsets",
+        "docs/research/zone-transition-boundaries/README.md",
+        "docs/research/zone-transition-review.md",
+        "tools/probes/zone-transition-boundaries/review.py",
+        "spec/drafts/zone-transition-boundaries"
       ],
-      "fixed_offset_review": "408 public loading routes verified with40parse successes/368rejections and3672/3672 generated-offset statement criteria. Seven durable English examples verified; remaining401 routes are research-only. Not whole-library or behavior completeness."
+      "fixed_offset_review": "408 public loading routes verified with40parse successes/368rejections and3672/3672 generated-offset statement criteria. Seven durable English examples verified; remaining401 routes are research-only. Not whole-library or behavior completeness.",
+      "zone_transition_review": "67 mapped examples integrated from8 isolated repeated observations:24 UTC instants,37 wall queries,8 exact period enumerations. Per-call boundaries, canonical bindings, independent zoneinfo provenance and per-row literals verified. Broader zone domains remain open."
     },
     {
       "id": "spec-configuration-objects",

@@ -1,0 +1,433 @@
+{
+  "schema_version": 2,
+  "status": "manually reviewed portable feature map with research bindings kept separate",
+  "profile": {
+    "name": "dm700-english-ascii-utc-us-2040",
+    "reference_release": "Date-Manip 7.00",
+    "timezone_data": "tzdata2026c",
+    "configured_zone": "Etc/UTC"
+  },
+  "source_binding": {
+    "operation_ids": [
+      "date.parse-text",
+      "zone.convert-value",
+      "zone.convert-from-utc",
+      "zone.period-for-date",
+      "zone.list-periods",
+      "zone.list-all-periods",
+      "object.create",
+      "config.apply-settings",
+      "meta.reference-version",
+      "context.zone-service",
+      "meta.zone-data-version",
+      "meta.zone-rule-version",
+      "zone.resolve",
+      "date.create",
+      "date.read-value",
+      "date.render-pattern",
+      "error.read-state"
+    ],
+    "details": "docs/research/zone-transition-boundaries/bindings.json",
+    "portable_features_prescribe_private_logic": false
+  },
+  "features": {
+    "spec/drafts/zone-transition-boundaries/instant-boundaries.feature": {
+      "scenario": "UTC conversion changes civil time at the exact transition second",
+      "operations": [
+        "date.parse-text",
+        "zone.convert-value",
+        "zone.convert-from-utc"
+      ],
+      "observation_case_ids": [
+        "ZTB-NY-SPRING-GAP",
+        "ZTB-NY-AUTUMN-OVERLAP",
+        "ZTB-LONDON-SPRING-GAP",
+        "ZTB-LONDON-AUTUMN-OVERLAP",
+        "ZTB-LORD-HOWE-AUTUMN-OVERLAP",
+        "ZTB-LORD-HOWE-SPRING-GAP",
+        "ZTB-APIA-SKIPPED-DAY",
+        "ZTB-UTC-NO-TRANSITION"
+      ],
+      "examples": [
+        {
+          "example_id": "ZTB-NY-SPRING-GAP-UTC-BEFORE",
+          "observation_case_id": "ZTB-NY-SPRING-GAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-NY-SPRING-GAP-UTC-AT",
+          "observation_case_id": "ZTB-NY-SPRING-GAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-NY-SPRING-GAP-UTC-AFTER",
+          "observation_case_id": "ZTB-NY-SPRING-GAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-NY-AUTUMN-OVERLAP-UTC-BEFORE",
+          "observation_case_id": "ZTB-NY-AUTUMN-OVERLAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-NY-AUTUMN-OVERLAP-UTC-AT",
+          "observation_case_id": "ZTB-NY-AUTUMN-OVERLAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-NY-AUTUMN-OVERLAP-UTC-AFTER",
+          "observation_case_id": "ZTB-NY-AUTUMN-OVERLAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-SPRING-GAP-UTC-BEFORE",
+          "observation_case_id": "ZTB-LONDON-SPRING-GAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-SPRING-GAP-UTC-AT",
+          "observation_case_id": "ZTB-LONDON-SPRING-GAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-SPRING-GAP-UTC-AFTER",
+          "observation_case_id": "ZTB-LONDON-SPRING-GAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-AUTUMN-OVERLAP-UTC-BEFORE",
+          "observation_case_id": "ZTB-LONDON-AUTUMN-OVERLAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-AUTUMN-OVERLAP-UTC-AT",
+          "observation_case_id": "ZTB-LONDON-AUTUMN-OVERLAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-AUTUMN-OVERLAP-UTC-AFTER",
+          "observation_case_id": "ZTB-LONDON-AUTUMN-OVERLAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP-UTC-BEFORE",
+          "observation_case_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP-UTC-AT",
+          "observation_case_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP-UTC-AFTER",
+          "observation_case_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-SPRING-GAP-UTC-BEFORE",
+          "observation_case_id": "ZTB-LORD-HOWE-SPRING-GAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-SPRING-GAP-UTC-AT",
+          "observation_case_id": "ZTB-LORD-HOWE-SPRING-GAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-SPRING-GAP-UTC-AFTER",
+          "observation_case_id": "ZTB-LORD-HOWE-SPRING-GAP",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-APIA-SKIPPED-DAY-UTC-BEFORE",
+          "observation_case_id": "ZTB-APIA-SKIPPED-DAY",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-APIA-SKIPPED-DAY-UTC-AT",
+          "observation_case_id": "ZTB-APIA-SKIPPED-DAY",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-APIA-SKIPPED-DAY-UTC-AFTER",
+          "observation_case_id": "ZTB-APIA-SKIPPED-DAY",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-UTC-NO-TRANSITION-UTC-BEFORE",
+          "observation_case_id": "ZTB-UTC-NO-TRANSITION",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-UTC-NO-TRANSITION-UTC-AT",
+          "observation_case_id": "ZTB-UTC-NO-TRANSITION",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        },
+        {
+          "example_id": "ZTB-UTC-NO-TRANSITION-UTC-AFTER",
+          "observation_case_id": "ZTB-UTC-NO-TRANSITION",
+          "scenario": "UTC conversion changes civil time at the exact transition second for <case>"
+        }
+      ],
+      "example_count": 24
+    },
+    "spec/drafts/zone-transition-boundaries/period-boundaries.feature": {
+      "scenarios": [
+        "A wall-clock gap has no period",
+        "A daylight selector chooses either period throughout an overlap",
+        "A non-repeated wall-clock boundary second has one period",
+        "Period enumeration preserves the exact ordered year boundaries",
+        "UTC has one stable wall-clock period at the three control instants"
+      ],
+      "operations": [
+        "zone.period-for-date",
+        "zone.list-periods",
+        "zone.list-all-periods"
+      ],
+      "observation_case_ids": [
+        "ZTB-NY-SPRING-GAP",
+        "ZTB-NY-AUTUMN-OVERLAP",
+        "ZTB-LONDON-SPRING-GAP",
+        "ZTB-LONDON-AUTUMN-OVERLAP",
+        "ZTB-LORD-HOWE-AUTUMN-OVERLAP",
+        "ZTB-LORD-HOWE-SPRING-GAP",
+        "ZTB-APIA-SKIPPED-DAY",
+        "ZTB-UTC-NO-TRANSITION"
+      ],
+      "examples": [
+        {
+          "example_id": "ZTB-NY-SPRING-GAP-WALL-GAP-FIRST",
+          "observation_case_id": "ZTB-NY-SPRING-GAP",
+          "scenario": "A wall-clock gap has no period for <case>"
+        },
+        {
+          "example_id": "ZTB-NY-SPRING-GAP-WALL-GAP-LAST",
+          "observation_case_id": "ZTB-NY-SPRING-GAP",
+          "scenario": "A wall-clock gap has no period for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-SPRING-GAP-WALL-GAP-FIRST",
+          "observation_case_id": "ZTB-LONDON-SPRING-GAP",
+          "scenario": "A wall-clock gap has no period for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-SPRING-GAP-WALL-GAP-LAST",
+          "observation_case_id": "ZTB-LONDON-SPRING-GAP",
+          "scenario": "A wall-clock gap has no period for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-SPRING-GAP-WALL-GAP-FIRST",
+          "observation_case_id": "ZTB-LORD-HOWE-SPRING-GAP",
+          "scenario": "A wall-clock gap has no period for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-SPRING-GAP-WALL-GAP-LAST",
+          "observation_case_id": "ZTB-LORD-HOWE-SPRING-GAP",
+          "scenario": "A wall-clock gap has no period for <case>"
+        },
+        {
+          "example_id": "ZTB-APIA-SKIPPED-DAY-WALL-GAP-FIRST",
+          "observation_case_id": "ZTB-APIA-SKIPPED-DAY",
+          "scenario": "A wall-clock gap has no period for <case>"
+        },
+        {
+          "example_id": "ZTB-APIA-SKIPPED-DAY-WALL-GAP-LAST",
+          "observation_case_id": "ZTB-APIA-SKIPPED-DAY",
+          "scenario": "A wall-clock gap has no period for <case>"
+        },
+        {
+          "example_id": "ZTB-NY-AUTUMN-OVERLAP-WALL-OVERLAP-FIRST-STANDARD",
+          "observation_case_id": "ZTB-NY-AUTUMN-OVERLAP",
+          "scenario": "A daylight selector chooses either period throughout an overlap for <case>"
+        },
+        {
+          "example_id": "ZTB-NY-AUTUMN-OVERLAP-WALL-OVERLAP-FIRST-DAYLIGHT",
+          "observation_case_id": "ZTB-NY-AUTUMN-OVERLAP",
+          "scenario": "A daylight selector chooses either period throughout an overlap for <case>"
+        },
+        {
+          "example_id": "ZTB-NY-AUTUMN-OVERLAP-WALL-OVERLAP-LAST-STANDARD",
+          "observation_case_id": "ZTB-NY-AUTUMN-OVERLAP",
+          "scenario": "A daylight selector chooses either period throughout an overlap for <case>"
+        },
+        {
+          "example_id": "ZTB-NY-AUTUMN-OVERLAP-WALL-OVERLAP-LAST-DAYLIGHT",
+          "observation_case_id": "ZTB-NY-AUTUMN-OVERLAP",
+          "scenario": "A daylight selector chooses either period throughout an overlap for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-AUTUMN-OVERLAP-WALL-OVERLAP-FIRST-STANDARD",
+          "observation_case_id": "ZTB-LONDON-AUTUMN-OVERLAP",
+          "scenario": "A daylight selector chooses either period throughout an overlap for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-AUTUMN-OVERLAP-WALL-OVERLAP-FIRST-DAYLIGHT",
+          "observation_case_id": "ZTB-LONDON-AUTUMN-OVERLAP",
+          "scenario": "A daylight selector chooses either period throughout an overlap for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-AUTUMN-OVERLAP-WALL-OVERLAP-LAST-STANDARD",
+          "observation_case_id": "ZTB-LONDON-AUTUMN-OVERLAP",
+          "scenario": "A daylight selector chooses either period throughout an overlap for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-AUTUMN-OVERLAP-WALL-OVERLAP-LAST-DAYLIGHT",
+          "observation_case_id": "ZTB-LONDON-AUTUMN-OVERLAP",
+          "scenario": "A daylight selector chooses either period throughout an overlap for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP-WALL-OVERLAP-FIRST-STANDARD",
+          "observation_case_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP",
+          "scenario": "A daylight selector chooses either period throughout an overlap for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP-WALL-OVERLAP-FIRST-DAYLIGHT",
+          "observation_case_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP",
+          "scenario": "A daylight selector chooses either period throughout an overlap for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP-WALL-OVERLAP-LAST-STANDARD",
+          "observation_case_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP",
+          "scenario": "A daylight selector chooses either period throughout an overlap for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP-WALL-OVERLAP-LAST-DAYLIGHT",
+          "observation_case_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP",
+          "scenario": "A daylight selector chooses either period throughout an overlap for <case>"
+        },
+        {
+          "example_id": "ZTB-NY-SPRING-GAP-WALL-VALID-BEFORE",
+          "observation_case_id": "ZTB-NY-SPRING-GAP",
+          "scenario": "A non-repeated wall-clock boundary second has one period for <case>"
+        },
+        {
+          "example_id": "ZTB-NY-SPRING-GAP-WALL-VALID-AFTER",
+          "observation_case_id": "ZTB-NY-SPRING-GAP",
+          "scenario": "A non-repeated wall-clock boundary second has one period for <case>"
+        },
+        {
+          "example_id": "ZTB-NY-AUTUMN-OVERLAP-WALL-VALID-BEFORE",
+          "observation_case_id": "ZTB-NY-AUTUMN-OVERLAP",
+          "scenario": "A non-repeated wall-clock boundary second has one period for <case>"
+        },
+        {
+          "example_id": "ZTB-NY-AUTUMN-OVERLAP-WALL-VALID-AFTER",
+          "observation_case_id": "ZTB-NY-AUTUMN-OVERLAP",
+          "scenario": "A non-repeated wall-clock boundary second has one period for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-SPRING-GAP-WALL-VALID-BEFORE",
+          "observation_case_id": "ZTB-LONDON-SPRING-GAP",
+          "scenario": "A non-repeated wall-clock boundary second has one period for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-SPRING-GAP-WALL-VALID-AFTER",
+          "observation_case_id": "ZTB-LONDON-SPRING-GAP",
+          "scenario": "A non-repeated wall-clock boundary second has one period for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-AUTUMN-OVERLAP-WALL-VALID-BEFORE",
+          "observation_case_id": "ZTB-LONDON-AUTUMN-OVERLAP",
+          "scenario": "A non-repeated wall-clock boundary second has one period for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-AUTUMN-OVERLAP-WALL-VALID-AFTER",
+          "observation_case_id": "ZTB-LONDON-AUTUMN-OVERLAP",
+          "scenario": "A non-repeated wall-clock boundary second has one period for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP-WALL-VALID-BEFORE",
+          "observation_case_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP",
+          "scenario": "A non-repeated wall-clock boundary second has one period for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP-WALL-VALID-AFTER",
+          "observation_case_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP",
+          "scenario": "A non-repeated wall-clock boundary second has one period for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-SPRING-GAP-WALL-VALID-BEFORE",
+          "observation_case_id": "ZTB-LORD-HOWE-SPRING-GAP",
+          "scenario": "A non-repeated wall-clock boundary second has one period for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-SPRING-GAP-WALL-VALID-AFTER",
+          "observation_case_id": "ZTB-LORD-HOWE-SPRING-GAP",
+          "scenario": "A non-repeated wall-clock boundary second has one period for <case>"
+        },
+        {
+          "example_id": "ZTB-APIA-SKIPPED-DAY-WALL-VALID-BEFORE",
+          "observation_case_id": "ZTB-APIA-SKIPPED-DAY",
+          "scenario": "A non-repeated wall-clock boundary second has one period for <case>"
+        },
+        {
+          "example_id": "ZTB-APIA-SKIPPED-DAY-WALL-VALID-AFTER",
+          "observation_case_id": "ZTB-APIA-SKIPPED-DAY",
+          "scenario": "A non-repeated wall-clock boundary second has one period for <case>"
+        },
+        {
+          "example_id": "ZTB-NY-SPRING-GAP-ENUMERATION",
+          "observation_case_id": "ZTB-NY-SPRING-GAP",
+          "scenario": "Period enumeration preserves the exact ordered year boundaries for <case>"
+        },
+        {
+          "example_id": "ZTB-NY-AUTUMN-OVERLAP-ENUMERATION",
+          "observation_case_id": "ZTB-NY-AUTUMN-OVERLAP",
+          "scenario": "Period enumeration preserves the exact ordered year boundaries for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-SPRING-GAP-ENUMERATION",
+          "observation_case_id": "ZTB-LONDON-SPRING-GAP",
+          "scenario": "Period enumeration preserves the exact ordered year boundaries for <case>"
+        },
+        {
+          "example_id": "ZTB-LONDON-AUTUMN-OVERLAP-ENUMERATION",
+          "observation_case_id": "ZTB-LONDON-AUTUMN-OVERLAP",
+          "scenario": "Period enumeration preserves the exact ordered year boundaries for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP-ENUMERATION",
+          "observation_case_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP",
+          "scenario": "Period enumeration preserves the exact ordered year boundaries for <case>"
+        },
+        {
+          "example_id": "ZTB-LORD-HOWE-SPRING-GAP-ENUMERATION",
+          "observation_case_id": "ZTB-LORD-HOWE-SPRING-GAP",
+          "scenario": "Period enumeration preserves the exact ordered year boundaries for <case>"
+        },
+        {
+          "example_id": "ZTB-APIA-SKIPPED-DAY-ENUMERATION",
+          "observation_case_id": "ZTB-APIA-SKIPPED-DAY",
+          "scenario": "Period enumeration preserves the exact ordered year boundaries for <case>"
+        },
+        {
+          "example_id": "ZTB-UTC-NO-TRANSITION-ENUMERATION",
+          "observation_case_id": "ZTB-UTC-NO-TRANSITION",
+          "scenario": "Period enumeration preserves the exact ordered year boundaries for <case>"
+        },
+        {
+          "example_id": "ZTB-UTC-WALL-STABLE",
+          "observation_case_id": "ZTB-UTC-NO-TRANSITION",
+          "scenario": "UTC has one stable wall-clock period at the three control instants"
+        }
+      ],
+      "example_count": 43
+    }
+  },
+  "case_count": 8,
+  "utc_boundary_examples": 24,
+  "wall_clock_period_queries": 37,
+  "observation_parent_case_count": 8,
+  "observation_parent_case_ids": [
+    "ZTB-NY-SPRING-GAP",
+    "ZTB-NY-AUTUMN-OVERLAP",
+    "ZTB-LONDON-SPRING-GAP",
+    "ZTB-LONDON-AUTUMN-OVERLAP",
+    "ZTB-LORD-HOWE-AUTUMN-OVERLAP",
+    "ZTB-LORD-HOWE-SPRING-GAP",
+    "ZTB-APIA-SKIPPED-DAY",
+    "ZTB-UTC-NO-TRANSITION"
+  ],
+  "portable_example_count": 67
+}

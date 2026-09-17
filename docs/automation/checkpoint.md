@@ -591,3 +591,15 @@ No final whole-library coverage or behavior-completeness claim.
 Zone-transition repair returned stable for root review. coverage_setup now owns
 NEW coverage-corpus diagnostic collector and public-case branch-gap analysis.
 partial_parsing owns navigation-family; pattern_repair owns value-serialization.
+
+## Zone-transition integration
+
+Integrated67 examples over8 observed zone-boundary cases after independent repair.
+Coordinator reviewer now compares all24instant values,37wallqueries and8 ordered
+period lists to exact feature literals and verifies canonical IDs/module hashes.
+Real parser expands67scenarios. Call boundaries and independent zoneinfo provenance
+are retained. Reference outcomes unchanged; only review-script hash refreshed.
+
+Active assignments remain navigation-family, value-serialization-family and
+coverage-corpus diagnostics. Full public feature set and final99/95coverage gate
+remain incomplete; runner trial is verified but Date::Manip BDD adapter unbuilt.

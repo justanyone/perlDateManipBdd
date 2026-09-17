@@ -1,0 +1,132 @@
+{
+  "schema_version": 2,
+  "status": "original bounded public transition requests; outcomes are recorded separately",
+  "fixture": "dm700-english-ascii-utc-us-2040",
+  "cases": [
+    {
+      "case_id": "ZTB-NY-SPRING-GAP",
+      "zone": "America/New_York",
+      "year": 2040,
+      "transition_kind": "one-hour-forward-gap",
+      "boundary_utc": [2040, 3, 11, 7, 0, 0],
+      "utc_points": [[2040,3,11,6,59,59],[2040,3,11,7,0,0],[2040,3,11,7,0,1]],
+      "independent_expected_local": ["2040-03-11 01:59:59 EST -0500","2040-03-11 03:00:00 EDT -0400","2040-03-11 03:00:01 EDT -0400"],
+      "wall_queries": [
+        {"date":[2040,3,11,1,59,59],"selector":0},
+        {"date":[2040,3,11,2,0,0],"selector":0},
+        {"date":[2040,3,11,2,59,59],"selector":1},
+        {"date":[2040,3,11,3,0,0],"selector":0}
+      ]
+    },
+    {
+      "case_id": "ZTB-NY-AUTUMN-OVERLAP",
+      "zone": "America/New_York",
+      "year": 2040,
+      "transition_kind": "one-hour-backward-overlap",
+      "boundary_utc": [2040, 11, 4, 6, 0, 0],
+      "utc_points": [[2040,11,4,5,59,59],[2040,11,4,6,0,0],[2040,11,4,6,0,1]],
+      "independent_expected_local": ["2040-11-04 01:59:59 EDT -0400","2040-11-04 01:00:00 EST -0500","2040-11-04 01:00:01 EST -0500"],
+      "wall_queries": [
+        {"date":[2040,11,4,0,59,59],"selector":0},
+        {"date":[2040,11,4,1,0,0],"selector":0},
+        {"date":[2040,11,4,1,0,0],"selector":1},
+        {"date":[2040,11,4,1,59,59],"selector":0},
+        {"date":[2040,11,4,1,59,59],"selector":1},
+        {"date":[2040,11,4,2,0,0],"selector":0}
+      ]
+    },
+    {
+      "case_id": "ZTB-LONDON-SPRING-GAP",
+      "zone": "Europe/London",
+      "year": 2040,
+      "transition_kind": "one-hour-forward-gap",
+      "boundary_utc": [2040, 3, 25, 1, 0, 0],
+      "utc_points": [[2040,3,25,0,59,59],[2040,3,25,1,0,0],[2040,3,25,1,0,1]],
+      "independent_expected_local": ["2040-03-25 00:59:59 GMT +0000","2040-03-25 02:00:00 BST +0100","2040-03-25 02:00:01 BST +0100"],
+      "wall_queries": [
+        {"date":[2040,3,25,0,59,59],"selector":0},
+        {"date":[2040,3,25,1,0,0],"selector":0},
+        {"date":[2040,3,25,1,59,59],"selector":1},
+        {"date":[2040,3,25,2,0,0],"selector":0}
+      ]
+    },
+    {
+      "case_id": "ZTB-LONDON-AUTUMN-OVERLAP",
+      "zone": "Europe/London",
+      "year": 2040,
+      "transition_kind": "one-hour-backward-overlap",
+      "boundary_utc": [2040, 10, 28, 1, 0, 0],
+      "utc_points": [[2040,10,28,0,59,59],[2040,10,28,1,0,0],[2040,10,28,1,0,1]],
+      "independent_expected_local": ["2040-10-28 01:59:59 BST +0100","2040-10-28 01:00:00 GMT +0000","2040-10-28 01:00:01 GMT +0000"],
+      "wall_queries": [
+        {"date":[2040,10,28,0,59,59],"selector":0},
+        {"date":[2040,10,28,1,0,0],"selector":0},
+        {"date":[2040,10,28,1,0,0],"selector":1},
+        {"date":[2040,10,28,1,59,59],"selector":0},
+        {"date":[2040,10,28,1,59,59],"selector":1},
+        {"date":[2040,10,28,2,0,0],"selector":0}
+      ]
+    },
+    {
+      "case_id": "ZTB-LORD-HOWE-AUTUMN-OVERLAP",
+      "zone": "Australia/Lord_Howe",
+      "year": 2040,
+      "transition_kind": "half-hour-backward-overlap",
+      "boundary_utc": [2040, 3, 31, 15, 0, 0],
+      "utc_points": [[2040,3,31,14,59,59],[2040,3,31,15,0,0],[2040,3,31,15,0,1]],
+      "independent_expected_local": ["2040-04-01 01:59:59 +11 +1100","2040-04-01 01:30:00 +1030 +1030","2040-04-01 01:30:01 +1030 +1030"],
+      "wall_queries": [
+        {"date":[2040,4,1,1,29,59],"selector":0},
+        {"date":[2040,4,1,1,30,0],"selector":0},
+        {"date":[2040,4,1,1,30,0],"selector":1},
+        {"date":[2040,4,1,1,59,59],"selector":0},
+        {"date":[2040,4,1,1,59,59],"selector":1},
+        {"date":[2040,4,1,2,0,0],"selector":0}
+      ]
+    },
+    {
+      "case_id": "ZTB-LORD-HOWE-SPRING-GAP",
+      "zone": "Australia/Lord_Howe",
+      "year": 2040,
+      "transition_kind": "half-hour-forward-gap",
+      "boundary_utc": [2040, 10, 6, 15, 30, 0],
+      "utc_points": [[2040,10,6,15,29,59],[2040,10,6,15,30,0],[2040,10,6,15,30,1]],
+      "independent_expected_local": ["2040-10-07 01:59:59 +1030 +1030","2040-10-07 02:30:00 +11 +1100","2040-10-07 02:30:01 +11 +1100"],
+      "wall_queries": [
+        {"date":[2040,10,7,1,59,59],"selector":0},
+        {"date":[2040,10,7,2,0,0],"selector":0},
+        {"date":[2040,10,7,2,29,59],"selector":1},
+        {"date":[2040,10,7,2,30,0],"selector":0}
+      ]
+    },
+    {
+      "case_id": "ZTB-APIA-SKIPPED-DAY",
+      "zone": "Pacific/Apia",
+      "year": 2011,
+      "transition_kind": "twenty-four-hour-forward-gap",
+      "boundary_utc": [2011, 12, 30, 10, 0, 0],
+      "utc_points": [[2011,12,30,9,59,59],[2011,12,30,10,0,0],[2011,12,30,10,0,1]],
+      "independent_expected_local": ["2011-12-29 23:59:59 -10 -1000","2011-12-31 00:00:00 +14 +1400","2011-12-31 00:00:01 +14 +1400"],
+      "wall_queries": [
+        {"date":[2011,12,29,23,59,59],"selector":0},
+        {"date":[2011,12,30,0,0,0],"selector":0},
+        {"date":[2011,12,30,23,59,59],"selector":1},
+        {"date":[2011,12,31,0,0,0],"selector":0}
+      ]
+    },
+    {
+      "case_id": "ZTB-UTC-NO-TRANSITION",
+      "zone": "Etc/UTC",
+      "year": 2040,
+      "transition_kind": "no-transition-control",
+      "boundary_utc": [2040, 3, 11, 7, 0, 0],
+      "utc_points": [[2040,3,11,6,59,59],[2040,3,11,7,0,0],[2040,3,11,7,0,1]],
+      "independent_expected_local": ["2040-03-11 06:59:59 UTC +0000","2040-03-11 07:00:00 UTC +0000","2040-03-11 07:00:01 UTC +0000"],
+      "wall_queries": [
+        {"date":[2040,3,11,6,59,59],"selector":0},
+        {"date":[2040,3,11,7,0,0],"selector":0},
+        {"date":[2040,3,11,7,0,1],"selector":1}
+      ]
+    }
+  ]
+}
