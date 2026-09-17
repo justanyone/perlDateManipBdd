@@ -12,12 +12,13 @@ or complete suite during a planning-only request.
 
 Keep an API coverage inventory tied to an exact upstream release or commit.
 Reconcile documented APIs, exports, inheritance, aliases, and source subroutines;
-classify public, private, generated, and compatibility entries explicitly. Prioritize
-public behavior, but do not silently exclude private functions or claim complete
-coverage from a count of scenarios. Record coverage through public callers where
-appropriate, and explain every exclusion or unreachable entry. Internal function
-coverage is a research-side accounting task; portable features must not require
-another language to reproduce private functions or algorithms.
+classify public, private, generated, and compatibility entries explicitly. Test only
+non-private public APIs and their observable behavior. Private functions and internal
+generation tools are outside the test scope: do not add direct tests, indirect
+execution obligations, or private function/branch coverage gates. Retain their
+inventory classification only to explain the public boundary. Public API usage
+variants and identifiable behavioral edge cases remain required, including behavior
+implemented internally by private helpers. Scenario counts do not prove completeness.
 
 ## Licensing and attribution
 

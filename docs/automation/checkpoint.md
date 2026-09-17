@@ -18,8 +18,9 @@ the durable state of the planning queue, rather than claiming that its work has 
 ## Active review at continuation
 
 The strict completion gate in [definition-of-done.md](definition-of-done.md)
-remains authoritative. The coverage queue now explicitly requires actual private
-function execution; an indirect caller mapping is not sufficient evidence.
+now applies to public, non-private APIs only following the user's clarification.
+Private tests and internal execution/branch coverage requirements are removed.
+All later historical references to private coverage are superseded.
 
 Pattern parsing now has 65 repeated requests through OO and DM6, including 50
 successful directive rows. Coordinator review repaired empty-text versus absent
@@ -305,23 +306,18 @@ worker handles finish, then add missing date-only/time-only/token-prefix usage
 and remaining configuration/object/state/grammar cases. Source execution coverage
 and the final complete-spec review still precede conformance harness completion.
 
-## Source execution pilot checkpoint
-
-Added an original debugger hook and bounded driver under tools/research-coverage.
-The pilot compares each traced research request with an uninstrumented request,
-repeated twice in clean processes, and records declaration names only. Seven of
-eight requests have identical output/error/exit channels. Those traces observe125
-of423 inventoried declarations;298 remain unobserved by this pilot. Setup execution
-is not behavior coverage. No branch or statement coverage is claimed.
-
-The DM5 pilot is excluded because tracing adds source-location metadata to its
-deprecation warning; the mismatch is retained. See
-`docs/research/execution-coverage/{README.md,pilot.json}`. Provenance hashes and
-counts were checked. This source-side research improves private-call evidence but
-is neither the BDD harness nor a complete coverage audit.
-
 Active new batch: partial_parsing (sol/high) owns NEW partial-parsing-family dirs
 and spec/drafts/partial-parsing, for date-only/time-only and token-prefix carrier
 usage. Language worker is correcting failed-init versus unexecuted-call semantics,
 profile vocabulary, duplicate IDs and exact request wording. Pattern repair remains
 active. Check live handles before reassigning those paths.
+
+## Public-only scope correction
+
+The user explicitly excluded private functions from the requested suite. Public
+API functions, usage variants and observable edge cases remain in scope. Removed
+the source-call instrumentation pilot and its private declaration coverage report;
+these are no longer needed. Discovery inventories retain private classifications
+for boundary documentation only, with no test obligation. Current workers were
+notified; public lifecycle and parsing-cache characterization continue. Historical
+private-coverage requirements above are superseded by this correction.

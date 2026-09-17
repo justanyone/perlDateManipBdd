@@ -74,7 +74,7 @@ module. Constructors have multiple sharing/copying forms.
 
 `TZdata::new` and its helpers belong to an internal generation tool: its own POD
 expressly says it is not a supported public API. `TZ_Base` supplies internal support.
-Track these as tooling/indirect coverage; do not translate their algorithms into the
+Classify these as excluded internal tooling; do not translate their algorithms into the
 portable spec. Data-only language/offset/timezone modules still create user-visible
 coverage obligations even though they declare no named subroutines.
 

@@ -23,9 +23,10 @@ scope; observations in temporary probes are research, not permission to implemen
    documented contract, source version, scenario IDs, and coverage status. Reconcile
    exports, POD, and source declarations; a subroutine regex is only a starting point.
 3. For each scenario name the specific behavior and the regression it should catch.
-   Cover normal, boundary, and invalid cases; distinguish observed behavior from the
-   intended contract. Every function remains in the inventory even if only exercised
-   indirectly through callers or explicitly deferred with a reason.
+   Cover normal, boundary, and invalid cases of public APIs; distinguish observed
+   behavior from the intended contract. Private functions remain classified in the
+   discovery inventory but are excluded from test obligations. Do not require direct
+   private tests or incidental private-function execution/branch coverage.
 
 ## Write independent scenarios
 

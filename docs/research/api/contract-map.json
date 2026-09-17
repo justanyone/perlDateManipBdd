@@ -2,7 +2,7 @@
    "declarations" : [
       {
          "callable" : "_init",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_init:37",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -19,11 +19,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_init_cache",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_init_cache:52",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -40,11 +40,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_init_data",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_init_data:69",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -61,11 +61,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_init_config",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_init_config:79",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -82,11 +82,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_calc_workweek",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_calc_workweek:236",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -103,11 +103,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_calc_bdlength",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_calc_bdlength:247",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -124,11 +124,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_init_business_length",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_init_business_length:259",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -145,11 +145,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_init_events",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_init_events:278",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -166,11 +166,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_init_holidays",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_init_holidays:313",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -187,11 +187,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_init_now",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_init_now:338",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -208,11 +208,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_init_language",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_init_language:368",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -229,7 +229,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "days_since_1BC",
@@ -464,7 +464,7 @@
       },
       {
          "callable" : "_week1_day1",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_week1_day1:632",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -481,7 +481,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "weeks_in_year",
@@ -527,7 +527,7 @@
       },
       {
          "callable" : "_week_of_year",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_week_of_year:720",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -544,7 +544,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "calc_date_date",
@@ -632,7 +632,7 @@
       },
       {
          "callable" : "_calc_date_time_strings",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_calc_date_time_strings:907",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -649,11 +649,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_calc_date_ymwd",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_calc_date_ymwd:918",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -670,11 +670,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_calc_hms_hms",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_calc_hms_hms:953",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -691,7 +691,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "calc_time_time",
@@ -737,7 +737,7 @@
       },
       {
          "callable" : "_os",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_os:1001",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -754,11 +754,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_section",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_section:1041",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -775,11 +775,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config_var_base",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_config_var_base:1070",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -796,11 +796,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config_var_encoding",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_config_var_encoding:1191",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -817,11 +817,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config_var_recurrange",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_config_var_recurrange:1249",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -838,11 +838,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config_var_workweekbeg",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_config_var_workweekbeg:1261",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -859,11 +859,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config_var_workweekend",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_config_var_workweekend:1278",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -880,11 +880,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config_var_workday24hr",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_config_var_workday24hr:1295",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -901,11 +901,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config_var_workdaybegend",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_config_var_workdaybegend:1311",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -922,11 +922,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config_var_firstday",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_config_var_firstday:1346",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -943,11 +943,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config_var_week1ofyear",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_config_var_week1ofyear:1357",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -964,11 +964,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config_var_defaulttime",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_config_var_defaulttime:1370",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -985,11 +985,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config_var_format_mmmyyyy",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_config_var_format_mmmyyyy:1381",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1006,11 +1006,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_language",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_language:1400",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1027,11 +1027,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_rx_simple",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_rx_simple:1477",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1048,11 +1048,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_qe_quote",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_qe_quote:1496",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1069,11 +1069,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_rx_wordlist",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_rx_wordlist:1511",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1090,11 +1090,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_sortByLength",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_sortByLength:1535",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1111,11 +1111,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_rx_replace",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_rx_replace:1545",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1132,11 +1132,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_rx_wordlists",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_rx_wordlists:1576",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1153,11 +1153,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_method",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_method:1620",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1174,11 +1174,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_mod_add",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_mod_add:1641",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1195,11 +1195,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_is_int",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_is_int:1674",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1216,11 +1216,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_is_num",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_is_num:1687",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1237,7 +1237,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "split",
@@ -1283,7 +1283,7 @@
       },
       {
          "callable" : "_split_delta",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_split_delta:1858",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1300,11 +1300,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_check_delta_type",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_check_delta_type:1886",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1321,11 +1321,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_delta_fields",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_delta_fields:1987",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1342,11 +1342,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_sign_source",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_sign_source:2084",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1363,11 +1363,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_sign_fields",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_sign_fields:2119",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1384,11 +1384,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_time_fields",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_time_fields:2160",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1405,11 +1405,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_hms_fields",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_hms_fields:2221",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1426,11 +1426,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_offset_fields",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_offset_fields:2279",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1447,11 +1447,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_date_fields",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_date_fields:2387",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1468,11 +1468,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_delta_convert",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_delta_convert:2410",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1489,11 +1489,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "__normalize_ym",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:__normalize_ym:2420",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1510,11 +1510,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "__normalize_wd",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:__normalize_wd:2439",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1531,11 +1531,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "__normalize_hms",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:__normalize_hms:2450",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1552,11 +1552,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_normalize_est",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_normalize_est:2463",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1573,11 +1573,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_normalize_bus_est",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_normalize_bus_est:2483",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1594,11 +1594,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_normalize_approx",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_normalize_approx:2505",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1615,11 +1615,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_normalize_bus_approx",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_normalize_bus_approx:2519",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1636,11 +1636,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_normalize_exact",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_normalize_exact:2534",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1657,11 +1657,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_normalize_bus_exact",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_normalize_bus_exact:2544",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1678,11 +1678,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_critical_date",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_critical_date:2597",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1699,11 +1699,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_encoding",
-         "coverage_route" : "indirect-family-review:calendar",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Base:_encoding:2663",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1720,11 +1720,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_sortByLength",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_sortByLength:255",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -1741,7 +1741,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "DateManipVersion",
@@ -2438,7 +2438,7 @@
       },
       {
          "callable" : "_Date_InitHash",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_InitHash:3772",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2455,11 +2455,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_InitLists",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_InitLists:3834",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2476,11 +2476,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_InitStrings",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_InitStrings:3916",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2497,11 +2497,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Regexp",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Regexp:4017",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2518,11 +2518,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Delta_Normalize",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Delta_Normalize:4103",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2539,11 +2539,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Delta_Split",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Delta_Split:4207",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2560,11 +2560,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_ParseTime",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_ParseTime:4225",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2581,11 +2581,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Join",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Join:4244",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2602,11 +2602,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_CheckTime",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_CheckTime:4278",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2623,11 +2623,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Recur_Split",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Recur_Split:4310",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2644,11 +2644,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Split",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Split:4338",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2665,11 +2665,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Easter",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Easter:4401",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2686,11 +2686,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Recur_WoM",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Recur_WoM:4421",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2707,11 +2707,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Recur",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Recur:4509",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2728,11 +2728,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_RecurSetTime",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_RecurSetTime:4545",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2749,11 +2749,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_DateCalc_DateDate",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_DateCalc_DateDate:4605",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2770,11 +2770,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_DateCalc_DeltaDelta",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_DateCalc_DeltaDelta:4791",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2791,11 +2791,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_DateCalc_DateDelta",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_DateCalc_DateDelta:4809",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2812,11 +2812,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_UpdateHolidays",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_UpdateHolidays:4963",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2833,11 +2833,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_SetConfigVariable",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_SetConfigVariable:5007",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2854,7 +2854,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "EraseHolidays",
@@ -2879,7 +2879,7 @@
       },
       {
          "callable" : "_Events_Calc",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Events_Calc:5064",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2896,11 +2896,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Events_ParseRaw",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Events_ParseRaw:5168",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2917,11 +2917,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_InitFile",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_InitFile:5283",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2938,11 +2938,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_TimeCheck",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_TimeCheck:5340",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2959,11 +2959,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_DateCheck",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_DateCheck:5398",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -2980,11 +2980,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_FixYear",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_FixYear:5442",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3001,11 +3001,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_NthWeekOfYear",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_NthWeekOfYear:5487",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3022,11 +3022,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Char_8Bit",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Char_8Bit:5534",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3043,11 +3043,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Init_English",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Init_English:5843",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3064,11 +3064,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Init_Italian",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Init_Italian:5915",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3085,11 +3085,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Init_French",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Init_French:5986",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3106,11 +3106,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Init_Romanian",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Init_Romanian:6063",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3127,11 +3127,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Init_Swedish",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Init_Swedish:6180",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3148,11 +3148,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Init_German",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Init_German:6264",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3169,11 +3169,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Init_Dutch",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Init_Dutch:6353",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3190,11 +3190,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Init_Polish",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Init_Polish:6445",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3211,11 +3211,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Init_Spanish",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Init_Spanish:6544",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3232,11 +3232,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Init_Portuguese",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Init_Portuguese:6627",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3253,11 +3253,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Init_Russian",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Init_Russian:6723",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3274,11 +3274,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Init_Turkish",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Init_Turkish:6911",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3295,11 +3295,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Init_Danish",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Init_Danish:7022",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3316,11 +3316,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_Date_Init_Catalan",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_Date_Init_Catalan:7101",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3337,11 +3337,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_ModuloAddition",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_ModuloAddition:7207",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3358,11 +3358,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_IsInt",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_IsInt:7238",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3379,11 +3379,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_CleanFile",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_CleanFile:7253",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3400,11 +3400,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_ExpandTilde",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_ExpandTilde:7274",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3421,11 +3421,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_FullFilePath",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_FullFilePath:7305",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3442,11 +3442,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_CheckFilePath",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_CheckFilePath:7329",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3463,11 +3463,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_FixPath",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_FixPath:7382",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3484,11 +3484,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_SearchPath",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_SearchPath:7431",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3505,11 +3505,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_ReturnList",
-         "coverage_route" : "indirect-family-review:legacy",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM5:_ReturnList:7454",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3526,7 +3526,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM5.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "DateManipVersion",
@@ -3698,7 +3698,7 @@
       },
       {
          "callable" : "_Delta_Format_old",
-         "coverage_route" : "indirect-family-review:adapter",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::DM6:_Delta_Format_old:258",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -3715,7 +3715,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/DM6.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "DateCalc",
@@ -4286,7 +4286,7 @@
       },
       {
          "callable" : "_init",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_init:45",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4303,11 +4303,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_init_args",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_init_args:80",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4324,7 +4324,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "input",
@@ -4412,7 +4412,7 @@
       },
       {
          "callable" : "_parse_date",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_parse_date:465",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4429,7 +4429,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "parse_format",
@@ -4454,7 +4454,7 @@
       },
       {
          "callable" : "_format_regexp",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_format_regexp:711",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4471,11 +4471,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_parse_rule",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_parse_rule:1002",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4492,11 +4492,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_parse_check",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_parse_check:1019",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4513,11 +4513,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "__parse_check",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:__parse_check:1116",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4534,11 +4534,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_iso8601_rx",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_iso8601_rx:1161",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4555,11 +4555,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_parse_datetime_iso8601",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_parse_datetime_iso8601:1322",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4576,11 +4576,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_parse_date_iso8601",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_parse_date_iso8601:1353",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4597,11 +4597,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_time",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_time:1384",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4618,11 +4618,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_other_rx",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_other_rx:1418",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4639,11 +4639,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_parse_time",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_parse_time:1756",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4660,11 +4660,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_parse_date_common",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_parse_date_common:1846",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4681,11 +4681,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_parse_date_truncated",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_parse_date_truncated:1893",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4702,11 +4702,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_parse_tz",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_parse_tz:1943",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4723,11 +4723,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_parse_dow",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_parse_dow:1956",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4744,11 +4744,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_parse_holidays",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_parse_holidays:1999",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4765,11 +4765,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_parse_delta",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_parse_delta:2031",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4786,11 +4786,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_parse_datetime_other",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_parse_datetime_other:2101",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4807,11 +4807,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_parse_date_other",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_parse_date_other:2187",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4828,11 +4828,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_def_date",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_def_date:2388",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4849,11 +4849,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_def_date_doy",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_def_date_doy:2446",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4870,11 +4870,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_def_date_dow",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_def_date_dow:2473",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4891,11 +4891,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_def_time",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_def_time:2540",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -4912,7 +4912,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "value",
@@ -5021,7 +5021,7 @@
       },
       {
          "callable" : "__next_prev",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:__next_prev:2967",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5038,7 +5038,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "calc",
@@ -5063,7 +5063,7 @@
       },
       {
          "callable" : "_calc_date_date",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_calc_date_date:3159",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5080,11 +5080,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "__calc_date_date",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:__calc_date_date:3270",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5101,11 +5101,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_calc_date_delta",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_calc_date_delta:3397",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5122,11 +5122,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "__calc_date_delta",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:__calc_date_delta:3453",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5143,11 +5143,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "__calc_date_delta_inverse",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:__calc_date_delta_inverse:3539",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5164,11 +5164,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_cmp_date",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_cmp_date:3676",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5185,11 +5185,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "__calc_date_delta_approx",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:__calc_date_delta_approx:3685",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5206,11 +5206,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "__calc_date_delta_exact",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:__calc_date_delta_exact:3753",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5227,11 +5227,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_calc_date_check_dst",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_calc_date_check_dst:3886",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5248,7 +5248,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "secs_since_1970_GMT",
@@ -5357,7 +5357,7 @@
       },
       {
          "callable" : "__is_business_day",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:__is_business_day:4079",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5374,7 +5374,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "list_holidays",
@@ -5462,7 +5462,7 @@
       },
       {
          "callable" : "__nextprev_business_day",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:__nextprev_business_day:4204",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5479,7 +5479,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "nearest_business_day",
@@ -5504,7 +5504,7 @@
       },
       {
          "callable" : "__nearest_business_day",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:__nearest_business_day:4262",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5521,11 +5521,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_holiday_objs",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_holiday_objs:4303",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5542,11 +5542,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_holidays",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_holidays:4389",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5563,7 +5563,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "printf",
@@ -5609,7 +5609,7 @@
       },
       {
          "callable" : "_events_year",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_events_year:5044",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5626,11 +5626,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_event_objs",
-         "coverage_route" : "indirect-family-review:parse",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Date:_event_objs:5107",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5647,7 +5647,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Date.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "is_delta",
@@ -5693,7 +5693,7 @@
       },
       {
          "callable" : "_init",
-         "coverage_route" : "indirect-family-review:delta",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Delta:_init:52",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5710,11 +5710,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Delta.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_init_args",
-         "coverage_route" : "indirect-family-review:delta",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Delta:_init_args:81",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5731,7 +5731,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Delta.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "value",
@@ -5798,7 +5798,7 @@
       },
       {
          "callable" : "_rx",
-         "coverage_route" : "indirect-family-review:delta",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Delta:_rx:316",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5815,7 +5815,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Delta.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "parse",
@@ -5861,7 +5861,7 @@
       },
       {
          "callable" : "_printf_delta",
-         "coverage_route" : "indirect-family-review:delta",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Delta:_printf_delta:654",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5878,11 +5878,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Delta.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_printf_field",
-         "coverage_route" : "indirect-family-review:delta",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Delta:_printf_field:788",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5899,11 +5899,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Delta.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_printf_field_val",
-         "coverage_route" : "indirect-family-review:delta",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Delta:_printf_field_val:845",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5920,7 +5920,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Delta.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "type",
@@ -5966,7 +5966,7 @@
       },
       {
          "callable" : "__type_max",
-         "coverage_route" : "indirect-family-review:delta",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Delta:__type_max:949",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -5983,11 +5983,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Delta.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_calc_delta_delta",
-         "coverage_route" : "indirect-family-review:delta",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Delta:_calc_delta_delta:958",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6004,7 +6004,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Delta.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "convert",
@@ -6071,7 +6071,7 @@
       },
       {
          "callable" : "_clone",
-         "coverage_route" : "indirect-family-review:object",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Obj:_clone:166",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6088,11 +6088,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Obj.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_init_args",
-         "coverage_route" : "indirect-family-review:object",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Obj:_init_args:205",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6109,11 +6109,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Obj.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_init_final",
-         "coverage_route" : "indirect-family-review:object",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Obj:_init_final:214",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6130,7 +6130,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Obj.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "new_config",
@@ -6428,7 +6428,7 @@
       },
       {
          "callable" : "_init",
-         "coverage_route" : "indirect-family-review:recur",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Recur:_init:43",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6445,11 +6445,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Recur.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_init_dates",
-         "coverage_route" : "indirect-family-review:recur",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Recur:_init_dates:151",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6466,11 +6466,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Recur.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_init_args",
-         "coverage_route" : "indirect-family-review:recur",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Recur:_init_args:165",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6487,7 +6487,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Recur.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "parse",
@@ -6533,7 +6533,7 @@
       },
       {
          "callable" : "_frequency_values",
-         "coverage_route" : "indirect-family-review:recur",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Recur:_frequency_values:577",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6550,11 +6550,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Recur.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_parse_lang",
-         "coverage_route" : "indirect-family-review:recur",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Recur:_parse_lang:652",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6571,11 +6571,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Recur.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_date",
-         "coverage_route" : "indirect-family-review:recur",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Recur:_date:766",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6592,7 +6592,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Recur.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "start",
@@ -6764,7 +6764,7 @@
       },
       {
          "callable" : "_error",
-         "coverage_route" : "indirect-family-review:recur",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Recur:_error:1076",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6781,11 +6781,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Recur.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_actual_base",
-         "coverage_route" : "indirect-family-review:recur",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Recur:_actual_base:1189",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6802,11 +6802,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Recur.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_rx",
-         "coverage_route" : "indirect-family-review:recur",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Recur:_rx:1259",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6823,11 +6823,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Recur.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_apply_rtime_mods",
-         "coverage_route" : "indirect-family-review:recur",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Recur:_apply_rtime_mods:1391",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6844,11 +6844,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Recur.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_nth_interval",
-         "coverage_route" : "indirect-family-review:recur",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Recur:_nth_interval:1854",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6865,11 +6865,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Recur.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_locate_n",
-         "coverage_route" : "indirect-family-review:recur",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Recur:_locate_n:1957",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6886,11 +6886,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Recur.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_easter",
-         "coverage_route" : "indirect-family-review:recur",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Recur:_easter:2448",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6907,11 +6907,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Recur.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_field_empty",
-         "coverage_route" : "indirect-family-review:recur",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Recur:_field_empty:2465",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6928,11 +6928,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Recur.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_rtime_values",
-         "coverage_route" : "indirect-family-review:recur",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Recur:_rtime_values:2498",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6949,11 +6949,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Recur.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "__rtime_values",
-         "coverage_route" : "indirect-family-review:recur",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Recur:__rtime_values:2620",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6970,11 +6970,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Recur.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_field_add_values",
-         "coverage_route" : "indirect-family-review:recur",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::Recur:_field_add_values:2695",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -6991,11 +6991,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/Recur.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_init",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_init:50",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7012,11 +7012,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_init_final",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_init_final:156",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7033,11 +7033,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_offmod",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_offmod:165",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7054,11 +7054,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_module",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_module:178",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7075,11 +7075,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_zone",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_zone:199",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7096,7 +7096,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "tzdata",
@@ -7247,7 +7247,7 @@
       },
       {
          "callable" : "_set_curr_zone",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_set_curr_zone:390",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7264,11 +7264,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_get_curr_zone",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_get_curr_zone:401",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7285,11 +7285,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_get_zoneinfo_zone",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_get_zoneinfo_zone:713",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7306,11 +7306,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_zoneinfo_find_file",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_zoneinfo_find_file:753",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7327,11 +7327,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_zoneinfo_file_name_to_zone",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_zoneinfo_file_name_to_zone:764",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7348,11 +7348,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_zoneinfo_file_slurp",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_zoneinfo_file_slurp:773",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7369,11 +7369,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_windows_registry_val",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_windows_registry_val:782",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7390,11 +7390,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_cmd",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_cmd:846",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7411,7 +7411,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "zone",
@@ -7436,7 +7436,7 @@
       },
       {
          "callable" : "__zone",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:__zone:934",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7453,11 +7453,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_check_abbrev_isdst",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_check_abbrev_isdst:1116",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7474,11 +7474,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_check_offset_abbrev_isdst",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_check_offset_abbrev_isdst:1142",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7495,11 +7495,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_list_union",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_list_union:1168",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7516,11 +7516,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_list_add",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_list_add:1181",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7537,7 +7537,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "all_periods",
@@ -7562,7 +7562,7 @@
       },
       {
          "callable" : "_all_periods",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_all_periods:1221",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7579,7 +7579,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "periods",
@@ -7604,7 +7604,7 @@
       },
       {
          "callable" : "_periods",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_periods:1318",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7621,7 +7621,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "date_period",
@@ -7646,7 +7646,7 @@
       },
       {
          "callable" : "_lastrule",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_lastrule:1425",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7663,7 +7663,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "convert",
@@ -7772,7 +7772,7 @@
       },
       {
          "callable" : "_convert_args",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_convert_args:1559",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7789,11 +7789,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_convert",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_convert:1578",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7810,11 +7810,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_zrx",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_zrx:1664",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7831,11 +7831,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_sortByLength",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_sortByLength:1746",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7852,11 +7852,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config_var_tz",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_config_var_tz:1758",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7873,11 +7873,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config_var_setdate",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ:_config_var_setdate:1789",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7894,11 +7894,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config_var",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ_Base:_config_var:23",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7915,11 +7915,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ_Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config_file",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ_Base:_config_file:51",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7936,11 +7936,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ_Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config_file_section",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ_Base:_config_file_section:120",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7957,11 +7957,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ_Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config_file_var",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ_Base:_config_file_var:136",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7978,11 +7978,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ_Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_config",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ_Base:_config:163",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -7999,11 +7999,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ_Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_fix_year",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ_Base:_fix_year:191",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -8020,11 +8020,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ_Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_now",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ_Base:_now:272",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -8041,11 +8041,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ_Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_update_now",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ_Base:_update_now:344",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -8062,11 +8062,11 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ_Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "_sortByLength",
-         "coverage_route" : "indirect-family-review:zone",
+         "coverage_route" : "excluded-private-api",
          "declaration_id" : "Date::Manip::TZ_Base:_sortByLength:406",
          "disposition" : "private-helper",
          "exported" : "no",
@@ -8083,7 +8083,7 @@
             "pod_name_match" : false
          },
          "source_path" : "lib/Date/Manip/TZ_Base.pm",
-         "status" : "discovered-not-specified"
+         "status" : "excluded-private-api"
       },
       {
          "callable" : "new",
@@ -12385,6 +12385,18 @@
       {
          "bindings" : [
             {
+               "callable" : "calc_time_time",
+               "disposition" : "public-oo-method",
+               "module" : "Date::Manip::Base",
+               "profile" : "dm6-reference"
+            }
+         ],
+         "id" : "arithmetic.combine-times",
+         "specification_status" : "inventory-routed; behavioral partitions pending"
+      },
+      {
+         "bindings" : [
+            {
                "callable" : "calc_date_date",
                "disposition" : "public-oo-method",
                "module" : "Date::Manip::Base",
@@ -12428,18 +12440,6 @@
             }
          ],
          "id" : "arithmetic.date-plus-time",
-         "specification_status" : "inventory-routed; behavioral partitions pending"
-      },
-      {
-         "bindings" : [
-            {
-               "callable" : "calc_time_time",
-               "disposition" : "public-oo-method",
-               "module" : "Date::Manip::Base",
-               "profile" : "dm6-reference"
-            }
-         ],
-         "id" : "arithmetic.combine-times",
          "specification_status" : "inventory-routed; behavioral partitions pending"
       },
       {

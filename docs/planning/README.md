@@ -44,9 +44,10 @@ an invalid request; “passing test” does not mean every library operation suc
 - Represent Perl-specific overloads through explicit generic operations. Split
   context-sensitive returns into separately named requests; carry remaining tokens
   or changed values in result records instead of requiring Perl references.
-- Account for private functions through observable behavior and source-side coverage.
-  Do not require another language to reproduce private functions, caches, regexes,
-  object layouts, memory identity, or module/file structure.
+- Exclude private functions from test obligations. Test observable public behavior
+  without requiring private tests or internal execution coverage. Do not require
+  another language to reproduce private functions, caches, regexes, object layouts,
+  memory identity, or module/file structure.
 - Track build tools and internal timezone-data generation separately. Their
   algorithms and generated source are outside the portable date-library contract.
   Timezone data access and user-defined zones remain in scope. Any other exclusion
@@ -173,10 +174,11 @@ compatibility tests stay in a separate binding profile.
 ### 7. Audit coverage and prepare an implementation-only handoff
 
 Report capability, partition, profile, directive, language, configuration and state
-coverage separately. Use source/branch coverage as an internal omission detector,
-not the portable contract. Every public operation needs direct behavioral coverage;
-every private declaration needs an indirect mapping or reviewed exclusion.
-Skips, unsupported variants and disputed cases remain visible in the denominator.
+coverage separately. Every public operation and supported usage type needs direct
+behavioral coverage. Private declarations and internal generation tools are excluded
+from test obligations and coverage denominators. Source review can identify public
+edge cases without requiring private-function or internal branch execution.
+Public skips, unsupported variants and disputed cases remain visible.
 
 Export only approved original features, glossary, abstract protocol, reviewed
 expectations and the project's MIT notice. Audit the exact export list as described

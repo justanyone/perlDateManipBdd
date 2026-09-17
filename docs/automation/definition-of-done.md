@@ -1,6 +1,6 @@
 # Required completion gate
 
-The user's definition of done is:
+The user's original completeness requirement was:
 
 > Is Every single thing that Date::Manip can do reflected in the tests?
 > Are there any edge cases that can be found or predicted (based on logic or
@@ -8,27 +8,31 @@ The user's definition of done is:
 > Done is a COMPLETE test suite of the existing date::manip codebase,
 > Every function, every usage type.
 
-This requirement supersedes any interpretation of earlier plans that would allow
-representative sampling, untested private functions, or deferred known cases to
-count as completion. The pinned reference is Date-Manip 7.00, including its current
-and legacy backends. Preserve the language-neutral portable specification and
-keep implementation-specific tests on the research/binding side.
+The user subsequently clarified that this means **public, non-private APIs only**.
+Private functions are not part of the requested feature set. This clarification
+supersedes earlier requirements for direct private tests, indirect execution
+coverage, and private function/branch accounting. Internal generation tools are
+also outside the public library API. Private declarations may remain in discovery
+inventories solely to document this boundary.
+
+The pinned reference is Date-Manip 7.00, including its current and legacy public
+backends. Preserve the language-neutral portable specification and keep public
+binding-specific tests on the research/binding side. Every public usage type and
+identifiable public behavioral edge case remains required.
 
 Completion requires all of the following evidence:
 
-- Every declared, inherited, exported, aliased, generated, and compatibility
-  callable has test evidence for its supported usage types. Private functions
-  require demonstrated execution through public scenarios or separate original
-  tests; a proposed caller mapping alone is insufficient.
+- Every public callable, including inherited, exported, aliased, generated, and
+  supported compatibility APIs, has test evidence for its supported usage types.
+  Mere package-symbol accessibility does not make a private helper a public API.
 - Every identified grammar production, directive, option, argument shape, result
   carrier, error channel, mutation, and configuration domain has explicit cases.
 - Source inspection and domain reasoning identify boundaries, invalid inputs,
   state sequences, and interacting settings. Every identifiable uncovered case
   becomes a tracked obligation and prevents completion until tested.
-- Source execution coverage is audited for uncovered functions and branches.
-  Coverage percentages support the audit but cannot replace behavioral tests.
-  Unreachable code needs evidence and a reviewed explanation, not an assumed
-  exclusion. Earlier tooling exclusions must be revisited under this requirement.
+- Audit public API coverage against documented signatures and observable behavior.
+  Source inspection may identify additional public edge cases, but executing
+  private functions or covering their implementation branches is not a gate.
 - Suspected bugs have minimal characterization tests, recorded actual results,
   and explicit semantic dispositions. They must not disappear from coverage or
   become silently mandated behavior in the portable default profile.
@@ -37,7 +41,7 @@ Completion requires all of the following evidence:
 - The original Perl harness executes the completed features and binding tests,
   preserves observed distinctions, and demonstrates assertion sensitivity.
   Frozen expected values are never recalculated using Date::Manip during tests.
-- The final coverage report has no known untested in-scope function, usage type,
+- The final coverage report has no known untested public function, usage type,
   or identifiable edge case. It reports evidence, not scenario counts alone.
 - The portable export passes the licensing/source-separation audit. The future
   non-Perl implementation remains outside this task.

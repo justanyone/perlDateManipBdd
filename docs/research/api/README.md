@@ -10,8 +10,8 @@ one row for every CSV discovery record. `declaration_id` combines module,
 callable, and original discovery line so a later regeneration can identify the
 same record. A row records its CSV evidence, reconciled `disposition`, nullable
 `portable_operation_id`, and `coverage_route`. The values are deliberately
-separate: a private helper has no portable operation even when its family needs
-indirect behavioral review.
+separate: a private helper has no portable operation or test obligation. Private
+rows document the discovery boundary and are excluded from coverage denominators.
 
 The `operations` array groups direct public bindings by portable operation ID.
 Every operation currently has `inventory-routed; behavioral partitions pending`.
@@ -79,6 +79,5 @@ symbols.
    finite grammar/data-selection records. Keep generated data out of the
    portable handoff; use original probe inputs for any selected representatives.
 4. Add behavioral partitions and reviewed reference observations for each
-   operation only after its input/output shape is recorded. The private-helper
-   routes remain an omission detector, not requirements for a future
-   implementation to reproduce internals.
+   public operation only after its input/output shape is recorded. Private helpers
+   have no direct or indirect coverage requirements.
