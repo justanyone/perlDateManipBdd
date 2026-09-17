@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "families": [
+    {
+      "name": "calendar-check-family",
+      "probe": "tools/probes/calendar-check-family/probe.pl",
+      "case_ids": [
+        "CC-T-MIDNIGHT-NUMERIC",
+        "CC-T-MIDNIGHT-ONE-DIGIT",
+        "CC-T-MIDNIGHT-PADDED",
+        "CC-T-LAST-SECOND",
+        "CC-T-24-EXACT",
+        "CC-T-24-MINUTE",
+        "CC-T-HOUR-25",
+        "CC-T-MINUTE-60",
+        "CC-T-SECOND-60",
+        "CC-T-NEGATIVE",
+        "CC-T-FRACTION",
+        "CC-T-WHITESPACE",
+        "CC-T-NONNUMERIC",
+        "CC-T-MISSING-FIELD",
+        "CC-T-UNDEFINED-FIELD",
+        "CC-T-EXTRA-FIELD",
+        "CC-D-ORDINARY",
+        "CC-D-LEAP-DAY",
+        "CC-D-LOWER-ENDPOINT",
+        "CC-D-UPPER-ENDPOINT",
+        "CC-D-APRIL-END",
+        "CC-D-YEAR-ZERO",
+        "CC-D-YEAR-10000",
+        "CC-D-MONTH-ZERO",
+        "CC-D-MONTH-13",
+        "CC-D-DAY-ZERO",
+        "CC-D-COMMON-FEB29",
+        "CC-D-APRIL31",
+        "CC-D-24-SECOND",
+        "CC-D-FRACTIONAL-YEAR",
+        "CC-D-WHITESPACE-YEAR",
+        "CC-D-NONNUMERIC-YEAR",
+        "CC-D-MISSING-TIME",
+        "CC-D-EXTRA-FIELD",
+        "CC-D-UNDEFINED-DAY",
+        "CC-D-SCALAR-CARRIER"
+      ]
+    }
+  ]
+}

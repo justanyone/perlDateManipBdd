@@ -1,0 +1,9 @@
+{
+  "source_sha256": {
+    "tools/probes/calendar-check-family/coverage-locations.pl": "1f8c87f7152c2d8d599eb64580305f6bbd20e1afbfb44ff0f404238e62643e39",
+    "docs/research/calendar-check-family/coverage-result.json": "43a3c16e280e2e97a49d15898e52a59aa39ff3f4c95c50d18e53527f050d3bcc",
+    "docs/research/calendar-check-family/target-coverage.json": "8b738f82059a50ce78f68308a40f8032d10f8ed931c0657e4e4dde184c332c31"
+  },
+  "external_merged_database": "/tmp/calendar-check-coverage-root/merged_db",
+  "status": "target instrumentation discrepancy unresolved"
+}

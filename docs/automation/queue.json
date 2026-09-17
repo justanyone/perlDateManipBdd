@@ -162,7 +162,12 @@
         "docs/research/weekday-family/coverage-map.json",
         "docs/research/calendar-evidence-index.md",
         "docs/research/calendar-evidence-index.json",
-        "tools/review/calendar_evidence_index.py"
+        "tools/review/calendar_evidence_index.py",
+        "docs/research/calendar-check-family/README.md",
+        "docs/research/calendar-check-family/feature-map.json",
+        "docs/research/calendar-check-family/coverage-map.json",
+        "docs/research/calendar-check-family/coverage-result.json",
+        "docs/research/calendar-check-family/target-coverage.json"
       ],
       "partial_parsing_edges_review": "52 repeatable public edge requests integrated after independent repair and root review. Explicit setup, 48 outline-row comparisons, native failure lifecycle and binding-only warnings checked; broader domains and source coverage remain open.",
       "input_history_review": "17 repeatable public Date::input cases integrated after provenance repair, canonical-binding correction and explicit not-called configuration metadata. Reviewer requires runtime/profile/module/process evidence and checks feature literals. Constructor retention added; wider transitions remain open.",
@@ -173,8 +178,9 @@
       "active_calendar_workers": {
         "pattern_repair": "week-count-edges: root14-case probe handed off for full mapping/Gherkin review; calendar-check-family released for root review",
         "partial_parsing": "year-day-conversion-family: forward/inverse/fractional day-of-year",
-        "week_edges_finish": "nth-weekday-family: ordinal weekday month/year and no-match"
-      }
+        "week_edges_finish": "read-only investigation of DevelCover zero-hit validation branches; nth-weekday-family released for root review"
+      },
+      "calendar_check_review": "36public requests independently replayed; strict row/provenance reviewer and parser pass. Target coverage10/10statements but0/6branch outcomes despite valid/invalid results; allpartitions observed-partial, instrument discrepancy investigation active."
     },
     {
       "id": "spec-arithmetic-deltas",

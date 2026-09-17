@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "bindings": [
+    {
+      "operation_id": "calendar.validate-time",
+      "module": "Date::Manip::Base",
+      "callable": "check_time",
+      "call_shape": "one ordered time-field array reference",
+      "profile": "oo"
+    },
+    {
+      "operation_id": "calendar.validate-date",
+      "module": "Date::Manip::Base",
+      "callable": "check",
+      "call_shape": "one ordered date-time-field array reference",
+      "profile": "oo"
+    }
+  ],
+  "setup": {
+    "public_calls": [
+      "Date::Manip::Date->new",
+      "Date::Manip::Date->config",
+      "Date::Manip::Date->base"
+    ],
+    "fixture": "docs/automation/reference-profiles.json#oo"
+  },
+  "metadata": {
+    "version": "Date::Manip::Base->version",
+    "error": "Date::Manip::Base->err"
+  },
+  "aliases": []
+}

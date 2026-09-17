@@ -1,0 +1,129 @@
+{
+   "base_sha256" : "5fe1f12a7b59c57baf71c86e266b4ea06851eac0ec203a3507d019bcadbea97c",
+   "criteria" : [
+      {
+         "criterion_index" : 0,
+         "hits" : 40,
+         "kind" : "statement",
+         "line" : 603,
+         "outcome_index" : 0
+      },
+      {
+         "criterion_index" : 0,
+         "hits" : 40,
+         "kind" : "statement",
+         "line" : 604,
+         "outcome_index" : 0
+      },
+      {
+         "criterion_index" : 0,
+         "hits" : 38,
+         "kind" : "statement",
+         "line" : 606,
+         "outcome_index" : 0
+      },
+      {
+         "criterion_index" : 0,
+         "hits" : 24,
+         "kind" : "statement",
+         "line" : 610,
+         "outcome_index" : 0
+      },
+      {
+         "criterion_index" : 0,
+         "hits" : 24,
+         "kind" : "statement",
+         "line" : 612,
+         "outcome_index" : 0
+      },
+      {
+         "criterion_index" : 0,
+         "hits" : 16,
+         "kind" : "statement",
+         "line" : 613,
+         "outcome_index" : 0
+      },
+      {
+         "criterion_index" : 0,
+         "hits" : 70,
+         "kind" : "statement",
+         "line" : 617,
+         "outcome_index" : 0
+      },
+      {
+         "criterion_index" : 0,
+         "hits" : 70,
+         "kind" : "statement",
+         "line" : 618,
+         "outcome_index" : 0
+      },
+      {
+         "criterion_index" : 0,
+         "hits" : 70,
+         "kind" : "statement",
+         "line" : 620,
+         "outcome_index" : 0
+      },
+      {
+         "criterion_index" : 0,
+         "hits" : 46,
+         "kind" : "statement",
+         "line" : 623,
+         "outcome_index" : 0
+      },
+      {
+         "criterion_index" : 0,
+         "hits" : 0,
+         "kind" : "branch",
+         "line" : 606,
+         "outcome_index" : 0
+      },
+      {
+         "criterion_index" : 0,
+         "hits" : 0,
+         "kind" : "branch",
+         "line" : 606,
+         "outcome_index" : 1
+      },
+      {
+         "criterion_index" : 0,
+         "hits" : 0,
+         "kind" : "branch",
+         "line" : 612,
+         "outcome_index" : 0
+      },
+      {
+         "criterion_index" : 0,
+         "hits" : 0,
+         "kind" : "branch",
+         "line" : 612,
+         "outcome_index" : 1
+      },
+      {
+         "criterion_index" : 0,
+         "hits" : 0,
+         "kind" : "branch",
+         "line" : 620,
+         "outcome_index" : 0
+      },
+      {
+         "criterion_index" : 0,
+         "hits" : 0,
+         "kind" : "branch",
+         "line" : 620,
+         "outcome_index" : 1
+      }
+   ],
+   "limitation" : "Statement and branch outcomes only; does not measure condition coverage or prove every input representation.",
+   "scope" : "Base.pm public check and check_time, lines 602 through 623 only",
+   "totals" : {
+      "branch" : {
+         "executed" : 0,
+         "total" : 6
+      },
+      "statement" : {
+         "executed" : 10,
+         "total" : 10
+      }
+   }
+}

@@ -1,0 +1,708 @@
+{
+  "schema_version": 1,
+  "canonical_operations": [
+    "calendar.validate-time",
+    "calendar.validate-date"
+  ],
+  "case_map": [
+    {
+      "case_id": "CC-T-MIDNIGHT-NUMERIC",
+      "operation_id": "calendar.validate-time",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          0,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-time.p1",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/time-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-T-MIDNIGHT-ONE-DIGIT",
+      "operation_id": "calendar.validate-time",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "partition_id": "calendar.validate-time.p4",
+      "disposition": "observed-compatibility",
+      "portable_feature": "spec/drafts/calendar-checks/input-shape-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-T-MIDNIGHT-PADDED",
+      "operation_id": "calendar.validate-time",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          "00",
+          "00",
+          "00"
+        ]
+      },
+      "partition_id": "calendar.validate-time.p1",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/time-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-T-LAST-SECOND",
+      "operation_id": "calendar.validate-time",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          23,
+          59,
+          59
+        ]
+      },
+      "partition_id": "calendar.validate-time.p1",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/time-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-T-24-EXACT",
+      "operation_id": "calendar.validate-time",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          24,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-time.p2",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/time-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-T-24-MINUTE",
+      "operation_id": "calendar.validate-time",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          24,
+          1,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-time.p3",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/time-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-T-HOUR-25",
+      "operation_id": "calendar.validate-time",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          25,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-time.p3",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/time-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-T-MINUTE-60",
+      "operation_id": "calendar.validate-time",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          12,
+          60,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-time.p3",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/time-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-T-SECOND-60",
+      "operation_id": "calendar.validate-time",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          12,
+          0,
+          60
+        ]
+      },
+      "partition_id": "calendar.validate-time.p3",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/time-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-T-NEGATIVE",
+      "operation_id": "calendar.validate-time",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          -1,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-time.p4",
+      "disposition": "observed-compatibility",
+      "portable_feature": "spec/drafts/calendar-checks/input-shape-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-T-FRACTION",
+      "operation_id": "calendar.validate-time",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          1.5,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-time.p4",
+      "disposition": "observed-compatibility",
+      "portable_feature": "spec/drafts/calendar-checks/input-shape-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-T-WHITESPACE",
+      "operation_id": "calendar.validate-time",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          " 1",
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-time.p4",
+      "disposition": "observed-compatibility",
+      "portable_feature": "spec/drafts/calendar-checks/input-shape-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-T-NONNUMERIC",
+      "operation_id": "calendar.validate-time",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          "x",
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-time.p4",
+      "disposition": "observed-compatibility",
+      "portable_feature": "spec/drafts/calendar-checks/input-shape-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-T-MISSING-FIELD",
+      "operation_id": "calendar.validate-time",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          12,
+          30
+        ]
+      },
+      "partition_id": "calendar.validate-time.p4",
+      "disposition": "observed-compatibility",
+      "portable_feature": "spec/drafts/calendar-checks/input-shape-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-T-UNDEFINED-FIELD",
+      "operation_id": "calendar.validate-time",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          12,
+          null,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-time.p4",
+      "disposition": "observed-compatibility",
+      "portable_feature": "spec/drafts/calendar-checks/input-shape-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-T-EXTRA-FIELD",
+      "operation_id": "calendar.validate-time",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          12,
+          30,
+          15,
+          99
+        ]
+      },
+      "partition_id": "calendar.validate-time.p4",
+      "disposition": "observed-compatibility",
+      "portable_feature": "spec/drafts/calendar-checks/input-shape-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-ORDINARY",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          2039,
+          5,
+          17,
+          9,
+          7,
+          5
+        ]
+      },
+      "partition_id": "calendar.validate-date.p1",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/date-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-LEAP-DAY",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          2040,
+          2,
+          29,
+          0,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-date.p1",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/date-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-LOWER-ENDPOINT",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-date.p2",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/date-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-UPPER-ENDPOINT",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          9999,
+          12,
+          31,
+          24,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-date.p2",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/date-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-APRIL-END",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          2040,
+          4,
+          30,
+          23,
+          59,
+          59
+        ]
+      },
+      "partition_id": "calendar.validate-date.p2",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/date-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-YEAR-ZERO",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-date.p3",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/date-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-YEAR-10000",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          10000,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-date.p3",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/date-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-MONTH-ZERO",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          2040,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-date.p3",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/date-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-MONTH-13",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          2040,
+          13,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-date.p3",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/date-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-DAY-ZERO",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          2040,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-date.p3",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/date-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-COMMON-FEB29",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          2039,
+          2,
+          29,
+          0,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-date.p3",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/date-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-APRIL31",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          2040,
+          4,
+          31,
+          0,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-date.p3",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/date-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-24-SECOND",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          2040,
+          1,
+          1,
+          24,
+          0,
+          1
+        ]
+      },
+      "partition_id": "calendar.validate-date.p3",
+      "disposition": "documented",
+      "portable_feature": "spec/drafts/calendar-checks/date-validation.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-FRACTIONAL-YEAR",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          2040.5,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-date.p4",
+      "disposition": "observed-compatibility",
+      "portable_feature": "spec/drafts/calendar-checks/input-shape-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-WHITESPACE-YEAR",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          " 2040",
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-date.p4",
+      "disposition": "observed-compatibility",
+      "portable_feature": "spec/drafts/calendar-checks/input-shape-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-NONNUMERIC-YEAR",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          "x",
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-date.p4",
+      "disposition": "observed-compatibility",
+      "portable_feature": "spec/drafts/calendar-checks/input-shape-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-MISSING-TIME",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          2040,
+          1,
+          1
+        ]
+      },
+      "partition_id": "calendar.validate-date.p4",
+      "disposition": "observed-compatibility",
+      "portable_feature": "spec/drafts/calendar-checks/input-shape-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-EXTRA-FIELD",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          2040,
+          1,
+          1,
+          0,
+          0,
+          0,
+          99
+        ]
+      },
+      "partition_id": "calendar.validate-date.p4",
+      "disposition": "observed-compatibility",
+      "portable_feature": "spec/drafts/calendar-checks/input-shape-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-UNDEFINED-DAY",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "ordered-fields",
+        "fields": [
+          2040,
+          1,
+          null,
+          0,
+          0,
+          0
+        ]
+      },
+      "partition_id": "calendar.validate-date.p4",
+      "disposition": "observed-compatibility",
+      "portable_feature": "spec/drafts/calendar-checks/input-shape-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    },
+    {
+      "case_id": "CC-D-SCALAR-CARRIER",
+      "operation_id": "calendar.validate-date",
+      "profile": "oo",
+      "input": {
+        "carrier": "text scalar",
+        "value": "2040-01-01"
+      },
+      "partition_id": "calendar.validate-date.p4",
+      "disposition": "binding-only malformed carrier",
+      "portable_feature": null,
+      "binding_feature": "spec/drafts/calendar-checks/perl-binding.feature",
+      "observation": "docs/research/calendar-check-family/observations.json"
+    }
+  ]
+}

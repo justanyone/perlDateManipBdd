@@ -1122,3 +1122,20 @@ coverage-manifest and launched collector session38875, output
 /tmp/calendar-check-coverage-root. Poll same handle; validate target Base602..623
 branch claims before integrating. Other workers retain year-day-conversion-family
 and nth-weekday-family. All final gates open.
+
+## Calendar validation integration and instrument discrepancy
+
+Root accepted36case calendar-check observations after fresh replay and exact
+review/parser. Collector38875 terminal exit0; full artifact reviewer verifies
+36byte-identical instrumented/plain pairs, no warning normalization. Numeric
+target extraction Base602..623 shows10/10statements but0/6branch outcomes,
+despite observed valid1/invalid0 results. Do NOT claim these branches unreachable
+or covered. Root changed all partition statuses to observed-partial and repaired
+generator/README claims. coverage-result/target-coverage/provenance persisted.
+
+week_edges_finish now investigates this discrepancy read-only (temporary original
+fixtures allowed), after releasing28case nth-weekday batch for root review.
+pattern_repair owns14case week-count-edges finishing work. partial_parsing owns
+year-day-conversion-family. No root capture remains live. Next: resolve reporting
+limitation, replay/review nth-weekday batch and integrate other worker returns.
+All final specification/adapter/coverage gates remain open.

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "operation_partitions": [
+    {
+      "partition_id": "calendar.validate-time.p1",
+      "status": "observed-partial",
+      "evidence": [
+        "numeric and padded midnight",
+        "23:59:59"
+      ]
+    },
+    {
+      "partition_id": "calendar.validate-time.p2",
+      "status": "observed-partial",
+      "evidence": [
+        "24:00:00"
+      ]
+    },
+    {
+      "partition_id": "calendar.validate-time.p3",
+      "status": "observed-partial",
+      "evidence": [
+        "hour 24 remainder",
+        "hour 25",
+        "minute 60",
+        "second 60"
+      ]
+    },
+    {
+      "partition_id": "calendar.validate-time.p4",
+      "status": "observed-partial",
+      "evidence": [
+        "signed",
+        "fractional",
+        "whitespace",
+        "nonnumeric",
+        "missing",
+        "undefined",
+        "extra fields"
+      ]
+    },
+    {
+      "partition_id": "calendar.validate-date.p1",
+      "status": "observed-partial",
+      "evidence": [
+        "ordinary date",
+        "leap day"
+      ]
+    },
+    {
+      "partition_id": "calendar.validate-date.p2",
+      "status": "observed-partial",
+      "evidence": [
+        "years 1 and 9999",
+        "30-day month end",
+        "24:00:00"
+      ]
+    },
+    {
+      "partition_id": "calendar.validate-date.p3",
+      "status": "observed-partial",
+      "evidence": [
+        "year/month/day lower and upper bounds",
+        "common February 29",
+        "April 31",
+        "invalid clock"
+      ]
+    },
+    {
+      "partition_id": "calendar.validate-date.p4",
+      "status": "observed-partial",
+      "evidence": [
+        "fractional, whitespace and nonnumeric year",
+        "missing, undefined and extra fields",
+        "malformed scalar carrier"
+      ]
+    }
+  ],
+  "remaining_domains": [
+    "Other field positions containing fractional, signed, whitespace-padded, nonnumeric, or undefined values.",
+    "Other native carriers such as mappings, nested collections, blessed values, overloads, infinity, NaN, and Unicode numeric text.",
+    "Every arity beyond the selected missing and one-extra controls.",
+    "Runtime and Date-Manip releases other than the pinned reference."
+  ],
+  "scope_note": "No additional numeric civil branch is known from the reviewed 7.00 implementation; remaining items are representation and binding cross-products.",
+  "measurement_note": "Public observations exercise valid and invalid results, but Devel::Cover1.52 on Perl5.40.1 recorded zero hits for all6 target branch outcomes while all10 target statements executed. Branch completeness is unproven; investigate tool behavior, do not exclude these branches."
+}
