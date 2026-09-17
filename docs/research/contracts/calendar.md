@@ -3,7 +3,8 @@
 This research-side catalogue reconciles the 16 `calendar.*` and `epoch.*`
 operation IDs in `docs/research/api/contract-map.json` to Date::Manip 7.00.
 It is an API-boundary record, not a feature specification or an observation set.
-No expected literal has been frozen.
+This catalogue does not embed expected literals; reviewed observations and draft
+features are linked where available.
 
 The source basis is the public POD and public method/wrapper routing in the
 pinned 7.00 distribution: `Base`, `Date`, `DM6`, and `DM5`. The complete
@@ -59,3 +60,16 @@ established literal outcomes, error conventions, warnings, scalar/list-context
 behavior, or DST overlap/gap resolution. The next bounded work is a fresh-process
 probe batch under pinned DM6 and DM5 profiles, with fixed zone and clock fixtures,
 covering the partitions listed in `calendar.json`.
+
+## Week-number evidence reconciliation
+
+All five week-number partitions are now `observed-partial`, with explicit observed
+and remaining scope in calendar.json. The two committed week-rule batches cover
+105 valid Base configurations over14 Gregorian year types and236 additional public
+edge/configuration/facade requests. Their maps and exact reviewers are linked from
+each partition. None is marked fulfilled: interior/inverse domains, wider facade
+dates and settings, malformed inputs and state interactions still need work.
+
+Private helpers remain excluded as direct entrypoints and portable requirements.
+Their logic informs public scenarios, and their execution through public calls
+remains in source-coverage measurement.

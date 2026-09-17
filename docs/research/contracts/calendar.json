@@ -10,7 +10,7 @@
     "calendar_count": 13,
     "epoch_count": 3,
     "exclusions": [
-      "Private helpers and algorithms are excluded because the contract map routes only public call surfaces.",
+      "Private helpers are excluded only as direct test entrypoints and portable implementation requirements. Inspect their logic for observable public cases and include their execution through public calls in statement/branch coverage.",
       "Date parsing, formatting, timezone configuration, and context mutation are outside the calendar.* and epoch.* operation IDs assigned here.",
       "No portable feature or literal expected value is exported from this API-reconciliation catalogue."
     ]
@@ -715,31 +715,96 @@
         {
           "id": "calendar.week-number.p1",
           "description": "normal: interior date and Base inverse",
-          "status": "unobserved"
+          "status": "observed-partial",
+          "review": {
+            "observed_scope": "Selected Base inverse weeks and years have frozen three-field results; forward controls include selected January dates.",
+            "remaining_scope": "Interior dates throughout every week and inverse weeks across all configured year lengths remain to be enumerated.",
+            "completion_status": "unresolved",
+            "evidence": [
+              "docs/research/week-rules-family/coverage-map.json",
+              "docs/research/week-rules-edges/coverage-map.json"
+            ],
+            "verification": [
+              "python3 tools/probes/week-rules-family/review.py docs/research/week-rules-family/observations.json",
+              "python3 tools/probes/week-rules-edges/review.py"
+            ]
+          }
         },
         {
           "id": "calendar.week-number.p2",
           "description": "boundary: dates at calendar-year/week-year transitions",
-          "status": "unobserved"
+          "status": "observed-partial",
+          "review": {
+            "observed_scope": "105 valid Base configurations cross14 Gregorian year types and14 year-boundary dates each (20580 pairs).",
+            "remaining_scope": "Legacy facade year-transition dates beyond the selected2040-01-01 control; interior first/last-week transitions outside enumerated dates.",
+            "completion_status": "unresolved",
+            "evidence": [
+              "docs/research/week-rules-family/coverage-map.json",
+              "docs/research/week-rules-edges/coverage-map.json"
+            ],
+            "verification": [
+              "python3 tools/probes/week-rules-family/review.py docs/research/week-rules-family/observations.json",
+              "python3 tools/probes/week-rules-edges/review.py"
+            ]
+          }
         },
         {
           "id": "calendar.week-number.p3",
           "description": "configuration: FirstDay and Week1ofYear variants for Base; first_weekday override/default for Date/functional",
-          "status": "unobserved"
+          "status": "observed-partial",
+          "review": {
+            "observed_scope": "All105 valid Base settings observed; Date/DM6/DM5 omission, explicit absence and1..7 overrides observed across jan1/jan4 and Monday/Sunday settings.",
+            "remaining_scope": "Facade behavior across other configured weekdays/rules and dates, plus sequential override state effects beyond recorded calls.",
+            "completion_status": "unresolved",
+            "evidence": [
+              "docs/research/week-rules-family/coverage-map.json",
+              "docs/research/week-rules-edges/coverage-map.json"
+            ],
+            "verification": [
+              "python3 tools/probes/week-rules-family/review.py docs/research/week-rules-family/observations.json",
+              "python3 tools/probes/week-rules-edges/review.py"
+            ]
+          }
         },
         {
           "id": "calendar.week-number.p4",
           "description": "invalid: week outside valid configured range, invalid first weekday, malformed date/list, and missing fields",
-          "status": "unobserved"
+          "status": "observed-partial",
+          "review": {
+            "observed_scope": "39 Base edge calls and17 configuration attempts cover selected out-of-range/missing/malformed inputs;180 facade calls include invalid overrides.",
+            "remaining_scope": "Arbitrary numeric magnitudes, additional native shapes, invalid civil-field combinations, and configuration cross-products remain open.",
+            "completion_status": "unresolved",
+            "evidence": [
+              "docs/research/week-rules-family/coverage-map.json",
+              "docs/research/week-rules-edges/coverage-map.json"
+            ],
+            "verification": [
+              "python3 tools/probes/week-rules-family/review.py docs/research/week-rules-family/observations.json",
+              "python3 tools/probes/week-rules-edges/review.py"
+            ]
+          }
         },
         {
           "id": "calendar.week-number.p5",
           "description": "compatibility: compare DM5/DM6 legacy routines and distinguish Base week-year pair from legacy number",
-          "status": "unobserved"
+          "status": "observed-partial",
+          "review": {
+            "observed_scope": "All three legacy routes compared for60 requests each; Base pair/inverse observations remain distinct from legacy numeric outcomes.",
+            "remaining_scope": "Legacy dates beyond the selected January control, short-year interpretation and additional state/profile interactions remain open.",
+            "completion_status": "unresolved",
+            "evidence": [
+              "docs/research/week-rules-family/coverage-map.json",
+              "docs/research/week-rules-edges/coverage-map.json"
+            ],
+            "verification": [
+              "python3 tools/probes/week-rules-family/review.py docs/research/week-rules-family/observations.json",
+              "python3 tools/probes/week-rules-edges/review.py"
+            ]
+          }
         }
       ],
       "ambiguities": [
-        "Date's optional first-weekday override is described as historical; its omission and invalid-value behavior must be probed. Base documentation calls its definition ISO, while its implementation uses configurable week rules; preserve that tension as an ambiguity."
+        "Observed omission and invalid overrides are captured in week-rules-edges; they may return numeric compatibility results with native warnings. Base configurable pair/inverse semantics remain distinct from legacy single-number semantics. Remaining domains are listed per partition; none is fully discharged."
       ],
       "binding_return_carrier": "Base forward: two-element Perl list (week-year, week-number); Base inverse: one three-field array reference; Date/functional forms: scalar number."
     },

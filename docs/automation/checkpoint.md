@@ -917,3 +917,14 @@ feature rows across both files to exact recorded inputs/profiles/modes/results;
 Real parser accepts276 cases in the changed file with no errors/warnings. Probes
 and observations unchanged. Recurrence worker is fixing interrupted-call capture
 placeholders and strengthening fixture/request checks; other workers retain scope.
+
+## Week-number contract status reconciliation
+
+Root updated the source calendar catalogue: all five week-number partitions now
+say observed-partial and link committed core/edge evidence and exact review commands.
+Each lists concrete remaining domains, with completion unresolved. This replaces
+stale unobserved labels without falsely closing partitions. Corrected private-helper
+scope wording to exclude direct entrypoints only, retaining source coverage. The
+fixed-commit397-partition ledger remains historical until next deliberate refresh.
+Language worker was confirmed terminal, then explicitly restarted to correct six
+failed setup return placeholders; recurrence/configuration workers remain active.
