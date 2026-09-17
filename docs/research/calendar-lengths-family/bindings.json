@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "operations": [
+    {
+      "operation_id": "calendar.days-in-month",
+      "bindings": [
+        {
+          "route": "base",
+          "module": "Date::Manip::Base",
+          "callable": "days_in_month",
+          "arguments": [
+            "year",
+            "month"
+          ],
+          "carrier": "scalar for one month; list for documented month zero"
+        },
+        {
+          "route": "dm6",
+          "module": "Date::Manip::DM6",
+          "callable": "Date_DaysInMonth",
+          "arguments": [
+            "month",
+            "year"
+          ],
+          "carrier": "Perl scalar or list context recorded per case"
+        },
+        {
+          "route": "dm5",
+          "module": "Date::Manip::DM5",
+          "callable": "Date_DaysInMonth",
+          "arguments": [
+            "month",
+            "year"
+          ],
+          "carrier": "Perl scalar or list context recorded per case"
+        }
+      ]
+    },
+    {
+      "operation_id": "calendar.days-in-year",
+      "bindings": [
+        {
+          "route": "base",
+          "module": "Date::Manip::Base",
+          "callable": "days_in_year",
+          "arguments": [
+            "year"
+          ],
+          "carrier": "scalar"
+        },
+        {
+          "route": "dm6",
+          "module": "Date::Manip::DM6",
+          "callable": "Date_DaysInYear",
+          "arguments": [
+            "year"
+          ],
+          "carrier": "scalar"
+        },
+        {
+          "route": "dm5",
+          "module": "Date::Manip::DM5",
+          "callable": "Date_DaysInYear",
+          "arguments": [
+            "year"
+          ],
+          "carrier": "scalar"
+        }
+      ]
+    }
+  ],
+  "aliases": [],
+  "setup": {
+    "base": "Date::Manip::Date->new; configure pinned oo profile; obtain public base receiver",
+    "dm6": "Date::Manip::DM6::Date_Init with pinned dm6 profile",
+    "dm5": "Date::Manip::DM5::Date_Init with pinned dm5 profile"
+  },
+  "metadata_operations": {
+    "base": "Date::Manip::Base->version and inherited err",
+    "dm6": "Date::Manip::DM6::DateManipVersion",
+    "dm5": "Date::Manip::DM5::DateManipVersion"
+  }
+}

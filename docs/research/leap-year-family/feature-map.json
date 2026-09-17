@@ -1,0 +1,1374 @@
+{
+  "schema_version": 1,
+  "status": "research mapping; evidence present is not portable approval",
+  "canonical_operation_id": "calendar.is-leap-year",
+  "contract_source": "docs/research/contracts/calendar.json",
+  "cases": [
+    {
+      "case_id": "LY-CYCLE-2000-2399-BASE",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p1",
+        "calendar.is-leap-year.p2"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "inclusive-range",
+        "first": 2000,
+        "last": 2399
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-CYCLE-2000-2399-BASE"
+    },
+    {
+      "case_id": "LY-CYCLE-2000-2399-DM6",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p1",
+        "calendar.is-leap-year.p2"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "inclusive-range",
+        "first": 2000,
+        "last": 2399
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-CYCLE-2000-2399-DM6"
+    },
+    {
+      "case_id": "LY-CYCLE-2000-2399-DM5",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p1",
+        "calendar.is-leap-year.p2"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "inclusive-range",
+        "first": 2000,
+        "last": 2399
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-CYCLE-2000-2399-DM5"
+    },
+    {
+      "case_id": "LY-BOUNDARY-0001-BASE",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p1"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": "0001"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-0001-BASE"
+    },
+    {
+      "case_id": "LY-BOUNDARY-0001-DM6",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p1"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "0001"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-0001-DM6"
+    },
+    {
+      "case_id": "LY-BOUNDARY-0001-DM5",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p1"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "0001"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-0001-DM5"
+    },
+    {
+      "case_id": "LY-BOUNDARY-0004-BASE",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p1"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": "0004"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-0004-BASE"
+    },
+    {
+      "case_id": "LY-BOUNDARY-0004-DM6",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p1"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "0004"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-0004-DM6"
+    },
+    {
+      "case_id": "LY-BOUNDARY-0004-DM5",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p1"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "0004"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-0004-DM5"
+    },
+    {
+      "case_id": "LY-BOUNDARY-1600-BASE",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p2"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": "1600"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-1600-BASE"
+    },
+    {
+      "case_id": "LY-BOUNDARY-1600-DM6",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p2"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "1600"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-1600-DM6"
+    },
+    {
+      "case_id": "LY-BOUNDARY-1600-DM5",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p2"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "1600"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-1600-DM5"
+    },
+    {
+      "case_id": "LY-BOUNDARY-1900-BASE",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p2"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": "1900"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-1900-BASE"
+    },
+    {
+      "case_id": "LY-BOUNDARY-1900-DM6",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p2"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "1900"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-1900-DM6"
+    },
+    {
+      "case_id": "LY-BOUNDARY-1900-DM5",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p2"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "1900"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-1900-DM5"
+    },
+    {
+      "case_id": "LY-BOUNDARY-2400-BASE",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p2"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": "2400"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-2400-BASE"
+    },
+    {
+      "case_id": "LY-BOUNDARY-2400-DM6",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p2"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "2400"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-2400-DM6"
+    },
+    {
+      "case_id": "LY-BOUNDARY-2400-DM5",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p2"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "2400"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-2400-DM5"
+    },
+    {
+      "case_id": "LY-BOUNDARY-9996-BASE",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p1"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": "9996"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-9996-BASE"
+    },
+    {
+      "case_id": "LY-BOUNDARY-9996-DM6",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p1"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "9996"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-9996-DM6"
+    },
+    {
+      "case_id": "LY-BOUNDARY-9996-DM5",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p1"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "9996"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-9996-DM5"
+    },
+    {
+      "case_id": "LY-BOUNDARY-9999-BASE",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p1"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": "9999"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-9999-BASE"
+    },
+    {
+      "case_id": "LY-BOUNDARY-9999-DM6",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p1"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "9999"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-9999-DM6"
+    },
+    {
+      "case_id": "LY-BOUNDARY-9999-DM5",
+      "portable_feature": "spec/drafts/leap-years/gregorian-cycle.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p1"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "9999"
+      },
+      "classification": "candidate documented behavior",
+      "evidence_selector": "LY-BOUNDARY-9999-DM5"
+    },
+    {
+      "case_id": "LY-SHORT-DEFAULT-00-BASE",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-DEFAULT-00-BASE"
+    },
+    {
+      "case_id": "LY-SHORT-DEFAULT-00-DM6",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-DEFAULT-00-DM6"
+    },
+    {
+      "case_id": "LY-SHORT-DEFAULT-00-DM5",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-DEFAULT-00-DM5"
+    },
+    {
+      "case_id": "LY-SHORT-DEFAULT-40-BASE",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": "40"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-DEFAULT-40-BASE"
+    },
+    {
+      "case_id": "LY-SHORT-DEFAULT-40-DM6",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "40"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-DEFAULT-40-DM6"
+    },
+    {
+      "case_id": "LY-SHORT-DEFAULT-40-DM5",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "40"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-DEFAULT-40-DM5"
+    },
+    {
+      "case_id": "LY-SHORT-c-BASE",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-c-BASE",
+      "yy_to_yyyy": "C"
+    },
+    {
+      "case_id": "LY-SHORT-c-DM6",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-c-DM6",
+      "yy_to_yyyy": "C"
+    },
+    {
+      "case_id": "LY-SHORT-c-DM5",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-c-DM5",
+      "yy_to_yyyy": "C"
+    },
+    {
+      "case_id": "LY-SHORT-c19-BASE",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-c19-BASE",
+      "yy_to_yyyy": "C19"
+    },
+    {
+      "case_id": "LY-SHORT-c19-DM6",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-c19-DM6",
+      "yy_to_yyyy": "C19"
+    },
+    {
+      "case_id": "LY-SHORT-c19-DM5",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-c19-DM5",
+      "yy_to_yyyy": "C19"
+    },
+    {
+      "case_id": "LY-SHORT-c20-BASE",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-c20-BASE",
+      "yy_to_yyyy": "C20"
+    },
+    {
+      "case_id": "LY-SHORT-c20-DM6",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-c20-DM6",
+      "yy_to_yyyy": "C20"
+    },
+    {
+      "case_id": "LY-SHORT-c20-DM5",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-c20-DM5",
+      "yy_to_yyyy": "C20"
+    },
+    {
+      "case_id": "LY-SHORT-c2000-BASE",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-c2000-BASE",
+      "yy_to_yyyy": "C2000"
+    },
+    {
+      "case_id": "LY-SHORT-c2000-DM6",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-c2000-DM6",
+      "yy_to_yyyy": "C2000"
+    },
+    {
+      "case_id": "LY-SHORT-c2000-DM5",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-c2000-DM5",
+      "yy_to_yyyy": "C2000"
+    },
+    {
+      "case_id": "LY-SHORT-0-BASE",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-0-BASE",
+      "yy_to_yyyy": "0"
+    },
+    {
+      "case_id": "LY-SHORT-0-DM6",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-0-DM6",
+      "yy_to_yyyy": "0"
+    },
+    {
+      "case_id": "LY-SHORT-0-DM5",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-0-DM5",
+      "yy_to_yyyy": "0"
+    },
+    {
+      "case_id": "LY-SHORT-99-BASE",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-99-BASE",
+      "yy_to_yyyy": "99"
+    },
+    {
+      "case_id": "LY-SHORT-99-DM6",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-99-DM6",
+      "yy_to_yyyy": "99"
+    },
+    {
+      "case_id": "LY-SHORT-99-DM5",
+      "portable_feature": "spec/drafts/leap-years/short-year-compatibility.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-SHORT-99-DM5",
+      "yy_to_yyyy": "99"
+    },
+    {
+      "case_id": "LY-EDGE-OMITTED-BASE",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "omitted"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-OMITTED-BASE"
+    },
+    {
+      "case_id": "LY-EDGE-OMITTED-DM6",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "omitted"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-OMITTED-DM6"
+    },
+    {
+      "case_id": "LY-EDGE-OMITTED-DM5",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "omitted"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-OMITTED-DM5"
+    },
+    {
+      "case_id": "LY-EDGE-UNDEFINED-BASE",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "undefined"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-UNDEFINED-BASE"
+    },
+    {
+      "case_id": "LY-EDGE-UNDEFINED-DM6",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "undefined"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-UNDEFINED-DM6"
+    },
+    {
+      "case_id": "LY-EDGE-UNDEFINED-DM5",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "undefined"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-UNDEFINED-DM5"
+    },
+    {
+      "case_id": "LY-EDGE-EMPTY-BASE",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": ""
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-EMPTY-BASE"
+    },
+    {
+      "case_id": "LY-EDGE-EMPTY-DM6",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": ""
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-EMPTY-DM6"
+    },
+    {
+      "case_id": "LY-EDGE-EMPTY-DM5",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": ""
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-EMPTY-DM5"
+    },
+    {
+      "case_id": "LY-EDGE-SPACE-BASE",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": " "
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-SPACE-BASE"
+    },
+    {
+      "case_id": "LY-EDGE-SPACE-DM6",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": " "
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-SPACE-DM6"
+    },
+    {
+      "case_id": "LY-EDGE-SPACE-DM5",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": " "
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-SPACE-DM5"
+    },
+    {
+      "case_id": "LY-EDGE-NONNUMERIC4-BASE",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": "abcd"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-NONNUMERIC4-BASE"
+    },
+    {
+      "case_id": "LY-EDGE-NONNUMERIC4-DM6",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "abcd"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-NONNUMERIC4-DM6"
+    },
+    {
+      "case_id": "LY-EDGE-NONNUMERIC4-DM5",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "abcd"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-NONNUMERIC4-DM5"
+    },
+    {
+      "case_id": "LY-EDGE-NONNUMERIC3-BASE",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "text",
+        "value": "abc"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-NONNUMERIC3-BASE"
+    },
+    {
+      "case_id": "LY-EDGE-NONNUMERIC3-DM6",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "abc"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-NONNUMERIC3-DM6"
+    },
+    {
+      "case_id": "LY-EDGE-NONNUMERIC3-DM5",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "text",
+        "value": "abc"
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-NONNUMERIC3-DM5"
+    },
+    {
+      "case_id": "LY-EDGE-FRACTION-BASE",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "number",
+        "value": 2000.5
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-FRACTION-BASE"
+    },
+    {
+      "case_id": "LY-EDGE-FRACTION-DM6",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "number",
+        "value": 2000.5
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-FRACTION-DM6"
+    },
+    {
+      "case_id": "LY-EDGE-FRACTION-DM5",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "number",
+        "value": 2000.5
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-FRACTION-DM5"
+    },
+    {
+      "case_id": "LY-EDGE-ZERO-BASE",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "number",
+        "value": 0
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-ZERO-BASE"
+    },
+    {
+      "case_id": "LY-EDGE-ZERO-DM6",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "number",
+        "value": 0
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-ZERO-DM6"
+    },
+    {
+      "case_id": "LY-EDGE-ZERO-DM5",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "number",
+        "value": 0
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-ZERO-DM5"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE4-BASE",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "number",
+        "value": -4
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-NEGATIVE4-BASE"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE4-DM6",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "number",
+        "value": -4
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-NEGATIVE4-DM6"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE4-DM5",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "number",
+        "value": -4
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-NEGATIVE4-DM5"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE400-BASE",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "number",
+        "value": -400
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-NEGATIVE400-BASE"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE400-DM6",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "number",
+        "value": -400
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-NEGATIVE400-DM6"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE400-DM5",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "number",
+        "value": -400
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-NEGATIVE400-DM5"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE100-BASE",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "number",
+        "value": -100
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-NEGATIVE100-BASE"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE100-DM6",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "number",
+        "value": -100
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-NEGATIVE100-DM6"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE100-DM5",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "number",
+        "value": -100
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-NEGATIVE100-DM5"
+    },
+    {
+      "case_id": "LY-EDGE-OUTSIDE10000-BASE",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::Base.leapyear",
+      "request": {
+        "shape": "number",
+        "value": 10000
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-OUTSIDE10000-BASE"
+    },
+    {
+      "case_id": "LY-EDGE-OUTSIDE10000-DM6",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM6.Date_LeapYear",
+      "request": {
+        "shape": "number",
+        "value": 10000
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-OUTSIDE10000-DM6"
+    },
+    {
+      "case_id": "LY-EDGE-OUTSIDE10000-DM5",
+      "portable_feature": "spec/drafts/leap-years/invalid-and-outside.feature",
+      "binding_feature": "spec/drafts/leap-years/perl-binding.feature",
+      "operation_id": "calendar.is-leap-year",
+      "contract_partitions": [
+        "calendar.is-leap-year.p3"
+      ],
+      "public_binding": "Date::Manip::DM5.Date_LeapYear",
+      "request": {
+        "shape": "number",
+        "value": 10000
+      },
+      "classification": "compatibility/disputed",
+      "evidence_selector": "LY-EDGE-OUTSIDE10000-DM5"
+    }
+  ],
+  "binding_only_case_ids": [
+    "LY-BIND-DM5-DEPRECATION"
+  ],
+  "mapping_limit": "Partition links identify exercised domains; remaining-domains.md records finite gaps."
+}

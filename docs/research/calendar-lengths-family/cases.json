@@ -1,0 +1,2254 @@
+{
+  "schema_version": 1,
+  "purpose": "Original public calendar month/year length requests for Date-Manip 7.00.",
+  "canonical_operations": [
+    "calendar.days-in-month",
+    "calendar.days-in-year"
+  ],
+  "cases": [
+    {
+      "case_id": "CL-BASE-M-2039-01",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2039,
+        1
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2039-02",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2039,
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2039-03",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2039,
+        3
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2039-04",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2039,
+        4
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2039-05",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2039,
+        5
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2039-06",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2039,
+        6
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2039-07",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2039,
+        7
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2039-08",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2039,
+        8
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2039-09",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2039,
+        9
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2039-10",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2039,
+        10
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2039-11",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2039,
+        11
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2039-12",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2039,
+        12
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2040-01",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        1
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2040-02",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2040-03",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        3
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2040-04",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        4
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2040-05",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        5
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2040-06",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        6
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2040-07",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        7
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2040-08",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        8
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2040-09",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        9
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2040-10",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        10
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2040-11",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        11
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M-2040-12",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        12
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-Y-1900",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        1900
+      ],
+      "return_context": "scalar",
+      "partition": "century-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-Y-2000",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        2000
+      ],
+      "return_context": "scalar",
+      "partition": "century-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-Y-2039",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "ordinary-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-Y-2040",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "ordinary-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-Y-2100",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        2100
+      ],
+      "return_context": "scalar",
+      "partition": "century-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M0-2039-LIST",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2039,
+        0
+      ],
+      "return_context": "list",
+      "partition": "month-zero-list",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M0-2039-SCALAR",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2039,
+        0
+      ],
+      "return_context": "scalar",
+      "partition": "month-zero-scalar",
+      "portable_behavior": false
+    },
+    {
+      "case_id": "CL-BASE-M0-2040-LIST",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        0
+      ],
+      "return_context": "list",
+      "partition": "month-zero-list",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-BASE-M0-2040-SCALAR",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        0
+      ],
+      "return_context": "scalar",
+      "partition": "month-zero-scalar",
+      "portable_behavior": false
+    },
+    {
+      "case_id": "CL-BASE-SHORT-M-DEFAULT",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        "00",
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": false,
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-BASE-SHORT-Y-DEFAULT",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": false,
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-BASE-SHORT-M-C19",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        "00",
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": false,
+      "yytoyyyy": "C19",
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-BASE-SHORT-Y-C19",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": false,
+      "yytoyyyy": "C19",
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-BASE-SHORT-M-C20",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        "00",
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": false,
+      "yytoyyyy": "C20",
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-BASE-SHORT-Y-C20",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": false,
+      "yytoyyyy": "C20",
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-OMITTED",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "all arguments omitted"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-UNDEFINED",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        null
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "month explicitly undefined"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-TEXT",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        "x"
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "month is nonnumeric text"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-FRACTION",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        2.5
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "month is fractional"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-NEGATIVE",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        -1
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "month is below range"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-HIGH",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040,
+        13
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "month is above range"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-YEAR-OMITTED",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "portable_behavior": false,
+      "note": "year omitted from month request"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-YEAR-UNDEFINED",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        null,
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "portable_behavior": false,
+      "note": "year explicitly undefined"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-YEAR-TEXT",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        "x",
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "portable_behavior": false,
+      "note": "year is nonnumeric text"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-YEAR-NEGATIVE",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        -1,
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "portable_behavior": false,
+      "note": "year is negative"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-YEAR-HIGH",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        10000,
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "portable_behavior": false,
+      "note": "year is outside four digits"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-Y-OMITTED",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year omitted"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-Y-UNDEFINED",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        null
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year explicitly undefined"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-Y-TEXT",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        "x"
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year is nonnumeric text"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-Y-FRACTION",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        2040.5
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year is fractional"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-Y-ZERO",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        0
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year is zero"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-Y-NEGATIVE",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        -1
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year is negative"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-Y-HIGH",
+      "route": "base",
+      "profile": "oo",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        10000
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year is outside four digits"
+    },
+    {
+      "case_id": "CL-DM6-M-2039-01",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        1,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2039-02",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2039-03",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        3,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2039-04",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        4,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2039-05",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        5,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2039-06",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        6,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2039-07",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        7,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2039-08",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        8,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2039-09",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        9,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2039-10",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        10,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2039-11",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        11,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2039-12",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        12,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2040-01",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        1,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2040-02",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2040-03",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        3,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2040-04",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        4,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2040-05",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        5,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2040-06",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        6,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2040-07",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        7,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2040-08",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        8,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2040-09",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        9,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2040-10",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        10,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2040-11",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        11,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M-2040-12",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        12,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-Y-1900",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        1900
+      ],
+      "return_context": "scalar",
+      "partition": "century-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-Y-2000",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        2000
+      ],
+      "return_context": "scalar",
+      "partition": "century-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-Y-2039",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "ordinary-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-Y-2040",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "ordinary-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-Y-2100",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        2100
+      ],
+      "return_context": "scalar",
+      "partition": "century-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM6-M0-2039-LIST",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        0,
+        2039
+      ],
+      "return_context": "list",
+      "partition": "month-zero-list",
+      "portable_behavior": false
+    },
+    {
+      "case_id": "CL-DM6-M0-2039-SCALAR",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        0,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "month-zero-scalar",
+      "portable_behavior": false
+    },
+    {
+      "case_id": "CL-DM6-M0-2040-LIST",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        0,
+        2040
+      ],
+      "return_context": "list",
+      "partition": "month-zero-list",
+      "portable_behavior": false
+    },
+    {
+      "case_id": "CL-DM6-M0-2040-SCALAR",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        0,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "month-zero-scalar",
+      "portable_behavior": false
+    },
+    {
+      "case_id": "CL-DM6-SHORT-M-DEFAULT",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": false,
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-DM6-SHORT-Y-DEFAULT",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": false,
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-DM6-SHORT-M-C19",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": false,
+      "yytoyyyy": "C19",
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-DM6-SHORT-Y-C19",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": false,
+      "yytoyyyy": "C19",
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-DM6-SHORT-M-C20",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": false,
+      "yytoyyyy": "C20",
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-DM6-SHORT-Y-C20",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": false,
+      "yytoyyyy": "C20",
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-OMITTED",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "all arguments omitted"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-UNDEFINED",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        null,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "month explicitly undefined"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-TEXT",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        "x",
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "month is nonnumeric text"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-FRACTION",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2.5,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "month is fractional"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-NEGATIVE",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        -1,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "month is below range"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-HIGH",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        13,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "month is above range"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-YEAR-OMITTED",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "portable_behavior": false,
+      "note": "year omitted from month request"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-YEAR-UNDEFINED",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        null
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "portable_behavior": false,
+      "note": "year explicitly undefined"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-YEAR-TEXT",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        "x"
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "portable_behavior": false,
+      "note": "year is nonnumeric text"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-YEAR-NEGATIVE",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        -1
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "portable_behavior": false,
+      "note": "year is negative"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-YEAR-HIGH",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        10000
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "portable_behavior": false,
+      "note": "year is outside four digits"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-Y-OMITTED",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year omitted"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-Y-UNDEFINED",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        null
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year explicitly undefined"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-Y-TEXT",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        "x"
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year is nonnumeric text"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-Y-FRACTION",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        2040.5
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year is fractional"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-Y-ZERO",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        0
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year is zero"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-Y-NEGATIVE",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        -1
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year is negative"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-Y-HIGH",
+      "route": "dm6",
+      "profile": "dm6",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        10000
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year is outside four digits"
+    },
+    {
+      "case_id": "CL-DM5-M-2039-01",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        1,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2039-02",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2039-03",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        3,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2039-04",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        4,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2039-05",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        5,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2039-06",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        6,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2039-07",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        7,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2039-08",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        8,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2039-09",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        9,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2039-10",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        10,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2039-11",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        11,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2039-12",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        12,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2040-01",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        1,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2040-02",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2040-03",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        3,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2040-04",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        4,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2040-05",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        5,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2040-06",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        6,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2040-07",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        7,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2040-08",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        8,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2040-09",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        9,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2040-10",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        10,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2040-11",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        11,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M-2040-12",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        12,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-Y-1900",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        1900
+      ],
+      "return_context": "scalar",
+      "partition": "century-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-Y-2000",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        2000
+      ],
+      "return_context": "scalar",
+      "partition": "century-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-Y-2039",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "ordinary-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-Y-2040",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "ordinary-leap",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-Y-2100",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        2100
+      ],
+      "return_context": "scalar",
+      "partition": "century-common",
+      "portable_behavior": true
+    },
+    {
+      "case_id": "CL-DM5-M0-2039-LIST",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        0,
+        2039
+      ],
+      "return_context": "list",
+      "partition": "month-zero-list",
+      "portable_behavior": false
+    },
+    {
+      "case_id": "CL-DM5-M0-2039-SCALAR",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        0,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "month-zero-scalar",
+      "portable_behavior": false
+    },
+    {
+      "case_id": "CL-DM5-M0-2040-LIST",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        0,
+        2040
+      ],
+      "return_context": "list",
+      "partition": "month-zero-list",
+      "portable_behavior": false
+    },
+    {
+      "case_id": "CL-DM5-M0-2040-SCALAR",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        0,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "month-zero-scalar",
+      "portable_behavior": false
+    },
+    {
+      "case_id": "CL-DM5-SHORT-M-DEFAULT",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": true,
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-DM5-SHORT-Y-DEFAULT",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": true,
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-DM5-SHORT-M-C19",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": true,
+      "yytoyyyy": "C19",
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-DM5-SHORT-Y-C19",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": true,
+      "yytoyyyy": "C19",
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-DM5-SHORT-M-C20",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": true,
+      "yytoyyyy": "C20",
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-DM5-SHORT-Y-C20",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "portable_behavior": true,
+      "yytoyyyy": "C20",
+      "note": "two-digit text year 00"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-OMITTED",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "all arguments omitted"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-UNDEFINED",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        null,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "month explicitly undefined"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-TEXT",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        "x",
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "month is nonnumeric text"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-FRACTION",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2.5,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "month is fractional"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-NEGATIVE",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        -1,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "month is below range"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-HIGH",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        13,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "portable_behavior": false,
+      "note": "month is above range"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-YEAR-OMITTED",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "portable_behavior": false,
+      "note": "year omitted from month request"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-YEAR-UNDEFINED",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        null
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "portable_behavior": false,
+      "note": "year explicitly undefined"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-YEAR-TEXT",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        "x"
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "portable_behavior": false,
+      "note": "year is nonnumeric text"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-YEAR-NEGATIVE",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        -1
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "portable_behavior": false,
+      "note": "year is negative"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-YEAR-HIGH",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-month",
+      "arguments": [
+        2,
+        10000
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "portable_behavior": false,
+      "note": "year is outside four digits"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-Y-OMITTED",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year omitted"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-Y-UNDEFINED",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        null
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year explicitly undefined"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-Y-TEXT",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        "x"
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year is nonnumeric text"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-Y-FRACTION",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        2040.5
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year is fractional"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-Y-ZERO",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        0
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year is zero"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-Y-NEGATIVE",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        -1
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year is negative"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-Y-HIGH",
+      "route": "dm5",
+      "profile": "dm5",
+      "operation_id": "calendar.days-in-year",
+      "arguments": [
+        10000
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "portable_behavior": false,
+      "note": "year is outside four digits"
+    }
+  ]
+}

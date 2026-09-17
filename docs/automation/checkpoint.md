@@ -1037,3 +1037,20 @@ mutation domains remain open. No new reference capture needed; literals unchange
 Leap-year and calendar-length workers delivered stable batches pending root review.
 Weekday worker continues. Broad coverage session20949 still active on last poll;
 continue samehandle before consuming report. All final gates remain open.
+
+## Leap-year and calendar-length integration; coverage summary failure
+
+Root replay sessions74274 and90115 terminated exit0; /tmp/leap-year-root-final.json
+and /tmp/calendar-lengths-root-final.json byte-match frozen evidence. Reviewers
+validate84 leap requests (1200 cycle-year calls,2562 native contexts) and171 length
+requests with342 isolated attempts. Nine features parse without errors/warnings.
+Leap reviewer now rejects mismatched column counts and duplicate case/context keys.
+Drafts retain explicit remaining domains; no complete partition or BDD claim.
+
+Coverage session20949 TERMINATED exit1 after probe collection and merge, at summary
+validation: inconsistent statement denominator. Preserve /tmp/public-coverage-corpus-broad-root
+raw outputs, dbs, merged_db and report/cover.json. No summary.json or valid new
+percentage claim. Obj.pm rows show overlapping annotated/executed counts;
+partial_parsing owns read-only investigation of Devel::Cover semantics. Do not
+restart965 probes merely to repair report interpretation. Weekday worker retains
+its new family dirs; all final gates remain open.

@@ -1,0 +1,946 @@
+{
+  "schema_version": 1,
+  "status": "original bounded requests for reference characterization",
+  "operation_id": "calendar.is-leap-year",
+  "cases": [
+    {
+      "case_id": "LY-CYCLE-2000-2399-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "complete-cycle",
+      "input": {
+        "shape": "inclusive-range",
+        "first": 2000,
+        "last": 2399
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-CYCLE-2000-2399-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "complete-cycle",
+      "input": {
+        "shape": "inclusive-range",
+        "first": 2000,
+        "last": 2399
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-CYCLE-2000-2399-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "complete-cycle",
+      "input": {
+        "shape": "inclusive-range",
+        "first": 2000,
+        "last": 2399
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-0001-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "0001"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-0001-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "0001"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-0001-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "0001"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-0004-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "0004"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-0004-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "0004"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-0004-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "0004"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-1600-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "1600"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-1600-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "1600"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-1600-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "1600"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-1900-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "1900"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-1900-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "1900"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-1900-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "1900"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-2400-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "2400"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-2400-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "2400"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-2400-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "2400"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-9996-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "9996"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-9996-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "9996"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-9996-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "9996"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-9999-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "9999"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-9999-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "9999"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-BOUNDARY-9999-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "valid-boundary",
+      "input": {
+        "shape": "text",
+        "value": "9999"
+      },
+      "classification": "candidate documented behavior"
+    },
+    {
+      "case_id": "LY-SHORT-DEFAULT-00-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "short-year-default",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-SHORT-DEFAULT-00-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "short-year-default",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-SHORT-DEFAULT-00-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "short-year-default",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-SHORT-DEFAULT-40-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "short-year-default",
+      "input": {
+        "shape": "text",
+        "value": "40"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-SHORT-DEFAULT-40-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "short-year-default",
+      "input": {
+        "shape": "text",
+        "value": "40"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-SHORT-DEFAULT-40-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "short-year-default",
+      "input": {
+        "shape": "text",
+        "value": "40"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-SHORT-c-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "C"
+    },
+    {
+      "case_id": "LY-SHORT-c-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "C"
+    },
+    {
+      "case_id": "LY-SHORT-c-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "C"
+    },
+    {
+      "case_id": "LY-SHORT-c19-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "C19"
+    },
+    {
+      "case_id": "LY-SHORT-c19-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "C19"
+    },
+    {
+      "case_id": "LY-SHORT-c19-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "C19"
+    },
+    {
+      "case_id": "LY-SHORT-c20-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "C20"
+    },
+    {
+      "case_id": "LY-SHORT-c20-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "C20"
+    },
+    {
+      "case_id": "LY-SHORT-c20-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "C20"
+    },
+    {
+      "case_id": "LY-SHORT-c2000-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "C2000"
+    },
+    {
+      "case_id": "LY-SHORT-c2000-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "C2000"
+    },
+    {
+      "case_id": "LY-SHORT-c2000-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "C2000"
+    },
+    {
+      "case_id": "LY-SHORT-0-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "0"
+    },
+    {
+      "case_id": "LY-SHORT-0-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "0"
+    },
+    {
+      "case_id": "LY-SHORT-0-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "0"
+    },
+    {
+      "case_id": "LY-SHORT-99-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "99"
+    },
+    {
+      "case_id": "LY-SHORT-99-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "99"
+    },
+    {
+      "case_id": "LY-SHORT-99-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "short-year-configuration",
+      "input": {
+        "shape": "text",
+        "value": "00"
+      },
+      "classification": "compatibility/disputed",
+      "yy_to_yyyy": "99"
+    },
+    {
+      "case_id": "LY-EDGE-OMITTED-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "omitted"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-OMITTED-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "omitted"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-OMITTED-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "omitted"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-UNDEFINED-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "undefined"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-UNDEFINED-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "undefined"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-UNDEFINED-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "undefined"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-EMPTY-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "text",
+        "value": ""
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-EMPTY-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "text",
+        "value": ""
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-EMPTY-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "text",
+        "value": ""
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-SPACE-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "text",
+        "value": " "
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-SPACE-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "text",
+        "value": " "
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-SPACE-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "text",
+        "value": " "
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-NONNUMERIC4-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "text",
+        "value": "abcd"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-NONNUMERIC4-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "text",
+        "value": "abcd"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-NONNUMERIC4-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "text",
+        "value": "abcd"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-NONNUMERIC3-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "text",
+        "value": "abc"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-NONNUMERIC3-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "text",
+        "value": "abc"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-NONNUMERIC3-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "text",
+        "value": "abc"
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-FRACTION-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": 2000.5
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-FRACTION-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": 2000.5
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-FRACTION-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": 2000.5
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-ZERO-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": 0
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-ZERO-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": 0
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-ZERO-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": 0
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE4-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": -4
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE4-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": -4
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE4-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": -4
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE400-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": -400
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE400-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": -400
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE400-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": -400
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE100-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": -100
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE100-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": -100
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-NEGATIVE100-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": -100
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-OUTSIDE10000-BASE",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": 10000
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-OUTSIDE10000-DM6",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": 10000
+      },
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "LY-EDGE-OUTSIDE10000-DM5",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "group": "invalid-or-outside",
+      "input": {
+        "shape": "number",
+        "value": 10000
+      },
+      "classification": "compatibility/disputed"
+    }
+  ]
+}

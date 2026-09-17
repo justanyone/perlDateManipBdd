@@ -1,0 +1,2530 @@
+{
+  "schema_version": 1,
+  "canonical_operations": [
+    "calendar.days-in-month",
+    "calendar.days-in-year"
+  ],
+  "source_binding": {
+    "calendar.days-in-month": [
+      "Date::Manip::Base->days_in_month(year,month)",
+      "Date::Manip::DM6::Date_DaysInMonth(month,year)",
+      "Date::Manip::DM5::Date_DaysInMonth(month,year)"
+    ],
+    "calendar.days-in-year": [
+      "Date::Manip::Base->days_in_year(year)",
+      "Date::Manip::DM6::Date_DaysInYear(year)",
+      "Date::Manip::DM5::Date_DaysInYear(year)"
+    ]
+  },
+  "aliases": [],
+  "case_map": [
+    {
+      "case_id": "CL-BASE-M-2039-01",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2039,
+        1
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2039-02",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2039,
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2039-03",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2039,
+        3
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2039-04",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2039,
+        4
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2039-05",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2039,
+        5
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2039-06",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2039,
+        6
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2039-07",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2039,
+        7
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2039-08",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2039,
+        8
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2039-09",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2039,
+        9
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2039-10",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2039,
+        10
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2039-11",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2039,
+        11
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2039-12",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2039,
+        12
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2040-01",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        1
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2040-02",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2040-03",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        3
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2040-04",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        4
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2040-05",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        5
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2040-06",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        6
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2040-07",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        7
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2040-08",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        8
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2040-09",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        9
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2040-10",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        10
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2040-11",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        11
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M-2040-12",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        12
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-Y-1900",
+      "operation_id": "calendar.days-in-year",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        1900
+      ],
+      "return_context": "scalar",
+      "partition": "century-common",
+      "feature": "spec/drafts/calendar-lengths/year-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-Y-2000",
+      "operation_id": "calendar.days-in-year",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2000
+      ],
+      "return_context": "scalar",
+      "partition": "century-leap",
+      "feature": "spec/drafts/calendar-lengths/year-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-Y-2039",
+      "operation_id": "calendar.days-in-year",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "ordinary-common",
+      "feature": "spec/drafts/calendar-lengths/year-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-Y-2040",
+      "operation_id": "calendar.days-in-year",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "ordinary-leap",
+      "feature": "spec/drafts/calendar-lengths/year-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-Y-2100",
+      "operation_id": "calendar.days-in-year",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2100
+      ],
+      "return_context": "scalar",
+      "partition": "century-common",
+      "feature": "spec/drafts/calendar-lengths/year-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M0-2039-LIST",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2039,
+        0
+      ],
+      "return_context": "list",
+      "partition": "month-zero-list",
+      "feature": "spec/drafts/calendar-lengths/all-months-and-short-years.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M0-2039-SCALAR",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2039,
+        0
+      ],
+      "return_context": "scalar",
+      "partition": "month-zero-scalar",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M0-2040-LIST",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        0
+      ],
+      "return_context": "list",
+      "partition": "month-zero-list",
+      "feature": "spec/drafts/calendar-lengths/all-months-and-short-years.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-M0-2040-SCALAR",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        0
+      ],
+      "return_context": "scalar",
+      "partition": "month-zero-scalar",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-SHORT-M-DEFAULT",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        "00",
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-SHORT-Y-DEFAULT",
+      "operation_id": "calendar.days-in-year",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-SHORT-M-C19",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        "00",
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-SHORT-Y-C19",
+      "operation_id": "calendar.days-in-year",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-SHORT-M-C20",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        "00",
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-SHORT-Y-C20",
+      "operation_id": "calendar.days-in-year",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-OMITTED",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-UNDEFINED",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        null
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-TEXT",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        "x"
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-FRACTION",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        2.5
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-NEGATIVE",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        -1
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-HIGH",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040,
+        13
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-YEAR-OMITTED",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-YEAR-UNDEFINED",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        null,
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-YEAR-TEXT",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        "x",
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-YEAR-NEGATIVE",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        -1,
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-M-YEAR-HIGH",
+      "operation_id": "calendar.days-in-month",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        10000,
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-Y-OMITTED",
+      "operation_id": "calendar.days-in-year",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-Y-UNDEFINED",
+      "operation_id": "calendar.days-in-year",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        null
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-Y-TEXT",
+      "operation_id": "calendar.days-in-year",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        "x"
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-Y-FRACTION",
+      "operation_id": "calendar.days-in-year",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        2040.5
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-Y-ZERO",
+      "operation_id": "calendar.days-in-year",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        0
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-Y-NEGATIVE",
+      "operation_id": "calendar.days-in-year",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        -1
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-BASE-INVALID-Y-HIGH",
+      "operation_id": "calendar.days-in-year",
+      "profile": "oo",
+      "route": "base",
+      "arguments": [
+        10000
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2039-01",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        1,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2039-02",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        2,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2039-03",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        3,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2039-04",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        4,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2039-05",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        5,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2039-06",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        6,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2039-07",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        7,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2039-08",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        8,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2039-09",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        9,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2039-10",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        10,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2039-11",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        11,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2039-12",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        12,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2040-01",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        1,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2040-02",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        2,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2040-03",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        3,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2040-04",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        4,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2040-05",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        5,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2040-06",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        6,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2040-07",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        7,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2040-08",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        8,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2040-09",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        9,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2040-10",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        10,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2040-11",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        11,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M-2040-12",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        12,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-Y-1900",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        1900
+      ],
+      "return_context": "scalar",
+      "partition": "century-common",
+      "feature": "spec/drafts/calendar-lengths/year-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-Y-2000",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        2000
+      ],
+      "return_context": "scalar",
+      "partition": "century-leap",
+      "feature": "spec/drafts/calendar-lengths/year-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-Y-2039",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "ordinary-common",
+      "feature": "spec/drafts/calendar-lengths/year-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-Y-2040",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "ordinary-leap",
+      "feature": "spec/drafts/calendar-lengths/year-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-Y-2100",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        2100
+      ],
+      "return_context": "scalar",
+      "partition": "century-common",
+      "feature": "spec/drafts/calendar-lengths/year-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M0-2039-LIST",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        0,
+        2039
+      ],
+      "return_context": "list",
+      "partition": "month-zero-list",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M0-2039-SCALAR",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        0,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "month-zero-scalar",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M0-2040-LIST",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        0,
+        2040
+      ],
+      "return_context": "list",
+      "partition": "month-zero-list",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-M0-2040-SCALAR",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        0,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "month-zero-scalar",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-SHORT-M-DEFAULT",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        2,
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-SHORT-Y-DEFAULT",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-SHORT-M-C19",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        2,
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-SHORT-Y-C19",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-SHORT-M-C20",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        2,
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-SHORT-Y-C20",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-OMITTED",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-UNDEFINED",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        null,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-TEXT",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        "x",
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-FRACTION",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        2.5,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-NEGATIVE",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        -1,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-HIGH",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        13,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-YEAR-OMITTED",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-YEAR-UNDEFINED",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        2,
+        null
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-YEAR-TEXT",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        2,
+        "x"
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-YEAR-NEGATIVE",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        2,
+        -1
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-M-YEAR-HIGH",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        2,
+        10000
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-Y-OMITTED",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-Y-UNDEFINED",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        null
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-Y-TEXT",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        "x"
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-Y-FRACTION",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        2040.5
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-Y-ZERO",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        0
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-Y-NEGATIVE",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        -1
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM6-INVALID-Y-HIGH",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "route": "dm6",
+      "arguments": [
+        10000
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2039-01",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        1,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2039-02",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        2,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2039-03",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        3,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2039-04",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        4,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2039-05",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        5,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2039-06",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        6,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2039-07",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        7,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2039-08",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        8,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2039-09",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        9,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2039-10",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        10,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2039-11",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        11,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2039-12",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        12,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-common",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2040-01",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        1,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2040-02",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        2,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2040-03",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        3,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2040-04",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        4,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2040-05",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        5,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2040-06",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        6,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2040-07",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        7,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2040-08",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        8,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2040-09",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        9,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2040-10",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        10,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2040-11",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        11,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M-2040-12",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        12,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "all-months-leap",
+      "feature": "spec/drafts/calendar-lengths/month-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-Y-1900",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        1900
+      ],
+      "return_context": "scalar",
+      "partition": "century-common",
+      "feature": "spec/drafts/calendar-lengths/year-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-Y-2000",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        2000
+      ],
+      "return_context": "scalar",
+      "partition": "century-leap",
+      "feature": "spec/drafts/calendar-lengths/year-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-Y-2039",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "ordinary-common",
+      "feature": "spec/drafts/calendar-lengths/year-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-Y-2040",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "ordinary-leap",
+      "feature": "spec/drafts/calendar-lengths/year-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-Y-2100",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        2100
+      ],
+      "return_context": "scalar",
+      "partition": "century-common",
+      "feature": "spec/drafts/calendar-lengths/year-lengths.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M0-2039-LIST",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        0,
+        2039
+      ],
+      "return_context": "list",
+      "partition": "month-zero-list",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M0-2039-SCALAR",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        0,
+        2039
+      ],
+      "return_context": "scalar",
+      "partition": "month-zero-scalar",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M0-2040-LIST",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        0,
+        2040
+      ],
+      "return_context": "list",
+      "partition": "month-zero-list",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-M0-2040-SCALAR",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        0,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "month-zero-scalar",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-SHORT-M-DEFAULT",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        2,
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/all-months-and-short-years.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-SHORT-Y-DEFAULT",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/all-months-and-short-years.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-SHORT-M-C19",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        2,
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/all-months-and-short-years.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-SHORT-Y-C19",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/all-months-and-short-years.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-SHORT-M-C20",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        2,
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/all-months-and-short-years.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-SHORT-Y-C20",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        "00"
+      ],
+      "return_context": "scalar",
+      "partition": "short-year",
+      "feature": "spec/drafts/calendar-lengths/all-months-and-short-years.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-OMITTED",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-UNDEFINED",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        null,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-TEXT",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        "x",
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-FRACTION",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        2.5,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-NEGATIVE",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        -1,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-HIGH",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        13,
+        2040
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-YEAR-OMITTED",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        2
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-YEAR-UNDEFINED",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        2,
+        null
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-YEAR-TEXT",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        2,
+        "x"
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-YEAR-NEGATIVE",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        2,
+        -1
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-M-YEAR-HIGH",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        2,
+        10000
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year-for-month",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-Y-OMITTED",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-Y-UNDEFINED",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        null
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-Y-TEXT",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        "x"
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-Y-FRACTION",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        2040.5
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-Y-ZERO",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        0
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-Y-NEGATIVE",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        -1
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    },
+    {
+      "case_id": "CL-DM5-INVALID-Y-HIGH",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "route": "dm5",
+      "arguments": [
+        10000
+      ],
+      "return_context": "scalar",
+      "partition": "invalid-year",
+      "feature": "spec/drafts/calendar-lengths/observed-compatibility.feature",
+      "binding_feature": "spec/drafts/calendar-lengths/perl-binding.feature",
+      "observation": "docs/research/calendar-lengths-family/observations.json"
+    }
+  ],
+  "remaining_domains": [
+    "Other proleptic years beyond the selected ordinary and century controls.",
+    "Numeric YYtoYYYY windows and C or C#### spellings beyond C19 and C20.",
+    "Reference values, arrays, hashes, overloaded values, infinities, and NaN in Perl binding calls.",
+    "Runtime versions and Date-Manip releases other than the pinned observations."
+  ]
+}
