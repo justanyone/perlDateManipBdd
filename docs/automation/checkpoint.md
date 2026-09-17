@@ -654,3 +654,23 @@ behavior-gap-ledger audit to reconcile coarse contract obligations against evide
 and outstanding partitions without treating an operation reference as fulfillment.
 coverage_setup owns replace-time and pattern_repair owns day-ordinal. These active
 paths remain unstaged until reviewed. Date::Manip executable BDD adapter still open.
+
+
+## Navigation integration
+
+Integrated 87 public navigation cases after root and independent review. Root
+added complete loaded-module provenance, fixed PATH, a per-row request/outcome
+checker, exception-completion fidelity (no invented undef return on thrown calls),
+concrete deprecation assertion and explicit binding exclusions. A fresh capture
+preserved behavior; independent worker reran and byte-matched all repaired records.
+The root real-parser command uses the separate local/bdd-runner/lib/perl5 prefix
+and accepts six scenarios per file. Python independently confirms 45 returned
+weekday predicates. Remaining public partitions remain listed; no completion claim.
+
+coverage_setup now repairs replace-time after root found absent-return-on-exception,
+missing actual feature checks, conflicting BAD-DATE Given, and vague binding
+exceptions. Do not stage its three paths until repaired. pattern_repair returned
+925 day-ordinal requests for root review and now owns NEW portable-draft-audit.
+partial_parsing owns behavior-gap-ledger. Both audits are read-only for existing
+families. Root next reviews day-ordinal and returned repairs; final executable
+adapter, whole-library coverage and all remaining obligations are still open.

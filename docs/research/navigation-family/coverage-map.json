@@ -1,0 +1,1803 @@
+{
+  "schema_version": 1,
+  "status": "reviewed research-to-draft correspondence; not executable BDD results",
+  "contracts": {
+    "date.find-next": [
+      "Date::Manip::Date::next",
+      "Date::Manip::DM6::Date_GetNext",
+      "Date::Manip::DM5::Date_GetNext"
+    ],
+    "date.find-previous": [
+      "Date::Manip::Date::prev",
+      "Date::Manip::DM6::Date_GetPrev",
+      "Date::Manip::DM5::Date_GetPrev"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "NAV-OO-NEXT-WEEKDAY-MATCH-CURR0",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "weekday-current",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-NEXT-WEEKDAY-MATCH-CURR0",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-WEEKDAY-MATCH-CURR1",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "weekday-current",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-NEXT-WEEKDAY-MATCH-CURR1",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-WEEKDAY-MATCH-CURR2",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "weekday-current",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-NEXT-WEEKDAY-MATCH-CURR2",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-WEEKDAY-CURR2-LATER",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "weekday-clock",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-NEXT-WEEKDAY-CURR2-LATER",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-PREV-WEEKDAY-MATCH-CURR0",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::Date::prev",
+      "profile": "oo",
+      "classification": "weekday-current",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-PREV-WEEKDAY-MATCH-CURR0",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-previous",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-PREV-WEEKDAY-MATCH-CURR1",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::Date::prev",
+      "profile": "oo",
+      "classification": "weekday-current",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-PREV-WEEKDAY-MATCH-CURR1",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-previous",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-PREV-WEEKDAY-MATCH-CURR2",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::Date::prev",
+      "profile": "oo",
+      "classification": "weekday-current",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-PREV-WEEKDAY-MATCH-CURR2",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-previous",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-PREV-WEEKDAY-CURR2-EARLIER",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::Date::prev",
+      "profile": "oo",
+      "classification": "weekday-clock",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-PREV-WEEKDAY-CURR2-EARLIER",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-previous",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-PREV-WEEKDAY-CURR2-LATER",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::Date::prev",
+      "profile": "oo",
+      "classification": "weekday-clock",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-PREV-WEEKDAY-CURR2-LATER",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-previous",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-WEEKDAY-NONMATCH",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "weekday-nonmatching",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-NEXT-WEEKDAY-NONMATCH",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-PREV-WEEKDAY-NONMATCH",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::Date::prev",
+      "profile": "oo",
+      "classification": "weekday-nonmatching",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-PREV-WEEKDAY-NONMATCH",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-previous",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-WEEKDAY-FULL-CLOCK",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "weekday-clock",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-NEXT-WEEKDAY-FULL-CLOCK",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-PREV-WEEKDAY-SHORT-CLOCK",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::Date::prev",
+      "profile": "oo",
+      "classification": "weekday-clock",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-PREV-WEEKDAY-SHORT-CLOCK",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-previous",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-CLOCK-EXACT-CURR0",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "partial-clock",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-NEXT-CLOCK-EXACT-CURR0",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-CLOCK-EXACT-CURR1",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "partial-clock",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-NEXT-CLOCK-EXACT-CURR1",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-CLOCK-EXACT-CURR2",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "partial-clock",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-NEXT-CLOCK-EXACT-CURR2",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-PREV-CLOCK-EXACT-CURR0",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::Date::prev",
+      "profile": "oo",
+      "classification": "partial-clock",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-PREV-CLOCK-EXACT-CURR0",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-previous",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-PREV-CLOCK-EXACT-CURR1",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::Date::prev",
+      "profile": "oo",
+      "classification": "partial-clock",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-PREV-CLOCK-EXACT-CURR1",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-previous",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-MINUTE-EXACT-CURR0",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "partial-clock",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-NEXT-MINUTE-EXACT-CURR0",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-MINUTE-EXACT-CURR1",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "partial-clock",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-NEXT-MINUTE-EXACT-CURR1",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-PREV-SECOND-CURR0",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::Date::prev",
+      "profile": "oo",
+      "classification": "partial-clock",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-PREV-SECOND-CURR0",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-previous",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-HOUR-PASSED",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "partial-clock",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-NEXT-HOUR-PASSED",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-LEAP-MIDNIGHT",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "leap-boundary",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-NEXT-LEAP-MIDNIGHT",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-PREV-LEAP-MIDNIGHT",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::Date::prev",
+      "profile": "oo",
+      "classification": "leap-boundary",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-PREV-LEAP-MIDNIGHT",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-previous",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-YEAR-WEEKDAY",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "year-boundary",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-NEXT-YEAR-WEEKDAY",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-DST-GAP",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "dst-gap",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "A navigation into the New York spring gap reports success after losing the carrier",
+      "observation_case": "NAV-OO-NEXT-DST-GAP",
+      "research_status": "repeatable",
+      "portable_status": "disputed compatibility",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-PREV-DST-GAP",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::Date::prev",
+      "profile": "oo",
+      "classification": "dst-gap",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "A navigation into the New York spring gap reports success after losing the carrier",
+      "observation_case": "NAV-OO-PREV-DST-GAP",
+      "research_status": "repeatable",
+      "portable_status": "disputed compatibility",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-previous",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-DST-OVERLAP",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "dst-overlap",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Navigate valid weekday and clock predicates",
+      "observation_case": "NAV-OO-NEXT-DST-OVERLAP",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-UNSET",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "invalid-state",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "An unset or error-bearing receiver cannot navigate",
+      "observation_case": "NAV-OO-NEXT-UNSET",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-PREV-ERROR",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::Date::prev",
+      "profile": "oo",
+      "classification": "invalid-state",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "An unset or error-bearing receiver cannot navigate",
+      "observation_case": "NAV-OO-PREV-ERROR",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.parse-text",
+        "date.find-previous",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-DOW-EIGHT",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "invalid-weekday",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Invalid predicates report failure while preserving a valid carrier",
+      "observation_case": "NAV-OO-NEXT-DOW-EIGHT",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-PREV-STRING-WEEKDAY",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::Date::prev",
+      "profile": "oo",
+      "classification": "invalid-weekday",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Invalid predicates report failure while preserving a valid carrier",
+      "observation_case": "NAV-OO-PREV-STRING-WEEKDAY",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-previous",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-MISSING-PREDICATE",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "invalid-predicate",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Invalid predicates report failure while preserving a valid carrier",
+      "observation_case": "NAV-OO-NEXT-MISSING-PREDICATE",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-PREV-SHORT-CLOCK",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::Date::prev",
+      "profile": "oo",
+      "classification": "invalid-clock",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Invalid predicates report failure while preserving a valid carrier",
+      "observation_case": "NAV-OO-PREV-SHORT-CLOCK",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-previous",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-BAD-CLOCK",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "invalid-clock",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Invalid predicates report failure while preserving a valid carrier",
+      "observation_case": "NAV-OO-NEXT-BAD-CLOCK",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-EXTRA-ARGUMENT",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "extra-arity",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "An extra object argument is ignored",
+      "observation_case": "NAV-OO-NEXT-EXTRA-ARGUMENT",
+      "research_status": "repeatable",
+      "portable_status": "disputed compatibility",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-NUMERIC-CURR0",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM6::Date_GetNext",
+      "profile": "dm6",
+      "classification": "weekday-current",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-NEXT-NUMERIC-CURR0",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-NUMERIC-CURR1",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM6::Date_GetNext",
+      "profile": "dm6",
+      "classification": "weekday-current",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-NEXT-NUMERIC-CURR1",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-NUMERIC-CURR2-LATER",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM6::Date_GetNext",
+      "profile": "dm6",
+      "classification": "weekday-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-NEXT-NUMERIC-CURR2-LATER",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-PREV-NUMERIC-CURR0",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM6::Date_GetPrev",
+      "profile": "dm6",
+      "classification": "weekday-current",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-PREV-NUMERIC-CURR0",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-PREV-NUMERIC-CURR1",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM6::Date_GetPrev",
+      "profile": "dm6",
+      "classification": "weekday-current",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-PREV-NUMERIC-CURR1",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-PREV-NUMERIC-CURR2-LATER",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM6::Date_GetPrev",
+      "profile": "dm6",
+      "classification": "weekday-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-PREV-NUMERIC-CURR2-LATER",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-ABBREVIATED-WEEKDAY",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM6::Date_GetNext",
+      "profile": "dm6",
+      "classification": "weekday-string",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-NEXT-ABBREVIATED-WEEKDAY",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-PREV-FULL-WEEKDAY",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM6::Date_GetPrev",
+      "profile": "dm6",
+      "classification": "weekday-string",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-PREV-FULL-WEEKDAY",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-CHAR-WEEKDAY",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM6::Date_GetNext",
+      "profile": "dm6",
+      "classification": "weekday-string",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-NEXT-CHAR-WEEKDAY",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-NONMATCH",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM6::Date_GetNext",
+      "profile": "dm6",
+      "classification": "weekday-nonmatching",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-NEXT-NONMATCH",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-WEEKDAY-TIME-TEXT",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM6::Date_GetNext",
+      "profile": "dm6",
+      "classification": "weekday-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-NEXT-WEEKDAY-TIME-TEXT",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-PREV-WEEKDAY-COMPONENTS",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM6::Date_GetPrev",
+      "profile": "dm6",
+      "classification": "weekday-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-PREV-WEEKDAY-COMPONENTS",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-CLOCK-TEXT-CURR0",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM6::Date_GetNext",
+      "profile": "dm6",
+      "classification": "partial-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-NEXT-CLOCK-TEXT-CURR0",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-MINUTE-COMPONENTS",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM6::Date_GetNext",
+      "profile": "dm6",
+      "classification": "partial-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-NEXT-MINUTE-COMPONENTS",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-PREV-SECOND-COMPONENTS",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM6::Date_GetPrev",
+      "profile": "dm6",
+      "classification": "partial-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-PREV-SECOND-COMPONENTS",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-CLOCK-CURR2",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM6::Date_GetNext",
+      "profile": "dm6",
+      "classification": "partial-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-NEXT-CLOCK-CURR2",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-LEAP-MIDNIGHT",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM6::Date_GetNext",
+      "profile": "dm6",
+      "classification": "leap-boundary",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-NEXT-LEAP-MIDNIGHT",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-PREV-YEAR-WEEKDAY",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM6::Date_GetPrev",
+      "profile": "dm6",
+      "classification": "year-boundary",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM6-PREV-YEAR-WEEKDAY",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-INVALID-DATE",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM6::Date_GetNext",
+      "profile": "dm6",
+      "classification": "invalid-source",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Invalid source and weekday inputs return defined empty text",
+      "observation_case": "NAV-DM6-NEXT-INVALID-DATE",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-PREV-DOW-EIGHT",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM6::Date_GetPrev",
+      "profile": "dm6",
+      "classification": "invalid-weekday",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Invalid source and weekday inputs return defined empty text",
+      "observation_case": "NAV-DM6-PREV-DOW-EIGHT",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-UNKNOWN-WEEKDAY",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM6::Date_GetNext",
+      "profile": "dm6",
+      "classification": "invalid-weekday",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Invalid source and weekday inputs return defined empty text",
+      "observation_case": "NAV-DM6-NEXT-UNKNOWN-WEEKDAY",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-PREV-MISSING-PREDICATE",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM6::Date_GetPrev",
+      "profile": "dm6",
+      "classification": "invalid-predicate",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Invalid source and weekday inputs return defined empty text",
+      "observation_case": "NAV-DM6-PREV-MISSING-PREDICATE",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-BAD-TIME",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM6::Date_GetNext",
+      "profile": "dm6",
+      "classification": "invalid-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Invalid requests can raise profile-specific native exceptions",
+      "observation_case": "NAV-DM6-NEXT-BAD-TIME",
+      "research_status": "repeatable",
+      "portable_status": "disputed compatibility",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-NUMERIC-CURR0",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM5::Date_GetNext",
+      "profile": "dm5",
+      "classification": "weekday-current",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-NEXT-NUMERIC-CURR0",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-NUMERIC-CURR1",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM5::Date_GetNext",
+      "profile": "dm5",
+      "classification": "weekday-current",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-NEXT-NUMERIC-CURR1",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-NUMERIC-CURR2-LATER",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM5::Date_GetNext",
+      "profile": "dm5",
+      "classification": "weekday-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-NEXT-NUMERIC-CURR2-LATER",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-PREV-NUMERIC-CURR0",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM5::Date_GetPrev",
+      "profile": "dm5",
+      "classification": "weekday-current",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-PREV-NUMERIC-CURR0",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-PREV-NUMERIC-CURR1",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM5::Date_GetPrev",
+      "profile": "dm5",
+      "classification": "weekday-current",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-PREV-NUMERIC-CURR1",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-PREV-NUMERIC-CURR2-LATER",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM5::Date_GetPrev",
+      "profile": "dm5",
+      "classification": "weekday-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-PREV-NUMERIC-CURR2-LATER",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-ABBREVIATED-WEEKDAY",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM5::Date_GetNext",
+      "profile": "dm5",
+      "classification": "weekday-string",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-NEXT-ABBREVIATED-WEEKDAY",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-PREV-FULL-WEEKDAY",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM5::Date_GetPrev",
+      "profile": "dm5",
+      "classification": "weekday-string",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-PREV-FULL-WEEKDAY",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-CHAR-WEEKDAY",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM5::Date_GetNext",
+      "profile": "dm5",
+      "classification": "weekday-string",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-NEXT-CHAR-WEEKDAY",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-NONMATCH",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM5::Date_GetNext",
+      "profile": "dm5",
+      "classification": "weekday-nonmatching",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-NEXT-NONMATCH",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-WEEKDAY-TIME-TEXT",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM5::Date_GetNext",
+      "profile": "dm5",
+      "classification": "weekday-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-NEXT-WEEKDAY-TIME-TEXT",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-PREV-WEEKDAY-COMPONENTS",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM5::Date_GetPrev",
+      "profile": "dm5",
+      "classification": "weekday-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-PREV-WEEKDAY-COMPONENTS",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-CLOCK-TEXT-CURR0",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM5::Date_GetNext",
+      "profile": "dm5",
+      "classification": "partial-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-NEXT-CLOCK-TEXT-CURR0",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-MINUTE-COMPONENTS",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM5::Date_GetNext",
+      "profile": "dm5",
+      "classification": "partial-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-NEXT-MINUTE-COMPONENTS",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-PREV-SECOND-COMPONENTS",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM5::Date_GetPrev",
+      "profile": "dm5",
+      "classification": "partial-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-PREV-SECOND-COMPONENTS",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-CLOCK-CURR2",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM5::Date_GetNext",
+      "profile": "dm5",
+      "classification": "partial-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-NEXT-CLOCK-CURR2",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-LEAP-MIDNIGHT",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM5::Date_GetNext",
+      "profile": "dm5",
+      "classification": "leap-boundary",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-NEXT-LEAP-MIDNIGHT",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-PREV-YEAR-WEEKDAY",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM5::Date_GetPrev",
+      "profile": "dm5",
+      "classification": "year-boundary",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Functional profiles navigate weekday and partial-clock predicates",
+      "observation_case": "NAV-DM5-PREV-YEAR-WEEKDAY",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-INVALID-DATE",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM5::Date_GetNext",
+      "profile": "dm5",
+      "classification": "invalid-source",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Invalid source and weekday inputs return defined empty text",
+      "observation_case": "NAV-DM5-NEXT-INVALID-DATE",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-PREV-DOW-EIGHT",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM5::Date_GetPrev",
+      "profile": "dm5",
+      "classification": "invalid-weekday",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Invalid source and weekday inputs return defined empty text",
+      "observation_case": "NAV-DM5-PREV-DOW-EIGHT",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-UNKNOWN-WEEKDAY",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM5::Date_GetNext",
+      "profile": "dm5",
+      "classification": "invalid-weekday",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Invalid source and weekday inputs return defined empty text",
+      "observation_case": "NAV-DM5-NEXT-UNKNOWN-WEEKDAY",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-PREV-MISSING-PREDICATE",
+      "operation_id": "date.find-previous",
+      "binding": "Date::Manip::DM5::Date_GetPrev",
+      "profile": "dm5",
+      "classification": "invalid-predicate",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Invalid requests can raise profile-specific native exceptions",
+      "observation_case": "NAV-DM5-PREV-MISSING-PREDICATE",
+      "research_status": "repeatable",
+      "portable_status": "disputed compatibility",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-previous"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-BAD-TIME",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM5::Date_GetNext",
+      "profile": "dm5",
+      "classification": "invalid-clock",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Invalid source and weekday inputs return defined empty text",
+      "observation_case": "NAV-DM5-NEXT-BAD-TIME",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-OO-NEXT-OMITTED-CURR",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::Date::next",
+      "profile": "oo",
+      "classification": "omitted-arity",
+      "feature": "spec/drafts/navigation/object-navigation.feature",
+      "scenario": "Omitted inclusion mode is treated as strict and emits native warnings",
+      "observation_case": "NAV-OO-NEXT-OMITTED-CURR",
+      "research_status": "repeatable",
+      "portable_status": "disputed compatibility",
+      "contract_ids": [
+        "object.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.create",
+        "date.find-next",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-OMITTED-CURR",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM6::Date_GetNext",
+      "profile": "dm6",
+      "classification": "omitted-arity",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Omitted inclusion mode acts as strict navigation and warns",
+      "observation_case": "NAV-DM6-NEXT-OMITTED-CURR",
+      "research_status": "repeatable",
+      "portable_status": "disputed compatibility",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-OMITTED-CURR",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM5::Date_GetNext",
+      "profile": "dm5",
+      "classification": "omitted-arity",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Omitted inclusion mode acts as strict navigation and warns",
+      "observation_case": "NAV-DM5-NEXT-OMITTED-CURR",
+      "research_status": "repeatable",
+      "portable_status": "disputed compatibility",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-EXTRA-COMPONENT",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM6::Date_GetNext",
+      "profile": "dm6",
+      "classification": "extra-arity",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Extra clock components differ between functional profiles",
+      "observation_case": "NAV-DM6-NEXT-EXTRA-COMPONENT",
+      "research_status": "repeatable",
+      "portable_status": "disputed compatibility",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-EXTRA-COMPONENT",
+      "operation_id": "date.find-next",
+      "binding": "Date::Manip::DM5::Date_GetNext",
+      "profile": "dm5",
+      "classification": "extra-arity",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario": "Extra clock components differ between functional profiles",
+      "observation_case": "NAV-DM5-NEXT-EXTRA-COMPONENT",
+      "research_status": "repeatable",
+      "portable_status": "disputed compatibility",
+      "contract_ids": [
+        "config.apply-settings",
+        "meta.reference-version",
+        "date.find-next"
+      ]
+    }
+  ],
+  "binding_assertions": [
+    {
+      "scenario_id": "NAV-BIND-DM5-DEPRECATION",
+      "source_case_id": "NAV-DM5-NEXT-NUMERIC-CURR0",
+      "operation_id": "date.find-next",
+      "feature": "spec/drafts/navigation/functional-navigation.feature",
+      "excluded_from_portable_handoff": true
+    }
+  ]
+}

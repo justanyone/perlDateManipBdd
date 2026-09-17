@@ -1,0 +1,1379 @@
+{
+  "schema_version": 1,
+  "status": "original bounded public navigation inputs; outcomes recorded separately",
+  "reference": {
+    "distribution_version": "7.00",
+    "dm6_backend_version": "7.00",
+    "dm5_backend_version": "5.66",
+    "tzdata": "tzdata2026c",
+    "tzcode": "tzcode2026c"
+  },
+  "cases": [
+    {
+      "case_id": "NAV-OO-NEXT-WEEKDAY-MATCH-CURR0",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        0
+      ],
+      "classification": "weekday-current"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-WEEKDAY-MATCH-CURR1",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        1
+      ],
+      "classification": "weekday-current"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-WEEKDAY-MATCH-CURR2",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        2
+      ],
+      "classification": "weekday-current"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-WEEKDAY-CURR2-LATER",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        2,
+        [
+          19,
+          30,
+          0
+        ]
+      ],
+      "classification": "weekday-clock"
+    },
+    {
+      "case_id": "NAV-OO-PREV-WEEKDAY-MATCH-CURR0",
+      "profile": "oo",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        0
+      ],
+      "classification": "weekday-current"
+    },
+    {
+      "case_id": "NAV-OO-PREV-WEEKDAY-MATCH-CURR1",
+      "profile": "oo",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        1
+      ],
+      "classification": "weekday-current"
+    },
+    {
+      "case_id": "NAV-OO-PREV-WEEKDAY-MATCH-CURR2",
+      "profile": "oo",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        2
+      ],
+      "classification": "weekday-current"
+    },
+    {
+      "case_id": "NAV-OO-PREV-WEEKDAY-CURR2-EARLIER",
+      "profile": "oo",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        2,
+        [
+          12,
+          30,
+          0
+        ]
+      ],
+      "classification": "weekday-clock"
+    },
+    {
+      "case_id": "NAV-OO-PREV-WEEKDAY-CURR2-LATER",
+      "profile": "oo",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        2,
+        [
+          19,
+          30,
+          0
+        ]
+      ],
+      "classification": "weekday-clock"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-WEEKDAY-NONMATCH",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        7,
+        0
+      ],
+      "classification": "weekday-nonmatching"
+    },
+    {
+      "case_id": "NAV-OO-PREV-WEEKDAY-NONMATCH",
+      "profile": "oo",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        4,
+        1
+      ],
+      "classification": "weekday-nonmatching"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-WEEKDAY-FULL-CLOCK",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        4,
+        1,
+        [
+          12,
+          30,
+          45
+        ]
+      ],
+      "classification": "weekday-clock"
+    },
+    {
+      "case_id": "NAV-OO-PREV-WEEKDAY-SHORT-CLOCK",
+      "profile": "oo",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        4,
+        1,
+        [
+          12,
+          30
+        ]
+      ],
+      "classification": "weekday-clock"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-CLOCK-EXACT-CURR0",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        0,
+        [
+          18,
+          15,
+          null
+        ]
+      ],
+      "classification": "partial-clock"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-CLOCK-EXACT-CURR1",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        1,
+        [
+          18,
+          15,
+          null
+        ]
+      ],
+      "classification": "partial-clock"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-CLOCK-EXACT-CURR2",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        2,
+        [
+          18,
+          15,
+          null
+        ]
+      ],
+      "classification": "partial-clock"
+    },
+    {
+      "case_id": "NAV-OO-PREV-CLOCK-EXACT-CURR0",
+      "profile": "oo",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        0,
+        [
+          18,
+          15,
+          null
+        ]
+      ],
+      "classification": "partial-clock"
+    },
+    {
+      "case_id": "NAV-OO-PREV-CLOCK-EXACT-CURR1",
+      "profile": "oo",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        1,
+        [
+          18,
+          15,
+          null
+        ]
+      ],
+      "classification": "partial-clock"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-MINUTE-EXACT-CURR0",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        0,
+        [
+          null,
+          15,
+          null
+        ]
+      ],
+      "classification": "partial-clock"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-MINUTE-EXACT-CURR1",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        1,
+        [
+          null,
+          15,
+          null
+        ]
+      ],
+      "classification": "partial-clock"
+    },
+    {
+      "case_id": "NAV-OO-PREV-SECOND-CURR0",
+      "profile": "oo",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        0,
+        [
+          null,
+          null,
+          9
+        ]
+      ],
+      "classification": "partial-clock"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-HOUR-PASSED",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        1,
+        [
+          18,
+          null,
+          null
+        ]
+      ],
+      "classification": "partial-clock"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-LEAP-MIDNIGHT",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-02-28 23:59:59 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        0,
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "classification": "leap-boundary"
+    },
+    {
+      "case_id": "NAV-OO-PREV-LEAP-MIDNIGHT",
+      "profile": "oo",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-03-01 00:00:00 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        0,
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "classification": "leap-boundary"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-YEAR-WEEKDAY",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2039-12-31 23:59:59 Etc/UTC"
+      },
+      "arguments": [
+        7,
+        0
+      ],
+      "classification": "year-boundary"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-DST-GAP",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2024-03-10 01:30:00 America/New_York"
+      },
+      "arguments": [
+        null,
+        0,
+        [
+          2,
+          30,
+          0
+        ]
+      ],
+      "classification": "dst-gap"
+    },
+    {
+      "case_id": "NAV-OO-PREV-DST-GAP",
+      "profile": "oo",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2024-03-10 03:30:00 America/New_York"
+      },
+      "arguments": [
+        null,
+        0,
+        [
+          2,
+          30,
+          0
+        ]
+      ],
+      "classification": "dst-gap"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-DST-OVERLAP",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2024-11-03 00:30:00 America/New_York"
+      },
+      "arguments": [
+        null,
+        0,
+        [
+          1,
+          30,
+          0
+        ]
+      ],
+      "classification": "dst-overlap"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-UNSET",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "unset"
+      },
+      "arguments": [
+        5,
+        1
+      ],
+      "classification": "invalid-state"
+    },
+    {
+      "case_id": "NAV-OO-PREV-ERROR",
+      "profile": "oo",
+      "direction": "prev",
+      "receiver": {
+        "state": "error",
+        "initial_text": "2040-02-29 16:05:09 Etc/UTC",
+        "preparation_text": "not a valid date phrase"
+      },
+      "arguments": [
+        5,
+        1
+      ],
+      "classification": "invalid-state"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-DOW-EIGHT",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        8,
+        1
+      ],
+      "classification": "invalid-weekday"
+    },
+    {
+      "case_id": "NAV-OO-PREV-STRING-WEEKDAY",
+      "profile": "oo",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        "Friday",
+        1
+      ],
+      "classification": "invalid-weekday"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-MISSING-PREDICATE",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        0
+      ],
+      "classification": "invalid-predicate"
+    },
+    {
+      "case_id": "NAV-OO-PREV-SHORT-CLOCK",
+      "profile": "oo",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        0,
+        [
+          18,
+          15
+        ]
+      ],
+      "classification": "invalid-clock"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-BAD-CLOCK",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        0,
+        [
+          25
+        ]
+      ],
+      "classification": "invalid-clock"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-EXTRA-ARGUMENT",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        1,
+        [
+          12,
+          0,
+          0
+        ],
+        "extra"
+      ],
+      "classification": "extra-arity"
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-NUMERIC-CURR0",
+      "profile": "dm6",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        0
+      ],
+      "classification": "weekday-current"
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-NUMERIC-CURR1",
+      "profile": "dm6",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        1
+      ],
+      "classification": "weekday-current"
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-NUMERIC-CURR2-LATER",
+      "profile": "dm6",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        2,
+        "19:30:00"
+      ],
+      "classification": "weekday-clock"
+    },
+    {
+      "case_id": "NAV-DM6-PREV-NUMERIC-CURR0",
+      "profile": "dm6",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        0
+      ],
+      "classification": "weekday-current"
+    },
+    {
+      "case_id": "NAV-DM6-PREV-NUMERIC-CURR1",
+      "profile": "dm6",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        1
+      ],
+      "classification": "weekday-current"
+    },
+    {
+      "case_id": "NAV-DM6-PREV-NUMERIC-CURR2-LATER",
+      "profile": "dm6",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        2,
+        "19:30:00"
+      ],
+      "classification": "weekday-clock"
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-ABBREVIATED-WEEKDAY",
+      "profile": "dm6",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        "Fri",
+        1
+      ],
+      "classification": "weekday-string"
+    },
+    {
+      "case_id": "NAV-DM6-PREV-FULL-WEEKDAY",
+      "profile": "dm6",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        "Friday",
+        1
+      ],
+      "classification": "weekday-string"
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-CHAR-WEEKDAY",
+      "profile": "dm6",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        "F",
+        1
+      ],
+      "classification": "weekday-string"
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-NONMATCH",
+      "profile": "dm6",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        7,
+        0
+      ],
+      "classification": "weekday-nonmatching"
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-WEEKDAY-TIME-TEXT",
+      "profile": "dm6",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        4,
+        1,
+        "12:30"
+      ],
+      "classification": "weekday-clock"
+    },
+    {
+      "case_id": "NAV-DM6-PREV-WEEKDAY-COMPONENTS",
+      "profile": "dm6",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        4,
+        1,
+        12,
+        30,
+        45
+      ],
+      "classification": "weekday-clock"
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-CLOCK-TEXT-CURR0",
+      "profile": "dm6",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        0,
+        "18:15"
+      ],
+      "classification": "partial-clock"
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-MINUTE-COMPONENTS",
+      "profile": "dm6",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        0,
+        null,
+        15,
+        null
+      ],
+      "classification": "partial-clock"
+    },
+    {
+      "case_id": "NAV-DM6-PREV-SECOND-COMPONENTS",
+      "profile": "dm6",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        0,
+        null,
+        null,
+        9
+      ],
+      "classification": "partial-clock"
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-CLOCK-CURR2",
+      "profile": "dm6",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        2,
+        "18:15"
+      ],
+      "classification": "partial-clock"
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-LEAP-MIDNIGHT",
+      "profile": "dm6",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-02-28 23:59:59 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        0,
+        0,
+        0,
+        0
+      ],
+      "classification": "leap-boundary"
+    },
+    {
+      "case_id": "NAV-DM6-PREV-YEAR-WEEKDAY",
+      "profile": "dm6",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-01-01 00:00:00 Etc/UTC"
+      },
+      "arguments": [
+        6,
+        0
+      ],
+      "classification": "year-boundary"
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-INVALID-DATE",
+      "profile": "dm6",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "not a valid date phrase"
+      },
+      "arguments": [
+        5,
+        1
+      ],
+      "classification": "invalid-source"
+    },
+    {
+      "case_id": "NAV-DM6-PREV-DOW-EIGHT",
+      "profile": "dm6",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        8,
+        1
+      ],
+      "classification": "invalid-weekday"
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-UNKNOWN-WEEKDAY",
+      "profile": "dm6",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        "Funday",
+        1
+      ],
+      "classification": "invalid-weekday"
+    },
+    {
+      "case_id": "NAV-DM6-PREV-MISSING-PREDICATE",
+      "profile": "dm6",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        null,
+        0
+      ],
+      "classification": "invalid-predicate"
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-BAD-TIME",
+      "profile": "dm6",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        1,
+        "25:00"
+      ],
+      "classification": "invalid-clock"
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-NUMERIC-CURR0",
+      "profile": "dm5",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        5,
+        0
+      ],
+      "classification": "weekday-current"
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-NUMERIC-CURR1",
+      "profile": "dm5",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        5,
+        1
+      ],
+      "classification": "weekday-current"
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-NUMERIC-CURR2-LATER",
+      "profile": "dm5",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        5,
+        2,
+        "19:30:00"
+      ],
+      "classification": "weekday-clock"
+    },
+    {
+      "case_id": "NAV-DM5-PREV-NUMERIC-CURR0",
+      "profile": "dm5",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        5,
+        0
+      ],
+      "classification": "weekday-current"
+    },
+    {
+      "case_id": "NAV-DM5-PREV-NUMERIC-CURR1",
+      "profile": "dm5",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        5,
+        1
+      ],
+      "classification": "weekday-current"
+    },
+    {
+      "case_id": "NAV-DM5-PREV-NUMERIC-CURR2-LATER",
+      "profile": "dm5",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        5,
+        2,
+        "19:30:00"
+      ],
+      "classification": "weekday-clock"
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-ABBREVIATED-WEEKDAY",
+      "profile": "dm5",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        "Fri",
+        1
+      ],
+      "classification": "weekday-string"
+    },
+    {
+      "case_id": "NAV-DM5-PREV-FULL-WEEKDAY",
+      "profile": "dm5",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        "Friday",
+        1
+      ],
+      "classification": "weekday-string"
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-CHAR-WEEKDAY",
+      "profile": "dm5",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        "F",
+        1
+      ],
+      "classification": "weekday-string"
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-NONMATCH",
+      "profile": "dm5",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        7,
+        0
+      ],
+      "classification": "weekday-nonmatching"
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-WEEKDAY-TIME-TEXT",
+      "profile": "dm5",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        4,
+        1,
+        "12:30"
+      ],
+      "classification": "weekday-clock"
+    },
+    {
+      "case_id": "NAV-DM5-PREV-WEEKDAY-COMPONENTS",
+      "profile": "dm5",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        4,
+        1,
+        12,
+        30,
+        45
+      ],
+      "classification": "weekday-clock"
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-CLOCK-TEXT-CURR0",
+      "profile": "dm5",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        null,
+        0,
+        "18:15"
+      ],
+      "classification": "partial-clock"
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-MINUTE-COMPONENTS",
+      "profile": "dm5",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        null,
+        0,
+        null,
+        15,
+        null
+      ],
+      "classification": "partial-clock"
+    },
+    {
+      "case_id": "NAV-DM5-PREV-SECOND-COMPONENTS",
+      "profile": "dm5",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        null,
+        0,
+        null,
+        null,
+        9
+      ],
+      "classification": "partial-clock"
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-CLOCK-CURR2",
+      "profile": "dm5",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        null,
+        2,
+        "18:15"
+      ],
+      "classification": "partial-clock"
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-LEAP-MIDNIGHT",
+      "profile": "dm5",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-02-28 23:59:59"
+      },
+      "arguments": [
+        null,
+        0,
+        0,
+        0,
+        0
+      ],
+      "classification": "leap-boundary"
+    },
+    {
+      "case_id": "NAV-DM5-PREV-YEAR-WEEKDAY",
+      "profile": "dm5",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-01-01 00:00:00"
+      },
+      "arguments": [
+        6,
+        0
+      ],
+      "classification": "year-boundary"
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-INVALID-DATE",
+      "profile": "dm5",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "not a valid date phrase"
+      },
+      "arguments": [
+        5,
+        1
+      ],
+      "classification": "invalid-source"
+    },
+    {
+      "case_id": "NAV-DM5-PREV-DOW-EIGHT",
+      "profile": "dm5",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        8,
+        1
+      ],
+      "classification": "invalid-weekday"
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-UNKNOWN-WEEKDAY",
+      "profile": "dm5",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        "Funday",
+        1
+      ],
+      "classification": "invalid-weekday"
+    },
+    {
+      "case_id": "NAV-DM5-PREV-MISSING-PREDICATE",
+      "profile": "dm5",
+      "direction": "prev",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        null,
+        0
+      ],
+      "classification": "invalid-predicate"
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-BAD-TIME",
+      "profile": "dm5",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        5,
+        1,
+        "25:00"
+      ],
+      "classification": "invalid-clock"
+    },
+    {
+      "case_id": "NAV-OO-NEXT-OMITTED-CURR",
+      "profile": "oo",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5
+      ],
+      "classification": "omitted-arity"
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-OMITTED-CURR",
+      "profile": "dm6",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5
+      ],
+      "classification": "omitted-arity"
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-OMITTED-CURR",
+      "profile": "dm5",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        5
+      ],
+      "classification": "omitted-arity"
+    },
+    {
+      "case_id": "NAV-DM6-NEXT-EXTRA-COMPONENT",
+      "profile": "dm6",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00 Etc/UTC"
+      },
+      "arguments": [
+        5,
+        1,
+        12,
+        0,
+        0,
+        9
+      ],
+      "classification": "extra-arity"
+    },
+    {
+      "case_id": "NAV-DM5-NEXT-EXTRA-COMPONENT",
+      "profile": "dm5",
+      "direction": "next",
+      "receiver": {
+        "state": "valid",
+        "text": "2040-11-23 18:15:00"
+      },
+      "arguments": [
+        5,
+        1,
+        12,
+        0,
+        0,
+        9
+      ],
+      "classification": "extra-arity"
+    }
+  ]
+}
