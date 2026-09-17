@@ -9,158 +9,607 @@
     "terms-enumerated": "The named terms below are a finite inventory, but their partitions and observations are pending.",
     "source-scope-recorded": "The source document section is known, but extracting every term is still required.",
     "data-surface-counted": "Release data modules were counted; individual upstream data values are deliberately not copied into this repository.",
-    "excluded-tooling": "The capability is outside the portable contract, with the stated observable boundary retained."
+    "excluded-tooling": "The capability is outside the portable contract, with the stated observable boundary retained.",
+    "terms-and-partitions-enumerated": "Finite syntax/options or a finite structural partition grid is recorded in linked research artifacts. Outcomes and English scenarios still need observation and review."
   },
   "obligations": [
     {
       "id": "AUX.CONFIG.KEYS",
-      "status": "terms-enumerated",
+      "status": "terms-and-partitions-enumerated",
       "source": "lib/Date/Manip/Config.pod: BASIC, DATE PARSING, BUSINESS, RECURRENCE, TIME ZONE, and MISCELLANEOUS CONFIGURATION VARIABLES",
-      "contract_ids": ["config.apply-settings", "config.read-settings"],
-      "terms": ["Defaults", "ConfigFile", "Language", "Encoding", "FirstDay", "Week1ofYear", "Printable", "DateFormat", "YYtoYYYY", "DefaultTime", "PeriodTimeSep", "Format_MMMYYYY", "WorkWeekBeg", "WorkWeekEnd", "WorkDay24Hr", "WorkDayBeg", "WorkDayEnd", "TomorrowFirst", "EraseHolidays", "EraseEvents", "RecurRange", "MaxRecurAttempts", "SetDate", "ForceDate", "Use_POSIX_Printf", "TZ", "Jan1Week1"],
-      "case_dimensions": ["default", "valid value", "invalid value", "case handling", "ordering", "reset", "shared versus independent context", "error and warning channel"]
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings"
+      ],
+      "terms": [
+        "Defaults",
+        "ConfigFile",
+        "Language",
+        "Encoding",
+        "FirstDay",
+        "Week1ofYear",
+        "Printable",
+        "DateFormat",
+        "YYtoYYYY",
+        "DefaultTime",
+        "PeriodTimeSep",
+        "Format_MMMYYYY",
+        "WorkWeekBeg",
+        "WorkWeekEnd",
+        "WorkDay24Hr",
+        "WorkDayBeg",
+        "WorkDayEnd",
+        "TomorrowFirst",
+        "EraseHolidays",
+        "EraseEvents",
+        "RecurRange",
+        "MaxRecurAttempts",
+        "SetDate",
+        "ForceDate",
+        "Use_POSIX_Printf",
+        "TZ",
+        "Jan1Week1"
+      ],
+      "case_dimensions": [
+        "default",
+        "valid value",
+        "invalid value",
+        "case handling",
+        "ordering",
+        "reset",
+        "shared versus independent context",
+        "error and warning channel"
+      ],
+      "inventory_evidence": [
+        "docs/research/contracts/configuration-domains.json"
+      ]
     },
     {
       "id": "AUX.CONFIG.FILE-GRAMMAR",
-      "status": "source-scope-recorded",
+      "status": "terms-and-partitions-enumerated",
       "source": "lib/Date/Manip/Config.pod: CONFIG FILES",
-      "contract_ids": ["config.apply-settings", "business.holiday-labels", "events.list"],
-      "required_term_extraction": ["assignment form", "section marker", "comments", "blank lines", "case treatment", "nested files", "multiple files", "holiday section", "event section"],
-      "case_dimensions": ["parse acceptance", "ordering", "duplicate definitions", "missing file diagnostics", "state after partial failure"]
+      "contract_ids": [
+        "config.apply-settings",
+        "business.holiday-labels",
+        "events.list"
+      ],
+      "required_term_extraction": [
+        "assignment form",
+        "section marker",
+        "comments",
+        "blank lines",
+        "case treatment",
+        "nested files",
+        "multiple files",
+        "holiday section",
+        "event section"
+      ],
+      "case_dimensions": [
+        "parse acceptance",
+        "ordering",
+        "duplicate definitions",
+        "missing file diagnostics",
+        "state after partial failure"
+      ],
+      "inventory_evidence": [
+        "docs/research/syntax/language-config.json"
+      ]
     },
     {
       "id": "AUX.DATE.PARSE-OPTIONS",
-      "status": "terms-enumerated",
+      "status": "terms-and-partitions-enumerated",
       "source": "lib/Date/Manip/Date.pod: parse method",
-      "contract_ids": ["date.parse-text", "date.parse-leading-tokens", "date.parse-date-only", "time.parse-text"],
-      "terms": ["noiso8601", "nodow", "nocommon", "noother", "nospecial", "nodelta", "noholidays"],
-      "case_dimensions": ["enabled versus disabled grammar family", "one option", "option pair", "no-match return", "object error state", "functional empty-result convention"]
+      "contract_ids": [
+        "date.parse-text",
+        "date.parse-leading-tokens",
+        "date.parse-date-only",
+        "time.parse-text"
+      ],
+      "terms": [
+        "noiso8601",
+        "nodow",
+        "nocommon",
+        "noother",
+        "nospecial",
+        "nodelta",
+        "noholidays"
+      ],
+      "case_dimensions": [
+        "enabled versus disabled grammar family",
+        "one option",
+        "option pair",
+        "no-match return",
+        "object error state",
+        "functional empty-result convention"
+      ],
+      "inventory_evidence": [
+        "docs/research/syntax/date.json",
+        "docs/research/syntax/date-dm5.json"
+      ]
     },
     {
       "id": "AUX.DATE.GRAMMAR-FAMILIES",
-      "status": "source-scope-recorded",
+      "status": "terms-and-partitions-enumerated",
       "source": "lib/Date/Manip/Date.pod: VALID DATE FORMATS, VALID TIME FORMATS, VALID COMBINED DATE AND TIME FORMATS",
-      "contract_ids": ["date.parse-text", "date.parse-date-only", "time.parse-text", "date.complete-missing-fields"],
-      "required_term_extraction": ["truncated values", "ISO dates", "common dates", "other dates", "special dates", "holiday names", "ISO times", "other times", "special times", "combined date-time forms", "relative delta forms"],
-      "case_dimensions": ["normal", "boundary", "ambiguous", "invalid", "case", "two-digit year", "defaulted fields", "retained zone"]
+      "contract_ids": [
+        "date.parse-text",
+        "date.parse-date-only",
+        "time.parse-text",
+        "date.complete-missing-fields"
+      ],
+      "required_term_extraction": [
+        "truncated values",
+        "ISO dates",
+        "common dates",
+        "other dates",
+        "special dates",
+        "holiday names",
+        "ISO times",
+        "other times",
+        "special times",
+        "combined date-time forms",
+        "relative delta forms"
+      ],
+      "case_dimensions": [
+        "normal",
+        "boundary",
+        "ambiguous",
+        "invalid",
+        "case",
+        "two-digit year",
+        "defaulted fields",
+        "retained zone"
+      ],
+      "inventory_evidence": [
+        "docs/research/syntax/date.json",
+        "docs/research/syntax/date-dm5.json"
+      ]
     },
     {
       "id": "AUX.ZONE.INPUT-GRAMMAR",
-      "status": "source-scope-recorded",
+      "status": "terms-and-partitions-enumerated",
       "source": "lib/Date/Manip/Date.pod: VALID TIME ZONE FORMATS; lib/Date/Manip/TZ.pod: METHODS",
-      "contract_ids": ["zone.resolve", "zone.convert-value", "zone.convert-canonical-text", "zone.define-alias", "zone.define-abbreviation", "zone.define-fixed-offset"],
-      "required_term_extraction": ["canonical name", "alias", "abbreviation", "numeric offset", "UTC form", "local zone", "invalid name", "ambiguous local time", "nonexistent local time"],
-      "case_dimensions": ["resolution", "DST gap", "DST overlap", "source/destination omission", "custom definition lifetime", "host discovery isolation"]
+      "contract_ids": [
+        "zone.resolve",
+        "zone.convert-value",
+        "zone.convert-canonical-text",
+        "zone.define-alias",
+        "zone.define-abbreviation",
+        "zone.define-fixed-offset"
+      ],
+      "required_term_extraction": [
+        "canonical name",
+        "alias",
+        "abbreviation",
+        "numeric offset",
+        "UTC form",
+        "local zone",
+        "invalid name",
+        "ambiguous local time",
+        "nonexistent local time"
+      ],
+      "case_dimensions": [
+        "resolution",
+        "DST gap",
+        "DST overlap",
+        "source/destination omission",
+        "custom definition lifetime",
+        "host discovery isolation"
+      ],
+      "inventory_evidence": [
+        "docs/research/syntax/date.json",
+        "docs/research/contracts/zones-business.json"
+      ]
     },
     {
       "id": "AUX.DATE.PRINTF-DIRECTIVES",
-      "status": "source-scope-recorded",
+      "status": "terms-and-partitions-enumerated",
       "source": "lib/Date/Manip/Date.pod: PRINTF DIRECTIVES and POSIX PRINTF DIRECTIVES",
-      "contract_ids": ["date.render-pattern", "date.localized-day-ordinal"],
-      "required_term_extraction": ["every custom directive", "every modifier", "every POSIX directive", "unknown directive behavior", "Use_POSIX_Printf interaction"],
-      "case_dimensions": ["single directive", "mixed pattern", "locale", "zone", "padding", "invalid directive", "scalar/list functional result"]
+      "contract_ids": [
+        "date.render-pattern",
+        "date.localized-day-ordinal"
+      ],
+      "required_term_extraction": [
+        "every custom directive",
+        "every modifier",
+        "every POSIX directive",
+        "unknown directive behavior",
+        "Use_POSIX_Printf interaction"
+      ],
+      "case_dimensions": [
+        "single directive",
+        "mixed pattern",
+        "locale",
+        "zone",
+        "padding",
+        "invalid directive",
+        "scalar/list functional result"
+      ],
+      "inventory_evidence": [
+        "docs/research/syntax/date.json",
+        "docs/research/syntax/date-dm5.json"
+      ]
     },
     {
       "id": "AUX.DELTA.PARSE-OPTIONS",
-      "status": "terms-enumerated",
+      "status": "terms-and-partitions-enumerated",
       "source": "lib/Date/Manip/Delta.pod: parse method",
-      "contract_ids": ["delta.parse-text", "delta.read-value", "delta.read-type"],
-      "terms": ["mode", "nonorm", "type", "standard", "business", "exact", "semi", "approx", "estimated"],
-      "case_dimensions": ["each option", "each type", "normalization", "signed fields", "fractional field", "invalid combination", "error state"]
+      "contract_ids": [
+        "delta.parse-text",
+        "delta.read-value",
+        "delta.read-type"
+      ],
+      "terms": [
+        "mode",
+        "nonorm",
+        "type",
+        "standard",
+        "business",
+        "exact",
+        "semi",
+        "approx",
+        "estimated"
+      ],
+      "case_dimensions": [
+        "each option",
+        "each type",
+        "normalization",
+        "signed fields",
+        "fractional field",
+        "invalid combination",
+        "error state"
+      ],
+      "inventory_evidence": [
+        "docs/research/syntax/delta.json",
+        "docs/research/contracts/arithmetic.json"
+      ]
     },
     {
       "id": "AUX.DELTA.GRAMMAR-AND-FORMAT",
-      "status": "source-scope-recorded",
+      "status": "terms-and-partitions-enumerated",
       "source": "lib/Date/Manip/Delta.pod: ADDITIONAL DELTA NOTATIONS and PRINTF DIRECTIVES",
-      "contract_ids": ["delta.parse-text", "delta.render-pattern", "delta.render-fields", "delta.convert-type"],
-      "required_term_extraction": ["additional notations", "simple directives", "single-field directives", "multi-field directives", "partial-delta directives"],
-      "case_dimensions": ["input/output round trip where defined", "precision", "sign", "mixed fields", "unsupported directive", "business configuration interaction"]
+      "contract_ids": [
+        "delta.parse-text",
+        "delta.render-pattern",
+        "delta.render-fields",
+        "delta.convert-type"
+      ],
+      "required_term_extraction": [
+        "additional notations",
+        "simple directives",
+        "single-field directives",
+        "multi-field directives",
+        "partial-delta directives"
+      ],
+      "case_dimensions": [
+        "input/output round trip where defined",
+        "precision",
+        "sign",
+        "mixed fields",
+        "unsupported directive",
+        "business configuration interaction"
+      ],
+      "inventory_evidence": [
+        "docs/research/syntax/delta.json"
+      ]
     },
     {
       "id": "AUX.ARITHMETIC-MODES",
-      "status": "terms-enumerated",
+      "status": "terms-and-partitions-enumerated",
       "source": "lib/Date/Manip/Calc.pod: calculation modes",
-      "contract_ids": ["arithmetic.calculate", "arithmetic.date-difference", "arithmetic.date-plus-delta", "arithmetic.date-plus-days", "arithmetic.combine-times", "delta.compare"],
-      "terms": ["date-date", "date-delta", "delta-delta", "standard", "business", "exact", "semi", "approx", "estimated"],
-      "case_dimensions": ["operand order", "positive/negative", "month boundary", "leap date", "DST transition", "holiday calendar", "mode-specific error"]
+      "contract_ids": [
+        "arithmetic.calculate",
+        "arithmetic.date-difference",
+        "arithmetic.date-plus-delta",
+        "arithmetic.date-plus-days",
+        "arithmetic.combine-times",
+        "delta.compare"
+      ],
+      "terms": [
+        "date-date",
+        "date-delta",
+        "delta-delta",
+        "standard",
+        "business",
+        "exact",
+        "semi",
+        "approx",
+        "estimated"
+      ],
+      "case_dimensions": [
+        "operand order",
+        "positive/negative",
+        "month boundary",
+        "leap date",
+        "DST transition",
+        "holiday calendar",
+        "mode-specific error"
+      ],
+      "inventory_evidence": [
+        "docs/research/syntax/delta.json",
+        "docs/research/contracts/arithmetic.json"
+      ]
     },
     {
       "id": "AUX.RECUR.FREQUENCY-GRAMMAR",
-      "status": "source-scope-recorded",
+      "status": "terms-and-partitions-enumerated",
       "source": "lib/Date/Manip/Recur.pod: FREQUENCY NOTATION, INTERVAL, OTHER FREQUENCY FORMATS, LIST OF Y/M/W/D FREQUENCY DEFINITIONS",
-      "contract_ids": ["recur.parse", "recur.set-frequency", "recur.occurrence-at-index", "recur.list-occurrences"],
-      "required_term_extraction": ["seven field positions", "asterisk placement", "interval", "recurrence-time values", "written forms", "each Y/M/W/D definition"],
-      "case_dimensions": ["valid form", "invalid form", "zero/nonzero field constraints", "base-date requirement", "missing occurrence", "negative index"]
+      "contract_ids": [
+        "recur.parse",
+        "recur.set-frequency",
+        "recur.occurrence-at-index",
+        "recur.list-occurrences"
+      ],
+      "required_term_extraction": [
+        "seven field positions",
+        "asterisk placement",
+        "interval",
+        "recurrence-time values",
+        "written forms",
+        "each Y/M/W/D definition"
+      ],
+      "case_dimensions": [
+        "valid form",
+        "invalid form",
+        "zero/nonzero field constraints",
+        "base-date requirement",
+        "missing occurrence",
+        "negative index"
+      ],
+      "inventory_evidence": [
+        "docs/research/contracts/recurrence.json"
+      ]
     },
     {
       "id": "AUX.RECUR.MODIFIERS",
-      "status": "source-scope-recorded",
+      "status": "terms-and-partitions-enumerated",
       "source": "lib/Date/Manip/Recur.pod: MODIFIERS",
-      "contract_ids": ["recur.set-modifiers", "recur.occurrence-at-index", "recur.next-occurrence", "recur.previous-occurrence", "recur.list-occurrences"],
-      "required_term_extraction": ["day-of-week modifiers", "forward/backward modifiers", "business-day modifiers", "special modifiers", "modifier ordering"],
-      "case_dimensions": ["each modifier", "combination", "range before/after modification", "holiday interaction", "invalid modifier"]
+      "contract_ids": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index",
+        "recur.next-occurrence",
+        "recur.previous-occurrence",
+        "recur.list-occurrences"
+      ],
+      "required_term_extraction": [
+        "day-of-week modifiers",
+        "forward/backward modifiers",
+        "business-day modifiers",
+        "special modifiers",
+        "modifier ordering"
+      ],
+      "case_dimensions": [
+        "each modifier",
+        "combination",
+        "range before/after modification",
+        "holiday interaction",
+        "invalid modifier"
+      ],
+      "inventory_evidence": [
+        "docs/research/contracts/recurrence.json"
+      ]
     },
     {
       "id": "AUX.RECUR.RANGE-AND-CONTEXT",
-      "status": "source-scope-recorded",
+      "status": "terms-and-partitions-enumerated",
       "source": "lib/Date/Manip/Recur.pod: BASE DATES, DATE RANGE, DETERMINING DATES, METHODS",
-      "contract_ids": ["recur.set-start", "recur.set-end", "recur.set-base-date", "recur.occurrence-at-index", "recur.list-occurrences"],
-      "required_term_extraction": ["base date", "effective base date", "range endpoints", "pre-modifier range", "scalar/list context"],
-      "case_dimensions": ["inclusive endpoints", "missing values", "zone consistency", "no occurrences", "out of range", "state replacement"]
+      "contract_ids": [
+        "recur.set-start",
+        "recur.set-end",
+        "recur.set-base-date",
+        "recur.occurrence-at-index",
+        "recur.list-occurrences"
+      ],
+      "required_term_extraction": [
+        "base date",
+        "effective base date",
+        "range endpoints",
+        "pre-modifier range",
+        "scalar/list context"
+      ],
+      "case_dimensions": [
+        "inclusive endpoints",
+        "missing values",
+        "zone consistency",
+        "no occurrences",
+        "out of range",
+        "state replacement"
+      ],
+      "inventory_evidence": [
+        "docs/research/contracts/recurrence.json"
+      ]
     },
     {
       "id": "AUX.HOLIDAY-AND-EVENT-GRAMMAR",
-      "status": "source-scope-recorded",
+      "status": "terms-and-partitions-enumerated",
       "source": "lib/Date/Manip/Holidays.pod: HOLIDAYS, OTHER HOLIDAY CONSIDERATIONS, EVENTS",
-      "contract_ids": ["business.holiday-labels", "business.list-holidays", "business.is-working-date", "events.list"],
-      "required_term_extraction": ["full-date rule", "yearless rule", "recurrence rule", "multiple labels", "event time", "event duration"],
-      "case_dimensions": ["definition order", "cross-year behavior", "duplicate label", "holiday versus event", "business arithmetic effect"]
+      "contract_ids": [
+        "business.holiday-labels",
+        "business.list-holidays",
+        "business.is-working-date",
+        "events.list"
+      ],
+      "required_term_extraction": [
+        "full-date rule",
+        "yearless rule",
+        "recurrence rule",
+        "multiple labels",
+        "event time",
+        "event duration"
+      ],
+      "case_dimensions": [
+        "definition order",
+        "cross-year behavior",
+        "duplicate label",
+        "holiday versus event",
+        "business arithmetic effect"
+      ],
+      "inventory_evidence": [
+        "docs/research/syntax/language-config.json",
+        "docs/research/contracts/zones-business.json"
+      ]
     },
     {
       "id": "AUX.LANGUAGES",
-      "status": "terms-enumerated",
+      "status": "terms-and-partitions-enumerated",
       "source": "lib/Date/Manip/Lang.pod: CURRENT LANGUAGES; release lib/Date/Manip/Lang",
-      "contract_ids": ["date.parse-text", "date.localized-day-ordinal"],
-      "terms": ["catalan", "danish", "dutch", "english", "finnish", "french", "german", "italian", "norwegian", "polish", "portugue", "romanian", "russian", "spanish", "swedish", "turkish"],
-      "case_dimensions": ["language selection", "representative token per token class", "case", "accent/encoding", "locale-specific ordinal", "invalid language"]
+      "contract_ids": [
+        "date.parse-text",
+        "date.localized-day-ordinal"
+      ],
+      "terms": [
+        "catalan",
+        "danish",
+        "dutch",
+        "english",
+        "finnish",
+        "french",
+        "german",
+        "italian",
+        "norwegian",
+        "polish",
+        "portugue",
+        "romanian",
+        "russian",
+        "spanish",
+        "swedish",
+        "turkish"
+      ],
+      "case_dimensions": [
+        "language selection",
+        "representative token per token class",
+        "case",
+        "accent/encoding",
+        "locale-specific ordinal",
+        "invalid language"
+      ],
+      "inventory_evidence": [
+        "docs/research/syntax/language-config.json"
+      ]
     },
     {
       "id": "AUX.LANGUAGE-TOKEN-DATA",
       "status": "data-surface-counted",
       "source": "release lib/Date/Manip/Lang/*.pm",
-      "contract_ids": ["date.parse-text", "date.localized-day-ordinal"],
+      "contract_ids": [
+        "date.parse-text",
+        "date.localized-day-ordinal"
+      ],
       "data_module_count": 17,
-      "case_dimensions": ["extract token classes without importing source data", "choose original test inputs", "record language/profile and encoding"]
+      "case_dimensions": [
+        "extract token classes without importing source data",
+        "choose original test inputs",
+        "record language/profile and encoding"
+      ],
+      "inventory_evidence": [
+        "docs/research/syntax/language-config.json"
+      ]
     },
     {
       "id": "AUX.ZONE-AND-OFFSET-DATA",
       "status": "data-surface-counted",
       "source": "release lib/Date/Manip/TZ/*.pm and lib/Date/Manip/Offset/*.pm",
-      "contract_ids": ["zone.resolve", "zone.list-all-periods", "zone.list-periods", "zone.period-for-date", "zone.convert-value"],
-      "data_module_counts": {"tz": 366, "offset": 408},
-      "case_dimensions": ["named zone", "alias", "fixed offset", "transition zone", "no-transition zone", "out-of-range behavior", "data-version reporting"]
+      "contract_ids": [
+        "zone.resolve",
+        "zone.list-all-periods",
+        "zone.list-periods",
+        "zone.period-for-date",
+        "zone.convert-value"
+      ],
+      "data_module_counts": {
+        "tz": 366,
+        "offset": 408
+      },
+      "case_dimensions": [
+        "named zone",
+        "alias",
+        "fixed offset",
+        "transition zone",
+        "no-transition zone",
+        "out-of-range behavior",
+        "data-version reporting"
+      ],
+      "inventory_evidence": [
+        "docs/research/contracts/zones-business.json",
+        "docs/research/api/contract-map.json"
+      ]
     },
     {
       "id": "AUX.BACKEND-PROFILES",
-      "status": "terms-enumerated",
+      "status": "terms-and-partitions-enumerated",
       "source": "lib/Date/Manip/Interfaces.pod; lib/Date/Manip/DM5.pod; lib/Date/Manip/DM6.pod",
-      "contract_ids": ["meta.reference-version", "date.parse-text", "arithmetic.calculate", "zone.convert-canonical-text"],
-      "terms": ["dm6-reference", "dm5-compatibility", "Date::Manip dynamic facade"],
-      "case_dimensions": ["separate process", "export set", "same-name result comparison", "unsupported DM5 operation", "warning/error differences", "configuration isolation"]
+      "contract_ids": [
+        "meta.reference-version",
+        "date.parse-text",
+        "arithmetic.calculate",
+        "zone.convert-canonical-text"
+      ],
+      "terms": [
+        "dm6-reference",
+        "dm5-compatibility",
+        "Date::Manip dynamic facade"
+      ],
+      "case_dimensions": [
+        "separate process",
+        "export set",
+        "same-name result comparison",
+        "unsupported DM5 operation",
+        "warning/error differences",
+        "configuration isolation"
+      ],
+      "inventory_evidence": [
+        "docs/research/api/runtime-callability.json",
+        "docs/research/syntax/date-dm5.json",
+        "docs/research/syntax/delta.json"
+      ]
     },
     {
       "id": "AUX.RETURN-AND-STATE-CHANNELS",
-      "status": "terms-enumerated",
+      "status": "terms-and-partitions-enumerated",
       "source": "functional and object method documentation across DM5, DM6, Date, Delta, Recur, and Obj",
-      "contract_ids": ["error.read-state", "date.parse-leading-tokens", "recur.parse-and-enumerate", "events.list", "date.render-pattern"],
-      "terms": ["scalar context", "list context", "empty string", "empty list", "zero success code", "error state", "warning", "standard output", "mutated input tokens", "mutated value"],
-      "case_dimensions": ["successful value", "no match", "invalid input", "state before/after", "functional versus object route"]
+      "contract_ids": [
+        "error.read-state",
+        "date.parse-leading-tokens",
+        "recur.parse-and-enumerate",
+        "events.list",
+        "date.render-pattern"
+      ],
+      "terms": [
+        "scalar context",
+        "list context",
+        "empty string",
+        "empty list",
+        "zero success code",
+        "error state",
+        "warning",
+        "standard output",
+        "mutated input tokens",
+        "mutated value"
+      ],
+      "case_dimensions": [
+        "successful value",
+        "no match",
+        "invalid input",
+        "state before/after",
+        "functional versus object route"
+      ],
+      "inventory_evidence": [
+        "docs/research/contracts/values.json",
+        "docs/research/contracts/recurrence.json",
+        "docs/research/contracts/calendar.json",
+        "docs/research/contracts/arithmetic.json",
+        "docs/research/contracts/zones-business.json"
+      ]
     },
     {
       "id": "AUX.TZDATA-TOOLING",
       "status": "excluded-tooling",
       "source": "lib/Date/Manip/TZdata.pod",
-      "contract_ids": ["meta.zone-data-version", "zone.resolve", "zone.convert-value"],
+      "contract_ids": [
+        "meta.zone-data-version",
+        "zone.resolve",
+        "zone.convert-value"
+      ],
       "boundary": "Timezone generation routines are not portable operations. Their generated zone results and user-defined-zone behavior remain within the observable contract."
     }
   ]

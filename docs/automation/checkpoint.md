@@ -7,13 +7,12 @@ the durable state of the planning queue, rather than claiming that its work has 
 
 - Queue schema: 1
 - Workspace baseline: `workspace-setup` is `current`, owned by `root`.
-- Completed batch: `reference-setup`, reviewed by the coordinator.
-- Active batch: `api-reconciliation`; entrypoint accounting is audited, while
-  detailed signatures and auxiliary behavior partitions remain in progress.
-- Other project batches remain `pending`.
+- Completed batches: `reference-setup` and `api-reconciliation`, reviewed by the coordinator.
+- Active batches: `spec-interpretation-formatting`, `spec-arithmetic-deltas`, and
+  `spec-recurrence`. Other project batches remain `pending`.
 - Scope: English, language-neutral specification and reference observations, followed
   by the original Perl BDD harness, step definitions, adapter, and full-suite
-verification. A future non-Perl implementation remains out of scope.
+  verification. A future non-Perl implementation remains out of scope.
 
 ## Execution setup
 
@@ -38,31 +37,49 @@ Current independent worker outputs:
 - Accepted monitor: `tools/automation/`, `tests/automation/`, watchdog instructions.
 - Accepted entrypoint accounting: `tools/inventory/`, `docs/research/api/`.
   Both enumerator checks pass (423 declarations, 153 OO receiver routes).
-  The auxiliary catalogue has visible outstanding term-extraction obligations.
+  Auxiliary syntax/option obligations link the finite inventories in `docs/research/syntax/`.
+  Source support is distinct from runtime coverage; DM5 support is recorded per row.
 - Completed worker drafts: `docs/research/contracts/{calendar,values,arithmetic,
   recurrence,zones-business}.json` and companion Markdown. The coordinator
   checked all 96 operation IDs and binding sets against the API map. These contain
   397 unobserved method-partition obligations, not 397 executed cases.
 - `configuration-domains.json` records 38 configuration keys and documented
   domains/defaults; runtime-only ambiguities and file-section grammar remain open.
-- No workers remain active at this checkpoint. Resume by assigning the bounded
-  research tasks below; avoid duplicating the finished family drafts.
+- Active workers: `recurrence_features` owns `spec/drafts/recurrence/`,
+  `tools/probes/recurrence-family/`, and `docs/research/recurrence-family/`;
+  `arithmetic_features` owns the corresponding `arithmetic` directories. Inspect
+  live agent status before restarting either; partial files are not completion evidence.
 
 Independent read-only audit found exact correspondence with all 423 declaration
 rows, mappings for 164 public declaration bindings and 96 generic operation IDs,
 and runtime evidence for 153 concrete OO receiver/method combinations. Both export
 lists (34 DM6, 33 DM5) are accounted for. This establishes entrypoint accounting,
 not complete behavioral coverage: signatures, option partitions, reference
-observations, and English features still need completion and review.
+observations and English features still need completion and review.
 
-Next unassigned research work: enumerate finite date formatting/pattern-parsing
-directives and accepted date/time productions; refine delta grammar/directive
-families into explicit cases; enumerate legacy DM5 syntax differences; complete
-language/token-class and config-file grammar partitions; discharge recurrence
-structural grids. Review the method catalogues for any remaining vague selectors
-or signatures. The API batch is not complete until these auxiliary obligations
-are explicit. Then assign the five feature families in parallel with original
-probes, reviewed literal observations, and English scenarios.
+Current next actions: continue English feature authoring and literal-observation
+review against the accepted catalogues. Recurrence and arithmetic workers are
+active. The coordinator owns calendar, parsing/rendering, and language work;
+zone/business and configuration/object feature batches are not started yet.
+Do not re-enumerate finished syntax inventories. Required input/option variants
+and unobserved partitions stay visible during feature authoring.
+
+The date inventory covers 61 rendering spellings, 52 pattern directives, 167 text
+production spellings, and 7 grammar gates, with a complete DM5 comparison. Delta
+inventory covers 20 productions, 5 format families, 7 fields, 28 field ranges,
+calculation modes, and dispatch variants. Language/config inventory accounts for
+16 languages, 45 selectors, token classes, 38 keys, and file/holiday/event grammar.
+
+Calendar evidence: 231 binding cases each repeated twice in isolated processes.
+Independent stdlib review classifies 190 reviewed, 28 compatibility, 3 invalid, and
+10 unreviewed incomplete-field calls. Fifty-two English candidate cases are in
+`spec/drafts/calendar.feature` and `calendar-validation.feature`, linked by
+`docs/research/calendar-feature-map.json` and `calendar-validation-map.json`.
+Their literals match 116 original calls; 50 cases have independent fact review,
+while 24:00 acceptance and fractional-second rejection retain compatibility review.
+They remain draft, and no BDD runner has executed them. The initial Base fixture
+warning was fixed by configuring a Date object then retrieving its Base service;
+the entire corpus was rerun after that fix.
 
 Coordinator review corrected Base tuple carriers (array references differ from
 list returns) and renamed `arithmetic.time-difference` to

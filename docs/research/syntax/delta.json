@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "artifact": "delta-and-arithmetic-syntax-inventory",
+  "reference": { "distribution": "Date::Manip", "version": "7.00", "profiles": ["DM6", "DM5 compatibility"] },
+  "research_status": "Source and POD term inventory only. No acceptance, result, diagnostic, mutation, or context behavior in this file has been observed.",
+  "sources": [
+    "lib/Date/Manip/Delta.pod: parse; ADDITIONAL DELTA NOTATIONS; PRINTF DIRECTIVES",
+    "lib/Date/Manip/Calc.pod: TYPES OF CALCULATIONS; MODE; TIMEZONE CONSIDERATIONS; BUSINESS MODE CONSIDERATIONS; SUBTRACTION",
+    "lib/Date/Manip/DM6.pod and DM6.pm: ParseDateDelta, Delta_Format, DateCalc",
+    "lib/Date/Manip/DM5.pod and DM5.pm: ParseDateDelta, Delta_Format, DateCalc"
+  ],
+  "delta_parse": {
+    "field_order": ["y", "M", "w", "d", "h", "m", "s"],
+    "field_names": ["year", "month", "week", "day", "hour", "minute", "second"],
+    "options_hash": {
+      "keys": { "mode": ["standard", "business"], "nonorm": [0, 1], "type": ["exact", "semi", "approx", "estimated"] },
+      "deprecated_positional": ["business_or_standard", "nonormalize"]
+    },
+    "productions": [
+      { "id": "delta.parse.compact.1", "form": "one colon field", "field_count": 1, "status": "unobserved" },
+      { "id": "delta.parse.compact.2", "form": "two colon fields", "field_count": 2, "status": "unobserved" },
+      { "id": "delta.parse.compact.3", "form": "three colon fields", "field_count": 3, "status": "unobserved" },
+      { "id": "delta.parse.compact.4", "form": "four colon fields", "field_count": 4, "status": "unobserved" },
+      { "id": "delta.parse.compact.5", "form": "five colon fields", "field_count": 5, "status": "unobserved" },
+      { "id": "delta.parse.compact.6", "form": "six colon fields", "field_count": 6, "status": "unobserved" },
+      { "id": "delta.parse.compact.7", "form": "seven colon fields", "field_count": 7, "status": "unobserved" },
+      { "id": "delta.parse.compact.empty-interior", "form": "one or more omitted interior positions represented by adjacent separators", "status": "unobserved" },
+      { "id": "delta.parse.compact.signed-field", "form": "optional sign per numeric field", "status": "unobserved" },
+      { "id": "delta.parse.compact.no-space", "form": "compact token containing no whitespace", "status": "unobserved" },
+      { "id": "delta.parse.expanded.ordered", "form": "ordered subsequence of seven named unit categories", "unit_categories": ["year", "month", "week", "day", "hour", "minute", "second"], "status": "unobserved" },
+      { "id": "delta.parse.expanded.number", "form": "optional sign plus decimal numeral or recognized small number word plus localized unit word", "status": "unobserved" },
+      { "id": "delta.parse.expanded.sign-inheritance", "form": "unsigned component inherits the preceding larger component sign", "status": "unobserved" },
+      { "id": "delta.parse.expanded.unitless-second", "form": "terminal seconds unit word omitted", "status": "unobserved" },
+      { "id": "delta.parse.expanded.separator", "form": "whitespace or comma separates a unit word from the following numeric component", "status": "unobserved" },
+      { "id": "delta.parse.mixed", "form": "ordered named components followed by compact trailing components", "status": "unobserved" },
+      { "id": "delta.parse.relative.after", "form": "localized future marker", "status": "unobserved" },
+      { "id": "delta.parse.relative.before", "form": "localized past marker", "status": "unobserved" },
+      { "id": "delta.parse.mode-word", "form": "localized business or standard marker in compact or expanded text", "status": "unobserved" },
+      { "id": "delta.parse.legacy-accuracy-word", "form": "legacy localized exact or approximate marker; source says it is ignored", "status": "unobserved" }
+    ],
+    "invalid_partitions": ["empty input", "whitespace inside compact token", "more than seven compact fields", "out-of-order named units", "named unit adjacent to following number without separator", "relative marker appended to compact token", "text mode conflicts with mode option", "unknown option key/value", "requested type incompatible with populated fields"],
+    "boundary_partitions": ["all-zero fields", "each field independently signed", "mixed signs", "omitted compact positions", "normalization enabled/disabled", "fractional syntax", "each requested accuracy type", "localized spelling and case"],
+    "normal_partitions": ["each compact field count", "each named unit category", "mixed notation", "standard/business option and in-text marker", "future/past marker"],
+    "remaining_gaps": ["Numeric grammar, fraction acceptance, and exact token boundaries must be probed; language word inventories remain separate data, not copied here."]
+  },
+  "delta_printf": {
+    "field_codes": ["y", "M", "w", "d", "h", "m", "s"],
+    "source_ranges": ["yy", "yM", "yw", "yd", "yh", "ym", "ys", "MM", "Mw", "Md", "Mh", "Mm", "Ms", "ww", "wd", "wh", "wm", "ws", "dd", "dh", "dm", "ds", "hh", "hm", "hs", "mm", "ms", "ss"],
+    "families": [
+      { "id": "delta.printf.literal-percent", "production": "%%", "modifiers": [], "domain": ["one literal percent"], "status": "unobserved" },
+      { "id": "delta.printf.single-field", "production": "%[+][pad][positive-width]Xv", "fields": ["y", "M", "w", "d", "h", "m", "s"], "sign_modifier": ["absent", "+"], "pad_modifier": ["absent", "<", ">", "0"], "width": ["absent", "positive integer"], "status": "unobserved" },
+      { "id": "delta.printf.converted-range", "production": "%[+][pad][positive-width][.nonnegative-precision]XYZ", "target_fields": ["y", "M", "w", "d", "h", "m", "s"], "source_ranges": ["yy", "yM", "yw", "yd", "yh", "ym", "ys", "MM", "Mw", "Md", "Mh", "Mm", "Ms", "ww", "wd", "wh", "wm", "ws", "dd", "dh", "dm", "ds", "hh", "hm", "hs", "mm", "ms", "ss"], "sign_modifier": ["absent", "+"], "pad_modifier": ["absent", "<", ">", "0"], "width": ["absent", "positive integer"], "precision": ["absent", "dot plus nonnegative integer"], "status": "unobserved" },
+      { "id": "delta.printf.whole-delta", "production": "%[+][pad][positive-width]Dt", "sign_modifier": ["absent", "+"], "pad_modifier": ["absent", "<", ">"], "width": ["absent", "positive integer"], "status": "unobserved" },
+      { "id": "delta.printf.partial-delta", "production": "%[+][pad][positive-width]DXY", "field_ranges": ["yy", "yM", "yw", "yd", "yh", "ym", "ys", "MM", "Mw", "Md", "Mh", "Mm", "Ms", "ww", "wd", "wh", "wm", "ws", "dd", "dh", "dm", "ds", "hh", "hm", "hs", "mm", "ms", "ss"], "sign_modifier": ["absent", "+"], "pad_modifier": ["absent", "<", ">"], "width": ["absent", "positive integer"], "status": "unobserved" }
+    ],
+    "normal_partitions": ["literal text", "literal percent", "seven single fields", "28 converted source ranges for each of seven targets", "whole delta", "28 partial-delta ranges"],
+    "boundary_partitions": ["positive, negative, and mixed signs", "each padding token", "width absent/equal/greater than result", "precision absent/zero/positive", "standard/business conversion boundary", "configured workday/workweek", "one/multiple patterns and scalar/list context"],
+    "invalid_partitions": ["unknown directive", "incomplete directive", "reverse range", "zero/signed/non-numeric width", "malformed precision", "zero padding on delta-family directives", "invalid delta object"],
+    "remaining_gaps": ["Directive recognition and all rendered values require probes; no result text is an approved expectation."]
+  },
+  "calculation": {
+    "operand_pairs": ["date/date", "date/delta", "delta/date", "delta/delta"],
+    "date_date_modes": ["exact", "semi", "approx", "business", "bsemi", "bapprox"],
+    "date_delta_mode_source": ["delta standard/business state", "delta exact/semi/approx classification"],
+    "delta_delta_mode_rule": ["same business state required", "result chooses less exact of exact/semi/approx inputs"],
+    "subtract": { "ordinary": ["omitted", 0, "nonzero"], "approximate": [0, 1, 2] },
+    "normal_partitions": ["four operand pairings", "add/subtract", "six date/date modes", "same-mode delta/delta", "same-zone and cross-zone standard date/date"],
+    "boundary_partitions": ["equality/reversed dates", "month end", "leap day", "DST gap/overlap", "approximate subtract selectors 0/1/2", "business weekend/holiday/workday start/workday end", "business week", "cross-zone business dates"],
+    "invalid_partitions": ["missing second object", "invalid first/second object", "mixed business and standard deltas", "business date/date across zones", "impossible inverse approximate calculation", "invalid mode", "unsupported arity"],
+    "remaining_gaps": ["All values, error carriers, zone conversion direction, and invalid-mode outcomes require fixed-profile probes."]
+  },
+  "functional_dispatch": {
+    "DM6.ParseDateDelta": { "arity": [1, 2], "first_argument": ["scalar", "scalar reference", "array reference"], "second_argument": ["exact", "semi", "approx"], "array_effect": "candidate leading tokens may be consumed on successful parse", "invalid_partitions": ["zero or more than two arguments", "other reference type", "unsupported conversion selector"], "status": "unobserved" },
+    "DM5.ParseDateDelta": { "arity": [1], "first_argument": ["scalar", "scalar reference", "array reference"], "conversion_selector": "not accepted", "array_effect": "candidate leading tokens may be consumed on successful parse", "invalid_partitions": ["zero or more than one argument", "other reference type"], "status": "unobserved" },
+    "DM6.Delta_Format": { "dispatch": ["undefined first trailing argument: exact mode and discard it", "exact|semi|approx first trailing argument: consume mode then decimal then patterns", "integer first trailing argument: exact mode then decimal then patterns", "other first trailing argument: exact mode and treat all as patterns"], "legacy_patterns": ["%Xv", "%Xd", "%Xh", "%Xt"], "status": "unobserved" },
+    "DM5.Delta_Format": { "dispatch": ["literal approx first trailing argument: approximate mode then decimal then patterns", "all other first trailing arguments: exact mode then decimal then patterns"], "legacy_patterns": ["%Xv", "%Xd", "%Xh", "%Xt", "%%"], "status": "unobserved" },
+    "DM6.DateCalc": { "shape": "two operands, optional reference-typed error carrier, then at most one mode", "date_date_modes": { "0": "exact", "1": "approx", "2": "bapprox", "3": "business", "names": ["exact", "semi", "approx", "business", "bsemi", "bapprox"] }, "dispatch_partitions": ["first operand parse as date then delta", "second operand parse as date then delta", "ambiguous time-like text", "explicit mode on delta with/without in-text mode", "extra argument"], "status": "unobserved" },
+    "DM5.DateCalc": { "shape": "two operands, optional error reference or mode, then optional mode", "recognized_numeric_modes": [0, 1, 2, 3], "other_defined_mode": "source resets calculation mode to zero", "dispatch_partitions": ["third argument reference", "third argument non-reference as mode", "fourth argument mode", "mode marker in text", "ambiguous time-like text"], "status": "unobserved" },
+    "remaining_gaps": ["Compatibility diagnostics, exact return shape, false/undefined selector handling, and differences in token consumption need isolated DM5/DM6 probes."]
+  },
+  "counts": { "parse_productions": 20, "printf_families": 5, "single_field_codes": 7, "ordered_field_ranges": 28, "calculation_operand_pairs": 4, "date_date_modes": 6, "functional_routes": 6 }
+}

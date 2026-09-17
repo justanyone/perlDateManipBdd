@@ -1,0 +1,556 @@
+{
+  "schema_version": 1,
+  "feature": "spec/drafts/calendar.feature",
+  "source_separation": "research-side mapping; excluded from portable export",
+  "cases": [
+    {
+      "case_id": "LEAP-CENTURY",
+      "operation_id": "calendar.is-leap-year",
+      "request": {
+        "year": 1900
+      },
+      "expected_literal": false,
+      "reference_case_ids": [
+        "CAL-calendar.is-leap-year-leap-1900-base-scalar",
+        "CAL-calendar.is-leap-year-leap-1900-dm6-scalar",
+        "CAL-calendar.is-leap-year-leap-1900-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "LEAP-400-YEAR",
+      "operation_id": "calendar.is-leap-year",
+      "request": {
+        "year": 2000
+      },
+      "expected_literal": true,
+      "reference_case_ids": [
+        "CAL-calendar.is-leap-year-leap-2000-base-scalar",
+        "CAL-calendar.is-leap-year-leap-2000-dm6-scalar",
+        "CAL-calendar.is-leap-year-leap-2000-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "LEAP-ORDINARY",
+      "operation_id": "calendar.is-leap-year",
+      "request": {
+        "year": 2040
+      },
+      "expected_literal": true,
+      "reference_case_ids": [
+        "CAL-calendar.is-leap-year-leap-2040-base-scalar",
+        "CAL-calendar.is-leap-year-leap-2040-dm6-scalar",
+        "CAL-calendar.is-leap-year-leap-2040-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "LEAP-COMMON",
+      "operation_id": "calendar.is-leap-year",
+      "request": {
+        "year": 2041
+      },
+      "expected_literal": false,
+      "reference_case_ids": [
+        "CAL-calendar.is-leap-year-leap-2041-base-scalar",
+        "CAL-calendar.is-leap-year-leap-2041-dm6-scalar",
+        "CAL-calendar.is-leap-year-leap-2041-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "LEAP-NEXT-100",
+      "operation_id": "calendar.is-leap-year",
+      "request": {
+        "year": 2100
+      },
+      "expected_literal": false,
+      "reference_case_ids": [
+        "CAL-calendar.is-leap-year-leap-2100-base-scalar",
+        "CAL-calendar.is-leap-year-leap-2100-dm6-scalar",
+        "CAL-calendar.is-leap-year-leap-2100-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "LEAP-NEXT-400",
+      "operation_id": "calendar.is-leap-year",
+      "request": {
+        "year": 2400
+      },
+      "expected_literal": true,
+      "reference_case_ids": [
+        "CAL-calendar.is-leap-year-leap-2400-base-scalar",
+        "CAL-calendar.is-leap-year-leap-2400-dm6-scalar",
+        "CAL-calendar.is-leap-year-leap-2400-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "YEAR-CENTURY",
+      "operation_id": "calendar.days-in-year",
+      "request": {
+        "year": 1900
+      },
+      "expected_literal": 365,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-year-length-1900-base-scalar",
+        "CAL-calendar.days-in-year-length-1900-dm6-scalar",
+        "CAL-calendar.days-in-year-length-1900-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "YEAR-400-YEAR",
+      "operation_id": "calendar.days-in-year",
+      "request": {
+        "year": 2000
+      },
+      "expected_literal": 366,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-year-length-2000-base-scalar",
+        "CAL-calendar.days-in-year-length-2000-dm6-scalar",
+        "CAL-calendar.days-in-year-length-2000-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "YEAR-LEAP",
+      "operation_id": "calendar.days-in-year",
+      "request": {
+        "year": 2040
+      },
+      "expected_literal": 366,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-year-length-2040-base-scalar",
+        "CAL-calendar.days-in-year-length-2040-dm6-scalar",
+        "CAL-calendar.days-in-year-length-2040-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "YEAR-COMMON",
+      "operation_id": "calendar.days-in-year",
+      "request": {
+        "year": 2041
+      },
+      "expected_literal": 365,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-year-length-2041-base-scalar",
+        "CAL-calendar.days-in-year-length-2041-dm6-scalar",
+        "CAL-calendar.days-in-year-length-2041-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "YEAR-NEXT-100",
+      "operation_id": "calendar.days-in-year",
+      "request": {
+        "year": 2100
+      },
+      "expected_literal": 365,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-year-length-2100-base-scalar",
+        "CAL-calendar.days-in-year-length-2100-dm6-scalar",
+        "CAL-calendar.days-in-year-length-2100-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "YEAR-NEXT-400",
+      "operation_id": "calendar.days-in-year",
+      "request": {
+        "year": 2400
+      },
+      "expected_literal": 366,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-year-length-2400-base-scalar",
+        "CAL-calendar.days-in-year-length-2400-dm6-scalar",
+        "CAL-calendar.days-in-year-length-2400-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "MONTH-JAN",
+      "operation_id": "calendar.days-in-month",
+      "request": {
+        "year": 2040,
+        "month": 1
+      },
+      "expected_literal": 31,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-month-month-2040-1-base-scalar",
+        "CAL-calendar.days-in-month-month-2040-1-dm6-scalar",
+        "CAL-calendar.days-in-month-month-2040-1-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "MONTH-FEB",
+      "operation_id": "calendar.days-in-month",
+      "request": {
+        "year": 2040,
+        "month": 2
+      },
+      "expected_literal": 29,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-month-month-2040-2-base-scalar",
+        "CAL-calendar.days-in-month-month-2040-2-dm6-scalar",
+        "CAL-calendar.days-in-month-month-2040-2-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "MONTH-MAR",
+      "operation_id": "calendar.days-in-month",
+      "request": {
+        "year": 2040,
+        "month": 3
+      },
+      "expected_literal": 31,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-month-month-2040-3-base-scalar",
+        "CAL-calendar.days-in-month-month-2040-3-dm6-scalar",
+        "CAL-calendar.days-in-month-month-2040-3-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "MONTH-APR",
+      "operation_id": "calendar.days-in-month",
+      "request": {
+        "year": 2040,
+        "month": 4
+      },
+      "expected_literal": 30,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-month-month-2040-4-base-scalar",
+        "CAL-calendar.days-in-month-month-2040-4-dm6-scalar",
+        "CAL-calendar.days-in-month-month-2040-4-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "MONTH-MAY",
+      "operation_id": "calendar.days-in-month",
+      "request": {
+        "year": 2040,
+        "month": 5
+      },
+      "expected_literal": 31,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-month-month-2040-5-base-scalar",
+        "CAL-calendar.days-in-month-month-2040-5-dm6-scalar",
+        "CAL-calendar.days-in-month-month-2040-5-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "MONTH-JUN",
+      "operation_id": "calendar.days-in-month",
+      "request": {
+        "year": 2040,
+        "month": 6
+      },
+      "expected_literal": 30,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-month-month-2040-6-base-scalar",
+        "CAL-calendar.days-in-month-month-2040-6-dm6-scalar",
+        "CAL-calendar.days-in-month-month-2040-6-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "MONTH-JUL",
+      "operation_id": "calendar.days-in-month",
+      "request": {
+        "year": 2040,
+        "month": 7
+      },
+      "expected_literal": 31,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-month-month-2040-7-base-scalar",
+        "CAL-calendar.days-in-month-month-2040-7-dm6-scalar",
+        "CAL-calendar.days-in-month-month-2040-7-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "MONTH-AUG",
+      "operation_id": "calendar.days-in-month",
+      "request": {
+        "year": 2040,
+        "month": 8
+      },
+      "expected_literal": 31,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-month-month-2040-8-base-scalar",
+        "CAL-calendar.days-in-month-month-2040-8-dm6-scalar",
+        "CAL-calendar.days-in-month-month-2040-8-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "MONTH-SEP",
+      "operation_id": "calendar.days-in-month",
+      "request": {
+        "year": 2040,
+        "month": 9
+      },
+      "expected_literal": 30,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-month-month-2040-9-base-scalar",
+        "CAL-calendar.days-in-month-month-2040-9-dm6-scalar",
+        "CAL-calendar.days-in-month-month-2040-9-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "MONTH-OCT",
+      "operation_id": "calendar.days-in-month",
+      "request": {
+        "year": 2040,
+        "month": 10
+      },
+      "expected_literal": 31,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-month-month-2040-10-base-scalar",
+        "CAL-calendar.days-in-month-month-2040-10-dm6-scalar",
+        "CAL-calendar.days-in-month-month-2040-10-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "MONTH-NOV",
+      "operation_id": "calendar.days-in-month",
+      "request": {
+        "year": 2040,
+        "month": 11
+      },
+      "expected_literal": 30,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-month-month-2040-11-base-scalar",
+        "CAL-calendar.days-in-month-month-2040-11-dm6-scalar",
+        "CAL-calendar.days-in-month-month-2040-11-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "MONTH-DEC",
+      "operation_id": "calendar.days-in-month",
+      "request": {
+        "year": 2040,
+        "month": 12
+      },
+      "expected_literal": 31,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-month-month-2040-12-base-scalar",
+        "CAL-calendar.days-in-month-month-2040-12-dm6-scalar",
+        "CAL-calendar.days-in-month-month-2040-12-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "MONTH-FEB-NON",
+      "operation_id": "calendar.days-in-month",
+      "request": {
+        "year": 2041,
+        "month": 2
+      },
+      "expected_literal": 28,
+      "reference_case_ids": [
+        "CAL-calendar.days-in-month-month-2041-2-base-scalar",
+        "CAL-calendar.days-in-month-month-2041-2-dm6-scalar",
+        "CAL-calendar.days-in-month-month-2041-2-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "WEEKDAY-MON",
+      "operation_id": "calendar.weekday",
+      "request": {
+        "date": [
+          2040,
+          4,
+          9
+        ]
+      },
+      "expected_literal": "Monday",
+      "reference_case_ids": [
+        "CAL-calendar.weekday-weekday-9-base-scalar",
+        "CAL-calendar.weekday-weekday-9-dm6-scalar",
+        "CAL-calendar.weekday-weekday-9-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "WEEKDAY-TUE",
+      "operation_id": "calendar.weekday",
+      "request": {
+        "date": [
+          2040,
+          4,
+          10
+        ]
+      },
+      "expected_literal": "Tuesday",
+      "reference_case_ids": [
+        "CAL-calendar.weekday-weekday-10-base-scalar",
+        "CAL-calendar.weekday-weekday-10-dm6-scalar",
+        "CAL-calendar.weekday-weekday-10-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "WEEKDAY-WED",
+      "operation_id": "calendar.weekday",
+      "request": {
+        "date": [
+          2040,
+          4,
+          11
+        ]
+      },
+      "expected_literal": "Wednesday",
+      "reference_case_ids": [
+        "CAL-calendar.weekday-weekday-11-base-scalar",
+        "CAL-calendar.weekday-weekday-11-dm6-scalar",
+        "CAL-calendar.weekday-weekday-11-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "WEEKDAY-THU",
+      "operation_id": "calendar.weekday",
+      "request": {
+        "date": [
+          2040,
+          4,
+          12
+        ]
+      },
+      "expected_literal": "Thursday",
+      "reference_case_ids": [
+        "CAL-calendar.weekday-weekday-12-base-scalar",
+        "CAL-calendar.weekday-weekday-12-dm6-scalar",
+        "CAL-calendar.weekday-weekday-12-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "WEEKDAY-FRI",
+      "operation_id": "calendar.weekday",
+      "request": {
+        "date": [
+          2040,
+          4,
+          13
+        ]
+      },
+      "expected_literal": "Friday",
+      "reference_case_ids": [
+        "CAL-calendar.weekday-weekday-13-base-scalar",
+        "CAL-calendar.weekday-weekday-13-dm6-scalar",
+        "CAL-calendar.weekday-weekday-13-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "WEEKDAY-SAT",
+      "operation_id": "calendar.weekday",
+      "request": {
+        "date": [
+          2040,
+          4,
+          14
+        ]
+      },
+      "expected_literal": "Saturday",
+      "reference_case_ids": [
+        "CAL-calendar.weekday-weekday-14-base-scalar",
+        "CAL-calendar.weekday-weekday-14-dm6-scalar",
+        "CAL-calendar.weekday-weekday-14-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "WEEKDAY-SUN",
+      "operation_id": "calendar.weekday",
+      "request": {
+        "date": [
+          2040,
+          4,
+          15
+        ]
+      },
+      "expected_literal": "Sunday",
+      "reference_case_ids": [
+        "CAL-calendar.weekday-weekday-15-base-scalar",
+        "CAL-calendar.weekday-weekday-15-dm6-scalar",
+        "CAL-calendar.weekday-weekday-15-dm5-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "MONTH-ALL",
+      "operation_id": "calendar.days-in-month",
+      "request": {
+        "year": 2040,
+        "selection": "all months"
+      },
+      "expected_literal": [
+        31,
+        29,
+        31,
+        30,
+        31,
+        30,
+        31,
+        31,
+        30,
+        31,
+        30,
+        31
+      ],
+      "reference_case_ids": [
+        "CAL-calendar.days-in-month-all-months-base-list"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    }
+  ],
+  "coordinator_review": "All33 candidate literal expectations match97 recorded public-call results and independent Gregorian reviews; generic weekday/boolean normalization checked. Features remain draft until complete specification review."
+}

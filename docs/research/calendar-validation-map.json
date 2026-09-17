@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "feature": "spec/drafts/calendar-validation.feature",
+  "source_separation": "Research-side mapping, excluded from export",
+  "cases": [
+    {
+      "case_id": "VALID-LEAP-LATE",
+      "operation_id": "calendar.validate-date",
+      "request": {
+        "fields": [
+          2040,
+          2,
+          29,
+          23,
+          59,
+          59
+        ]
+      },
+      "expected_literal": true,
+      "reference_case_ids": [
+        "CAL-calendar.validate-date-validate-2040-2-29-23-59-59-base-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "VALID-LEAP",
+      "operation_id": "calendar.validate-date",
+      "request": {
+        "fields": [
+          2040,
+          2,
+          29,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_literal": true,
+      "reference_case_ids": [
+        "CAL-calendar.validate-date-validate-2040-2-29-base-scalar-full"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "INVALID-LEAP",
+      "operation_id": "calendar.validate-date",
+      "request": {
+        "fields": [
+          2041,
+          2,
+          29,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_literal": false,
+      "reference_case_ids": [
+        "CAL-calendar.validate-date-validate-2041-2-29-base-scalar-full"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "INVALID-YEAR-ZERO",
+      "operation_id": "calendar.validate-date",
+      "request": {
+        "fields": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_literal": false,
+      "reference_case_ids": [
+        "CAL-calendar.validate-date-validate-0-1-1-base-scalar-full"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "VALID-YEAR-FIRST",
+      "operation_id": "calendar.validate-date",
+      "request": {
+        "fields": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_literal": true,
+      "reference_case_ids": [
+        "CAL-calendar.validate-date-validate-1-1-1-base-scalar-full"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "VALID-YEAR-LAST",
+      "operation_id": "calendar.validate-date",
+      "request": {
+        "fields": [
+          9999,
+          12,
+          31,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_literal": true,
+      "reference_case_ids": [
+        "CAL-calendar.validate-date-validate-9999-12-31-base-scalar-full"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "INVALID-YEAR-HIGH",
+      "operation_id": "calendar.validate-date",
+      "request": {
+        "fields": [
+          10000,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_literal": false,
+      "reference_case_ids": [
+        "CAL-calendar.validate-date-validate-10000-1-1-base-scalar-full"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "INVALID-MONTH-LOW",
+      "operation_id": "calendar.validate-date",
+      "request": {
+        "fields": [
+          2040,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_literal": false,
+      "reference_case_ids": [
+        "CAL-calendar.validate-date-validate-2040-0-1-base-scalar-full"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "INVALID-MONTH-HIGH",
+      "operation_id": "calendar.validate-date",
+      "request": {
+        "fields": [
+          2040,
+          13,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_literal": false,
+      "reference_case_ids": [
+        "CAL-calendar.validate-date-validate-2040-13-1-base-scalar-full"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "INVALID-APRIL-DAY",
+      "operation_id": "calendar.validate-date",
+      "request": {
+        "fields": [
+          2040,
+          4,
+          31,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_literal": false,
+      "reference_case_ids": [
+        "CAL-calendar.validate-date-validate-2040-4-31-base-scalar-full"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "INVALID-DAY-ZERO",
+      "operation_id": "calendar.validate-date",
+      "request": {
+        "fields": [
+          2040,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_literal": false,
+      "reference_case_ids": [
+        "CAL-calendar.validate-date-validate-2040-2-0-base-scalar-full"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "CLOCK-MIDNIGHT",
+      "operation_id": "calendar.validate-time",
+      "request": {
+        "fields": [
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_literal": true,
+      "reference_case_ids": [
+        "CAL-calendar.validate-time-clock-0-0-0-base-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "CLOCK-LAST-SECOND",
+      "operation_id": "calendar.validate-time",
+      "request": {
+        "fields": [
+          23,
+          59,
+          59
+        ]
+      },
+      "expected_literal": true,
+      "reference_case_ids": [
+        "CAL-calendar.validate-time-clock-23-59-59-base-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "CLOCK-END-OF-DAY",
+      "operation_id": "calendar.validate-time",
+      "request": {
+        "fields": [
+          24,
+          0,
+          0
+        ]
+      },
+      "expected_literal": true,
+      "reference_case_ids": [
+        "CAL-calendar.validate-time-clock-24-0-0-base-scalar"
+      ],
+      "review_status": "documented/observed reference compatibility; semantic promotion pending",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "CLOCK-AFTER-END",
+      "operation_id": "calendar.validate-time",
+      "request": {
+        "fields": [
+          24,
+          0,
+          1
+        ]
+      },
+      "expected_literal": false,
+      "reference_case_ids": [
+        "CAL-calendar.validate-time-clock-24-0-1-base-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "CLOCK-NEGATIVE-HOUR",
+      "operation_id": "calendar.validate-time",
+      "request": {
+        "fields": [
+          -1,
+          0,
+          0
+        ]
+      },
+      "expected_literal": false,
+      "reference_case_ids": [
+        "CAL-calendar.validate-time-clock--1-0-0-base-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "CLOCK-MINUTE-OVERFLOW",
+      "operation_id": "calendar.validate-time",
+      "request": {
+        "fields": [
+          12,
+          60,
+          0
+        ]
+      },
+      "expected_literal": false,
+      "reference_case_ids": [
+        "CAL-calendar.validate-time-clock-12-60-0-base-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "CLOCK-SECOND-OVERFLOW",
+      "operation_id": "calendar.validate-time",
+      "request": {
+        "fields": [
+          12,
+          0,
+          60
+        ]
+      },
+      "expected_literal": false,
+      "reference_case_ids": [
+        "CAL-calendar.validate-time-clock-12-0-60-base-scalar"
+      ],
+      "review_status": "literal-evidence-reviewed; draft feature pending full-spec review",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    },
+    {
+      "case_id": "CLOCK-FRACTION",
+      "operation_id": "calendar.validate-time",
+      "request": {
+        "fields": [
+          12,
+          0,
+          0.5
+        ]
+      },
+      "expected_literal": false,
+      "reference_case_ids": [
+        "CAL-calendar.validate-time-clock-12-0-0.5-base-scalar"
+      ],
+      "review_status": "documented/observed reference compatibility; semantic promotion pending",
+      "review_evidence": "docs/research/observations/calendar-review.json"
+    }
+  ]
+}

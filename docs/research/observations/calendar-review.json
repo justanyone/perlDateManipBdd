@@ -1,0 +1,5846 @@
+{
+  "schema_version": 1,
+  "purpose": "Independent stdlib calendar/UTC semantic review; not approved expectations or a conformance snapshot.",
+  "reviewer": "tools/review/calendar_facts.py",
+  "evidence_sha256": {
+    "docs/research/inputs/calendar.json": "45c672182b217aae7a40e9c8194c60114fd96702504de8405abdd9ee7f0050e9",
+    "docs/research/observations/calendar.json": "f94043bd6aa3ff53437ecbec3317bc2b8d00efe02a058a435575db24412ddd25",
+    "tools/probes/calendar-contracts.pl": "6250f0a2822a2c1b5b1ae751dfc10fbe401d9e8c9ac546646ef70a9ccf70984c",
+    "tools/probes/run-calendar.py": "19f23bf97df593ede0a8f4d24ab43735c9a92d4735c22473b9a75ca881e6a5d2",
+    "docs/automation/reference-profiles.json": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e"
+  },
+  "evidence_integrity": {
+    "docs/research/inputs/calendar.json": {
+      "current": "45c672182b217aae7a40e9c8194c60114fd96702504de8405abdd9ee7f0050e9",
+      "recorded": "45c672182b217aae7a40e9c8194c60114fd96702504de8405abdd9ee7f0050e9",
+      "matches_recorded": true
+    },
+    "tools/probes/calendar-contracts.pl": {
+      "current": "6250f0a2822a2c1b5b1ae751dfc10fbe401d9e8c9ac546646ef70a9ccf70984c",
+      "recorded": "6250f0a2822a2c1b5b1ae751dfc10fbe401d9e8c9ac546646ef70a9ccf70984c",
+      "matches_recorded": true
+    },
+    "tools/probes/run-calendar.py": {
+      "current": "19f23bf97df593ede0a8f4d24ab43735c9a92d4735c22473b9a75ca881e6a5d2",
+      "recorded": "19f23bf97df593ede0a8f4d24ab43735c9a92d4735c22473b9a75ca881e6a5d2",
+      "matches_recorded": true
+    },
+    "docs/automation/reference-profiles.json": {
+      "current": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
+      "recorded": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
+      "matches_recorded": true
+    }
+  },
+  "recorded_observation_repetitions": 2,
+  "status_counts": {
+    "compatibility": 28,
+    "invalid": 3,
+    "reviewed": 190,
+    "unreviewed": 10
+  },
+  "channel_counts": {
+    "clean": 163,
+    "with_warnings": 68,
+    "with_exception": 0,
+    "with_stdout": 0,
+    "with_stderr": 0
+  },
+  "cases": [
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-1900-base-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-1900-dm6-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-1900-dm5-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-1900-base-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 365
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 365
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-1900-dm6-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 365
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 365
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-1900-dm5-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 365
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 365
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2000-base-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2000-dm6-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2000-dm5-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2000-base-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 366
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 366
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2000-dm6-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 366
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 366
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2000-dm5-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 366
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 366
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2040-base-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2040-dm6-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2040-dm5-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2040-base-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 366
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 366
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2040-dm6-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 366
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 366
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2040-dm5-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 366
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 366
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2041-base-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2041-dm6-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2041-dm5-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2041-base-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 365
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 365
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2041-dm6-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 365
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 365
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2041-dm5-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 365
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 365
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2100-base-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2100-dm6-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2100-dm5-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2100-base-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 365
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 365
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2100-dm6-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 365
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 365
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2100-dm5-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 365
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 365
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2400-base-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2400-dm6-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2400-dm5-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2400-base-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 366
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 366
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2400-dm6-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 366
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 366
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2400-dm5-scalar",
+      "operation_id": "calendar.days-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 366
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 366
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-1-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-1-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-1-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-2-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 29
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 29
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-2-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 29
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 29
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-2-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 29
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 29
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-3-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-3-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-3-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-4-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 30
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 30
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-4-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 30
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 30
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-4-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 30
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 30
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-5-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-5-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-5-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-6-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 30
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 30
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-6-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 30
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 30
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-6-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 30
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 30
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-7-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-7-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-7-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-8-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-8-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-8-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-9-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 30
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 30
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-9-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 30
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 30
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-9-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 30
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 30
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-10-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-10-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-10-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-11-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 30
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 30
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-11-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 30
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 30
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-11-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 30
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 30
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-12-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-12-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-12-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 31
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 31
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2041-2-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 28
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 28
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2041-2-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 28
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 28
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2041-2-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 28
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 28
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-all-months-base-list",
+      "operation_id": "calendar.days-in-month",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "list": [
+          31,
+          29,
+          31,
+          30,
+          31,
+          30,
+          31,
+          31,
+          30,
+          31,
+          30,
+          31
+        ]
+      },
+      "carrier": {
+        "expected": "list",
+        "actual": "list",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        31,
+        29,
+        31,
+        30,
+        31,
+        30,
+        31,
+        31,
+        30,
+        31,
+        30,
+        31
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-9-base-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-9-dm6-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-9-dm5-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-10-base-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 2
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 2
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-10-dm6-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 2
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 2
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-10-dm5-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 2
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 2
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-11-base-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 3
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 3
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-11-dm6-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 3
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 3
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-11-dm5-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 3
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 3
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-12-base-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 4
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 4
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-12-dm6-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 4
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 4
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-12-dm5-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 4
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 4
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-13-base-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 5
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 5
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-13-dm6-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 5
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 5
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-13-dm5-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 5
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 5
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-14-base-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 6
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 6
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-14-dm6-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 6
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 6
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-14-dm5-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 6
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 6
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-15-base-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 7
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 7
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-15-dm6-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 7
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 7
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-15-dm5-scalar",
+      "operation_id": "calendar.weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 7
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 7
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-2-29-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "review_status": "unreviewed",
+      "reason": "Three-field Base check emits warnings and its omitted-clock convention is not a Gregorian fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2041-2-29-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "review_status": "unreviewed",
+      "reason": "Three-field Base check emits warnings and its omitted-clock convention is not a Gregorian fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-0-1-1-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "review_status": "unreviewed",
+      "reason": "Three-field Base check emits warnings and its omitted-clock convention is not a Gregorian fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-1-1-1-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "review_status": "unreviewed",
+      "reason": "Three-field Base check emits warnings and its omitted-clock convention is not a Gregorian fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-9999-12-31-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "review_status": "unreviewed",
+      "reason": "Three-field Base check emits warnings and its omitted-clock convention is not a Gregorian fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-10000-1-1-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "review_status": "unreviewed",
+      "reason": "Three-field Base check emits warnings and its omitted-clock convention is not a Gregorian fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-0-1-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "review_status": "unreviewed",
+      "reason": "Three-field Base check emits warnings and its omitted-clock convention is not a Gregorian fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-13-1-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "review_status": "unreviewed",
+      "reason": "Three-field Base check emits warnings and its omitted-clock convention is not a Gregorian fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-4-31-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "review_status": "unreviewed",
+      "reason": "Three-field Base check emits warnings and its omitted-clock convention is not a Gregorian fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-2-0-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "review_status": "unreviewed",
+      "reason": "Three-field Base check emits warnings and its omitted-clock convention is not a Gregorian fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-2-29-23-59-59-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-0-0-0-base-scalar",
+      "operation_id": "calendar.validate-time",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-23-59-59-base-scalar",
+      "operation_id": "calendar.validate-time",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-24-0-0-base-scalar",
+      "operation_id": "calendar.validate-time",
+      "review_status": "compatibility",
+      "reason": "24:00:00 is a Date::Manip-supported end-of-day representation; Python datetime only accepts 00:00:00.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-24-0-1-base-scalar",
+      "operation_id": "calendar.validate-time",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock--1-0-0-base-scalar",
+      "operation_id": "calendar.validate-time",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-12-60-0-base-scalar",
+      "operation_id": "calendar.validate-time",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-12-0-60-base-scalar",
+      "operation_id": "calendar.validate-time",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-12-0-0.5-base-scalar",
+      "operation_id": "calendar.validate-time",
+      "review_status": "compatibility",
+      "reason": "Python permits fractional seconds, while this Date::Manip validator rejects them.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-1-1-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-1-1-dm6-scalar",
+      "operation_id": "calendar.day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-1-1-dm5-scalar",
+      "operation_id": "calendar.day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-1-1-base-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 744730
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 744730
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-1-1-dm6-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 744730
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 744730
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-1-1-dm5-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "review_status": "compatibility",
+      "reason": "DM5's day ordinal uses a distinct historical compatibility epoch (366 days higher here).",
+      "observed_return": {
+        "scalar": 745096
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-2-29-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 60
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 60
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-2-29-dm6-scalar",
+      "operation_id": "calendar.day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 60
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 60
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-2-29-dm5-scalar",
+      "operation_id": "calendar.day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 60
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 60
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-2-29-base-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 744789
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 744789
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-2-29-dm6-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 744789
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 744789
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-2-29-dm5-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "review_status": "compatibility",
+      "reason": "DM5's day ordinal uses a distinct historical compatibility epoch (366 days higher here).",
+      "observed_return": {
+        "scalar": 745155
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-12-31-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 366
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 366
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-12-31-dm6-scalar",
+      "operation_id": "calendar.day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 366
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 366
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-12-31-dm5-scalar",
+      "operation_id": "calendar.day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 366
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 366
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-12-31-base-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 745095
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 745095
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-12-31-dm6-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 745095
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 745095
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-12-31-dm5-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "review_status": "compatibility",
+      "reason": "DM5's day ordinal uses a distinct historical compatibility epoch (366 days higher here).",
+      "observed_return": {
+        "scalar": 745461
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-inverse-1-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          2040,
+          1,
+          1
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        1,
+        1
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-1-dm6-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "list": [
+          2040,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "carrier": {
+        "expected": "list",
+        "actual": "list",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-1-dm5-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "list": [
+          2040,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "carrier": {
+        "expected": "list",
+        "actual": "list",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-inverse-60-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          2040,
+          2,
+          29
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        2,
+        29
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-60-dm6-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "list": [
+          2040,
+          2,
+          29,
+          0,
+          0,
+          0
+        ]
+      },
+      "carrier": {
+        "expected": "list",
+        "actual": "list",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        2,
+        29,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-60-dm5-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "list": [
+          2040,
+          2,
+          29,
+          0,
+          0,
+          0
+        ]
+      },
+      "carrier": {
+        "expected": "list",
+        "actual": "list",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        2,
+        29,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-inverse-60.5-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          2040,
+          2,
+          29,
+          12,
+          0,
+          0
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        2,
+        29,
+        12,
+        0,
+        0
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-60.5-dm6-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "list": [
+          2040,
+          2,
+          29,
+          12,
+          0,
+          0
+        ]
+      },
+      "carrier": {
+        "expected": "list",
+        "actual": "list",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        2,
+        29,
+        12,
+        0,
+        0
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-60.5-dm5-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "list": [
+          2040,
+          2,
+          29,
+          12,
+          0,
+          0
+        ]
+      },
+      "carrier": {
+        "expected": "list",
+        "actual": "list",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        2,
+        29,
+        12,
+        0,
+        0
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-inverse-366-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          2040,
+          12,
+          31
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        12,
+        31
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-366-dm6-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "list": [
+          2040,
+          12,
+          31,
+          0,
+          0,
+          0
+        ]
+      },
+      "carrier": {
+        "expected": "list",
+        "actual": "list",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        12,
+        31,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-366-dm5-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "list": [
+          2040,
+          12,
+          31,
+          0,
+          0,
+          0
+        ]
+      },
+      "carrier": {
+        "expected": "list",
+        "actual": "list",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        12,
+        31,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-fractional-ordinal-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 60.5
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 60.5
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-inverse-0-base-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "review_status": "compatibility",
+      "reason": "The Base inverse exposes year 0, outside Python datetime's Gregorian range.",
+      "observed_return": {
+        "scalar": [
+          0,
+          12,
+          31
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-inverse-1-base-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          1,
+          1,
+          1
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-inverse-60-base-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          1,
+          3,
+          1
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-inverse-744790-base-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          2040,
+          3,
+          1
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        3,
+        1
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040-1-2-4-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          2040,
+          4,
+          3
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        4,
+        3
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040--1-2-4-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          2040,
+          4,
+          24
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        4,
+        24
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040-5-2-4-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "review_status": "invalid",
+      "reason": "Requested weekday occurrence is outside the selected month/year or permitted range.",
+      "observed_return": {
+        "scalar": null
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040-5-7-2-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "review_status": "invalid",
+      "reason": "Requested weekday occurrence is outside the selected month/year or permitted range.",
+      "observed_return": {
+        "scalar": null
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040-0-2-4-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "review_status": "compatibility",
+      "reason": "Zero occurrence is interpreted as the first occurrence by the observed Base route.",
+      "observed_return": {
+        "scalar": [
+          2040,
+          4,
+          3
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040-54-2-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "review_status": "invalid",
+      "reason": "Requested weekday occurrence is outside the selected month/year or permitted range.",
+      "observed_return": {
+        "scalar": null
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040--53-2-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": null
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": null
+    },
+    {
+      "case_id": "CAL-calendar.week-year-start-week-year-start-2039-base-scalar",
+      "operation_id": "calendar.week-year-start",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          2039,
+          1,
+          3
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2039,
+        1,
+        3
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.weeks-in-year-weeks-in-year-2039-base-scalar",
+      "operation_id": "calendar.weeks-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 52
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 52
+    },
+    {
+      "case_id": "CAL-calendar.week-year-start-week-year-start-2040-base-scalar",
+      "operation_id": "calendar.week-year-start",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          2040,
+          1,
+          2
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        1,
+        2
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.weeks-in-year-weeks-in-year-2040-base-scalar",
+      "operation_id": "calendar.weeks-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 52
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 52
+    },
+    {
+      "case_id": "CAL-calendar.week-year-start-week-year-start-2041-base-scalar",
+      "operation_id": "calendar.week-year-start",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          2040,
+          12,
+          31
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        12,
+        31
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.weeks-in-year-weeks-in-year-2041-base-scalar",
+      "operation_id": "calendar.weeks-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 52
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 52
+    },
+    {
+      "case_id": "CAL-calendar.week-year-start-week-year-start-2042-base-scalar",
+      "operation_id": "calendar.week-year-start",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          2041,
+          12,
+          30
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2041,
+        12,
+        30
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.weeks-in-year-weeks-in-year-2042-base-scalar",
+      "operation_id": "calendar.weeks-in-year",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 52
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 52
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-1-base-list",
+      "operation_id": "calendar.week-number",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "list": [
+          2039,
+          52
+        ]
+      },
+      "carrier": {
+        "expected": "list",
+        "actual": "list",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2039,
+        52
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-1-dm6-scalar",
+      "operation_id": "calendar.week-number",
+      "review_status": "compatibility",
+      "reason": "Functional/OO week-number call returns a calendar-week number with a configured first day, not an ISO week-year pair.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-1-dm5-scalar",
+      "operation_id": "calendar.week-number",
+      "review_status": "compatibility",
+      "reason": "Functional/OO week-number call returns a calendar-week number with a configured first day, not an ISO week-year pair.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-1-oo-scalar",
+      "operation_id": "calendar.week-number",
+      "review_status": "compatibility",
+      "reason": "Functional/OO week-number call returns a calendar-week number with a configured first day, not an ISO week-year pair.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Use of uninitialized value $val in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 1350.\n",
+          "ERROR: [config_var] invalid: FirstDay:  at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-2-base-list",
+      "operation_id": "calendar.week-number",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "list": [
+          2040,
+          1
+        ]
+      },
+      "carrier": {
+        "expected": "list",
+        "actual": "list",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        1
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-2-dm6-scalar",
+      "operation_id": "calendar.week-number",
+      "review_status": "compatibility",
+      "reason": "Functional/OO week-number call returns a calendar-week number with a configured first day, not an ISO week-year pair.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-2-dm5-scalar",
+      "operation_id": "calendar.week-number",
+      "review_status": "compatibility",
+      "reason": "Functional/OO week-number call returns a calendar-week number with a configured first day, not an ISO week-year pair.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-2-oo-scalar",
+      "operation_id": "calendar.week-number",
+      "review_status": "compatibility",
+      "reason": "Functional/OO week-number call returns a calendar-week number with a configured first day, not an ISO week-year pair.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Use of uninitialized value $val in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 1350.\n",
+          "ERROR: [config_var] invalid: FirstDay:  at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-12-31-base-list",
+      "operation_id": "calendar.week-number",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "list": [
+          2041,
+          1
+        ]
+      },
+      "carrier": {
+        "expected": "list",
+        "actual": "list",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2041,
+        1
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-12-31-dm6-scalar",
+      "operation_id": "calendar.week-number",
+      "review_status": "compatibility",
+      "reason": "Functional/OO week-number call returns a calendar-week number with a configured first day, not an ISO week-year pair.",
+      "observed_return": {
+        "scalar": 53
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-12-31-dm5-scalar",
+      "operation_id": "calendar.week-number",
+      "review_status": "compatibility",
+      "reason": "Functional/OO week-number call returns a calendar-week number with a configured first day, not an ISO week-year pair.",
+      "observed_return": {
+        "scalar": 53
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-12-31-oo-scalar",
+      "operation_id": "calendar.week-number",
+      "review_status": "compatibility",
+      "reason": "Functional/OO week-number call returns a calendar-week number with a configured first day, not an ISO week-year pair.",
+      "observed_return": {
+        "scalar": 53
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Use of uninitialized value $val in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 1350.\n",
+          "ERROR: [config_var] invalid: FirstDay:  at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2041-1-1-base-list",
+      "operation_id": "calendar.week-number",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "list": [
+          2041,
+          1
+        ]
+      },
+      "carrier": {
+        "expected": "list",
+        "actual": "list",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2041,
+        1
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2041-1-1-dm6-scalar",
+      "operation_id": "calendar.week-number",
+      "review_status": "compatibility",
+      "reason": "Functional/OO week-number call returns a calendar-week number with a configured first day, not an ISO week-year pair.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2041-1-1-dm5-scalar",
+      "operation_id": "calendar.week-number",
+      "review_status": "compatibility",
+      "reason": "Functional/OO week-number call returns a calendar-week number with a configured first day, not an ISO week-year pair.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2041-1-1-oo-scalar",
+      "operation_id": "calendar.week-number",
+      "review_status": "compatibility",
+      "reason": "Functional/OO week-number call returns a calendar-week number with a configured first day, not an ISO week-year pair.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Use of uninitialized value $val in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 1350.\n",
+          "ERROR: [config_var] invalid: FirstDay:  at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-inverse-1-base-scalar",
+      "operation_id": "calendar.week-number",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          2040,
+          1,
+          2
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        1,
+        2
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-inverse-52-base-scalar",
+      "operation_id": "calendar.week-number",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          2040,
+          12,
+          24
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2040,
+        12,
+        24
+      ]
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-inverse-53-base-scalar",
+      "operation_id": "calendar.week-number",
+      "review_status": "compatibility",
+      "reason": "Week 53 was accepted for an ISO year that has only 52 weeks and rolled into the next week-year.",
+      "observed_return": {
+        "scalar": [
+          2040,
+          12,
+          31
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1970-1-1-0-0-0-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1970-1-1-0-0-0-dm6-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1970-1-1-0-0-0-dm5-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-1970-1-1-0-0-0-dm6-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-1970-1-1-0-0-0-dm5-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-1970-1-1-0-0-0-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1969-12-31-23-59-59-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": -1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": -1
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1969-12-31-23-59-59-dm6-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": -1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": -1
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1969-12-31-23-59-59-dm5-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": -1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": -1
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-1969-12-31-23-59-59-dm6-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": -1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": -1
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-1969-12-31-23-59-59-dm5-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": -1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": -1
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-1969-12-31-23-59-59-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": -1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": -1
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2040-2-29-12-34-56-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 2214131696
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 2214131696
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2040-2-29-12-34-56-dm6-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 2214131696
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 2214131696
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2040-2-29-12-34-56-dm5-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 2214131696
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 2214131696
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-2040-2-29-12-34-56-dm6-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 2214131696
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 2214131696
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-2040-2-29-12-34-56-dm5-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 2214131696
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 2214131696
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-2040-2-29-12-34-56-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 2214131696
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 2214131696
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2038-1-19-3-14-8-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 2147483648
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 2147483648
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2038-1-19-3-14-8-dm6-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 2147483648
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 2147483648
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2038-1-19-3-14-8-dm5-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 2147483648
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 2147483648
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-2038-1-19-3-14-8-dm6-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 2147483648
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 2147483648
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-2038-1-19-3-14-8-dm5-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 2147483648
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": false,
+        "warning_free": false,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 2147483648
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-2038-1-19-3-14-8-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 2147483648
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 2147483648
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-inverse--1-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          1969,
+          12,
+          31,
+          23,
+          59,
+          59
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        1969,
+        12,
+        31,
+        23,
+        59,
+        59
+      ]
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-set--1-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "review_status": "compatibility",
+      "reason": "The independently calculated UTC post-state matches; the scalar zero is a binding-level mutator status, not an epoch value.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_post_state": "1969123123:59:59",
+      "post_state_matches": true
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-inverse-0-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          1970,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        1970,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-set-0-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "review_status": "compatibility",
+      "reason": "The independently calculated UTC post-state matches; the scalar zero is a binding-level mutator status, not an epoch value.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_post_state": "1970010100:00:00",
+      "post_state_matches": true
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-inverse-1-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          1970,
+          1,
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        1970,
+        1,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-set-1-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "review_status": "compatibility",
+      "reason": "The independently calculated UTC post-state matches; the scalar zero is a binding-level mutator status, not an epoch value.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_post_state": "1970010100:00:01",
+      "post_state_matches": true
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-inverse-2147483648-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": [
+          2038,
+          1,
+          19,
+          3,
+          14,
+          8
+        ]
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": [
+        2038,
+        1,
+        19,
+        3,
+        14,
+        8
+      ]
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-set-2147483648-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "review_status": "compatibility",
+      "reason": "The independently calculated UTC post-state matches; the scalar zero is a binding-level mutator status, not an epoch value.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_post_state": "2038011903:14:08",
+      "post_state_matches": true
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-2-29-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2041-2-29-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-0-1-1-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-1-1-1-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-9999-12-31-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 1
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-10000-1-1-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-0-1-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-13-1-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-4-31-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-2-0-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "review_status": "reviewed",
+      "reason": "Matches an independently calculated proleptic-Gregorian, ISO-week, or UTC fact.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      "independent_expected": 0
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-1-oo-scalar-explicit-monday",
+      "operation_id": "calendar.week-number",
+      "review_status": "compatibility",
+      "reason": "Functional/OO week-number call returns a calendar-week number with a configured first day, not an ISO week-year pair.",
+      "observed_return": {
+        "scalar": 0
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-2-oo-scalar-explicit-monday",
+      "operation_id": "calendar.week-number",
+      "review_status": "compatibility",
+      "reason": "Functional/OO week-number call returns a calendar-week number with a configured first day, not an ISO week-year pair.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-12-31-oo-scalar-explicit-monday",
+      "operation_id": "calendar.week-number",
+      "review_status": "compatibility",
+      "reason": "Functional/OO week-number call returns a calendar-week number with a configured first day, not an ISO week-year pair.",
+      "observed_return": {
+        "scalar": 53
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2041-1-1-oo-scalar-explicit-monday",
+      "operation_id": "calendar.week-number",
+      "review_status": "compatibility",
+      "reason": "Functional/OO week-number call returns a calendar-week number with a configured first day, not an ISO week-year pair.",
+      "observed_return": {
+        "scalar": 1
+      },
+      "carrier": {
+        "expected": "scalar",
+        "actual": "scalar",
+        "matches": true
+      },
+      "channels": {
+        "clean": true,
+        "warning_free": true,
+        "warnings": [],
+        "exception": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    }
+  ]
+}

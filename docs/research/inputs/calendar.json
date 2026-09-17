@@ -1,0 +1,4362 @@
+{
+  "schema_version": 1,
+  "purpose": "Original research inputs; no expected values",
+  "cases": [
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-1900-base-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "method": "leapyear",
+      "arguments": [
+        1900
+      ],
+      "request": {
+        "year": 1900
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-1900-dm6-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "method": "Date_LeapYear",
+      "arguments": [
+        1900
+      ],
+      "request": {
+        "year": 1900
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-1900-dm5-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "method": "Date_LeapYear",
+      "arguments": [
+        1900
+      ],
+      "request": {
+        "year": 1900
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-1900-base-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "base",
+      "method": "days_in_year",
+      "arguments": [
+        1900
+      ],
+      "request": {
+        "year": 1900
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-1900-dm6-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "method": "Date_DaysInYear",
+      "arguments": [
+        1900
+      ],
+      "request": {
+        "year": 1900
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-1900-dm5-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "method": "Date_DaysInYear",
+      "arguments": [
+        1900
+      ],
+      "request": {
+        "year": 1900
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2000-base-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "method": "leapyear",
+      "arguments": [
+        2000
+      ],
+      "request": {
+        "year": 2000
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2000-dm6-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "method": "Date_LeapYear",
+      "arguments": [
+        2000
+      ],
+      "request": {
+        "year": 2000
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2000-dm5-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "method": "Date_LeapYear",
+      "arguments": [
+        2000
+      ],
+      "request": {
+        "year": 2000
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2000-base-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "base",
+      "method": "days_in_year",
+      "arguments": [
+        2000
+      ],
+      "request": {
+        "year": 2000
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2000-dm6-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "method": "Date_DaysInYear",
+      "arguments": [
+        2000
+      ],
+      "request": {
+        "year": 2000
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2000-dm5-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "method": "Date_DaysInYear",
+      "arguments": [
+        2000
+      ],
+      "request": {
+        "year": 2000
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2040-base-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "method": "leapyear",
+      "arguments": [
+        2040
+      ],
+      "request": {
+        "year": 2040
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2040-dm6-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "method": "Date_LeapYear",
+      "arguments": [
+        2040
+      ],
+      "request": {
+        "year": 2040
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2040-dm5-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "method": "Date_LeapYear",
+      "arguments": [
+        2040
+      ],
+      "request": {
+        "year": 2040
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2040-base-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "base",
+      "method": "days_in_year",
+      "arguments": [
+        2040
+      ],
+      "request": {
+        "year": 2040
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2040-dm6-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "method": "Date_DaysInYear",
+      "arguments": [
+        2040
+      ],
+      "request": {
+        "year": 2040
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2040-dm5-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "method": "Date_DaysInYear",
+      "arguments": [
+        2040
+      ],
+      "request": {
+        "year": 2040
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2041-base-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "method": "leapyear",
+      "arguments": [
+        2041
+      ],
+      "request": {
+        "year": 2041
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2041-dm6-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "method": "Date_LeapYear",
+      "arguments": [
+        2041
+      ],
+      "request": {
+        "year": 2041
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2041-dm5-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "method": "Date_LeapYear",
+      "arguments": [
+        2041
+      ],
+      "request": {
+        "year": 2041
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2041-base-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "base",
+      "method": "days_in_year",
+      "arguments": [
+        2041
+      ],
+      "request": {
+        "year": 2041
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2041-dm6-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "method": "Date_DaysInYear",
+      "arguments": [
+        2041
+      ],
+      "request": {
+        "year": 2041
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2041-dm5-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "method": "Date_DaysInYear",
+      "arguments": [
+        2041
+      ],
+      "request": {
+        "year": 2041
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2100-base-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "method": "leapyear",
+      "arguments": [
+        2100
+      ],
+      "request": {
+        "year": 2100
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2100-dm6-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "method": "Date_LeapYear",
+      "arguments": [
+        2100
+      ],
+      "request": {
+        "year": 2100
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2100-dm5-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "method": "Date_LeapYear",
+      "arguments": [
+        2100
+      ],
+      "request": {
+        "year": 2100
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2100-base-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "base",
+      "method": "days_in_year",
+      "arguments": [
+        2100
+      ],
+      "request": {
+        "year": 2100
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2100-dm6-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "method": "Date_DaysInYear",
+      "arguments": [
+        2100
+      ],
+      "request": {
+        "year": 2100
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2100-dm5-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "method": "Date_DaysInYear",
+      "arguments": [
+        2100
+      ],
+      "request": {
+        "year": 2100
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2400-base-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "base",
+      "method": "leapyear",
+      "arguments": [
+        2400
+      ],
+      "request": {
+        "year": 2400
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2400-dm6-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm6",
+      "method": "Date_LeapYear",
+      "arguments": [
+        2400
+      ],
+      "request": {
+        "year": 2400
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2400-dm5-scalar",
+      "operation_id": "calendar.is-leap-year",
+      "profile": "dm5",
+      "method": "Date_LeapYear",
+      "arguments": [
+        2400
+      ],
+      "request": {
+        "year": 2400
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2400-base-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "base",
+      "method": "days_in_year",
+      "arguments": [
+        2400
+      ],
+      "request": {
+        "year": 2400
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2400-dm6-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm6",
+      "method": "Date_DaysInYear",
+      "arguments": [
+        2400
+      ],
+      "request": {
+        "year": 2400
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2400-dm5-scalar",
+      "operation_id": "calendar.days-in-year",
+      "profile": "dm5",
+      "method": "Date_DaysInYear",
+      "arguments": [
+        2400
+      ],
+      "request": {
+        "year": 2400
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-1-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "base",
+      "method": "days_in_month",
+      "arguments": [
+        2040,
+        1
+      ],
+      "request": {
+        "year": 2040,
+        "month": 1
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-1-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        1,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 1
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-1-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        1,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 1
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-2-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "base",
+      "method": "days_in_month",
+      "arguments": [
+        2040,
+        2
+      ],
+      "request": {
+        "year": 2040,
+        "month": 2
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-2-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        2,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 2
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-2-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        2,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 2
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-3-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "base",
+      "method": "days_in_month",
+      "arguments": [
+        2040,
+        3
+      ],
+      "request": {
+        "year": 2040,
+        "month": 3
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-3-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        3,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 3
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-3-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        3,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 3
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-4-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "base",
+      "method": "days_in_month",
+      "arguments": [
+        2040,
+        4
+      ],
+      "request": {
+        "year": 2040,
+        "month": 4
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-4-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        4,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 4
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-4-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        4,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 4
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-5-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "base",
+      "method": "days_in_month",
+      "arguments": [
+        2040,
+        5
+      ],
+      "request": {
+        "year": 2040,
+        "month": 5
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-5-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        5,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 5
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-5-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        5,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 5
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-6-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "base",
+      "method": "days_in_month",
+      "arguments": [
+        2040,
+        6
+      ],
+      "request": {
+        "year": 2040,
+        "month": 6
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-6-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        6,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 6
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-6-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        6,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 6
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-7-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "base",
+      "method": "days_in_month",
+      "arguments": [
+        2040,
+        7
+      ],
+      "request": {
+        "year": 2040,
+        "month": 7
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-7-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        7,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 7
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-7-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        7,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 7
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-8-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "base",
+      "method": "days_in_month",
+      "arguments": [
+        2040,
+        8
+      ],
+      "request": {
+        "year": 2040,
+        "month": 8
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-8-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        8,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 8
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-8-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        8,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 8
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-9-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "base",
+      "method": "days_in_month",
+      "arguments": [
+        2040,
+        9
+      ],
+      "request": {
+        "year": 2040,
+        "month": 9
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-9-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        9,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 9
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-9-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        9,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 9
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-10-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "base",
+      "method": "days_in_month",
+      "arguments": [
+        2040,
+        10
+      ],
+      "request": {
+        "year": 2040,
+        "month": 10
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-10-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        10,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 10
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-10-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        10,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 10
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-11-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "base",
+      "method": "days_in_month",
+      "arguments": [
+        2040,
+        11
+      ],
+      "request": {
+        "year": 2040,
+        "month": 11
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-11-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        11,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 11
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-11-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        11,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 11
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-12-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "base",
+      "method": "days_in_month",
+      "arguments": [
+        2040,
+        12
+      ],
+      "request": {
+        "year": 2040,
+        "month": 12
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-12-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        12,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 12
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-12-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        12,
+        2040
+      ],
+      "request": {
+        "year": 2040,
+        "month": 12
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2041-2-base-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "base",
+      "method": "days_in_month",
+      "arguments": [
+        2041,
+        2
+      ],
+      "request": {
+        "year": 2041,
+        "month": 2
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2041-2-dm6-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm6",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        2,
+        2041
+      ],
+      "request": {
+        "year": 2041,
+        "month": 2
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2041-2-dm5-scalar",
+      "operation_id": "calendar.days-in-month",
+      "profile": "dm5",
+      "method": "Date_DaysInMonth",
+      "arguments": [
+        2,
+        2041
+      ],
+      "request": {
+        "year": 2041,
+        "month": 2
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-all-months-base-list",
+      "operation_id": "calendar.days-in-month",
+      "profile": "base",
+      "method": "days_in_month",
+      "arguments": [
+        2040,
+        0
+      ],
+      "request": {
+        "year": 2040,
+        "selection": "all months"
+      },
+      "return_context": "list",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-9-base-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "base",
+      "method": "day_of_week",
+      "arguments": [
+        [
+          2040,
+          4,
+          9
+        ]
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          9
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-9-dm6-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "dm6",
+      "method": "Date_DayOfWeek",
+      "arguments": [
+        4,
+        9,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          9
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-9-dm5-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "dm5",
+      "method": "Date_DayOfWeek",
+      "arguments": [
+        4,
+        9,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          9
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-10-base-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "base",
+      "method": "day_of_week",
+      "arguments": [
+        [
+          2040,
+          4,
+          10
+        ]
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          10
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-10-dm6-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "dm6",
+      "method": "Date_DayOfWeek",
+      "arguments": [
+        4,
+        10,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          10
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-10-dm5-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "dm5",
+      "method": "Date_DayOfWeek",
+      "arguments": [
+        4,
+        10,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          10
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-11-base-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "base",
+      "method": "day_of_week",
+      "arguments": [
+        [
+          2040,
+          4,
+          11
+        ]
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          11
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-11-dm6-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "dm6",
+      "method": "Date_DayOfWeek",
+      "arguments": [
+        4,
+        11,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          11
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-11-dm5-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "dm5",
+      "method": "Date_DayOfWeek",
+      "arguments": [
+        4,
+        11,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          11
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-12-base-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "base",
+      "method": "day_of_week",
+      "arguments": [
+        [
+          2040,
+          4,
+          12
+        ]
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          12
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-12-dm6-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "dm6",
+      "method": "Date_DayOfWeek",
+      "arguments": [
+        4,
+        12,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          12
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-12-dm5-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "dm5",
+      "method": "Date_DayOfWeek",
+      "arguments": [
+        4,
+        12,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          12
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-13-base-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "base",
+      "method": "day_of_week",
+      "arguments": [
+        [
+          2040,
+          4,
+          13
+        ]
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          13
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-13-dm6-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "dm6",
+      "method": "Date_DayOfWeek",
+      "arguments": [
+        4,
+        13,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          13
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-13-dm5-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "dm5",
+      "method": "Date_DayOfWeek",
+      "arguments": [
+        4,
+        13,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          13
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-14-base-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "base",
+      "method": "day_of_week",
+      "arguments": [
+        [
+          2040,
+          4,
+          14
+        ]
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          14
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-14-dm6-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "dm6",
+      "method": "Date_DayOfWeek",
+      "arguments": [
+        4,
+        14,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          14
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-14-dm5-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "dm5",
+      "method": "Date_DayOfWeek",
+      "arguments": [
+        4,
+        14,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          14
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-15-base-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "base",
+      "method": "day_of_week",
+      "arguments": [
+        [
+          2040,
+          4,
+          15
+        ]
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          15
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-15-dm6-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "dm6",
+      "method": "Date_DayOfWeek",
+      "arguments": [
+        4,
+        15,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          15
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-15-dm5-scalar",
+      "operation_id": "calendar.weekday",
+      "profile": "dm5",
+      "method": "Date_DayOfWeek",
+      "arguments": [
+        4,
+        15,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          4,
+          15
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-2-29-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          2040,
+          2,
+          29
+        ]
+      ],
+      "request": {
+        "fields": [
+          2040,
+          2,
+          29
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2041-2-29-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          2041,
+          2,
+          29
+        ]
+      ],
+      "request": {
+        "fields": [
+          2041,
+          2,
+          29
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-0-1-1-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "request": {
+        "fields": [
+          0,
+          1,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-1-1-1-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "request": {
+        "fields": [
+          1,
+          1,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-9999-12-31-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          9999,
+          12,
+          31
+        ]
+      ],
+      "request": {
+        "fields": [
+          9999,
+          12,
+          31
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-10000-1-1-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          10000,
+          1,
+          1
+        ]
+      ],
+      "request": {
+        "fields": [
+          10000,
+          1,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-0-1-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          2040,
+          0,
+          1
+        ]
+      ],
+      "request": {
+        "fields": [
+          2040,
+          0,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-13-1-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          2040,
+          13,
+          1
+        ]
+      ],
+      "request": {
+        "fields": [
+          2040,
+          13,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-4-31-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          2040,
+          4,
+          31
+        ]
+      ],
+      "request": {
+        "fields": [
+          2040,
+          4,
+          31
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-2-0-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          2040,
+          2,
+          0
+        ]
+      ],
+      "request": {
+        "fields": [
+          2040,
+          2,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-2-29-23-59-59-base-scalar",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          2040,
+          2,
+          29,
+          23,
+          59,
+          59
+        ]
+      ],
+      "request": {
+        "fields": [
+          2040,
+          2,
+          29,
+          23,
+          59,
+          59
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-0-0-0-base-scalar",
+      "operation_id": "calendar.validate-time",
+      "profile": "base",
+      "method": "check_time",
+      "arguments": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "request": {
+        "fields": [
+          0,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-23-59-59-base-scalar",
+      "operation_id": "calendar.validate-time",
+      "profile": "base",
+      "method": "check_time",
+      "arguments": [
+        [
+          23,
+          59,
+          59
+        ]
+      ],
+      "request": {
+        "fields": [
+          23,
+          59,
+          59
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-24-0-0-base-scalar",
+      "operation_id": "calendar.validate-time",
+      "profile": "base",
+      "method": "check_time",
+      "arguments": [
+        [
+          24,
+          0,
+          0
+        ]
+      ],
+      "request": {
+        "fields": [
+          24,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-24-0-1-base-scalar",
+      "operation_id": "calendar.validate-time",
+      "profile": "base",
+      "method": "check_time",
+      "arguments": [
+        [
+          24,
+          0,
+          1
+        ]
+      ],
+      "request": {
+        "fields": [
+          24,
+          0,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock--1-0-0-base-scalar",
+      "operation_id": "calendar.validate-time",
+      "profile": "base",
+      "method": "check_time",
+      "arguments": [
+        [
+          -1,
+          0,
+          0
+        ]
+      ],
+      "request": {
+        "fields": [
+          -1,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-12-60-0-base-scalar",
+      "operation_id": "calendar.validate-time",
+      "profile": "base",
+      "method": "check_time",
+      "arguments": [
+        [
+          12,
+          60,
+          0
+        ]
+      ],
+      "request": {
+        "fields": [
+          12,
+          60,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-12-0-60-base-scalar",
+      "operation_id": "calendar.validate-time",
+      "profile": "base",
+      "method": "check_time",
+      "arguments": [
+        [
+          12,
+          0,
+          60
+        ]
+      ],
+      "request": {
+        "fields": [
+          12,
+          0,
+          60
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-12-0-0.5-base-scalar",
+      "operation_id": "calendar.validate-time",
+      "profile": "base",
+      "method": "check_time",
+      "arguments": [
+        [
+          12,
+          0,
+          0.5
+        ]
+      ],
+      "request": {
+        "fields": [
+          12,
+          0,
+          0.5
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-1-1-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "base",
+      "method": "day_of_year",
+      "arguments": [
+        [
+          2040,
+          1,
+          1
+        ]
+      ],
+      "request": {
+        "date": [
+          2040,
+          1,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-1-1-dm6-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "dm6",
+      "method": "Date_DayOfYear",
+      "arguments": [
+        1,
+        1,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          1,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-1-1-dm5-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "dm5",
+      "method": "Date_DayOfYear",
+      "arguments": [
+        1,
+        1,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          1,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-1-1-base-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "profile": "base",
+      "method": "days_since_1BC",
+      "arguments": [
+        [
+          2040,
+          1,
+          1
+        ]
+      ],
+      "request": {
+        "date": [
+          2040,
+          1,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-1-1-dm6-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "profile": "dm6",
+      "method": "Date_DaysSince1BC",
+      "arguments": [
+        1,
+        1,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          1,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-1-1-dm5-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "profile": "dm5",
+      "method": "Date_DaysSince1BC",
+      "arguments": [
+        1,
+        1,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          1,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-2-29-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "base",
+      "method": "day_of_year",
+      "arguments": [
+        [
+          2040,
+          2,
+          29
+        ]
+      ],
+      "request": {
+        "date": [
+          2040,
+          2,
+          29
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-2-29-dm6-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "dm6",
+      "method": "Date_DayOfYear",
+      "arguments": [
+        2,
+        29,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          2,
+          29
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-2-29-dm5-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "dm5",
+      "method": "Date_DayOfYear",
+      "arguments": [
+        2,
+        29,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          2,
+          29
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-2-29-base-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "profile": "base",
+      "method": "days_since_1BC",
+      "arguments": [
+        [
+          2040,
+          2,
+          29
+        ]
+      ],
+      "request": {
+        "date": [
+          2040,
+          2,
+          29
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-2-29-dm6-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "profile": "dm6",
+      "method": "Date_DaysSince1BC",
+      "arguments": [
+        2,
+        29,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          2,
+          29
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-2-29-dm5-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "profile": "dm5",
+      "method": "Date_DaysSince1BC",
+      "arguments": [
+        2,
+        29,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          2,
+          29
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-12-31-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "base",
+      "method": "day_of_year",
+      "arguments": [
+        [
+          2040,
+          12,
+          31
+        ]
+      ],
+      "request": {
+        "date": [
+          2040,
+          12,
+          31
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-12-31-dm6-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "dm6",
+      "method": "Date_DayOfYear",
+      "arguments": [
+        12,
+        31,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          12,
+          31
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-12-31-dm5-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "dm5",
+      "method": "Date_DayOfYear",
+      "arguments": [
+        12,
+        31,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          12,
+          31
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-12-31-base-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "profile": "base",
+      "method": "days_since_1BC",
+      "arguments": [
+        [
+          2040,
+          12,
+          31
+        ]
+      ],
+      "request": {
+        "date": [
+          2040,
+          12,
+          31
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-12-31-dm6-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "profile": "dm6",
+      "method": "Date_DaysSince1BC",
+      "arguments": [
+        12,
+        31,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          12,
+          31
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-12-31-dm5-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "profile": "dm5",
+      "method": "Date_DaysSince1BC",
+      "arguments": [
+        12,
+        31,
+        2040
+      ],
+      "request": {
+        "date": [
+          2040,
+          12,
+          31
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-inverse-1-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "base",
+      "method": "day_of_year",
+      "arguments": [
+        2040,
+        1
+      ],
+      "request": {
+        "year": 2040,
+        "ordinal": 1
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-1-dm6-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "profile": "dm6",
+      "method": "Date_NthDayOfYear",
+      "arguments": [
+        2040,
+        1
+      ],
+      "request": {
+        "year": 2040,
+        "ordinal": 1
+      },
+      "return_context": "list",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-1-dm5-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "profile": "dm5",
+      "method": "Date_NthDayOfYear",
+      "arguments": [
+        2040,
+        1
+      ],
+      "request": {
+        "year": 2040,
+        "ordinal": 1
+      },
+      "return_context": "list",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-inverse-60-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "base",
+      "method": "day_of_year",
+      "arguments": [
+        2040,
+        60
+      ],
+      "request": {
+        "year": 2040,
+        "ordinal": 60
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-60-dm6-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "profile": "dm6",
+      "method": "Date_NthDayOfYear",
+      "arguments": [
+        2040,
+        60
+      ],
+      "request": {
+        "year": 2040,
+        "ordinal": 60
+      },
+      "return_context": "list",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-60-dm5-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "profile": "dm5",
+      "method": "Date_NthDayOfYear",
+      "arguments": [
+        2040,
+        60
+      ],
+      "request": {
+        "year": 2040,
+        "ordinal": 60
+      },
+      "return_context": "list",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-inverse-60.5-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "base",
+      "method": "day_of_year",
+      "arguments": [
+        2040,
+        60.5
+      ],
+      "request": {
+        "year": 2040,
+        "ordinal": 60.5
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-60.5-dm6-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "profile": "dm6",
+      "method": "Date_NthDayOfYear",
+      "arguments": [
+        2040,
+        60.5
+      ],
+      "request": {
+        "year": 2040,
+        "ordinal": 60.5
+      },
+      "return_context": "list",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-60.5-dm5-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "profile": "dm5",
+      "method": "Date_NthDayOfYear",
+      "arguments": [
+        2040,
+        60.5
+      ],
+      "request": {
+        "year": 2040,
+        "ordinal": 60.5
+      },
+      "return_context": "list",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-inverse-366-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "base",
+      "method": "day_of_year",
+      "arguments": [
+        2040,
+        366
+      ],
+      "request": {
+        "year": 2040,
+        "ordinal": 366
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-366-dm6-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "profile": "dm6",
+      "method": "Date_NthDayOfYear",
+      "arguments": [
+        2040,
+        366
+      ],
+      "request": {
+        "year": 2040,
+        "ordinal": 366
+      },
+      "return_context": "list",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-366-dm5-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "profile": "dm5",
+      "method": "Date_NthDayOfYear",
+      "arguments": [
+        2040,
+        366
+      ],
+      "request": {
+        "year": 2040,
+        "ordinal": 366
+      },
+      "return_context": "list",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-fractional-ordinal-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "base",
+      "method": "day_of_year",
+      "arguments": [
+        [
+          2040,
+          2,
+          29,
+          12,
+          0,
+          0
+        ]
+      ],
+      "request": {
+        "date_time": [
+          2040,
+          2,
+          29,
+          12,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-inverse-0-base-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "profile": "base",
+      "method": "days_since_1BC",
+      "arguments": [
+        0
+      ],
+      "request": {
+        "day_ordinal": 0
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-inverse-1-base-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "profile": "base",
+      "method": "days_since_1BC",
+      "arguments": [
+        1
+      ],
+      "request": {
+        "day_ordinal": 1
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-inverse-60-base-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "profile": "base",
+      "method": "days_since_1BC",
+      "arguments": [
+        60
+      ],
+      "request": {
+        "day_ordinal": 60
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-inverse-744790-base-scalar",
+      "operation_id": "calendar.day-ordinal",
+      "profile": "base",
+      "method": "days_since_1BC",
+      "arguments": [
+        744790
+      ],
+      "request": {
+        "day_ordinal": 744790
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040-1-2-4-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "profile": "base",
+      "method": "nth_day_of_week",
+      "arguments": [
+        2040,
+        1,
+        2,
+        4
+      ],
+      "request": {
+        "year": 2040,
+        "occurrence": 1,
+        "weekday": 2,
+        "month": 4
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040--1-2-4-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "profile": "base",
+      "method": "nth_day_of_week",
+      "arguments": [
+        2040,
+        -1,
+        2,
+        4
+      ],
+      "request": {
+        "year": 2040,
+        "occurrence": -1,
+        "weekday": 2,
+        "month": 4
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040-5-2-4-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "profile": "base",
+      "method": "nth_day_of_week",
+      "arguments": [
+        2040,
+        5,
+        2,
+        4
+      ],
+      "request": {
+        "year": 2040,
+        "occurrence": 5,
+        "weekday": 2,
+        "month": 4
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040-5-7-2-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "profile": "base",
+      "method": "nth_day_of_week",
+      "arguments": [
+        2040,
+        5,
+        7,
+        2
+      ],
+      "request": {
+        "year": 2040,
+        "occurrence": 5,
+        "weekday": 7,
+        "month": 2
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040-0-2-4-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "profile": "base",
+      "method": "nth_day_of_week",
+      "arguments": [
+        2040,
+        0,
+        2,
+        4
+      ],
+      "request": {
+        "year": 2040,
+        "occurrence": 0,
+        "weekday": 2,
+        "month": 4
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040-54-2-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "profile": "base",
+      "method": "nth_day_of_week",
+      "arguments": [
+        2040,
+        54,
+        2
+      ],
+      "request": {
+        "year": 2040,
+        "occurrence": 54,
+        "weekday": 2,
+        "month": null
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040--53-2-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "profile": "base",
+      "method": "nth_day_of_week",
+      "arguments": [
+        2040,
+        -53,
+        2
+      ],
+      "request": {
+        "year": 2040,
+        "occurrence": -53,
+        "weekday": 2,
+        "month": null
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-year-start-week-year-start-2039-base-scalar",
+      "operation_id": "calendar.week-year-start",
+      "profile": "base",
+      "method": "week1_day1",
+      "arguments": [
+        2039
+      ],
+      "request": {
+        "year": 2039
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weeks-in-year-weeks-in-year-2039-base-scalar",
+      "operation_id": "calendar.weeks-in-year",
+      "profile": "base",
+      "method": "weeks_in_year",
+      "arguments": [
+        2039
+      ],
+      "request": {
+        "year": 2039
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-year-start-week-year-start-2040-base-scalar",
+      "operation_id": "calendar.week-year-start",
+      "profile": "base",
+      "method": "week1_day1",
+      "arguments": [
+        2040
+      ],
+      "request": {
+        "year": 2040
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weeks-in-year-weeks-in-year-2040-base-scalar",
+      "operation_id": "calendar.weeks-in-year",
+      "profile": "base",
+      "method": "weeks_in_year",
+      "arguments": [
+        2040
+      ],
+      "request": {
+        "year": 2040
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-year-start-week-year-start-2041-base-scalar",
+      "operation_id": "calendar.week-year-start",
+      "profile": "base",
+      "method": "week1_day1",
+      "arguments": [
+        2041
+      ],
+      "request": {
+        "year": 2041
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weeks-in-year-weeks-in-year-2041-base-scalar",
+      "operation_id": "calendar.weeks-in-year",
+      "profile": "base",
+      "method": "weeks_in_year",
+      "arguments": [
+        2041
+      ],
+      "request": {
+        "year": 2041
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-year-start-week-year-start-2042-base-scalar",
+      "operation_id": "calendar.week-year-start",
+      "profile": "base",
+      "method": "week1_day1",
+      "arguments": [
+        2042
+      ],
+      "request": {
+        "year": 2042
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.weeks-in-year-weeks-in-year-2042-base-scalar",
+      "operation_id": "calendar.weeks-in-year",
+      "profile": "base",
+      "method": "weeks_in_year",
+      "arguments": [
+        2042
+      ],
+      "request": {
+        "year": 2042
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-1-base-list",
+      "operation_id": "calendar.week-number",
+      "profile": "base",
+      "method": "week_of_year",
+      "arguments": [
+        [
+          2040,
+          1,
+          1
+        ]
+      ],
+      "request": {
+        "date": [
+          2040,
+          1,
+          1
+        ]
+      },
+      "return_context": "list",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-1-dm6-scalar",
+      "operation_id": "calendar.week-number",
+      "profile": "dm6",
+      "method": "Date_WeekOfYear",
+      "arguments": [
+        1,
+        1,
+        2040,
+        1
+      ],
+      "request": {
+        "date": [
+          2040,
+          1,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-1-dm5-scalar",
+      "operation_id": "calendar.week-number",
+      "profile": "dm5",
+      "method": "Date_WeekOfYear",
+      "arguments": [
+        1,
+        1,
+        2040,
+        1
+      ],
+      "request": {
+        "date": [
+          2040,
+          1,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-1-oo-scalar",
+      "operation_id": "calendar.week-number",
+      "profile": "oo",
+      "method": "week_of_year",
+      "arguments": [],
+      "request": {
+        "date": [
+          2040,
+          1,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed",
+      "initial_date": "2040-01-01 00:00:00"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-2-base-list",
+      "operation_id": "calendar.week-number",
+      "profile": "base",
+      "method": "week_of_year",
+      "arguments": [
+        [
+          2040,
+          1,
+          2
+        ]
+      ],
+      "request": {
+        "date": [
+          2040,
+          1,
+          2
+        ]
+      },
+      "return_context": "list",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-2-dm6-scalar",
+      "operation_id": "calendar.week-number",
+      "profile": "dm6",
+      "method": "Date_WeekOfYear",
+      "arguments": [
+        1,
+        2,
+        2040,
+        1
+      ],
+      "request": {
+        "date": [
+          2040,
+          1,
+          2
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-2-dm5-scalar",
+      "operation_id": "calendar.week-number",
+      "profile": "dm5",
+      "method": "Date_WeekOfYear",
+      "arguments": [
+        1,
+        2,
+        2040,
+        1
+      ],
+      "request": {
+        "date": [
+          2040,
+          1,
+          2
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-2-oo-scalar",
+      "operation_id": "calendar.week-number",
+      "profile": "oo",
+      "method": "week_of_year",
+      "arguments": [],
+      "request": {
+        "date": [
+          2040,
+          1,
+          2
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed",
+      "initial_date": "2040-01-02 00:00:00"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-12-31-base-list",
+      "operation_id": "calendar.week-number",
+      "profile": "base",
+      "method": "week_of_year",
+      "arguments": [
+        [
+          2040,
+          12,
+          31
+        ]
+      ],
+      "request": {
+        "date": [
+          2040,
+          12,
+          31
+        ]
+      },
+      "return_context": "list",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-12-31-dm6-scalar",
+      "operation_id": "calendar.week-number",
+      "profile": "dm6",
+      "method": "Date_WeekOfYear",
+      "arguments": [
+        12,
+        31,
+        2040,
+        1
+      ],
+      "request": {
+        "date": [
+          2040,
+          12,
+          31
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-12-31-dm5-scalar",
+      "operation_id": "calendar.week-number",
+      "profile": "dm5",
+      "method": "Date_WeekOfYear",
+      "arguments": [
+        12,
+        31,
+        2040,
+        1
+      ],
+      "request": {
+        "date": [
+          2040,
+          12,
+          31
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-12-31-oo-scalar",
+      "operation_id": "calendar.week-number",
+      "profile": "oo",
+      "method": "week_of_year",
+      "arguments": [],
+      "request": {
+        "date": [
+          2040,
+          12,
+          31
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed",
+      "initial_date": "2040-12-31 00:00:00"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2041-1-1-base-list",
+      "operation_id": "calendar.week-number",
+      "profile": "base",
+      "method": "week_of_year",
+      "arguments": [
+        [
+          2041,
+          1,
+          1
+        ]
+      ],
+      "request": {
+        "date": [
+          2041,
+          1,
+          1
+        ]
+      },
+      "return_context": "list",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2041-1-1-dm6-scalar",
+      "operation_id": "calendar.week-number",
+      "profile": "dm6",
+      "method": "Date_WeekOfYear",
+      "arguments": [
+        1,
+        1,
+        2041,
+        1
+      ],
+      "request": {
+        "date": [
+          2041,
+          1,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2041-1-1-dm5-scalar",
+      "operation_id": "calendar.week-number",
+      "profile": "dm5",
+      "method": "Date_WeekOfYear",
+      "arguments": [
+        1,
+        1,
+        2041,
+        1
+      ],
+      "request": {
+        "date": [
+          2041,
+          1,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2041-1-1-oo-scalar",
+      "operation_id": "calendar.week-number",
+      "profile": "oo",
+      "method": "week_of_year",
+      "arguments": [],
+      "request": {
+        "date": [
+          2041,
+          1,
+          1
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed",
+      "initial_date": "2041-01-01 00:00:00"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-inverse-1-base-scalar",
+      "operation_id": "calendar.week-number",
+      "profile": "base",
+      "method": "week_of_year",
+      "arguments": [
+        2040,
+        1
+      ],
+      "request": {
+        "year": 2040,
+        "week": 1
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-inverse-52-base-scalar",
+      "operation_id": "calendar.week-number",
+      "profile": "base",
+      "method": "week_of_year",
+      "arguments": [
+        2040,
+        52
+      ],
+      "request": {
+        "year": 2040,
+        "week": 52
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-inverse-53-base-scalar",
+      "operation_id": "calendar.week-number",
+      "profile": "base",
+      "method": "week_of_year",
+      "arguments": [
+        2040,
+        53
+      ],
+      "request": {
+        "year": 2040,
+        "week": 53
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1970-1-1-0-0-0-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "base",
+      "method": "secs_since_1970",
+      "arguments": [
+        [
+          1970,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "request": {
+        "date_time": [
+          1970,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1970-1-1-0-0-0-dm6-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "dm6",
+      "method": "Date_SecsSince1970",
+      "arguments": [
+        1,
+        1,
+        1970,
+        0,
+        0,
+        0
+      ],
+      "request": {
+        "date_time": [
+          1970,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1970-1-1-0-0-0-dm5-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "dm5",
+      "method": "Date_SecsSince1970",
+      "arguments": [
+        1,
+        1,
+        1970,
+        0,
+        0,
+        0
+      ],
+      "request": {
+        "date_time": [
+          1970,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-1970-1-1-0-0-0-dm6-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "profile": "dm6",
+      "method": "Date_SecsSince1970GMT",
+      "arguments": [
+        1,
+        1,
+        1970,
+        0,
+        0,
+        0
+      ],
+      "request": {
+        "date_time": [
+          1970,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-1970-1-1-0-0-0-dm5-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "profile": "dm5",
+      "method": "Date_SecsSince1970GMT",
+      "arguments": [
+        1,
+        1,
+        1970,
+        0,
+        0,
+        0
+      ],
+      "request": {
+        "date_time": [
+          1970,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-1970-1-1-0-0-0-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "profile": "oo",
+      "method": "secs_since_1970_GMT",
+      "arguments": [],
+      "request": {
+        "date_time": [
+          1970,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed",
+      "initial_date": "1970-01-01 00:00:00"
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1969-12-31-23-59-59-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "base",
+      "method": "secs_since_1970",
+      "arguments": [
+        [
+          1969,
+          12,
+          31,
+          23,
+          59,
+          59
+        ]
+      ],
+      "request": {
+        "date_time": [
+          1969,
+          12,
+          31,
+          23,
+          59,
+          59
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1969-12-31-23-59-59-dm6-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "dm6",
+      "method": "Date_SecsSince1970",
+      "arguments": [
+        12,
+        31,
+        1969,
+        23,
+        59,
+        59
+      ],
+      "request": {
+        "date_time": [
+          1969,
+          12,
+          31,
+          23,
+          59,
+          59
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1969-12-31-23-59-59-dm5-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "dm5",
+      "method": "Date_SecsSince1970",
+      "arguments": [
+        12,
+        31,
+        1969,
+        23,
+        59,
+        59
+      ],
+      "request": {
+        "date_time": [
+          1969,
+          12,
+          31,
+          23,
+          59,
+          59
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-1969-12-31-23-59-59-dm6-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "profile": "dm6",
+      "method": "Date_SecsSince1970GMT",
+      "arguments": [
+        12,
+        31,
+        1969,
+        23,
+        59,
+        59
+      ],
+      "request": {
+        "date_time": [
+          1969,
+          12,
+          31,
+          23,
+          59,
+          59
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-1969-12-31-23-59-59-dm5-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "profile": "dm5",
+      "method": "Date_SecsSince1970GMT",
+      "arguments": [
+        12,
+        31,
+        1969,
+        23,
+        59,
+        59
+      ],
+      "request": {
+        "date_time": [
+          1969,
+          12,
+          31,
+          23,
+          59,
+          59
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-1969-12-31-23-59-59-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "profile": "oo",
+      "method": "secs_since_1970_GMT",
+      "arguments": [],
+      "request": {
+        "date_time": [
+          1969,
+          12,
+          31,
+          23,
+          59,
+          59
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed",
+      "initial_date": "1969-12-31 23:59:59"
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2040-2-29-12-34-56-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "base",
+      "method": "secs_since_1970",
+      "arguments": [
+        [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ]
+      ],
+      "request": {
+        "date_time": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2040-2-29-12-34-56-dm6-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "dm6",
+      "method": "Date_SecsSince1970",
+      "arguments": [
+        2,
+        29,
+        2040,
+        12,
+        34,
+        56
+      ],
+      "request": {
+        "date_time": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2040-2-29-12-34-56-dm5-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "dm5",
+      "method": "Date_SecsSince1970",
+      "arguments": [
+        2,
+        29,
+        2040,
+        12,
+        34,
+        56
+      ],
+      "request": {
+        "date_time": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-2040-2-29-12-34-56-dm6-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "profile": "dm6",
+      "method": "Date_SecsSince1970GMT",
+      "arguments": [
+        2,
+        29,
+        2040,
+        12,
+        34,
+        56
+      ],
+      "request": {
+        "date_time": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-2040-2-29-12-34-56-dm5-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "profile": "dm5",
+      "method": "Date_SecsSince1970GMT",
+      "arguments": [
+        2,
+        29,
+        2040,
+        12,
+        34,
+        56
+      ],
+      "request": {
+        "date_time": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-2040-2-29-12-34-56-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "profile": "oo",
+      "method": "secs_since_1970_GMT",
+      "arguments": [],
+      "request": {
+        "date_time": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed",
+      "initial_date": "2040-02-29 12:34:56"
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2038-1-19-3-14-8-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "base",
+      "method": "secs_since_1970",
+      "arguments": [
+        [
+          2038,
+          1,
+          19,
+          3,
+          14,
+          8
+        ]
+      ],
+      "request": {
+        "date_time": [
+          2038,
+          1,
+          19,
+          3,
+          14,
+          8
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2038-1-19-3-14-8-dm6-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "dm6",
+      "method": "Date_SecsSince1970",
+      "arguments": [
+        1,
+        19,
+        2038,
+        3,
+        14,
+        8
+      ],
+      "request": {
+        "date_time": [
+          2038,
+          1,
+          19,
+          3,
+          14,
+          8
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2038-1-19-3-14-8-dm5-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "dm5",
+      "method": "Date_SecsSince1970",
+      "arguments": [
+        1,
+        19,
+        2038,
+        3,
+        14,
+        8
+      ],
+      "request": {
+        "date_time": [
+          2038,
+          1,
+          19,
+          3,
+          14,
+          8
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-2038-1-19-3-14-8-dm6-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "profile": "dm6",
+      "method": "Date_SecsSince1970GMT",
+      "arguments": [
+        1,
+        19,
+        2038,
+        3,
+        14,
+        8
+      ],
+      "request": {
+        "date_time": [
+          2038,
+          1,
+          19,
+          3,
+          14,
+          8
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-2038-1-19-3-14-8-dm5-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "profile": "dm5",
+      "method": "Date_SecsSince1970GMT",
+      "arguments": [
+        1,
+        19,
+        2038,
+        3,
+        14,
+        8
+      ],
+      "request": {
+        "date_time": [
+          2038,
+          1,
+          19,
+          3,
+          14,
+          8
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-2038-1-19-3-14-8-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "profile": "oo",
+      "method": "secs_since_1970_GMT",
+      "arguments": [],
+      "request": {
+        "date_time": [
+          2038,
+          1,
+          19,
+          3,
+          14,
+          8
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed",
+      "initial_date": "2038-01-19 03:14:08"
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-inverse--1-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "base",
+      "method": "secs_since_1970",
+      "arguments": [
+        -1
+      ],
+      "request": {
+        "seconds": -1
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-set--1-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "profile": "oo",
+      "method": "secs_since_1970_GMT",
+      "arguments": [
+        -1
+      ],
+      "request": {
+        "seconds": -1
+      },
+      "return_context": "scalar",
+      "status": "proposed",
+      "initial_date": "2040-04-13 12:34:56"
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-inverse-0-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "base",
+      "method": "secs_since_1970",
+      "arguments": [
+        0
+      ],
+      "request": {
+        "seconds": 0
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-set-0-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "profile": "oo",
+      "method": "secs_since_1970_GMT",
+      "arguments": [
+        0
+      ],
+      "request": {
+        "seconds": 0
+      },
+      "return_context": "scalar",
+      "status": "proposed",
+      "initial_date": "2040-04-13 12:34:56"
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-inverse-1-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "base",
+      "method": "secs_since_1970",
+      "arguments": [
+        1
+      ],
+      "request": {
+        "seconds": 1
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-set-1-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "profile": "oo",
+      "method": "secs_since_1970_GMT",
+      "arguments": [
+        1
+      ],
+      "request": {
+        "seconds": 1
+      },
+      "return_context": "scalar",
+      "status": "proposed",
+      "initial_date": "2040-04-13 12:34:56"
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-inverse-2147483648-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "base",
+      "method": "secs_since_1970",
+      "arguments": [
+        2147483648
+      ],
+      "request": {
+        "seconds": 2147483648
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-set-2147483648-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "profile": "oo",
+      "method": "secs_since_1970_GMT",
+      "arguments": [
+        2147483648
+      ],
+      "request": {
+        "seconds": 2147483648
+      },
+      "return_context": "scalar",
+      "status": "proposed",
+      "initial_date": "2040-04-13 12:34:56"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-2-29-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          2040,
+          2,
+          29,
+          0,
+          0,
+          0
+        ]
+      ],
+      "request": {
+        "fields": [
+          2040,
+          2,
+          29,
+          0,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2041-2-29-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          2041,
+          2,
+          29,
+          0,
+          0,
+          0
+        ]
+      ],
+      "request": {
+        "fields": [
+          2041,
+          2,
+          29,
+          0,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-0-1-1-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "request": {
+        "fields": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-1-1-1-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "request": {
+        "fields": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-9999-12-31-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          9999,
+          12,
+          31,
+          0,
+          0,
+          0
+        ]
+      ],
+      "request": {
+        "fields": [
+          9999,
+          12,
+          31,
+          0,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-10000-1-1-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          10000,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "request": {
+        "fields": [
+          10000,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-0-1-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          2040,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "request": {
+        "fields": [
+          2040,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-13-1-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          2040,
+          13,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "request": {
+        "fields": [
+          2040,
+          13,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-4-31-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          2040,
+          4,
+          31,
+          0,
+          0,
+          0
+        ]
+      ],
+      "request": {
+        "fields": [
+          2040,
+          4,
+          31,
+          0,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-2-0-base-scalar-full",
+      "operation_id": "calendar.validate-date",
+      "profile": "base",
+      "method": "check",
+      "arguments": [
+        [
+          2040,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "request": {
+        "fields": [
+          2040,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "return_context": "scalar",
+      "status": "proposed"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-1-oo-scalar-explicit-monday",
+      "operation_id": "calendar.week-number",
+      "profile": "oo",
+      "method": "week_of_year",
+      "arguments": [
+        1
+      ],
+      "request": {
+        "date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1
+      },
+      "return_context": "scalar",
+      "status": "proposed",
+      "initial_date": "2040-01-01 00:00:00"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-2-oo-scalar-explicit-monday",
+      "operation_id": "calendar.week-number",
+      "profile": "oo",
+      "method": "week_of_year",
+      "arguments": [
+        1
+      ],
+      "request": {
+        "date": [
+          2040,
+          1,
+          2
+        ],
+        "first_weekday": 1
+      },
+      "return_context": "scalar",
+      "status": "proposed",
+      "initial_date": "2040-01-02 00:00:00"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-12-31-oo-scalar-explicit-monday",
+      "operation_id": "calendar.week-number",
+      "profile": "oo",
+      "method": "week_of_year",
+      "arguments": [
+        1
+      ],
+      "request": {
+        "date": [
+          2040,
+          12,
+          31
+        ],
+        "first_weekday": 1
+      },
+      "return_context": "scalar",
+      "status": "proposed",
+      "initial_date": "2040-12-31 00:00:00"
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2041-1-1-oo-scalar-explicit-monday",
+      "operation_id": "calendar.week-number",
+      "profile": "oo",
+      "method": "week_of_year",
+      "arguments": [
+        1
+      ],
+      "request": {
+        "date": [
+          2041,
+          1,
+          1
+        ],
+        "first_weekday": 1
+      },
+      "return_context": "scalar",
+      "status": "proposed",
+      "initial_date": "2041-01-01 00:00:00"
+    }
+  ]
+}

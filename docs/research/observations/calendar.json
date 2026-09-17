@@ -1,0 +1,5373 @@
+{
+  "schema_version": 1,
+  "status": "research evidence; not approved expectations",
+  "command": "python3 tools/probes/run-calendar.py",
+  "repetitions": 2,
+  "timeout_seconds": 10,
+  "parallel_workers": 4,
+  "sha256": {
+    "docs/research/inputs/calendar.json": "45c672182b217aae7a40e9c8194c60114fd96702504de8405abdd9ee7f0050e9",
+    "tools/probes/calendar-contracts.pl": "6250f0a2822a2c1b5b1ae751dfc10fbe401d9e8c9ac546646ef70a9ccf70984c",
+    "docs/automation/reference-profiles.json": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
+    "tools/probes/run-calendar.py": "19f23bf97df593ede0a8f4d24ab43735c9a92d4735c22473b9a75ca881e6a5d2"
+  },
+  "environment": {
+    "PATH": "/home/kevin/.local/bin:/home/kevin/.codex/tmp/arg0/codex-arg0F2Ouqr:/home/kevin/.local/bin:/home/kevin/.cargo/bin:/home/kevin/.local/bin:/home/kevin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/kevin/.vscode/extensions/openai.chatgpt-26.908.40401-linux-x64/bin/linux-x86_64",
+    "PERL5LIB": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5",
+    "TZ": "Etc/UTC",
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8"
+  },
+  "observations": [
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-1900-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-1900-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-1900-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-1900-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-1900-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-1900-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-1900-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-1900-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 365
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-1900-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-1900-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 365
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-1900-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-1900-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 365
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2000-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-2000-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2000-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-2000-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2000-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-2000-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2000-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-2000-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 366
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2000-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-2000-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 366
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2000-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-2000-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 366
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2040-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-2040-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2040-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-2040-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2040-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-2040-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2040-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-2040-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 366
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2040-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-2040-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 366
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2040-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-2040-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 366
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2041-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-2041-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2041-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-2041-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2041-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-2041-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2041-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-2041-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 365
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2041-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-2041-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 365
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2041-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-2041-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 365
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2100-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-2100-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2100-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-2100-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2100-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-2100-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2100-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-2100-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 365
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2100-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-2100-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 365
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2100-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-2100-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 365
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2400-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-2400-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2400-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-2400-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.is-leap-year-leap-2400-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.is-leap-year-leap-2400-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.is-leap-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2400-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-2400-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 366
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2400-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-2400-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 366
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-year-length-2400-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-year-length-2400-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 366
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-1-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-1-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-1-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-1-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-1-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-1-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-2-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-2-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 29
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-2-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-2-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 29
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-2-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-2-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 29
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-3-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-3-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-3-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-3-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-3-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-3-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-4-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-4-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 30
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-4-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-4-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 30
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-4-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-4-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 30
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-5-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-5-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-5-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-5-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-5-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-5-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-6-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-6-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 30
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-6-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-6-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 30
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-6-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-6-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 30
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-7-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-7-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-7-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-7-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-7-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-7-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-8-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-8-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-8-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-8-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-8-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-8-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-9-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-9-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 30
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-9-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-9-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 30
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-9-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-9-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 30
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-10-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-10-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-10-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-10-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-10-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-10-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-11-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-11-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 30
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-11-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-11-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 30
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-11-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-11-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 30
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-12-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-12-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-12-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-12-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2040-12-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2040-12-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 31
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2041-2-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2041-2-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 28
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2041-2-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2041-2-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 28
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-month-2041-2-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-month-2041-2-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 28
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.days-in-month-all-months-base-list",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.days-in-month-all-months-base-list",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.days-in-month",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "list": [
+            31,
+            29,
+            31,
+            30,
+            31,
+            30,
+            31,
+            31,
+            30,
+            31,
+            30,
+            31
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-9-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-9-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-9-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-9-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-9-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-9-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-10-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-10-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 2
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-10-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-10-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 2
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-10-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-10-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 2
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-11-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-11-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 3
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-11-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-11-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 3
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-11-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-11-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 3
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-12-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-12-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 4
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-12-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-12-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 4
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-12-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-12-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 4
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-13-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-13-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 5
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-13-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-13-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 5
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-13-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-13-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 5
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-14-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-14-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 6
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-14-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-14-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 6
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-14-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-14-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 6
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-15-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-15-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 7
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-15-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-15-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 7
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weekday-weekday-15-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weekday-weekday-15-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 7
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-2-29-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-2040-2-29-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2041-2-29-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-2041-2-29-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-0-1-1-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-0-1-1-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-1-1-1-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-1-1-1-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-9999-12-31-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-9999-12-31-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-10000-1-1-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-10000-1-1-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-0-1-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-2040-0-1-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-13-1-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-2040-13-1-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-4-31-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-2040-4-31-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-2-0-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-2040-2-0-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": [
+          "Use of uninitialized value $h in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $mn in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n",
+          "Use of uninitialized value $s in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 620.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-2-29-23-59-59-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-2040-2-29-23-59-59-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-0-0-0-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-time-clock-0-0-0-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-time",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-23-59-59-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-time-clock-23-59-59-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-time",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-24-0-0-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-time-clock-24-0-0-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-time",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-24-0-1-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-time-clock-24-0-1-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-time",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock--1-0-0-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-time-clock--1-0-0-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-time",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-12-60-0-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-time-clock-12-60-0-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-time",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-12-0-60-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-time-clock-12-0-60-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-time",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-time-clock-12-0-0.5-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-time-clock-12-0-0.5-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-time",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-1-1-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-of-year-ordinal-1-1-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-1-1-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-of-year-ordinal-1-1-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-1-1-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-of-year-ordinal-1-1-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-1-1-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-ordinal-day-number-1-1-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.day-ordinal",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 744730
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-1-1-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-ordinal-day-number-1-1-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.day-ordinal",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 744730
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-1-1-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-ordinal-day-number-1-1-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.day-ordinal",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 745096
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-2-29-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-of-year-ordinal-2-29-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 60
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-2-29-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-of-year-ordinal-2-29-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 60
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-2-29-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-of-year-ordinal-2-29-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 60
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-2-29-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-ordinal-day-number-2-29-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.day-ordinal",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 744789
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-2-29-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-ordinal-day-number-2-29-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.day-ordinal",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 744789
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-2-29-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-ordinal-day-number-2-29-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.day-ordinal",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 745155
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-12-31-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-of-year-ordinal-12-31-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 366
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-12-31-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-of-year-ordinal-12-31-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 366
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-12-31-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-of-year-ordinal-12-31-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 366
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-12-31-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-ordinal-day-number-12-31-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.day-ordinal",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 745095
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-12-31-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-ordinal-day-number-12-31-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.day-ordinal",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 745095
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-12-31-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-ordinal-day-number-12-31-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.day-ordinal",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 745461
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-inverse-1-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-of-year-ordinal-inverse-1-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            2040,
+            1,
+            1
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-1-dm6-list",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-1-dm6-list",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.date-from-day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "list": [
+            2040,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-1-dm5-list",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-1-dm5-list",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.date-from-day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "list": [
+            2040,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-inverse-60-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-of-year-ordinal-inverse-60-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            2040,
+            2,
+            29
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-60-dm6-list",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-60-dm6-list",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.date-from-day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "list": [
+            2040,
+            2,
+            29,
+            0,
+            0,
+            0
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-60-dm5-list",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-60-dm5-list",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.date-from-day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "list": [
+            2040,
+            2,
+            29,
+            0,
+            0,
+            0
+          ]
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-inverse-60.5-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-of-year-ordinal-inverse-60.5-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            2040,
+            2,
+            29,
+            12,
+            0,
+            0
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-60.5-dm6-list",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-60.5-dm6-list",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.date-from-day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "list": [
+            2040,
+            2,
+            29,
+            12,
+            0,
+            0
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-60.5-dm5-list",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-60.5-dm5-list",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.date-from-day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "list": [
+            2040,
+            2,
+            29,
+            12,
+            0,
+            0
+          ]
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-ordinal-inverse-366-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-of-year-ordinal-inverse-366-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            2040,
+            12,
+            31
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-366-dm6-list",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-366-dm6-list",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.date-from-day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "list": [
+            2040,
+            12,
+            31,
+            0,
+            0,
+            0
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-366-dm5-list",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.date-from-day-of-year-ordinal-date-366-dm5-list",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.date-from-day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "list": [
+            2040,
+            12,
+            31,
+            0,
+            0,
+            0
+          ]
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-of-year-fractional-ordinal-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-of-year-fractional-ordinal-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.day-of-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 60.5
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-inverse-0-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-ordinal-day-number-inverse-0-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.day-ordinal",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            0,
+            12,
+            31
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-inverse-1-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-ordinal-day-number-inverse-1-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.day-ordinal",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            1,
+            1,
+            1
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-inverse-60-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-ordinal-day-number-inverse-60-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.day-ordinal",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            1,
+            3,
+            1
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.day-ordinal-day-number-inverse-744790-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.day-ordinal-day-number-inverse-744790-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.day-ordinal",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            2040,
+            3,
+            1
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040-1-2-4-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.nth-weekday-nth-2040-1-2-4-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.nth-weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            2040,
+            4,
+            3
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040--1-2-4-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.nth-weekday-nth-2040--1-2-4-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.nth-weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            2040,
+            4,
+            24
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040-5-2-4-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.nth-weekday-nth-2040-5-2-4-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.nth-weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": null
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040-5-7-2-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.nth-weekday-nth-2040-5-7-2-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.nth-weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": null
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040-0-2-4-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.nth-weekday-nth-2040-0-2-4-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.nth-weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            2040,
+            4,
+            3
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040-54-2-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.nth-weekday-nth-2040-54-2-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.nth-weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": null
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.nth-weekday-nth-2040--53-2-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.nth-weekday-nth-2040--53-2-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.nth-weekday",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": null
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-year-start-week-year-start-2039-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-year-start-week-year-start-2039-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.week-year-start",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            2039,
+            1,
+            3
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weeks-in-year-weeks-in-year-2039-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weeks-in-year-weeks-in-year-2039-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.weeks-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 52
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-year-start-week-year-start-2040-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-year-start-week-year-start-2040-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.week-year-start",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            2040,
+            1,
+            2
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weeks-in-year-weeks-in-year-2040-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weeks-in-year-weeks-in-year-2040-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.weeks-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 52
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-year-start-week-year-start-2041-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-year-start-week-year-start-2041-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.week-year-start",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            2040,
+            12,
+            31
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weeks-in-year-weeks-in-year-2041-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weeks-in-year-weeks-in-year-2041-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.weeks-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 52
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-year-start-week-year-start-2042-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-year-start-week-year-start-2042-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.week-year-start",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            2041,
+            12,
+            30
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.weeks-in-year-weeks-in-year-2042-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.weeks-in-year-weeks-in-year-2042-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.weeks-in-year",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 52
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-1-base-list",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2040-1-1-base-list",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "list": [
+            2039,
+            52
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-1-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2040-1-1-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-1-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2040-1-1-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-1-oo-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2040-1-1-oo-scalar",
+        "configuration_return": null,
+        "date_after": "2040010100:00:00",
+        "distribution_version": "7.00",
+        "exception": null,
+        "initial_parse_status": 0,
+        "object_error": "",
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": [
+          "Use of uninitialized value $val in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 1350.\n",
+          "ERROR: [config_var] invalid: FirstDay:  at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-2-base-list",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2040-1-2-base-list",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "list": [
+            2040,
+            1
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-2-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2040-1-2-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-2-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2040-1-2-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-2-oo-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2040-1-2-oo-scalar",
+        "configuration_return": null,
+        "date_after": "2040010200:00:00",
+        "distribution_version": "7.00",
+        "exception": null,
+        "initial_parse_status": 0,
+        "object_error": "",
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": [
+          "Use of uninitialized value $val in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 1350.\n",
+          "ERROR: [config_var] invalid: FirstDay:  at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-12-31-base-list",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2040-12-31-base-list",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "list": [
+            2041,
+            1
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-12-31-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2040-12-31-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 53
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-12-31-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2040-12-31-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 53
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-12-31-oo-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2040-12-31-oo-scalar",
+        "configuration_return": null,
+        "date_after": "2040123100:00:00",
+        "distribution_version": "7.00",
+        "exception": null,
+        "initial_parse_status": 0,
+        "object_error": "",
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "scalar": 53
+        },
+        "warnings": [
+          "Use of uninitialized value $val in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 1350.\n",
+          "ERROR: [config_var] invalid: FirstDay:  at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2041-1-1-base-list",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2041-1-1-base-list",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "list": [
+            2041,
+            1
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2041-1-1-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2041-1-1-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2041-1-1-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2041-1-1-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2041-1-1-oo-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2041-1-1-oo-scalar",
+        "configuration_return": null,
+        "date_after": "2041010100:00:00",
+        "distribution_version": "7.00",
+        "exception": null,
+        "initial_parse_status": 0,
+        "object_error": "",
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": [
+          "Use of uninitialized value $val in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 1350.\n",
+          "ERROR: [config_var] invalid: FirstDay:  at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-inverse-1-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-inverse-1-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            2040,
+            1,
+            2
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-inverse-52-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-inverse-52-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            2040,
+            12,
+            24
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-inverse-53-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-inverse-53-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            2040,
+            12,
+            31
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1970-1-1-0-0-0-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.local-civil-seconds-epoch-1970-1-1-0-0-0-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "epoch.local-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1970-1-1-0-0-0-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.local-civil-seconds-epoch-1970-1-1-0-0-0-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "epoch.local-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1970-1-1-0-0-0-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.local-civil-seconds-epoch-1970-1-1-0-0-0-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "epoch.local-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-1970-1-1-0-0-0-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.utc-civil-seconds-epoch-1970-1-1-0-0-0-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "epoch.utc-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-1970-1-1-0-0-0-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.utc-civil-seconds-epoch-1970-1-1-0-0-0-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "epoch.utc-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-1970-1-1-0-0-0-oo-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.utc-instant-seconds-epoch-1970-1-1-0-0-0-oo-scalar",
+        "configuration_return": null,
+        "date_after": "1970010100:00:00",
+        "distribution_version": "7.00",
+        "exception": null,
+        "initial_parse_status": 0,
+        "object_error": "",
+        "operation_id": "epoch.utc-instant-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1969-12-31-23-59-59-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.local-civil-seconds-epoch-1969-12-31-23-59-59-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "epoch.local-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": -1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1969-12-31-23-59-59-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.local-civil-seconds-epoch-1969-12-31-23-59-59-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "epoch.local-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": -1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-1969-12-31-23-59-59-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.local-civil-seconds-epoch-1969-12-31-23-59-59-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "epoch.local-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": -1
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-1969-12-31-23-59-59-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.utc-civil-seconds-epoch-1969-12-31-23-59-59-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "epoch.utc-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": -1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-1969-12-31-23-59-59-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.utc-civil-seconds-epoch-1969-12-31-23-59-59-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "epoch.utc-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": -1
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-1969-12-31-23-59-59-oo-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.utc-instant-seconds-epoch-1969-12-31-23-59-59-oo-scalar",
+        "configuration_return": null,
+        "date_after": "1969123123:59:59",
+        "distribution_version": "7.00",
+        "exception": null,
+        "initial_parse_status": 0,
+        "object_error": "",
+        "operation_id": "epoch.utc-instant-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "scalar": -1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2040-2-29-12-34-56-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.local-civil-seconds-epoch-2040-2-29-12-34-56-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "epoch.local-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 2214131696
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2040-2-29-12-34-56-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.local-civil-seconds-epoch-2040-2-29-12-34-56-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "epoch.local-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 2214131696
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2040-2-29-12-34-56-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.local-civil-seconds-epoch-2040-2-29-12-34-56-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "epoch.local-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 2214131696
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-2040-2-29-12-34-56-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.utc-civil-seconds-epoch-2040-2-29-12-34-56-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "epoch.utc-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 2214131696
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-2040-2-29-12-34-56-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.utc-civil-seconds-epoch-2040-2-29-12-34-56-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "epoch.utc-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 2214131696
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-2040-2-29-12-34-56-oo-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.utc-instant-seconds-epoch-2040-2-29-12-34-56-oo-scalar",
+        "configuration_return": null,
+        "date_after": "2040022912:34:56",
+        "distribution_version": "7.00",
+        "exception": null,
+        "initial_parse_status": 0,
+        "object_error": "",
+        "operation_id": "epoch.utc-instant-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "scalar": 2214131696
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2038-1-19-3-14-8-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.local-civil-seconds-epoch-2038-1-19-3-14-8-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "epoch.local-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 2147483648
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2038-1-19-3-14-8-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.local-civil-seconds-epoch-2038-1-19-3-14-8-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "epoch.local-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 2147483648
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-2038-1-19-3-14-8-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.local-civil-seconds-epoch-2038-1-19-3-14-8-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "epoch.local-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 2147483648
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-2038-1-19-3-14-8-dm6-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.utc-civil-seconds-epoch-2038-1-19-3-14-8-dm6-scalar",
+        "configuration_return": "",
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "epoch.utc-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "scalar": 2147483648
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.utc-civil-seconds-epoch-2038-1-19-3-14-8-dm5-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.utc-civil-seconds-epoch-2038-1-19-3-14-8-dm5-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "epoch.utc-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "scalar": 2147483648
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-2038-1-19-3-14-8-oo-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.utc-instant-seconds-epoch-2038-1-19-3-14-8-oo-scalar",
+        "configuration_return": null,
+        "date_after": "2038011903:14:08",
+        "distribution_version": "7.00",
+        "exception": null,
+        "initial_parse_status": 0,
+        "object_error": "",
+        "operation_id": "epoch.utc-instant-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "scalar": 2147483648
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-inverse--1-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.local-civil-seconds-epoch-inverse--1-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "epoch.local-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            1969,
+            12,
+            31,
+            23,
+            59,
+            59
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-set--1-oo-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.utc-instant-seconds-epoch-set--1-oo-scalar",
+        "configuration_return": null,
+        "date_after": "1969123123:59:59",
+        "distribution_version": "7.00",
+        "exception": null,
+        "initial_parse_status": 0,
+        "object_error": "",
+        "operation_id": "epoch.utc-instant-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-inverse-0-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.local-civil-seconds-epoch-inverse-0-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "epoch.local-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            1970,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-set-0-oo-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.utc-instant-seconds-epoch-set-0-oo-scalar",
+        "configuration_return": null,
+        "date_after": "1970010100:00:00",
+        "distribution_version": "7.00",
+        "exception": null,
+        "initial_parse_status": 0,
+        "object_error": "",
+        "operation_id": "epoch.utc-instant-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-inverse-1-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.local-civil-seconds-epoch-inverse-1-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "epoch.local-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            1970,
+            1,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-set-1-oo-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.utc-instant-seconds-epoch-set-1-oo-scalar",
+        "configuration_return": null,
+        "date_after": "1970010100:00:01",
+        "distribution_version": "7.00",
+        "exception": null,
+        "initial_parse_status": 0,
+        "object_error": "",
+        "operation_id": "epoch.utc-instant-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.local-civil-seconds-epoch-inverse-2147483648-base-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.local-civil-seconds-epoch-inverse-2147483648-base-scalar",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "epoch.local-civil-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": [
+            2038,
+            1,
+            19,
+            3,
+            14,
+            8
+          ]
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-epoch.utc-instant-seconds-epoch-set-2147483648-oo-scalar",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-epoch.utc-instant-seconds-epoch-set-2147483648-oo-scalar",
+        "configuration_return": null,
+        "date_after": "2038011903:14:08",
+        "distribution_version": "7.00",
+        "exception": null,
+        "initial_parse_status": 0,
+        "object_error": "",
+        "operation_id": "epoch.utc-instant-seconds",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-2-29-base-scalar-full",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-2040-2-29-base-scalar-full",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2041-2-29-base-scalar-full",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-2041-2-29-base-scalar-full",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-0-1-1-base-scalar-full",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-0-1-1-base-scalar-full",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-1-1-1-base-scalar-full",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-1-1-1-base-scalar-full",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-9999-12-31-base-scalar-full",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-9999-12-31-base-scalar-full",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-10000-1-1-base-scalar-full",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-10000-1-1-base-scalar-full",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-0-1-base-scalar-full",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-2040-0-1-base-scalar-full",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-13-1-base-scalar-full",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-2040-13-1-base-scalar-full",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-4-31-base-scalar-full",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-2040-4-31-base-scalar-full",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.validate-date-validate-2040-2-0-base-scalar-full",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.validate-date-validate-2040-2-0-base-scalar-full",
+        "configuration_return": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "object_error": "",
+        "operation_id": "calendar.validate-date",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-1-oo-scalar-explicit-monday",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2040-1-1-oo-scalar-explicit-monday",
+        "configuration_return": null,
+        "date_after": "2040010100:00:00",
+        "distribution_version": "7.00",
+        "exception": null,
+        "initial_parse_status": 0,
+        "object_error": "",
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "scalar": 0
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-1-2-oo-scalar-explicit-monday",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2040-1-2-oo-scalar-explicit-monday",
+        "configuration_return": null,
+        "date_after": "2040010200:00:00",
+        "distribution_version": "7.00",
+        "exception": null,
+        "initial_parse_status": 0,
+        "object_error": "",
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2040-12-31-oo-scalar-explicit-monday",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2040-12-31-oo-scalar-explicit-monday",
+        "configuration_return": null,
+        "date_after": "2040123100:00:00",
+        "distribution_version": "7.00",
+        "exception": null,
+        "initial_parse_status": 0,
+        "object_error": "",
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "scalar": 53
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    },
+    {
+      "case_id": "CAL-calendar.week-number-week-2041-1-1-oo-scalar-explicit-monday",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CAL-calendar.week-number-week-2041-1-1-oo-scalar-explicit-monday",
+        "configuration_return": null,
+        "date_after": "2041010100:00:00",
+        "distribution_version": "7.00",
+        "exception": null,
+        "initial_parse_status": 0,
+        "object_error": "",
+        "operation_id": "calendar.week-number",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "scalar": 1
+        },
+        "warnings": []
+      },
+      "stderr": ""
+    }
+  ]
+}

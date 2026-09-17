@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "status": "research-only independent review; no English feature is approved by this record",
+  "review_scope": {
+    "evidence": "docs/research/observations/recurrence-ambiguities.json",
+    "probe": "tools/probes/recurrence-ambiguities.pl",
+    "contract": "docs/research/contracts/recurrence.json",
+    "case_count": 16
+  },
+  "verification": {
+    "rerun_command": "python3 tools/probes/run-recurrence-ambiguities.py",
+    "rerun_result": "The complete JSON output matched the checked-in evidence byte-for-byte.",
+    "isolation": "The driver ran every case twice in separate temporary working directories and processes, with UTC, C.UTF-8, and the pinned Date-Manip 7.00 library.",
+    "independent_gregorian_check": {
+      "method": "Python datetime.date Gregorian weekday arithmetic, not Date::Manip",
+      "anchor": "2040-04-13 is Friday",
+      "results": {
+        "PD1": "2040-04-09 Monday",
+        "PD2": "2040-04-10 Tuesday",
+        "PD3": "2040-04-11 Wednesday",
+        "PD4": "2040-04-12 Thursday",
+        "PD5": "2040-04-06 Friday, seven days earlier",
+        "PD6": "2040-04-07 Saturday",
+        "PD7": "2040-04-08 Sunday"
+      }
+    }
+  },
+  "case_assessments": [
+    {
+      "case_id": "weekday-1",
+      "assessment": "evidence-supported",
+      "recommendation": "default-candidate",
+      "finding": "The observed Monday result agrees with the independent Gregorian calculation."
+    },
+    {
+      "case_id": "weekday-2",
+      "assessment": "evidence-supported",
+      "recommendation": "default-candidate",
+      "finding": "The observed Tuesday result agrees with the independent Gregorian calculation."
+    },
+    {
+      "case_id": "weekday-3",
+      "assessment": "evidence-supported",
+      "recommendation": "default-candidate",
+      "finding": "The observed Wednesday result agrees with the independent Gregorian calculation."
+    },
+    {
+      "case_id": "weekday-4",
+      "assessment": "evidence-supported",
+      "recommendation": "default-candidate",
+      "finding": "The observed Thursday result agrees with the independent Gregorian calculation."
+    },
+    {
+      "case_id": "weekday-5",
+      "assessment": "evidence-supported",
+      "recommendation": "default-candidate",
+      "finding": "The observed Friday result is seven days earlier, which independently confirms that a previous-weekday request does not select the anchor itself."
+    },
+    {
+      "case_id": "weekday-6",
+      "assessment": "evidence-supported",
+      "recommendation": "default-candidate",
+      "finding": "The observed Saturday result agrees with the independent Gregorian calculation."
+    },
+    {
+      "case_id": "weekday-7",
+      "assessment": "evidence-supported",
+      "recommendation": "default-candidate",
+      "finding": "The observed Sunday result agrees with the independent Gregorian calculation."
+    },
+    {
+      "case_id": "modifier-uppercase-string",
+      "assessment": "evidence-supported",
+      "recommendation": "compatibility-candidate",
+      "finding": "One uppercase comma-separated string is accepted, normalized to lowercase stored modifiers, and yields the same tested date as the lowercase multi-argument control."
+    },
+    {
+      "case_id": "modifier-uppercase-list",
+      "assessment": "evidence-supported",
+      "recommendation": "compatibility-candidate",
+      "finding": "Two uppercase arguments produce modifier status 1, no stored modifiers, an object modifier error, and an Invalid recurrence lookup return. The channels are distinct and all are captured."
+    },
+    {
+      "case_id": "modifier-lowercase-list",
+      "assessment": "evidence-supported",
+      "recommendation": "default-candidate",
+      "finding": "Two lowercase arguments succeed, normalize as stored lowercase modifiers, and yield the recorded occurrence after the anchor is deliberately restored."
+    },
+    {
+      "case_id": "modifier-clears-anchor",
+      "assessment": "evidence-supported",
+      "recommendation": "compatibility-candidate",
+      "finding": "After frequency then anchor then modifier update, the stored anchor is absent and nth returns Incomplete recurrence. Empty object-error fields must not replace the separate lookup-error result."
+    },
+    {
+      "case_id": "endpoint-dm5",
+      "assessment": "evidence-supported",
+      "recommendation": "compatibility-candidate",
+      "finding": "The DM5 functional list omits the occurrence exactly at the supplied upper endpoint. This is evidence for its own profile only."
+    },
+    {
+      "case_id": "endpoint-dm6",
+      "assessment": "evidence-supported",
+      "recommendation": "default-candidate",
+      "finding": "The DM6 functional list includes the occurrence exactly at the supplied upper endpoint. It must remain a separately profiled expectation from DM5."
+    },
+    {
+      "case_id": "anchor-positional-text",
+      "assessment": "evidence-supported",
+      "recommendation": "disputed",
+      "finding": "The documented optional form permits the modifier argument to be omitted and permits textual dates as base values. This call stores the textual anchor, returns parse status zero, retains an Invalid modifier object error, and later yields Invalid recurrence from nth. The typed-date control at the same position succeeds. This is evidence of a documented-overload inconsistency or suspected upstream bug, not a portable normalization rule."
+    },
+    {
+      "case_id": "anchor-positional-value",
+      "assessment": "evidence-supported",
+      "recommendation": "default-candidate",
+      "finding": "A typed Date value in the second position is accepted and produces the anchor occurrence. It is a useful control, but does not make the text-in-second-position call an anchor request."
+    },
+    {
+      "case_id": "anchor-setter",
+      "assessment": "evidence-supported",
+      "recommendation": "default-candidate",
+      "finding": "Setting frequency and textual anchor through their dedicated setters yields the anchor occurrence with separate lookup success and no stored error."
+    }
+  ],
+  "cross_case_findings": [
+    "The seven weekday cases are independently corroborated Gregorian facts for this anchor and preserve a concrete strict-previous-weekday meaning.",
+    "The DM5 and DM6 endpoint lists differ only in treatment of the exact upper endpoint in these probes. Do not derive one profile's expectation from the other or claim wider backend equivalence.",
+    "Modifier carrier and case behavior is observable compatibility behavior. The evidence supports the three tested shapes only; it does not establish a general normalization rule.",
+    "The OO cases record operation status, object error state, read-back state, and nth return error separately where applicable. In particular, textual positional base parsing shows a zero parse return despite retained error state and failed later lookup. Functional endpoint cases record only the successful list result and warning capture; they do not characterize functional invalid-result diagnostics.",
+    "No case should be promoted directly to a portable BDD feature: each recommendation is a review candidate, not an approved English contract."
+  ],
+  "possible_harness_faults_or_limits": [
+    {
+      "severity": "scope-limit",
+      "case_id": "anchor-positional-text",
+      "issue": "The probe captures the inconsistent public return, error, stored-anchor, and lookup channels, but does not yet compare an explicit valid modifier followed by the same textual base or recovery after this call."
+    },
+    {
+      "severity": "minor",
+      "case_id": "weekday-* and modifier-*",
+      "issue": "These cases read anchor_after_modifiers before deliberately restoring the anchor. final_setup_anchor_status records restoration success, but post-restoration anchor read-back is not captured."
+    },
+    {
+      "severity": "scope-limit",
+      "case_id": "endpoint-dm5 and endpoint-dm6",
+      "issue": "Successful functional enumeration is captured in list context only. No invalid functional input, scalar return, or functional diagnostic channel is exercised."
+    }
+  ],
+  "source_separation_review": {
+    "result": "pass",
+    "finding": "The evidence, review, and contract remain research-side. They identify public call shapes and observed outputs, do not copy upstream implementation or test text, and explicitly prohibit using this profile/probe record in a future implementation-only handoff."
+  },
+  "remaining_steps_before_original_bdd": [
+    "Retain anchor-positional-text as a disputed minimal reproducer, then add an explicit-valid-modifier plus textual-base comparison and valid-to-invalid-to-valid recovery observation before deciding its compatibility treatment.",
+    "Review whether the independently corroborated PD1 through PD7 mapping is intended portable behavior, then write original English scenarios with frozen literals only after that decision.",
+    "Choose profile labels for exact upper-endpoint enumeration and write separate original scenarios for DM5 compatibility and the chosen default profile; retain their distinct bounds semantics.",
+    "Decide whether carrier-specific modifier case behavior belongs only in compatibility coverage. Add the missing uppercase/mixed-case and failure-recovery partitions before stating a general rule.",
+    "Add dedicated lifecycle observations that read back state after modifier replacement and after a rejected modifier update, then review their portable relevance.",
+    "Keep all new BDD fixtures and assertions independent of this Perl probe, profile paths, source mappings, and Date::Manip-derived expectation calculation."
+  ]
+}

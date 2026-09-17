@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "family": "language-and-configuration-file-syntax",
+  "reference": {
+    "distribution": "Date::Manip",
+    "version": "7.00",
+    "profiles": ["dm6-reference", "dm5-compatibility"]
+  },
+  "method": "Research-side interface inventory. Language terms, upstream examples, generated data, and reference outputs are deliberately absent. All proposed fixtures are original and unobserved.",
+  "language_selection": {
+    "case_handling": "Documented case-insensitive for canonical names and aliases.",
+    "supported_language_count": 16,
+    "accepted_selection_count": 45,
+    "languages": [
+      {"id":"lang.catalan","canonical":"Catalan","aliases":["ca"],"candidate_fixture":"Select the canonical name, then select ca; parse one separately reviewed Catalan-only token once an original fixture is approved.","status":"unobserved"},
+      {"id":"lang.danish","canonical":"Danish","aliases":["da"],"candidate_fixture":"Select the canonical name, then select da; parse one separately reviewed Danish-only token once an original fixture is approved.","status":"unobserved"},
+      {"id":"lang.dutch","canonical":"Dutch","aliases":["Nederlands","nl"],"candidate_fixture":"Select the canonical name, then each alias; parse one separately reviewed Dutch-only token once an original fixture is approved.","status":"unobserved"},
+      {"id":"lang.english","canonical":"English","aliases":["en","en_us"],"candidate_fixture":"Select the canonical name, then each alias; parse one separately reviewed English-only token once an original fixture is approved.","status":"unobserved"},
+      {"id":"lang.finnish","canonical":"Finnish","aliases":["fi","fi_fi"],"candidate_fixture":"Select the canonical name, then each alias; parse one separately reviewed Finnish-only token once an original fixture is approved.","status":"unobserved"},
+      {"id":"lang.french","canonical":"French","aliases":["fr","fr_fr"],"candidate_fixture":"Select the canonical name, then each alias; parse one separately reviewed French-only token once an original fixture is approved.","status":"unobserved"},
+      {"id":"lang.german","canonical":"German","aliases":["de","de_de"],"candidate_fixture":"Select the canonical name and aliases; include a trailing-period normalization partition.","status":"unobserved"},
+      {"id":"lang.italian","canonical":"Italian","aliases":["it","it_it"],"candidate_fixture":"Select the canonical name, then each alias; parse one separately reviewed Italian-only token once an original fixture is approved.","status":"unobserved"},
+      {"id":"lang.norwegian","canonical":"Norwegian","aliases":["nb","nb_no"],"candidate_fixture":"Select the canonical name and aliases; include a trailing-period normalization partition.","status":"unobserved"},
+      {"id":"lang.polish","canonical":"Polish","aliases":["pl","pl_pl"],"candidate_fixture":"Select the canonical name, then each alias; parse one separately reviewed Polish-only token once an original fixture is approved.","status":"unobserved"},
+      {"id":"lang.portuguese","canonical":"Portuguese","aliases":["pt","pt_pt"],"candidate_fixture":"Select the canonical name, then each alias; parse one separately reviewed Portuguese-only token once an original fixture is approved.","status":"unobserved"},
+      {"id":"lang.romanian","canonical":"Romanian","aliases":["ro","ro_ro"],"candidate_fixture":"Select the canonical name, then each alias; parse one separately reviewed Romanian-only token once an original fixture is approved.","status":"unobserved"},
+      {"id":"lang.russian","canonical":"Russian","aliases":["ru","ru_ru"],"candidate_fixture":"Select the canonical name, then each alias; parse one separately reviewed Russian-only token once an original fixture is approved.","status":"unobserved"},
+      {"id":"lang.spanish","canonical":"Spanish","aliases":["es","es_es"],"candidate_fixture":"Select the canonical name, then each alias; parse one separately reviewed Spanish-only token once an original fixture is approved.","status":"unobserved"},
+      {"id":"lang.swedish","canonical":"Swedish","aliases":["sv"],"candidate_fixture":"Select the canonical name, then sv; parse one separately reviewed Swedish-only token once an original fixture is approved.","status":"unobserved"},
+      {"id":"lang.turkish","canonical":"Turkish","aliases":["tr","tr_tr"],"candidate_fixture":"Select the canonical name and aliases; include a trailing-period normalization partition.","status":"unobserved"}
+    ],
+    "invalid_partitions": ["unknown selection", "empty selection", "case variation", "non-ASCII selector", "language changed after Encoding"],
+    "gaps": ["Selection acceptance and error/warning channels have not been observed.", "No token vocabulary is reproduced; each language needs independently sourced original fixtures before behavioral promotion."]
+  },
+  "token_classes": [
+    {"id":"lang.tokens.ampm","role":"ante/post-meridiem alternatives"},
+    {"id":"lang.tokens.at","role":"time-introduction connector"},
+    {"id":"lang.tokens.day-abbreviation","role":"weekday abbreviations"},
+    {"id":"lang.tokens.day-character","role":"short weekday representations"},
+    {"id":"lang.tokens.day-name","role":"weekday names"},
+    {"id":"lang.tokens.each","role":"recurrence-frequency connectors"},
+    {"id":"lang.tokens.field","role":"duration-field names and abbreviations"},
+    {"id":"lang.tokens.last","role":"terminal-occurrence words"},
+    {"id":"lang.tokens.mode","role":"duration/working-mode modifiers"},
+    {"id":"lang.tokens.month-abbreviation","role":"month abbreviations"},
+    {"id":"lang.tokens.month-name","role":"month names"},
+    {"id":"lang.tokens.next-previous","role":"relative-direction words"},
+    {"id":"lang.tokens.ordinal","role":"ordinal occurrence forms"},
+    {"id":"lang.tokens.of","role":"date/recurrence relationship connectors"},
+    {"id":"lang.tokens.relative-date","role":"named relative-day expressions mapped to date offsets"},
+    {"id":"lang.tokens.relative-time","role":"named relative-time expressions mapped to time offsets"},
+    {"id":"lang.tokens.on","role":"date-introduction connector"},
+    {"id":"lang.tokens.named-time","role":"named clock times"},
+    {"id":"lang.tokens.when","role":"past/future relationship phrases"},
+    {"id":"lang.tokens.special-rules","role":"language preprocessing; documented rule kinds are trailing-period removal, parenthesis removal, and selected-word stripping. The pinned German, Norwegian, and Turkish modules declare trailing-period removal; the Russian module declares parenthesis removal and selected-word stripping. No vocabulary value is reproduced."}
+  ],
+  "config_file_grammar": {
+    "dm6": {
+      "line_forms": ["blank", "comment beginning with # after outer whitespace is removed", "assignment: name = value", "section marker: *section-name"],
+      "processing": ["outer whitespace is removed before classification", "assignments require exactly the parser's first split on =, preserving internal value text", "a section remains active until another marker", "ConfigFile is processed at its position; nested files are therefore ordered", "known section data is accumulated in encounter order"],
+      "case": {"main_variable":"case-insensitive", "section_name":"case-insensitive", "main_value":"normally case-sensitive unless that setting says otherwise", "section_key_and_value":"case-sensitive"},
+      "invalid_channels": ["non-assignment non-section line: fatal configuration-file error", "missing/unreadable file: warning and continuation", "unknown main key: error diagnostic and continuation", "unknown section: warning, then an accumulated section is created", "section-specific malformed data: delegated to its consumer"],
+      "partitions": ["leading/trailing whitespace", "empty value", "embedded equals sign", "comment only versus inline comment", "empty/unknown section", "multiple/nested files", "section split across files", "failure after an earlier valid setting"]
+    },
+    "dm5": {
+      "line_forms":"Documented as assignment lines in an initial settings section followed by asterisk-led sections; blank and # lines are ignored; spaces are optional.",
+      "case":"DM5 documentation says strings are case-insensitive, unlike DM6's main-value/section distinction.",
+      "loading_model":"Global configuration, then optional personal configuration, then Date_Init overrides; the legacy path and file-name controls are separate config domains.",
+      "gaps":["Exact DM5 parser acceptance, diagnostics, inline comments, and malformed-line behavior have not been probed."]
+    }
+  },
+  "special_sections": {
+    "holidays": {
+      "id":"config.section.holidays",
+      "line_shape":"date-expression = optional label",
+      "production_forms":["full parseable date", "yearless date to which a year can be appended", "recurrence"],
+      "semantics":"A holiday occupies one civil day. Blank labels remain holidays. Multiple labels/dates and repeated definitions are permitted; definition order can change working-day-relative recurrence results.",
+      "partitions":["named and blank label", "one-time and annual form", "recurrence", "multiple labels on one day", "same label with alternatives", "definition ordering", "cross-year observed date", "invalid left/right side"],
+      "dm5_difference":"DM5 also documents date plus/minus delta forms and describes identical recurrence keys as a hash-era limitation; DM6 documents an ordered list and permits repeated recurrence definitions."
+    },
+    "events": {
+      "id":"config.section.events",
+      "line_shape":"event-expression = name",
+      "dm6_production_forms":["Date", "YMD", "YM", "Recur", "Date;Date", "YMD;YMD", "YM;YM", "Date;Delta", "Recur;Delta"],
+      "semantics":"Timed Date/Recur forms default to one hour; date-only YMD/YM forms occupy the whole day. Events do not alter business-day calculations. Documentation says durations beyond one year are unsupported and not validated.",
+      "partitions":["one-hour and all-day defaults", "end-date and delta duration", "recurrence", "overlap", "empty/duplicate name", "over-one-year duration", "malformed separators and components"],
+      "dm5_difference":"DM5 documents date-without-time and recurrence-without-time separately, and additionally documents three-part date-or-recurrence plus two deltas. Exact compatibility must be observed."
+    }
+  },
+  "configuration_domain_reconciliation": {
+    "authoritative_domain_inventory":"docs/research/contracts/configuration-domains.json",
+    "domain_key_count":38,
+    "dm6_config_pod_heading_count":27,
+    "dm6_heading_keys":"Defaults, ConfigFile, Language, Encoding, FirstDay, Week1ofYear, Printable, DateFormat, YYtoYYYY, DefaultTime, PeriodTimeSep, Format_MMMYYYY, WorkWeekBeg, WorkWeekEnd, WorkDay24Hr, WorkDayBeg, WorkDayEnd, TomorrowFirst, EraseHolidays, EraseEvents, RecurRange, MaxRecurAttempts, SetDate, ForceDate, Use_POSIX_Printf, TZ, Jan1Week1",
+    "dm5_only_or_legacy_domain_keys":"IgnoreGlobalCnf, PathSep, GlobalCnf, PersonalCnf, PersonalCnfPath, ConvTZ, Internal, DeltaSigns, UpdateCurrTZ, IntCharSet, TodayIsMidnight",
+    "reconciliation":"27 DM6 headings plus 11 DM5-only/legacy keys equals the 38 keys in configuration-domains.json. The count is an inventory reconciliation, not behavioral coverage.",
+    "precise_gaps":["Config.pod does not enumerate a formal grammar for every value domain or every diagnostic channel.", "The domain inventory has no reviewed runtime observation for its listed partitions.", "DM5’s historical global/personal loading behavior is documented but not reconciled to a DM6 equivalent because DM6 uses ordered ConfigFile processing.", "Holiday/event date, recurrence, and delta subgrammars are owned by their corresponding contract families; this record only identifies the section productions."]
+  },
+  "source_reconciliation": {
+    "Lang.pod_current_language_rows":16,
+    "Lang_index_accepted_selectors":45,
+    "language_modules":16,
+    "Config_pod_documented_variable_headings":27,
+    "DM5_documented_variable_headings":25,
+    "Holidays_pod_sections":2,
+    "public_source_locations":["lib/Date/Manip/Lang/index.pm", "lib/Date/Manip/Lang/*.pm", "lib/Date/Manip/TZ_Base.pm", "lib/Date/Manip/Base.pm", "lib/Date/Manip/Date.pm"],
+    "note":"Source locations establish dispatch and parser boundaries only; no source implementation is exported as a portable contract."
+  }
+}

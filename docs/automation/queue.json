@@ -42,7 +42,7 @@
     {
       "id": "api-reconciliation",
       "title": "Reconcile callable and source-side API inventory",
-      "status": "in_progress",
+      "status": "complete",
       "depends_on": [
         "reference-setup"
       ],
@@ -57,21 +57,25 @@
         "Every inventory row has a visible disposition; each public operation has a portable mapping or a stated exclusion.",
         "No completeness claim is derived solely from scenario counts."
       ],
-      "owner": "coordinator",
-      "progress": "All 96 operation IDs have research call-shape catalogues and 397 unobserved method partitions. All bindings match the API map. 38 configuration keys are catalogued. Finite date/parser/format/legacy syntax inventories and partition refinement still prevent acceptance. Sixteen focused recurrence observations repeated; quirks remain research-side.",
+      "owner": "coordinator-reviewed",
       "evidence": [
         "docs/research/api/README.md",
         "docs/research/api/contract-map.json",
         "docs/research/api/runtime-callability.json",
         "docs/research/api/auxiliary-obligations.json",
         "docs/research/contracts/",
-        "docs/research/observations/recurrence-ambiguities.md"
-      ]
+        "docs/research/observations/recurrence-ambiguities.md",
+        "docs/research/syntax/date.json",
+        "docs/research/syntax/date-dm5.json",
+        "docs/research/syntax/delta.json",
+        "docs/research/syntax/language-config.json"
+      ],
+      "review": "All423 declaration identities,164 public bindings,96 generic IDs,153 inherited routes and both facade exports reconciled. Five contract catalogues plus date/DM5/delta/language/config syntax inventories give explicit method and auxiliary partition obligations. This is inventory completeness, not observed behavioral coverage; source-derived predictions remain unapproved until probes and review."
     },
     {
       "id": "spec-interpretation-formatting",
       "title": "Specify interpretation, rendering, and calendar-query behavior",
-      "status": "pending",
+      "status": "in_progress",
       "depends_on": [
         "reference-setup",
         "api-reconciliation"
@@ -86,12 +90,22 @@
         "Cases cover success, boundaries, invalid input, options, result variants, and relevant state.",
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
+      ],
+      "owner": "coordinator",
+      "progress": "231 calendar/epoch binding observations repeated; independent review190 reviewed,28 compatibility,3 invalid,10 unreviewed.52 original English candidate cases linked to116 calls,50 fact-reviewed and2 compatibility review. Date/time syntax, rendering, language and remaining calendar partitions still need cases.",
+      "evidence": [
+        "docs/research/observations/calendar.json",
+        "docs/research/observations/calendar-review.json",
+        "spec/drafts/calendar.feature",
+        "spec/drafts/calendar-validation.feature",
+        "docs/research/calendar-feature-map.json",
+        "docs/research/calendar-validation-map.json"
       ]
     },
     {
       "id": "spec-arithmetic-deltas",
       "title": "Specify dates, deltas, durations, and arithmetic behavior",
-      "status": "pending",
+      "status": "in_progress",
       "depends_on": [
         "reference-setup",
         "api-reconciliation"
@@ -106,12 +120,13 @@
         "Cases include calendar versus elapsed semantics, limits, invalid input, return variants, and DST interactions where applicable.",
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
-      ]
+      ],
+      "owner": "arithmetic_features"
     },
     {
       "id": "spec-recurrence",
       "title": "Specify recurrence syntax, modifiers, and occurrence behavior",
-      "status": "pending",
+      "status": "in_progress",
       "depends_on": [
         "reference-setup",
         "api-reconciliation"
@@ -126,7 +141,8 @@
         "Cases cover supported forms, limits, no-match and invalid conventions, modifiers, and ordered-result behavior.",
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
-      ]
+      ],
+      "owner": "recurrence_features"
     },
     {
       "id": "spec-zones-business",
