@@ -46,11 +46,11 @@ Current independent worker outputs:
   397 unobserved method-partition obligations, not 397 executed cases.
 - `configuration-domains.json` records 38 configuration keys and documented
   domains/defaults; runtime-only ambiguities and file-section grammar remain open.
-- Active workers: `zones_business_features`, `rendering_features`, and
-  `configuration_features`. Each owns its corresponding `spec/drafts/` family,
+- Active workers: `zones_business_features`, `arithmetic_features`, and
+  `configuration_features`. Rendering has returned a draft for coordinator review. Each owns its corresponding `spec/drafts/` family,
   `tools/probes/*-family/`, and `docs/research/*-family/` directories. Inspect live
   agent status before restarting workers; partial files are not completion evidence.
-- Completed worker batches awaiting coordinator review and commit: arithmetic has
+- Worker batches under coordinator review: arithmetic has
   59 repeated cases spanning 16 operation IDs; recurrence has 35 candidate IDs in
   three drafts, 31 repeatable observations, and mappings spanning 12 operation IDs.
   Their README files list substantial remaining obligations. A partition-ID link
@@ -142,3 +142,21 @@ Use only the statuses defined by the queue: `pending`, `in_progress`, `blocked`,
 `complete`, and the baseline-only `current`. A blocked batch stays visible with its
 blocker and does not permit dependent batches to start. A complete batch keeps its
 outputs and acceptance evidence discoverable through its linked planning artifacts.
+
+## Latest review checkpoint
+
+The user reconfirmed scope: complete the specification, then implement and verify
+its Perl harness. Arithmetic is undergoing targeted authoring corrections for
+unspecified options, patterns, profiles and field types. Configuration is correcting
+snapshot reads that themselves created unset-value errors. Rendering returned
+13 repeatable invocations with 61 native spellings/families and 12 POSIX override
+samples; its evidence and English drafts still await coordinator review.
+
+Recurrence coordinator corrections now capture the actual source date before and
+after derived creation, use concrete serialized recovery input, retain before/after
+frequency replacement states, and align feature setup order with the probe.
+Navigation assertions and functional lower bounds are explicit. All 31 cases
+repeated twice in each of two byte-identical review runs. Targeted lifecycle
+literal checks and all partition links pass. These are reviewed draft corrections,
+not a completed recurrence family or an executed BDD suite. Continue full semantic
+review and the listed gaps before promoting any family.

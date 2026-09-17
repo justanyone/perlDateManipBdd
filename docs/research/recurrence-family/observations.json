@@ -1,0 +1,1129 @@
+{
+  "schema_version": 1,
+  "status": "research-only; semantic review pending",
+  "reference_profile_record": "docs/automation/reference-profiles.json",
+  "reference_profile_sha256": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
+  "probe": "tools/probes/recurrence-family/probe.pl",
+  "probe_sha256": "bbdd63bfbba5d23488a01e4869bd08f31b874e4ecf962e1f09f983188a686c27",
+  "execution": {
+    "command": "python3 tools/probes/recurrence-family/run.py",
+    "separate_process_per_case": true,
+    "repetitions": 2,
+    "timeout_seconds": 15,
+    "environment": {
+      "PATH": "/home/kevin/.local/bin:/home/kevin/.codex/tmp/arg0/codex-arg0F2Ouqr:/home/kevin/.local/bin:/home/kevin/.cargo/bin:/home/kevin/.local/bin:/home/kevin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/kevin/.vscode/extensions/openai.chatgpt-26.908.40401-linux-x64/bin/linux-x86_64",
+      "PERL5LIB": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5",
+      "TZ": "Etc/UTC",
+      "LANG": "C.UTF-8",
+      "LC_ALL": "C.UTF-8"
+    }
+  },
+  "observations": [
+    {
+      "base_status": 0,
+      "case_id": "modifier-pd",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-13 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "PD1"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040040912:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "pd1"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-pt",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-13 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "PT5"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040041312:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "pt5"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-nd",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-13 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "ND1"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040041612:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "nd1"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-nt",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-13 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "NT5"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040041312:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "nt5"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-wd",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-13 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "WD1"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040040912:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "wd1"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-fd",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-13 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "FD1"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040041412:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "fd1"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-bd",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-13 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "BD1"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040041212:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "bd1"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-fw",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-13 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "FW1"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040041612:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "fw1"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-bw",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-15 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "BW1"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040041312:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041512:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "bw1"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-cwd",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-14 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "CWD"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040041312:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041412:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "cwd"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-cwn",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-14 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "CWN"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040041312:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041412:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "cwn"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-cwp",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-14 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "CWP"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040041312:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041412:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "cwp"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-nwd",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-14 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "NWD"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040041612:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041412:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "nwd"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-pwd",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-14 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "PWD"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040041312:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041412:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "pwd"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-dwd",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-14 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "DWD"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040041312:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041412:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "dwd"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-ibd",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-13 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "IBD"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040041312:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "ibd"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-nbd",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-14 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "NBD"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040041412:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041412:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "nbd"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-iw",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-13 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "IW5"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040041312:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "iw5"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-nw",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-13 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "NW5"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": null,
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "nw5"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "modifier-easter",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "input": {
+        "base": "2040-04-13 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifier": "EASTER"
+      },
+      "modifier_status": 0,
+      "nth": [
+        {
+          "date": "2040040112:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "easter"
+        ],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "create-and-empty-read",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "kind_is_recurrence": true,
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": null,
+        "base": null,
+        "end": null,
+        "error": "",
+        "frequency": "",
+        "modifiers": [],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "create-from-date-context",
+      "child_error": "",
+      "child_frequency": "0:0:0:1:0:0:0",
+      "child_kind_is_recurrence": true,
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "source_parse_status": 0,
+      "source_value_after": "2040041312:34:56",
+      "source_value_before": "2040041312:34:56",
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "parse-serialized-and-recovery",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "error_after_invalid": "[parse] Invalid frequency string",
+      "invalid_parse_status": 1,
+      "nth": [
+        {
+          "date": "2040041312:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "nth_after_valid_parse": [
+        {
+          "date": "2040041412:34:56",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        },
+        {
+          "date": "2040041512:34:56",
+          "index": 1,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "recovery_status": 0,
+      "state": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": "2040041523:59:59",
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [],
+        "start": "2040041300:00:00"
+      },
+      "state_after_invalid_parse": {
+        "actual_base": null,
+        "base": null,
+        "end": null,
+        "error": "[parse] Invalid frequency string",
+        "frequency": "",
+        "modifiers": [],
+        "start": null
+      },
+      "state_after_valid_parse": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": "2040041523:59:59",
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "fd1"
+        ],
+        "start": "2040041300:00:00"
+      },
+      "valid_parse_status": 0,
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_after_modifier_status": 0,
+      "base_status": 0,
+      "case_id": "field-read-replace",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "end_status": 0,
+      "frequency_status": 0,
+      "modifiers_status": 0,
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "reads_before_set": {
+        "end": null,
+        "frequency": "",
+        "modifiers": [],
+        "start": null
+      },
+      "replacement_frequency_status": 0,
+      "start_status": 0,
+      "state": {
+        "actual_base": null,
+        "base": null,
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:2:0:0:0",
+        "modifiers": [],
+        "start": null
+      },
+      "state_before_replacement": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": "2040041523:59:59",
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "fd1"
+        ],
+        "start": "2040041300:00:00"
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "nth-missing-and-indexes",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "frequency_status": 0,
+      "nth": [
+        {
+          "date": "2039123100:00:00",
+          "index": -1,
+          "lookup_error": 0,
+          "object_error": ""
+        },
+        {
+          "date": "2040013100:00:00",
+          "index": 0,
+          "lookup_error": 0,
+          "object_error": ""
+        },
+        {
+          "date": null,
+          "index": 1,
+          "lookup_error": 0,
+          "object_error": ""
+        },
+        {
+          "date": "2040033100:00:00",
+          "index": 2,
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "state": {
+        "actual_base": "2040010100:00:00",
+        "base": "2040013112:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:1*0:31:0:0:0",
+        "modifiers": [],
+        "start": null
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "navigation-and-bounds",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "end_status": 0,
+      "frequency_status": 0,
+      "navigation": [
+        {
+          "date": "2040013100:00:00",
+          "direction": "next",
+          "lookup_error": 0,
+          "object_error": ""
+        },
+        {
+          "date": "2040033100:00:00",
+          "direction": "next",
+          "lookup_error": 0,
+          "object_error": ""
+        },
+        {
+          "date": "2040053100:00:00",
+          "direction": "next",
+          "lookup_error": 0,
+          "object_error": ""
+        },
+        {
+          "date": "2040033100:00:00",
+          "direction": "prev",
+          "lookup_error": 0,
+          "object_error": ""
+        },
+        {
+          "date": "2040013100:00:00",
+          "direction": "prev",
+          "lookup_error": 0,
+          "object_error": ""
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "start_status": 0,
+      "state": {
+        "actual_base": "2040010100:00:00",
+        "base": "2040013112:34:56",
+        "end": "2040053123:59:59",
+        "error": "",
+        "frequency": "0:1*0:31:0:0:0",
+        "modifiers": [],
+        "start": "2040010100:00:00"
+      },
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "base_status": 0,
+      "case_id": "dates-temporary-range-and-empty-filter",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "empty_dates": [],
+      "empty_dates_error": "",
+      "end_status": 0,
+      "error_after_stored_dates": "",
+      "error_after_temporary_dates": "",
+      "filter_base_status": 0,
+      "filter_modifier_status": 0,
+      "frequency_status": 0,
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "start_status": 0,
+      "state": {
+        "actual_base": "2040041312:34:56",
+        "base": "2040041312:34:56",
+        "end": "2040041623:59:59",
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [],
+        "start": "2040041300:00:00"
+      },
+      "stored_dates": [
+        "2040041312:34:56",
+        "2040041412:34:56",
+        "2040041512:34:56",
+        "2040041612:34:56"
+      ],
+      "temporary_dates": [
+        "2040041412:34:56",
+        "2040041512:34:56"
+      ],
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "functional-dm5-description",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "input": {
+        "frequency": "0:0:0:1:0:0:0",
+        "result_mode": "scalar description"
+      },
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "profile": "dm5",
+      "scalar_result": "0:0:0:1:0:0:0****",
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+      ],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "functional-dm6-description",
+      "configuration_return": "",
+      "distribution_version": "7.00",
+      "input": {
+        "frequency": "0:0:0:1:0:0:0",
+        "result_mode": "scalar description"
+      },
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "profile": "dm6",
+      "scalar_result": "0:0:0:1:0:0:0****",
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "functional-dm5-endpoint",
+      "configuration_return": null,
+      "dates": [
+        "2040041312:34:56",
+        "2040041412:34:56"
+      ],
+      "distribution_version": "7.00",
+      "input": {
+        "base": "2040-04-13 12:34:56",
+        "end": "2040-04-15 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "result_mode": "list occurrences",
+        "start": "2040-04-13 12:34:56"
+      },
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "profile": "dm5",
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+      ],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "functional-dm6-endpoint",
+      "configuration_return": "",
+      "dates": [
+        "2040041312:34:56",
+        "2040041412:34:56",
+        "2040041512:34:56"
+      ],
+      "distribution_version": "7.00",
+      "input": {
+        "base": "2040-04-13 12:34:56",
+        "end": "2040-04-15 12:34:56",
+        "frequency": "0:0:0:1:0:0:0",
+        "result_mode": "list occurrences",
+        "start": "2040-04-13 12:34:56"
+      },
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "profile": "dm6",
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    }
+  ]
+}

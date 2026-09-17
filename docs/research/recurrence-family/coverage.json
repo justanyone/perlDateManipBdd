@@ -1,0 +1,467 @@
+{
+  "schema_version": 1,
+  "status": "draft mapping; observations are repeatable but not approved portable expectations",
+  "feature_files": [
+    "spec/drafts/recurrence/lifecycle.feature",
+    "spec/drafts/recurrence/modifier-families.feature",
+    "spec/drafts/recurrence/enumeration-and-compatibility.feature"
+  ],
+  "reference_records": [
+    "docs/research/recurrence-family/observations.json",
+    "docs/research/observations/recurrence-ambiguities.json"
+  ],
+  "cases": [
+    {
+      "case_id": "RECUR-CREATE-EMPTY",
+      "contracts": [
+        "recur.create"
+      ],
+      "partitions": [
+        "recur.create.01"
+      ],
+      "reference_case": "create-and-empty-read"
+    },
+    {
+      "case_id": "RECUR-CREATE-DERIVED",
+      "contracts": [
+        "recur.create"
+      ],
+      "partitions": [
+        "recur.create.02",
+        "recur.create.04"
+      ],
+      "reference_case": "create-from-date-context"
+    },
+    {
+      "case_id": "RECUR-PARSE-RECOVER",
+      "contracts": [
+        "recur.parse",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.parse.02",
+        "recur.parse.08",
+        "recur.parse.09",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "parse-serialized-and-recovery"
+    },
+    {
+      "case_id": "RECUR-FIELD-RESET",
+      "contracts": [
+        "recur.set-frequency",
+        "recur.set-start",
+        "recur.set-end",
+        "recur.set-base-date",
+        "recur.set-modifiers"
+      ],
+      "partitions": [
+        "recur.set-frequency.01",
+        "recur.set-frequency.03",
+        "recur.set-start.01",
+        "recur.set-end.01",
+        "recur.set-base-date.01",
+        "recur.set-modifiers.01"
+      ],
+      "reference_case": "field-read-replace"
+    },
+    {
+      "case_id": "RECUR-MOD-PD",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-pd"
+    },
+    {
+      "case_id": "RECUR-MOD-PT",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-pt"
+    },
+    {
+      "case_id": "RECUR-MOD-ND",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-nd"
+    },
+    {
+      "case_id": "RECUR-MOD-NT",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-nt"
+    },
+    {
+      "case_id": "RECUR-MOD-WD",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-wd"
+    },
+    {
+      "case_id": "RECUR-MOD-FD",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-fd"
+    },
+    {
+      "case_id": "RECUR-MOD-BD",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-bd"
+    },
+    {
+      "case_id": "RECUR-MOD-FW",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-fw"
+    },
+    {
+      "case_id": "RECUR-MOD-BW",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-bw"
+    },
+    {
+      "case_id": "RECUR-MOD-CWD",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-cwd"
+    },
+    {
+      "case_id": "RECUR-MOD-CWN",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-cwn"
+    },
+    {
+      "case_id": "RECUR-MOD-CWP",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-cwp"
+    },
+    {
+      "case_id": "RECUR-MOD-NWD",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-nwd"
+    },
+    {
+      "case_id": "RECUR-MOD-PWD",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-pwd"
+    },
+    {
+      "case_id": "RECUR-MOD-DWD",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-dwd"
+    },
+    {
+      "case_id": "RECUR-MOD-IBD",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-ibd"
+    },
+    {
+      "case_id": "RECUR-MOD-NBD",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-nbd"
+    },
+    {
+      "case_id": "RECUR-MOD-IW",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-iw"
+    },
+    {
+      "case_id": "RECUR-MOD-NW",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.03"
+      ],
+      "reference_case": "modifier-nw"
+    },
+    {
+      "case_id": "RECUR-MOD-EASTER",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.02",
+        "recur.occurrence-at-index.08"
+      ],
+      "reference_case": "modifier-easter"
+    },
+    {
+      "case_id": "RECUR-MOD-CARRIER-UPPERCASE",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.03",
+        "recur.set-modifiers.04",
+        "recur.set-modifiers.08",
+        "recur.occurrence-at-index.10"
+      ],
+      "reference_case": "modifier-uppercase-string; modifier-uppercase-list",
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "RECUR-MOD-CLEARS-ANCHOR",
+      "contracts": [
+        "recur.set-modifiers",
+        "recur.set-base-date",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.set-modifiers.09",
+        "recur.set-base-date.06",
+        "recur.occurrence-at-index.06"
+      ],
+      "reference_case": "modifier-clears-anchor",
+      "classification": "compatibility/disputed"
+    },
+    {
+      "case_id": "RECUR-NTH-MISSING",
+      "contracts": [
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.occurrence-at-index.01",
+        "recur.occurrence-at-index.03"
+      ],
+      "reference_case": "nth-missing-and-indexes"
+    },
+    {
+      "case_id": "RECUR-NAV-SKIP",
+      "contracts": [
+        "recur.next-occurrence",
+        "recur.previous-occurrence"
+      ],
+      "partitions": [
+        "recur.next-occurrence.03",
+        "recur.next-occurrence.04",
+        "recur.previous-occurrence.03",
+        "recur.previous-occurrence.04"
+      ],
+      "reference_case": "navigation-and-bounds"
+    },
+    {
+      "case_id": "RECUR-DATES-TEMPORARY",
+      "contracts": [
+        "recur.list-occurrences"
+      ],
+      "partitions": [
+        "recur.list-occurrences.01",
+        "recur.list-occurrences.04",
+        "recur.list-occurrences.05"
+      ],
+      "reference_case": "dates-temporary-range-and-empty-filter"
+    },
+    {
+      "case_id": "RECUR-DATES-EMPTY",
+      "contracts": [
+        "recur.list-occurrences",
+        "recur.set-modifiers"
+      ],
+      "partitions": [
+        "recur.list-occurrences.06",
+        "recur.set-modifiers.02"
+      ],
+      "reference_case": "dates-temporary-range-and-empty-filter"
+    },
+    {
+      "case_id": "RECUR-FUNC-DM5-ENDPOINT",
+      "contracts": [
+        "recur.parse-and-enumerate"
+      ],
+      "partitions": [
+        "recur.parse-and-enumerate.06"
+      ],
+      "reference_case": "functional-dm5-endpoint",
+      "profile": "dm5-compatibility"
+    },
+    {
+      "case_id": "RECUR-FUNC-DM6-ENDPOINT",
+      "contracts": [
+        "recur.parse-and-enumerate"
+      ],
+      "partitions": [
+        "recur.parse-and-enumerate.06"
+      ],
+      "reference_case": "functional-dm6-endpoint",
+      "profile": "dm6-reference"
+    },
+    {
+      "case_id": "RECUR-FUNC-DM5-DESCRIPTION",
+      "contracts": [
+        "recur.parse-and-enumerate"
+      ],
+      "partitions": [
+        "recur.parse-and-enumerate.01"
+      ],
+      "reference_case": "functional-dm5-description",
+      "profile": "dm5-compatibility"
+    },
+    {
+      "case_id": "RECUR-FUNC-DM6-DESCRIPTION",
+      "contracts": [
+        "recur.parse-and-enumerate"
+      ],
+      "partitions": [
+        "recur.parse-and-enumerate.01"
+      ],
+      "reference_case": "functional-dm6-description",
+      "profile": "dm6-reference"
+    },
+    {
+      "case_id": "RECUR-PARSE-TEXT-SECOND-ARGUMENT",
+      "contracts": [
+        "recur.parse",
+        "recur.occurrence-at-index"
+      ],
+      "partitions": [
+        "recur.parse.03",
+        "recur.parse.06",
+        "recur.parse.08",
+        "recur.occurrence-at-index.06"
+      ],
+      "reference_case": "anchor-positional-text",
+      "classification": "compatibility/disputed"
+    }
+  ],
+  "counts": {
+    "feature_case_ids": 35,
+    "new_repeatable_reference_cases": 31,
+    "new_modifier_family_cases": 20,
+    "public_operation_ids_observed": 12,
+    "approved_cases": 0,
+    "disputed_compatibility_cases": 3
+  },
+  "partition_link_semantics": "Links identify touched obligations, not complete discharge of their domains.",
+  "coordinator_review": {
+    "status": "draft; targeted authoring corrections reviewed; complete semantic and partition review pending",
+    "corrections": [
+      "Source date value is observed before and after child creation; unrelated recurrence getter removed.",
+      "Recovery now uses concrete serialized input and asserts cleared error and indexed event.",
+      "Frequency replacement retains before and after state.",
+      "Modifier setup order and fresh carrier cases match probes.",
+      "Navigation results moved into Then; anchor and lower endpoint explicit.",
+      "Text anchor is first optional argument, second argument overall."
+    ]
+  }
+}
