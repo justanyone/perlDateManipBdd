@@ -5374,8 +5374,8 @@
     "docs/research/language-family/cases.json": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
     "local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm": "c31d2bf42f317bb811fa5e838778d12b0e5ff8dd38b012114fe9fa4471845c2e",
     "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm": "c181a8d908efbc2c18cc0a59e10e90628161dc3acf811c9c0292985280953d85",
-    "tools/probes/language-family/probe.pl": "3036d40f7858c8154f9ff2bd5555f4193a3bc7a6065eba1ae3015dc90d2b7f8a",
-    "tools/probes/language-family/run-corpus.py": "c7fdd9a6dd60f8e34847a3511205ae0cc759144877797bb1a13dc131affc060f"
+    "tools/probes/language-family/probe.pl": "d608f1718306e786d1015e69bc4cfc32479a4f67b97a3329d716678b9facdbdc",
+    "tools/probes/language-family/run-corpus.py": "31b0a7bb927813f33f426b2cee48b3b495c3ecc5742bc00675b34a1416d2044a"
   },
   "status": "research evidence; no expected value is approved",
   "timeout_seconds": 15

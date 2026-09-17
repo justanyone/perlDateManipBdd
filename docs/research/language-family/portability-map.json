@@ -1,0 +1,1719 @@
+{
+  "schema_version": 1,
+  "status": "reviewed portable-profile and excluded Perl-binding map; observed compatibility results remain unapproved",
+  "portable_profiles": [
+    {
+      "id": "current-language-profile",
+      "source_profile": "dm6",
+      "reference": "Date-Manip 7.00 object backend",
+      "feature": "canonical-dm6.feature"
+    },
+    {
+      "id": "legacy-language-profile",
+      "source_profile": "dm5",
+      "reference": "Date::Manip::DM5 5.66 compatibility backend in Date-Manip 7.00",
+      "feature": "dm5-comparisons.feature"
+    }
+  ],
+  "case_mappings": [
+    {
+      "case_id": "LANG-DM6-ASCII-catalan",
+      "source_observation_case_id": "LANG-DM6-ASCII-catalan",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Forced ASCII uses the selected ASCII phrase with its observed result",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-catalan",
+      "source_observation_case_id": "LANG-DM6-UTF8-catalan",
+      "feature": "canonical-dm6.feature",
+      "scenario": "A localized leap date, its weekday, tomorrow, and localized names agree",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-ASCII-danish",
+      "source_observation_case_id": "LANG-DM6-ASCII-danish",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Forced ASCII uses the selected ASCII phrase with its observed result",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-danish",
+      "source_observation_case_id": "LANG-DM6-UTF8-danish",
+      "feature": "canonical-dm6.feature",
+      "scenario": "A localized leap date, its weekday, tomorrow, and localized names agree",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-ASCII-dutch",
+      "source_observation_case_id": "LANG-DM6-ASCII-dutch",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Forced ASCII uses the selected ASCII phrase with its observed result",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-dutch",
+      "source_observation_case_id": "LANG-DM6-UTF8-dutch",
+      "feature": "canonical-dm6.feature",
+      "scenario": "A localized leap date, its weekday, tomorrow, and localized names agree",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-ASCII-english",
+      "source_observation_case_id": "LANG-DM6-ASCII-english",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Forced ASCII uses the selected ASCII phrase with its observed result",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-english",
+      "source_observation_case_id": "LANG-DM6-UTF8-english",
+      "feature": "canonical-dm6.feature",
+      "scenario": "A localized leap date, its weekday, tomorrow, and localized names agree",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-ASCII-finnish",
+      "source_observation_case_id": "LANG-DM6-ASCII-finnish",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Forced ASCII uses the selected ASCII phrase with its observed result",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-finnish",
+      "source_observation_case_id": "LANG-DM6-UTF8-finnish",
+      "feature": "canonical-dm6.feature",
+      "scenario": "A localized leap date, its weekday, tomorrow, and localized names agree",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-ASCII-french",
+      "source_observation_case_id": "LANG-DM6-ASCII-french",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Forced ASCII uses the selected ASCII phrase with its observed result",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-french",
+      "source_observation_case_id": "LANG-DM6-UTF8-french",
+      "feature": "canonical-dm6.feature",
+      "scenario": "A localized leap date, its weekday, tomorrow, and localized names agree",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-ASCII-german",
+      "source_observation_case_id": "LANG-DM6-ASCII-german",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Forced ASCII uses the selected ASCII phrase with its observed result",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-german",
+      "source_observation_case_id": "LANG-DM6-UTF8-german",
+      "feature": "canonical-dm6.feature",
+      "scenario": "A localized leap date, its weekday, tomorrow, and localized names agree",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-german-PREPROCESS",
+      "source_observation_case_id": "LANG-DM6-UTF8-german",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Declared language preprocessing accepts one concrete phrase",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse special preprocessing phrase"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-ASCII-italian",
+      "source_observation_case_id": "LANG-DM6-ASCII-italian",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Forced ASCII uses the selected ASCII phrase with its observed result",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-italian",
+      "source_observation_case_id": "LANG-DM6-UTF8-italian",
+      "feature": "canonical-dm6.feature",
+      "scenario": "A localized leap date, its weekday, tomorrow, and localized names agree",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-ASCII-norwegian",
+      "source_observation_case_id": "LANG-DM6-ASCII-norwegian",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Forced ASCII uses the selected ASCII phrase with its observed result",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-norwegian",
+      "source_observation_case_id": "LANG-DM6-UTF8-norwegian",
+      "feature": "canonical-dm6.feature",
+      "scenario": "A localized leap date, its weekday, tomorrow, and localized names agree",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-norwegian-PREPROCESS",
+      "source_observation_case_id": "LANG-DM6-UTF8-norwegian",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Declared language preprocessing accepts one concrete phrase",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse special preprocessing phrase"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-ASCII-polish",
+      "source_observation_case_id": "LANG-DM6-ASCII-polish",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Forced ASCII uses the selected ASCII phrase with its observed result",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-polish",
+      "source_observation_case_id": "LANG-DM6-UTF8-polish",
+      "feature": "canonical-dm6.feature",
+      "scenario": "A localized leap date, its weekday, tomorrow, and localized names agree",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-ASCII-portuguese",
+      "source_observation_case_id": "LANG-DM6-ASCII-portuguese",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Forced ASCII uses the selected ASCII phrase with its observed result",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-portuguese",
+      "source_observation_case_id": "LANG-DM6-UTF8-portuguese",
+      "feature": "canonical-dm6.feature",
+      "scenario": "A localized leap date, its weekday, tomorrow, and localized names agree",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-ASCII-romanian",
+      "source_observation_case_id": "LANG-DM6-ASCII-romanian",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Forced ASCII uses the selected ASCII phrase with its observed result",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-romanian",
+      "source_observation_case_id": "LANG-DM6-UTF8-romanian",
+      "feature": "canonical-dm6.feature",
+      "scenario": "A localized leap date, its weekday, tomorrow, and localized names agree",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-ASCII-russian",
+      "source_observation_case_id": "LANG-DM6-ASCII-russian",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Forced ASCII uses the selected ASCII phrase with its observed result",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-russian",
+      "source_observation_case_id": "LANG-DM6-UTF8-russian",
+      "feature": "canonical-dm6.feature",
+      "scenario": "A localized leap date, its weekday, tomorrow, and localized names agree",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-russian-PREPROCESS",
+      "source_observation_case_id": "LANG-DM6-UTF8-russian",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Declared language preprocessing accepts one concrete phrase",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse special preprocessing phrase"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-ASCII-spanish",
+      "source_observation_case_id": "LANG-DM6-ASCII-spanish",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Forced ASCII uses the selected ASCII phrase with its observed result",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-spanish",
+      "source_observation_case_id": "LANG-DM6-UTF8-spanish",
+      "feature": "canonical-dm6.feature",
+      "scenario": "A localized leap date, its weekday, tomorrow, and localized names agree",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-ASCII-swedish",
+      "source_observation_case_id": "LANG-DM6-ASCII-swedish",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Forced ASCII uses the selected ASCII phrase with its observed result",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-swedish",
+      "source_observation_case_id": "LANG-DM6-UTF8-swedish",
+      "feature": "canonical-dm6.feature",
+      "scenario": "A localized leap date, its weekday, tomorrow, and localized names agree",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-ASCII-turkish",
+      "source_observation_case_id": "LANG-DM6-ASCII-turkish",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Forced ASCII uses the selected ASCII phrase with its observed result",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-turkish",
+      "source_observation_case_id": "LANG-DM6-UTF8-turkish",
+      "feature": "canonical-dm6.feature",
+      "scenario": "A localized leap date, its weekday, tomorrow, and localized names agree",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse full date",
+        "configure fresh profile and parse weekday-bearing date",
+        "configure fresh profile and parse relative date",
+        "configure fresh profile, parse render source, and render %A|%B"
+      ]
+    },
+    {
+      "case_id": "LANG-DM6-UTF8-turkish-PREPROCESS",
+      "source_observation_case_id": "LANG-DM6-UTF8-turkish",
+      "feature": "canonical-dm6.feature",
+      "scenario": "Declared language preprocessing accepts one concrete phrase",
+      "portable_profile": "current-language-profile",
+      "contract_ids": [
+        "date.parse-text",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "configure fresh profile and parse special preprocessing phrase"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-DEFAULT-catalan",
+      "source_observation_case_id": "LANG-DM5-LEGACY-DEFAULT-catalan",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "A legacy profile that cannot initialize performs no dependent operation",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-catalan",
+      "source_observation_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-catalan",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "A legacy profile that cannot initialize performs no dependent operation",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-DEFAULT-danish",
+      "source_observation_case_id": "LANG-DM5-LEGACY-DEFAULT-danish",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-danish",
+      "source_observation_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-danish",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-DEFAULT-dutch",
+      "source_observation_case_id": "LANG-DM5-LEGACY-DEFAULT-dutch",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-dutch",
+      "source_observation_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-dutch",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-DEFAULT-english",
+      "source_observation_case_id": "LANG-DM5-LEGACY-DEFAULT-english",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-english",
+      "source_observation_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-english",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-DEFAULT-finnish",
+      "source_observation_case_id": "LANG-DM5-LEGACY-DEFAULT-finnish",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "A legacy profile that cannot initialize performs no dependent operation",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-finnish",
+      "source_observation_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-finnish",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "A legacy profile that cannot initialize performs no dependent operation",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-DEFAULT-french",
+      "source_observation_case_id": "LANG-DM5-LEGACY-DEFAULT-french",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-french",
+      "source_observation_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-french",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-DEFAULT-german",
+      "source_observation_case_id": "LANG-DM5-LEGACY-DEFAULT-german",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile also executes a special preprocessing request",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse special preprocessing input",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-german",
+      "source_observation_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-german",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile also executes a special preprocessing request",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse special preprocessing input",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-DEFAULT-italian",
+      "source_observation_case_id": "LANG-DM5-LEGACY-DEFAULT-italian",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-italian",
+      "source_observation_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-italian",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-DEFAULT-norwegian",
+      "source_observation_case_id": "LANG-DM5-LEGACY-DEFAULT-norwegian",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "A legacy profile that cannot initialize performs no dependent operation",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-norwegian",
+      "source_observation_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-norwegian",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "A legacy profile that cannot initialize performs no dependent operation",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-DEFAULT-polish",
+      "source_observation_case_id": "LANG-DM5-LEGACY-DEFAULT-polish",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-polish",
+      "source_observation_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-polish",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-DEFAULT-portuguese",
+      "source_observation_case_id": "LANG-DM5-LEGACY-DEFAULT-portuguese",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-portuguese",
+      "source_observation_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-portuguese",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-DEFAULT-romanian",
+      "source_observation_case_id": "LANG-DM5-LEGACY-DEFAULT-romanian",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-romanian",
+      "source_observation_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-romanian",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-DEFAULT-russian",
+      "source_observation_case_id": "LANG-DM5-LEGACY-DEFAULT-russian",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile also executes a special preprocessing request",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse special preprocessing input",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-russian",
+      "source_observation_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-russian",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile also executes a special preprocessing request",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse special preprocessing input",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-DEFAULT-spanish",
+      "source_observation_case_id": "LANG-DM5-LEGACY-DEFAULT-spanish",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-spanish",
+      "source_observation_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-spanish",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-DEFAULT-swedish",
+      "source_observation_case_id": "LANG-DM5-LEGACY-DEFAULT-swedish",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-swedish",
+      "source_observation_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-swedish",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile renders and parses ordinary inputs",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-DEFAULT-turkish",
+      "source_observation_case_id": "LANG-DM5-LEGACY-DEFAULT-turkish",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile also executes a special preprocessing request",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse special preprocessing input",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    },
+    {
+      "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-turkish",
+      "source_observation_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-turkish",
+      "feature": "dm5-comparisons.feature",
+      "scenario": "An initialized legacy profile also executes a special preprocessing request",
+      "portable_profile": "legacy-language-profile",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ],
+      "executed_sequence": [
+        "initialize legacy language profile",
+        "render %A|%B",
+        "parse special preprocessing input",
+        "parse full date",
+        "parse weekday-bearing date",
+        "parse relative date"
+      ]
+    }
+  ],
+  "binding_feature": "perl-binding.feature",
+  "binding_assertions": [
+    {
+      "assertion_id": "LANG-BIND-SETUP-EXCEPTIONS",
+      "scenario": "Perl preserves each native exception from failed legacy initialization",
+      "source_case_ids": [
+        "LANG-DM5-LEGACY-DEFAULT-catalan",
+        "LANG-DM5-LEGACY-INTERNATIONAL-catalan",
+        "LANG-DM5-LEGACY-DEFAULT-finnish",
+        "LANG-DM5-LEGACY-INTERNATIONAL-finnish",
+        "LANG-DM5-LEGACY-DEFAULT-norwegian",
+        "LANG-DM5-LEGACY-INTERNATIONAL-norwegian"
+      ]
+    },
+    {
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "scenario": "Perl preserves the complete warning count and class census",
+      "source_case_ids": [
+        "LANG-DM5-LEGACY-DEFAULT-danish",
+        "LANG-DM5-LEGACY-INTERNATIONAL-danish",
+        "LANG-DM5-LEGACY-DEFAULT-dutch",
+        "LANG-DM5-LEGACY-INTERNATIONAL-dutch",
+        "LANG-DM5-LEGACY-DEFAULT-english",
+        "LANG-DM5-LEGACY-INTERNATIONAL-english",
+        "LANG-DM5-LEGACY-DEFAULT-french",
+        "LANG-DM5-LEGACY-INTERNATIONAL-french",
+        "LANG-DM5-LEGACY-DEFAULT-german",
+        "LANG-DM5-LEGACY-INTERNATIONAL-german",
+        "LANG-DM5-LEGACY-DEFAULT-italian",
+        "LANG-DM5-LEGACY-INTERNATIONAL-italian",
+        "LANG-DM5-LEGACY-DEFAULT-polish",
+        "LANG-DM5-LEGACY-INTERNATIONAL-polish",
+        "LANG-DM5-LEGACY-DEFAULT-portuguese",
+        "LANG-DM5-LEGACY-INTERNATIONAL-portuguese",
+        "LANG-DM5-LEGACY-DEFAULT-romanian",
+        "LANG-DM5-LEGACY-INTERNATIONAL-romanian",
+        "LANG-DM5-LEGACY-DEFAULT-russian",
+        "LANG-DM5-LEGACY-INTERNATIONAL-russian",
+        "LANG-DM5-LEGACY-DEFAULT-spanish",
+        "LANG-DM5-LEGACY-INTERNATIONAL-spanish",
+        "LANG-DM5-LEGACY-DEFAULT-swedish",
+        "LANG-DM5-LEGACY-INTERNATIONAL-swedish",
+        "LANG-DM5-LEGACY-DEFAULT-turkish",
+        "LANG-DM5-LEGACY-INTERNATIONAL-turkish",
+        "LANG-DM5-LEGACY-DEFAULT-catalan",
+        "LANG-DM5-LEGACY-INTERNATIONAL-catalan",
+        "LANG-DM5-LEGACY-DEFAULT-finnish",
+        "LANG-DM5-LEGACY-INTERNATIONAL-finnish",
+        "LANG-DM5-LEGACY-DEFAULT-norwegian",
+        "LANG-DM5-LEGACY-INTERNATIONAL-norwegian"
+      ]
+    },
+    {
+      "assertion_id": "LANG-BIND-CALL-SEQUENCE",
+      "scenario": "Perl calls the legacy backend only after its native initializer succeeds",
+      "source_case_ids": [
+        "LANG-DM5-LEGACY-DEFAULT-danish",
+        "LANG-DM5-LEGACY-INTERNATIONAL-danish",
+        "LANG-DM5-LEGACY-DEFAULT-dutch",
+        "LANG-DM5-LEGACY-INTERNATIONAL-dutch",
+        "LANG-DM5-LEGACY-DEFAULT-english",
+        "LANG-DM5-LEGACY-INTERNATIONAL-english",
+        "LANG-DM5-LEGACY-DEFAULT-french",
+        "LANG-DM5-LEGACY-INTERNATIONAL-french",
+        "LANG-DM5-LEGACY-DEFAULT-german",
+        "LANG-DM5-LEGACY-INTERNATIONAL-german",
+        "LANG-DM5-LEGACY-DEFAULT-italian",
+        "LANG-DM5-LEGACY-INTERNATIONAL-italian",
+        "LANG-DM5-LEGACY-DEFAULT-polish",
+        "LANG-DM5-LEGACY-INTERNATIONAL-polish",
+        "LANG-DM5-LEGACY-DEFAULT-portuguese",
+        "LANG-DM5-LEGACY-INTERNATIONAL-portuguese",
+        "LANG-DM5-LEGACY-DEFAULT-romanian",
+        "LANG-DM5-LEGACY-INTERNATIONAL-romanian",
+        "LANG-DM5-LEGACY-DEFAULT-russian",
+        "LANG-DM5-LEGACY-INTERNATIONAL-russian",
+        "LANG-DM5-LEGACY-DEFAULT-spanish",
+        "LANG-DM5-LEGACY-INTERNATIONAL-spanish",
+        "LANG-DM5-LEGACY-DEFAULT-swedish",
+        "LANG-DM5-LEGACY-INTERNATIONAL-swedish",
+        "LANG-DM5-LEGACY-DEFAULT-turkish",
+        "LANG-DM5-LEGACY-INTERNATIONAL-turkish",
+        "LANG-DM5-LEGACY-DEFAULT-catalan",
+        "LANG-DM5-LEGACY-INTERNATIONAL-catalan",
+        "LANG-DM5-LEGACY-DEFAULT-finnish",
+        "LANG-DM5-LEGACY-INTERNATIONAL-finnish",
+        "LANG-DM5-LEGACY-DEFAULT-norwegian",
+        "LANG-DM5-LEGACY-INTERNATIONAL-norwegian"
+      ]
+    }
+  ],
+  "binding_case_mappings": [
+    {
+      "binding_case_id": "LANG-BIND-EXCEPTION-LEGACY-DEFAULT-catalan",
+      "assertion_id": "LANG-BIND-SETUP-EXCEPTIONS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-catalan",
+      "contract_ids": [
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-EXCEPTION-LEGACY-INTERNATIONAL-catalan",
+      "assertion_id": "LANG-BIND-SETUP-EXCEPTIONS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-catalan",
+      "contract_ids": [
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-EXCEPTION-LEGACY-DEFAULT-finnish",
+      "assertion_id": "LANG-BIND-SETUP-EXCEPTIONS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-finnish",
+      "contract_ids": [
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-EXCEPTION-LEGACY-INTERNATIONAL-finnish",
+      "assertion_id": "LANG-BIND-SETUP-EXCEPTIONS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-finnish",
+      "contract_ids": [
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-EXCEPTION-LEGACY-DEFAULT-norwegian",
+      "assertion_id": "LANG-BIND-SETUP-EXCEPTIONS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-norwegian",
+      "contract_ids": [
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-EXCEPTION-LEGACY-INTERNATIONAL-norwegian",
+      "assertion_id": "LANG-BIND-SETUP-EXCEPTIONS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-norwegian",
+      "contract_ids": [
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-DEFAULT-danish",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-danish",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-INTERNATIONAL-danish",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-danish",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-DEFAULT-dutch",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-dutch",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-INTERNATIONAL-dutch",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-dutch",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-DEFAULT-english",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-english",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-INTERNATIONAL-english",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-english",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-DEFAULT-french",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-french",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-INTERNATIONAL-french",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-french",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-DEFAULT-german",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-german",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-INTERNATIONAL-german",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-german",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-DEFAULT-italian",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-italian",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-INTERNATIONAL-italian",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-italian",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-DEFAULT-polish",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-polish",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-INTERNATIONAL-polish",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-polish",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-DEFAULT-portuguese",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-portuguese",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-INTERNATIONAL-portuguese",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-portuguese",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-DEFAULT-romanian",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-romanian",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-INTERNATIONAL-romanian",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-romanian",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-DEFAULT-russian",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-russian",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-INTERNATIONAL-russian",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-russian",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-DEFAULT-spanish",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-spanish",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-INTERNATIONAL-spanish",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-spanish",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-DEFAULT-swedish",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-swedish",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-INTERNATIONAL-swedish",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-swedish",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-DEFAULT-turkish",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-turkish",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-INTERNATIONAL-turkish",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-turkish",
+      "contract_ids": [
+        "date.parse-leading-tokens",
+        "date.render-pattern",
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-DEFAULT-catalan",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-catalan",
+      "contract_ids": [
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-INTERNATIONAL-catalan",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-catalan",
+      "contract_ids": [
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-DEFAULT-finnish",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-finnish",
+      "contract_ids": [
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-INTERNATIONAL-finnish",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-finnish",
+      "contract_ids": [
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-DEFAULT-norwegian",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-DEFAULT-norwegian",
+      "contract_ids": [
+        "config.apply-settings"
+      ]
+    },
+    {
+      "binding_case_id": "LANG-BIND-WARNING-LEGACY-INTERNATIONAL-norwegian",
+      "assertion_id": "LANG-BIND-WARNING-CENSUS",
+      "source_case_id": "LANG-DM5-LEGACY-INTERNATIONAL-norwegian",
+      "contract_ids": [
+        "config.apply-settings"
+      ]
+    }
+  ],
+  "source_bindings": [
+    {
+      "portable_profile": "current-language-profile",
+      "module": "Date::Manip::Date",
+      "configuration_call": "Date::Manip::Date->config",
+      "parse_call": "Date::Manip::Date->parse(text)",
+      "render_call": "Date::Manip::Date->printf(pattern)",
+      "return_carriers": "numeric parse status, serialized date value, rendered text, and error text",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-text",
+        "date.render-pattern"
+      ]
+    },
+    {
+      "portable_profile": "legacy-language-profile",
+      "module": "Date::Manip::DM5",
+      "configuration_call": "Date::Manip::DM5::Date_Init(settings)",
+      "parse_call": "Date::Manip::DM5::ParseDate(text)",
+      "render_call": "Date::Manip::DM5::UnixDate(date, pattern)",
+      "return_carriers": "native scalar text or empty text, warnings, and caught exceptions",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "date.render-pattern"
+      ],
+      "configuration_return_capture": "completed Date_Init calls record status (including native undefined); interrupted calls record call_completed false and omit status"
+    }
+  ],
+  "evidence": {
+    "fixture": "docs/research/language-family/cases.json",
+    "current_observations": "docs/research/language-family/dm6-observations.json",
+    "legacy_observations": "docs/research/language-family/dm5-observations.json"
+  },
+  "mapping_gaps": [],
+  "interrupted_call_policy": "A thrown binding call has no return value; an unassigned capture variable is never mapped as an absent result."
+}

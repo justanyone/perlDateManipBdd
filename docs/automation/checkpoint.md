@@ -944,3 +944,20 @@ coverage unchanged. Reviewer and70 expanded parser cases pass without warnings.
 partial_parsing now owns new leap-year public behavior batch. Configuration worker
 is clarifying kind-query predicate order/service availability; language worker
 repairs failed initialization return semantics. All final gates remain open.
+
+## Language portability and setup completion integration
+
+Root accepted68 portable rows from64 runtime observations plus38 excluded binding
+rows;45 selector rows remain checked. Legacy cases split20 ordinary/6 special-input/
+6 failed-initialization paths; native warnings/exceptions separated, successful
+blank errors typed, original disputed strings preserved. Six thrown initializers
+now omit status with call_completed false;26 completed initializers retain null
+status with call_completed true. PATH fixed. Root independent replay sessions36663
+and23076 both terminal exit0; /tmp/languages-dm5-root-final.json and dm6 counterpart
+byte-match final evidence. All old/new data equal after only restoring historical
+placeholders/removing completion flags and ignoring two tool hashes. Reviewer and
+real parser36+32+3+45 pass without warnings. Historical coverage unchanged.
+
+pattern_repair now owns new calendar month/year-length behavior batch; partial_parsing
+leap-year batch; week_edges_finish final configuration query-order repair. All final
+specification/harness/coverage gates remain open.

@@ -181,7 +181,7 @@ sub probe_dm5 {
     return {
       backend_version => $backend_version,
       reference_assertions => { distribution_version => $Date::Manip::DM5::VERSION, backend_version => $backend_version, timezone_data => 'not exposed by DM5' },
-      setup => { requested => \@settings, status => $init_status, exception => $init_exception },
+      setup => { requested => \@settings, call_completed => JSON::PP::false, exception => $init_exception },
       dependent_operations_executed => JSON::PP::false,
       full_date => undef,
       matching_weekday => undef,
@@ -212,7 +212,7 @@ sub probe_dm5 {
   return {
     backend_version => $backend_version,
     reference_assertions => { distribution_version => $Date::Manip::DM5::VERSION, backend_version => $backend_version, timezone_data => 'not exposed by DM5' },
-    setup => { requested => \@settings, status => $init_status, exception => $init_exception },
+    setup => { requested => \@settings, call_completed => JSON::PP::true, status => $init_status, exception => $init_exception },
     dependent_operations_executed => JSON::PP::true,
     full_date => $parse->($inputs->{full_date}),
     matching_weekday => $parse->($inputs->{weekday_date}),

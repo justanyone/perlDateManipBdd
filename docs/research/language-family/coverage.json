@@ -8,7 +8,13 @@
     "dm6_rows": 32,
     "dm5_rows": 32,
     "modes_per_profile": 2,
-    "repetitions_per_row": 2
+    "repetitions_per_row": 2,
+    "portable_runtime_rows": 68,
+    "portable_current_rows": 36,
+    "portable_legacy_rows": 32,
+    "legacy_initialized_ordinary_rows": 20,
+    "legacy_initialized_special_rows": 6,
+    "legacy_initialization_failure_rows": 6
   },
   "selection_strings": {
     "inventory": "docs/research/language-family/selectors.tsv",
@@ -75,7 +81,20 @@
   "draft_features": [
     "spec/drafts/languages/canonical-dm6.feature",
     "spec/drafts/languages/dm5-comparisons.feature",
+    "spec/drafts/languages/perl-binding.feature",
     "spec/drafts/languages/selectors.feature"
   ],
-  "remaining_boundary_source": "docs/research/language-family/README.md"
+  "remaining_boundary_source": "docs/research/language-family/README.md",
+  "portable_profiles": {
+    "current-language-profile": "source binding dm6",
+    "legacy-language-profile": "source binding dm5"
+  },
+  "portability_map": "docs/research/language-family/portability-map.json",
+  "binding_accounting": {
+    "feature": "spec/drafts/languages/perl-binding.feature",
+    "warning_rows": 32,
+    "exception_rows": 6,
+    "binding_assertions": 3,
+    "excluded_from_portable_handoff": true
+  }
 }
