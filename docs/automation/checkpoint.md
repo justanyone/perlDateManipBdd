@@ -469,3 +469,12 @@ fixed-offset-family work targeting408 generated offset routes; pattern_repair
 owns NEW zone-transition-boundaries work. Returned52 parsing-edge cases and
 denominator audit still await integration. No family completeness or BDD pass
 is claimed.
+
+## Generated-module denominator checkpoint
+
+Integrated representative public loading routes after correcting actual receiver
+error checks and adding result assertions. Fresh run verified9 generated rows
+and plain/instrumented fidelity. TZdata.pod explicitly disclaims public use;
+coordinator accepts existing generation-tool scope exclusion, retaining804raw
+files and803runtime files in accounting. Finite offset/zone/language route plan
+is documented. The whole-runtime coverage denominator is still incomplete.

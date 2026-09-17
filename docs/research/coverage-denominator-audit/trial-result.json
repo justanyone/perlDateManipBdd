@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-09-17",
+  "status": "representative public-route denominator discovery; not final coverage",
+  "archives": {
+    "Date-Manip-7.00.tar.gz": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+    "Devel-Cover-1.52.tar.gz": "9d90b44ab602ca373fa221255708de4d19df86026f4d7110bef608846eed44fb"
+  },
+  "runtime": {
+    "date_manip_version": "7.00",
+    "devel_cover_version": "1.52",
+    "perl_archname": "x86_64-linux-gnu-thread-multi",
+    "environment": {
+      "PATH": "/usr/bin:/bin",
+      "LANG": "C.UTF-8",
+      "LC_ALL": "C.UTF-8",
+      "TZ": "Etc/UTC",
+      "inherited_environment": false,
+      "fresh_working_directory_per_case_and_mode": true
+    }
+  },
+  "hashes": {
+    "tools/coverage-denominator/public_load_trial.pl": "b3a43a3b7fc33aaa0e8f2d4268c8967c357282a4754e5e07750941e89e3abce3",
+    "tools/coverage-denominator/run_public_loading_trial.sh": "67067b25bd1afb14015fb1dfdfd7c27c58f8485f8ba63a62f36eb9073c810c1c",
+    "local/date-manip-7.00/lib/perl5/Date/Manip.pm": "4cd2da318687b9b820244c875efef9f484e690270d649ecf64de65bb1b7640e9",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm": "bc28ca7fc2b3cc57793cd5d3d5f956a48c8438b9738dc045fd9ee7f51d61f469",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/TZdata.pm": "a4749f31fe5acad42b7f6513ed47e0411c6e7753840641a11f6a5ddd945fe8eb",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm": "363adb17d51c28fea9ca66b9716d01ccc193b88c36be24da85323d351f53f6e6",
+    "local/devel-cover-1.52/lib/perl5/x86_64-linux-gnu-thread-multi/Devel/Cover.pm": "ae1600669575616d506b80ddb0ebb061871da0de7e9f40cab8eea6d17564bc5e"
+  },
+  "inventory": {
+    "all_date_manip_pm_files": 804,
+    "core_and_backend": 10,
+    "language_index_and_data": 17,
+    "timezone_runtime_and_zone_data": 368,
+    "timezone_generation_tooling": 1,
+    "offset_data": 408
+  },
+  "fidelity": {
+    "scenarios": [
+      "language-french",
+      "zone-tokyo",
+      "offset-0530"
+    ],
+    "plain_and_instrumented_json_stdout_byte_identical": true,
+    "plain_and_instrumented_process_stderr_byte_identical": true,
+    "all_process_stderr_empty": true
+  },
+  "representative_proof": {
+    "language-french": {
+      "public_route": "Date::Manip::Date->config(Language => 'French') then new_date",
+      "new_generated_module_count": 1,
+      "coverage_row": "Date/Manip/Lang/french.pm statement 9/9 branch 0/0",
+      "observed_result": {
+        "error_after_value": "",
+        "parsed_value": "2040022900:00:00"
+      }
+    },
+    "zone-tokyo": {
+      "public_route": "Date::Manip::TZ->all_periods('Asia/Tokyo', 2040)",
+      "new_generated_module_count": 1,
+      "coverage_row": "Date/Manip/TZ/astoky00.pm statement 9/9 branch 0/0",
+      "observed_result": {
+        "period_count": 1
+      }
+    },
+    "offset-0530": {
+      "public_route": "Date::Manip::Date->new_date with a +05:30 suffix",
+      "new_generated_module_count": 7,
+      "coverage_rows_include": [
+        "Date/Manip/Offset/off108.pm statement 9/9 branch 0/0",
+        "six matching Date/Manip/TZ generated-module rows, each statement 9/9 branch 0/0"
+      ],
+      "observed_result": {
+        "error_after_value": "",
+        "parsed_value": "2040022916:05:09"
+      }
+    }
+  },
+  "hard_case": {
+    "module": "Date/Manip/TZdata.pm",
+    "evidence": "The reconciled API inventory classifies it as excluded timezone-generation tooling. TZdata POD identifies it as internal, while runtime TZ.pm requires Zones.pm and has no reference to TZdata.pm.",
+    "disposition": "Coordinator accepts internal generation-tool scope exclusion from public runtime suite, based on TZdata.pod lines19-21 and public inventory. Retain it explicitly in raw804-file accounting; report runtime803-file scope separately. Do not directly load it to improve coverage."
+  },
+  "coordinator_review": "Fresh plain/instrumented run validated all nine generated-module rows, exact byte fidelity, empty stderr and actual receiver errors. Probe now asserts literal parsed values or nonempty period results. Discovery only; does not prove complete behavioral coverage."
+}
