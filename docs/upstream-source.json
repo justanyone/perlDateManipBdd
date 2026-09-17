@@ -1,0 +1,20 @@
+{
+  "checked_on": "2026-09-17",
+  "repository": "https://github.com/SBECK-github/Date-Manip",
+  "git_revision": "4b9b9d5c802750f0fca04f9168c65d9dc4562d65",
+  "git_version": "7.01",
+  "git_file_count": 1123,
+  "release": {
+    "name": "Date-Manip-7.00",
+    "version": "7.00",
+    "date": "2026-09-01T16:26:04",
+    "download_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+    "license": [
+      "perl_5"
+    ],
+    "author": "SBECK"
+  },
+  "release_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+  "release_file_count": 1123,
+  "note": "Git version is not evidence of a published CPAN release. Check for newer releases before selecting a test baseline."
+}
