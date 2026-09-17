@@ -1080,3 +1080,24 @@ summarizer also needs annotation overlap correction before reuse.
 
 Worker pattern_repair owns docs/research/calendar-gap-priorities.md independent
 branch/domain audit; other workers released prior dirs. Goal remains active.
+
+## Retained broad coverage audit and next independent calendar batches
+
+Root audit-retained.py verifies all965requests, raw hashes/JSON fidelity,965merged
+run identities/runtime, original e73fa20 probes, report/source/module hashes and
+raw numeric database totals.890pairs byte-identical;75only knownDM5 warning eval
+locations. Persisted broad-result.json, broad-locations.json and broad-review.md.
+Original collector failure and unrecoverable process exit codes remain explicit;
+no manufactured successful capture.34loaded770unloaded modules; raw measured
+coverage62.9366%statement/18.6951%branch. No exclusions approved.
+
+Legacy pilot summarizer repaired for annotation overlaps too;14coverage tests pass.
+Independent calendar-gap-priorities audit prioritizes distinct behaviors rather
+than redundant all-date matrices; root removed suggestions that coercion domains
+could be silently excluded. Those require later behavior/scope disposition.
+
+Active workers, each new dirs only: pattern_repair calendar-check-family (check,
+check_time); partial_parsing year-day-conversion-family; week_edges_finish
+nth-weekday-family. Root owns integration/queue. Audit replay58954 terminated exit0
+and byte-compares equal with persisted broad-result.json. No root capture process
+remains. All final gates remain open.

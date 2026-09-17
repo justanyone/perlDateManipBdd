@@ -166,7 +166,12 @@
       "completeness_query_review": "11 isolated receiver setups,132 public complete() queries and36 warnings reviewed with literal expectations. Mutation and other remaining partitions explicitly open.",
       "week_rule_edges_review": "236 isolated public requests independently reproduced: 39 Base calls,17 configuration attempts,180 facade calls;232 portable rows and236 excluded binding rows checked by exact case identity. Remaining domains explicit; no whole-partition completion claim.",
       "calendar_lengths_leap_year_review": "Root independently reproduced 84 leap-year requests (including three 400-year cycles) and 171 month/year-length requests; captures byte-identical. Exact literal reviewers and nine-feature Gherkin parser pass. Remaining domains explicit; drafts only, no BDD execution or completeness claim.",
-      "weekday_review": "190 public requests replay byte-identical; 265 independent Gregorian checks,350 completed calls and8 failures. Exact190 portable/190 binding rows and all14year types verified. Explicit remaining domains; not complete."
+      "weekday_review": "190 public requests replay byte-identical; 265 independent Gregorian checks,350 completed calls and8 failures. Exact190 portable/190 binding rows and all14year types verified. Explicit remaining domains; not complete.",
+      "active_calendar_workers": {
+        "pattern_repair": "calendar-check-family: Base public check/check_time branch cases",
+        "partial_parsing": "year-day-conversion-family: forward/inverse/fractional day-of-year",
+        "week_edges_finish": "nth-weekday-family: ordinal weekday month/year and no-match"
+      }
     },
     {
       "id": "spec-arithmetic-deltas",
@@ -332,7 +337,11 @@
         "docs/research/coverage-corpus/expanded-result.json",
         "docs/research/coverage-corpus/expanded-locations.json",
         "docs/research/behavior-gap-ledger/README.md",
-        "docs/research/behavior-gap-ledger/ledger.json"
+        "docs/research/behavior-gap-ledger/ledger.json",
+        "docs/research/coverage-corpus/broad-review.md",
+        "docs/research/coverage-corpus/broad-result.json",
+        "docs/research/coverage-corpus/broad-locations.json",
+        "tools/coverage-corpus/audit-retained.py"
       ],
       "preparatory_review": "Public-call instrumentation verified for OO, DM6 and DM5 with identical plain/instrumented channels. Seven coverage-summary safeguard tests pass. Only 16 of 804 modules loaded: no whole-library coverage claim. Denominator audit returned and awaits coordinator integration; coverage review remains pending. Representative generated-module routes independently verified; TZdata generation-tool exclusion explicitly reviewed, raw inventory retained. Full runtime denominator and final suite remain incomplete.",
       "active_diagnostic": {
@@ -342,7 +351,8 @@
         "family_count": 15,
         "state": "running; verify process handle in checkpoint before resuming",
         "not_final_suite": true
-      }
+      },
+      "broad_diagnostic": "965 retained request pairs audited after original summary failure; 890byte-equal,75only known DM5 eval locations. Raw measured statements7261/11537,branches1192/6376;34loaded770unloaded. Annotation overlaps independently reconciled with numeric database. Actual BDD coverage and full path review pending."
     },
     {
       "id": "internal-spec-review",

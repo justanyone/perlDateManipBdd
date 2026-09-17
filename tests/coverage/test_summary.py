@@ -52,9 +52,19 @@ class CoverageSummaryTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         row = summary['totals']['statement']
         self.assertEqual(row['raw_percentage'], 90)
-        self.assertEqual(row['tool_effective_percentage'], 100)
+        self.assertEqual(row['tool_reported_percentage'], 100)
         self.assertEqual(row['total'], 10)
         self.assertEqual(row['uncoverable'], 1)
+
+    def test_executed_annotations_are_retained_as_conflicts(self):
+        result, summary = self.summarize({'covered': 125, 'error': 44, 'uncoverable': 2, 'total': 167})
+        self.assertEqual(result.returncode, 0, result.stderr)
+        row = summary['totals']['statement']
+        self.assertEqual(row['execution_annotation_cells'], {
+            'executed_annotated': 2, 'executed_unannotated': 123,
+            'unexecuted_annotated': 0, 'unexecuted_unannotated': 42})
+        self.assertAlmostEqual(row['raw_percentage'], 100 * 125 / 167)
+        self.assertAlmostEqual(row['tool_reported_percentage'], 100 * 123 / 167)
 
     def test_inconsistent_denominator_is_rejected(self):
         result, _ = self.summarize({'covered': 9, 'error': 0, 'uncoverable': 1, 'total': 9})

@@ -91,6 +91,19 @@ die "no target library files were instrumented\n" unless @loaded;
 my @unloaded = grep { !exists $target_summary{$_} } @source_files;
 my %totals = map { $_ => { covered => 0, error => 0, uncoverable => 0, total => 0 } }
   qw(statement branch);
+sub execution_cells {
+  my ($row) = @_;
+  my ($covered, $errors, $annotated, $total) = map { $row->{$_} // 0 } qw(covered error uncoverable total);
+  my $twice = $covered + $errors + $annotated - $total;
+  die "inconsistent coverage denominator\n" if $twice % 2;
+  my $overlap = $twice / 2;
+  my $cells = { executed_annotated => $overlap,
+    executed_unannotated => $covered - $overlap,
+    unexecuted_annotated => $annotated - $overlap,
+    unexecuted_unannotated => $errors - $overlap };
+  die "inconsistent coverage denominator\n" if grep { $_ < 0 } values %$cells;
+  return $cells;
+}
 for my $file (@loaded) {
   for my $criterion (qw(statement branch)) {
     my $row = $target_summary{$file}{$criterion} || {};
@@ -99,17 +112,17 @@ for my $file (@loaded) {
       die "invalid coverage count for $file $criterion $field\n"
         if ref($value) || "$value" !~ /\A[0-9]+\z/;
     }
-    die "inconsistent coverage denominator for $file $criterion\n"
-      unless ($row->{total} // 0) == ($row->{covered} // 0) + ($row->{error} // 0) + ($row->{uncoverable} // 0);
+    execution_cells($row);
     $totals{$criterion}{$_} += $row->{$_} || 0 for qw(covered error uncoverable total);
   }
 }
 for my $criterion (qw(statement branch)) {
   my $row = $totals{$criterion};
-  $row->{effective_denominator} = $row->{covered} + $row->{error};
+  $row->{execution_annotation_cells} = execution_cells($row);
+  $row->{unexecuted} = $row->{total} - $row->{covered};
   $row->{raw_percentage} = $row->{total} ? 100 * $row->{covered} / $row->{total} : undef;
-  $row->{tool_effective_percentage} = $row->{effective_denominator}
-    ? 100 * $row->{covered} / $row->{effective_denominator} : undef;
+  $row->{tool_reported_percentage} = $row->{total}
+    ? 100 * ($row->{total} - $row->{error}) / $row->{total} : undef;
 }
 
 my @fidelity;
