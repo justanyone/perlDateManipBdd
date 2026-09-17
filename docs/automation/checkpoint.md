@@ -895,3 +895,15 @@ complete week-number or whole-library coverage claim.
 week_edges_finish now owns configuration portability; partial_parsing recurrence;
 pattern_repair language initialization completion semantics. Root integrates only.
 All final specification, adapter, and coverage gates remain open.
+
+## Remembered-input portable operations
+
+Root resolved the input-history context leak using separately named read-source-text
+and read-source-text-collection requests, with explicit text/ordered-collection
+outputs and observed-compatibility classification for the latter. Native contexts
+remain research mappings. All17 original scenarios keep exact quoted literals
+and text/collection/date observer order; existing evidence reviewer passes and
+real parser accepts17 scenarios without warnings. Probes/evidence/hashes unchanged.
+This defines the public output-shape variant without requiring Perl call contexts;
+it does not complete the remaining input-history domains or promote the draft.
+Workers continue configuration, recurrence, and language completion semantics.

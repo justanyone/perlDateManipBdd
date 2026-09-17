@@ -53,3 +53,12 @@ More input-history transitions remain: receiver-derived objects,
 arithmetic/navigation, language preprocessing, UTF-8/alternate encoding, and
 additional mutation failures. This batch is not complete behavior or source
 coverage and does not lower the project-wide gates.
+
+Portable operation disposition: `read-source-text` and
+`read-source-text-collection` are separately named requests with text and ordered
+text-collection results. The latter is explicitly observed compatibility. It
+preserves a public output-shape variant without requiring Perl calling contexts;
+one empty text item remains distinct from an empty collection. Native bindings
+and evidence fields are mapped in feature-map.json. Every scenario retains the
+original text-read, collection-read, then date-read order and exact result/error
+literals. This does not promote the drafts or claim additional domain coverage.

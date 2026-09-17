@@ -316,5 +316,24 @@
         "zone.resolve"
       ]
     }
+  ],
+  "portable_operations": [
+    {
+      "name": "read-source-text",
+      "operation_id": "date.read-input",
+      "output": "text including empty text",
+      "source_binding": "input() in scalar context",
+      "evidence_field": "input_scalar",
+      "classification": "documented"
+    },
+    {
+      "name": "read-source-text-collection",
+      "operation_id": "date.read-input",
+      "output": "ordered collection of text values",
+      "source_binding": "input() in list context",
+      "evidence_field": "input_list",
+      "classification": "observed-compatibility",
+      "rationale": "Expose the public output-shape variant as a separate named request; no language calling-context mechanism is required. Preserve literal collection cardinality, including one empty text item rather than an empty collection."
+    }
   ]
 }

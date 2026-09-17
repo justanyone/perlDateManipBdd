@@ -7,14 +7,17 @@ Feature: Remember the source text of a date across public changes
     And the fixed reference date-time is "2040-02-28 10:20:30 Etc/UTC"
     And quoted text and argument lists use JSON notation to preserve whitespace and absent values
     And date-value text is the lossless six-field form "YYYY-MM-DD HH:MM:SS"
-    And collection results for remembered source text are observed Perl list-context compatibility, while the scalar text result is the documented source API
+    And read-source-text returns one text value, including empty text
+    And read-source-text-collection returns an ordered collection of text values
+    And collection reads belong to the observed compatibility profile
+    And each scenario reads the text, then the collection, then the date value in that order
 
   Scenario: Read remembered source text for INPUT-FRESH
     Given a newly constructed date without initial text
-    When I read the remembered source text as one text result
+    When I use read-source-text
     Then the result is ""
     And the error is ""
-    When I read the remembered source text as a collection
+    When I use read-source-text-collection
     Then the collection is [""]
     And the error is ""
     When I subsequently read the date value
@@ -24,10 +27,10 @@ Feature: Remember the source text of a date across public changes
   @observed-compatibility
   Scenario: Read remembered source text for INPUT-CONSTRUCTOR
     Given a date constructed with text "2040-02-29 16:05:09 Etc/UTC" and the fixed context options
-    When I read the remembered source text as one text result
+    When I use read-source-text
     Then the result is "2040-02-29 16:05:09 Etc/UTC"
     And the error is ""
-    When I read the remembered source text as a collection
+    When I use read-source-text-collection
     Then the collection is ["2040-02-29 16:05:09 Etc/UTC"]
     And the error is ""
     When I subsequently read the date value
@@ -39,10 +42,10 @@ Feature: Remember the source text of a date across public changes
     When I parse the complete date text with arguments ["2040-02-29 16:05:09 Etc/UTC"]
     Then the action return is 0
     And the immediate error is ""
-    When I read the remembered source text as one text result
+    When I use read-source-text
     Then the result is "2040-02-29 16:05:09 Etc/UTC"
     And the error is ""
-    When I read the remembered source text as a collection
+    When I use read-source-text-collection
     Then the collection is ["2040-02-29 16:05:09 Etc/UTC"]
     And the error is ""
     When I subsequently read the date value
@@ -54,10 +57,10 @@ Feature: Remember the source text of a date across public changes
     When I parse the complete date text with arguments ["  February 29, 2040 16:05:09  "]
     Then the action return is 0
     And the immediate error is ""
-    When I read the remembered source text as one text result
+    When I use read-source-text
     Then the result is "  February 29, 2040 16:05:09  "
     And the error is ""
-    When I read the remembered source text as a collection
+    When I use read-source-text-collection
     Then the collection is ["  February 29, 2040 16:05:09  "]
     And the error is ""
     When I subsequently read the date value
@@ -69,10 +72,10 @@ Feature: Remember the source text of a date across public changes
     When I parse the complete date text with arguments [""]
     Then the action return is 1
     And the immediate error is "[parse] Empty date string"
-    When I read the remembered source text as one text result
+    When I use read-source-text
     Then the result is ""
     And the error is "[parse] Empty date string"
-    When I read the remembered source text as a collection
+    When I use read-source-text-collection
     Then the collection is [""]
     And the error is "[parse] Empty date string"
     When I subsequently read the date value
@@ -84,10 +87,10 @@ Feature: Remember the source text of a date across public changes
     When I parse the complete date text with arguments [null]
     Then the action return is 1
     And the immediate error is "[parse] Empty date string"
-    When I read the remembered source text as one text result
+    When I use read-source-text
     Then the result is ""
     And the error is "[parse] Empty date string"
-    When I read the remembered source text as a collection
+    When I use read-source-text-collection
     Then the collection is [""]
     And the error is "[parse] Empty date string"
     When I subsequently read the date value
@@ -99,10 +102,10 @@ Feature: Remember the source text of a date across public changes
     When I parse the complete date text with arguments ["not a calendar date"]
     Then the action return is 1
     And the immediate error is "[parse] Invalid date string"
-    When I read the remembered source text as one text result
+    When I use read-source-text
     Then the result is ""
     And the error is "[parse] Invalid date string"
-    When I read the remembered source text as a collection
+    When I use read-source-text-collection
     Then the collection is [""]
     And the error is "[parse] Invalid date string"
     When I subsequently read the date value
@@ -114,10 +117,10 @@ Feature: Remember the source text of a date across public changes
     When I parse the complete date text with arguments ["March 1 2040"]
     Then the action return is 0
     And the immediate error is ""
-    When I read the remembered source text as one text result
+    When I use read-source-text
     Then the result is "March 1 2040"
     And the error is ""
-    When I read the remembered source text as a collection
+    When I use read-source-text-collection
     Then the collection is ["March 1 2040"]
     And the error is ""
     When I subsequently read the date value
@@ -129,10 +132,10 @@ Feature: Remember the source text of a date across public changes
     When I replace the date by parsing with arguments ["2040-03-02"]
     Then the action return is 0
     And the immediate error is ""
-    When I read the remembered source text as one text result
+    When I use read-source-text
     Then the result is ""
     And the error is ""
-    When I read the remembered source text as a collection
+    When I use read-source-text-collection
     Then the collection is [""]
     And the error is ""
     When I subsequently read the date value
@@ -144,10 +147,10 @@ Feature: Remember the source text of a date across public changes
     When I replace the time by parsing with arguments ["07:08:09"]
     Then the action return is 0
     And the immediate error is ""
-    When I read the remembered source text as one text result
+    When I use read-source-text
     Then the result is ""
     And the error is ""
-    When I read the remembered source text as a collection
+    When I use read-source-text-collection
     Then the collection is [""]
     And the error is ""
     When I subsequently read the date value
@@ -159,10 +162,10 @@ Feature: Remember the source text of a date across public changes
     When I replace the date by parsing with arguments ["not a calendar date"]
     Then the action return is 1
     And the immediate error is "[parse_date] Invalid date string"
-    When I read the remembered source text as one text result
+    When I use read-source-text
     Then the result is "2040-02-29 16:05:09 Etc/UTC"
     And the error is "[parse_date] Invalid date string"
-    When I read the remembered source text as a collection
+    When I use read-source-text-collection
     Then the collection is ["2040-02-29 16:05:09 Etc/UTC"]
     And the error is "[parse_date] Invalid date string"
     When I subsequently read the date value
@@ -174,10 +177,10 @@ Feature: Remember the source text of a date across public changes
     When I replace the time by parsing with arguments ["invalid clock"]
     Then the action return is 1
     And the immediate error is "[parse_time] Invalid time string"
-    When I read the remembered source text as one text result
+    When I use read-source-text
     Then the result is "2040-02-29 16:05:09 Etc/UTC"
     And the error is "[parse_time] Invalid time string"
-    When I read the remembered source text as a collection
+    When I use read-source-text-collection
     Then the collection is ["2040-02-29 16:05:09 Etc/UTC"]
     And the error is "[parse_time] Invalid time string"
     When I subsequently read the date value
@@ -189,10 +192,10 @@ Feature: Remember the source text of a date across public changes
     When I parse with the supplied pattern and text with arguments ["%Y/%m/%d", "2040/03/02"]
     Then the action return is 0
     And the immediate error is ""
-    When I read the remembered source text as one text result
+    When I use read-source-text
     Then the result is "2040/03/02"
     And the error is ""
-    When I read the remembered source text as a collection
+    When I use read-source-text-collection
     Then the collection is ["2040/03/02"]
     And the error is ""
     When I subsequently read the date value
@@ -205,10 +208,10 @@ Feature: Remember the source text of a date across public changes
     When I parse with the supplied pattern and text with arguments ["%Y/%m/%d", "invalid"]
     Then the action return is 1
     And the immediate error is ""
-    When I read the remembered source text as one text result
+    When I use read-source-text
     Then the result is ""
     And the error is ""
-    When I read the remembered source text as a collection
+    When I use read-source-text-collection
     Then the collection is [""]
     And the error is ""
     When I subsequently read the date value
@@ -220,10 +223,10 @@ Feature: Remember the source text of a date across public changes
     When I replace the supplied date field with arguments ["d", 1]
     Then the action return is 0
     And the immediate error is ""
-    When I read the remembered source text as one text result
+    When I use read-source-text
     Then the result is ""
     And the error is ""
-    When I read the remembered source text as a collection
+    When I use read-source-text-collection
     Then the collection is [""]
     And the error is ""
     When I subsequently read the date value
@@ -235,10 +238,10 @@ Feature: Remember the source text of a date across public changes
     When I convert the date to the supplied zone with arguments ["America/New_York"]
     Then the action return is 0
     And the immediate error is ""
-    When I read the remembered source text as one text result
+    When I use read-source-text
     Then the result is ""
     And the error is ""
-    When I read the remembered source text as a collection
+    When I use read-source-text-collection
     Then the collection is [""]
     And the error is ""
     When I subsequently read the date value
@@ -253,10 +256,10 @@ Feature: Remember the source text of a date across public changes
     When I clear the error with the supplied true request with arguments [1]
     Then the action return is null
     And the immediate error is ""
-    When I read the remembered source text as one text result
+    When I use read-source-text
     Then the result is ""
     And the error is ""
-    When I read the remembered source text as a collection
+    When I use read-source-text-collection
     Then the collection is [""]
     And the error is ""
     When I subsequently read the date value
