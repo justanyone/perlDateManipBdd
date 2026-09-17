@@ -1,7 +1,34 @@
 @draft @arithmetic @dst @business
 Feature: Calculate across daylight transitions and business boundaries
-  This draft uses English, the named fixed profile, Monday-Friday 09:00-17:00 work hours,
-  and an original holiday named Founders Day on 2040-03-05 where stated.
+  This draft uses the explicit isolated configuration below. Cases with a named
+  zone override the local zone. Founders Day is added only where stated.
+
+  Background:
+    Given each case starts in a fresh isolated arithmetic configuration:
+      | setting             | value                              |
+      | language            | English                            |
+      | character encoding  | ASCII                              |
+      | local time zone     | Etc/UTC                            |
+      | reference date-time | 2040-02-28 10:20:30 Etc/UTC        |
+      | numeric date order  | month before day                   |
+      | omitted time        | midnight                           |
+      | first weekday       | Monday                             |
+      | first week          | the week containing January 4     |
+      | work week           | Monday through Friday              |
+      | work hours          | 09:00 through 17:00                |
+      | 24-hour workday     | disabled                           |
+      | holidays            | none                               |
+      | events              | none                               |
+    And interval normalization uses these relationships:
+      | larger unit                         | smaller-unit value |
+      | minute                              | 60 seconds         |
+      | hour                                | 60 minutes         |
+      | standard day                        | 24 hours           |
+      | standard week                       | 7 days             |
+      | year for year-month normalization   | 12 months          |
+      | year for estimated conversion       | 365.2425 days      |
+      | configured business day             | 8 hours            |
+      | configured business week            | 5 days             |
 
   @ARITH-DST-EDGES
   Scenario Outline: Add one elapsed hour around a daylight transition for <case>
@@ -77,4 +104,10 @@ Feature: Calculate across daylight transitions and business boundaries
     When I ask whether it is a business day while checking the time
     Then the answer is absent
     And the error remains "[parse] Invalid date string"
-    And a warning reports "Object must contain a valid date"
+    And the receiver remains in the same invalid state without a stored-value query
+
+  @source-binding @perl-binding @reference-binding @excluded-from-portable-handoff
+  Scenario: Preserve the native warning for the invalid business-day request
+    Given reference case "BUSINESS-INVALID-OBJECT" uses the invalid date from the portable scenario
+    When the reference binding performs the same checked business-day request
+    Then exactly one native warning contains "Object must contain a valid date"

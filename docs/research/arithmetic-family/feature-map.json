@@ -1,6 +1,6 @@
 {
-  "schema_version": 1,
-  "status": "research mapping; every portable assertion must name a concrete mapped request and carrier",
+  "schema_version": 2,
+  "status": "research mapping; portable operations and binding-only diagnostics are separated; every assertion still requires a concrete mapped request",
   "mappings": [
     {
       "feature": "arithmetic-dst-business-edges.feature",
@@ -52,12 +52,11 @@
     },
     {
       "feature": "arithmetic-dst-business-edges.feature",
-      "assertion": "weekend, holiday, mutation, invalid object",
+      "assertion": "weekend, holiday, and successful mutation",
       "cases": [
         "ARITH-BUSINESS-WEEKEND-ENDPOINT",
         "ARITH-BUSINESS-HOLIDAY-ENDPOINT",
-        "BUSINESS-NEXT-HOLIDAY-MUTATION",
-        "BUSINESS-INVALID-OBJECT"
+        "BUSINESS-NEXT-HOLIDAY-MUTATION"
       ],
       "carrier": "raw_return"
     },
@@ -120,7 +119,7 @@
     },
     {
       "feature": "delta-grammar-and-format-matrix.feature",
-      "assertion": "all grammar rows, single-field bulk request, and exact 28-pattern bulk request",
+      "assertion": "all grammar rows",
       "cases": [
         "DELTA-GRAMMAR-COMPACT-1",
         "DELTA-GRAMMAR-COMPACT-2",
@@ -141,15 +140,405 @@
         "DELTA-GRAMMAR-RELATIVE-AFTER",
         "DELTA-GRAMMAR-RELATIVE-BEFORE",
         "DELTA-GRAMMAR-MODE-WORD",
-        "DELTA-GRAMMAR-LEGACY-ACCURACY",
+        "DELTA-GRAMMAR-LEGACY-ACCURACY"
+      ],
+      "carrier": "raw_return.after.value_scalar,error"
+    },
+    {
+      "feature": "arithmetic-dst-business-edges.feature",
+      "assertion": "invalid business-day portable result, retained error, and unchanged invalid state",
+      "cases": [
+        "BUSINESS-INVALID-OBJECT"
+      ],
+      "carrier": "raw_return.return,before,after"
+    },
+    {
+      "feature": "arithmetic-dst-business-edges.feature",
+      "assertion": "excluded reference-binding warning for the invalid business-day request",
+      "cases": [
+        "BUSINESS-INVALID-OBJECT"
+      ],
+      "carrier": "warnings[0]",
+      "handoff": "excluded-from-portable-handoff"
+    },
+    {
+      "feature": "delta-grammar-and-format-matrix.feature",
+      "assertion": "single-field bulk request and exact 28-pattern bulk request",
+      "cases": [
         "DELTA-FORMAT-ALL-FIELDS",
         "DELTA-FORMAT-ALL-RANGES"
       ],
-      "carrier": "raw_return.after.value_scalar or raw_return.list"
+      "carrier": "raw_return.list"
     }
   ],
   "feature_aliases": {
     "ARITH-OO-DATE-DATE-PAIRING-EXACT": "ARITH-OO-DATE-DATE-EXACT"
   },
-  "date_result_normalization": "Compact reference date strings become YYYY-MM-DD HH:MM:SS, without changing fields; seven-component interval records remain ordered as defined in the feature."
+  "date_result_normalization": "Compact reference date strings become YYYY-MM-DD HH:MM:SS, without changing fields; seven-component interval records remain ordered as defined in the feature.",
+  "portable_profile": {
+    "scope": "all four arithmetic draft features unless a scenario states an explicit zone or holiday override",
+    "settings": {
+      "language": "English",
+      "character encoding": "ASCII",
+      "local time zone": "Etc/UTC",
+      "reference date-time": "2040-02-28 10:20:30 Etc/UTC",
+      "numeric date order": "month before day",
+      "omitted time": "midnight",
+      "first weekday": "Monday",
+      "first week": "the week containing January 4",
+      "work week": "Monday through Friday",
+      "work hours": "09:00 through 17:00",
+      "24-hour workday": "disabled",
+      "holidays": "none",
+      "events": "none"
+    },
+    "interval_normalization_relationships": {
+      "minute": "60 seconds",
+      "hour": "60 minutes",
+      "standard day": "24 hours",
+      "standard week": "7 days",
+      "year for year-month normalization": "12 months",
+      "year for estimated conversion": "365.2425 days",
+      "configured business day": "8 hours",
+      "configured business week": "5 days"
+    },
+    "research_binding_source": "observation.profile_configuration; portable prose expands the relevant meanings instead of exporting native setting names",
+    "evidence": {
+      "native_profile_manifest": "docs/automation/reference-profiles.json",
+      "observed_profile_carrier": "observations[].observation.profile_configuration",
+      "normalization_case": "DELTA-FORMAT-ALL-RANGES",
+      "normalization_carriers": [
+        "request.initial",
+        "request.patterns",
+        "raw_return.list"
+      ],
+      "derivation": "The recorded conversion results establish 60 seconds/minute, 60 minutes/hour, 24 hours/day, 7 days/week, 12 months/year, and 31,556,952 seconds/year = 365.2425 days. The recorded WorkWeekBeg/End and WorkDayBeg/End settings establish five-day and eight-hour business units."
+    }
+  },
+  "portable_repairs": {
+    "BUSINESS-INVALID-OBJECT": {
+      "feature": "spec/drafts/arithmetic/arithmetic-dst-business-edges.feature",
+      "portable_scenario": "Report an invalid date object without mutation",
+      "portable_expectations": {
+        "result": "absent value",
+        "error": "[parse] Invalid date string",
+        "mutation": "receiver remains in the same invalid state; no stored-value query is performed"
+      },
+      "portable_evidence_carriers": [
+        "raw_return.return",
+        "raw_return.before",
+        "raw_return.after"
+      ],
+      "binding_scenario": "Preserve the native warning for the invalid business-day request",
+      "binding_evidence_carrier": "warnings[0]",
+      "native_warning_contains": "Object must contain a valid date",
+      "handoff": "excluded-from-portable-handoff"
+    },
+    "DELTA-FORMAT-DM6": {
+      "feature": "spec/drafts/arithmetic/arithmetic-and-delta.feature",
+      "scenario": "Render compatibility patterns in the current compatibility profile",
+      "binding": "Date::Manip::DM6::Delta_Format",
+      "portable_operations": [
+        {
+          "operation": "render-each-pattern",
+          "expected": [
+            "1",
+            "5.10"
+          ],
+          "research_binding_context": "Perl list context",
+          "evidence_carrier": "raw_return.list"
+        },
+        {
+          "operation": "render-joined-patterns",
+          "expected": "1 5.10",
+          "research_binding_context": "Perl scalar context",
+          "evidence_carrier": "raw_return.scalar"
+        }
+      ]
+    },
+    "DELTA-FORMAT-DM5": {
+      "feature": "spec/drafts/arithmetic/arithmetic-and-delta.feature",
+      "scenario": "Render compatibility patterns in the legacy compatibility profile",
+      "binding": "Date::Manip::DM5::Delta_Format",
+      "portable_operations": [
+        {
+          "operation": "render-each-pattern",
+          "expected": [
+            "1",
+            "5.10"
+          ],
+          "research_binding_context": "Perl list context",
+          "evidence_carrier": "raw_return.list"
+        },
+        {
+          "operation": "render-joined-patterns",
+          "expected": "1 5.10",
+          "research_binding_context": "Perl scalar context",
+          "evidence_carrier": "raw_return.scalar"
+        }
+      ]
+    },
+    "delta_grammar_rows": {
+      "DELTA-GRAMMAR-COMPACT-1": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"0:0:0:0:0:0:1\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "1",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-COMPACT-2": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"0:0:0:0:0:1:2\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "1:2",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-COMPACT-3": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"0:0:0:0:1:2:3\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "1:2:3",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-COMPACT-4": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"0:0:0:1:2:3:4\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "1:2:3:4",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-COMPACT-5": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"0:0:1:2:3:4:5\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "1:2:3:4:5",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-COMPACT-6": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"0:1:2:3:4:5:6\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "1:2:3:4:5:6",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-COMPACT-7": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"1:2:3:4:5:6:7\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "1:2:3:4:5:6:7",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-EMPTY-INTERIOR": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"0:0:0:0:1:0:3\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "1::3",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-SIGNED-FIELD": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"0:0:0:0:0:57:57\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "1:-2:3",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-NO-SPACE": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"0:0:0:0:1:2:3\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "1:2:3",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-EXPANDED-ORDERED": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"1:2:3:4:5:6:7\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "1 year 2 months 3 weeks 4 days 5 hours 6 minutes 7 seconds",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-EXPANDED-NUMBER": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"0:0:0:2:0:0:0\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "two days",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-SIGN-INHERITANCE": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"-1:0:0:2:0:0:0\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "-1 year 2 days",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-UNITLESS-SECOND": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"0:0:0:0:0:1:30\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "1 minute 30",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-SEPARATOR": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"0:0:0:1:2:0:0\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "1 day, 2 hours",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-MIXED": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "empty text",
+        "error_literal": "text \"[parse] Invalid delta string\"",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "1 year 2:3",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-RELATIVE-AFTER": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"0:0:0:2:0:0:0\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "2 days from now",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-RELATIVE-BEFORE": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"0:0:0:-2:0:0:0\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "2 days ago",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-MODE-WORD": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "text \"0:0:0:2:0:0:0\"",
+        "error_literal": "empty text",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "2 business days",
+        "options_literal": "default options"
+      },
+      "DELTA-GRAMMAR-LEGACY-ACCURACY": {
+        "feature": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+        "scenario": "Parse one bounded grammar production",
+        "serialized_interval_literal": "empty text",
+        "error_literal": "text \"[parse] Invalid delta string\"",
+        "evidence_carriers": [
+          "raw_return.status",
+          "raw_return.after.value_scalar",
+          "raw_return.after.error"
+        ],
+        "input_text": "2 approximate days",
+        "options_literal": "default options"
+      }
+    }
+  }
 }

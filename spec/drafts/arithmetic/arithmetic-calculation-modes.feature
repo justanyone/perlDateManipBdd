@@ -3,8 +3,31 @@ Feature: Calculate typed dates and intervals in named modes
   This draft is based on repeatable reference observations and awaits semantic review.
 
   Background:
-    Given English text, UTC, and the named fixed reference profile
-    And a Monday-Friday 09:00-17:00 work schedule with no holidays or events
+    Given each case starts in a fresh isolated arithmetic configuration:
+      | setting             | value                              |
+      | language            | English                            |
+      | character encoding  | ASCII                              |
+      | local time zone     | Etc/UTC                            |
+      | reference date-time | 2040-02-28 10:20:30 Etc/UTC        |
+      | numeric date order  | month before day                   |
+      | omitted time        | midnight                           |
+      | first weekday       | Monday                             |
+      | first week          | the week containing January 4     |
+      | work week           | Monday through Friday              |
+      | work hours          | 09:00 through 17:00                |
+      | 24-hour workday     | disabled                           |
+      | holidays            | none                               |
+      | events              | none                               |
+    And interval normalization uses these relationships:
+      | larger unit                         | smaller-unit value |
+      | minute                              | 60 seconds         |
+      | hour                                | 60 minutes         |
+      | standard day                        | 24 hours           |
+      | standard week                       | 7 days             |
+      | year for year-month normalization   | 12 months          |
+      | year for estimated conversion       | 365.2425 days      |
+      | configured business day             | 8 hours            |
+      | configured business week            | 5 days             |
 
   @ARITH-OO-DATE-DATE-MODES
   Scenario Outline: Find the interval between two dates in <mode> mode for <case>

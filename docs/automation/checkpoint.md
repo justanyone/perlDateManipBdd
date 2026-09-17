@@ -798,3 +798,20 @@ without warnings. No additional behavior or coverage completion is claimed.
 Arithmetic worker is strengthening changed request/result literal checks following
 root review. Parse-cache and week-rule-edge workers remain active. All final gates
 remain open.
+
+## Arithmetic portability review
+
+Root accepted the arithmetic repair after strengthening its reviewer. All107 source
+case IDs equal the recorded evidence IDs. Four complete formatting request/result
+steps are verified against source requests and frozen outputs;20 grammar rows use
+explicit typed outputs and exact inputs/default options. Four feature backgrounds
+now define the recorded profile; normalization ratios are checked against saved
+formatting evidence and work-calendar configuration. Native invalid-date warning
+is retained in an excluded binding scenario. Portable state assertion explicitly
+avoids implying an unexecuted value query. Original probes/evidence unchanged.
+Reviewer passes; real parser expands34+10+18+22 cases without warnings/errors.
+
+Parse-cache batch remains unaccepted: root found that two thrown calls falsely
+record undefined returned values. partial_parsing owns correction and fresh capture;
+pattern_repair now repairs language portability, week_edges_finish continues week
+boundaries. Root owns integration only. Final gates remain open.

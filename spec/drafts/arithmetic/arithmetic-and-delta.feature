@@ -3,9 +3,31 @@ Feature: Calculate civil-field changes and manage intervals
   This draft is based on repeatable reference observations and awaits semantic review.
 
   Background:
-    Given English text, UTC, and a fixed clock of "2040-02-28 10:20:30"
-    And US numeric dates, midnight omitted times, and Monday-first weeks
-    And a Monday-Friday 09:00-17:00 work schedule with no holidays or events
+    Given each case starts in a fresh isolated arithmetic configuration:
+      | setting             | value                              |
+      | language            | English                            |
+      | character encoding  | ASCII                              |
+      | local time zone     | Etc/UTC                            |
+      | reference date-time | 2040-02-28 10:20:30 Etc/UTC        |
+      | numeric date order  | month before day                   |
+      | omitted time        | midnight                           |
+      | first weekday       | Monday                             |
+      | first week          | the week containing January 4     |
+      | work week           | Monday through Friday              |
+      | work hours          | 09:00 through 17:00                |
+      | 24-hour workday     | disabled                           |
+      | holidays            | none                               |
+      | events              | none                               |
+    And interval normalization uses these relationships:
+      | larger unit                         | smaller-unit value |
+      | minute                              | 60 seconds         |
+      | hour                                | 60 minutes         |
+      | standard day                        | 24 hours           |
+      | standard week                       | 7 days             |
+      | year for year-month normalization   | 12 months          |
+      | year for estimated conversion       | 365.2425 days      |
+      | configured business day             | 8 hours            |
+      | configured business week            | 5 days             |
     And interval field records use this order:
       | position | field  |
       | 1        | year   |
@@ -71,7 +93,7 @@ Feature: Calculate civil-field changes and manage intervals
 
   @DELTA-CREATE-EMPTY
   Scenario: Create an empty interval
-    When I create an interval in the named profile
+    When I create an interval in this configuration
     Then its seven fields are "0:0:0:0:0:0:0"
     And its stored type is "exact" and its stored mode is "standard"
 
@@ -90,7 +112,7 @@ Feature: Calculate civil-field changes and manage intervals
       | DELTA-PARSE-FRACTION-ESTIMATED | 1.5 hours       | type=estimated          | 0      | 0:0:0:0:1:30:0 | standard    | estimated   |
 
   @DELTA-READ-VALUE-NORMAL
-  Scenario: Read a valid interval in text and field-list forms
+  Scenario: Read a valid interval as text and an ordered field record
     Given interval text "1:2:3:4:5:6:7" has been parsed with default options
     When I read its value as text and as an ordered field record
     Then the text is "1:2:3:4:5:6:7"
@@ -118,15 +140,17 @@ Feature: Calculate civil-field changes and manage intervals
 
   @DELTA-FORMAT-DM6
   Scenario: Render compatibility patterns in the current compatibility profile
-    When the current compatibility profile formats "1:2:3:4:5:6:7" with type "approx", decimal places 2, and patterns "%yv" and "%hd"
-    Then its list result is "1", "5.10"
-    And its scalar result is "1 5.10"
+    When I use render-each-pattern with interval "1:2:3:4:5:6:7", type "approx", decimal places 2, and patterns "%yv" and "%hd" in the current compatibility profile
+    Then the ordered rendered texts are "1" and "5.10"
+    When I use render-joined-patterns with interval "1:2:3:4:5:6:7", type "approx", decimal places 2, and patterns "%yv" and "%hd" in the current compatibility profile
+    Then the joined rendered text is "1 5.10"
 
   @DELTA-FORMAT-DM5
   Scenario: Render compatibility patterns in the legacy compatibility profile
-    When the legacy compatibility profile formats "1:2:3:4:5:6:7" with type "approx", decimal places 2, and patterns "%yv" and "%hd"
-    Then its list result is "1", "5.10"
-    And its scalar result is "1 5.10"
+    When I use render-each-pattern with interval "1:2:3:4:5:6:7", type "approx", decimal places 2, and patterns "%yv" and "%hd" in the legacy compatibility profile
+    Then the ordered rendered texts are "1" and "5.10"
+    When I use render-joined-patterns with interval "1:2:3:4:5:6:7", type "approx", decimal places 2, and patterns "%yv" and "%hd" in the legacy compatibility profile
+    Then the joined rendered text is "1 5.10"
 
   @DELTA-TYPE-ALL
   Scenario: Query an explicitly semi interval

@@ -104,7 +104,9 @@ before reads and skip value reads when a Date already has an error. Calculation
 results retain both the error before reading the answer and the error after the
 explicit serialized-value query. The spring-gap scenario now distinguishes the
 parse error, calculation error, and value-read error. The invalid business-date
-case preserves its parse error and absent result, with the warning retained.
+case preserves its parse error, absent result, and unchanged invalid state in the
+portable scenario. Its native warning is retained in a separately tagged binding
+scenario excluded from portable handoff.
 
 After the correction all107 cases repeat. Draft calculations now name current
 value/current text/legacy text profiles, date results use readable civil fields,
@@ -113,7 +115,9 @@ row has its own feature ID and a reference alias. Rejected delta parsing asserts
 an empty field collection instead of claiming seven empty fields.
 
 `python3 tools/review/arithmetic_literals.py` checks provenance,107 repeatable
-records,21 calculation-table literals,65 unique outline row IDs, and three invalid
-state/error sequences. This targeted review does not cover every literal or close
-the remaining method/domain/interaction obligations. No draft is promoted merely
-because its reference result repeats.
+records,21 calculation-table literals,65 unique outline row IDs, all20 typed
+delta-grammar result/error rows, four named compatibility-format operations, the
+binding-warning split, the explicit profile in all four features, and three
+invalid state/error sequences. This targeted review does not cover every literal
+or close the remaining method/domain/interaction obligations. No draft is promoted
+merely because its reference result repeats.
