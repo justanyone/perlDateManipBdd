@@ -96,3 +96,12 @@ python3 tools/probes/fixed-offset-family/review.py /tmp/fixed-offset-family-run
 The scripts use only public Date-Manip operations for behavior. The manifest
 script is explicitly source-side discovery, so it must never become an adapter
 or portable conformance test.
+
+Portable wording review: the six successful scenarios now name parsed-zone text
+and UTC text reads. Their exact native calling contexts remain in research mapping;
+all seven inputs, expected values, and observer ordering are unchanged. The rejection
+title no longer implies a required generated-module implementation.
+
+Run `python3 tools/review/fixed_offset_portability.py` for the additional exact
+request and portable-observer checks. It first runs the unchanged provenance
+reviewer; the historical capture scripts and their hashes remain unchanged.

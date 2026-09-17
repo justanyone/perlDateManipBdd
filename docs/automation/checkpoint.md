@@ -784,3 +784,17 @@ Activeowners: week_edges_finish finishes edge/legacy week batch; pattern_repair
 repairs parse-cache portability/conditionalsteps; partial_parsing repairs arithmetic
 portability/blankcells/profiledefinitions. Root has no live coverage process left.
 All final specification/adapter/coverage gates remain open.
+
+## Fixed-offset portable observer repair
+
+Root replaced native scalar terminology with parsed-zone text and UTC text reads
+in the seven selected fixed-offset scenarios, and removed generated-module wording
+from the rejection title. Native contexts remain in research metadata. Original
+probes, evidence, and historical hashes are unchanged. The new supplemental reviewer
+first runs the original provenance reviewer, then checks exact input strings and
+portable observer names. Both pass; real Gherkin parser expands seven examples
+without warnings. No additional behavior or coverage completion is claimed.
+
+Arithmetic worker is strengthening changed request/result literal checks following
+root review. Parse-cache and week-rule-edge workers remain active. All final gates
+remain open.
