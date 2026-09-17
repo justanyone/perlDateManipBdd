@@ -1,5 +1,7 @@
 {
   "feature": "spec/drafts/input-history/remembered-text.feature",
+  "binding_file": "docs/research/input-history/bindings.json",
+  "classification": "The scalar input carrier is documented. The one-element list carrier is observed-compatibility in Perl list context, recorded here for source research and explicitly marked before portable handoff.",
   "cases": [
     {
       "case_id": "INPUT-FRESH",
@@ -13,8 +15,28 @@
         "meta.reference-version",
         "context.zone-service",
         "meta.zone-data-version",
-        "meta.zone-rule-version"
+        "meta.zone-rule-version",
+        "config.read-settings",
+        "zone.resolve"
       ]
+    },
+    {
+      "case_id": "INPUT-CONSTRUCTOR",
+      "primary_operation": "date.read-input",
+      "public_operation_ids": [
+        "date.create",
+        "config.apply-settings",
+        "date.read-input",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.read-settings",
+        "zone.resolve"
+      ],
+      "input_carrier_classification": "scalar documented; list observed-compatibility"
     },
     {
       "case_id": "INPUT-VALID",
@@ -29,7 +51,9 @@
         "context.zone-service",
         "meta.zone-data-version",
         "meta.zone-rule-version",
-        "date.parse-text"
+        "date.parse-text",
+        "config.read-settings",
+        "zone.resolve"
       ]
     },
     {
@@ -45,7 +69,9 @@
         "context.zone-service",
         "meta.zone-data-version",
         "meta.zone-rule-version",
-        "date.parse-text"
+        "date.parse-text",
+        "config.read-settings",
+        "zone.resolve"
       ]
     },
     {
@@ -61,7 +87,9 @@
         "context.zone-service",
         "meta.zone-data-version",
         "meta.zone-rule-version",
-        "date.parse-text"
+        "date.parse-text",
+        "config.read-settings",
+        "zone.resolve"
       ]
     },
     {
@@ -77,7 +105,9 @@
         "context.zone-service",
         "meta.zone-data-version",
         "meta.zone-rule-version",
-        "date.parse-text"
+        "date.parse-text",
+        "config.read-settings",
+        "zone.resolve"
       ]
     },
     {
@@ -93,7 +123,9 @@
         "context.zone-service",
         "meta.zone-data-version",
         "meta.zone-rule-version",
-        "date.parse-text"
+        "date.parse-text",
+        "config.read-settings",
+        "zone.resolve"
       ]
     },
     {
@@ -109,7 +141,9 @@
         "context.zone-service",
         "meta.zone-data-version",
         "meta.zone-rule-version",
-        "date.parse-text"
+        "date.parse-text",
+        "config.read-settings",
+        "zone.resolve"
       ]
     },
     {
@@ -126,7 +160,9 @@
         "meta.zone-data-version",
         "meta.zone-rule-version",
         "date.parse-text",
-        "date.parse-date-only"
+        "date.parse-date-only",
+        "config.read-settings",
+        "zone.resolve"
       ]
     },
     {
@@ -143,7 +179,9 @@
         "meta.zone-data-version",
         "meta.zone-rule-version",
         "date.parse-text",
-        "time.parse-text"
+        "time.parse-text",
+        "config.read-settings",
+        "zone.resolve"
       ]
     },
     {
@@ -160,7 +198,9 @@
         "meta.zone-data-version",
         "meta.zone-rule-version",
         "date.parse-text",
-        "date.parse-date-only"
+        "date.parse-date-only",
+        "config.read-settings",
+        "zone.resolve"
       ]
     },
     {
@@ -177,7 +217,9 @@
         "meta.zone-data-version",
         "meta.zone-rule-version",
         "date.parse-text",
-        "time.parse-text"
+        "time.parse-text",
+        "config.read-settings",
+        "zone.resolve"
       ]
     },
     {
@@ -194,7 +236,9 @@
         "meta.zone-data-version",
         "meta.zone-rule-version",
         "date.parse-text",
-        "date.parse-pattern"
+        "date.parse-pattern",
+        "config.read-settings",
+        "zone.resolve"
       ]
     },
     {
@@ -211,7 +255,9 @@
         "meta.zone-data-version",
         "meta.zone-rule-version",
         "date.parse-text",
-        "date.parse-pattern"
+        "date.parse-pattern",
+        "config.read-settings",
+        "zone.resolve"
       ]
     },
     {
@@ -228,7 +274,9 @@
         "meta.zone-data-version",
         "meta.zone-rule-version",
         "date.parse-text",
-        "date.replace-field"
+        "date.replace-field",
+        "config.read-settings",
+        "zone.resolve"
       ]
     },
     {
@@ -245,7 +293,9 @@
         "meta.zone-data-version",
         "meta.zone-rule-version",
         "date.parse-text",
-        "zone.convert-value"
+        "zone.convert-value",
+        "config.read-settings",
+        "zone.resolve"
       ]
     },
     {
@@ -261,7 +311,9 @@
         "context.zone-service",
         "meta.zone-data-version",
         "meta.zone-rule-version",
-        "date.parse-text"
+        "date.parse-text",
+        "config.read-settings",
+        "zone.resolve"
       ]
     }
   ]

@@ -553,3 +553,15 @@ Perl warnings in portable scenarios. Independent zone review returned concrete
 binding/error-boundary/provenance issues; root must assign repair before integration.
 pattern_repair owns fixed-offset four-finding repair. coverage_setup returned
 17case input-history repair; root review/integration next. No completeness claimed.
+
+## Input-history repair integration
+
+Integrated17case input-history evidence with concrete bindings, required runtime,
+profile, loaded-module/UTCzone and process provenance. Root replaced invented
+constructor/list operation IDs with canonical IDs plus variants and completed
+metadata/config/zone bindings. Constructor-only settings no longer pretend to
+have a separate config return. Fresh runs preserve17 behavioral payloads; the
+reviewer and real parser pass. Remains draft and incomplete for wider transitions.
+
+Current workers retain repairs: coverage_setup zone-transition, partial_parsing
+date-set, pattern_repair fixed-offset. None of those batches is integrated yet.

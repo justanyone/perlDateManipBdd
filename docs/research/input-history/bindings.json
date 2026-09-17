@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "scope": "Research-only concrete Date-Manip 7.00 source bindings. These Perl bindings and call contexts are excluded from a future portable implementation handoff.",
+  "reference": {
+    "distribution_version": "7.00",
+    "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c"
+  },
+  "bindings": [
+    {
+      "operation_id": "date.create",
+      "binding": "Date::Manip::Date->new()",
+      "source": {
+        "module": "Date/Manip/Obj.pm",
+        "line": 31,
+        "derived_date_initializer": {
+          "module": "Date/Manip/Date.pm",
+          "line": 80
+        },
+        "pod": {
+          "module": "Date/Manip/Date.pod",
+          "line": 41
+        }
+      },
+      "native_return": "Date::Manip::Date object",
+      "call_context": "class method, scalar object carrier",
+      "classification": "documented public operation"
+    },
+    {
+      "operation_id": "date.create",
+      "binding": "Date::Manip::Date->new($text, [ ordered configuration key/value pairs ])",
+      "source": {
+        "module": "Date/Manip/Obj.pm",
+        "line": 31,
+        "derived_date_initializer": {
+          "module": "Date/Manip/Date.pm",
+          "line": 80
+        },
+        "pod": {
+          "module": "Date/Manip/Date.pod",
+          "line": 41
+        }
+      },
+      "native_return": "Date::Manip::Date object; its Date-specific initializer parses the supplied text",
+      "call_context": "class method, scalar object carrier; profile options are applied before the Date initializer receives its text",
+      "classification": "documented construction operation with observed text-retention characterization",
+      "variant": "constructor-with-text"
+    },
+    {
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date->config($key, $value, ...)",
+      "source": {
+        "module": "Date/Manip/Obj.pm",
+        "line": 273,
+        "pod": {
+          "module": "Date/Manip/Obj.pod",
+          "line": 233
+        }
+      },
+      "native_return": "undef",
+      "call_context": "void/scalar call; settings are then echoed through get_config and zone",
+      "classification": "documented public operation"
+    },
+    {
+      "operation_id": "date.read-input",
+      "binding": "Date::Manip::Date->input()",
+      "source": {
+        "module": "Date/Manip/Date.pm",
+        "line": 88,
+        "pod": {
+          "module": "Date/Manip/Date.pod",
+          "line": 112
+        }
+      },
+      "native_return": "remembered parsed text",
+      "call_context": "scalar context is the documented $str carrier",
+      "classification": "documented public operation"
+    },
+    {
+      "operation_id": "date.read-input",
+      "binding": "Date::Manip::Date->input()",
+      "source": {
+        "module": "Date/Manip/Date.pm",
+        "line": 88,
+        "pod": {
+          "module": "Date/Manip/Date.pod",
+          "line": 112
+        }
+      },
+      "native_return": "one-element Perl list containing the same remembered text in this reference observation",
+      "call_context": "list context",
+      "classification": "observed-compatibility; the POD documents only the scalar signature, so this carrier is not a separate documented portable API",
+      "variant": "list-context"
+    },
+    {
+      "operation_id": "date.parse-text",
+      "binding": "Date::Manip::Date->parse($text)",
+      "source": {
+        "module": "Date/Manip/Date.pm",
+        "line": 97,
+        "pod": {
+          "module": "Date/Manip/Date.pod",
+          "line": 244
+        }
+      },
+      "native_return": "integer error status",
+      "call_context": "scalar context",
+      "classification": "documented public operation"
+    },
+    {
+      "operation_id": "date.parse-date-only",
+      "binding": "Date::Manip::Date->parse_date($text)",
+      "source": {
+        "module": "Date/Manip/Date.pm",
+        "line": 409,
+        "pod": {
+          "module": "Date/Manip/Date.pod",
+          "line": 316
+        }
+      },
+      "native_return": "integer error status",
+      "call_context": "scalar context",
+      "classification": "documented public operation"
+    },
+    {
+      "operation_id": "time.parse-text",
+      "binding": "Date::Manip::Date->parse_time($text)",
+      "source": {
+        "module": "Date/Manip/Date.pm",
+        "line": 375,
+        "pod": {
+          "module": "Date/Manip/Date.pod",
+          "line": 328
+        }
+      },
+      "native_return": "integer error status",
+      "call_context": "scalar context",
+      "classification": "documented public operation"
+    },
+    {
+      "operation_id": "date.parse-pattern",
+      "binding": "Date::Manip::Date->parse_format($format, $text)",
+      "source": {
+        "module": "Date/Manip/Date.pm",
+        "line": 546,
+        "pod": {
+          "module": "Date/Manip/Date.pod",
+          "line": 339
+        }
+      },
+      "native_return": "integer error status for this scalar-context batch; the POD separately documents an array-context error-and-match carrier",
+      "call_context": "scalar context",
+      "classification": "documented public operation"
+    },
+    {
+      "operation_id": "date.replace-field",
+      "binding": "Date::Manip::Date->set($field, @values)",
+      "source": {
+        "module": "Date/Manip/Date.pm",
+        "line": 2719,
+        "pod": {
+          "module": "Date/Manip/Date.pod",
+          "line": 602
+        }
+      },
+      "native_return": "integer error status",
+      "call_context": "scalar context",
+      "classification": "documented public operation"
+    },
+    {
+      "operation_id": "zone.convert-value",
+      "binding": "Date::Manip::Date->convert($zone)",
+      "source": {
+        "module": "Date/Manip/Date.pm",
+        "line": 4028,
+        "pod": {
+          "module": "Date/Manip/Date.pod",
+          "line": 90
+        }
+      },
+      "native_return": "integer error status",
+      "call_context": "scalar context",
+      "classification": "documented public operation"
+    },
+    {
+      "operation_id": "error.read-state",
+      "binding": "Date::Manip::Date->err([ $clear ])",
+      "source": {
+        "module": "Date/Manip/Obj.pm",
+        "line": 331,
+        "pod": {
+          "module": "Date/Manip/Obj.pod",
+          "line": 253
+        }
+      },
+      "native_return": "error text; a true argument clears it",
+      "call_context": "scalar context",
+      "classification": "documented public operation"
+    },
+    {
+      "operation_id": "date.read-value",
+      "binding": "Date::Manip::Date->value()",
+      "source": {
+        "module": "Date/Manip/Date.pm",
+        "line": 2607,
+        "pod": {
+          "module": "Date/Manip/Date.pod",
+          "line": 664
+        }
+      },
+      "native_return": "compact date string in scalar context; six-number list in list context",
+      "call_context": "scalar context in this batch",
+      "classification": "documented public operation"
+    },
+    {
+      "operation_id": "context.zone-service",
+      "binding": "Date::Manip::Obj::tz",
+      "source": {
+        "module": "Date/Manip/Obj.pm",
+        "line": 261
+      },
+      "call_context": "scalar",
+      "native_return": "timezone service object",
+      "classification": "public supporting observation"
+    },
+    {
+      "operation_id": "config.read-settings",
+      "binding": "Date::Manip::Obj::get_config",
+      "source": {
+        "module": "Date/Manip/Obj.pm",
+        "line": 292
+      },
+      "call_context": "scalar",
+      "native_return": "configured value",
+      "classification": "public supporting observation"
+    },
+    {
+      "operation_id": "meta.reference-version",
+      "binding": "Date::Manip::Obj::version",
+      "source": {
+        "module": "Date/Manip/Obj.pm",
+        "line": 351
+      },
+      "call_context": "scalar",
+      "native_return": "version text",
+      "classification": "public supporting observation"
+    },
+    {
+      "operation_id": "meta.zone-data-version",
+      "binding": "Date::Manip::TZ::tzdata",
+      "source": {
+        "module": "Date/Manip/TZ.pm",
+        "line": 212
+      },
+      "call_context": "scalar",
+      "native_return": "timezone data version text",
+      "classification": "public supporting observation"
+    },
+    {
+      "operation_id": "meta.zone-rule-version",
+      "binding": "Date::Manip::TZ::tzcode",
+      "source": {
+        "module": "Date/Manip/TZ.pm",
+        "line": 217
+      },
+      "call_context": "scalar",
+      "native_return": "timezone rule version text",
+      "classification": "public supporting observation"
+    },
+    {
+      "operation_id": "zone.resolve",
+      "binding": "Date::Manip::TZ::zone",
+      "source": {
+        "module": "Date/Manip/TZ.pm",
+        "line": 861
+      },
+      "call_context": "scalar",
+      "native_return": "configured zone text",
+      "classification": "public supporting observation"
+    }
+  ]
+}

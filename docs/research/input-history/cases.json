@@ -8,6 +8,12 @@
       "actions": []
     },
     {
+      "case_id": "INPUT-CONSTRUCTOR",
+      "constructor_initial": "2040-02-29 16:05:09 Etc/UTC",
+      "initial": null,
+      "actions": []
+    },
+    {
       "case_id": "INPUT-VALID",
       "initial": null,
       "actions": [

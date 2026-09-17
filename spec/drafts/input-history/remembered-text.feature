@@ -7,6 +7,7 @@ Feature: Remember the source text of a date across public changes
     And the fixed reference date-time is "2040-02-28 10:20:30 Etc/UTC"
     And quoted text and argument lists use JSON notation to preserve whitespace and absent values
     And date-value text is the lossless six-field form "YYYY-MM-DD HH:MM:SS"
+    And collection results for remembered source text are observed Perl list-context compatibility, while the scalar text result is the documented source API
 
   Scenario: Read remembered source text for INPUT-FRESH
     Given a newly constructed date without initial text
@@ -19,6 +20,19 @@ Feature: Remember the source text of a date across public changes
     When I subsequently read the date value
     Then the date-value text is ""
     And the error is "[value] Object does not contain a date"
+
+  @observed-compatibility
+  Scenario: Read remembered source text for INPUT-CONSTRUCTOR
+    Given a date constructed with text "2040-02-29 16:05:09 Etc/UTC" and the fixed context options
+    When I read the remembered source text as one text result
+    Then the result is "2040-02-29 16:05:09 Etc/UTC"
+    And the error is ""
+    When I read the remembered source text as a collection
+    Then the collection is ["2040-02-29 16:05:09 Etc/UTC"]
+    And the error is ""
+    When I subsequently read the date value
+    Then the date-value text is "2040-02-29 16:05:09"
+    And the error is ""
 
   Scenario: Read remembered source text for INPUT-VALID
     Given a newly constructed date without initial text

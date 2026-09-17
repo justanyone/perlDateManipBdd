@@ -1,41 +1,61 @@
 {
-  "schema_version": 1,
-  "repetitions": 2,
-  "timeout_seconds": 15,
+  "configured_zone": "Etc/UTC",
   "environment": {
-    "PATH": "/usr/bin:/bin",
     "LANG": "C.UTF-8",
     "LC_ALL": "C.UTF-8",
-    "TZ": "Etc/UTC",
-    "PERL5LIB": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5"
+    "PATH": "/usr/bin:/bin",
+    "PERL5LIB": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5",
+    "TZ": "Etc/UTC"
   },
-  "sha256": {
-    "docs/research/input-history/cases.json": "88591ae6eb5891fe7e0470d163cc03d0b49dad1287b9019d7215b94a74817c16",
-    "tools/probes/input-history/probe.pl": "4df82f487390e82d273ddce88ca51f92dd76849315127852710bc62186d83429",
-    "tools/probes/input-history/run.py": "0dccf30d2cda5c85c424b89c57f0d002167d8624d35b3b592629e1895642545b",
-    "docs/automation/reference-profiles.json": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
-    "local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm": "ae888d89540e0a35dca67a8e1f8f3f420cda95c84aaf8a6d29844e792c262362",
-    "local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm": "363adb17d51c28fea9ca66b9716d01ccc193b88c36be24da85323d351f53f6e6",
-    "local/date-manip-7.00/lib/perl5/Date/Manip/TZdata.pm": "a4749f31fe5acad42b7f6513ed47e0411c6e7753840641a11f6a5ddd945fe8eb",
-    "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm": "5fe1f12a7b59c57baf71c86e266b4ea06851eac0ec203a3507d019bcadbea97c",
-    "local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm": "fc9a983c82699b5df63a9f14bb6a7cfe9817fc79e1f336b7803549e120691b5f",
-    "local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm": "6daf668372ada128ea8a0ada4ca1b5fb79096ed7fb8977b98658eb1b51f141cc",
-    "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm": "5ece620f80b039048d09b72fcb30f0e09ce8bb1151a0720db80ebdd2f9d7686f",
-    "local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm": "bc28ca7fc2b3cc57793cd5d3d5f956a48c8438b9738dc045fd9ee7f51d61f469",
-    "local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm": "bce0c2d92075928e1c6f3a4cf1fa01740ea15d2da64470265a1b616ef352b6e1",
-    "local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm": "f977a78616d58d288d7d9f862876677a7bd1edcb8a1658ecc9bae5c7a68bbf00",
-    "local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm": "c31d2bf42f317bb811fa5e838778d12b0e5ff8dd38b012114fe9fa4471845c2e",
-    "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm": "c181a8d908efbc2c18cc0a59e10e90628161dc3acf811c9c0292985280953d85"
+  "export_status": "Keep with reference research. Do not include this Perl/profile record in a future implementation-only handoff.",
+  "fixture_expectation": {
+    "ordered_configuration": [
+      "Defaults=1",
+      "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+      "Language=English",
+      "Encoding=ASCII",
+      "DateFormat=US",
+      "Printable=0",
+      "FirstDay=1",
+      "Week1ofYear=jan4",
+      "DefaultTime=midnight",
+      "WorkWeekBeg=1",
+      "WorkWeekEnd=5",
+      "WorkDayBeg=09:00",
+      "WorkDayEnd=17:00",
+      "WorkDay24Hr=0",
+      "EraseHolidays=1",
+      "EraseEvents=1"
+    ],
+    "profile_name": "oo"
+  },
+  "loaded_module_paths": {
+    "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+    "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+    "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+    "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+    "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+  },
+  "loaded_module_sha256": {
+    "Date/Manip/Date.pm": "c181a8d908efbc2c18cc0a59e10e90628161dc3acf811c9c0292985280953d85",
+    "Date/Manip/Obj.pm": "5ece620f80b039048d09b72fcb30f0e09ce8bb1151a0720db80ebdd2f9d7686f",
+    "Date/Manip/TZ.pm": "bc28ca7fc2b3cc57793cd5d3d5f956a48c8438b9738dc045fd9ee7f51d61f469",
+    "Date/Manip/TZ/etutc00.pm": "ba6d88da06f00d4f2053c1186f63341efa2e2231bcb93a4f01ba5db0c698eb4e",
+    "Date/Manip/Zones.pm": "363adb17d51c28fea9ca66b9716d01ccc193b88c36be24da85323d351f53f6e6"
   },
   "observations": [
     {
       "call_stdout": "",
       "case_id": "INPUT-FRESH",
       "exception": null,
+      "native_payload_sha256": "c68f703f64426d46fec49ec3f65f2ba72d0846db020877b333d9727367a43965",
       "observation": {
         "actions": [],
+        "configuration_call_executed": 1,
         "configuration_error": "",
         "configuration_return": null,
+        "configured_zone": "Etc/UTC",
+        "construction_mode": "empty constructor followed by ordered public configuration",
         "error_after_list": "",
         "error_after_scalar": "",
         "error_after_value": "[value] Object does not contain a date",
@@ -44,11 +64,118 @@
           ""
         ],
         "input_scalar": "",
+        "loaded_module_paths": {
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "package_version": "7.00",
+        "profile_echo": [
+          [
+            "Defaults",
+            ""
+          ],
+          [
+            "ForceDate",
+            1
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Encoding",
+            "ASCII"
+          ],
+          [
+            "DateFormat",
+            "US"
+          ],
+          [
+            "Printable",
+            "0"
+          ],
+          [
+            "FirstDay",
+            "1"
+          ],
+          [
+            "Week1ofYear",
+            "jan4"
+          ],
+          [
+            "DefaultTime",
+            "midnight"
+          ],
+          [
+            "WorkWeekBeg",
+            "1"
+          ],
+          [
+            "WorkWeekEnd",
+            "5"
+          ],
+          [
+            "WorkDayBeg",
+            "09:00:00"
+          ],
+          [
+            "WorkDayEnd",
+            "17:00:00"
+          ],
+          [
+            "WorkDay24Hr",
+            "0"
+          ],
+          [
+            "EraseHolidays",
+            ""
+          ],
+          [
+            "EraseEvents",
+            ""
+          ]
+        ],
+        "profile_expected": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "runtime": {
+          "os_name": "linux",
+          "perl_archname": "x86_64-linux-gnu-thread-multi",
+          "perl_version": "v5.40.1"
+        },
         "tzcode": "tzcode2026c",
         "tzdata": "tzdata2026c",
         "value": "",
         "version": "7.00"
       },
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
       "request": {
         "actions": [],
         "case_id": "INPUT-FRESH",
@@ -58,18 +185,15 @@
     },
     {
       "call_stdout": "",
-      "case_id": "INPUT-VALID",
+      "case_id": "INPUT-CONSTRUCTOR",
       "exception": null,
+      "native_payload_sha256": "e8771e847c0acaf93c363e7f6c310a0372d5fedcf13617fa70e6f65cbb9abda4",
       "observation": {
-        "actions": [
-          {
-            "defined": 1,
-            "error": "",
-            "result": 0
-          }
-        ],
+        "actions": [],
+        "configuration_call_executed": 0,
         "configuration_error": "",
-        "configuration_return": null,
+        "configured_zone": "Etc/UTC",
+        "construction_mode": "constructor text with ordered public configuration options",
         "error_after_list": "",
         "error_after_scalar": "",
         "error_after_value": "",
@@ -78,11 +202,264 @@
           "2040-02-29 16:05:09 Etc/UTC"
         ],
         "input_scalar": "2040-02-29 16:05:09 Etc/UTC",
+        "loaded_module_paths": {
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "package_version": "7.00",
+        "profile_echo": [
+          [
+            "Defaults",
+            ""
+          ],
+          [
+            "ForceDate",
+            1
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Encoding",
+            "ASCII"
+          ],
+          [
+            "DateFormat",
+            "US"
+          ],
+          [
+            "Printable",
+            "0"
+          ],
+          [
+            "FirstDay",
+            "1"
+          ],
+          [
+            "Week1ofYear",
+            "jan4"
+          ],
+          [
+            "DefaultTime",
+            "midnight"
+          ],
+          [
+            "WorkWeekBeg",
+            "1"
+          ],
+          [
+            "WorkWeekEnd",
+            "5"
+          ],
+          [
+            "WorkDayBeg",
+            "09:00:00"
+          ],
+          [
+            "WorkDayEnd",
+            "17:00:00"
+          ],
+          [
+            "WorkDay24Hr",
+            "0"
+          ],
+          [
+            "EraseHolidays",
+            ""
+          ],
+          [
+            "EraseEvents",
+            ""
+          ]
+        ],
+        "profile_expected": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "runtime": {
+          "os_name": "linux",
+          "perl_archname": "x86_64-linux-gnu-thread-multi",
+          "perl_version": "v5.40.1"
+        },
         "tzcode": "tzcode2026c",
         "tzdata": "tzdata2026c",
         "value": "2040022916:05:09",
         "version": "7.00"
       },
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "request": {
+        "actions": [],
+        "case_id": "INPUT-CONSTRUCTOR",
+        "constructor_initial": "2040-02-29 16:05:09 Etc/UTC",
+        "initial": null
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "INPUT-VALID",
+      "exception": null,
+      "native_payload_sha256": "5a298b5a35f3b52929a9261c2e5e88a614d238824b15dcf2db7e6cbb772c8ef8",
+      "observation": {
+        "actions": [
+          {
+            "defined": 1,
+            "error": "",
+            "result": 0
+          }
+        ],
+        "configuration_call_executed": 1,
+        "configuration_error": "",
+        "configuration_return": null,
+        "configured_zone": "Etc/UTC",
+        "construction_mode": "empty constructor followed by ordered public configuration",
+        "error_after_list": "",
+        "error_after_scalar": "",
+        "error_after_value": "",
+        "error_before_input": "",
+        "input_list": [
+          "2040-02-29 16:05:09 Etc/UTC"
+        ],
+        "input_scalar": "2040-02-29 16:05:09 Etc/UTC",
+        "loaded_module_paths": {
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "package_version": "7.00",
+        "profile_echo": [
+          [
+            "Defaults",
+            ""
+          ],
+          [
+            "ForceDate",
+            1
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Encoding",
+            "ASCII"
+          ],
+          [
+            "DateFormat",
+            "US"
+          ],
+          [
+            "Printable",
+            "0"
+          ],
+          [
+            "FirstDay",
+            "1"
+          ],
+          [
+            "Week1ofYear",
+            "jan4"
+          ],
+          [
+            "DefaultTime",
+            "midnight"
+          ],
+          [
+            "WorkWeekBeg",
+            "1"
+          ],
+          [
+            "WorkWeekEnd",
+            "5"
+          ],
+          [
+            "WorkDayBeg",
+            "09:00:00"
+          ],
+          [
+            "WorkDayEnd",
+            "17:00:00"
+          ],
+          [
+            "WorkDay24Hr",
+            "0"
+          ],
+          [
+            "EraseHolidays",
+            ""
+          ],
+          [
+            "EraseEvents",
+            ""
+          ]
+        ],
+        "profile_expected": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "runtime": {
+          "os_name": "linux",
+          "perl_archname": "x86_64-linux-gnu-thread-multi",
+          "perl_version": "v5.40.1"
+        },
+        "tzcode": "tzcode2026c",
+        "tzdata": "tzdata2026c",
+        "value": "2040022916:05:09",
+        "version": "7.00"
+      },
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
       "request": {
         "actions": [
           {
@@ -101,6 +478,7 @@
       "call_stdout": "",
       "case_id": "INPUT-SPACING",
       "exception": null,
+      "native_payload_sha256": "b155bb6b967d2cdddc593d94f44a7e8a966ac6d33c46b8aef24847e8e1e7f143",
       "observation": {
         "actions": [
           {
@@ -109,8 +487,11 @@
             "result": 0
           }
         ],
+        "configuration_call_executed": 1,
         "configuration_error": "",
         "configuration_return": null,
+        "configured_zone": "Etc/UTC",
+        "construction_mode": "empty constructor followed by ordered public configuration",
         "error_after_list": "",
         "error_after_scalar": "",
         "error_after_value": "",
@@ -119,11 +500,118 @@
           "  February 29, 2040 16:05:09  "
         ],
         "input_scalar": "  February 29, 2040 16:05:09  ",
+        "loaded_module_paths": {
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "package_version": "7.00",
+        "profile_echo": [
+          [
+            "Defaults",
+            ""
+          ],
+          [
+            "ForceDate",
+            1
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Encoding",
+            "ASCII"
+          ],
+          [
+            "DateFormat",
+            "US"
+          ],
+          [
+            "Printable",
+            "0"
+          ],
+          [
+            "FirstDay",
+            "1"
+          ],
+          [
+            "Week1ofYear",
+            "jan4"
+          ],
+          [
+            "DefaultTime",
+            "midnight"
+          ],
+          [
+            "WorkWeekBeg",
+            "1"
+          ],
+          [
+            "WorkWeekEnd",
+            "5"
+          ],
+          [
+            "WorkDayBeg",
+            "09:00:00"
+          ],
+          [
+            "WorkDayEnd",
+            "17:00:00"
+          ],
+          [
+            "WorkDay24Hr",
+            "0"
+          ],
+          [
+            "EraseHolidays",
+            ""
+          ],
+          [
+            "EraseEvents",
+            ""
+          ]
+        ],
+        "profile_expected": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "runtime": {
+          "os_name": "linux",
+          "perl_archname": "x86_64-linux-gnu-thread-multi",
+          "perl_version": "v5.40.1"
+        },
         "tzcode": "tzcode2026c",
         "tzdata": "tzdata2026c",
         "value": "2040022916:05:09",
         "version": "7.00"
       },
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
       "request": {
         "actions": [
           {
@@ -142,6 +630,7 @@
       "call_stdout": "",
       "case_id": "INPUT-EMPTY",
       "exception": null,
+      "native_payload_sha256": "b0e8aa6f7a9b518b9a95c138b9872a4dd9cb964fba16e872dcb7ac58d5e41d95",
       "observation": {
         "actions": [
           {
@@ -150,8 +639,11 @@
             "result": 1
           }
         ],
+        "configuration_call_executed": 1,
         "configuration_error": "",
         "configuration_return": null,
+        "configured_zone": "Etc/UTC",
+        "construction_mode": "empty constructor followed by ordered public configuration",
         "error_after_list": "[parse] Empty date string",
         "error_after_scalar": "[parse] Empty date string",
         "error_after_value": "[value] Object does not contain a date",
@@ -162,11 +654,118 @@
           ""
         ],
         "input_scalar": "",
+        "loaded_module_paths": {
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "package_version": "7.00",
+        "profile_echo": [
+          [
+            "Defaults",
+            ""
+          ],
+          [
+            "ForceDate",
+            1
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Encoding",
+            "ASCII"
+          ],
+          [
+            "DateFormat",
+            "US"
+          ],
+          [
+            "Printable",
+            "0"
+          ],
+          [
+            "FirstDay",
+            "1"
+          ],
+          [
+            "Week1ofYear",
+            "jan4"
+          ],
+          [
+            "DefaultTime",
+            "midnight"
+          ],
+          [
+            "WorkWeekBeg",
+            "1"
+          ],
+          [
+            "WorkWeekEnd",
+            "5"
+          ],
+          [
+            "WorkDayBeg",
+            "09:00:00"
+          ],
+          [
+            "WorkDayEnd",
+            "17:00:00"
+          ],
+          [
+            "WorkDay24Hr",
+            "0"
+          ],
+          [
+            "EraseHolidays",
+            ""
+          ],
+          [
+            "EraseEvents",
+            ""
+          ]
+        ],
+        "profile_expected": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "runtime": {
+          "os_name": "linux",
+          "perl_archname": "x86_64-linux-gnu-thread-multi",
+          "perl_version": "v5.40.1"
+        },
         "tzcode": "tzcode2026c",
         "tzdata": "tzdata2026c",
         "value": "",
         "version": "7.00"
       },
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
       "request": {
         "actions": [
           {
@@ -185,6 +784,7 @@
       "call_stdout": "",
       "case_id": "INPUT-ABSENT",
       "exception": null,
+      "native_payload_sha256": "c7c0327604c836d1cdb7ecbd6878c867db4f2bc336614a156783be3b7d7cc4df",
       "observation": {
         "actions": [
           {
@@ -193,8 +793,11 @@
             "result": 1
           }
         ],
+        "configuration_call_executed": 1,
         "configuration_error": "",
         "configuration_return": null,
+        "configured_zone": "Etc/UTC",
+        "construction_mode": "empty constructor followed by ordered public configuration",
         "error_after_list": "[parse] Empty date string",
         "error_after_scalar": "[parse] Empty date string",
         "error_after_value": "[value] Object does not contain a date",
@@ -205,11 +808,118 @@
           ""
         ],
         "input_scalar": "",
+        "loaded_module_paths": {
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "package_version": "7.00",
+        "profile_echo": [
+          [
+            "Defaults",
+            ""
+          ],
+          [
+            "ForceDate",
+            1
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Encoding",
+            "ASCII"
+          ],
+          [
+            "DateFormat",
+            "US"
+          ],
+          [
+            "Printable",
+            "0"
+          ],
+          [
+            "FirstDay",
+            "1"
+          ],
+          [
+            "Week1ofYear",
+            "jan4"
+          ],
+          [
+            "DefaultTime",
+            "midnight"
+          ],
+          [
+            "WorkWeekBeg",
+            "1"
+          ],
+          [
+            "WorkWeekEnd",
+            "5"
+          ],
+          [
+            "WorkDayBeg",
+            "09:00:00"
+          ],
+          [
+            "WorkDayEnd",
+            "17:00:00"
+          ],
+          [
+            "WorkDay24Hr",
+            "0"
+          ],
+          [
+            "EraseHolidays",
+            ""
+          ],
+          [
+            "EraseEvents",
+            ""
+          ]
+        ],
+        "profile_expected": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "runtime": {
+          "os_name": "linux",
+          "perl_archname": "x86_64-linux-gnu-thread-multi",
+          "perl_version": "v5.40.1"
+        },
         "tzcode": "tzcode2026c",
         "tzdata": "tzdata2026c",
         "value": "",
         "version": "7.00"
       },
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
       "request": {
         "actions": [
           {
@@ -228,6 +938,7 @@
       "call_stdout": "",
       "case_id": "INPUT-INVALID",
       "exception": null,
+      "native_payload_sha256": "2f2194918958962bdf3491d8eb8d808e843613a91b8e94f190cc92692f0b744b",
       "observation": {
         "actions": [
           {
@@ -236,8 +947,11 @@
             "result": 1
           }
         ],
+        "configuration_call_executed": 1,
         "configuration_error": "",
         "configuration_return": null,
+        "configured_zone": "Etc/UTC",
+        "construction_mode": "empty constructor followed by ordered public configuration",
         "error_after_list": "[parse] Invalid date string",
         "error_after_scalar": "[parse] Invalid date string",
         "error_after_value": "[value] Object does not contain a date",
@@ -248,11 +962,118 @@
           ""
         ],
         "input_scalar": "",
+        "loaded_module_paths": {
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "package_version": "7.00",
+        "profile_echo": [
+          [
+            "Defaults",
+            ""
+          ],
+          [
+            "ForceDate",
+            1
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Encoding",
+            "ASCII"
+          ],
+          [
+            "DateFormat",
+            "US"
+          ],
+          [
+            "Printable",
+            "0"
+          ],
+          [
+            "FirstDay",
+            "1"
+          ],
+          [
+            "Week1ofYear",
+            "jan4"
+          ],
+          [
+            "DefaultTime",
+            "midnight"
+          ],
+          [
+            "WorkWeekBeg",
+            "1"
+          ],
+          [
+            "WorkWeekEnd",
+            "5"
+          ],
+          [
+            "WorkDayBeg",
+            "09:00:00"
+          ],
+          [
+            "WorkDayEnd",
+            "17:00:00"
+          ],
+          [
+            "WorkDay24Hr",
+            "0"
+          ],
+          [
+            "EraseHolidays",
+            ""
+          ],
+          [
+            "EraseEvents",
+            ""
+          ]
+        ],
+        "profile_expected": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "runtime": {
+          "os_name": "linux",
+          "perl_archname": "x86_64-linux-gnu-thread-multi",
+          "perl_version": "v5.40.1"
+        },
         "tzcode": "tzcode2026c",
         "tzdata": "tzdata2026c",
         "value": "",
         "version": "7.00"
       },
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
       "request": {
         "actions": [
           {
@@ -271,6 +1092,7 @@
       "call_stdout": "",
       "case_id": "INPUT-REPARSE",
       "exception": null,
+      "native_payload_sha256": "bb655db5db4cdee07987ea7df8ed8edf59b7d09249cd1e6e30999995a65e5bfd",
       "observation": {
         "actions": [
           {
@@ -279,8 +1101,11 @@
             "result": 0
           }
         ],
+        "configuration_call_executed": 1,
         "configuration_error": "",
         "configuration_return": null,
+        "configured_zone": "Etc/UTC",
+        "construction_mode": "empty constructor followed by ordered public configuration",
         "error_after_list": "",
         "error_after_scalar": "",
         "error_after_value": "",
@@ -291,11 +1116,118 @@
           "March 1 2040"
         ],
         "input_scalar": "March 1 2040",
+        "loaded_module_paths": {
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "package_version": "7.00",
+        "profile_echo": [
+          [
+            "Defaults",
+            ""
+          ],
+          [
+            "ForceDate",
+            1
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Encoding",
+            "ASCII"
+          ],
+          [
+            "DateFormat",
+            "US"
+          ],
+          [
+            "Printable",
+            "0"
+          ],
+          [
+            "FirstDay",
+            "1"
+          ],
+          [
+            "Week1ofYear",
+            "jan4"
+          ],
+          [
+            "DefaultTime",
+            "midnight"
+          ],
+          [
+            "WorkWeekBeg",
+            "1"
+          ],
+          [
+            "WorkWeekEnd",
+            "5"
+          ],
+          [
+            "WorkDayBeg",
+            "09:00:00"
+          ],
+          [
+            "WorkDayEnd",
+            "17:00:00"
+          ],
+          [
+            "WorkDay24Hr",
+            "0"
+          ],
+          [
+            "EraseHolidays",
+            ""
+          ],
+          [
+            "EraseEvents",
+            ""
+          ]
+        ],
+        "profile_expected": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "runtime": {
+          "os_name": "linux",
+          "perl_archname": "x86_64-linux-gnu-thread-multi",
+          "perl_version": "v5.40.1"
+        },
         "tzcode": "tzcode2026c",
         "tzdata": "tzdata2026c",
         "value": "2040030100:00:00",
         "version": "7.00"
       },
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
       "request": {
         "actions": [
           {
@@ -314,6 +1246,7 @@
       "call_stdout": "",
       "case_id": "INPUT-DATE-ONLY",
       "exception": null,
+      "native_payload_sha256": "3ce65778a9266c8cd3387ec8d92c6fbb123df04bf59c5a596315dbd74b52027f",
       "observation": {
         "actions": [
           {
@@ -322,8 +1255,11 @@
             "result": 0
           }
         ],
+        "configuration_call_executed": 1,
         "configuration_error": "",
         "configuration_return": null,
+        "configured_zone": "Etc/UTC",
+        "construction_mode": "empty constructor followed by ordered public configuration",
         "error_after_list": "",
         "error_after_scalar": "",
         "error_after_value": "",
@@ -334,11 +1270,118 @@
           ""
         ],
         "input_scalar": "",
+        "loaded_module_paths": {
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "package_version": "7.00",
+        "profile_echo": [
+          [
+            "Defaults",
+            ""
+          ],
+          [
+            "ForceDate",
+            1
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Encoding",
+            "ASCII"
+          ],
+          [
+            "DateFormat",
+            "US"
+          ],
+          [
+            "Printable",
+            "0"
+          ],
+          [
+            "FirstDay",
+            "1"
+          ],
+          [
+            "Week1ofYear",
+            "jan4"
+          ],
+          [
+            "DefaultTime",
+            "midnight"
+          ],
+          [
+            "WorkWeekBeg",
+            "1"
+          ],
+          [
+            "WorkWeekEnd",
+            "5"
+          ],
+          [
+            "WorkDayBeg",
+            "09:00:00"
+          ],
+          [
+            "WorkDayEnd",
+            "17:00:00"
+          ],
+          [
+            "WorkDay24Hr",
+            "0"
+          ],
+          [
+            "EraseHolidays",
+            ""
+          ],
+          [
+            "EraseEvents",
+            ""
+          ]
+        ],
+        "profile_expected": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "runtime": {
+          "os_name": "linux",
+          "perl_archname": "x86_64-linux-gnu-thread-multi",
+          "perl_version": "v5.40.1"
+        },
         "tzcode": "tzcode2026c",
         "tzdata": "tzdata2026c",
         "value": "2040030216:05:09",
         "version": "7.00"
       },
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
       "request": {
         "actions": [
           {
@@ -357,6 +1400,7 @@
       "call_stdout": "",
       "case_id": "INPUT-TIME-ONLY",
       "exception": null,
+      "native_payload_sha256": "df1fa7fc249fcc6492bfcb3bceae6d41d9e63eb748776c4002d580785a7f868c",
       "observation": {
         "actions": [
           {
@@ -365,8 +1409,11 @@
             "result": 0
           }
         ],
+        "configuration_call_executed": 1,
         "configuration_error": "",
         "configuration_return": null,
+        "configured_zone": "Etc/UTC",
+        "construction_mode": "empty constructor followed by ordered public configuration",
         "error_after_list": "",
         "error_after_scalar": "",
         "error_after_value": "",
@@ -377,11 +1424,118 @@
           ""
         ],
         "input_scalar": "",
+        "loaded_module_paths": {
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "package_version": "7.00",
+        "profile_echo": [
+          [
+            "Defaults",
+            ""
+          ],
+          [
+            "ForceDate",
+            1
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Encoding",
+            "ASCII"
+          ],
+          [
+            "DateFormat",
+            "US"
+          ],
+          [
+            "Printable",
+            "0"
+          ],
+          [
+            "FirstDay",
+            "1"
+          ],
+          [
+            "Week1ofYear",
+            "jan4"
+          ],
+          [
+            "DefaultTime",
+            "midnight"
+          ],
+          [
+            "WorkWeekBeg",
+            "1"
+          ],
+          [
+            "WorkWeekEnd",
+            "5"
+          ],
+          [
+            "WorkDayBeg",
+            "09:00:00"
+          ],
+          [
+            "WorkDayEnd",
+            "17:00:00"
+          ],
+          [
+            "WorkDay24Hr",
+            "0"
+          ],
+          [
+            "EraseHolidays",
+            ""
+          ],
+          [
+            "EraseEvents",
+            ""
+          ]
+        ],
+        "profile_expected": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "runtime": {
+          "os_name": "linux",
+          "perl_archname": "x86_64-linux-gnu-thread-multi",
+          "perl_version": "v5.40.1"
+        },
         "tzcode": "tzcode2026c",
         "tzdata": "tzdata2026c",
         "value": "2040022907:08:09",
         "version": "7.00"
       },
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
       "request": {
         "actions": [
           {
@@ -400,6 +1554,7 @@
       "call_stdout": "",
       "case_id": "INPUT-DATE-FAIL",
       "exception": null,
+      "native_payload_sha256": "ae486a2e4b763ccac7be7f92a286bfeca4733fe6f2712fc67f12596e279769bc",
       "observation": {
         "actions": [
           {
@@ -408,8 +1563,11 @@
             "result": 1
           }
         ],
+        "configuration_call_executed": 1,
         "configuration_error": "",
         "configuration_return": null,
+        "configured_zone": "Etc/UTC",
+        "construction_mode": "empty constructor followed by ordered public configuration",
         "error_after_list": "[parse_date] Invalid date string",
         "error_after_scalar": "[parse_date] Invalid date string",
         "error_after_value": "[parse_date] Invalid date string",
@@ -420,11 +1578,118 @@
           "2040-02-29 16:05:09 Etc/UTC"
         ],
         "input_scalar": "2040-02-29 16:05:09 Etc/UTC",
+        "loaded_module_paths": {
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "package_version": "7.00",
+        "profile_echo": [
+          [
+            "Defaults",
+            ""
+          ],
+          [
+            "ForceDate",
+            1
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Encoding",
+            "ASCII"
+          ],
+          [
+            "DateFormat",
+            "US"
+          ],
+          [
+            "Printable",
+            "0"
+          ],
+          [
+            "FirstDay",
+            "1"
+          ],
+          [
+            "Week1ofYear",
+            "jan4"
+          ],
+          [
+            "DefaultTime",
+            "midnight"
+          ],
+          [
+            "WorkWeekBeg",
+            "1"
+          ],
+          [
+            "WorkWeekEnd",
+            "5"
+          ],
+          [
+            "WorkDayBeg",
+            "09:00:00"
+          ],
+          [
+            "WorkDayEnd",
+            "17:00:00"
+          ],
+          [
+            "WorkDay24Hr",
+            "0"
+          ],
+          [
+            "EraseHolidays",
+            ""
+          ],
+          [
+            "EraseEvents",
+            ""
+          ]
+        ],
+        "profile_expected": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "runtime": {
+          "os_name": "linux",
+          "perl_archname": "x86_64-linux-gnu-thread-multi",
+          "perl_version": "v5.40.1"
+        },
         "tzcode": "tzcode2026c",
         "tzdata": "tzdata2026c",
         "value": "",
         "version": "7.00"
       },
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
       "request": {
         "actions": [
           {
@@ -443,6 +1708,7 @@
       "call_stdout": "",
       "case_id": "INPUT-TIME-FAIL",
       "exception": null,
+      "native_payload_sha256": "6fe9ea0412325eeae14a2337482fa22baaeb81c03d7caecbb82fcec006d48905",
       "observation": {
         "actions": [
           {
@@ -451,8 +1717,11 @@
             "result": 1
           }
         ],
+        "configuration_call_executed": 1,
         "configuration_error": "",
         "configuration_return": null,
+        "configured_zone": "Etc/UTC",
+        "construction_mode": "empty constructor followed by ordered public configuration",
         "error_after_list": "[parse_time] Invalid time string",
         "error_after_scalar": "[parse_time] Invalid time string",
         "error_after_value": "[parse_time] Invalid time string",
@@ -463,11 +1732,118 @@
           "2040-02-29 16:05:09 Etc/UTC"
         ],
         "input_scalar": "2040-02-29 16:05:09 Etc/UTC",
+        "loaded_module_paths": {
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "package_version": "7.00",
+        "profile_echo": [
+          [
+            "Defaults",
+            ""
+          ],
+          [
+            "ForceDate",
+            1
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Encoding",
+            "ASCII"
+          ],
+          [
+            "DateFormat",
+            "US"
+          ],
+          [
+            "Printable",
+            "0"
+          ],
+          [
+            "FirstDay",
+            "1"
+          ],
+          [
+            "Week1ofYear",
+            "jan4"
+          ],
+          [
+            "DefaultTime",
+            "midnight"
+          ],
+          [
+            "WorkWeekBeg",
+            "1"
+          ],
+          [
+            "WorkWeekEnd",
+            "5"
+          ],
+          [
+            "WorkDayBeg",
+            "09:00:00"
+          ],
+          [
+            "WorkDayEnd",
+            "17:00:00"
+          ],
+          [
+            "WorkDay24Hr",
+            "0"
+          ],
+          [
+            "EraseHolidays",
+            ""
+          ],
+          [
+            "EraseEvents",
+            ""
+          ]
+        ],
+        "profile_expected": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "runtime": {
+          "os_name": "linux",
+          "perl_archname": "x86_64-linux-gnu-thread-multi",
+          "perl_version": "v5.40.1"
+        },
         "tzcode": "tzcode2026c",
         "tzdata": "tzdata2026c",
         "value": "",
         "version": "7.00"
       },
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
       "request": {
         "actions": [
           {
@@ -486,6 +1862,7 @@
       "call_stdout": "",
       "case_id": "INPUT-PATTERN",
       "exception": null,
+      "native_payload_sha256": "9f228fd7e765f264ed241b2249327dabaf59004544b416de4a37a6ad9d976ca7",
       "observation": {
         "actions": [
           {
@@ -494,8 +1871,11 @@
             "result": 0
           }
         ],
+        "configuration_call_executed": 1,
         "configuration_error": "",
         "configuration_return": null,
+        "configured_zone": "Etc/UTC",
+        "construction_mode": "empty constructor followed by ordered public configuration",
         "error_after_list": "",
         "error_after_scalar": "",
         "error_after_value": "",
@@ -506,11 +1886,118 @@
           "2040/03/02"
         ],
         "input_scalar": "2040/03/02",
+        "loaded_module_paths": {
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "package_version": "7.00",
+        "profile_echo": [
+          [
+            "Defaults",
+            ""
+          ],
+          [
+            "ForceDate",
+            1
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Encoding",
+            "ASCII"
+          ],
+          [
+            "DateFormat",
+            "US"
+          ],
+          [
+            "Printable",
+            "0"
+          ],
+          [
+            "FirstDay",
+            "1"
+          ],
+          [
+            "Week1ofYear",
+            "jan4"
+          ],
+          [
+            "DefaultTime",
+            "midnight"
+          ],
+          [
+            "WorkWeekBeg",
+            "1"
+          ],
+          [
+            "WorkWeekEnd",
+            "5"
+          ],
+          [
+            "WorkDayBeg",
+            "09:00:00"
+          ],
+          [
+            "WorkDayEnd",
+            "17:00:00"
+          ],
+          [
+            "WorkDay24Hr",
+            "0"
+          ],
+          [
+            "EraseHolidays",
+            ""
+          ],
+          [
+            "EraseEvents",
+            ""
+          ]
+        ],
+        "profile_expected": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "runtime": {
+          "os_name": "linux",
+          "perl_archname": "x86_64-linux-gnu-thread-multi",
+          "perl_version": "v5.40.1"
+        },
         "tzcode": "tzcode2026c",
         "tzdata": "tzdata2026c",
         "value": "2040030200:00:00",
         "version": "7.00"
       },
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
       "request": {
         "actions": [
           {
@@ -530,6 +2017,7 @@
       "call_stdout": "",
       "case_id": "INPUT-PATTERN-FAIL",
       "exception": null,
+      "native_payload_sha256": "fc0cb1e6eb2710bf96f708d6bc14e99067611609089586fa77007ebefe7283fb",
       "observation": {
         "actions": [
           {
@@ -538,8 +2026,11 @@
             "result": 1
           }
         ],
+        "configuration_call_executed": 1,
         "configuration_error": "",
         "configuration_return": null,
+        "configured_zone": "Etc/UTC",
+        "construction_mode": "empty constructor followed by ordered public configuration",
         "error_after_list": "",
         "error_after_scalar": "",
         "error_after_value": "[value] Object does not contain a date",
@@ -550,11 +2041,118 @@
           ""
         ],
         "input_scalar": "",
+        "loaded_module_paths": {
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "package_version": "7.00",
+        "profile_echo": [
+          [
+            "Defaults",
+            ""
+          ],
+          [
+            "ForceDate",
+            1
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Encoding",
+            "ASCII"
+          ],
+          [
+            "DateFormat",
+            "US"
+          ],
+          [
+            "Printable",
+            "0"
+          ],
+          [
+            "FirstDay",
+            "1"
+          ],
+          [
+            "Week1ofYear",
+            "jan4"
+          ],
+          [
+            "DefaultTime",
+            "midnight"
+          ],
+          [
+            "WorkWeekBeg",
+            "1"
+          ],
+          [
+            "WorkWeekEnd",
+            "5"
+          ],
+          [
+            "WorkDayBeg",
+            "09:00:00"
+          ],
+          [
+            "WorkDayEnd",
+            "17:00:00"
+          ],
+          [
+            "WorkDay24Hr",
+            "0"
+          ],
+          [
+            "EraseHolidays",
+            ""
+          ],
+          [
+            "EraseEvents",
+            ""
+          ]
+        ],
+        "profile_expected": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "runtime": {
+          "os_name": "linux",
+          "perl_archname": "x86_64-linux-gnu-thread-multi",
+          "perl_version": "v5.40.1"
+        },
         "tzcode": "tzcode2026c",
         "tzdata": "tzdata2026c",
         "value": "",
         "version": "7.00"
       },
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
       "request": {
         "actions": [
           {
@@ -574,6 +2172,7 @@
       "call_stdout": "",
       "case_id": "INPUT-SET",
       "exception": null,
+      "native_payload_sha256": "f27aafbe27cb044cf3376f864e765cc32f847654bacb50066a62d71606c7f8dc",
       "observation": {
         "actions": [
           {
@@ -582,8 +2181,11 @@
             "result": 0
           }
         ],
+        "configuration_call_executed": 1,
         "configuration_error": "",
         "configuration_return": null,
+        "configured_zone": "Etc/UTC",
+        "construction_mode": "empty constructor followed by ordered public configuration",
         "error_after_list": "",
         "error_after_scalar": "",
         "error_after_value": "",
@@ -594,11 +2196,118 @@
           ""
         ],
         "input_scalar": "",
+        "loaded_module_paths": {
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "package_version": "7.00",
+        "profile_echo": [
+          [
+            "Defaults",
+            ""
+          ],
+          [
+            "ForceDate",
+            1
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Encoding",
+            "ASCII"
+          ],
+          [
+            "DateFormat",
+            "US"
+          ],
+          [
+            "Printable",
+            "0"
+          ],
+          [
+            "FirstDay",
+            "1"
+          ],
+          [
+            "Week1ofYear",
+            "jan4"
+          ],
+          [
+            "DefaultTime",
+            "midnight"
+          ],
+          [
+            "WorkWeekBeg",
+            "1"
+          ],
+          [
+            "WorkWeekEnd",
+            "5"
+          ],
+          [
+            "WorkDayBeg",
+            "09:00:00"
+          ],
+          [
+            "WorkDayEnd",
+            "17:00:00"
+          ],
+          [
+            "WorkDay24Hr",
+            "0"
+          ],
+          [
+            "EraseHolidays",
+            ""
+          ],
+          [
+            "EraseEvents",
+            ""
+          ]
+        ],
+        "profile_expected": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "runtime": {
+          "os_name": "linux",
+          "perl_archname": "x86_64-linux-gnu-thread-multi",
+          "perl_version": "v5.40.1"
+        },
         "tzcode": "tzcode2026c",
         "tzdata": "tzdata2026c",
         "value": "2040020116:05:09",
         "version": "7.00"
       },
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
       "request": {
         "actions": [
           {
@@ -618,6 +2327,7 @@
       "call_stdout": "",
       "case_id": "INPUT-CONVERT",
       "exception": null,
+      "native_payload_sha256": "87ae2f162c7c144112960a11a873076c51d7111b6660373e51738afe60ed6cb2",
       "observation": {
         "actions": [
           {
@@ -626,8 +2336,11 @@
             "result": 0
           }
         ],
+        "configuration_call_executed": 1,
         "configuration_error": "",
         "configuration_return": null,
+        "configured_zone": "Etc/UTC",
+        "construction_mode": "empty constructor followed by ordered public configuration",
         "error_after_list": "",
         "error_after_scalar": "",
         "error_after_value": "",
@@ -638,11 +2351,118 @@
           ""
         ],
         "input_scalar": "",
+        "loaded_module_paths": {
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "package_version": "7.00",
+        "profile_echo": [
+          [
+            "Defaults",
+            ""
+          ],
+          [
+            "ForceDate",
+            1
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Encoding",
+            "ASCII"
+          ],
+          [
+            "DateFormat",
+            "US"
+          ],
+          [
+            "Printable",
+            "0"
+          ],
+          [
+            "FirstDay",
+            "1"
+          ],
+          [
+            "Week1ofYear",
+            "jan4"
+          ],
+          [
+            "DefaultTime",
+            "midnight"
+          ],
+          [
+            "WorkWeekBeg",
+            "1"
+          ],
+          [
+            "WorkWeekEnd",
+            "5"
+          ],
+          [
+            "WorkDayBeg",
+            "09:00:00"
+          ],
+          [
+            "WorkDayEnd",
+            "17:00:00"
+          ],
+          [
+            "WorkDay24Hr",
+            "0"
+          ],
+          [
+            "EraseHolidays",
+            ""
+          ],
+          [
+            "EraseEvents",
+            ""
+          ]
+        ],
+        "profile_expected": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "runtime": {
+          "os_name": "linux",
+          "perl_archname": "x86_64-linux-gnu-thread-multi",
+          "perl_version": "v5.40.1"
+        },
         "tzcode": "tzcode2026c",
         "tzdata": "tzdata2026c",
         "value": "2040022911:05:09",
         "version": "7.00"
       },
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
       "request": {
         "actions": [
           {
@@ -661,6 +2481,7 @@
       "call_stdout": "",
       "case_id": "INPUT-CLEAR-ERROR",
       "exception": null,
+      "native_payload_sha256": "c4a8696d7fa0a2b8f94b7c367cb898ffd9cc9b98f29197adf6e13a8d7c0959a6",
       "observation": {
         "actions": [
           {
@@ -674,8 +2495,11 @@
             "result": null
           }
         ],
+        "configuration_call_executed": 1,
         "configuration_error": "",
         "configuration_return": null,
+        "configured_zone": "Etc/UTC",
+        "construction_mode": "empty constructor followed by ordered public configuration",
         "error_after_list": "",
         "error_after_scalar": "",
         "error_after_value": "[value] Object does not contain a date",
@@ -686,11 +2510,118 @@
           ""
         ],
         "input_scalar": "",
+        "loaded_module_paths": {
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "package_version": "7.00",
+        "profile_echo": [
+          [
+            "Defaults",
+            ""
+          ],
+          [
+            "ForceDate",
+            1
+          ],
+          [
+            "Language",
+            "English"
+          ],
+          [
+            "Encoding",
+            "ASCII"
+          ],
+          [
+            "DateFormat",
+            "US"
+          ],
+          [
+            "Printable",
+            "0"
+          ],
+          [
+            "FirstDay",
+            "1"
+          ],
+          [
+            "Week1ofYear",
+            "jan4"
+          ],
+          [
+            "DefaultTime",
+            "midnight"
+          ],
+          [
+            "WorkWeekBeg",
+            "1"
+          ],
+          [
+            "WorkWeekEnd",
+            "5"
+          ],
+          [
+            "WorkDayBeg",
+            "09:00:00"
+          ],
+          [
+            "WorkDayEnd",
+            "17:00:00"
+          ],
+          [
+            "WorkDay24Hr",
+            "0"
+          ],
+          [
+            "EraseHolidays",
+            ""
+          ],
+          [
+            "EraseEvents",
+            ""
+          ]
+        ],
+        "profile_expected": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "runtime": {
+          "os_name": "linux",
+          "perl_archname": "x86_64-linux-gnu-thread-multi",
+          "perl_version": "v5.40.1"
+        },
         "tzcode": "tzcode2026c",
         "tzdata": "tzdata2026c",
         "value": "",
         "version": "7.00"
       },
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
       "request": {
         "actions": [
           {
@@ -711,5 +2642,28 @@
       },
       "warnings": []
     }
-  ]
+  ],
+  "purpose": "research-only public-call reference evidence; not a portable fixture or BDD result",
+  "reference": {
+    "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+    "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+    "distribution_version": "7.00",
+    "release": "Date-Manip-7.00"
+  },
+  "repetitions": 2,
+  "runtime": {
+    "os_name": "linux",
+    "perl_archname": "x86_64-linux-gnu-thread-multi",
+    "perl_version": "v5.40.1"
+  },
+  "schema_version": 2,
+  "sha256": {
+    "docs/automation/reference-profiles.json": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
+    "docs/research/input-history/bindings.json": "c61a7d4bd37e9b3cb0ffe8c581f879f53a55c188ef7f530fef4566e73388624a",
+    "docs/research/input-history/cases.json": "0355b1e81d9bf780d54d306139c9d00a30665b7e10984b5104f5f56c52ed9f3a",
+    "tools/probes/input-history/probe.pl": "6035bbcee686e36166fb308b4a16d546bdfe2941a88c9ee5e7081ec11f26b5e2",
+    "tools/probes/input-history/review.py": "95c3d79bd81fa68ea60185d9a65ebef4f64ed5203424a4f1e32aac97e283e5b7",
+    "tools/probes/input-history/run.py": "9b0c2d67bed424d5fd4766c22bdb9a9d4d45aa64ea3a9da7ff0acfd273674f0e"
+  },
+  "timeout_seconds": 15
 }
