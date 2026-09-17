@@ -3,12 +3,12 @@
   "purpose": "Durable work queue for the language-neutral Date::Manip English specification.",
   "scope": {
     "included": "Reference research, API accounting, original English Gherkin features, observations, coverage review, and a verified Perl/Date::Manip BDD harness and adapter.",
-    "excluded": "A future non-Perl implementation and any transfer of upstream source, copied tests/data, translated algorithms, or Perl binding code to it. Private functions and internal generation tools; no direct tests or indirect execution/branch coverage obligations for them."
+    "excluded": "A future non-Perl implementation; transfer of upstream source, copied tests/data, translated algorithms or Perl binding code to it; direct private-function tests and internal generation-tool tests."
   },
   "coordination": {
     "queue_update_owner": "coordinator",
     "rule": "Only the coordinator changes this queue or the checkpoint. Contributors report evidence and proposed status changes to the coordinator.",
-    "completion_rule": "Every public non-private API, supported usage type, and identifiable public behavioral edge case must have executable test evidence. Private functions are excluded from test and coverage obligations."
+    "completion_rule": "Every public API, supported usage type and identifiable observable edge case needs executable evidence. Inspect private helpers and measure library statement/branch coverage through public calls; portable features require no private structure."
   },
   "baseline": {
     "id": "workspace-setup",
@@ -224,10 +224,10 @@
         "Reviewed export set limited to original portable English materials"
       ],
       "acceptance": [
-        "Every public non-private operation and supported usage type has executable behavioral evidence. Known untested public cases prevent completion. Private functions and internal generation tools are excluded from test obligations and coverage denominators.",
+        "Every public API and supported usage type has executable behavioral evidence. Known untested public cases prevent completion. Private code is measured only through public calls; internal generation tools remain excluded.",
         "Coverage denominators retain skipped, unsupported, and disputed entries.",
         "The handoff excludes upstream source/tests/data, translated algorithms, and Perl binding code.",
-        "Audit public API signatures, options, state transitions and logic-predicted observable edge cases; private function execution and internal branch coverage are not completion gates."
+        "Inspect public and private library logic; report statement and branch coverage including private code reached through public calls. Review uncovered paths and document unreachability or exclusions. Numeric99%/95% targets remain proposals; no direct private-function tests."
       ]
     },
     {

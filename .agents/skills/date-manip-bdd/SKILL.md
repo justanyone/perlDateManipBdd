@@ -25,8 +25,10 @@ scope; observations in temporary probes are research, not permission to implemen
 3. For each scenario name the specific behavior and the regression it should catch.
    Cover normal, boundary, and invalid cases of public APIs; distinguish observed
    behavior from the intended contract. Private functions remain classified in the
-   discovery inventory but are excluded from test obligations. Do not require direct
-   private tests or incidental private-function execution/branch coverage.
+   discovery inventory but are excluded as direct test entrypoints. Inspect private
+   logic to identify cases observable through public calls. Include executed private
+   implementation code in source coverage measurement; do not make its names,
+   structure, or algorithms requirements of the portable specification.
 
 ## Write independent scenarios
 

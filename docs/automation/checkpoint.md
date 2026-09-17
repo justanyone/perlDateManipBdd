@@ -3,6 +3,15 @@
 This file is the human-readable companion to [queue.json](queue.json). It records
 the durable state of the planning queue, rather than claiming that its work has run.
 
+## Latest coverage clarification
+
+Public-only means test entrypoints and portable contracts, not an exclusion of
+private implementation from analysis or measurement. Inspect private helpers for
+public behavior cases and measure library statement/branch execution through
+public calls. Do not restore direct private tests. Earlier statements below that
+exclude all private execution measurement are superseded. Near-total coverage is
+the aim; proposed99%/95% numbers have not been accepted as hard thresholds.
+
 ## Current state
 
 - Queue schema: 1

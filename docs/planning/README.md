@@ -44,8 +44,8 @@ an invalid request; “passing test” does not mean every library operation suc
 - Represent Perl-specific overloads through explicit generic operations. Split
   context-sensitive returns into separately named requests; carry remaining tokens
   or changed values in result records instead of requiring Perl references.
-- Exclude private functions from test obligations. Test observable public behavior
-  without requiring private tests or internal execution coverage. Do not require
+- Use only public APIs as test entrypoints. Inspect private helper logic for
+  observable cases and measure its execution through public tests. Do not require
   another language to reproduce private functions, caches, regexes, object layouts,
   memory identity, or module/file structure.
 - Track build tools and internal timezone-data generation separately. Their
@@ -175,9 +175,10 @@ compatibility tests stay in a separate binding profile.
 
 Report capability, partition, profile, directive, language, configuration and state
 coverage separately. Every public operation and supported usage type needs direct
-behavioral coverage. Private declarations and internal generation tools are excluded
-from test obligations and coverage denominators. Source review can identify public
-edge cases without requiring private-function or internal branch execution.
+behavioral coverage. Include private library code reached through public calls in
+statement and branch coverage. Review uncovered paths for missing public cases or
+evidenced unreachability; keep exclusions explicit. Internal generation tools are
+outside the library denominator. Portable features never require private structure.
 Public skips, unsupported variants and disputed cases remain visible.
 
 Export only approved original features, glossary, abstract protocol, reviewed

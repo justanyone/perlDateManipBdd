@@ -159,8 +159,8 @@ while (my $line = <$fh>) {
    } elsif ($r{callable} =~ /^_/) {
       $r{disposition} = 'private-helper';
       $r{portable_operation_id} = undef;
-      $r{coverage_route} = 'excluded-private-api';
-      $r{status} = 'excluded-private-api';
+      $r{coverage_route} = 'indirect-through-public-api';
+      $r{status} = 'source-coverage-pending';
    } elsif (exists $object{$r{module}} && exists $object{$r{module}}{$r{callable}}) {
       $r{disposition} = 'public-oo-method';
       $r{portable_operation_id} = $object{$r{module}}{$r{callable}};

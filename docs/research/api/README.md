@@ -10,8 +10,9 @@ one row for every CSV discovery record. `declaration_id` combines module,
 callable, and original discovery line so a later regeneration can identify the
 same record. A row records its CSV evidence, reconciled `disposition`, nullable
 `portable_operation_id`, and `coverage_route`. The values are deliberately
-separate: a private helper has no portable operation or test obligation. Private
-rows document the discovery boundary and are excluded from coverage denominators.
+separate: a private helper has no portable operation or direct test entrypoint.
+Its implementation can inform public cases and contributes to measured library
+coverage when reached through public calls.
 
 The `operations` array groups direct public bindings by portable operation ID.
 Every operation currently has `inventory-routed; behavioral partitions pending`.
@@ -80,4 +81,5 @@ symbols.
    portable handoff; use original probe inputs for any selected representatives.
 4. Add behavioral partitions and reviewed reference observations for each
    public operation only after its input/output shape is recorded. Private helpers
-   have no direct or indirect coverage requirements.
+   are not direct test entrypoints; review their execution through public calls
+   to identify missing public behavior cases.

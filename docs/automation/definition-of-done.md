@@ -8,12 +8,12 @@ The user's original completeness requirement was:
 > Done is a COMPLETE test suite of the existing date::manip codebase,
 > Every function, every usage type.
 
-The user subsequently clarified that this means **public, non-private APIs only**.
-Private functions are not part of the requested feature set. This clarification
-supersedes earlier requirements for direct private tests, indirect execution
-coverage, and private function/branch accounting. Internal generation tools are
-also outside the public library API. Private declarations may remain in discovery
-inventories solely to document this boundary.
+The user clarified that tests must call **public, non-private APIs only**, then
+clarified that private helper logic should still inform public test cases. These
+are separate boundaries: no direct tests of private helpers, but inspect and
+measure the implementation reached through public calls, including private code.
+The portable specification requires observable behavior, never helper names or
+structure. Internal generation tools remain outside the public library scope.
 
 The pinned reference is Date-Manip 7.00, including its current and legacy public
 backends. Preserve the language-neutral portable specification and keep public
@@ -31,8 +31,14 @@ Completion requires all of the following evidence:
   state sequences, and interacting settings. Every identifiable uncovered case
   becomes a tracked obligation and prevents completion until tested.
 - Audit public API coverage against documented signatures and observable behavior.
-  Source inspection may identify additional public edge cases, but executing
-  private functions or covering their implementation branches is not a gate.
+  Inspect public and private implementation logic for observable edge cases.
+  Measure statement and branch coverage across the pinned library, including
+  private code reached through public calls, and review every uncovered path for
+  missing public tests or evidenced unreachability. Record exclusions explicitly;
+  never improve the reported percentage by silently removing uncovered code.
+  Near-total coverage is the aim. The suggested 99% statement/95% branch targets
+  remain proposals, not user-confirmed numeric gates. High coverage alone does
+  not prove that the assertions test all relevant behavior.
 - Suspected bugs have minimal characterization tests, recorded actual results,
   and explicit semantic dispositions. They must not disappear from coverage or
   become silently mandated behavior in the portable default profile.

@@ -13,12 +13,15 @@ or complete suite during a planning-only request.
 Keep an API coverage inventory tied to an exact upstream release or commit.
 Reconcile documented APIs, exports, inheritance, aliases, and source subroutines;
 classify public, private, generated, and compatibility entries explicitly. Test only
-non-private public APIs and their observable behavior. Private functions and internal
-generation tools are outside the test scope: do not add direct tests, indirect
-execution obligations, or private function/branch coverage gates. Retain their
-inventory classification only to explain the public boundary. Public API usage
-variants and identifiable behavioral edge cases remain required, including behavior
-implemented internally by private helpers. Scenario counts do not prove completeness.
+non-private public APIs and their observable behavior. Do not call private helpers
+directly or require another implementation to reproduce them. Inspect the entire
+library, including private helpers, to find public behavior cases. Measure statement
+and branch execution reached through public calls, including private implementation
+code, and review uncovered paths. Internal generation tools remain outside the
+public library scope. Public API usage variants and identifiable edge cases remain
+required. Coverage percentages and scenario counts do not prove behavioral completeness.
+Numeric coverage thresholds proposed in conversation are not accepted hard gates;
+report actual coverage and unresolved gaps without claiming an unverified percentage.
 
 ## Licensing and attribution
 
