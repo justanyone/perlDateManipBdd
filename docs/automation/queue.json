@@ -253,7 +253,11 @@
         "docs/research/date-set-family/README.md",
         "docs/research/date-set-family/coverage.json",
         "tools/probes/date-set-family/review.py",
-        "spec/drafts/date-set"
+        "spec/drafts/date-set",
+        "docs/research/date-comparison/README.md",
+        "docs/research/date-comparison/observations.json",
+        "docs/research/date-comparison/feature-map.json",
+        "spec/drafts/date-comparison/order.feature"
       ],
       "lifecycle_review": "20 repeated original public lifecycle cases integrated after independent repair and coordinator review; exact error/carrier sequence, effective configuration isolation, full public-operation mappings and normalized portable civil dates verified. Broader constructor/mutation partitions remain open.",
       "date_set_review": "108 original repeated public set requests integrated with exact typed feature inputs, per-row literal comparisons, native observer boundaries and explicit disputed binding behavior. Real parser accepts24 scenarios across3features. Remaining domains remain open."

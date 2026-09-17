@@ -1,0 +1,481 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "case_id": "CMP-OO-EQUAL",
+      "profile": "oo",
+      "left": "2040-02-29 12:00:00",
+      "right": "2040-02-29 12:00:00"
+    },
+    {
+      "case_id": "CMP-OO-SECOND-BEFORE",
+      "profile": "oo",
+      "left": "2040-02-29 11:59:59",
+      "right": "2040-02-29 12:00:00"
+    },
+    {
+      "case_id": "CMP-OO-SECOND-AFTER",
+      "profile": "oo",
+      "left": "2040-02-29 12:00:01",
+      "right": "2040-02-29 12:00:00"
+    },
+    {
+      "case_id": "CMP-OO-LEAP",
+      "profile": "oo",
+      "left": "2040-02-29 23:59:59",
+      "right": "2040-03-01 00:00:00"
+    },
+    {
+      "case_id": "CMP-OO-YEAR",
+      "profile": "oo",
+      "left": "2039-12-31 23:59:59",
+      "right": "2040-01-01 00:00:00"
+    },
+    {
+      "case_id": "CMP-OO-SAME-INSTANT",
+      "profile": "oo",
+      "left": "2040-02-29 12:00:00 Etc/UTC",
+      "right": "2040-02-29 07:00:00 America/New_York"
+    },
+    {
+      "case_id": "CMP-OO-SAME-WALL",
+      "profile": "oo",
+      "left": "2040-02-29 12:00:00 Etc/UTC",
+      "right": "2040-02-29 12:00:00 America/New_York"
+    },
+    {
+      "case_id": "CMP-OO-BAD-LEFT",
+      "profile": "oo",
+      "left": "not a date",
+      "right": "2040-02-29 12:00:00"
+    },
+    {
+      "case_id": "CMP-OO-BAD-RIGHT",
+      "profile": "oo",
+      "left": "2040-02-29 12:00:00",
+      "right": "not a date"
+    },
+    {
+      "case_id": "CMP-OO-BOTH-BAD",
+      "profile": "oo",
+      "left": "invalid first date",
+      "right": "invalid second date"
+    },
+    {
+      "case_id": "CMP-OO-EMPTY-LEFT",
+      "profile": "oo",
+      "left": "",
+      "right": "2040-02-29 12:00:00"
+    },
+    {
+      "case_id": "CMP-OO-ABSENT-RIGHT",
+      "profile": "oo",
+      "left": "2040-02-29 12:00:00",
+      "right": null
+    },
+    {
+      "case_id": "CMP-DM6-EQUAL",
+      "profile": "dm6",
+      "left": "2040-02-29 12:00:00",
+      "right": "2040-02-29 12:00:00"
+    },
+    {
+      "case_id": "CMP-DM6-SECOND-BEFORE",
+      "profile": "dm6",
+      "left": "2040-02-29 11:59:59",
+      "right": "2040-02-29 12:00:00"
+    },
+    {
+      "case_id": "CMP-DM6-SECOND-AFTER",
+      "profile": "dm6",
+      "left": "2040-02-29 12:00:01",
+      "right": "2040-02-29 12:00:00"
+    },
+    {
+      "case_id": "CMP-DM6-LEAP",
+      "profile": "dm6",
+      "left": "2040-02-29 23:59:59",
+      "right": "2040-03-01 00:00:00"
+    },
+    {
+      "case_id": "CMP-DM6-YEAR",
+      "profile": "dm6",
+      "left": "2039-12-31 23:59:59",
+      "right": "2040-01-01 00:00:00"
+    },
+    {
+      "case_id": "CMP-DM6-SAME-INSTANT",
+      "profile": "dm6",
+      "left": "2040-02-29 12:00:00 Etc/UTC",
+      "right": "2040-02-29 07:00:00 America/New_York"
+    },
+    {
+      "case_id": "CMP-DM6-SAME-WALL",
+      "profile": "dm6",
+      "left": "2040-02-29 12:00:00 Etc/UTC",
+      "right": "2040-02-29 12:00:00 America/New_York"
+    },
+    {
+      "case_id": "CMP-DM6-BAD-LEFT",
+      "profile": "dm6",
+      "left": "not a date",
+      "right": "2040-02-29 12:00:00"
+    },
+    {
+      "case_id": "CMP-DM6-BAD-RIGHT",
+      "profile": "dm6",
+      "left": "2040-02-29 12:00:00",
+      "right": "not a date"
+    },
+    {
+      "case_id": "CMP-DM6-BOTH-BAD",
+      "profile": "dm6",
+      "left": "invalid first date",
+      "right": "invalid second date"
+    },
+    {
+      "case_id": "CMP-DM6-EMPTY-LEFT",
+      "profile": "dm6",
+      "left": "",
+      "right": "2040-02-29 12:00:00"
+    },
+    {
+      "case_id": "CMP-DM6-ABSENT-RIGHT",
+      "profile": "dm6",
+      "left": "2040-02-29 12:00:00",
+      "right": null
+    },
+    {
+      "case_id": "CMP-DM5-EQUAL",
+      "profile": "dm5",
+      "left": "2040-02-29 12:00:00",
+      "right": "2040-02-29 12:00:00"
+    },
+    {
+      "case_id": "CMP-DM5-SECOND-BEFORE",
+      "profile": "dm5",
+      "left": "2040-02-29 11:59:59",
+      "right": "2040-02-29 12:00:00"
+    },
+    {
+      "case_id": "CMP-DM5-SECOND-AFTER",
+      "profile": "dm5",
+      "left": "2040-02-29 12:00:01",
+      "right": "2040-02-29 12:00:00"
+    },
+    {
+      "case_id": "CMP-DM5-LEAP",
+      "profile": "dm5",
+      "left": "2040-02-29 23:59:59",
+      "right": "2040-03-01 00:00:00"
+    },
+    {
+      "case_id": "CMP-DM5-YEAR",
+      "profile": "dm5",
+      "left": "2039-12-31 23:59:59",
+      "right": "2040-01-01 00:00:00"
+    },
+    {
+      "case_id": "CMP-DM5-SAME-INSTANT",
+      "profile": "dm5",
+      "left": "2040-02-29 12:00:00 Etc/UTC",
+      "right": "2040-02-29 07:00:00 America/New_York"
+    },
+    {
+      "case_id": "CMP-DM5-SAME-WALL",
+      "profile": "dm5",
+      "left": "2040-02-29 12:00:00 Etc/UTC",
+      "right": "2040-02-29 12:00:00 America/New_York"
+    },
+    {
+      "case_id": "CMP-DM5-BAD-LEFT",
+      "profile": "dm5",
+      "left": "not a date",
+      "right": "2040-02-29 12:00:00"
+    },
+    {
+      "case_id": "CMP-DM5-BAD-RIGHT",
+      "profile": "dm5",
+      "left": "2040-02-29 12:00:00",
+      "right": "not a date"
+    },
+    {
+      "case_id": "CMP-DM5-BOTH-BAD",
+      "profile": "dm5",
+      "left": "invalid first date",
+      "right": "invalid second date"
+    },
+    {
+      "case_id": "CMP-DM5-EMPTY-LEFT",
+      "profile": "dm5",
+      "left": "",
+      "right": "2040-02-29 12:00:00"
+    },
+    {
+      "case_id": "CMP-DM5-ABSENT-RIGHT",
+      "profile": "dm5",
+      "left": "2040-02-29 12:00:00",
+      "right": null
+    },
+    {
+      "case_id": "CMP-BASE-FIELD0-AFTER",
+      "profile": "base",
+      "left": [
+        2040,
+        2,
+        29,
+        12,
+        34,
+        56
+      ],
+      "right": [
+        2039,
+        2,
+        29,
+        12,
+        34,
+        56
+      ]
+    },
+    {
+      "case_id": "CMP-BASE-FIELD0-BEFORE",
+      "profile": "base",
+      "left": [
+        2040,
+        2,
+        29,
+        12,
+        34,
+        56
+      ],
+      "right": [
+        2041,
+        2,
+        29,
+        12,
+        34,
+        56
+      ]
+    },
+    {
+      "case_id": "CMP-BASE-FIELD1-AFTER",
+      "profile": "base",
+      "left": [
+        2040,
+        2,
+        29,
+        12,
+        34,
+        56
+      ],
+      "right": [
+        2040,
+        1,
+        29,
+        12,
+        34,
+        56
+      ]
+    },
+    {
+      "case_id": "CMP-BASE-FIELD1-BEFORE",
+      "profile": "base",
+      "left": [
+        2040,
+        2,
+        29,
+        12,
+        34,
+        56
+      ],
+      "right": [
+        2040,
+        3,
+        29,
+        12,
+        34,
+        56
+      ]
+    },
+    {
+      "case_id": "CMP-BASE-FIELD2-AFTER",
+      "profile": "base",
+      "left": [
+        2040,
+        2,
+        29,
+        12,
+        34,
+        56
+      ],
+      "right": [
+        2040,
+        2,
+        28,
+        12,
+        34,
+        56
+      ]
+    },
+    {
+      "case_id": "CMP-BASE-FIELD2-BEFORE",
+      "profile": "base",
+      "left": [
+        2040,
+        2,
+        29,
+        12,
+        34,
+        56
+      ],
+      "right": [
+        2040,
+        2,
+        30,
+        12,
+        34,
+        56
+      ]
+    },
+    {
+      "case_id": "CMP-BASE-FIELD3-AFTER",
+      "profile": "base",
+      "left": [
+        2040,
+        2,
+        29,
+        12,
+        34,
+        56
+      ],
+      "right": [
+        2040,
+        2,
+        29,
+        11,
+        34,
+        56
+      ]
+    },
+    {
+      "case_id": "CMP-BASE-FIELD3-BEFORE",
+      "profile": "base",
+      "left": [
+        2040,
+        2,
+        29,
+        12,
+        34,
+        56
+      ],
+      "right": [
+        2040,
+        2,
+        29,
+        13,
+        34,
+        56
+      ]
+    },
+    {
+      "case_id": "CMP-BASE-FIELD4-AFTER",
+      "profile": "base",
+      "left": [
+        2040,
+        2,
+        29,
+        12,
+        34,
+        56
+      ],
+      "right": [
+        2040,
+        2,
+        29,
+        12,
+        33,
+        56
+      ]
+    },
+    {
+      "case_id": "CMP-BASE-FIELD4-BEFORE",
+      "profile": "base",
+      "left": [
+        2040,
+        2,
+        29,
+        12,
+        34,
+        56
+      ],
+      "right": [
+        2040,
+        2,
+        29,
+        12,
+        35,
+        56
+      ]
+    },
+    {
+      "case_id": "CMP-BASE-FIELD5-AFTER",
+      "profile": "base",
+      "left": [
+        2040,
+        2,
+        29,
+        12,
+        34,
+        56
+      ],
+      "right": [
+        2040,
+        2,
+        29,
+        12,
+        34,
+        55
+      ]
+    },
+    {
+      "case_id": "CMP-BASE-FIELD5-BEFORE",
+      "profile": "base",
+      "left": [
+        2040,
+        2,
+        29,
+        12,
+        34,
+        56
+      ],
+      "right": [
+        2040,
+        2,
+        29,
+        12,
+        34,
+        57
+      ]
+    },
+    {
+      "case_id": "CMP-BASE-EQUAL",
+      "profile": "base",
+      "left": [
+        2040,
+        2,
+        29,
+        12,
+        34,
+        56
+      ],
+      "right": [
+        2040,
+        2,
+        29,
+        12,
+        34,
+        56
+      ]
+    }
+  ]
+}

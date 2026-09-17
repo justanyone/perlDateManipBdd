@@ -1,0 +1,244 @@
+{
+  "feature": "spec/drafts/date-comparison/order.feature",
+  "primary_operation": "date.compare",
+  "supporting_operation_inventory": [
+    "date.compare",
+    "date.create",
+    "config.apply-settings",
+    "date.parse-text",
+    "context.base-service",
+    "context.zone-service",
+    "meta.reference-version",
+    "meta.zone-data-version",
+    "meta.zone-rule-version",
+    "error.read-state"
+  ],
+  "bindings": [
+    {
+      "operation_id": "date.compare",
+      "module": "Date::Manip::Date",
+      "callable": "cmp",
+      "source_line": 2688,
+      "context": "scalar"
+    },
+    {
+      "operation_id": "date.compare",
+      "module": "Date::Manip::Base",
+      "callable": "cmp",
+      "source_line": 988,
+      "context": "scalar"
+    },
+    {
+      "operation_id": "date.compare",
+      "module": "Date::Manip::DM6",
+      "callable": "Date_Cmp",
+      "source_line": 888,
+      "context": "scalar"
+    },
+    {
+      "operation_id": "date.compare",
+      "module": "Date::Manip::DM5",
+      "callable": "Date_Cmp",
+      "source_line": 1394,
+      "context": "scalar"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "CMP-OO-EQUAL",
+      "profile": "oo"
+    },
+    {
+      "case_id": "CMP-OO-SECOND-BEFORE",
+      "profile": "oo"
+    },
+    {
+      "case_id": "CMP-OO-SECOND-AFTER",
+      "profile": "oo"
+    },
+    {
+      "case_id": "CMP-OO-LEAP",
+      "profile": "oo"
+    },
+    {
+      "case_id": "CMP-OO-YEAR",
+      "profile": "oo"
+    },
+    {
+      "case_id": "CMP-OO-SAME-INSTANT",
+      "profile": "oo"
+    },
+    {
+      "case_id": "CMP-OO-SAME-WALL",
+      "profile": "oo"
+    },
+    {
+      "case_id": "CMP-OO-BAD-LEFT",
+      "profile": "oo"
+    },
+    {
+      "case_id": "CMP-OO-BAD-RIGHT",
+      "profile": "oo"
+    },
+    {
+      "case_id": "CMP-OO-BOTH-BAD",
+      "profile": "oo"
+    },
+    {
+      "case_id": "CMP-OO-EMPTY-LEFT",
+      "profile": "oo"
+    },
+    {
+      "case_id": "CMP-OO-ABSENT-RIGHT",
+      "profile": "oo"
+    },
+    {
+      "case_id": "CMP-DM6-EQUAL",
+      "profile": "dm6"
+    },
+    {
+      "case_id": "CMP-DM6-SECOND-BEFORE",
+      "profile": "dm6"
+    },
+    {
+      "case_id": "CMP-DM6-SECOND-AFTER",
+      "profile": "dm6"
+    },
+    {
+      "case_id": "CMP-DM6-LEAP",
+      "profile": "dm6"
+    },
+    {
+      "case_id": "CMP-DM6-YEAR",
+      "profile": "dm6"
+    },
+    {
+      "case_id": "CMP-DM6-SAME-INSTANT",
+      "profile": "dm6"
+    },
+    {
+      "case_id": "CMP-DM6-SAME-WALL",
+      "profile": "dm6"
+    },
+    {
+      "case_id": "CMP-DM6-BAD-LEFT",
+      "profile": "dm6"
+    },
+    {
+      "case_id": "CMP-DM6-BAD-RIGHT",
+      "profile": "dm6"
+    },
+    {
+      "case_id": "CMP-DM6-BOTH-BAD",
+      "profile": "dm6"
+    },
+    {
+      "case_id": "CMP-DM6-EMPTY-LEFT",
+      "profile": "dm6"
+    },
+    {
+      "case_id": "CMP-DM6-ABSENT-RIGHT",
+      "profile": "dm6"
+    },
+    {
+      "case_id": "CMP-DM5-EQUAL",
+      "profile": "dm5"
+    },
+    {
+      "case_id": "CMP-DM5-SECOND-BEFORE",
+      "profile": "dm5"
+    },
+    {
+      "case_id": "CMP-DM5-SECOND-AFTER",
+      "profile": "dm5"
+    },
+    {
+      "case_id": "CMP-DM5-LEAP",
+      "profile": "dm5"
+    },
+    {
+      "case_id": "CMP-DM5-YEAR",
+      "profile": "dm5"
+    },
+    {
+      "case_id": "CMP-DM5-SAME-INSTANT",
+      "profile": "dm5"
+    },
+    {
+      "case_id": "CMP-DM5-SAME-WALL",
+      "profile": "dm5"
+    },
+    {
+      "case_id": "CMP-DM5-BAD-LEFT",
+      "profile": "dm5"
+    },
+    {
+      "case_id": "CMP-DM5-BAD-RIGHT",
+      "profile": "dm5"
+    },
+    {
+      "case_id": "CMP-DM5-BOTH-BAD",
+      "profile": "dm5"
+    },
+    {
+      "case_id": "CMP-DM5-EMPTY-LEFT",
+      "profile": "dm5"
+    },
+    {
+      "case_id": "CMP-DM5-ABSENT-RIGHT",
+      "profile": "dm5"
+    },
+    {
+      "case_id": "CMP-BASE-FIELD0-AFTER",
+      "profile": "base"
+    },
+    {
+      "case_id": "CMP-BASE-FIELD0-BEFORE",
+      "profile": "base"
+    },
+    {
+      "case_id": "CMP-BASE-FIELD1-AFTER",
+      "profile": "base"
+    },
+    {
+      "case_id": "CMP-BASE-FIELD1-BEFORE",
+      "profile": "base"
+    },
+    {
+      "case_id": "CMP-BASE-FIELD2-AFTER",
+      "profile": "base"
+    },
+    {
+      "case_id": "CMP-BASE-FIELD2-BEFORE",
+      "profile": "base"
+    },
+    {
+      "case_id": "CMP-BASE-FIELD3-AFTER",
+      "profile": "base"
+    },
+    {
+      "case_id": "CMP-BASE-FIELD3-BEFORE",
+      "profile": "base"
+    },
+    {
+      "case_id": "CMP-BASE-FIELD4-AFTER",
+      "profile": "base"
+    },
+    {
+      "case_id": "CMP-BASE-FIELD4-BEFORE",
+      "profile": "base"
+    },
+    {
+      "case_id": "CMP-BASE-FIELD5-AFTER",
+      "profile": "base"
+    },
+    {
+      "case_id": "CMP-BASE-FIELD5-BEFORE",
+      "profile": "base"
+    },
+    {
+      "case_id": "CMP-BASE-EQUAL",
+      "profile": "base"
+    }
+  ]
+}

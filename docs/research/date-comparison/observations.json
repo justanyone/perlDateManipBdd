@@ -1,0 +1,3203 @@
+{
+  "repetitions": 2,
+  "timeout_seconds": 15,
+  "workers": 4,
+  "fresh_cwd": true,
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8",
+    "TZ": "Etc/UTC",
+    "PERL5LIB": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5"
+  },
+  "sha256": {
+    "docs/automation/reference-profiles.json": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
+    "docs/research/date-comparison/cases.json": "aab02d5c0ac1d0c74b4662b08fc2d74684b4c29ff999905e81a45f6bdbbaf0bf",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm": "5fe1f12a7b59c57baf71c86e266b4ea06851eac0ec203a3507d019bcadbea97c",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm": "c31d2bf42f317bb811fa5e838778d12b0e5ff8dd38b012114fe9fa4471845c2e",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm": "fc9a983c82699b5df63a9f14bb6a7cfe9817fc79e1f336b7803549e120691b5f",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm": "bce0c2d92075928e1c6f3a4cf1fa01740ea15d2da64470265a1b616ef352b6e1",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm": "c181a8d908efbc2c18cc0a59e10e90628161dc3acf811c9c0292985280953d85",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm": "f977a78616d58d288d7d9f862876677a7bd1edcb8a1658ecc9bae5c7a68bbf00",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm": "4ab18ff883b65c3bb0d8b0a875d929117480409b4491e20f55811d5a13a70a94",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm": "5052b2c740b190d228ef4a2e87cf248610f90519d75db2fdc723ecaa9ac679d8",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm": "5ece620f80b039048d09b72fcb30f0e09ce8bb1151a0720db80ebdd2f9d7686f",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm": "6daf668372ada128ea8a0ada4ca1b5fb79096ed7fb8977b98658eb1b51f141cc",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/TZ/amnew_00.pm": "3d438c7950486c4d71099961f82579b1aab64d7e0e01b07e7a26161303c3a116",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm": "40731072ac33ff4a319053d0b5a856b33c7acc62f0b080d5345b7c61bda80d0e",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm": "ba6d88da06f00d4f2053c1186f63341efa2e2231bcb93a4f01ba5db0c698eb4e",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm": "bc28ca7fc2b3cc57793cd5d3d5f956a48c8438b9738dc045fd9ee7f51d61f469",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm": "ae888d89540e0a35dca67a8e1f8f3f420cda95c84aaf8a6d29844e792c262362",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm": "363adb17d51c28fea9ca66b9716d01ccc193b88c36be24da85323d351f53f6e6",
+    "tools/probes/date-comparison/probe.pl": "073b501bcf89f0b120ce4df6d579040afba863fc237448f36a32e75085677ab9",
+    "tools/probes/date-comparison/run.py": "7857f7ccb1320143e1b7b1700655e89096ea2e5134f5a420ff6fa9b9e88aeaa4"
+  },
+  "rows": [
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-OO-EQUAL",
+          "left": "2040-02-29 12:00:00",
+          "profile": "oo",
+          "right": "2040-02-29 12:00:00"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "errors_after": [
+            "",
+            ""
+          ],
+          "errors_before": [
+            "",
+            ""
+          ],
+          "parse_left": 0,
+          "parse_right": 0,
+          "result": 0,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-OO-SECOND-BEFORE",
+          "left": "2040-02-29 11:59:59",
+          "profile": "oo",
+          "right": "2040-02-29 12:00:00"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "errors_after": [
+            "",
+            ""
+          ],
+          "errors_before": [
+            "",
+            ""
+          ],
+          "parse_left": 0,
+          "parse_right": 0,
+          "result": -1,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-OO-SECOND-AFTER",
+          "left": "2040-02-29 12:00:01",
+          "profile": "oo",
+          "right": "2040-02-29 12:00:00"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "errors_after": [
+            "",
+            ""
+          ],
+          "errors_before": [
+            "",
+            ""
+          ],
+          "parse_left": 0,
+          "parse_right": 0,
+          "result": 1,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-OO-LEAP",
+          "left": "2040-02-29 23:59:59",
+          "profile": "oo",
+          "right": "2040-03-01 00:00:00"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "errors_after": [
+            "",
+            ""
+          ],
+          "errors_before": [
+            "",
+            ""
+          ],
+          "parse_left": 0,
+          "parse_right": 0,
+          "result": -1,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-OO-YEAR",
+          "left": "2039-12-31 23:59:59",
+          "profile": "oo",
+          "right": "2040-01-01 00:00:00"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "errors_after": [
+            "",
+            ""
+          ],
+          "errors_before": [
+            "",
+            ""
+          ],
+          "parse_left": 0,
+          "parse_right": 0,
+          "result": -1,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-OO-SAME-INSTANT",
+          "left": "2040-02-29 12:00:00 Etc/UTC",
+          "profile": "oo",
+          "right": "2040-02-29 07:00:00 America/New_York"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/amnew_00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/amnew_00.pm",
+          "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "errors_after": [
+            "",
+            ""
+          ],
+          "errors_before": [
+            "",
+            ""
+          ],
+          "parse_left": 0,
+          "parse_right": 0,
+          "result": 0,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-OO-SAME-WALL",
+          "left": "2040-02-29 12:00:00 Etc/UTC",
+          "profile": "oo",
+          "right": "2040-02-29 12:00:00 America/New_York"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/amnew_00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/amnew_00.pm",
+          "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "errors_after": [
+            "",
+            ""
+          ],
+          "errors_before": [
+            "",
+            ""
+          ],
+          "parse_left": 0,
+          "parse_right": 0,
+          "result": -1,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-OO-BAD-LEFT",
+          "left": "not a date",
+          "profile": "oo",
+          "right": "2040-02-29 12:00:00"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "errors_after": [
+            "[parse] Invalid date string",
+            ""
+          ],
+          "errors_before": [
+            "[parse] Invalid date string",
+            ""
+          ],
+          "parse_left": 1,
+          "parse_right": 0,
+          "result": null,
+          "result_defined": 0,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": [
+          "WARNING: [cmp] Arguments must be valid dates: date1 at /home/kevin/my_code/perlDateManipBdd/tools/probes/date-comparison/probe.pl line 29.\n"
+        ]
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-OO-BAD-RIGHT",
+          "left": "2040-02-29 12:00:00",
+          "profile": "oo",
+          "right": "not a date"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "errors_after": [
+            "",
+            "[parse] Invalid date string"
+          ],
+          "errors_before": [
+            "",
+            "[parse] Invalid date string"
+          ],
+          "parse_left": 0,
+          "parse_right": 1,
+          "result": null,
+          "result_defined": 0,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": [
+          "WARNING: [cmp] Arguments must be valid dates: date2 at /home/kevin/my_code/perlDateManipBdd/tools/probes/date-comparison/probe.pl line 29.\n"
+        ]
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-OO-BOTH-BAD",
+          "left": "invalid first date",
+          "profile": "oo",
+          "right": "invalid second date"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "errors_after": [
+            "[parse] Invalid date string",
+            "[parse] Invalid date string"
+          ],
+          "errors_before": [
+            "[parse] Invalid date string",
+            "[parse] Invalid date string"
+          ],
+          "parse_left": 1,
+          "parse_right": 1,
+          "result": null,
+          "result_defined": 0,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": [
+          "WARNING: [cmp] Arguments must be valid dates: date1 at /home/kevin/my_code/perlDateManipBdd/tools/probes/date-comparison/probe.pl line 29.\n"
+        ]
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-OO-EMPTY-LEFT",
+          "left": "",
+          "profile": "oo",
+          "right": "2040-02-29 12:00:00"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "errors_after": [
+            "[parse] Empty date string",
+            ""
+          ],
+          "errors_before": [
+            "[parse] Empty date string",
+            ""
+          ],
+          "parse_left": 1,
+          "parse_right": 0,
+          "result": null,
+          "result_defined": 0,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": [
+          "WARNING: [cmp] Arguments must be valid dates: date1 at /home/kevin/my_code/perlDateManipBdd/tools/probes/date-comparison/probe.pl line 29.\n"
+        ]
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-OO-ABSENT-RIGHT",
+          "left": "2040-02-29 12:00:00",
+          "profile": "oo",
+          "right": null
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "errors_after": [
+            "",
+            "[parse] Empty date string"
+          ],
+          "errors_before": [
+            "",
+            "[parse] Empty date string"
+          ],
+          "parse_left": 0,
+          "parse_right": 1,
+          "result": null,
+          "result_defined": 0,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": [
+          "WARNING: [cmp] Arguments must be valid dates: date2 at /home/kevin/my_code/perlDateManipBdd/tools/probes/date-comparison/probe.pl line 29.\n"
+        ]
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM6-EQUAL",
+          "left": "2040-02-29 12:00:00",
+          "profile": "dm6",
+          "right": "2040-02-29 12:00:00"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_return": "",
+          "result": 0,
+          "result_defined": 1,
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM6-SECOND-BEFORE",
+          "left": "2040-02-29 11:59:59",
+          "profile": "dm6",
+          "right": "2040-02-29 12:00:00"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_return": "",
+          "result": -1,
+          "result_defined": 1,
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM6-SECOND-AFTER",
+          "left": "2040-02-29 12:00:01",
+          "profile": "dm6",
+          "right": "2040-02-29 12:00:00"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_return": "",
+          "result": 1,
+          "result_defined": 1,
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM6-LEAP",
+          "left": "2040-02-29 23:59:59",
+          "profile": "dm6",
+          "right": "2040-03-01 00:00:00"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_return": "",
+          "result": -1,
+          "result_defined": 1,
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM6-YEAR",
+          "left": "2039-12-31 23:59:59",
+          "profile": "dm6",
+          "right": "2040-01-01 00:00:00"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_return": "",
+          "result": -1,
+          "result_defined": 1,
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM6-SAME-INSTANT",
+          "left": "2040-02-29 12:00:00 Etc/UTC",
+          "profile": "dm6",
+          "right": "2040-02-29 07:00:00 America/New_York"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/amnew_00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/amnew_00.pm",
+          "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_return": "",
+          "result": 0,
+          "result_defined": 1,
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM6-SAME-WALL",
+          "left": "2040-02-29 12:00:00 Etc/UTC",
+          "profile": "dm6",
+          "right": "2040-02-29 12:00:00 America/New_York"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/amnew_00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/amnew_00.pm",
+          "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_return": "",
+          "result": -1,
+          "result_defined": 1,
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM6-BAD-LEFT",
+          "left": "not a date",
+          "profile": "dm6",
+          "right": "2040-02-29 12:00:00"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_return": "",
+          "result": null,
+          "result_defined": 0,
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM6-BAD-RIGHT",
+          "left": "2040-02-29 12:00:00",
+          "profile": "dm6",
+          "right": "not a date"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_return": "",
+          "result": null,
+          "result_defined": 0,
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM6-BOTH-BAD",
+          "left": "invalid first date",
+          "profile": "dm6",
+          "right": "invalid second date"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_return": "",
+          "result": null,
+          "result_defined": 0,
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM6-EMPTY-LEFT",
+          "left": "",
+          "profile": "dm6",
+          "right": "2040-02-29 12:00:00"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_return": "",
+          "result": null,
+          "result_defined": 0,
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM6-ABSENT-RIGHT",
+          "left": "2040-02-29 12:00:00",
+          "profile": "dm6",
+          "right": null
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_return": "",
+          "result": null,
+          "result_defined": 0,
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM5-EQUAL",
+          "left": "2040-02-29 12:00:00",
+          "profile": "dm5",
+          "right": "2040-02-29 12:00:00"
+        },
+        "configuration": [
+          "IgnoreGlobalCnf=1",
+          "PersonalCnf=",
+          "PersonalCnfPath=",
+          "ForceDate=2040-02-28-10:20:30",
+          "TZ=Etc/UTC",
+          "Language=English",
+          "DateFormat=US",
+          "Internal=0",
+          "FirstDay=1",
+          "Jan1Week1=0",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "TodayIsMidnight=1",
+          "EraseHolidays=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+          "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+        },
+        "observation": {
+          "config_return": null,
+          "result": 0,
+          "result_defined": 1,
+          "version": "5.66"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/date-comparison/probe.pl line 34.\n"
+        ]
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM5-SECOND-BEFORE",
+          "left": "2040-02-29 11:59:59",
+          "profile": "dm5",
+          "right": "2040-02-29 12:00:00"
+        },
+        "configuration": [
+          "IgnoreGlobalCnf=1",
+          "PersonalCnf=",
+          "PersonalCnfPath=",
+          "ForceDate=2040-02-28-10:20:30",
+          "TZ=Etc/UTC",
+          "Language=English",
+          "DateFormat=US",
+          "Internal=0",
+          "FirstDay=1",
+          "Jan1Week1=0",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "TodayIsMidnight=1",
+          "EraseHolidays=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+          "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+        },
+        "observation": {
+          "config_return": null,
+          "result": -1,
+          "result_defined": 1,
+          "version": "5.66"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/date-comparison/probe.pl line 34.\n"
+        ]
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM5-SECOND-AFTER",
+          "left": "2040-02-29 12:00:01",
+          "profile": "dm5",
+          "right": "2040-02-29 12:00:00"
+        },
+        "configuration": [
+          "IgnoreGlobalCnf=1",
+          "PersonalCnf=",
+          "PersonalCnfPath=",
+          "ForceDate=2040-02-28-10:20:30",
+          "TZ=Etc/UTC",
+          "Language=English",
+          "DateFormat=US",
+          "Internal=0",
+          "FirstDay=1",
+          "Jan1Week1=0",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "TodayIsMidnight=1",
+          "EraseHolidays=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+          "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+        },
+        "observation": {
+          "config_return": null,
+          "result": 1,
+          "result_defined": 1,
+          "version": "5.66"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/date-comparison/probe.pl line 34.\n"
+        ]
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM5-LEAP",
+          "left": "2040-02-29 23:59:59",
+          "profile": "dm5",
+          "right": "2040-03-01 00:00:00"
+        },
+        "configuration": [
+          "IgnoreGlobalCnf=1",
+          "PersonalCnf=",
+          "PersonalCnfPath=",
+          "ForceDate=2040-02-28-10:20:30",
+          "TZ=Etc/UTC",
+          "Language=English",
+          "DateFormat=US",
+          "Internal=0",
+          "FirstDay=1",
+          "Jan1Week1=0",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "TodayIsMidnight=1",
+          "EraseHolidays=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+          "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+        },
+        "observation": {
+          "config_return": null,
+          "result": -1,
+          "result_defined": 1,
+          "version": "5.66"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/date-comparison/probe.pl line 34.\n"
+        ]
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM5-YEAR",
+          "left": "2039-12-31 23:59:59",
+          "profile": "dm5",
+          "right": "2040-01-01 00:00:00"
+        },
+        "configuration": [
+          "IgnoreGlobalCnf=1",
+          "PersonalCnf=",
+          "PersonalCnfPath=",
+          "ForceDate=2040-02-28-10:20:30",
+          "TZ=Etc/UTC",
+          "Language=English",
+          "DateFormat=US",
+          "Internal=0",
+          "FirstDay=1",
+          "Jan1Week1=0",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "TodayIsMidnight=1",
+          "EraseHolidays=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+          "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+        },
+        "observation": {
+          "config_return": null,
+          "result": -1,
+          "result_defined": 1,
+          "version": "5.66"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/date-comparison/probe.pl line 34.\n"
+        ]
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM5-SAME-INSTANT",
+          "left": "2040-02-29 12:00:00 Etc/UTC",
+          "profile": "dm5",
+          "right": "2040-02-29 07:00:00 America/New_York"
+        },
+        "configuration": [
+          "IgnoreGlobalCnf=1",
+          "PersonalCnf=",
+          "PersonalCnfPath=",
+          "ForceDate=2040-02-28-10:20:30",
+          "TZ=Etc/UTC",
+          "Language=English",
+          "DateFormat=US",
+          "Internal=0",
+          "FirstDay=1",
+          "Jan1Week1=0",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "TodayIsMidnight=1",
+          "EraseHolidays=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+          "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+        },
+        "observation": {
+          "config_return": null,
+          "result": 0,
+          "result_defined": 1,
+          "version": "5.66"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/date-comparison/probe.pl line 34.\n"
+        ]
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM5-SAME-WALL",
+          "left": "2040-02-29 12:00:00 Etc/UTC",
+          "profile": "dm5",
+          "right": "2040-02-29 12:00:00 America/New_York"
+        },
+        "configuration": [
+          "IgnoreGlobalCnf=1",
+          "PersonalCnf=",
+          "PersonalCnfPath=",
+          "ForceDate=2040-02-28-10:20:30",
+          "TZ=Etc/UTC",
+          "Language=English",
+          "DateFormat=US",
+          "Internal=0",
+          "FirstDay=1",
+          "Jan1Week1=0",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "TodayIsMidnight=1",
+          "EraseHolidays=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+          "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+        },
+        "observation": {
+          "config_return": null,
+          "result": 0,
+          "result_defined": 1,
+          "version": "5.66"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/date-comparison/probe.pl line 34.\n"
+        ]
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM5-BAD-LEFT",
+          "left": "not a date",
+          "profile": "dm5",
+          "right": "2040-02-29 12:00:00"
+        },
+        "configuration": [
+          "IgnoreGlobalCnf=1",
+          "PersonalCnf=",
+          "PersonalCnfPath=",
+          "ForceDate=2040-02-28-10:20:30",
+          "TZ=Etc/UTC",
+          "Language=English",
+          "DateFormat=US",
+          "Internal=0",
+          "FirstDay=1",
+          "Jan1Week1=0",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "TodayIsMidnight=1",
+          "EraseHolidays=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+          "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+        },
+        "observation": {
+          "config_return": null,
+          "result": -1,
+          "result_defined": 1,
+          "version": "5.66"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/date-comparison/probe.pl line 34.\n"
+        ]
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM5-BAD-RIGHT",
+          "left": "2040-02-29 12:00:00",
+          "profile": "dm5",
+          "right": "not a date"
+        },
+        "configuration": [
+          "IgnoreGlobalCnf=1",
+          "PersonalCnf=",
+          "PersonalCnfPath=",
+          "ForceDate=2040-02-28-10:20:30",
+          "TZ=Etc/UTC",
+          "Language=English",
+          "DateFormat=US",
+          "Internal=0",
+          "FirstDay=1",
+          "Jan1Week1=0",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "TodayIsMidnight=1",
+          "EraseHolidays=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+          "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+        },
+        "observation": {
+          "config_return": null,
+          "result": 1,
+          "result_defined": 1,
+          "version": "5.66"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/date-comparison/probe.pl line 34.\n"
+        ]
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM5-BOTH-BAD",
+          "left": "invalid first date",
+          "profile": "dm5",
+          "right": "invalid second date"
+        },
+        "configuration": [
+          "IgnoreGlobalCnf=1",
+          "PersonalCnf=",
+          "PersonalCnfPath=",
+          "ForceDate=2040-02-28-10:20:30",
+          "TZ=Etc/UTC",
+          "Language=English",
+          "DateFormat=US",
+          "Internal=0",
+          "FirstDay=1",
+          "Jan1Week1=0",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "TodayIsMidnight=1",
+          "EraseHolidays=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+          "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+        },
+        "observation": {
+          "config_return": null,
+          "result": 0,
+          "result_defined": 1,
+          "version": "5.66"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/date-comparison/probe.pl line 34.\n"
+        ]
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM5-EMPTY-LEFT",
+          "left": "",
+          "profile": "dm5",
+          "right": "2040-02-29 12:00:00"
+        },
+        "configuration": [
+          "IgnoreGlobalCnf=1",
+          "PersonalCnf=",
+          "PersonalCnfPath=",
+          "ForceDate=2040-02-28-10:20:30",
+          "TZ=Etc/UTC",
+          "Language=English",
+          "DateFormat=US",
+          "Internal=0",
+          "FirstDay=1",
+          "Jan1Week1=0",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "TodayIsMidnight=1",
+          "EraseHolidays=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+          "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+        },
+        "observation": {
+          "config_return": null,
+          "result": -1,
+          "result_defined": 1,
+          "version": "5.66"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/date-comparison/probe.pl line 34.\n"
+        ]
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-DM5-ABSENT-RIGHT",
+          "left": "2040-02-29 12:00:00",
+          "profile": "dm5",
+          "right": null
+        },
+        "configuration": [
+          "IgnoreGlobalCnf=1",
+          "PersonalCnf=",
+          "PersonalCnfPath=",
+          "ForceDate=2040-02-28-10:20:30",
+          "TZ=Etc/UTC",
+          "Language=English",
+          "DateFormat=US",
+          "Internal=0",
+          "FirstDay=1",
+          "Jan1Week1=0",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "TodayIsMidnight=1",
+          "EraseHolidays=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+          "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+        },
+        "observation": {
+          "config_return": null,
+          "result": 1,
+          "result_defined": 1,
+          "version": "5.66"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/date-comparison/probe.pl line 34.\n"
+        ]
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-BASE-FIELD0-AFTER",
+          "left": [
+            2040,
+            2,
+            29,
+            12,
+            34,
+            56
+          ],
+          "profile": "base",
+          "right": [
+            2039,
+            2,
+            29,
+            12,
+            34,
+            56
+          ]
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "error_after": "",
+          "error_before": "",
+          "result": 1,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-BASE-FIELD0-BEFORE",
+          "left": [
+            2040,
+            2,
+            29,
+            12,
+            34,
+            56
+          ],
+          "profile": "base",
+          "right": [
+            2041,
+            2,
+            29,
+            12,
+            34,
+            56
+          ]
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "error_after": "",
+          "error_before": "",
+          "result": -1,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-BASE-FIELD1-AFTER",
+          "left": [
+            2040,
+            2,
+            29,
+            12,
+            34,
+            56
+          ],
+          "profile": "base",
+          "right": [
+            2040,
+            1,
+            29,
+            12,
+            34,
+            56
+          ]
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "error_after": "",
+          "error_before": "",
+          "result": 1,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-BASE-FIELD1-BEFORE",
+          "left": [
+            2040,
+            2,
+            29,
+            12,
+            34,
+            56
+          ],
+          "profile": "base",
+          "right": [
+            2040,
+            3,
+            29,
+            12,
+            34,
+            56
+          ]
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "error_after": "",
+          "error_before": "",
+          "result": -1,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-BASE-FIELD2-AFTER",
+          "left": [
+            2040,
+            2,
+            29,
+            12,
+            34,
+            56
+          ],
+          "profile": "base",
+          "right": [
+            2040,
+            2,
+            28,
+            12,
+            34,
+            56
+          ]
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "error_after": "",
+          "error_before": "",
+          "result": 1,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-BASE-FIELD2-BEFORE",
+          "left": [
+            2040,
+            2,
+            29,
+            12,
+            34,
+            56
+          ],
+          "profile": "base",
+          "right": [
+            2040,
+            2,
+            30,
+            12,
+            34,
+            56
+          ]
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "error_after": "",
+          "error_before": "",
+          "result": -1,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-BASE-FIELD3-AFTER",
+          "left": [
+            2040,
+            2,
+            29,
+            12,
+            34,
+            56
+          ],
+          "profile": "base",
+          "right": [
+            2040,
+            2,
+            29,
+            11,
+            34,
+            56
+          ]
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "error_after": "",
+          "error_before": "",
+          "result": 1,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-BASE-FIELD3-BEFORE",
+          "left": [
+            2040,
+            2,
+            29,
+            12,
+            34,
+            56
+          ],
+          "profile": "base",
+          "right": [
+            2040,
+            2,
+            29,
+            13,
+            34,
+            56
+          ]
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "error_after": "",
+          "error_before": "",
+          "result": -1,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-BASE-FIELD4-AFTER",
+          "left": [
+            2040,
+            2,
+            29,
+            12,
+            34,
+            56
+          ],
+          "profile": "base",
+          "right": [
+            2040,
+            2,
+            29,
+            12,
+            33,
+            56
+          ]
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "error_after": "",
+          "error_before": "",
+          "result": 1,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-BASE-FIELD4-BEFORE",
+          "left": [
+            2040,
+            2,
+            29,
+            12,
+            34,
+            56
+          ],
+          "profile": "base",
+          "right": [
+            2040,
+            2,
+            29,
+            12,
+            35,
+            56
+          ]
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "error_after": "",
+          "error_before": "",
+          "result": -1,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-BASE-FIELD5-AFTER",
+          "left": [
+            2040,
+            2,
+            29,
+            12,
+            34,
+            56
+          ],
+          "profile": "base",
+          "right": [
+            2040,
+            2,
+            29,
+            12,
+            34,
+            55
+          ]
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "error_after": "",
+          "error_before": "",
+          "result": 1,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-BASE-FIELD5-BEFORE",
+          "left": [
+            2040,
+            2,
+            29,
+            12,
+            34,
+            56
+          ],
+          "profile": "base",
+          "right": [
+            2040,
+            2,
+            29,
+            12,
+            34,
+            57
+          ]
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "error_after": "",
+          "error_before": "",
+          "result": -1,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "case": {
+          "case_id": "CMP-BASE-EQUAL",
+          "left": [
+            2040,
+            2,
+            29,
+            12,
+            34,
+            56
+          ],
+          "profile": "base",
+          "right": [
+            2040,
+            2,
+            29,
+            12,
+            34,
+            56
+          ]
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "Printable=0",
+          "FirstDay=1",
+          "Week1ofYear=jan4",
+          "DefaultTime=midnight",
+          "WorkWeekBeg=1",
+          "WorkWeekEnd=5",
+          "WorkDayBeg=09:00",
+          "WorkDayEnd=17:00",
+          "WorkDay24Hr=0",
+          "EraseHolidays=1",
+          "EraseEvents=1"
+        ],
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "config_error": "",
+          "config_return": null,
+          "error_after": "",
+          "error_before": "",
+          "result": 0,
+          "result_defined": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00"
+        },
+        "runtime": {
+          "arch": "x86_64-linux-gnu-thread-multi",
+          "os": "linux",
+          "perl": "v5.40.1"
+        },
+        "stdout": "",
+        "warnings": []
+      }
+    }
+  ]
+}

@@ -603,3 +603,20 @@ are retained. Reference outcomes unchanged; only review-script hash refreshed.
 Active assignments remain navigation-family, value-serialization-family and
 coverage-corpus diagnostics. Full public feature set and final99/95coverage gate
 remain incomplete; runner trial is verified but Date::Manip BDD adapter unbuilt.
+
+
+## Date comparison integration
+
+Added 49 original comparison examples across object, current functional, legacy
+functional and public calendar-service bindings. Each frozen literal matches its
+own request/evidence row. A separate root rerun (two isolated attempts per case)
+matched the committed payload and provenance exactly; the real parser expanded
+49 examples without warnings. Invalid legacy operands and equal wall times across
+zones remain disputed compatibility behavior. Remaining method partitions are
+listed in the family README; no family-completion claim or executable BDD claim.
+
+coverage_setup returned the 30-case source diagnostic for root review and now owns
+NEW replace-time-family research. Navigation and value-serialization workers remain
+active. Source diagnostic paths are not yet integrated. Next: review returned worker
+batches, complete missing public partitions and implement the actual BDD adapter
+once the reviewed contract is ready. Final coverage/completeness gates remain open.
