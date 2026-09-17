@@ -304,7 +304,12 @@
         "The runner executes the approved feature grammar and a deliberately failing assertion demonstrates test sensitivity.",
         "README records exact installation and run commands.",
         "Dependency licensing and provenance are recorded without bundling upstream Date::Manip material."
-      ]
+      ],
+      "evidence": [
+        "docs/research/runner-trial/README.md",
+        "docs/research/runner-trial/trial-result.json"
+      ],
+      "preparatory_review": "Pinned runner and dependency tests pass; original positive/negative grammar trial verified. Harness setup itself remains pending specification review/freeze and adapter work."
     },
     {
       "id": "perl-adapter-implementation",

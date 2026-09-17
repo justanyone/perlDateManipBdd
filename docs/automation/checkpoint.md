@@ -508,3 +508,19 @@ Live workers were confirmed running: date-set-family, fixed-offset-family, and
 zone-transition-boundaries. Continue their independent batches and review before
 integration. The full specification, source coverage and Perl harness still need
 completion. Previous turn and this turn both made concrete repository progress.
+
+## Verified BDD runner trial
+
+Installed separately licensed Test::BDD::Cucumber0.87 and49 dependencies into
+ignored local/bdd-runner. Upstream install initially failed its colour assertion
+under inherited NO_COLOR=1; clean colour settings passed532tests,22files, with
+only the author POD test skipped. Original trial passes5positive scenarios and
+3tag-selected outline rows; wrong literal exits2 and strict undefined step exits1.
+Unicode, escaped pipes, data-table order, state isolation and docstring trailing
+newline are checked. Exact versions/declaredlicenses and trial evidence recorded
+in docs/research/runner-trial. This is not the Date::Manip adapter or suite.
+
+Worker state: date-set still active; fixed-offset408module batch returned and
+awaits root review. coverage_setup now repairs input-history provenance/bindings
+from independent report. pattern_repair repairs zone-transition row IDs/context
+after returning8cases. No workers edit root runner-trial paths.

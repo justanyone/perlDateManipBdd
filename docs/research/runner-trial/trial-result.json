@@ -1,0 +1,74 @@
+{
+  "runner": "Test::BDD::Cucumber",
+  "version": "0.87",
+  "trials": [
+    {
+      "scenario_count": 5,
+      "step_statuses": [
+        "passed",
+        "passed",
+        "passed",
+        "passed",
+        "passed",
+        "passed",
+        "passed",
+        "passed",
+        "passed",
+        "passed",
+        "passed",
+        "passed",
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "trial": "positive",
+      "expected_success": true,
+      "exit_code": 0
+    },
+    {
+      "scenario_count": 1,
+      "step_statuses": [
+        "passed",
+        "passed",
+        "failed"
+      ],
+      "trial": "failure",
+      "expected_success": false,
+      "exit_code": 2
+    },
+    {
+      "scenario_count": 1,
+      "step_statuses": [
+        "passed",
+        "skipped"
+      ],
+      "trial": "undefined",
+      "expected_success": false,
+      "exit_code": 1
+    },
+    {
+      "scenario_count": 3,
+      "step_statuses": [
+        "passed",
+        "passed",
+        "passed",
+        "passed",
+        "passed",
+        "passed",
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "trial": "outline",
+      "expected_success": true,
+      "exit_code": 0
+    }
+  ],
+  "sha256": {
+    "tools/runner-trial/install-receipt.py": "9d4b3d8ee1d989e46fe3afcf7505b526e1fa41c53f99e80870c66147bff8a6c3",
+    "tools/runner-trial/run.py": "f304c99b23b5b03c24db38a31e0bb92aa30f6930eab933f2bfaad49d28b6fd4d",
+    "tools/runner-trial/features/grammar.feature": "044528be9ebc8786a2e6fd48fc31d82bf5b039c029f45f1fc0e4149aa03c1ed5",
+    "tools/runner-trial/features/step_definitions/trial_steps.pl": "f7c52d5c4ae34784cd3fbb86fe8c28287f06936c875dee57317c29fd013fa063"
+  },
+  "scope": "runner trial only; no Date::Manip behavior executed"
+}

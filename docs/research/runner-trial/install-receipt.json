@@ -1,0 +1,508 @@
+{
+  "scope": "separately installed development environment; no source files included",
+  "runner_archive_sha256": "afa2f8a1c5aaa7435270088b33edf7ecc94987181e4e5f4af0907a61bc258a43",
+  "distributions": [
+    {
+      "distribution": "Algorithm-Diff-1.201",
+      "version": "1.201",
+      "cpan_archive": "R/RJ/RJBS/Algorithm-Diff-1.201.tar.gz",
+      "declared_licenses": [
+        "unknown"
+      ],
+      "install_metadata_sha256": "9025bfcdfff216a2303e7177309cdedb262a3f0bdc44cf24b6dcfb6a4a3b3827",
+      "package_metadata_sha256": "b2320248cc2064af55dbf1069f2282ae91e4a391809bab16d988b95a899566d5"
+    },
+    {
+      "distribution": "B-Hooks-OP-Check-0.22",
+      "version": "0.22",
+      "cpan_archive": "E/ET/ETHER/B-Hooks-OP-Check-0.22.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "6133f39d15cc7f048307177478af14dd462b510f73f3d7e78e51e30296a75dc0",
+      "package_metadata_sha256": "e399fe0a30b3ebc762accdcdac426153afa20638d43cfe87024c306f35095696"
+    },
+    {
+      "distribution": "Capture-Tiny-0.50",
+      "version": "0.50",
+      "cpan_archive": "D/DA/DAGOLDEN/Capture-Tiny-0.50.tar.gz",
+      "declared_licenses": [
+        "apache_2_0"
+      ],
+      "install_metadata_sha256": "6c96d0b89d01ca76edc33310694145b40e71653f54aa846c0d9eb68e4498aca1",
+      "package_metadata_sha256": "4e579940c50187ad64f06601f7b5ddabb7064bdf55d2e69eb505429f4a8e42a0"
+    },
+    {
+      "distribution": "Class-Method-Modifiers-2.15",
+      "version": "2.15",
+      "cpan_archive": "E/ET/ETHER/Class-Method-Modifiers-2.15.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "86ac9972851cfd7024f83ebb71b4a367222a199b9d2f09ad49530294a220e7c7",
+      "package_metadata_sha256": "a8c4e5bb03430d0dfecd9d4791b220866339ca2ad8d70fed815cbf9aef67fb37"
+    },
+    {
+      "distribution": "Cpanel-JSON-XS-4.52",
+      "version": "4.52",
+      "cpan_archive": "R/RU/RURBAN/Cpanel-JSON-XS-4.52.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "55777484d3d88d03af6b1c0b90a3d808c8726a857902d83679de9eaa754d2c25",
+      "package_metadata_sha256": "6103d55485fc7ac3c6f4127a8acc835897abac3f64a3f620ab7682bd20d86e28"
+    },
+    {
+      "distribution": "Cucumber-TagExpressions-11.0.1",
+      "version": "v11.0.1",
+      "cpan_archive": "C/CU/CUKEBOT/Cucumber-TagExpressions-11.0.1.tar.gz",
+      "declared_licenses": [
+        "mit"
+      ],
+      "install_metadata_sha256": "0c283271c45bc53d906b959477b0814bd4fce8820303254995a469fe83a64903",
+      "package_metadata_sha256": "43377581cc371a872ec5d26f00e4f7c6e20643c27476fab6ba7484612ac0a69f"
+    },
+    {
+      "distribution": "Data-Perl-0.002011",
+      "version": "0.002011",
+      "cpan_archive": "T/TO/TOBYINK/Data-Perl-0.002011.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "5c6b813906689a6ebc5f304bb4f023c952cceaa2b4913ecec9a5f6c055af0d39",
+      "package_metadata_sha256": "3ea0049fd7bedabe98fed779eb9677b8731f863c61839b69636a7a7781bb430b"
+    },
+    {
+      "distribution": "Exporter-Tiny-1.006003",
+      "version": "1.006003",
+      "cpan_archive": "T/TO/TOBYINK/Exporter-Tiny-1.006003.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "a7f73c89b7eb50e052fe2986d52f4e1104d81f137e4ae379872cdc15e090c2a3",
+      "package_metadata_sha256": "07bef8d15acc798c9245a940f30ff508606cfdf91caf47a082a6223a3105dbc8"
+    },
+    {
+      "distribution": "ExtUtils-Depends-0.8002",
+      "version": "0.8002",
+      "cpan_archive": "E/ET/ETJ/ExtUtils-Depends-0.8002.tar.gz",
+      "declared_licenses": [
+        "perl_5",
+        "perl_5"
+      ],
+      "install_metadata_sha256": "7cd05da28c8e29278987a15d08dd67a5a9bbbe8bb2c5d59d85601af192b4afc6",
+      "package_metadata_sha256": "2da8f9810ae36aa3c20c06896cfc7cbd5d2a0b63acfb01bca47df3b71c28dcdc"
+    },
+    {
+      "distribution": "File-Copy-Recursive-0.45",
+      "version": "0.45",
+      "cpan_archive": "D/DM/DMUEY/File-Copy-Recursive-0.45.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "486b8efa7558812c26beeed26592881f16bc9cccd35b7026f706a688dbb81423",
+      "package_metadata_sha256": "93e3bdac6fbeffeb90b12bbf893dcf3aa1ba0c7e2e8aa48806b1d2185e7f2338"
+    },
+    {
+      "distribution": "File-Find-Rule-0.35",
+      "version": "0.35",
+      "cpan_archive": "R/RC/RCLAMP/File-Find-Rule-0.35.tar.gz",
+      "declared_licenses": [
+        "unknown"
+      ],
+      "install_metadata_sha256": "504d0e78335502245bb75a2b61df53de38ad2c2bb538af4b8a645f66730833a5",
+      "package_metadata_sha256": "4326b9b14e81379d7e94475dbd56099f306138492aa3cf38ff3f3b10b6645f12"
+    },
+    {
+      "distribution": "IO-Stringy-2.113",
+      "version": "2.113",
+      "cpan_archive": "C/CA/CAPOEIRAB/IO-Stringy-2.113.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "018aa187dba8a88361664e746889c40403b3cee64db642b27c03f8ac04784b7f",
+      "package_metadata_sha256": "19bc69bee347b48eaf7e3a5aaa4d2b7dc2d08fa7966baade5cdf5ece6e5c9521"
+    },
+    {
+      "distribution": "JSON-MaybeXS-1.004008",
+      "version": "1.004008",
+      "cpan_archive": "E/ET/ETHER/JSON-MaybeXS-1.004008.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "7b358e9e7f2cfb1b06beed27606eea0efa5e152f99eb3cd39eec0c0b6515c5e2",
+      "package_metadata_sha256": "11b0236f5db313c47f4092515046fed715ea246787770f07a330c93daac5d18d"
+    },
+    {
+      "distribution": "List-MoreUtils-0.430",
+      "version": "0.430",
+      "cpan_archive": "R/RE/REHSACK/List-MoreUtils-0.430.tar.gz",
+      "declared_licenses": [
+        "apache_2_0"
+      ],
+      "install_metadata_sha256": "7bc7660676bff708aee42fcca8ad0eb4e53555a919d031f627ba3dbfcb9493a5",
+      "package_metadata_sha256": "4bdf59c3159ac0ca01515b542399fae884085371c94874028496c43c4a230a55"
+    },
+    {
+      "distribution": "List-MoreUtils-XS-0.430",
+      "version": "0.430",
+      "cpan_archive": "R/RE/REHSACK/List-MoreUtils-XS-0.430.tar.gz",
+      "declared_licenses": [
+        "apache_2_0"
+      ],
+      "install_metadata_sha256": "91aec44cdb526a4273553600a87c8892ff1044f3fd7fb39cd1389abae1df226c",
+      "package_metadata_sha256": "8e6dbc7de151bf075f9f5e4a0cc1521eb2e00151bf69af9ee742aef8b75a84da"
+    },
+    {
+      "distribution": "Module-Build-0.4234",
+      "version": "0.4234",
+      "cpan_archive": "L/LE/LEONT/Module-Build-0.4234.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "5f9277fb3e51a991048aa851553ceb6dddd8fe1eb1ab4f9da14cbadf35e8fa77",
+      "package_metadata_sha256": "3e12dced518eac185b71b6c8718e4a191fd3621ec2e479a898f69f7219f558a6"
+    },
+    {
+      "distribution": "Module-Runtime-0.018",
+      "version": "0.018",
+      "cpan_archive": "H/HA/HAARG/Module-Runtime-0.018.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "70bd4de8155e6e03602acb9ea19dd985fe5f0b610787db80e8473cb5a82d3df5",
+      "package_metadata_sha256": "ea214c776d0be64e69e2c0f8efe5b970fcbc773e99c9c20973e6a717aae98850"
+    },
+    {
+      "distribution": "Moo-2.005005",
+      "version": "2.005005",
+      "cpan_archive": "H/HA/HAARG/Moo-2.005005.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "9e1981079536dc21e814053d5bf8e5ee21c63fee78aacceadc5a66a8c425ba89",
+      "package_metadata_sha256": "94600c0be025f0ddcec0cc252bd1c281bb5379432d4b88b37552e1daaf8d0dc9"
+    },
+    {
+      "distribution": "MooX-HandlesVia-0.001009",
+      "version": "0.001009",
+      "cpan_archive": "T/TO/TOBYINK/MooX-HandlesVia-0.001009.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "398dcb49b8efb83226c7998efa9122d4387aeb1de984c2a2864d14c22bd30319",
+      "package_metadata_sha256": "2ae9b3bab3c326b35a33954c839a587e18015d3cea59d3368036aca1c828b07a"
+    },
+    {
+      "distribution": "MooX-Types-MooseLike-0.29",
+      "version": "0.29",
+      "cpan_archive": "M/MA/MATEU/MooX-Types-MooseLike-0.29.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "e66eed2242f663ef2492b6ce7b832789be43efe5627bbb02474dad47bcbabfd9",
+      "package_metadata_sha256": "51fb7a5f37d19a6c976c12ed80cddea8c26edfa95fab0137d1f92a6ace50e6ab"
+    },
+    {
+      "distribution": "Number-Compare-0.03",
+      "version": "0.03",
+      "cpan_archive": "R/RC/RCLAMP/Number-Compare-0.03.tar.gz",
+      "declared_licenses": [
+        "unknown"
+      ],
+      "install_metadata_sha256": "399af146fdd5700e84b3fad8a531ada1be441edd6ad01746b567c4c8f293b098",
+      "package_metadata_sha256": "1a844b333336d03d11ab05efdcd6bf8ce8a50455f1704d9ff8d6efedc007b5d6"
+    },
+    {
+      "distribution": "Path-Class-0.37",
+      "version": "0.37",
+      "cpan_archive": "K/KW/KWILLIAMS/Path-Class-0.37.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "9dedfc0abc6e631919e1ba72e8c66a6955bdf32d9f132073df6b98d7acacd0e6",
+      "package_metadata_sha256": "5216ea6b40bc1b1329747519f4900bd5bf67d0f6302818f2343392518513d345"
+    },
+    {
+      "distribution": "Path-Tiny-0.150",
+      "version": "0.150",
+      "cpan_archive": "D/DA/DAGOLDEN/Path-Tiny-0.150.tar.gz",
+      "declared_licenses": [
+        "apache_2_0"
+      ],
+      "install_metadata_sha256": "b1fdf331dc88de2950488c3c551b5f1b86e643ef8324a646b8d057e51a8dcaed",
+      "package_metadata_sha256": "cf615f0959a9466d666e99d91bb42b9db89913dfb7cb2fe96e287c4358f3a7af"
+    },
+    {
+      "distribution": "Role-Tiny-2.002005",
+      "version": "2.002005",
+      "cpan_archive": "H/HA/HAARG/Role-Tiny-2.002005.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "b68697dd6b38504b1fbc95cdae444adea5b0b3792768f80811bc1ba55d701666",
+      "package_metadata_sha256": "d10feb2e06d450dd91b599396d2d3572982df584748294f3d26d31a5f3cc832f"
+    },
+    {
+      "distribution": "Scalar-List-Utils-1.70",
+      "version": "1.70",
+      "cpan_archive": "P/PE/PEVANS/Scalar-List-Utils-1.70.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "45a0db8d5d813712f115a34292dbe1dd6f6ac6073557fbb59d4df1e13fafddff",
+      "package_metadata_sha256": "fdb1e9db9ac44ac8b5b162be4981a958f45cf141104f26263e3ea64ea489e7d7"
+    },
+    {
+      "distribution": "Spiffy-0.46",
+      "version": "0.46",
+      "cpan_archive": "I/IN/INGY/Spiffy-0.46.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "5c3378194e74e7f6743e6cade1113385e402a01a3eb7de0b81405c71cbfa1f4e",
+      "package_metadata_sha256": "cd24325f4c46eebd96d7632efcbce40b85b006c669597324ec61a88adec1ce91"
+    },
+    {
+      "distribution": "Sub-Quote-2.006009",
+      "version": "2.006009",
+      "cpan_archive": "H/HA/HAARG/Sub-Quote-2.006009.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "1d26fc1b51fb70b480031af54732c1da479f02795447685840465a5ec46d0071",
+      "package_metadata_sha256": "e3afe9c1a60ca86026db65e52d28d8f763d09e28327be80720f1f5983770965f"
+    },
+    {
+      "distribution": "Sub-Uplevel-0.2800",
+      "version": "0.2800",
+      "cpan_archive": "D/DA/DAGOLDEN/Sub-Uplevel-0.2800.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "85a18eac8b1ce3d1f1edf1248421ffa894ff04794c96b6fa0dd0a19e4650ccc9",
+      "package_metadata_sha256": "50b1db14f59530c11876ffff8aae64b0fcbf722cda5ded63d9b75056b60ebf54"
+    },
+    {
+      "distribution": "Test-Base-0.89",
+      "version": "0.89",
+      "cpan_archive": "I/IN/INGY/Test-Base-0.89.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "028608beb1a71622dbb3dc837474f0b4e28e3370cad31b53a806257388328653",
+      "package_metadata_sha256": "87db1dec44b1606435b4fdc1ea14d9a52f46acee20081f1e8b15deefb67c1f29"
+    },
+    {
+      "distribution": "Test-Deep-1.205",
+      "version": "1.205",
+      "cpan_archive": "R/RJ/RJBS/Test-Deep-1.205.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "5e90888a052194e3a8719668ec4d27ba319e7a41a886f03ec2e63a5b6f3d512e",
+      "package_metadata_sha256": "1c3db44427913ce3051b031cb268453b69953d25630947aa018825b01dace5c1"
+    },
+    {
+      "distribution": "Test-Differences-0.72",
+      "version": "0.72",
+      "cpan_archive": "D/DC/DCANTRELL/Test-Differences-0.72.tar.gz",
+      "declared_licenses": [
+        "unknown",
+        "artistic_1",
+        "gpl_1"
+      ],
+      "install_metadata_sha256": "bdea680c4ca08a2838fefc20d9bca770b7c784c00962eb1b31846a2daab90d8f",
+      "package_metadata_sha256": "e86d1c9f84235388481d2dcfc0e97c126420d95e7b3c724b9fcd179020dec37c"
+    },
+    {
+      "distribution": "Test-Exception-0.43",
+      "version": "0.43",
+      "cpan_archive": "E/EX/EXODIST/Test-Exception-0.43.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "8b1066e131e339bd0eedd258d2f526bc4c0531985a0377de9f2718a4fce2887f",
+      "package_metadata_sha256": "53b037d4d893774e3f5f64cea4dc0ccf2f7fb96122de302c82d571683e191cf8"
+    },
+    {
+      "distribution": "Test-Fatal-0.019",
+      "version": "0.019",
+      "cpan_archive": "R/RJ/RJBS/Test-Fatal-0.019.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "dc63bf465f82e61d78e66c508906d1c55fba9e107324ab94243360069bc854bd",
+      "package_metadata_sha256": "c98858588b8b61bdc81cfb475aa13aa9ce0ecaed7cc1464a030cfba572cc1f5a"
+    },
+    {
+      "distribution": "Test-File-1.995",
+      "version": "1.995",
+      "cpan_archive": "B/BR/BRIANDFOY/Test-File-1.995.tar.gz",
+      "declared_licenses": [
+        "artistic_2"
+      ],
+      "install_metadata_sha256": "ea5dca58219617f1bb32f893f9d9616c5b3198640b78b1a4722aff2cadd1d674",
+      "package_metadata_sha256": "787c1cf8aa7838f077beebafb3a9d7580b073b78bed9c56060e01f750e752212"
+    },
+    {
+      "distribution": "Test-LeakTrace-0.17",
+      "version": "0.17",
+      "cpan_archive": "L/LE/LEEJO/Test-LeakTrace-0.17.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "a08ad3fd0e94538825342ba92fb3fa075b2a40b3c8177afc681ae85466d16f62",
+      "package_metadata_sha256": "bb636e79d204b8622c497995d12ed433dcda638631ed83204a359a0ddc196a6f"
+    },
+    {
+      "distribution": "Test-Needs-0.002010",
+      "version": "0.002010",
+      "cpan_archive": "H/HA/HAARG/Test-Needs-0.002010.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "e1640950148bf20f4d39039db82307293da6451536ae85273867340e8f6c062a",
+      "package_metadata_sha256": "0c9a9e3177b811254419510a65df42f9da41ea677643a8762127ff88049e5c4e"
+    },
+    {
+      "distribution": "Test-Output-1.036",
+      "version": "1.036",
+      "cpan_archive": "B/BR/BRIANDFOY/Test-Output-1.036.tar.gz",
+      "declared_licenses": [
+        "artistic_2"
+      ],
+      "install_metadata_sha256": "1999da322f06659a459599b7e38bc833f80bd846045fc290b2d8716583f7f9a9",
+      "package_metadata_sha256": "71b3dec92c24ca518167d1c4297e88ed8949898d4b8419ed1304c38714c9ef8f"
+    },
+    {
+      "distribution": "Test-Pod-1.52",
+      "version": "1.52",
+      "cpan_archive": "E/ET/ETHER/Test-Pod-1.52.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "0fa4d297293d45ea97ef889700f6f22e0349467df82a935bb9d448369863ede7",
+      "package_metadata_sha256": "193aa06d43fe197e25975096a7f87719971c8dea2164c4ee980befc00b2c2b85"
+    },
+    {
+      "distribution": "Test-Warnings-0.038",
+      "version": "0.038",
+      "cpan_archive": "E/ET/ETHER/Test-Warnings-0.038.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "be7bc3ea29702925a5f1bed991fcf0678578dda7aa00dfc02f8d1068cc1ce07b",
+      "package_metadata_sha256": "8d17f828860c42ec6d2b16cab95e42f7f903fb723331aa708c413ef690922147"
+    },
+    {
+      "distribution": "Test-YAML-1.07",
+      "version": "1.07",
+      "cpan_archive": "T/TI/TINITA/Test-YAML-1.07.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "8de7345d0050bf48a9693e9e3e5369382a635823d47408ca44d8206d063a68ca",
+      "package_metadata_sha256": "ee9480fb2ac1b6ff77076c6e49ccd6fc27828184193928d534b7627c7d949e95"
+    },
+    {
+      "distribution": "Text-Diff-1.46",
+      "version": "1.46",
+      "cpan_archive": "N/NE/NEILB/Text-Diff-1.46.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "391a8c306e2d96530c604ae679b3300dfeddadcee90396641ecc2e535dde17bf",
+      "package_metadata_sha256": "6446d2f2d005e9ccf6f8fd346ed5189d36c07837bda2844e429914413599c245"
+    },
+    {
+      "distribution": "Text-Glob-0.11",
+      "version": "0.11",
+      "cpan_archive": "R/RC/RCLAMP/Text-Glob-0.11.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "1ce550f3ba389f55de09a7a8635aac2a614eb520d1123db2d6a11fc0c3a9b141",
+      "package_metadata_sha256": "a30ef4de2c782866e54b7cb8f4ca0acbc30609944fd728ef277f7cf9d0eb4a74"
+    },
+    {
+      "distribution": "Try-Tiny-0.32",
+      "version": "0.32",
+      "cpan_archive": "E/ET/ETHER/Try-Tiny-0.32.tar.gz",
+      "declared_licenses": [
+        "mit"
+      ],
+      "install_metadata_sha256": "e1f2a47286cd2880b829550cbad35f57195cbe48a854c6d99b7b2378108c73fb",
+      "package_metadata_sha256": "c882bbd2d95680a24272ac96f23dc839156892085a36c7e8bd4053cf2e468ba7"
+    },
+    {
+      "distribution": "Type-Tiny-2.010001",
+      "version": "2.010001",
+      "cpan_archive": "T/TO/TOBYINK/Type-Tiny-2.010001.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "074b7916cde443a224716097087dd161b2cb903dbc6a37d9ce306068f3cc2d9b",
+      "package_metadata_sha256": "e18331ab879c0c71ee2dbceb5dc92864e6f8baef7630fedf01c955abacc6d599"
+    },
+    {
+      "distribution": "YAML-1.321",
+      "version": "1.321",
+      "cpan_archive": "T/TI/TINITA/YAML-1.321.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "8524f56c2b41c44768debe4d0fac70ca80239c6d088c80e6fca8ba35c7fc5b36",
+      "package_metadata_sha256": "e62107d922722e96268c21a896eac7dcb19adef2f52685c32766c6bf9fce04d3"
+    },
+    {
+      "distribution": "bareword-filehandles-0.007",
+      "version": "0.007",
+      "cpan_archive": "I/IL/ILMARI/bareword-filehandles-0.007.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "8b7559a421b683850c7a94e6e04bd67e673400aa6e9390c62c5f1a105f0d564e",
+      "package_metadata_sha256": "af732482510f2f0a2a9313aedfaae9f2c92705a94cb2c6585a174ef87ead3c35"
+    },
+    {
+      "distribution": "indirect-0.39",
+      "version": "0.39",
+      "cpan_archive": "V/VP/VPIT/indirect-0.39.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "a4c526b66e18640cbddd4c75f83e5043a15011a9d029e013ce872b10ebac6b1c",
+      "package_metadata_sha256": "ab40a6f7852258c06ba25aa20332cf2a213df80abc2168eb9d0790aa48094763"
+    },
+    {
+      "distribution": "multidimensional-0.014",
+      "version": "0.014",
+      "cpan_archive": "I/IL/ILMARI/multidimensional-0.014.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "dda606fe6f2ff626633bdf6accf1bfd8dc975c906417a96f52ff41c7e8853dfe",
+      "package_metadata_sha256": "bc5aba715af9bcdb325b675ffaccbeea1b6b85fe9e9964d7cd97278169575a5b"
+    },
+    {
+      "distribution": "strictures-2.000006",
+      "version": "2.000006",
+      "cpan_archive": "H/HA/HAARG/strictures-2.000006.tar.gz",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "install_metadata_sha256": "183532b3d6e4de8df928f2c6e8d46ff44291f901dae81e8ffc92a37a4e7ec78a",
+      "package_metadata_sha256": "bd4f996b326465573103553b3f02d4917a2b025deb8442a6b775c328352fee2d"
+    },
+    {
+      "distribution": "Test-BDD-Cucumber-0.87",
+      "version": "0.87",
+      "declared_licenses": [
+        "perl_5"
+      ],
+      "cpan_archive": "local pinned archive; cpanminus supplied no install metadata",
+      "installed_module_sha256": "7721ede04a25893e7d0d362e733d70630162dc74db4a9c8ef8c9b73ff8c3758d"
+    }
+  ]
+}

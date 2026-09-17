@@ -52,3 +52,13 @@ Pinned archive SHA-256:
 `9d90b44ab602ca373fa221255708de4d19df86026f4d7110bef608846eed44fb`.
 See [coverage setup](docs/research/public-call-coverage/README.md) for local
 installation, version assertions, and the limits of the instrumentation pilot.
+
+## Test::BDD::Cucumber development runner
+
+The runner trial uses separately installed Test::BDD::Cucumber 0.87, copyright
+2025 Peter Sergeant, under the same terms as Perl 5: Artistic License or GNU
+GPL version 1 or later. The downloaded distribution's `LICENSE` and `META.json`
+are the license evidence. Installation and transitive development dependencies
+remain in ignored `local/bdd-runner/`; this project does not relicense or vendor
+them. Original trial features and step code are MIT. The future implementation
+handoff excludes the Perl runner and its dependencies.
