@@ -265,3 +265,20 @@ There are69 mapped draft IDs. Modifier recovery and attempt-limit exceptions
 remain disputed; all outstanding grammar/method/modifier obligations are explicit
 in `docs/research/recurrence-family/remaining-obligations.md`. No complete family
 or executable BDD suite is claimed.
+
+## Arithmetic integration checkpoint
+
+Coordinator integrated the107-case arithmetic draft after independent review and
+worker repairs. Additional root fixes preserve invalid-date errors before observer
+reads, distinguish calculation errors from subsequent value-read errors, name
+profiles/options, normalize date presentation, remove a duplicate outline ID, and
+state rejected interval fields as an empty collection. All107 reference cases
+repeat. `tools/review/arithmetic_literals.py` checks21 calculation literals,
+65unique outline IDs, hashes and3invalid state/error sequences. Feature structure
+checks pass. All four arithmetic feature files remain draft with substantial
+explicit gaps; this is no complete arithmetic coverage or BDD pass claim.
+
+Next root work: integrate repaired pattern/language outputs once the authoritative
+worker handles finish, then add missing date-only/time-only/token-prefix usage
+and remaining configuration/object/state/grammar cases. Source execution coverage
+and the final complete-spec review still precede conformance harness completion.

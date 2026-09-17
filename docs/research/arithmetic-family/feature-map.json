@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "status": "research mapping; every portable assertion must name a concrete mapped request and carrier",
+  "mappings": [
+    {
+      "feature": "arithmetic-dst-business-edges.feature",
+      "assertion": "spring elapsed rows",
+      "cases": [
+        "ARITH-DST-SPRING-BEFORE-ELAPSED",
+        "ARITH-DST-SPRING-AFTER-ELAPSED",
+        "ARITH-DST-FALL-BEFORE-ELAPSED",
+        "ARITH-DST-FALL-AT-OVERLAP",
+        "ARITH-DST-FALL-AFTER-ELAPSED"
+      ],
+      "carrier": "raw_return.value"
+    },
+    {
+      "feature": "arithmetic-dst-business-edges.feature",
+      "assertion": "spring gap",
+      "cases": [
+        "ARITH-DST-SPRING-AT-GAP"
+      ],
+      "carrier": "raw_return.value,error,left_status,left_before,left_after"
+    },
+    {
+      "feature": "arithmetic-dst-business-edges.feature",
+      "assertion": "calendar versus elapsed",
+      "cases": [
+        "ARITH-DST-SPRING-CALENDAR-DAY",
+        "ARITH-DST-SPRING-ELAPSED-24H"
+      ],
+      "carrier": "raw_return.value"
+    },
+    {
+      "feature": "arithmetic-dst-business-edges.feature",
+      "assertion": "cross-zone difference",
+      "cases": [
+        "ARITH-CROSS-ZONE-DATE-DATE"
+      ],
+      "carrier": "raw_return.value"
+    },
+    {
+      "feature": "arithmetic-dst-business-edges.feature",
+      "assertion": "work-hour boundary rows",
+      "cases": [
+        "BUSINESS-HOURS-BEFORE",
+        "BUSINESS-HOURS-AT-START",
+        "BUSINESS-HOURS-AT-END",
+        "BUSINESS-HOURS-AFTER"
+      ],
+      "carrier": "raw_return.return"
+    },
+    {
+      "feature": "arithmetic-dst-business-edges.feature",
+      "assertion": "weekend, holiday, mutation, invalid object",
+      "cases": [
+        "ARITH-BUSINESS-WEEKEND-ENDPOINT",
+        "ARITH-BUSINESS-HOLIDAY-ENDPOINT",
+        "BUSINESS-NEXT-HOLIDAY-MUTATION",
+        "BUSINESS-INVALID-OBJECT"
+      ],
+      "carrier": "raw_return"
+    },
+    {
+      "feature": "arithmetic-and-delta.feature",
+      "assertion": "all concrete outline rows and standalone assertions",
+      "cases": [
+        "ARITH-DIFF-FORWARD",
+        "ARITH-DIFF-REVERSE-LEAP",
+        "ARITH-DAYS-FORWARD",
+        "ARITH-DAYS-SUBTRACT-DATETIME",
+        "ARITH-DAYS-ZERO",
+        "ARITH-DELTA-YEAR-MONTH",
+        "ARITH-DELTA-WEEK-DAY-TIME",
+        "ARITH-DELTA-MIXED-SUBTRACT",
+        "ARITH-TIME-CARRY",
+        "ARITH-TIME-NEGATIVE",
+        "ARITH-TIME-OUTSIDE-RANGE",
+        "ARITH-COMBINE-ADD",
+        "ARITH-COMBINE-SUBTRACT-NEGATIVE",
+        "DELTA-CREATE-EMPTY",
+        "DELTA-PARSE-COMPACT-1",
+        "DELTA-PARSE-COMPACT-7",
+        "DELTA-PARSE-BUSINESS",
+        "DELTA-PARSE-FRACTION-ESTIMATED",
+        "DELTA-PARSE-INVALID-ORDER",
+        "DELTA-VALUE-NORMAL",
+        "DELTA-INPUT-WHITESPACE",
+        "DELTA-SET-PARTIAL-NONORM",
+        "DELTA-PRINT-FAMILIES",
+        "DELTA-FORMAT-DM6",
+        "DELTA-FORMAT-DM5",
+        "DELTA-TYPE-ALL",
+        "DELTA-CONVERT-LESS-EXACT",
+        "DELTA-CMP-ORDER",
+        "DELTA-CMP-MIXED-TYPE",
+        "DELTA-CMP-BUSINESS",
+        "ARITH-OO-DATE-DELTA",
+        "ARITH-OO-SUBTRACT-BUSINESS",
+        "ARITH-DM6-DATE-DATE",
+        "ARITH-DM5-DATE-DATE"
+      ],
+      "carrier": "case-specific raw_return"
+    },
+    {
+      "feature": "arithmetic-calculation-modes.feature",
+      "assertion": "six named modes and four typed pairings",
+      "cases": [
+        "ARITH-OO-DATE-DATE-EXACT",
+        "ARITH-OO-DATE-DATE-SEMI",
+        "ARITH-OO-DATE-DATE-APPROX",
+        "ARITH-OO-DATE-DATE-BUSINESS",
+        "ARITH-OO-DATE-DATE-BSEMI",
+        "ARITH-OO-DATE-DATE-BAPPROX",
+        "ARITH-OO-DATE-DELTA-PAIRING",
+        "ARITH-OO-DELTA-DATE-PAIRING",
+        "ARITH-OO-DELTA-DELTA-PAIRING"
+      ],
+      "carrier": "raw_return.value,class"
+    },
+    {
+      "feature": "delta-grammar-and-format-matrix.feature",
+      "assertion": "all grammar rows, single-field bulk request, and exact 28-pattern bulk request",
+      "cases": [
+        "DELTA-GRAMMAR-COMPACT-1",
+        "DELTA-GRAMMAR-COMPACT-2",
+        "DELTA-GRAMMAR-COMPACT-3",
+        "DELTA-GRAMMAR-COMPACT-4",
+        "DELTA-GRAMMAR-COMPACT-5",
+        "DELTA-GRAMMAR-COMPACT-6",
+        "DELTA-GRAMMAR-COMPACT-7",
+        "DELTA-GRAMMAR-EMPTY-INTERIOR",
+        "DELTA-GRAMMAR-SIGNED-FIELD",
+        "DELTA-GRAMMAR-NO-SPACE",
+        "DELTA-GRAMMAR-EXPANDED-ORDERED",
+        "DELTA-GRAMMAR-EXPANDED-NUMBER",
+        "DELTA-GRAMMAR-SIGN-INHERITANCE",
+        "DELTA-GRAMMAR-UNITLESS-SECOND",
+        "DELTA-GRAMMAR-SEPARATOR",
+        "DELTA-GRAMMAR-MIXED",
+        "DELTA-GRAMMAR-RELATIVE-AFTER",
+        "DELTA-GRAMMAR-RELATIVE-BEFORE",
+        "DELTA-GRAMMAR-MODE-WORD",
+        "DELTA-GRAMMAR-LEGACY-ACCURACY",
+        "DELTA-FORMAT-ALL-FIELDS",
+        "DELTA-FORMAT-ALL-RANGES"
+      ],
+      "carrier": "raw_return.after.value_scalar or raw_return.list"
+    }
+  ],
+  "feature_aliases": {
+    "ARITH-OO-DATE-DATE-PAIRING-EXACT": "ARITH-OO-DATE-DATE-EXACT"
+  },
+  "date_result_normalization": "Compact reference date strings become YYYY-MM-DD HH:MM:SS, without changing fields; seven-component interval records remain ordered as defined in the feature."
+}
