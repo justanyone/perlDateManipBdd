@@ -1,0 +1,4507 @@
+{
+  "artifact_sha256": {
+    "docs/automation/reference-profiles.json": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
+    "docs/planning/perl-api-inventory.csv": "ded78d3213a83dfea875f0cdb2ab76b81e401c1699826e83c0974861631fca63",
+    "docs/research/calendar-gap-priorities.md": "e3e8629f52f4bfbac1fc4ca42f2244c38b33927ae6e6630aa6c24a112b6d9ad8",
+    "docs/research/contracts/calendar.json": "40d1dd7eabc7a5db9b16716a99a355dece17cbebc65c0dd2b8e11e71f8b04ad2",
+    "docs/research/inputs/calendar.json": "45c672182b217aae7a40e9c8194c60114fd96702504de8405abdd9ee7f0050e9",
+    "docs/research/nth-weekday-family/cases.json": "d7850a71d1cb67da059efff7d0ddef3a01bb10198df8cb0ea217a8fbd43be40e",
+    "tools/probes/nth-weekday-family/make_cases.py": "ee5cf916ef19d4b9c99726714685996c692edc584ccdd4d26d51cea962487c42",
+    "tools/probes/nth-weekday-family/probe.pl": "3118cb128991b32baa5bffba49dc8b2b576e86eec8507862e435312e59b3e12d",
+    "tools/probes/nth-weekday-family/run.py": "93dadcd072a11a90a2fa344ce056a4c42235f739d8b99a7ed014db215fb54585"
+  },
+  "execution": {
+    "environment": {
+      "LANG": "C.UTF-8",
+      "LC_ALL": "C.UTF-8",
+      "PATH": "/usr/bin:/bin",
+      "PERL5LIB": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5",
+      "PERL_HASH_SEED": "0",
+      "PERL_PERTURB_KEYS": "0",
+      "TZ": "Etc/UTC"
+    },
+    "fresh_process_and_temporary_working_directory_per_attempt": true,
+    "parallel_workers": 4,
+    "repetitions_per_case": 2,
+    "timeout_seconds": 20
+  },
+  "installed_module_sha256": {
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm": "5fe1f12a7b59c57baf71c86e266b4ea06851eac0ec203a3507d019bcadbea97c",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm": "4ab18ff883b65c3bb0d8b0a875d929117480409b4491e20f55811d5a13a70a94",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm": "5052b2c740b190d228ef4a2e87cf248610f90519d75db2fdc723ecaa9ac679d8",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm": "5ece620f80b039048d09b72fcb30f0e09ce8bb1151a0720db80ebdd2f9d7686f",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm": "ae888d89540e0a35dca67a8e1f8f3f420cda95c84aaf8a6d29844e792c262362"
+  },
+  "observations": [
+    {
+      "case_id": "NWD-P1-YEAR-FIRST-FORWARD",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          1,
+          1
+        ],
+        "case_id": "NWD-P1-YEAR-FIRST-FORWARD",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              2041,
+              1,
+              7
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "month": {
+            "type": "omitted"
+          },
+          "occurrence": 1,
+          "weekday": 1,
+          "year": 2041
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            2041,
+            1,
+            7
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P1-YEAR-LATER-FORWARD-ABSENT-MONTH",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          2,
+          4,
+          null
+        ],
+        "case_id": "NWD-P1-YEAR-LATER-FORWARD-ABSENT-MONTH",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              2041,
+              1,
+              10
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "month": {
+            "type": "absent"
+          },
+          "occurrence": 2,
+          "weekday": 4,
+          "year": 2041
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            2041,
+            1,
+            10
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P1-YEAR-LIMIT53-FORWARD",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2040,
+          53,
+          7
+        ],
+        "case_id": "NWD-P1-YEAR-LIMIT53-FORWARD",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              2040,
+              12,
+              30
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "month": {
+            "type": "omitted"
+          },
+          "occurrence": 53,
+          "weekday": 7,
+          "year": 2040
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            2040,
+            12,
+            30
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P1-YEAR-LAST-REVERSE",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          -1,
+          7
+        ],
+        "case_id": "NWD-P1-YEAR-LAST-REVERSE",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              2041,
+              12,
+              29
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "month": {
+            "type": "omitted"
+          },
+          "occurrence": -1,
+          "weekday": 7,
+          "year": 2041
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            2041,
+            12,
+            29
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P1-YEAR-LATER-REVERSE",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          -2,
+          2
+        ],
+        "case_id": "NWD-P1-YEAR-LATER-REVERSE",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              2041,
+              12,
+              24
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "month": {
+            "type": "omitted"
+          },
+          "occurrence": -2,
+          "weekday": 2,
+          "year": 2041
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            2041,
+            12,
+            24
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P1-YEAR-LIMIT53-REVERSE",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2040,
+          -53,
+          1
+        ],
+        "case_id": "NWD-P1-YEAR-LIMIT53-REVERSE",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              2040,
+              1,
+              2
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "month": {
+            "type": "omitted"
+          },
+          "occurrence": -53,
+          "weekday": 1,
+          "year": 2040
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            2040,
+            1,
+            2
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P2-MONTH-FIRST-FORWARD",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2040,
+          1,
+          3,
+          2
+        ],
+        "case_id": "NWD-P2-MONTH-FIRST-FORWARD",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              2040,
+              2,
+              1
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "month": {
+            "type": "number",
+            "value": 2
+          },
+          "occurrence": 1,
+          "weekday": 3,
+          "year": 2040
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            2040,
+            2,
+            1
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P2-MONTH-LATER-FORWARD",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2040,
+          2,
+          7,
+          2
+        ],
+        "case_id": "NWD-P2-MONTH-LATER-FORWARD",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              2040,
+              2,
+              12
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "month": {
+            "type": "number",
+            "value": 2
+          },
+          "occurrence": 2,
+          "weekday": 7,
+          "year": 2040
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            2040,
+            2,
+            12
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P2-MONTH-FIFTH-FORWARD",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          5,
+          4,
+          5
+        ],
+        "case_id": "NWD-P2-MONTH-FIFTH-FORWARD",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              2041,
+              5,
+              30
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "month": {
+            "type": "number",
+            "value": 5
+          },
+          "occurrence": 5,
+          "weekday": 4,
+          "year": 2041
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            2041,
+            5,
+            30
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P2-MONTH-LAST-REVERSE",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2040,
+          -1,
+          4,
+          2
+        ],
+        "case_id": "NWD-P2-MONTH-LAST-REVERSE",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              2040,
+              2,
+              23
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "month": {
+            "type": "number",
+            "value": 2
+          },
+          "occurrence": -1,
+          "weekday": 4,
+          "year": 2040
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            2040,
+            2,
+            23
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P2-MONTH-LATER-REVERSE",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2040,
+          -2,
+          1,
+          2
+        ],
+        "case_id": "NWD-P2-MONTH-LATER-REVERSE",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              2040,
+              2,
+              20
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "month": {
+            "type": "number",
+            "value": 2
+          },
+          "occurrence": -2,
+          "weekday": 1,
+          "year": 2040
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            2040,
+            2,
+            20
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P2-MONTH-FIFTH-REVERSE",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          -5,
+          5,
+          5
+        ],
+        "case_id": "NWD-P2-MONTH-FIFTH-REVERSE",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              2041,
+              5,
+              3
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "month": {
+            "type": "number",
+            "value": 5
+          },
+          "occurrence": -5,
+          "weekday": 5,
+          "year": 2041
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            2041,
+            5,
+            3
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P4-MONTH-FIFTH-NO-MATCH",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          5,
+          1,
+          2
+        ],
+        "case_id": "NWD-P4-MONTH-FIFTH-NO-MATCH",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            null
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "undefined"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "month": {
+            "type": "number",
+            "value": 2
+          },
+          "occurrence": 5,
+          "weekday": 1,
+          "year": 2041
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P4-MONTH-NEG-FIFTH-NO-MATCH",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          -5,
+          2,
+          2
+        ],
+        "case_id": "NWD-P4-MONTH-NEG-FIFTH-NO-MATCH",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            null
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "undefined"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "month": {
+            "type": "number",
+            "value": 2
+          },
+          "occurrence": -5,
+          "weekday": 2,
+          "year": 2041
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P4-YEAR-53-NO-MATCH",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          53,
+          4
+        ],
+        "case_id": "NWD-P4-YEAR-53-NO-MATCH",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            null
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "undefined"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "month": {
+            "type": "omitted"
+          },
+          "occurrence": 53,
+          "weekday": 4,
+          "year": 2041
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P4-YEAR-NEG53-NO-MATCH",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          -53,
+          5
+        ],
+        "case_id": "NWD-P4-YEAR-NEG53-NO-MATCH",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            null
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "undefined"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "month": {
+            "type": "omitted"
+          },
+          "occurrence": -53,
+          "weekday": 5,
+          "year": 2041
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P5-OCCURRENCE-ZERO",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          0,
+          3,
+          5
+        ],
+        "case_id": "NWD-P5-OCCURRENCE-ZERO",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              2041,
+              5,
+              1
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "arguments": [
+            {
+              "name": "year",
+              "value": {
+                "type": "number",
+                "value": 2041
+              }
+            },
+            {
+              "name": "occurrence",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            {
+              "name": "weekday",
+              "value": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            {
+              "name": "month",
+              "value": {
+                "type": "number",
+                "value": 5
+              }
+            }
+          ],
+          "description": "zero occurrence"
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            2041,
+            5,
+            1
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P5-MONTH-OCCURRENCE-PLUS6",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          6,
+          3,
+          5
+        ],
+        "case_id": "NWD-P5-MONTH-OCCURRENCE-PLUS6",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            null
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "undefined"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "arguments": [
+            {
+              "name": "year",
+              "value": {
+                "type": "number",
+                "value": 2041
+              }
+            },
+            {
+              "name": "occurrence",
+              "value": {
+                "type": "number",
+                "value": 6
+              }
+            },
+            {
+              "name": "weekday",
+              "value": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            {
+              "name": "month",
+              "value": {
+                "type": "number",
+                "value": 5
+              }
+            }
+          ],
+          "description": "month occurrence above positive limit"
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P5-MONTH-OCCURRENCE-MINUS6",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          -6,
+          5,
+          5
+        ],
+        "case_id": "NWD-P5-MONTH-OCCURRENCE-MINUS6",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            null
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "undefined"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "arguments": [
+            {
+              "name": "year",
+              "value": {
+                "type": "number",
+                "value": 2041
+              }
+            },
+            {
+              "name": "occurrence",
+              "value": {
+                "type": "number",
+                "value": -6
+              }
+            },
+            {
+              "name": "weekday",
+              "value": {
+                "type": "number",
+                "value": 5
+              }
+            },
+            {
+              "name": "month",
+              "value": {
+                "type": "number",
+                "value": 5
+              }
+            }
+          ],
+          "description": "month occurrence below negative limit"
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P5-YEAR-OCCURRENCE-PLUS54",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          54,
+          2
+        ],
+        "case_id": "NWD-P5-YEAR-OCCURRENCE-PLUS54",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            null
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "undefined"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "arguments": [
+            {
+              "name": "year",
+              "value": {
+                "type": "number",
+                "value": 2041
+              }
+            },
+            {
+              "name": "occurrence",
+              "value": {
+                "type": "number",
+                "value": 54
+              }
+            },
+            {
+              "name": "weekday",
+              "value": {
+                "type": "number",
+                "value": 2
+              }
+            },
+            {
+              "name": "month",
+              "value": {
+                "type": "omitted"
+              }
+            }
+          ],
+          "description": "year occurrence above positive limit"
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P5-YEAR-OCCURRENCE-MINUS54",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          -54,
+          2
+        ],
+        "case_id": "NWD-P5-YEAR-OCCURRENCE-MINUS54",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            null
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "undefined"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "arguments": [
+            {
+              "name": "year",
+              "value": {
+                "type": "number",
+                "value": 2041
+              }
+            },
+            {
+              "name": "occurrence",
+              "value": {
+                "type": "number",
+                "value": -54
+              }
+            },
+            {
+              "name": "weekday",
+              "value": {
+                "type": "number",
+                "value": 2
+              }
+            },
+            {
+              "name": "month",
+              "value": {
+                "type": "omitted"
+              }
+            }
+          ],
+          "description": "year occurrence below negative limit"
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P5-WEEKDAY-ZERO",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          1,
+          0,
+          5
+        ],
+        "case_id": "NWD-P5-WEEKDAY-ZERO",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              2041,
+              5,
+              5
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "arguments": [
+            {
+              "name": "year",
+              "value": {
+                "type": "number",
+                "value": 2041
+              }
+            },
+            {
+              "name": "occurrence",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            {
+              "name": "weekday",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            {
+              "name": "month",
+              "value": {
+                "type": "number",
+                "value": 5
+              }
+            }
+          ],
+          "description": "weekday below documented range"
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            2041,
+            5,
+            5
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P5-WEEKDAY-EIGHT",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          1,
+          8,
+          5
+        ],
+        "case_id": "NWD-P5-WEEKDAY-EIGHT",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              2041,
+              5,
+              6
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "arguments": [
+            {
+              "name": "year",
+              "value": {
+                "type": "number",
+                "value": 2041
+              }
+            },
+            {
+              "name": "occurrence",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            {
+              "name": "weekday",
+              "value": {
+                "type": "number",
+                "value": 8
+              }
+            },
+            {
+              "name": "month",
+              "value": {
+                "type": "number",
+                "value": 5
+              }
+            }
+          ],
+          "description": "weekday above documented range"
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            2041,
+            5,
+            6
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P5-MONTH-ZERO",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          1,
+          2,
+          0
+        ],
+        "case_id": "NWD-P5-MONTH-ZERO",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              2041,
+              1,
+              1
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "arguments": [
+            {
+              "name": "year",
+              "value": {
+                "type": "number",
+                "value": 2041
+              }
+            },
+            {
+              "name": "occurrence",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            {
+              "name": "weekday",
+              "value": {
+                "type": "number",
+                "value": 2
+              }
+            },
+            {
+              "name": "month",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            }
+          ],
+          "description": "false month value selects whole-year mode"
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            2041,
+            1,
+            1
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P5-MONTH-13",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          2041,
+          1,
+          2,
+          13
+        ],
+        "case_id": "NWD-P5-MONTH-13",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              2041,
+              13,
+              7
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": []
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "arguments": [
+            {
+              "name": "year",
+              "value": {
+                "type": "number",
+                "value": 2041
+              }
+            },
+            {
+              "name": "occurrence",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            {
+              "name": "weekday",
+              "value": {
+                "type": "number",
+                "value": 2
+              }
+            },
+            {
+              "name": "month",
+              "value": {
+                "type": "number",
+                "value": 13
+              }
+            }
+          ],
+          "description": "month above documented range"
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            2041,
+            13,
+            7
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": []
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P5-ALL-OMITTED",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [],
+        "case_id": "NWD-P5-ALL-OMITTED",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": [
+            "Use of uninitialized value $n in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 530.\n",
+            "Use of uninitialized value $n in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 531.\n",
+            "Use of uninitialized value $dow in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 543.\n",
+            "Use of uninitialized value $dow in integer subtraction (-) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 544.\n",
+            "Use of uninitialized value $n in integer gt (>) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 552.\n",
+            "Use of uninitialized value $n in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 555.\n"
+          ]
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "arguments": [
+            {
+              "name": "year",
+              "value": {
+                "type": "omitted"
+              }
+            },
+            {
+              "name": "occurrence",
+              "value": {
+                "type": "omitted"
+              }
+            },
+            {
+              "name": "weekday",
+              "value": {
+                "type": "omitted"
+              }
+            },
+            {
+              "name": "month",
+              "value": {
+                "type": "omitted"
+              }
+            }
+          ],
+          "description": "all required fields omitted"
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            0,
+            1,
+            1
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": [
+            "Use of uninitialized value $n in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 530.\n",
+            "Use of uninitialized value $n in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 531.\n",
+            "Use of uninitialized value $dow in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 543.\n",
+            "Use of uninitialized value $dow in integer subtraction (-) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 544.\n",
+            "Use of uninitialized value $n in integer gt (>) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 552.\n",
+            "Use of uninitialized value $n in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 555.\n"
+          ]
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P5-ALL-ABSENT",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "case_id": "NWD-P5-ALL-ABSENT",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": [
+            "Use of uninitialized value $n in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 530.\n",
+            "Use of uninitialized value $n in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 531.\n",
+            "Use of uninitialized value $dow in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 543.\n",
+            "Use of uninitialized value $dow in integer subtraction (-) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 544.\n",
+            "Use of uninitialized value $n in integer gt (>) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 552.\n",
+            "Use of uninitialized value $n in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 555.\n"
+          ]
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "arguments": [
+            {
+              "name": "year",
+              "value": {
+                "type": "absent"
+              }
+            },
+            {
+              "name": "occurrence",
+              "value": {
+                "type": "absent"
+              }
+            },
+            {
+              "name": "weekday",
+              "value": {
+                "type": "absent"
+              }
+            },
+            {
+              "name": "month",
+              "value": {
+                "type": "absent"
+              }
+            }
+          ],
+          "description": "all fields explicitly absent"
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            0,
+            1,
+            1
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": [
+            "Use of uninitialized value $n in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 530.\n",
+            "Use of uninitialized value $n in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 531.\n",
+            "Use of uninitialized value $dow in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 543.\n",
+            "Use of uninitialized value $dow in integer subtraction (-) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 544.\n",
+            "Use of uninitialized value $n in integer gt (>) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 552.\n",
+            "Use of uninitialized value $n in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 555.\n"
+          ]
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "NWD-P5-ALL-NONNUMERIC",
+      "observation": {
+        "binding": {
+          "call_shape": "year, occurrence, weekday, optional month",
+          "callable": "nth_day_of_week",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Base"
+        },
+        "binding_arguments": [
+          "year",
+          "occurrence",
+          "weekday",
+          "month"
+        ],
+        "case_id": "NWD-P5-ALL-NONNUMERIC",
+        "error_protocol": "public Base error text before and after each call",
+        "fixture_profile": {
+          "configuration": [
+            "Defaults=1",
+            "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "configuration_error": null,
+          "distribution_version": "7.00",
+          "interface": "Date::Manip::Date",
+          "name": "oo",
+          "observations": {
+            "fixed_tomorrow": {
+              "status": 0,
+              "value": "2040022900:00:00"
+            },
+            "leap_date": {
+              "status": 0,
+              "value": "2040022916:05:09"
+            }
+          },
+          "timezone_data": {
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          }
+        },
+        "fixture_reference": {
+          "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+          "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+          "distribution_version": "7.00",
+          "release": "Date-Manip-7.00"
+        },
+        "list": {
+          "call_completed": true,
+          "context": "list",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "return_count": 1,
+          "return_element_types": [
+            "ARRAY"
+          ],
+          "return_type": "list",
+          "stdout": "",
+          "warnings": [
+            "Argument \"year\" isn't numeric in integer addition (+) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 515.\n",
+            "Argument \"month\" isn't numeric in integer addition (+) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 516.\n",
+            "Argument \"occurrence\" isn't numeric in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 530.\n",
+            "Argument \"weekday\" isn't numeric in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 543.\n"
+          ]
+        },
+        "load_stdout": "",
+        "load_warnings": [],
+        "loaded_date_manip_module_files": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm"
+        },
+        "loaded_entry_module": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "observed_distribution_version": "7.00",
+        "operation_id": "calendar.nth-weekday",
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "base",
+        "request": {
+          "arguments": [
+            {
+              "name": "year",
+              "value": {
+                "type": "text",
+                "value": "year"
+              }
+            },
+            {
+              "name": "occurrence",
+              "value": {
+                "type": "text",
+                "value": "occurrence"
+              }
+            },
+            {
+              "name": "weekday",
+              "value": {
+                "type": "text",
+                "value": "weekday"
+              }
+            },
+            {
+              "name": "month",
+              "value": {
+                "type": "text",
+                "value": "month"
+              }
+            }
+          ],
+          "description": "all fields nonnumeric text"
+        },
+        "scalar": {
+          "call_completed": true,
+          "context": "scalar",
+          "exception": null,
+          "public_error_after": "",
+          "public_error_before": "",
+          "return": [
+            0,
+            1,
+            1
+          ],
+          "return_type": "ARRAY",
+          "stdout": "",
+          "warnings": [
+            "Argument \"year\" isn't numeric in integer addition (+) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 515.\n",
+            "Argument \"month\" isn't numeric in integer addition (+) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 516.\n",
+            "Argument \"occurrence\" isn't numeric in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 530.\n",
+            "Argument \"weekday\" isn't numeric in integer lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 543.\n"
+          ]
+        },
+        "setup": {
+          "call_completed": true,
+          "exception": null,
+          "requested_configuration": [
+            "Defaults=1",
+            "Language=English",
+            "Encoding=ASCII",
+            "DateFormat=US",
+            "Printable=0",
+            "FirstDay=1",
+            "Week1ofYear=jan4",
+            "DefaultTime=midnight",
+            "WorkWeekBeg=1",
+            "WorkWeekEnd=5",
+            "WorkDayBeg=09:00",
+            "WorkDayEnd=17:00",
+            "WorkDay24Hr=0",
+            "EraseHolidays=1",
+            "EraseEvents=1"
+          ],
+          "return": null,
+          "return_type": "undefined",
+          "stdout": "",
+          "warnings": []
+        }
+      },
+      "process_stderr_hex": "",
+      "research_status": "repeatable"
+    }
+  ],
+  "reference": {
+    "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+    "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+    "distribution_version": "7.00",
+    "release": "Date-Manip-7.00"
+  },
+  "reviewed_source_sha256": {
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm": "5fe1f12a7b59c57baf71c86e266b4ea06851eac0ec203a3507d019bcadbea97c",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pod": "b2a6f168023e88a64a0e6d85542fac28b2a0c688f9d43083f38672344f9ca13d"
+  },
+  "schema_version": 1,
+  "status": "repeatable public reference observations; not BDD execution or semantic approval"
+}

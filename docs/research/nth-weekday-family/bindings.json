@@ -1,0 +1,254 @@
+{
+  "binding": {
+    "call_shape": "year, occurrence, weekday, optional month",
+    "callable": "nth_day_of_week",
+    "disposition": "public-oo-method",
+    "module": "Date::Manip::Base"
+  },
+  "case_bindings": [
+    {
+      "arguments": [
+        2041,
+        1,
+        1
+      ],
+      "case_id": "NWD-P1-YEAR-FIRST-FORWARD"
+    },
+    {
+      "arguments": [
+        2041,
+        2,
+        4,
+        null
+      ],
+      "case_id": "NWD-P1-YEAR-LATER-FORWARD-ABSENT-MONTH"
+    },
+    {
+      "arguments": [
+        2040,
+        53,
+        7
+      ],
+      "case_id": "NWD-P1-YEAR-LIMIT53-FORWARD"
+    },
+    {
+      "arguments": [
+        2041,
+        -1,
+        7
+      ],
+      "case_id": "NWD-P1-YEAR-LAST-REVERSE"
+    },
+    {
+      "arguments": [
+        2041,
+        -2,
+        2
+      ],
+      "case_id": "NWD-P1-YEAR-LATER-REVERSE"
+    },
+    {
+      "arguments": [
+        2040,
+        -53,
+        1
+      ],
+      "case_id": "NWD-P1-YEAR-LIMIT53-REVERSE"
+    },
+    {
+      "arguments": [
+        2040,
+        1,
+        3,
+        2
+      ],
+      "case_id": "NWD-P2-MONTH-FIRST-FORWARD"
+    },
+    {
+      "arguments": [
+        2040,
+        2,
+        7,
+        2
+      ],
+      "case_id": "NWD-P2-MONTH-LATER-FORWARD"
+    },
+    {
+      "arguments": [
+        2041,
+        5,
+        4,
+        5
+      ],
+      "case_id": "NWD-P2-MONTH-FIFTH-FORWARD"
+    },
+    {
+      "arguments": [
+        2040,
+        -1,
+        4,
+        2
+      ],
+      "case_id": "NWD-P2-MONTH-LAST-REVERSE"
+    },
+    {
+      "arguments": [
+        2040,
+        -2,
+        1,
+        2
+      ],
+      "case_id": "NWD-P2-MONTH-LATER-REVERSE"
+    },
+    {
+      "arguments": [
+        2041,
+        -5,
+        5,
+        5
+      ],
+      "case_id": "NWD-P2-MONTH-FIFTH-REVERSE"
+    },
+    {
+      "arguments": [
+        2041,
+        5,
+        1,
+        2
+      ],
+      "case_id": "NWD-P4-MONTH-FIFTH-NO-MATCH"
+    },
+    {
+      "arguments": [
+        2041,
+        -5,
+        2,
+        2
+      ],
+      "case_id": "NWD-P4-MONTH-NEG-FIFTH-NO-MATCH"
+    },
+    {
+      "arguments": [
+        2041,
+        53,
+        4
+      ],
+      "case_id": "NWD-P4-YEAR-53-NO-MATCH"
+    },
+    {
+      "arguments": [
+        2041,
+        -53,
+        5
+      ],
+      "case_id": "NWD-P4-YEAR-NEG53-NO-MATCH"
+    },
+    {
+      "arguments": [
+        2041,
+        0,
+        3,
+        5
+      ],
+      "case_id": "NWD-P5-OCCURRENCE-ZERO"
+    },
+    {
+      "arguments": [
+        2041,
+        6,
+        3,
+        5
+      ],
+      "case_id": "NWD-P5-MONTH-OCCURRENCE-PLUS6"
+    },
+    {
+      "arguments": [
+        2041,
+        -6,
+        5,
+        5
+      ],
+      "case_id": "NWD-P5-MONTH-OCCURRENCE-MINUS6"
+    },
+    {
+      "arguments": [
+        2041,
+        54,
+        2
+      ],
+      "case_id": "NWD-P5-YEAR-OCCURRENCE-PLUS54"
+    },
+    {
+      "arguments": [
+        2041,
+        -54,
+        2
+      ],
+      "case_id": "NWD-P5-YEAR-OCCURRENCE-MINUS54"
+    },
+    {
+      "arguments": [
+        2041,
+        1,
+        0,
+        5
+      ],
+      "case_id": "NWD-P5-WEEKDAY-ZERO"
+    },
+    {
+      "arguments": [
+        2041,
+        1,
+        8,
+        5
+      ],
+      "case_id": "NWD-P5-WEEKDAY-EIGHT"
+    },
+    {
+      "arguments": [
+        2041,
+        1,
+        2,
+        0
+      ],
+      "case_id": "NWD-P5-MONTH-ZERO"
+    },
+    {
+      "arguments": [
+        2041,
+        1,
+        2,
+        13
+      ],
+      "case_id": "NWD-P5-MONTH-13"
+    },
+    {
+      "arguments": [],
+      "case_id": "NWD-P5-ALL-OMITTED"
+    },
+    {
+      "arguments": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "case_id": "NWD-P5-ALL-ABSENT"
+    },
+    {
+      "arguments": [
+        "year",
+        "occurrence",
+        "weekday",
+        "month"
+      ],
+      "case_id": "NWD-P5-ALL-NONNUMERIC"
+    }
+  ],
+  "native_feature": "spec/drafts/nth-weekdays/perl-binding.feature",
+  "operation_id": "calendar.nth-weekday",
+  "portable_profile": "calendar-service",
+  "reference": "Date-Manip 7.00",
+  "schema_version": 1,
+  "status": "research-only source binding map; excluded from portable handoff"
+}

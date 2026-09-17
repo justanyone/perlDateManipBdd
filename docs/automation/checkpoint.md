@@ -1139,3 +1139,16 @@ pattern_repair owns14case week-count-edges finishing work. partial_parsing owns
 year-day-conversion-family. No root capture remains live. Next: resolve reporting
 limitation, replay/review nth-weekday batch and integrate other worker returns.
 All final specification/adapter/coverage gates remain open.
+
+## Nth-weekday integration
+
+Root accepted28public nth-weekday cases after independent replay30380 exit0,
+/tmp/nth-weekday-root-final.json byte-equal. Reviewer verifies16independent
+Gregorian facts,20date records8absent results3warning cases, no duplicate earlier
+requests,28portable/28binding rows. Root added explicit external OO fixture equality.
+Five features parse12/6/4/28/6 without warnings. Remaining domains explicit; no
+partition completion or BDD execution claim.
+
+Workers remain: week_edges_finish investigates validation branch measurement;
+pattern_repair finishes week-count-edges; partial_parsing year-day conversions.
+No root capture live. All final gates open.

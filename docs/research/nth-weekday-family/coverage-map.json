@@ -1,0 +1,70 @@
+{
+  "operation_id": "calendar.nth-weekday",
+  "partitions": [
+    {
+      "case_count": 6,
+      "observed_domains": [
+        "forward and reverse whole-year origins",
+        "first or last and later occurrences",
+        "existing positive and negative 53rd occurrences",
+        "omitted and explicitly absent optional month"
+      ],
+      "partition_id": "calendar.nth-weekday.p1",
+      "remaining_domains": [
+        "other weekdays, years, and occurrence values that repeat these branches",
+        "supported year endpoints 0001 and 9999"
+      ]
+    },
+    {
+      "case_count": 6,
+      "observed_domains": [
+        "forward and reverse month origins",
+        "first or last and later occurrences",
+        "existing positive and negative fifth occurrences",
+        "leap February and a 31-day month"
+      ],
+      "partition_id": "calendar.nth-weekday.p2",
+      "remaining_domains": [
+        "other months, weekdays, and occurrence values that repeat these branches",
+        "common-February successful occurrences"
+      ]
+    },
+    {
+      "case_count": 8,
+      "observed_domains": [
+        "existing and absent requests at positive and negative year and month limits"
+      ],
+      "partition_id": "calendar.nth-weekday.p3",
+      "remaining_domains": [
+        "the same documented limits across every weekday and calendar shape"
+      ]
+    },
+    {
+      "case_count": 4,
+      "observed_domains": [
+        "positive and negative no-match absence in month and year modes"
+      ],
+      "partition_id": "calendar.nth-weekday.p4",
+      "remaining_domains": [
+        "other no-match weekdays and calendar shapes"
+      ]
+    },
+    {
+      "case_count": 12,
+      "observed_domains": [
+        "zero and both signs beyond month and year occurrence limits",
+        "weekday zero and eight",
+        "month zero and thirteen",
+        "all fields omitted, absent, or nonnumeric"
+      ],
+      "partition_id": "calendar.nth-weekday.p5",
+      "remaining_domains": [
+        "individual missing, absent, empty, and nonnumeric field combinations",
+        "fractional values, extreme magnitudes, numeric text variants, references, and Unicode numeric text"
+      ]
+    }
+  ],
+  "reference": "Date-Manip 7.00",
+  "schema_version": 1,
+  "status": "bounded branch-distinct observations; no partition is declared complete"
+}

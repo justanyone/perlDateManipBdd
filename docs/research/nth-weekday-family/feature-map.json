@@ -1,0 +1,1592 @@
+{
+  "binding_only_feature": {
+    "case_ids": [
+      "NWD-P1-YEAR-FIRST-FORWARD",
+      "NWD-P1-YEAR-LATER-FORWARD-ABSENT-MONTH",
+      "NWD-P1-YEAR-LIMIT53-FORWARD",
+      "NWD-P1-YEAR-LAST-REVERSE",
+      "NWD-P1-YEAR-LATER-REVERSE",
+      "NWD-P1-YEAR-LIMIT53-REVERSE",
+      "NWD-P2-MONTH-FIRST-FORWARD",
+      "NWD-P2-MONTH-LATER-FORWARD",
+      "NWD-P2-MONTH-FIFTH-FORWARD",
+      "NWD-P2-MONTH-LAST-REVERSE",
+      "NWD-P2-MONTH-LATER-REVERSE",
+      "NWD-P2-MONTH-FIFTH-REVERSE",
+      "NWD-P4-MONTH-FIFTH-NO-MATCH",
+      "NWD-P4-MONTH-NEG-FIFTH-NO-MATCH",
+      "NWD-P4-YEAR-53-NO-MATCH",
+      "NWD-P4-YEAR-NEG53-NO-MATCH",
+      "NWD-P5-OCCURRENCE-ZERO",
+      "NWD-P5-MONTH-OCCURRENCE-PLUS6",
+      "NWD-P5-MONTH-OCCURRENCE-MINUS6",
+      "NWD-P5-YEAR-OCCURRENCE-PLUS54",
+      "NWD-P5-YEAR-OCCURRENCE-MINUS54",
+      "NWD-P5-WEEKDAY-ZERO",
+      "NWD-P5-WEEKDAY-EIGHT",
+      "NWD-P5-MONTH-ZERO",
+      "NWD-P5-MONTH-13",
+      "NWD-P5-ALL-OMITTED",
+      "NWD-P5-ALL-ABSENT",
+      "NWD-P5-ALL-NONNUMERIC"
+    ],
+    "path": "spec/drafts/nth-weekdays/perl-binding.feature",
+    "tags": [
+      "source-binding",
+      "perl-binding",
+      "excluded-from-portable-handoff"
+    ]
+  },
+  "case_map": [
+    {
+      "case_id": "NWD-P1-YEAR-FIRST-FORWARD",
+      "category": "year-positive",
+      "feature": "spec/drafts/nth-weekdays/year-occurrences.feature",
+      "independent_expected": [
+        2041,
+        1,
+        7
+      ],
+      "partition_ids": [
+        "calendar.nth-weekday.p1"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "month": {
+          "type": "omitted"
+        },
+        "occurrence": {
+          "type": "number",
+          "value": 1
+        },
+        "weekday": {
+          "type": "number",
+          "value": 1
+        },
+        "year": {
+          "type": "number",
+          "value": 2041
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 2041
+            },
+            {
+              "type": "number",
+              "value": 1
+            },
+            {
+              "type": "number",
+              "value": 7
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:527-536 year/positive origin",
+        "Base.pm:542-547 weekday offset",
+        "Base.pm:566 year return"
+      ]
+    },
+    {
+      "case_id": "NWD-P1-YEAR-LATER-FORWARD-ABSENT-MONTH",
+      "category": "year-positive",
+      "feature": "spec/drafts/nth-weekdays/year-occurrences.feature",
+      "independent_expected": [
+        2041,
+        1,
+        10
+      ],
+      "partition_ids": [
+        "calendar.nth-weekday.p1"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "month": {
+          "type": "absent"
+        },
+        "occurrence": {
+          "type": "number",
+          "value": 2
+        },
+        "weekday": {
+          "type": "number",
+          "value": 4
+        },
+        "year": {
+          "type": "number",
+          "value": 2041
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 2041
+            },
+            {
+              "type": "number",
+              "value": 1
+            },
+            {
+              "type": "number",
+              "value": 10
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:527-536 year/positive origin",
+        "Base.pm:553-556 later positive",
+        "Base.pm:566 year return"
+      ]
+    },
+    {
+      "case_id": "NWD-P1-YEAR-LIMIT53-FORWARD",
+      "category": "year-positive-limit",
+      "feature": "spec/drafts/nth-weekdays/year-occurrences.feature",
+      "independent_expected": [
+        2040,
+        12,
+        30
+      ],
+      "partition_ids": [
+        "calendar.nth-weekday.p1",
+        "calendar.nth-weekday.p3"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "month": {
+          "type": "omitted"
+        },
+        "occurrence": {
+          "type": "number",
+          "value": 53
+        },
+        "weekday": {
+          "type": "number",
+          "value": 7
+        },
+        "year": {
+          "type": "number",
+          "value": 2040
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 2040
+            },
+            {
+              "type": "number",
+              "value": 12
+            },
+            {
+              "type": "number",
+              "value": 30
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:527-536 year/positive origin",
+        "Base.pm:553-556 positive limit",
+        "Base.pm:566 year return"
+      ]
+    },
+    {
+      "case_id": "NWD-P1-YEAR-LAST-REVERSE",
+      "category": "year-negative",
+      "feature": "spec/drafts/nth-weekdays/year-occurrences.feature",
+      "independent_expected": [
+        2041,
+        12,
+        29
+      ],
+      "partition_ids": [
+        "calendar.nth-weekday.p1"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "month": {
+          "type": "omitted"
+        },
+        "occurrence": {
+          "type": "number",
+          "value": -1
+        },
+        "weekday": {
+          "type": "number",
+          "value": 7
+        },
+        "year": {
+          "type": "number",
+          "value": 2041
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 2041
+            },
+            {
+              "type": "number",
+              "value": 12
+            },
+            {
+              "type": "number",
+              "value": 29
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:527-536 year/negative origin",
+        "Base.pm:542-550 reverse offset",
+        "Base.pm:566 year return"
+      ]
+    },
+    {
+      "case_id": "NWD-P1-YEAR-LATER-REVERSE",
+      "category": "year-negative",
+      "feature": "spec/drafts/nth-weekdays/year-occurrences.feature",
+      "independent_expected": [
+        2041,
+        12,
+        24
+      ],
+      "partition_ids": [
+        "calendar.nth-weekday.p1"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "month": {
+          "type": "omitted"
+        },
+        "occurrence": {
+          "type": "number",
+          "value": -2
+        },
+        "weekday": {
+          "type": "number",
+          "value": 2
+        },
+        "year": {
+          "type": "number",
+          "value": 2041
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 2041
+            },
+            {
+              "type": "number",
+              "value": 12
+            },
+            {
+              "type": "number",
+              "value": 24
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:527-536 year/negative origin",
+        "Base.pm:557-560 later negative",
+        "Base.pm:566 year return"
+      ]
+    },
+    {
+      "case_id": "NWD-P1-YEAR-LIMIT53-REVERSE",
+      "category": "year-negative-limit",
+      "feature": "spec/drafts/nth-weekdays/year-occurrences.feature",
+      "independent_expected": [
+        2040,
+        1,
+        2
+      ],
+      "partition_ids": [
+        "calendar.nth-weekday.p1",
+        "calendar.nth-weekday.p3"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "month": {
+          "type": "omitted"
+        },
+        "occurrence": {
+          "type": "number",
+          "value": -53
+        },
+        "weekday": {
+          "type": "number",
+          "value": 1
+        },
+        "year": {
+          "type": "number",
+          "value": 2040
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 2040
+            },
+            {
+              "type": "number",
+              "value": 1
+            },
+            {
+              "type": "number",
+              "value": 2
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:527-536 year/negative origin",
+        "Base.pm:557-560 negative limit",
+        "Base.pm:566 year return"
+      ]
+    },
+    {
+      "case_id": "NWD-P2-MONTH-FIRST-FORWARD",
+      "category": "month-positive",
+      "feature": "spec/drafts/nth-weekdays/month-occurrences.feature",
+      "independent_expected": [
+        2040,
+        2,
+        1
+      ],
+      "partition_ids": [
+        "calendar.nth-weekday.p2"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "month": {
+          "type": "number",
+          "value": 2
+        },
+        "occurrence": {
+          "type": "number",
+          "value": 1
+        },
+        "weekday": {
+          "type": "number",
+          "value": 3
+        },
+        "year": {
+          "type": "number",
+          "value": 2040
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 2040
+            },
+            {
+              "type": "number",
+              "value": 2
+            },
+            {
+              "type": "number",
+              "value": 1
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:523-526 month/positive origin",
+        "Base.pm:542-547 weekday offset",
+        "Base.pm:563-565 month return"
+      ]
+    },
+    {
+      "case_id": "NWD-P2-MONTH-LATER-FORWARD",
+      "category": "month-positive",
+      "feature": "spec/drafts/nth-weekdays/month-occurrences.feature",
+      "independent_expected": [
+        2040,
+        2,
+        12
+      ],
+      "partition_ids": [
+        "calendar.nth-weekday.p2"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "month": {
+          "type": "number",
+          "value": 2
+        },
+        "occurrence": {
+          "type": "number",
+          "value": 2
+        },
+        "weekday": {
+          "type": "number",
+          "value": 7
+        },
+        "year": {
+          "type": "number",
+          "value": 2040
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 2040
+            },
+            {
+              "type": "number",
+              "value": 2
+            },
+            {
+              "type": "number",
+              "value": 12
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:523-526 month/positive origin",
+        "Base.pm:553-556 later positive",
+        "Base.pm:563-565 month return"
+      ]
+    },
+    {
+      "case_id": "NWD-P2-MONTH-FIFTH-FORWARD",
+      "category": "month-positive-limit",
+      "feature": "spec/drafts/nth-weekdays/month-occurrences.feature",
+      "independent_expected": [
+        2041,
+        5,
+        30
+      ],
+      "partition_ids": [
+        "calendar.nth-weekday.p2",
+        "calendar.nth-weekday.p3"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "month": {
+          "type": "number",
+          "value": 5
+        },
+        "occurrence": {
+          "type": "number",
+          "value": 5
+        },
+        "weekday": {
+          "type": "number",
+          "value": 4
+        },
+        "year": {
+          "type": "number",
+          "value": 2041
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 2041
+            },
+            {
+              "type": "number",
+              "value": 5
+            },
+            {
+              "type": "number",
+              "value": 30
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:523-526 month/positive origin",
+        "Base.pm:553-556 positive month limit",
+        "Base.pm:563-565 month return"
+      ]
+    },
+    {
+      "case_id": "NWD-P2-MONTH-LAST-REVERSE",
+      "category": "month-negative",
+      "feature": "spec/drafts/nth-weekdays/month-occurrences.feature",
+      "independent_expected": [
+        2040,
+        2,
+        23
+      ],
+      "partition_ids": [
+        "calendar.nth-weekday.p2"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "month": {
+          "type": "number",
+          "value": 2
+        },
+        "occurrence": {
+          "type": "number",
+          "value": -1
+        },
+        "weekday": {
+          "type": "number",
+          "value": 4
+        },
+        "year": {
+          "type": "number",
+          "value": 2040
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 2040
+            },
+            {
+              "type": "number",
+              "value": 2
+            },
+            {
+              "type": "number",
+              "value": 23
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:523-526 month/negative origin",
+        "Base.pm:542-550 reverse offset",
+        "Base.pm:563-565 month return"
+      ]
+    },
+    {
+      "case_id": "NWD-P2-MONTH-LATER-REVERSE",
+      "category": "month-negative",
+      "feature": "spec/drafts/nth-weekdays/month-occurrences.feature",
+      "independent_expected": [
+        2040,
+        2,
+        20
+      ],
+      "partition_ids": [
+        "calendar.nth-weekday.p2"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "month": {
+          "type": "number",
+          "value": 2
+        },
+        "occurrence": {
+          "type": "number",
+          "value": -2
+        },
+        "weekday": {
+          "type": "number",
+          "value": 1
+        },
+        "year": {
+          "type": "number",
+          "value": 2040
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 2040
+            },
+            {
+              "type": "number",
+              "value": 2
+            },
+            {
+              "type": "number",
+              "value": 20
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:523-526 month/negative origin",
+        "Base.pm:557-560 later negative",
+        "Base.pm:563-565 month return"
+      ]
+    },
+    {
+      "case_id": "NWD-P2-MONTH-FIFTH-REVERSE",
+      "category": "month-negative-limit",
+      "feature": "spec/drafts/nth-weekdays/month-occurrences.feature",
+      "independent_expected": [
+        2041,
+        5,
+        3
+      ],
+      "partition_ids": [
+        "calendar.nth-weekday.p2",
+        "calendar.nth-weekday.p3"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "month": {
+          "type": "number",
+          "value": 5
+        },
+        "occurrence": {
+          "type": "number",
+          "value": -5
+        },
+        "weekday": {
+          "type": "number",
+          "value": 5
+        },
+        "year": {
+          "type": "number",
+          "value": 2041
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 2041
+            },
+            {
+              "type": "number",
+              "value": 5
+            },
+            {
+              "type": "number",
+              "value": 3
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:523-526 month/negative origin",
+        "Base.pm:557-560 negative month limit",
+        "Base.pm:563-565 month return"
+      ]
+    },
+    {
+      "case_id": "NWD-P4-MONTH-FIFTH-NO-MATCH",
+      "category": "month-no-match",
+      "feature": "spec/drafts/nth-weekdays/no-match-boundaries.feature",
+      "independent_expected": null,
+      "partition_ids": [
+        "calendar.nth-weekday.p3",
+        "calendar.nth-weekday.p4"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "month": {
+          "type": "number",
+          "value": 2
+        },
+        "occurrence": {
+          "type": "number",
+          "value": 5
+        },
+        "weekday": {
+          "type": "number",
+          "value": 1
+        },
+        "year": {
+          "type": "number",
+          "value": 2041
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "type": "absent"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:553-556 positive no-match"
+      ]
+    },
+    {
+      "case_id": "NWD-P4-MONTH-NEG-FIFTH-NO-MATCH",
+      "category": "month-no-match",
+      "feature": "spec/drafts/nth-weekdays/no-match-boundaries.feature",
+      "independent_expected": null,
+      "partition_ids": [
+        "calendar.nth-weekday.p3",
+        "calendar.nth-weekday.p4"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "month": {
+          "type": "number",
+          "value": 2
+        },
+        "occurrence": {
+          "type": "number",
+          "value": -5
+        },
+        "weekday": {
+          "type": "number",
+          "value": 2
+        },
+        "year": {
+          "type": "number",
+          "value": 2041
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "type": "absent"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:557-560 negative no-match"
+      ]
+    },
+    {
+      "case_id": "NWD-P4-YEAR-53-NO-MATCH",
+      "category": "year-no-match",
+      "feature": "spec/drafts/nth-weekdays/no-match-boundaries.feature",
+      "independent_expected": null,
+      "partition_ids": [
+        "calendar.nth-weekday.p3",
+        "calendar.nth-weekday.p4"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "month": {
+          "type": "omitted"
+        },
+        "occurrence": {
+          "type": "number",
+          "value": 53
+        },
+        "weekday": {
+          "type": "number",
+          "value": 4
+        },
+        "year": {
+          "type": "number",
+          "value": 2041
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "type": "absent"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:553-556 positive no-match"
+      ]
+    },
+    {
+      "case_id": "NWD-P4-YEAR-NEG53-NO-MATCH",
+      "category": "year-no-match",
+      "feature": "spec/drafts/nth-weekdays/no-match-boundaries.feature",
+      "independent_expected": null,
+      "partition_ids": [
+        "calendar.nth-weekday.p3",
+        "calendar.nth-weekday.p4"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "month": {
+          "type": "omitted"
+        },
+        "occurrence": {
+          "type": "number",
+          "value": -53
+        },
+        "weekday": {
+          "type": "number",
+          "value": 5
+        },
+        "year": {
+          "type": "number",
+          "value": 2041
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "type": "absent"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:557-560 negative no-match"
+      ]
+    },
+    {
+      "case_id": "NWD-P5-OCCURRENCE-ZERO",
+      "category": "invalid",
+      "feature": "spec/drafts/nth-weekdays/invalid-inputs.feature",
+      "independent_expected": null,
+      "partition_ids": [
+        "calendar.nth-weekday.p5"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "description": "zero occurrence",
+        "fields": {
+          "month": {
+            "type": "number",
+            "value": 5
+          },
+          "occurrence": {
+            "type": "number",
+            "value": 0
+          },
+          "weekday": {
+            "type": "number",
+            "value": 3
+          },
+          "year": {
+            "type": "number",
+            "value": 2041
+          }
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 2041
+            },
+            {
+              "type": "number",
+              "value": 5
+            },
+            {
+              "type": "number",
+              "value": 1
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:553-560 neither later-occurrence branch"
+      ]
+    },
+    {
+      "case_id": "NWD-P5-MONTH-OCCURRENCE-PLUS6",
+      "category": "invalid",
+      "feature": "spec/drafts/nth-weekdays/invalid-inputs.feature",
+      "independent_expected": null,
+      "partition_ids": [
+        "calendar.nth-weekday.p5"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "description": "month occurrence above positive limit",
+        "fields": {
+          "month": {
+            "type": "number",
+            "value": 5
+          },
+          "occurrence": {
+            "type": "number",
+            "value": 6
+          },
+          "weekday": {
+            "type": "number",
+            "value": 3
+          },
+          "year": {
+            "type": "number",
+            "value": 2041
+          }
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "type": "absent"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:553-556 positive no-match"
+      ]
+    },
+    {
+      "case_id": "NWD-P5-MONTH-OCCURRENCE-MINUS6",
+      "category": "invalid",
+      "feature": "spec/drafts/nth-weekdays/invalid-inputs.feature",
+      "independent_expected": null,
+      "partition_ids": [
+        "calendar.nth-weekday.p5"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "description": "month occurrence below negative limit",
+        "fields": {
+          "month": {
+            "type": "number",
+            "value": 5
+          },
+          "occurrence": {
+            "type": "number",
+            "value": -6
+          },
+          "weekday": {
+            "type": "number",
+            "value": 5
+          },
+          "year": {
+            "type": "number",
+            "value": 2041
+          }
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "type": "absent"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:557-560 negative no-match"
+      ]
+    },
+    {
+      "case_id": "NWD-P5-YEAR-OCCURRENCE-PLUS54",
+      "category": "invalid",
+      "feature": "spec/drafts/nth-weekdays/invalid-inputs.feature",
+      "independent_expected": null,
+      "partition_ids": [
+        "calendar.nth-weekday.p5"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "description": "year occurrence above positive limit",
+        "fields": {
+          "month": {
+            "type": "omitted"
+          },
+          "occurrence": {
+            "type": "number",
+            "value": 54
+          },
+          "weekday": {
+            "type": "number",
+            "value": 2
+          },
+          "year": {
+            "type": "number",
+            "value": 2041
+          }
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "type": "absent"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:553-556 positive no-match"
+      ]
+    },
+    {
+      "case_id": "NWD-P5-YEAR-OCCURRENCE-MINUS54",
+      "category": "invalid",
+      "feature": "spec/drafts/nth-weekdays/invalid-inputs.feature",
+      "independent_expected": null,
+      "partition_ids": [
+        "calendar.nth-weekday.p5"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "description": "year occurrence below negative limit",
+        "fields": {
+          "month": {
+            "type": "omitted"
+          },
+          "occurrence": {
+            "type": "number",
+            "value": -54
+          },
+          "weekday": {
+            "type": "number",
+            "value": 2
+          },
+          "year": {
+            "type": "number",
+            "value": 2041
+          }
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "type": "absent"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:557-560 negative no-match"
+      ]
+    },
+    {
+      "case_id": "NWD-P5-WEEKDAY-ZERO",
+      "category": "invalid",
+      "feature": "spec/drafts/nth-weekdays/invalid-inputs.feature",
+      "independent_expected": null,
+      "partition_ids": [
+        "calendar.nth-weekday.p5"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "description": "weekday below documented range",
+        "fields": {
+          "month": {
+            "type": "number",
+            "value": 5
+          },
+          "occurrence": {
+            "type": "number",
+            "value": 1
+          },
+          "weekday": {
+            "type": "number",
+            "value": 0
+          },
+          "year": {
+            "type": "number",
+            "value": 2041
+          }
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 2041
+            },
+            {
+              "type": "number",
+              "value": 5
+            },
+            {
+              "type": "number",
+              "value": 5
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:542-550 unchecked weekday offset"
+      ]
+    },
+    {
+      "case_id": "NWD-P5-WEEKDAY-EIGHT",
+      "category": "invalid",
+      "feature": "spec/drafts/nth-weekdays/invalid-inputs.feature",
+      "independent_expected": null,
+      "partition_ids": [
+        "calendar.nth-weekday.p5"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "description": "weekday above documented range",
+        "fields": {
+          "month": {
+            "type": "number",
+            "value": 5
+          },
+          "occurrence": {
+            "type": "number",
+            "value": 1
+          },
+          "weekday": {
+            "type": "number",
+            "value": 8
+          },
+          "year": {
+            "type": "number",
+            "value": 2041
+          }
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 2041
+            },
+            {
+              "type": "number",
+              "value": 5
+            },
+            {
+              "type": "number",
+              "value": 6
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:542-550 unchecked weekday offset"
+      ]
+    },
+    {
+      "case_id": "NWD-P5-MONTH-ZERO",
+      "category": "invalid",
+      "feature": "spec/drafts/nth-weekdays/invalid-inputs.feature",
+      "independent_expected": null,
+      "partition_ids": [
+        "calendar.nth-weekday.p5"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "description": "false month value selects whole-year mode",
+        "fields": {
+          "month": {
+            "type": "number",
+            "value": 0
+          },
+          "occurrence": {
+            "type": "number",
+            "value": 1
+          },
+          "weekday": {
+            "type": "number",
+            "value": 2
+          },
+          "year": {
+            "type": "number",
+            "value": 2041
+          }
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 2041
+            },
+            {
+              "type": "number",
+              "value": 1
+            },
+            {
+              "type": "number",
+              "value": 1
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:515-516 month coercion",
+        "Base.pm:527-536 year origin"
+      ]
+    },
+    {
+      "case_id": "NWD-P5-MONTH-13",
+      "category": "invalid",
+      "feature": "spec/drafts/nth-weekdays/invalid-inputs.feature",
+      "independent_expected": null,
+      "partition_ids": [
+        "calendar.nth-weekday.p5"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "description": "month above documented range",
+        "fields": {
+          "month": {
+            "type": "number",
+            "value": 13
+          },
+          "occurrence": {
+            "type": "number",
+            "value": 1
+          },
+          "weekday": {
+            "type": "number",
+            "value": 2
+          },
+          "year": {
+            "type": "number",
+            "value": 2041
+          }
+        }
+      },
+      "result": {
+        "diagnostic": "none",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 2041
+            },
+            {
+              "type": "number",
+              "value": 13
+            },
+            {
+              "type": "number",
+              "value": 7
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:523-526 unchecked month mode"
+      ]
+    },
+    {
+      "case_id": "NWD-P5-ALL-OMITTED",
+      "category": "invalid",
+      "feature": "spec/drafts/nth-weekdays/invalid-inputs.feature",
+      "independent_expected": null,
+      "partition_ids": [
+        "calendar.nth-weekday.p5"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "description": "all required fields omitted",
+        "fields": {
+          "month": {
+            "type": "omitted"
+          },
+          "occurrence": {
+            "type": "omitted"
+          },
+          "weekday": {
+            "type": "omitted"
+          },
+          "year": {
+            "type": "omitted"
+          }
+        }
+      },
+      "result": {
+        "diagnostic": "arithmetic-input diagnostic",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 0
+            },
+            {
+              "type": "number",
+              "value": 1
+            },
+            {
+              "type": "number",
+              "value": 1
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:515-516 field coercion",
+        "Base.pm:527-560 unchecked arithmetic"
+      ]
+    },
+    {
+      "case_id": "NWD-P5-ALL-ABSENT",
+      "category": "invalid",
+      "feature": "spec/drafts/nth-weekdays/invalid-inputs.feature",
+      "independent_expected": null,
+      "partition_ids": [
+        "calendar.nth-weekday.p5"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "description": "all fields explicitly absent",
+        "fields": {
+          "month": {
+            "type": "absent"
+          },
+          "occurrence": {
+            "type": "absent"
+          },
+          "weekday": {
+            "type": "absent"
+          },
+          "year": {
+            "type": "absent"
+          }
+        }
+      },
+      "result": {
+        "diagnostic": "arithmetic-input diagnostic",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 0
+            },
+            {
+              "type": "number",
+              "value": 1
+            },
+            {
+              "type": "number",
+              "value": 1
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:515-516 field coercion",
+        "Base.pm:523-560 unchecked arithmetic"
+      ]
+    },
+    {
+      "case_id": "NWD-P5-ALL-NONNUMERIC",
+      "category": "invalid",
+      "feature": "spec/drafts/nth-weekdays/invalid-inputs.feature",
+      "independent_expected": null,
+      "partition_ids": [
+        "calendar.nth-weekday.p5"
+      ],
+      "profile": "calendar-service",
+      "request": {
+        "description": "all fields nonnumeric text",
+        "fields": {
+          "month": {
+            "type": "text",
+            "value": "month"
+          },
+          "occurrence": {
+            "type": "text",
+            "value": "occurrence"
+          },
+          "weekday": {
+            "type": "text",
+            "value": "weekday"
+          },
+          "year": {
+            "type": "text",
+            "value": "year"
+          }
+        }
+      },
+      "result": {
+        "diagnostic": "arithmetic-input diagnostic",
+        "status": "completed",
+        "value": {
+          "field_order": [
+            "year",
+            "month",
+            "day"
+          ],
+          "fields": [
+            {
+              "type": "number",
+              "value": 0
+            },
+            {
+              "type": "number",
+              "value": 1
+            },
+            {
+              "type": "number",
+              "value": 1
+            }
+          ],
+          "type": "ordered-date-fields"
+        }
+      },
+      "source_branch_refs": [
+        "Base.pm:515-516 field coercion",
+        "Base.pm:523-560 unchecked arithmetic"
+      ]
+    }
+  ],
+  "evidence_sha256": "01835dbbcd46f1bad3389608eb7dce670db7577d604831fc3ba674014e28aea3",
+  "reference": "Date-Manip 7.00",
+  "schema_version": 1,
+  "status": "research-to-draft correspondence; not BDD execution or semantic approval"
+}

@@ -1,0 +1,61 @@
+{
+  "direct_private_calls": [],
+  "findings": [
+    {
+      "entry": "Date::Manip::Base::nth_day_of_week",
+      "finding": "The only canonical binding selects month or whole-year mode, forward or reverse origin, later occurrence adjustment, no-match absence, and month or year return conversion.",
+      "public": true
+    },
+    {
+      "entry": "Date::Manip::Base calendar support methods",
+      "finding": "Public length, weekday, and day-of-year methods are reached internally; the probe does not call them as substitutes for the operation under test.",
+      "public": true
+    },
+    {
+      "entry": "private helpers",
+      "finding": "No private helper is an entry point on the reviewed direct path and none is called by the probe.",
+      "public": false
+    }
+  ],
+  "operation_id": "calendar.nth-weekday",
+  "public_entry_points": [
+    {
+      "call_shape": "year, occurrence, weekday, optional month",
+      "callable": "nth_day_of_week",
+      "disposition": "public-oo-method",
+      "module": "Date::Manip::Base"
+    }
+  ],
+  "reference": "Date-Manip 7.00",
+  "reviewed_source_sha256": {
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm": "5fe1f12a7b59c57baf71c86e266b4ea06851eac0ec203a3507d019bcadbea97c",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pod": "b2a6f168023e88a64a0e6d85542fac28b2a0c688f9d43083f38672344f9ca13d"
+  },
+  "schema_version": 1,
+  "source_branch_refs": [
+    "Base.pm:515-516 field coercion",
+    "Base.pm:515-516 month coercion",
+    "Base.pm:523-526 month/negative origin",
+    "Base.pm:523-526 month/positive origin",
+    "Base.pm:523-526 unchecked month mode",
+    "Base.pm:523-560 unchecked arithmetic",
+    "Base.pm:527-536 year origin",
+    "Base.pm:527-536 year/negative origin",
+    "Base.pm:527-536 year/positive origin",
+    "Base.pm:527-560 unchecked arithmetic",
+    "Base.pm:542-547 weekday offset",
+    "Base.pm:542-550 reverse offset",
+    "Base.pm:542-550 unchecked weekday offset",
+    "Base.pm:553-556 later positive",
+    "Base.pm:553-556 positive limit",
+    "Base.pm:553-556 positive month limit",
+    "Base.pm:553-556 positive no-match",
+    "Base.pm:553-560 neither later-occurrence branch",
+    "Base.pm:557-560 later negative",
+    "Base.pm:557-560 negative limit",
+    "Base.pm:557-560 negative month limit",
+    "Base.pm:557-560 negative no-match",
+    "Base.pm:563-565 month return",
+    "Base.pm:566 year return"
+  ]
+}

@@ -167,7 +167,11 @@
         "docs/research/calendar-check-family/feature-map.json",
         "docs/research/calendar-check-family/coverage-map.json",
         "docs/research/calendar-check-family/coverage-result.json",
-        "docs/research/calendar-check-family/target-coverage.json"
+        "docs/research/calendar-check-family/target-coverage.json",
+        "docs/research/nth-weekday-family/README.md",
+        "docs/research/nth-weekday-family/feature-map.json",
+        "docs/research/nth-weekday-family/observations.json",
+        "docs/research/nth-weekday-family/coverage-map.json"
       ],
       "partial_parsing_edges_review": "52 repeatable public edge requests integrated after independent repair and root review. Explicit setup, 48 outline-row comparisons, native failure lifecycle and binding-only warnings checked; broader domains and source coverage remain open.",
       "input_history_review": "17 repeatable public Date::input cases integrated after provenance repair, canonical-binding correction and explicit not-called configuration metadata. Reviewer requires runtime/profile/module/process evidence and checks feature literals. Constructor retention added; wider transitions remain open.",
@@ -180,7 +184,8 @@
         "partial_parsing": "year-day-conversion-family: forward/inverse/fractional day-of-year",
         "week_edges_finish": "read-only investigation of DevelCover zero-hit validation branches; nth-weekday-family released for root review"
       },
-      "calendar_check_review": "36public requests independently replayed; strict row/provenance reviewer and parser pass. Target coverage10/10statements but0/6branch outcomes despite valid/invalid results; allpartitions observed-partial, instrument discrepancy investigation active."
+      "calendar_check_review": "36public requests independently replayed; strict row/provenance reviewer and parser pass. Target coverage10/10statements but0/6branch outcomes despite valid/invalid results; allpartitions observed-partial, instrument discrepancy investigation active.",
+      "nth_weekday_review": "28new public cases replay byte-identical;16 independent Gregorian facts;20 date records8absent returns3warning cases. Exact28portable/28binding rows and parser pass. No completed partition or BDD claim."
     },
     {
       "id": "spec-arithmetic-deltas",
