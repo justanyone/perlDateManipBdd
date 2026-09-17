@@ -216,7 +216,12 @@
         "Feature text remains language-neutral."
       ],
       "owner": "coordinator + language_completion (new object lifecycle)",
-      "progress": "40 corrected repeatable cases; coordinator fixed backend fixture isolation and supported derivation carrier, checked29 table cases plus reset/derivation. Drafts remain incomplete across domains/files/state/receiver variants."
+      "progress": "40 corrected repeatable cases; coordinator fixed backend fixture isolation and supported derivation carrier, checked29 table cases plus reset/derivation. Drafts remain incomplete across domains/files/state/receiver variants. Added36 repeated public configuration-file draft cases,18fixtures acrossOO/DM6; exact filebodies/orderedsettings/results checked. Partial mutation aftermalformedline and laxvaluevalidation disputed; broader filegrammar/legacy/receiver domains open.",
+      "evidence": [
+        "docs/research/config-files-family/feature-map.json",
+        "spec/drafts/config-files/loading.feature",
+        "tools/review/config_file_literals.py"
+      ]
     },
     {
       "id": "coverage-review",

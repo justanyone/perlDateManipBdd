@@ -422,3 +422,19 @@ wording, a no-op isolation check, and compatibility classification gaps.
 partial_parsing now owns the lifecycle repair, retaining readable portable dates
 with explicit representation semantics. pattern_repair reviews52parsingedges;
 coverage_setup continues instrumentation. Respect these owned paths.
+
+## Configuration-file loading checkpoint
+
+Root added36 repeated original file-loading cases throughOOconfig andDM6Date_Init:
+18fixtures cover whitespace/comments/case, ordering/includes, missing/empty paths,
+malformed lines, quoted/hash values and unknown variables/sections. Public probes
+were informed by private reader inspection without calling helpers. Exact JSON
+file bodies, ordered settings and literaldate outcomes match draft features via
+config_file_literals.py. Partial state after malformed input and laxvalues are
+disputed. Legacy files, special sections, permissions and additional domains remain.
+
+Coverage tooling returned stable clean-environment instrumentation with a compact
+pilotresult; root review/global dependency notice/integration remains next.
+coverage_setup now owns NEW coverage-denominator-audit and tools/coverage-denominator
+for legitimate public loading routes for788 unloaded modules. pattern_repair owns
+52-case edge repairs; partial_parsing owns lifecycle repairs.

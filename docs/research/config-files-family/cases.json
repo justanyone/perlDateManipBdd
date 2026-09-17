@@ -1,0 +1,532 @@
+{
+  "schema_version": 1,
+  "status": "original bounded public configuration-file requests",
+  "cases": [
+    {
+      "case_id": "CF-EMPTY-OO",
+      "profile": "oo",
+      "files": {
+        "main.cnf": ""
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-EMPTY-DM6",
+      "profile": "dm6",
+      "files": {
+        "main.cnf": ""
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-COMMENTS-OO",
+      "profile": "oo",
+      "files": {
+        "main.cnf": "\n  # Original fixture comment\n\t\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-COMMENTS-DM6",
+      "profile": "dm6",
+      "files": {
+        "main.cnf": "\n  # Original fixture comment\n\t\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-ORDER-OO",
+      "profile": "oo",
+      "files": {
+        "main.cnf": "DateFormat=non-US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-ORDER-DM6",
+      "profile": "dm6",
+      "files": {
+        "main.cnf": "DateFormat=non-US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-SPACE-CASE-OO",
+      "profile": "oo",
+      "files": {
+        "main.cnf": "  dAtEfOrMaT  =  non-US \r\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-SPACE-CASE-DM6",
+      "profile": "dm6",
+      "files": {
+        "main.cnf": "  dAtEfOrMaT  =  non-US \r\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-LAST-WINS-OO",
+      "profile": "oo",
+      "files": {
+        "main.cnf": "DateFormat=non-US\nDateFormat=US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-LAST-WINS-DM6",
+      "profile": "dm6",
+      "files": {
+        "main.cnf": "DateFormat=non-US\nDateFormat=US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-CALL-OVERRIDE-OO",
+      "profile": "oo",
+      "files": {
+        "main.cnf": "DateFormat=non-US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ],
+        [
+          "DateFormat",
+          "US"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-CALL-OVERRIDE-DM6",
+      "profile": "dm6",
+      "files": {
+        "main.cnf": "DateFormat=non-US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ],
+        [
+          "DateFormat",
+          "US"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-FILE-OVERRIDE-OO",
+      "profile": "oo",
+      "files": {
+        "main.cnf": "DateFormat=non-US\n"
+      },
+      "settings": [
+        [
+          "DateFormat",
+          "US"
+        ],
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-FILE-OVERRIDE-DM6",
+      "profile": "dm6",
+      "files": {
+        "main.cnf": "DateFormat=non-US\n"
+      },
+      "settings": [
+        [
+          "DateFormat",
+          "US"
+        ],
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-NESTED-OO",
+      "profile": "oo",
+      "files": {
+        "main.cnf": "DateFormat=US\nConfigFile=child.cnf\n",
+        "child.cnf": "DateFormat=non-US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-NESTED-DM6",
+      "profile": "dm6",
+      "files": {
+        "main.cnf": "DateFormat=US\nConfigFile=child.cnf\n",
+        "child.cnf": "DateFormat=non-US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-NESTED-RESUME-OO",
+      "profile": "oo",
+      "files": {
+        "main.cnf": "DateFormat=US\nConfigFile=child.cnf\nDateFormat=US\n",
+        "child.cnf": "DateFormat=non-US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-NESTED-RESUME-DM6",
+      "profile": "dm6",
+      "files": {
+        "main.cnf": "DateFormat=US\nConfigFile=child.cnf\nDateFormat=US\n",
+        "child.cnf": "DateFormat=non-US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-TWO-FILES-OO",
+      "profile": "oo",
+      "files": {
+        "main.cnf": "DateFormat=non-US\n",
+        "child.cnf": "DateFormat=US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ],
+        [
+          "ConfigFile",
+          "child.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-TWO-FILES-DM6",
+      "profile": "dm6",
+      "files": {
+        "main.cnf": "DateFormat=non-US\n",
+        "child.cnf": "DateFormat=US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ],
+        [
+          "ConfigFile",
+          "child.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-MISSING-OO",
+      "profile": "oo",
+      "files": {},
+      "settings": [
+        [
+          "ConfigFile",
+          "missing.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-MISSING-DM6",
+      "profile": "dm6",
+      "files": {},
+      "settings": [
+        [
+          "ConfigFile",
+          "missing.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-EMPTY-PATH-OO",
+      "profile": "oo",
+      "files": {},
+      "settings": [
+        [
+          "ConfigFile",
+          ""
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-EMPTY-PATH-DM6",
+      "profile": "dm6",
+      "files": {},
+      "settings": [
+        [
+          "ConfigFile",
+          ""
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-MALFORMED-OO",
+      "profile": "oo",
+      "files": {
+        "main.cnf": "DateFormat=non-US\nnot an assignment\nDateFormat=US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-MALFORMED-DM6",
+      "profile": "dm6",
+      "files": {
+        "main.cnf": "DateFormat=non-US\nnot an assignment\nDateFormat=US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-INLINE-COMMENT-OO",
+      "profile": "oo",
+      "files": {
+        "main.cnf": "DateFormat=non-US # fixture comment\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-INLINE-COMMENT-DM6",
+      "profile": "dm6",
+      "files": {
+        "main.cnf": "DateFormat=non-US # fixture comment\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-QUOTED-VALUE-OO",
+      "profile": "oo",
+      "files": {
+        "main.cnf": "DateFormat=\"non-US\"\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-QUOTED-VALUE-DM6",
+      "profile": "dm6",
+      "files": {
+        "main.cnf": "DateFormat=\"non-US\"\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-UNKNOWN-KEY-OO",
+      "profile": "oo",
+      "files": {
+        "main.cnf": "NotASetting=example\nDateFormat=non-US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-UNKNOWN-KEY-DM6",
+      "profile": "dm6",
+      "files": {
+        "main.cnf": "NotASetting=example\nDateFormat=non-US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-UNKNOWN-SECTION-OO",
+      "profile": "oo",
+      "files": {
+        "main.cnf": "*FixtureNotes\nNote=original text\n*Conf\nDateFormat=non-US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-UNKNOWN-SECTION-DM6",
+      "profile": "dm6",
+      "files": {
+        "main.cnf": "*FixtureNotes\nNote=original text\n*Conf\nDateFormat=non-US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-SECTION-CASE-OO",
+      "profile": "oo",
+      "files": {
+        "main.cnf": "*cOnF\nDateFormat=non-US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    },
+    {
+      "case_id": "CF-SECTION-CASE-DM6",
+      "profile": "dm6",
+      "files": {
+        "main.cnf": "*cOnF\nDateFormat=non-US\n"
+      },
+      "settings": [
+        [
+          "ConfigFile",
+          "main.cnf"
+        ]
+      ],
+      "parse_text": "04/05/2040"
+    }
+  ]
+}

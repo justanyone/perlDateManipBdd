@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "feature": "spec/drafts/config-files/loading.feature",
+  "status": "draft; remaining file grammar and legacy profile open",
+  "bindings": {
+    "object": [
+      "Date::Manip::Date::config",
+      "Date::Manip::Date::get_config",
+      "Date::Manip::Date::parse",
+      "Date::Manip::Date::value",
+      "Date::Manip::Date::err"
+    ],
+    "functional-current": [
+      "Date::Manip::DM6::Date_Init",
+      "Date::Manip::DM6::ParseDate"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "CF-EMPTY-OO",
+      "result": "2040-04-05 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-EMPTY-DM6",
+      "result": "2040-04-05 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-COMMENTS-OO",
+      "result": "2040-04-05 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-COMMENTS-DM6",
+      "result": "2040-04-05 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-ORDER-OO",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-ORDER-DM6",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-SPACE-CASE-OO",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-SPACE-CASE-DM6",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-LAST-WINS-OO",
+      "result": "2040-04-05 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-LAST-WINS-DM6",
+      "result": "2040-04-05 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-CALL-OVERRIDE-OO",
+      "result": "2040-04-05 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-CALL-OVERRIDE-DM6",
+      "result": "2040-04-05 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-FILE-OVERRIDE-OO",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-FILE-OVERRIDE-DM6",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-NESTED-OO",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-NESTED-DM6",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-NESTED-RESUME-OO",
+      "result": "2040-04-05 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-NESTED-RESUME-DM6",
+      "result": "2040-04-05 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-TWO-FILES-OO",
+      "result": "2040-04-05 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-TWO-FILES-DM6",
+      "result": "2040-04-05 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-MISSING-OO",
+      "result": "2040-04-05 00:00:00",
+      "configuration_warning": "missing configuration file",
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-MISSING-DM6",
+      "result": "2040-04-05 00:00:00",
+      "configuration_warning": "missing configuration file",
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-EMPTY-PATH-OO",
+      "result": "2040-04-05 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-EMPTY-PATH-DM6",
+      "result": "2040-04-05 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-MALFORMED-OO",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": "invalid-configuration-line"
+    },
+    {
+      "case_id": "CF-MALFORMED-DM6",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": "invalid-configuration-line"
+    },
+    {
+      "case_id": "CF-INLINE-COMMENT-OO",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-INLINE-COMMENT-DM6",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-QUOTED-VALUE-OO",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-QUOTED-VALUE-DM6",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-UNKNOWN-KEY-OO",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": "unknown configuration variable",
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-UNKNOWN-KEY-DM6",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": "unknown configuration variable",
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-UNKNOWN-SECTION-OO",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": "unknown configuration section",
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-UNKNOWN-SECTION-DM6",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": "unknown configuration section",
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-SECTION-CASE-OO",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    },
+    {
+      "case_id": "CF-SECTION-CASE-DM6",
+      "result": "2040-05-04 00:00:00",
+      "configuration_warning": null,
+      "configuration_exception": null
+    }
+  ]
+}

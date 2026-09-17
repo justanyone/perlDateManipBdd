@@ -1,0 +1,1310 @@
+{
+  "schema_version": 1,
+  "status": "repeatable research; draft English expectations independently transcribed, not approved",
+  "repetitions": 2,
+  "sha256": {
+    "docs/research/config-files-family/cases.json": "a9cd7216e7973bd6e6fda5f9514e33b1003e5711e2f6865a0383863e959f0c0e",
+    "tools/probes/config-files-family/probe.pl": "a26cc55c787540a4e2c030e64f9f61933c1a8f1c761f55366708db012c00dadc",
+    "docs/automation/reference-profiles.json": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
+    "tools/probes/config-files-family/run.py": "dd5450d7c854470d11b7c94ecc5e88fbfe9dfb4825f2d193a707720f4a0b6d10",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm": "c181a8d908efbc2c18cc0a59e10e90628161dc3acf811c9c0292985280953d85",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm": "bce0c2d92075928e1c6f3a4cf1fa01740ea15d2da64470265a1b616ef352b6e1",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm": "5fe1f12a7b59c57baf71c86e266b4ea06851eac0ec203a3507d019bcadbea97c",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm": "ae888d89540e0a35dca67a8e1f8f3f420cda95c84aaf8a6d29844e792c262362",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm": "5ece620f80b039048d09b72fcb30f0e09ce8bb1151a0720db80ebdd2f9d7686f"
+  },
+  "observations": [
+    {
+      "case_id": "CF-EMPTY-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-EMPTY-OO",
+        "configuration_exception": null,
+        "configuration_return": null,
+        "configuration_warnings": [],
+        "date_order": "US",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-EMPTY-OO",
+          "files": {
+            "main.cnf": ""
+          },
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040040500:00:00"
+      }
+    },
+    {
+      "case_id": "CF-EMPTY-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-EMPTY-DM6",
+        "configuration_exception": null,
+        "configuration_return": "",
+        "configuration_warnings": [],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-EMPTY-DM6",
+          "files": {
+            "main.cnf": ""
+          },
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040040500:00:00"
+      }
+    },
+    {
+      "case_id": "CF-COMMENTS-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-COMMENTS-OO",
+        "configuration_exception": null,
+        "configuration_return": null,
+        "configuration_warnings": [],
+        "date_order": "US",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-COMMENTS-OO",
+          "files": {
+            "main.cnf": "\n  # Original fixture comment\n\t\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040040500:00:00"
+      }
+    },
+    {
+      "case_id": "CF-COMMENTS-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-COMMENTS-DM6",
+        "configuration_exception": null,
+        "configuration_return": "",
+        "configuration_warnings": [],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-COMMENTS-DM6",
+          "files": {
+            "main.cnf": "\n  # Original fixture comment\n\t\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040040500:00:00"
+      }
+    },
+    {
+      "case_id": "CF-ORDER-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-ORDER-OO",
+        "configuration_exception": null,
+        "configuration_return": null,
+        "configuration_warnings": [],
+        "date_order": "non-US",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-ORDER-OO",
+          "files": {
+            "main.cnf": "DateFormat=non-US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-ORDER-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-ORDER-DM6",
+        "configuration_exception": null,
+        "configuration_return": "",
+        "configuration_warnings": [],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-ORDER-DM6",
+          "files": {
+            "main.cnf": "DateFormat=non-US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-SPACE-CASE-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-SPACE-CASE-OO",
+        "configuration_exception": null,
+        "configuration_return": null,
+        "configuration_warnings": [],
+        "date_order": "non-US",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-SPACE-CASE-OO",
+          "files": {
+            "main.cnf": "  dAtEfOrMaT  =  non-US \r\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-SPACE-CASE-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-SPACE-CASE-DM6",
+        "configuration_exception": null,
+        "configuration_return": "",
+        "configuration_warnings": [],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-SPACE-CASE-DM6",
+          "files": {
+            "main.cnf": "  dAtEfOrMaT  =  non-US \r\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-LAST-WINS-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-LAST-WINS-OO",
+        "configuration_exception": null,
+        "configuration_return": null,
+        "configuration_warnings": [],
+        "date_order": "US",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-LAST-WINS-OO",
+          "files": {
+            "main.cnf": "DateFormat=non-US\nDateFormat=US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040040500:00:00"
+      }
+    },
+    {
+      "case_id": "CF-LAST-WINS-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-LAST-WINS-DM6",
+        "configuration_exception": null,
+        "configuration_return": "",
+        "configuration_warnings": [],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-LAST-WINS-DM6",
+          "files": {
+            "main.cnf": "DateFormat=non-US\nDateFormat=US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040040500:00:00"
+      }
+    },
+    {
+      "case_id": "CF-CALL-OVERRIDE-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-CALL-OVERRIDE-OO",
+        "configuration_exception": null,
+        "configuration_return": null,
+        "configuration_warnings": [],
+        "date_order": "US",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-CALL-OVERRIDE-OO",
+          "files": {
+            "main.cnf": "DateFormat=non-US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ],
+            [
+              "DateFormat",
+              "US"
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040040500:00:00"
+      }
+    },
+    {
+      "case_id": "CF-CALL-OVERRIDE-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-CALL-OVERRIDE-DM6",
+        "configuration_exception": null,
+        "configuration_return": "",
+        "configuration_warnings": [],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-CALL-OVERRIDE-DM6",
+          "files": {
+            "main.cnf": "DateFormat=non-US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ],
+            [
+              "DateFormat",
+              "US"
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040040500:00:00"
+      }
+    },
+    {
+      "case_id": "CF-FILE-OVERRIDE-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-FILE-OVERRIDE-OO",
+        "configuration_exception": null,
+        "configuration_return": null,
+        "configuration_warnings": [],
+        "date_order": "non-US",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-FILE-OVERRIDE-OO",
+          "files": {
+            "main.cnf": "DateFormat=non-US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "DateFormat",
+              "US"
+            ],
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-FILE-OVERRIDE-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-FILE-OVERRIDE-DM6",
+        "configuration_exception": null,
+        "configuration_return": "",
+        "configuration_warnings": [],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-FILE-OVERRIDE-DM6",
+          "files": {
+            "main.cnf": "DateFormat=non-US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "DateFormat",
+              "US"
+            ],
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-NESTED-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-NESTED-OO",
+        "configuration_exception": null,
+        "configuration_return": null,
+        "configuration_warnings": [],
+        "date_order": "non-US",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-NESTED-OO",
+          "files": {
+            "child.cnf": "DateFormat=non-US\n",
+            "main.cnf": "DateFormat=US\nConfigFile=child.cnf\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-NESTED-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-NESTED-DM6",
+        "configuration_exception": null,
+        "configuration_return": "",
+        "configuration_warnings": [],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-NESTED-DM6",
+          "files": {
+            "child.cnf": "DateFormat=non-US\n",
+            "main.cnf": "DateFormat=US\nConfigFile=child.cnf\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-NESTED-RESUME-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-NESTED-RESUME-OO",
+        "configuration_exception": null,
+        "configuration_return": null,
+        "configuration_warnings": [],
+        "date_order": "US",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-NESTED-RESUME-OO",
+          "files": {
+            "child.cnf": "DateFormat=non-US\n",
+            "main.cnf": "DateFormat=US\nConfigFile=child.cnf\nDateFormat=US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040040500:00:00"
+      }
+    },
+    {
+      "case_id": "CF-NESTED-RESUME-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-NESTED-RESUME-DM6",
+        "configuration_exception": null,
+        "configuration_return": "",
+        "configuration_warnings": [],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-NESTED-RESUME-DM6",
+          "files": {
+            "child.cnf": "DateFormat=non-US\n",
+            "main.cnf": "DateFormat=US\nConfigFile=child.cnf\nDateFormat=US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040040500:00:00"
+      }
+    },
+    {
+      "case_id": "CF-TWO-FILES-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-TWO-FILES-OO",
+        "configuration_exception": null,
+        "configuration_return": null,
+        "configuration_warnings": [],
+        "date_order": "US",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-TWO-FILES-OO",
+          "files": {
+            "child.cnf": "DateFormat=US\n",
+            "main.cnf": "DateFormat=non-US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ],
+            [
+              "ConfigFile",
+              "child.cnf"
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040040500:00:00"
+      }
+    },
+    {
+      "case_id": "CF-TWO-FILES-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-TWO-FILES-DM6",
+        "configuration_exception": null,
+        "configuration_return": "",
+        "configuration_warnings": [],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-TWO-FILES-DM6",
+          "files": {
+            "child.cnf": "DateFormat=US\n",
+            "main.cnf": "DateFormat=non-US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ],
+            [
+              "ConfigFile",
+              "child.cnf"
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040040500:00:00"
+      }
+    },
+    {
+      "case_id": "CF-MISSING-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-MISSING-OO",
+        "configuration_exception": null,
+        "configuration_return": null,
+        "configuration_warnings": [
+          "ERROR: [config_file] file doesn't exist: missing.cnf at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ],
+        "date_order": "US",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-MISSING-OO",
+          "files": {},
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "ConfigFile",
+              "missing.cnf"
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040040500:00:00"
+      }
+    },
+    {
+      "case_id": "CF-MISSING-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-MISSING-DM6",
+        "configuration_exception": null,
+        "configuration_return": "",
+        "configuration_warnings": [
+          "ERROR: [config_file] file doesn't exist: missing.cnf at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-MISSING-DM6",
+          "files": {},
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "ConfigFile",
+              "missing.cnf"
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040040500:00:00"
+      }
+    },
+    {
+      "case_id": "CF-EMPTY-PATH-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-EMPTY-PATH-OO",
+        "configuration_exception": null,
+        "configuration_return": null,
+        "configuration_warnings": [],
+        "date_order": "US",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-EMPTY-PATH-OO",
+          "files": {},
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "ConfigFile",
+              ""
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040040500:00:00"
+      }
+    },
+    {
+      "case_id": "CF-EMPTY-PATH-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-EMPTY-PATH-DM6",
+        "configuration_exception": null,
+        "configuration_return": "",
+        "configuration_warnings": [],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-EMPTY-PATH-DM6",
+          "files": {},
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "ConfigFile",
+              ""
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040040500:00:00"
+      }
+    },
+    {
+      "case_id": "CF-MALFORMED-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-MALFORMED-OO",
+        "configuration_exception": "ERROR: invalid Date::Manip config file line:\n  not an assignment\n at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n",
+        "configuration_warnings": [],
+        "date_order": "non-US",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-MALFORMED-OO",
+          "files": {
+            "main.cnf": "DateFormat=non-US\nnot an assignment\nDateFormat=US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-MALFORMED-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-MALFORMED-DM6",
+        "configuration_exception": "ERROR: invalid Date::Manip config file line:\n  not an assignment\n at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n",
+        "configuration_warnings": [],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-MALFORMED-DM6",
+          "files": {
+            "main.cnf": "DateFormat=non-US\nnot an assignment\nDateFormat=US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-INLINE-COMMENT-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-INLINE-COMMENT-OO",
+        "configuration_exception": null,
+        "configuration_return": null,
+        "configuration_warnings": [],
+        "date_order": "non-US # fixture comment",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-INLINE-COMMENT-OO",
+          "files": {
+            "main.cnf": "DateFormat=non-US # fixture comment\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-INLINE-COMMENT-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-INLINE-COMMENT-DM6",
+        "configuration_exception": null,
+        "configuration_return": "",
+        "configuration_warnings": [],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-INLINE-COMMENT-DM6",
+          "files": {
+            "main.cnf": "DateFormat=non-US # fixture comment\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-QUOTED-VALUE-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-QUOTED-VALUE-OO",
+        "configuration_exception": null,
+        "configuration_return": null,
+        "configuration_warnings": [],
+        "date_order": "\"non-US\"",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-QUOTED-VALUE-OO",
+          "files": {
+            "main.cnf": "DateFormat=\"non-US\"\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-QUOTED-VALUE-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-QUOTED-VALUE-DM6",
+        "configuration_exception": null,
+        "configuration_return": "",
+        "configuration_warnings": [],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-QUOTED-VALUE-DM6",
+          "files": {
+            "main.cnf": "DateFormat=\"non-US\"\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-UNKNOWN-KEY-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-UNKNOWN-KEY-OO",
+        "configuration_exception": null,
+        "configuration_return": null,
+        "configuration_warnings": [
+          "ERROR: [config_var] invalid config variable: notasetting at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ],
+        "date_order": "non-US",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-UNKNOWN-KEY-OO",
+          "files": {
+            "main.cnf": "NotASetting=example\nDateFormat=non-US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-UNKNOWN-KEY-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-UNKNOWN-KEY-DM6",
+        "configuration_exception": null,
+        "configuration_return": "",
+        "configuration_warnings": [
+          "ERROR: [config_var] invalid config variable: notasetting at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-UNKNOWN-KEY-DM6",
+          "files": {
+            "main.cnf": "NotASetting=example\nDateFormat=non-US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-UNKNOWN-SECTION-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-UNKNOWN-SECTION-OO",
+        "configuration_exception": null,
+        "configuration_return": null,
+        "configuration_warnings": [
+          "WARNING: [config_file] unknown section created: fixturenotes at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ],
+        "date_order": "non-US",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-UNKNOWN-SECTION-OO",
+          "files": {
+            "main.cnf": "*FixtureNotes\nNote=original text\n*Conf\nDateFormat=non-US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-UNKNOWN-SECTION-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-UNKNOWN-SECTION-DM6",
+        "configuration_exception": null,
+        "configuration_return": "",
+        "configuration_warnings": [
+          "WARNING: [config_file] unknown section created: fixturenotes at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-UNKNOWN-SECTION-DM6",
+          "files": {
+            "main.cnf": "*FixtureNotes\nNote=original text\n*Conf\nDateFormat=non-US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-SECTION-CASE-OO",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-SECTION-CASE-OO",
+        "configuration_exception": null,
+        "configuration_return": null,
+        "configuration_warnings": [],
+        "date_order": "non-US",
+        "error_after_configuration": "",
+        "error_after_value": "",
+        "exception": null,
+        "later_warnings": [],
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-SECTION-CASE-OO",
+          "files": {
+            "main.cnf": "*cOnF\nDateFormat=non-US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "oo",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_error": "",
+        "setup_return": null,
+        "value": "2040050400:00:00"
+      }
+    },
+    {
+      "case_id": "CF-SECTION-CASE-DM6",
+      "repeatable": true,
+      "process_stderr": "",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "CF-SECTION-CASE-DM6",
+        "configuration_exception": null,
+        "configuration_return": "",
+        "configuration_warnings": [],
+        "exception": null,
+        "later_warnings": [],
+        "perl_version": "v5.40.1",
+        "request": {
+          "case_id": "CF-SECTION-CASE-DM6",
+          "files": {
+            "main.cnf": "*cOnF\nDateFormat=non-US\n"
+          },
+          "parse_text": "04/05/2040",
+          "profile": "dm6",
+          "settings": [
+            [
+              "ConfigFile",
+              "main.cnf"
+            ]
+          ]
+        },
+        "setup_return": "",
+        "value": "2040050400:00:00"
+      }
+    }
+  ]
+}
