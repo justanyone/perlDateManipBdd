@@ -10,6 +10,33 @@ spec.loader.exec_module(corpus)
 
 
 class FidelityTests(unittest.TestCase):
+    def test_execution_annotation_truth_table(self):
+        for executed in (0, 1):
+            for annotated in (0, 1):
+                error = int(executed == annotated)
+                result = corpus.execution_counts({'covered': executed, 'uncoverable': annotated,
+                                                  'error': error, 'total': 1})
+                self.assertEqual(result['raw_percentage'], 100 * executed)
+                self.assertEqual(result['tool_reported_percentage'], 100 * (1-error))
+                self.assertEqual(sum(result['execution_annotation_cells'].values()), 1)
+                key = ('executed' if executed else 'unexecuted') + ('_annotated' if annotated else '_unannotated')
+                self.assertEqual(result['execution_annotation_cells'][key], 1)
+
+    def test_executed_upstream_annotations_are_not_double_counted(self):
+        result = corpus.execution_counts({'covered': 125, 'error': 44, 'uncoverable': 2, 'total': 167})
+        self.assertEqual(result['execution_annotation_cells'], {
+            'executed_annotated': 2, 'executed_unannotated': 123,
+            'unexecuted_annotated': 0, 'unexecuted_unannotated': 42})
+        self.assertEqual(result['raw_percentage'], 100 * 125 / 167)
+        self.assertEqual(result['tool_reported_percentage'], 100 * 123 / 167)
+
+    def test_invalid_overlap_counts_are_rejected(self):
+        for row in ({'covered': 1, 'error': 0, 'uncoverable': 1, 'total': 1},
+                    {'covered': 1, 'error': 4, 'uncoverable': 0, 'total': 1},
+                    {'covered': -1, 'error': 2, 'uncoverable': 0, 'total': 1}):
+            with self.assertRaises(RuntimeError):
+                corpus.execution_counts(row)
+
     def test_only_eval_attribution_of_known_warning_is_normalized(self):
         plain = corpus.DEPRECATION + ' at (eval 42) line 1.\n'
         covered = corpus.DEPRECATION + ' at (eval 71)[/tmp/probe.pl:108] line 1.\n'

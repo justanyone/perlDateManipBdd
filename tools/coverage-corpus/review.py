@@ -83,7 +83,11 @@ def main():
                              for path in loaded)
                   for field in ('covered', 'error', 'uncoverable', 'total')}
         assert all(type(n) is int and n >= 0 for n in counts.values())
-        assert counts['covered'] + counts['error'] + counts['uncoverable'] == counts['total']
+        if 'execution_annotation_cells' in expected:
+            assert namespace['execution_counts'](counts) == expected
+        else:
+            # Historical captures use the old disjoint-count assertion.
+            assert counts['covered'] + counts['error'] + counts['uncoverable'] == counts['total']
         assert all(expected[key] == value for key, value in counts.items())
         raw = 100 * counts['covered'] / counts['total'] if counts['total'] else None
         assert raw == expected['raw_percentage']

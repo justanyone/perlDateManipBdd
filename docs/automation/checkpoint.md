@@ -1054,3 +1054,29 @@ percentage claim. Obj.pm rows show overlapping annotated/executed counts;
 partial_parsing owns read-only investigation of Devel::Cover semantics. Do not
 restart965 probes merely to repair report interpretation. Weekday worker retains
 its new family dirs; all final gates remain open.
+
+## Weekday integration and coverage counting repair
+
+Root weekday replay95360 terminated exit0; /tmp/weekday-root-final.json byte-equals
+frozen evidence. Reviewer validates190cases,265 independent valid-date calls,
+350 completed calls and8 failures with no fabricated returns. Four features parse
+66/103/190/21 examples without warnings. Root added exact external fixture-profile
+comparison (Base/DM6 intentionally use OO fixture, DM5 its own). Bounded draft only.
+
+Coverage investigation resolved: Devel::Cover1.52 default error is NOT covered XOR
+annotated, hence includes executed annotated criteria. Obj.pm314/316 statements and
+310 branch outcome1 are annotated but each executed3times. Collector now derives
+four disjoint execution/annotation counts and uses actual total for raw percentage;
+tool reported percentage is separate. Historical capture reviewer retains old
+version support.13 focused coverage tests pass. No historical artifacts rewritten.
+
+Root numeric extraction session53535 exit0: /tmp/broad-locations-root.json reports
+statements7261/11537 executed,4276 unexecuted; branches1192/6376 executed,5184
+unexecuted. Two statement/one branch annotations all executed. No automatic
+exclusions. Broad capture has965 merged runs and34 loaded files; summary recovery
+and durable report/fidelity verification remain next. Preserve original965probe
+artifacts; do not rerun merely to repair summary. Legacy tools/coverage pilot
+summarizer also needs annotation overlap correction before reuse.
+
+Worker pattern_repair owns docs/research/calendar-gap-priorities.md independent
+branch/domain audit; other workers released prior dirs. Goal remains active.

@@ -1,0 +1,61 @@
+{
+  "direct_private_calls": [],
+  "findings": [
+    {
+      "entry": "Date::Manip::Base::day_of_week",
+      "finding": "Documented Monday=1 through Sunday=7; documented numeric fields and year 1 through 9999; most low-level routines do no input checking.",
+      "public": true
+    },
+    {
+      "entry": "Date::Manip::DM6::Date_DayOfWeek",
+      "finding": "The public functional wrapper accepts month, day, year and delegates the fields to the calendar service; its POD describes two- or four-digit functional years.",
+      "public": true
+    },
+    {
+      "entry": "Date::Manip::DM5::Date_DayOfWeek",
+      "finding": "The public legacy wrapper resolves a year whose text length is not four through configured short-year behavior before weekday arithmetic.",
+      "public": true
+    },
+    {
+      "entry": "legacy short-year helper",
+      "finding": "Inspected only to select public YYtoYYYY requests; never invoked directly.",
+      "public": false
+    },
+    {
+      "entry": "calendar arithmetic helpers",
+      "finding": "Inspected only to select leap, century, invalid-field, and carrier cases; never invoked directly.",
+      "public": false
+    }
+  ],
+  "operation_id": "calendar.weekday",
+  "public_entry_points": [
+    {
+      "call_shape": "one date-list",
+      "callable": "day_of_week",
+      "module": "Date::Manip::Base",
+      "profile": "base"
+    },
+    {
+      "call_shape": "month, day, year",
+      "callable": "Date_DayOfWeek",
+      "module": "Date::Manip::DM6",
+      "profile": "dm6"
+    },
+    {
+      "call_shape": "month, day, year",
+      "callable": "Date_DayOfWeek",
+      "module": "Date::Manip::DM5",
+      "profile": "dm5"
+    }
+  ],
+  "reference": "Date-Manip 7.00",
+  "reviewed_source_sha256": {
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm": "5fe1f12a7b59c57baf71c86e266b4ea06851eac0ec203a3507d019bcadbea97c",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pod": "b2a6f168023e88a64a0e6d85542fac28b2a0c688f9d43083f38672344f9ca13d",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm": "c31d2bf42f317bb811fa5e838778d12b0e5ff8dd38b012114fe9fa4471845c2e",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pod": "5c597675d29db072e4c2ab6477554cd09dc186b7c36bb7fe9d896137bcc51b15",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm": "bce0c2d92075928e1c6f3a4cf1fa01740ea15d2da64470265a1b616ef352b6e1",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pod": "4ef347e100bb3b0284a175fb7cb2ad94f53cf92bff5e7de97da07af48b40c307"
+  },
+  "schema_version": 1
+}

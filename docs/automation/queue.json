@@ -155,13 +155,18 @@
         "docs/research/leap-year-family/feature-map.json",
         "docs/research/calendar-lengths-family/README.md",
         "docs/research/calendar-lengths-family/observations.json",
-        "docs/research/calendar-lengths-family/feature-map.json"
+        "docs/research/calendar-lengths-family/feature-map.json",
+        "docs/research/weekday-family/README.md",
+        "docs/research/weekday-family/feature-map.json",
+        "docs/research/weekday-family/observations.json",
+        "docs/research/weekday-family/coverage-map.json"
       ],
       "partial_parsing_edges_review": "52 repeatable public edge requests integrated after independent repair and root review. Explicit setup, 48 outline-row comparisons, native failure lifecycle and binding-only warnings checked; broader domains and source coverage remain open.",
       "input_history_review": "17 repeatable public Date::input cases integrated after provenance repair, canonical-binding correction and explicit not-called configuration metadata. Reviewer requires runtime/profile/module/process evidence and checks feature literals. Constructor retention added; wider transitions remain open.",
       "completeness_query_review": "11 isolated receiver setups,132 public complete() queries and36 warnings reviewed with literal expectations. Mutation and other remaining partitions explicitly open.",
       "week_rule_edges_review": "236 isolated public requests independently reproduced: 39 Base calls,17 configuration attempts,180 facade calls;232 portable rows and236 excluded binding rows checked by exact case identity. Remaining domains explicit; no whole-partition completion claim.",
-      "calendar_lengths_leap_year_review": "Root independently reproduced 84 leap-year requests (including three 400-year cycles) and 171 month/year-length requests; captures byte-identical. Exact literal reviewers and nine-feature Gherkin parser pass. Remaining domains explicit; drafts only, no BDD execution or completeness claim."
+      "calendar_lengths_leap_year_review": "Root independently reproduced 84 leap-year requests (including three 400-year cycles) and 171 month/year-length requests; captures byte-identical. Exact literal reviewers and nine-feature Gherkin parser pass. Remaining domains explicit; drafts only, no BDD execution or completeness claim.",
+      "weekday_review": "190 public requests replay byte-identical; 265 independent Gregorian checks,350 completed calls and8 failures. Exact190 portable/190 binding rows and all14year types verified. Explicit remaining domains; not complete."
     },
     {
       "id": "spec-arithmetic-deltas",

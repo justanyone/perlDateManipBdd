@@ -36,6 +36,29 @@ def source_files(module_root: Path) -> list[Path]:
     return sorted(path.resolve() for path in module_root.rglob("*.pm"))
 
 
+def execution_counts(row: dict) -> dict:
+    """Decode Devel::Cover 1.52 default XOR errors, retaining annotations."""
+    if any(type(row[k]) is not int or row[k] < 0 for k in ('covered', 'error', 'uncoverable', 'total')):
+        raise RuntimeError('invalid coverage count')
+    covered, errors, annotated, total = (row[k] for k in ('covered', 'error', 'uncoverable', 'total'))
+    overlap_twice = covered + errors + annotated - total
+    if overlap_twice % 2:
+        raise RuntimeError('inconsistent coverage counts')
+    overlap = overlap_twice // 2
+    cells = {
+        'executed_annotated': overlap,
+        'executed_unannotated': covered - overlap,
+        'unexecuted_annotated': annotated - overlap,
+        'unexecuted_unannotated': errors - overlap,
+    }
+    if any(value < 0 for value in cells.values()) or sum(cells.values()) != total:
+        raise RuntimeError('inconsistent coverage counts')
+    return {**row, 'execution_annotation_cells': cells,
+            'raw_percentage': 100 * covered / total if total else None,
+            'tool_reported_percentage': 100 * (total - errors) / total if total else None,
+            'unexecuted': total - covered}
+
+
 def totals(summary: dict, paths: set[str]) -> tuple[dict, list[str]]:
     loaded = [path for path in summary if path != "Total" and str(Path(path).resolve()) in paths]
     answer = {}
@@ -48,13 +71,7 @@ def totals(summary: dict, paths: set[str]) -> tuple[dict, list[str]]:
                 if not isinstance(value, int) or value < 0:
                     raise RuntimeError(f"invalid {kind} count in {path}")
                 row[field] += value
-        if row["total"] != row["covered"] + row["error"] + row["uncoverable"]:
-            raise RuntimeError(f"inconsistent {kind} denominator")
-        effective = row["covered"] + row["error"]
-        row["raw_percentage"] = 100 * row["covered"] / row["total"] if row["total"] else None
-        row["tool_effective_denominator"] = effective
-        row["tool_effective_percentage"] = 100 * row["covered"] / effective if effective else None
-        answer[kind] = row
+        answer[kind] = execution_counts(row)
     return answer, loaded
 
 

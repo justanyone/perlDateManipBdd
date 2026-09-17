@@ -1,0 +1,48 @@
+{
+  "operation_id": "calendar.weekday",
+  "partitions": [
+    {
+      "observed_domains": [
+        "weekday results 1 through 7 through each of three public profiles"
+      ],
+      "partition_id": "calendar.weekday.p1",
+      "portable_case_count": 21,
+      "remaining_domains": [
+        "every supported civil date rather than one representative of each weekday"
+      ]
+    },
+    {
+      "observed_domains": [
+        "all fourteen Gregorian common/leap and January-1-weekday year types through each profile",
+        "both year-transition sides for every representative year type",
+        "years 0001 and 9999",
+        "non-century leap, non-leap centuries, and leap centuries"
+      ],
+      "partition_id": "calendar.weekday.p2",
+      "portable_case_count": 66,
+      "remaining_domains": [
+        "every year from 0001 through 9999 and every date within those years",
+        "additional transition representatives within each Gregorian year type"
+      ]
+    },
+    {
+      "observed_domains": [
+        "zero, negative, fractional, empty, absent, nonnumeric, and out-of-range date fields",
+        "missing and extra positions",
+        "omitted, undefined, text, and mapping calendar-service carriers",
+        "current-functional and legacy-functional short-year behavior under selected rules"
+      ],
+      "partition_id": "calendar.weekday.p3",
+      "portable_case_count": 103,
+      "remaining_domains": [
+        "the full cross-product of invalid field values and arities",
+        "all 00 through 99 short years under every numeric, c, cNN, and cNNNN short-year rule",
+        "invalid short-year settings and additional coercive native value kinds",
+        "extreme magnitudes, non-finite numbers, numeric text variants, and Unicode numeric text"
+      ]
+    }
+  ],
+  "reference": "Date-Manip 7.00",
+  "schema_version": 1,
+  "status": "bounded observations; no partition is declared complete"
+}
