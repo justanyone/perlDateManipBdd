@@ -1009,3 +1009,17 @@ files; reviewer explicitly reports that limit.
 Session20949 remains live on last poll;965-case broad run has no final report yet.
 Continue polling same handle, do not restart. Prior terminal captures remain unchanged.
 Workers retain new calendar-family ownership. Full goal remains incomplete.
+
+## Public week-count research started
+
+Root created new week-count-family manifest/probe/runner and candidate observations:
+105 valid settings x14 Gregorian year types =1470 direct public weeks_in_year
+requests, each scalar/repeated scalar/list. Two isolated runs match; independent
+Python Gregorian week-start differences agree with every count. Files in new dirs
+are work in progress; no feature or reviewed partition map yet. Next root action:
+author portable count/repeat vectors, excluded native contexts and exact reviewer.
+Do not mistake week-number coverage for direct week-count coverage.
+
+Broad coverage session20949 remains live, last poll no terminal output; completed
+raw pair review found376 pairs without fidelity differences. Continue samehandle.
+Workers retain leap-year, calendar-length and weekday ownership.
