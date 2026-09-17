@@ -1,0 +1,1061 @@
+{
+  "schema_version": 1,
+  "status": "research-to-draft correspondence; not executable BDD results or semantic approval",
+  "reference": "Date-Manip 7.00",
+  "fixture": "dm700-english-ascii-utc-us-2040",
+  "source_binding": {
+    "service_acquisition": "A configured Date::Manip::Date receiver returns its public Date::Manip::Base service through base().",
+    "operations": [
+      {
+        "operation_id": "value.split-fields",
+        "module": "Date::Manip::Base",
+        "callable": "split",
+        "scalar_return": "one array reference, undef, or defined empty text",
+        "list_return": "one element containing the same native return for these requests"
+      },
+      {
+        "operation_id": "value.join-fields",
+        "module": "Date::Manip::Base",
+        "callable": "join",
+        "scalar_return": "text, undef, defined empty text, or exception before return",
+        "list_return": "one element containing the same native return, or exception before return"
+      }
+    ],
+    "profile_fixture": "docs/automation/reference-profiles.json profile oo, with per-case Printable override where declared"
+  },
+  "case_map": [
+    {
+      "case_id": "VS-DATE-SPLIT-COLON",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-DATE-SPLIT-COMPACT",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-DATE-SPLIT-PRINTABLE",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-DATE-SPLIT-BAD-SEPARATOR",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-DATE-SPLIT-TRAILING",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-DATE-SPLIT-EMPTY",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-DATE-SPLIT-UNDEFINED",
+      "operation_id": "value.split-fields",
+      "classification": "perl-binding",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "scenario_outline": "Undefined and wrong Perl carriers preserve their native call outcome"
+    },
+    {
+      "case_id": "VS-DATE-JOIN-PRINTABLE0",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-DATE-JOIN-PRINTABLE1",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-DATE-JOIN-PRINTABLE2",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-DATE-JOIN-WRONG-ARITY",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-DATE-JOIN-UNCHECKED-FIELDS",
+      "operation_id": "value.join-fields",
+      "classification": "compatibility",
+      "feature": "spec/drafts/value-serialization/compatibility.feature",
+      "scenario_outline": "Deprecated and permissive requests retain their observed result"
+    },
+    {
+      "case_id": "VS-HMS-SPLIT-HOUR",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-HMS-SPLIT-COMPACT4",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-HMS-SPLIT-COMPACT6",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-HMS-SPLIT-COLON2",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-HMS-SPLIT-ENDPOINT",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-HMS-SPLIT-PAST-END",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-HMS-SPLIT-MINUTE60",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-HMS-SPLIT-NONNUMERIC",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-HMS-JOIN-ZERO",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-HMS-JOIN-SHORT",
+      "operation_id": "value.join-fields",
+      "classification": "compatibility",
+      "feature": "spec/drafts/value-serialization/compatibility.feature",
+      "scenario_outline": "Deprecated and permissive requests retain their observed result"
+    },
+    {
+      "case_id": "VS-HMS-JOIN-ENDPOINT",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-HMS-JOIN-INVALID",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-OFFSET-SPLIT-UNSIGNED",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-OFFSET-SPLIT-COMPACT",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-OFFSET-SPLIT-POS-END",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-OFFSET-SPLIT-NEG-END",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-OFFSET-SPLIT-OUT-OF-RANGE",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-OFFSET-SPLIT-BAD-MINUTE",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-OFFSET-JOIN-ZERO",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-OFFSET-JOIN-POSITIVE",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-OFFSET-JOIN-NEGATIVE",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-OFFSET-JOIN-MIXED-SIGN",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-OFFSET-JOIN-OUT-OF-RANGE",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-TIME-SPLIT-ZERO",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-TIME-SPLIT-ORDINARY",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-TIME-SPLIT-NEGATIVE",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-TIME-SPLIT-MIXED-SIGN",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-TIME-SPLIT-OVERFLOW",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-TIME-SPLIT-OVERFLOW-NONORM",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-TIME-SPLIT-LEGACY-NONORM",
+      "operation_id": "value.split-fields",
+      "classification": "compatibility",
+      "feature": "spec/drafts/value-serialization/compatibility.feature",
+      "scenario_outline": "Deprecated and permissive requests retain their observed result"
+    },
+    {
+      "case_id": "VS-TIME-SPLIT-NONNUMERIC",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-TIME-JOIN-ORDINARY",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-TIME-JOIN-MIXED-SIGN",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-TIME-JOIN-OVERFLOW",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-TIME-JOIN-OVERFLOW-NONORM",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-TIME-JOIN-SHORT",
+      "operation_id": "value.join-fields",
+      "classification": "compatibility",
+      "feature": "spec/drafts/value-serialization/compatibility.feature",
+      "scenario_outline": "Deprecated and permissive requests retain their observed result"
+    },
+    {
+      "case_id": "VS-TIME-JOIN-TOO-MANY",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-DELTA-SPLIT-ZERO",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-DELTA-SPLIT-FULL",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-DELTA-SPLIT-SHORT",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-DELTA-SPLIT-OMITTED-FIELDS",
+      "operation_id": "value.split-fields",
+      "classification": "suspected-bug",
+      "feature": "spec/drafts/value-serialization/compatibility.feature",
+      "scenario_outline": "Documentation-sensitive requests retain their observed discrepancy"
+    },
+    {
+      "case_id": "VS-DELTA-SPLIT-NEGATIVE",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-DELTA-SPLIT-OVERFLOW",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-DELTA-SPLIT-OVERFLOW-NONORM",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-DELTA-SPLIT-BUSINESS",
+      "operation_id": "value.split-fields",
+      "classification": "suspected-bug",
+      "feature": "spec/drafts/value-serialization/compatibility.feature",
+      "scenario_outline": "Documentation-sensitive requests retain their observed discrepancy"
+    },
+    {
+      "case_id": "VS-BUSINESS-SPLIT-ALIAS",
+      "operation_id": "value.split-fields",
+      "classification": "compatibility",
+      "feature": "spec/drafts/value-serialization/compatibility.feature",
+      "scenario_outline": "Deprecated and permissive requests retain their observed result"
+    },
+    {
+      "case_id": "VS-DELTA-SPLIT-ESTIMATED",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-DELTA-SPLIT-NONNUMERIC",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-DELTA-SPLIT-TOO-MANY",
+      "operation_id": "value.split-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_outline": "Split serialized values into ordered fields"
+    },
+    {
+      "case_id": "VS-DELTA-JOIN-FULL",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-DELTA-JOIN-SHORT",
+      "operation_id": "value.join-fields",
+      "classification": "compatibility",
+      "feature": "spec/drafts/value-serialization/compatibility.feature",
+      "scenario_outline": "Deprecated and permissive requests retain their observed result"
+    },
+    {
+      "case_id": "VS-DELTA-JOIN-OVERFLOW",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-DELTA-JOIN-OVERFLOW-NONORM",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-DELTA-JOIN-BUSINESS",
+      "operation_id": "value.join-fields",
+      "classification": "suspected-bug",
+      "feature": "spec/drafts/value-serialization/compatibility.feature",
+      "scenario_outline": "Documentation-sensitive requests retain their observed discrepancy"
+    },
+    {
+      "case_id": "VS-BUSINESS-JOIN-ALIAS",
+      "operation_id": "value.join-fields",
+      "classification": "compatibility",
+      "feature": "spec/drafts/value-serialization/compatibility.feature",
+      "scenario_outline": "Deprecated and permissive requests retain their observed result"
+    },
+    {
+      "case_id": "VS-DELTA-JOIN-FRACTION",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-DELTA-JOIN-NONNUMERIC",
+      "operation_id": "value.join-fields",
+      "classification": "portable",
+      "feature": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_outline": "Join ordered fields into serialized values"
+    },
+    {
+      "case_id": "VS-SPLIT-INVALID-KIND",
+      "operation_id": "value.split-fields",
+      "classification": "suspected-bug",
+      "feature": "spec/drafts/value-serialization/compatibility.feature",
+      "scenario_outline": "Documentation-sensitive requests retain their observed discrepancy"
+    },
+    {
+      "case_id": "VS-JOIN-INVALID-KIND",
+      "operation_id": "value.join-fields",
+      "classification": "suspected-bug",
+      "feature": "spec/drafts/value-serialization/compatibility.feature",
+      "scenario_outline": "Documentation-sensitive requests retain their observed discrepancy"
+    },
+    {
+      "case_id": "VS-JOIN-UNDEFINED-CARRIER",
+      "operation_id": "value.join-fields",
+      "classification": "perl-binding",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "scenario_outline": "Undefined and wrong Perl carriers preserve their native call outcome"
+    },
+    {
+      "case_id": "VS-JOIN-SCALAR-CARRIER",
+      "operation_id": "value.join-fields",
+      "classification": "perl-binding",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "scenario_outline": "Undefined and wrong Perl carriers preserve their native call outcome"
+    }
+  ],
+  "counts": {
+    "total": 73,
+    "value.split-fields": 42,
+    "value.join-fields": 31,
+    "portable": 58,
+    "compatibility": 7,
+    "suspected-bug": 5,
+    "perl-binding": 3
+  },
+  "binding_context_cases": [
+    {
+      "scenario_id": "VSB-DATE-SPLIT-COLON",
+      "source_case_id": "VS-DATE-SPLIT-COLON",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DATE-SPLIT-COMPACT",
+      "source_case_id": "VS-DATE-SPLIT-COMPACT",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DATE-SPLIT-PRINTABLE",
+      "source_case_id": "VS-DATE-SPLIT-PRINTABLE",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DATE-SPLIT-BAD-SEPARATOR",
+      "source_case_id": "VS-DATE-SPLIT-BAD-SEPARATOR",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DATE-SPLIT-TRAILING",
+      "source_case_id": "VS-DATE-SPLIT-TRAILING",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DATE-SPLIT-EMPTY",
+      "source_case_id": "VS-DATE-SPLIT-EMPTY",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DATE-SPLIT-UNDEFINED",
+      "source_case_id": "VS-DATE-SPLIT-UNDEFINED",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DATE-JOIN-PRINTABLE0",
+      "source_case_id": "VS-DATE-JOIN-PRINTABLE0",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DATE-JOIN-PRINTABLE1",
+      "source_case_id": "VS-DATE-JOIN-PRINTABLE1",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DATE-JOIN-PRINTABLE2",
+      "source_case_id": "VS-DATE-JOIN-PRINTABLE2",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DATE-JOIN-WRONG-ARITY",
+      "source_case_id": "VS-DATE-JOIN-WRONG-ARITY",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DATE-JOIN-UNCHECKED-FIELDS",
+      "source_case_id": "VS-DATE-JOIN-UNCHECKED-FIELDS",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-HMS-SPLIT-HOUR",
+      "source_case_id": "VS-HMS-SPLIT-HOUR",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-HMS-SPLIT-COMPACT4",
+      "source_case_id": "VS-HMS-SPLIT-COMPACT4",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-HMS-SPLIT-COMPACT6",
+      "source_case_id": "VS-HMS-SPLIT-COMPACT6",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-HMS-SPLIT-COLON2",
+      "source_case_id": "VS-HMS-SPLIT-COLON2",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-HMS-SPLIT-ENDPOINT",
+      "source_case_id": "VS-HMS-SPLIT-ENDPOINT",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-HMS-SPLIT-PAST-END",
+      "source_case_id": "VS-HMS-SPLIT-PAST-END",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-HMS-SPLIT-MINUTE60",
+      "source_case_id": "VS-HMS-SPLIT-MINUTE60",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-HMS-SPLIT-NONNUMERIC",
+      "source_case_id": "VS-HMS-SPLIT-NONNUMERIC",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-HMS-JOIN-ZERO",
+      "source_case_id": "VS-HMS-JOIN-ZERO",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-HMS-JOIN-SHORT",
+      "source_case_id": "VS-HMS-JOIN-SHORT",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-HMS-JOIN-ENDPOINT",
+      "source_case_id": "VS-HMS-JOIN-ENDPOINT",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-HMS-JOIN-INVALID",
+      "source_case_id": "VS-HMS-JOIN-INVALID",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-OFFSET-SPLIT-UNSIGNED",
+      "source_case_id": "VS-OFFSET-SPLIT-UNSIGNED",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-OFFSET-SPLIT-COMPACT",
+      "source_case_id": "VS-OFFSET-SPLIT-COMPACT",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-OFFSET-SPLIT-POS-END",
+      "source_case_id": "VS-OFFSET-SPLIT-POS-END",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-OFFSET-SPLIT-NEG-END",
+      "source_case_id": "VS-OFFSET-SPLIT-NEG-END",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-OFFSET-SPLIT-OUT-OF-RANGE",
+      "source_case_id": "VS-OFFSET-SPLIT-OUT-OF-RANGE",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-OFFSET-SPLIT-BAD-MINUTE",
+      "source_case_id": "VS-OFFSET-SPLIT-BAD-MINUTE",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-OFFSET-JOIN-ZERO",
+      "source_case_id": "VS-OFFSET-JOIN-ZERO",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-OFFSET-JOIN-POSITIVE",
+      "source_case_id": "VS-OFFSET-JOIN-POSITIVE",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-OFFSET-JOIN-NEGATIVE",
+      "source_case_id": "VS-OFFSET-JOIN-NEGATIVE",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-OFFSET-JOIN-MIXED-SIGN",
+      "source_case_id": "VS-OFFSET-JOIN-MIXED-SIGN",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-OFFSET-JOIN-OUT-OF-RANGE",
+      "source_case_id": "VS-OFFSET-JOIN-OUT-OF-RANGE",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-TIME-SPLIT-ZERO",
+      "source_case_id": "VS-TIME-SPLIT-ZERO",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-TIME-SPLIT-ORDINARY",
+      "source_case_id": "VS-TIME-SPLIT-ORDINARY",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-TIME-SPLIT-NEGATIVE",
+      "source_case_id": "VS-TIME-SPLIT-NEGATIVE",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-TIME-SPLIT-MIXED-SIGN",
+      "source_case_id": "VS-TIME-SPLIT-MIXED-SIGN",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-TIME-SPLIT-OVERFLOW",
+      "source_case_id": "VS-TIME-SPLIT-OVERFLOW",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-TIME-SPLIT-OVERFLOW-NONORM",
+      "source_case_id": "VS-TIME-SPLIT-OVERFLOW-NONORM",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-TIME-SPLIT-LEGACY-NONORM",
+      "source_case_id": "VS-TIME-SPLIT-LEGACY-NONORM",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-TIME-SPLIT-NONNUMERIC",
+      "source_case_id": "VS-TIME-SPLIT-NONNUMERIC",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-TIME-JOIN-ORDINARY",
+      "source_case_id": "VS-TIME-JOIN-ORDINARY",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-TIME-JOIN-MIXED-SIGN",
+      "source_case_id": "VS-TIME-JOIN-MIXED-SIGN",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-TIME-JOIN-OVERFLOW",
+      "source_case_id": "VS-TIME-JOIN-OVERFLOW",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-TIME-JOIN-OVERFLOW-NONORM",
+      "source_case_id": "VS-TIME-JOIN-OVERFLOW-NONORM",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-TIME-JOIN-SHORT",
+      "source_case_id": "VS-TIME-JOIN-SHORT",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-TIME-JOIN-TOO-MANY",
+      "source_case_id": "VS-TIME-JOIN-TOO-MANY",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-SPLIT-ZERO",
+      "source_case_id": "VS-DELTA-SPLIT-ZERO",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-SPLIT-FULL",
+      "source_case_id": "VS-DELTA-SPLIT-FULL",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-SPLIT-SHORT",
+      "source_case_id": "VS-DELTA-SPLIT-SHORT",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-SPLIT-OMITTED-FIELDS",
+      "source_case_id": "VS-DELTA-SPLIT-OMITTED-FIELDS",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-SPLIT-NEGATIVE",
+      "source_case_id": "VS-DELTA-SPLIT-NEGATIVE",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-SPLIT-OVERFLOW",
+      "source_case_id": "VS-DELTA-SPLIT-OVERFLOW",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-SPLIT-OVERFLOW-NONORM",
+      "source_case_id": "VS-DELTA-SPLIT-OVERFLOW-NONORM",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-SPLIT-BUSINESS",
+      "source_case_id": "VS-DELTA-SPLIT-BUSINESS",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-BUSINESS-SPLIT-ALIAS",
+      "source_case_id": "VS-BUSINESS-SPLIT-ALIAS",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-SPLIT-ESTIMATED",
+      "source_case_id": "VS-DELTA-SPLIT-ESTIMATED",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-SPLIT-NONNUMERIC",
+      "source_case_id": "VS-DELTA-SPLIT-NONNUMERIC",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-SPLIT-TOO-MANY",
+      "source_case_id": "VS-DELTA-SPLIT-TOO-MANY",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-JOIN-FULL",
+      "source_case_id": "VS-DELTA-JOIN-FULL",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-JOIN-SHORT",
+      "source_case_id": "VS-DELTA-JOIN-SHORT",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-JOIN-OVERFLOW",
+      "source_case_id": "VS-DELTA-JOIN-OVERFLOW",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-JOIN-OVERFLOW-NONORM",
+      "source_case_id": "VS-DELTA-JOIN-OVERFLOW-NONORM",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-JOIN-BUSINESS",
+      "source_case_id": "VS-DELTA-JOIN-BUSINESS",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-BUSINESS-JOIN-ALIAS",
+      "source_case_id": "VS-BUSINESS-JOIN-ALIAS",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-JOIN-FRACTION",
+      "source_case_id": "VS-DELTA-JOIN-FRACTION",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-DELTA-JOIN-NONNUMERIC",
+      "source_case_id": "VS-DELTA-JOIN-NONNUMERIC",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-SPLIT-INVALID-KIND",
+      "source_case_id": "VS-SPLIT-INVALID-KIND",
+      "operation_id": "value.split-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-JOIN-INVALID-KIND",
+      "source_case_id": "VS-JOIN-INVALID-KIND",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-JOIN-UNDEFINED-CARRIER",
+      "source_case_id": "VS-JOIN-UNDEFINED-CARRIER",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    },
+    {
+      "scenario_id": "VSB-JOIN-SCALAR-CARRIER",
+      "source_case_id": "VS-JOIN-SCALAR-CARRIER",
+      "operation_id": "value.join-fields",
+      "feature": "spec/drafts/value-serialization/perl-binding.feature",
+      "excluded_from_portable_handoff": true
+    }
+  ]
+}

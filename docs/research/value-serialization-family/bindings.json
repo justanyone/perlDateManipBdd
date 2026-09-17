@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "status": "research-only Perl source binding; excluded from portable implementation handoff",
+  "reference": "Date-Manip 7.00",
+  "fixture": "dm700-english-ascii-utc-us-2040",
+  "profile": "oo",
+  "entrypoints": [
+    {
+      "operation_id": "value.split-fields",
+      "module": "Date::Manip::Base",
+      "callable": "split",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm:1700",
+      "public_call": "$base->split(kind, text, optional options)",
+      "contexts": [
+        "scalar",
+        "list"
+      ]
+    },
+    {
+      "operation_id": "value.join-fields",
+      "module": "Date::Manip::Base",
+      "callable": "join",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm:1789",
+      "public_call": "$base->join(kind, ordered-fields, optional options)",
+      "contexts": [
+        "scalar",
+        "list"
+      ]
+    }
+  ],
+  "public_support_calls_in_order_per_context": [
+    {
+      "operation_id": "object.create",
+      "call": "Date::Manip::Date->new",
+      "source": "Date/Manip/Obj.pm:31"
+    },
+    {
+      "operation_id": "config.apply-settings",
+      "call": "Date::Manip::Date->config with the full OO fixture",
+      "source": "Date/Manip/Obj.pm:273"
+    },
+    {
+      "operation_id": "error.read-state",
+      "call": "Date::Manip::Date->err immediately after fixture configuration",
+      "source": "Date/Manip/Obj.pm:331"
+    },
+    {
+      "operation_id": "config.apply-settings",
+      "call": "Date::Manip::Date->config(Printable => value), only for three declared cases",
+      "source": "Date/Manip/Obj.pm:273"
+    },
+    {
+      "operation_id": "error.read-state",
+      "call": "Date::Manip::Date->err immediately after the optional override",
+      "source": "Date/Manip/Obj.pm:331"
+    },
+    {
+      "operation_id": "context.base-service",
+      "call": "Date::Manip::Date->base",
+      "source": "Date/Manip/Obj.pm:248"
+    },
+    {
+      "operation_id": "error.read-state",
+      "call": "Date::Manip::Base->err before the operation",
+      "source": "Date/Manip/Obj.pm:331"
+    },
+    {
+      "operation_id": "value.split-fields",
+      "applies_to": "split cases only",
+      "call": "Date::Manip::Base->split in the case calling context",
+      "source": "Date/Manip/Base.pm:1700"
+    },
+    {
+      "operation_id": "value.join-fields",
+      "applies_to": "join cases only",
+      "call": "Date::Manip::Base->join in the case calling context",
+      "source": "Date/Manip/Base.pm:1789"
+    },
+    {
+      "operation_id": "error.read-state",
+      "call": "Date::Manip::Base->err immediately after return or exception",
+      "source": "Date/Manip/Obj.pm:331"
+    },
+    {
+      "operation_id": "meta.reference-version",
+      "call": "Date::Manip::Date->version",
+      "source": "Date/Manip/Obj.pm:351"
+    },
+    {
+      "operation_id": "context.zone-service",
+      "call": "Date::Manip::Date->tz",
+      "source": "Date/Manip/Obj.pm:261"
+    },
+    {
+      "operation_id": "meta.zone-data-version",
+      "call": "Date::Manip::TZ->tzdata",
+      "source": "Date/Manip/TZ.pm:212"
+    },
+    {
+      "operation_id": "context.zone-service",
+      "call": "Date::Manip::Date->tz",
+      "source": "Date/Manip/Obj.pm:261"
+    },
+    {
+      "operation_id": "meta.zone-rule-version",
+      "call": "Date::Manip::TZ->tzcode",
+      "source": "Date/Manip/TZ.pm:217"
+    }
+  ],
+  "observer_protocol": {
+    "isolation": "scalar and list calls each use a separately configured Date receiver and Base service in the same case process; every attempt has a fresh process and temporary working directory",
+    "return_fidelity": "undef is JSON null with return_type undefined; defined empty text is an empty JSON string with return_type text; exceptions omit the return member; array references preserve null elements and numeric fields",
+    "error_order": [
+      "err before operation",
+      "operation",
+      "err immediately after operation even when caught exception"
+    ],
+    "diagnostics": "warnings, real stdout, exception text, and process stderr are captured separately for each call context"
+  },
+  "binding_only_feature": {
+    "path": "spec/drafts/value-serialization/perl-binding.feature",
+    "case_ids": [
+      "VS-DATE-SPLIT-UNDEFINED",
+      "VS-JOIN-UNDEFINED-CARRIER",
+      "VS-JOIN-SCALAR-CARRIER"
+    ],
+    "reason": "Perl undef warnings, array-reference exceptions, and calling-context carriers are source-binding behavior."
+  }
+}

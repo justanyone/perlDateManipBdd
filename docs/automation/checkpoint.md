@@ -636,3 +636,21 @@ Serialization returned 73 cases for review. Its reviewer currently verifies outp
 presence but needs exact input/options correspondence; compatibility context and
 binding examples need review before integration. Root must not treat its internal
 check as semantic approval. pattern_repair now owns NEW day-ordinal-family research.
+
+
+## Value serialization integration
+
+Integrated 73 split/join requests after coordinator repairs. Fresh two-attempt
+capture retains all 146 scalar/list call outcomes; provenance now hashes all nine
+loaded modules and PATH is fixed. Each of 73 portable/compatibility/binding request
+rows is checked against its own exact typed input, kind, options, configuration
+and result. Replaced generic carrier prose with 73 concrete binding examples and
+stable mapped IDs. Canonical setup/operation IDs checked; field order is explicit.
+Real parser expands 146 examples across four files. Suspected documentation bugs
+remain disputed, remaining partitions explicit, no family-completion claim.
+
+Navigation returned 87 cases for coordinator review. partial_parsing next owns NEW
+behavior-gap-ledger audit to reconcile coarse contract obligations against evidence
+and outstanding partitions without treating an operation reference as fulfillment.
+coverage_setup owns replace-time and pattern_repair owns day-ordinal. These active
+paths remain unstaged until reviewed. Date::Manip executable BDD adapter still open.
