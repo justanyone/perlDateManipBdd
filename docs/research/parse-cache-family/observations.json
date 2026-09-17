@@ -1,0 +1,4447 @@
+{
+  "schema_version": 1,
+  "status": "research observations; feature literals manually reviewed, disputed compatibility behavior",
+  "reference": {
+    "release": "Date-Manip-7.00",
+    "distribution_version": "7.00",
+    "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+    "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz"
+  },
+  "sha256": {
+    "docs/research/parse-cache-family/cases.json": "11431cd1b37277cefdc9c94ecd4360be18016f95b2e1e3147d4ff29bd11319bc",
+    "tools/probes/parse-cache-family/probe.pl": "f897f17ea64e0f6b871e19c20c3c2cc45975d1e0e333a979b0ac4e8d1c90d6eb",
+    "docs/automation/reference-profiles.json": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
+    "tools/probes/parse-cache-family/run.py": "d2c3b0ea3a1649ef73aa3594d81c48d0ce1dc13be0e689ae216ea04f86a1a1cd",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm": "c181a8d908efbc2c18cc0a59e10e90628161dc3acf811c9c0292985280953d85",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm": "5ece620f80b039048d09b72fcb30f0e09ce8bb1151a0720db80ebdd2f9d7686f"
+  },
+  "execution": {
+    "repetitions": 2,
+    "timeout_seconds": 15,
+    "parallel_workers": 4,
+    "fresh_temporary_working_directory_per_case": true,
+    "environment": {
+      "PATH": "/home/kevin/.local/bin:/home/kevin/.codex/tmp/arg0/codex-arg0F2Ouqr:/home/kevin/.local/bin:/home/kevin/.cargo/bin:/home/kevin/.local/bin:/home/kevin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/kevin/.vscode/extensions/openai.chatgpt-26.908.40401-linux-x64/bin/linux-x86_64",
+      "PERL5LIB": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5",
+      "TZ": "Etc/UTC",
+      "LANG": "C.UTF-8",
+      "LC_ALL": "C.UTF-8"
+    }
+  },
+  "observations": [
+    {
+      "case_id": "PC-DATE-PRISTINE",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-DATE-PRISTINE",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "date.parse-date-only"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "parse_date",
+              "2040-02-29"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-DATE-PRISTINE"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "parse_date",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-29"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": "2040022907:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": "2040022907:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": "2040022907:08:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-DATE-PRE-LOCAL-SCALAR",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-DATE-PRE-LOCAL-SCALAR",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "date.parse-date-only"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "parse_date",
+              "2040-02-29"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "list"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-DATE-PRE-LOCAL-SCALAR"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse_date",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-29"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": "2040022907:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "list"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 6,
+            "result": [
+              2039,
+              12,
+              31,
+              12,
+              8,
+              9
+            ],
+            "result_type": "list",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 7,
+            "result": "2040022907:08:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-DATE-PRE-LOCAL-LIST",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-DATE-PRE-LOCAL-LIST",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "date.parse-date-only"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "local",
+              "list"
+            ],
+            [
+              "parse_date",
+              "2040-02-29"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "list"
+            ]
+          ],
+          "case_id": "PC-DATE-PRE-LOCAL-LIST"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "list"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": [
+              2039,
+              12,
+              31,
+              12,
+              8,
+              9
+            ],
+            "result_type": "list",
+            "warnings": []
+          },
+          {
+            "action": "parse_date",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-29"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "list"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": [
+              2039,
+              12,
+              31,
+              12,
+              8,
+              9
+            ],
+            "result_type": "list",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-DATE-PRE-GMT-SCALAR",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-DATE-PRE-GMT-SCALAR",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "date.parse-date-only"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "parse_date",
+              "2040-02-29"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "list"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-DATE-PRE-GMT-SCALAR"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse_date",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-29"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": "2040022907:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "list"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 6,
+            "result": [
+              2039,
+              12,
+              31,
+              12,
+              8,
+              9
+            ],
+            "result_type": "list",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 7,
+            "result": "2040022907:08:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-DATE-PRE-GMT-LIST",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-DATE-PRE-GMT-LIST",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "date.parse-date-only"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "gmt",
+              "list"
+            ],
+            [
+              "parse_date",
+              "2040-02-29"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "list"
+            ]
+          ],
+          "case_id": "PC-DATE-PRE-GMT-LIST"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "list"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": [
+              2039,
+              12,
+              31,
+              12,
+              8,
+              9
+            ],
+            "result_type": "list",
+            "warnings": []
+          },
+          {
+            "action": "parse_date",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-29"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "list"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": [
+              2039,
+              12,
+              31,
+              12,
+              8,
+              9
+            ],
+            "result_type": "list",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-DATE-PRE-BOTH",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-DATE-PRE-BOTH",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "date.parse-date-only"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "parse_date",
+              "2040-02-29"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-DATE-PRE-BOTH"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse_date",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-29"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": "2040022907:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 6,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-DATE-PRE-PARSED",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-DATE-PRE-PARSED",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "date.parse-date-only"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "parse_date",
+              "2040-02-29"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-DATE-PRE-PARSED"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123107:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse_date",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-29"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": "2040022907:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": "2040022907:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2040022907:08:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-DATE-FAIL-PRE-LOCAL",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-DATE-FAIL-PRE-LOCAL",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "date.parse-date-only"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "parse_date",
+              "2040-02-30"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "clear_error"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-DATE-FAIL-PRE-LOCAL"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse_date",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-30"
+            ],
+            "error_after": "[parse_date] Invalid date",
+            "error_before": "",
+            "index": 2,
+            "result": 1,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "[parse_date] Invalid date",
+            "error_before": "[parse_date] Invalid date",
+            "index": 3,
+            "result": "",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "clear_error",
+            "action_exception": null,
+            "arguments": [],
+            "error_after": "",
+            "error_before": "[parse_date] Invalid date",
+            "index": 4,
+            "result": null,
+            "result_type": "absent",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2039123107:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 6,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-DATE-FAIL-RESET",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-DATE-FAIL-RESET",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "date.parse-date-only"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "parse_date",
+              "2040-02-30"
+            ],
+            [
+              "parse_date",
+              "2040-03-01"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-DATE-FAIL-RESET"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse_date",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-30"
+            ],
+            "error_after": "[parse_date] Invalid date",
+            "error_before": "",
+            "index": 2,
+            "result": 1,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "parse_date",
+            "action_exception": null,
+            "arguments": [
+              "2040-03-01"
+            ],
+            "error_after": "",
+            "error_before": "[parse_date] Invalid date",
+            "index": 3,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": "2040030100:00:00",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2040030100:00:00",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-DATE-FAIL-CLEAR-THEN-SUCCESS",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-DATE-FAIL-CLEAR-THEN-SUCCESS",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "date.parse-date-only"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "parse_date",
+              "2040-02-30"
+            ],
+            [
+              "clear_error"
+            ],
+            [
+              "parse_date",
+              "2040-03-01"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-DATE-FAIL-CLEAR-THEN-SUCCESS"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse_date",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-30"
+            ],
+            "error_after": "[parse_date] Invalid date",
+            "error_before": "",
+            "index": 2,
+            "result": 1,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "clear_error",
+            "action_exception": null,
+            "arguments": [],
+            "error_after": "",
+            "error_before": "[parse_date] Invalid date",
+            "index": 3,
+            "result": null,
+            "result_type": "absent",
+            "warnings": []
+          },
+          {
+            "action": "parse_date",
+            "action_exception": null,
+            "arguments": [
+              "2040-03-01"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2040030107:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 6,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-DATE-RECOVER-WITH-PARSE",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-DATE-RECOVER-WITH-PARSE",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "date.parse-date-only"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "parse_date",
+              "2040-02-29"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "parse",
+              "2040-03-02 09:10:11 America/New_York"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-DATE-RECOVER-WITH-PARSE"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse_date",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-29"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse",
+            "action_exception": null,
+            "arguments": [
+              "2040-03-02 09:10:11 America/New_York"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2040030214:10:11",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 6,
+            "result": "2040030214:10:11",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-TIME-PRISTINE",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-TIME-PRISTINE",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "time.parse-text"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "parse_time",
+              "16:05:09"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-TIME-PRISTINE"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "parse_time",
+            "action_exception": null,
+            "arguments": [
+              "16:05:09"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": "2039123116:05:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": "2039123116:05:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": "2039123116:05:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-TIME-PRE-LOCAL-SCALAR",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-TIME-PRE-LOCAL-SCALAR",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "time.parse-text"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "parse_time",
+              "16:05:09"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "list"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-TIME-PRE-LOCAL-SCALAR"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse_time",
+            "action_exception": null,
+            "arguments": [
+              "16:05:09"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": "2039123116:05:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "list"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 6,
+            "result": [
+              2039,
+              12,
+              31,
+              12,
+              8,
+              9
+            ],
+            "result_type": "list",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 7,
+            "result": "2039123116:05:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-TIME-PRE-LOCAL-LIST",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-TIME-PRE-LOCAL-LIST",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "time.parse-text"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "local",
+              "list"
+            ],
+            [
+              "parse_time",
+              "16:05:09"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "list"
+            ]
+          ],
+          "case_id": "PC-TIME-PRE-LOCAL-LIST"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "list"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": [
+              2039,
+              12,
+              31,
+              12,
+              8,
+              9
+            ],
+            "result_type": "list",
+            "warnings": []
+          },
+          {
+            "action": "parse_time",
+            "action_exception": null,
+            "arguments": [
+              "16:05:09"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "list"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": [
+              2039,
+              12,
+              31,
+              12,
+              8,
+              9
+            ],
+            "result_type": "list",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-TIME-PRE-GMT-SCALAR",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-TIME-PRE-GMT-SCALAR",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "time.parse-text"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "parse_time",
+              "16:05:09"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "list"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-TIME-PRE-GMT-SCALAR"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse_time",
+            "action_exception": null,
+            "arguments": [
+              "16:05:09"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": "2039123116:05:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "list"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 6,
+            "result": [
+              2039,
+              12,
+              31,
+              12,
+              8,
+              9
+            ],
+            "result_type": "list",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 7,
+            "result": "2039123116:05:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-TIME-PRE-GMT-LIST",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-TIME-PRE-GMT-LIST",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "time.parse-text"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "gmt",
+              "list"
+            ],
+            [
+              "parse_time",
+              "16:05:09"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "list"
+            ]
+          ],
+          "case_id": "PC-TIME-PRE-GMT-LIST"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "list"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": [
+              2039,
+              12,
+              31,
+              12,
+              8,
+              9
+            ],
+            "result_type": "list",
+            "warnings": []
+          },
+          {
+            "action": "parse_time",
+            "action_exception": null,
+            "arguments": [
+              "16:05:09"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "list"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": [
+              2039,
+              12,
+              31,
+              12,
+              8,
+              9
+            ],
+            "result_type": "list",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-TIME-PRE-BOTH",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-TIME-PRE-BOTH",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "time.parse-text"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "parse_time",
+              "16:05:09"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-TIME-PRE-BOTH"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse_time",
+            "action_exception": null,
+            "arguments": [
+              "16:05:09"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": "2039123116:05:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 6,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-TIME-PRE-PARSED",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-TIME-PRE-PARSED",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "time.parse-text"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "parse_time",
+              "16:05:09"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-TIME-PRE-PARSED"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123107:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse_time",
+            "action_exception": null,
+            "arguments": [
+              "16:05:09"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": "2039123116:05:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": "2039123116:05:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2039123116:05:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-TIME-FAIL-PRE-GMT",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-TIME-FAIL-PRE-GMT",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "time.parse-text"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "parse_time",
+              "25:61:70"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "clear_error"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-TIME-FAIL-PRE-GMT"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse_time",
+            "action_exception": null,
+            "arguments": [
+              "25:61:70"
+            ],
+            "error_after": "[parse_time] Invalid time string",
+            "error_before": "",
+            "index": 2,
+            "result": 1,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "[parse_time] Invalid time string",
+            "error_before": "[parse_time] Invalid time string",
+            "index": 3,
+            "result": "",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "clear_error",
+            "action_exception": null,
+            "arguments": [],
+            "error_after": "",
+            "error_before": "[parse_time] Invalid time string",
+            "index": 4,
+            "result": null,
+            "result_type": "absent",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2039123107:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 6,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-TIME-FAIL-RESET",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-TIME-FAIL-RESET",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "time.parse-text"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "parse_time",
+              "25:61:70"
+            ],
+            [
+              "parse_time",
+              "16:05:09"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-TIME-FAIL-RESET"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse_time",
+            "action_exception": null,
+            "arguments": [
+              "25:61:70"
+            ],
+            "error_after": "[parse_time] Invalid time string",
+            "error_before": "",
+            "index": 2,
+            "result": 1,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "parse_time",
+            "action_exception": null,
+            "arguments": [
+              "16:05:09"
+            ],
+            "error_after": "",
+            "error_before": "[parse_time] Invalid time string",
+            "index": 3,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": "2040022816:05:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2040022816:05:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-TIME-FAIL-CLEAR-THEN-SUCCESS",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-TIME-FAIL-CLEAR-THEN-SUCCESS",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "time.parse-text"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "parse_time",
+              "25:61:70"
+            ],
+            [
+              "clear_error"
+            ],
+            [
+              "parse_time",
+              "16:05:09"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-TIME-FAIL-CLEAR-THEN-SUCCESS"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse_time",
+            "action_exception": null,
+            "arguments": [
+              "25:61:70"
+            ],
+            "error_after": "[parse_time] Invalid time string",
+            "error_before": "",
+            "index": 2,
+            "result": 1,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "clear_error",
+            "action_exception": null,
+            "arguments": [],
+            "error_after": "",
+            "error_before": "[parse_time] Invalid time string",
+            "index": 3,
+            "result": null,
+            "result_type": "absent",
+            "warnings": []
+          },
+          {
+            "action": "parse_time",
+            "action_exception": null,
+            "arguments": [
+              "16:05:09"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2039123116:05:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 6,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-TIME-RECOVER-WITH-PARSE",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-TIME-RECOVER-WITH-PARSE",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state",
+          "time.parse-text"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "parse_time",
+              "16:05:09"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "parse",
+              "2040-03-02 09:10:11 America/New_York"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-TIME-RECOVER-WITH-PARSE"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse_time",
+            "action_exception": null,
+            "arguments": [
+              "16:05:09"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse",
+            "action_exception": null,
+            "arguments": [
+              "2040-03-02 09:10:11 America/New_York"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2040030214:10:11",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 6,
+            "result": "2040030214:10:11",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-PARSE-PRISTINE",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-PARSE-PRISTINE",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "parse",
+              "2040-02-29 16:05:09 America/New_York"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-PARSE-PRISTINE"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "parse",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-29 16:05:09 America/New_York"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": "2040022916:05:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": "2040022921:05:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": "2040022921:05:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-PARSE-PRE-LOCAL",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-PARSE-PRE-LOCAL",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "parse",
+              "2040-02-29 16:05:09 America/New_York"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "list"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-PARSE-PRE-LOCAL"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-29 16:05:09 America/New_York"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": "2040022916:05:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": "2040022921:05:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "list"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": [
+              2040,
+              2,
+              29,
+              21,
+              5,
+              9
+            ],
+            "result_type": "list",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 6,
+            "result": "2040022921:05:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-PARSE-PRE-GMT",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-PARSE-PRE-GMT",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "parse",
+              "2040-02-29 16:05:09 America/New_York"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "list"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-PARSE-PRE-GMT"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-29 16:05:09 America/New_York"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": "2040022916:05:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": "2040022921:05:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "list"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": [
+              2040,
+              2,
+              29,
+              21,
+              5,
+              9
+            ],
+            "result_type": "list",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 6,
+            "result": "2040022921:05:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-PARSE-PRE-BOTH-LIST",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-PARSE-PRE-BOTH-LIST",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "local",
+              "list"
+            ],
+            [
+              "value",
+              "gmt",
+              "list"
+            ],
+            [
+              "parse",
+              "2040-02-29 16:05:09 America/New_York"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-PARSE-PRE-BOTH-LIST"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "list"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": [
+              2039,
+              12,
+              31,
+              12,
+              8,
+              9
+            ],
+            "result_type": "list",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "list"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 2,
+            "result": [
+              2039,
+              12,
+              31,
+              12,
+              8,
+              9
+            ],
+            "result_type": "list",
+            "warnings": []
+          },
+          {
+            "action": "parse",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-29 16:05:09 America/New_York"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": "2040022916:05:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2040022921:05:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 6,
+            "result": "2040022921:05:09",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-PARSE-FAIL",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-PARSE-FAIL",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "parse",
+              "2040-02-30 16:05:09 America/New_York"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "clear_error"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-PARSE-FAIL"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-30 16:05:09 America/New_York"
+            ],
+            "error_after": "[parse] Invalid date",
+            "error_before": "",
+            "index": 2,
+            "result": 1,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "[parse] Invalid date",
+            "error_before": "[parse] Invalid date",
+            "index": 3,
+            "result": "",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "clear_error",
+            "action_exception": null,
+            "arguments": [],
+            "error_after": "",
+            "error_before": "[parse] Invalid date",
+            "index": 4,
+            "result": null,
+            "result_type": "absent",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": null,
+            "result_type": "absent",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-PARSE-FAIL-LOCAL-OBSERVER",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-PARSE-FAIL-LOCAL-OBSERVER",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "parse",
+              "2040-02-30 16:05:09 America/New_York"
+            ],
+            [
+              "clear_error"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "parse",
+              "2040-03-02 09:10:11 America/New_York"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-PARSE-FAIL-LOCAL-OBSERVER"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "parse",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-30 16:05:09 America/New_York"
+            ],
+            "error_after": "[parse] Invalid date",
+            "error_before": "",
+            "index": 1,
+            "result": 1,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "clear_error",
+            "action_exception": null,
+            "arguments": [],
+            "error_after": "",
+            "error_before": "[parse] Invalid date",
+            "index": 2,
+            "result": null,
+            "result_type": "absent",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": "Can't use an undefined value as an ARRAY reference at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 854.\n",
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": null,
+            "result_type": "absent",
+            "warnings": [
+              "Use of uninitialized value $year in numeric lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1360.\n",
+              "Use of uninitialized value $year in numeric gt (>) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1360.\n",
+              "Use of uninitialized value $beg in string comparison (cmp) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1368.\n",
+              "Use of uninitialized value $end in string comparison (cmp) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1370.\n",
+              "Use of uninitialized value $year in addition (+) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1371.\n",
+              "Use of uninitialized value $y in integer multiplication (*) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 879.\n",
+              "Use of uninitialized value $m in integer multiplication (*) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 880.\n",
+              "Use of uninitialized value $d in integer multiplication (*) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 881.\n"
+            ]
+          },
+          {
+            "action": "parse",
+            "action_exception": null,
+            "arguments": [
+              "2040-03-02 09:10:11 America/New_York"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2040030214:10:11",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": [
+          "Use of uninitialized value $year in numeric lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1360.\n",
+          "Use of uninitialized value $year in numeric gt (>) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1360.\n",
+          "Use of uninitialized value $beg in string comparison (cmp) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1368.\n",
+          "Use of uninitialized value $end in string comparison (cmp) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1370.\n",
+          "Use of uninitialized value $year in addition (+) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1371.\n",
+          "Use of uninitialized value $y in integer multiplication (*) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 879.\n",
+          "Use of uninitialized value $m in integer multiplication (*) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 880.\n",
+          "Use of uninitialized value $d in integer multiplication (*) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 881.\n"
+        ]
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-PARSE-FAIL-GMT-OBSERVER",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-PARSE-FAIL-GMT-OBSERVER",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "parse",
+              "2040-02-30 16:05:09 America/New_York"
+            ],
+            [
+              "clear_error"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "parse",
+              "2040-03-02 09:10:11 America/New_York"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-PARSE-FAIL-GMT-OBSERVER"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "parse",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-30 16:05:09 America/New_York"
+            ],
+            "error_after": "[parse] Invalid date",
+            "error_before": "",
+            "index": 1,
+            "result": 1,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "clear_error",
+            "action_exception": null,
+            "arguments": [],
+            "error_after": "",
+            "error_before": "[parse] Invalid date",
+            "index": 2,
+            "result": null,
+            "result_type": "absent",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": "Can't use an undefined value as an ARRAY reference at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 854.\n",
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 3,
+            "result": null,
+            "result_type": "absent",
+            "warnings": [
+              "Use of uninitialized value $year in numeric lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1360.\n",
+              "Use of uninitialized value $year in numeric gt (>) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1360.\n",
+              "Use of uninitialized value $beg in string comparison (cmp) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1368.\n",
+              "Use of uninitialized value $end in string comparison (cmp) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1370.\n",
+              "Use of uninitialized value $year in addition (+) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1371.\n",
+              "Use of uninitialized value $y in integer multiplication (*) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 879.\n",
+              "Use of uninitialized value $m in integer multiplication (*) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 880.\n",
+              "Use of uninitialized value $d in integer multiplication (*) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 881.\n"
+            ]
+          },
+          {
+            "action": "parse",
+            "action_exception": null,
+            "arguments": [
+              "2040-03-02 09:10:11 America/New_York"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2040030214:10:11",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": [
+          "Use of uninitialized value $year in numeric lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1360.\n",
+          "Use of uninitialized value $year in numeric gt (>) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1360.\n",
+          "Use of uninitialized value $beg in string comparison (cmp) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1368.\n",
+          "Use of uninitialized value $end in string comparison (cmp) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1370.\n",
+          "Use of uninitialized value $year in addition (+) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1371.\n",
+          "Use of uninitialized value $y in integer multiplication (*) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 879.\n",
+          "Use of uninitialized value $m in integer multiplication (*) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 880.\n",
+          "Use of uninitialized value $d in integer multiplication (*) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm line 881.\n"
+        ]
+      },
+      "process_stderr": ""
+    },
+    {
+      "case_id": "PC-PARSE-FAIL-RECOVER",
+      "research_status": "repeatable",
+      "observation": {
+        "backend_version": "7.00",
+        "call_stdout": "",
+        "case_id": "PC-PARSE-FAIL-RECOVER",
+        "configuration_error": "",
+        "configuration_status": null,
+        "distribution_version": "7.00",
+        "exception": null,
+        "exception_stage": null,
+        "operation_ids": [
+          "date.parse-text",
+          "date.read-value",
+          "error.read-state"
+        ],
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "request": {
+          "actions": [
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ],
+            [
+              "parse",
+              "2040-02-30 16:05:09 America/New_York"
+            ],
+            [
+              "parse",
+              "2040-03-02 09:10:11 America/New_York"
+            ],
+            [
+              "value",
+              "parsed",
+              "scalar"
+            ],
+            [
+              "value",
+              "local",
+              "scalar"
+            ],
+            [
+              "value",
+              "gmt",
+              "scalar"
+            ]
+          ],
+          "case_id": "PC-PARSE-FAIL-RECOVER"
+        },
+        "sequence": [
+          {
+            "action": "initialize",
+            "error_after": "",
+            "error_before": "",
+            "index": 0,
+            "input": "2039-12-31 07:08:09 America/New_York",
+            "result": 0,
+            "result_type": "number"
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 1,
+            "result": "2039123112:08:09",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "parse",
+            "action_exception": null,
+            "arguments": [
+              "2040-02-30 16:05:09 America/New_York"
+            ],
+            "error_after": "[parse] Invalid date",
+            "error_before": "",
+            "index": 2,
+            "result": 1,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "parse",
+            "action_exception": null,
+            "arguments": [
+              "2040-03-02 09:10:11 America/New_York"
+            ],
+            "error_after": "",
+            "error_before": "[parse] Invalid date",
+            "index": 3,
+            "result": 0,
+            "result_type": "number",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "parsed",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 4,
+            "result": "2040030209:10:11",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "local",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 5,
+            "result": "2040030214:10:11",
+            "result_type": "text",
+            "warnings": []
+          },
+          {
+            "action": "value",
+            "action_exception": null,
+            "arguments": [
+              "gmt",
+              "scalar"
+            ],
+            "error_after": "",
+            "error_before": "",
+            "index": 6,
+            "result": "2040030214:10:11",
+            "result_type": "text",
+            "warnings": []
+          }
+        ],
+        "tzdata": "tzdata2026c",
+        "warnings": []
+      },
+      "process_stderr": ""
+    }
+  ]
+}

@@ -336,3 +336,26 @@ Current independent workers: language_completion owns object-lifecycle-family;
 partial_parsing owns parse-cache-family; pattern_repair is independently reviewing
 the stable71-case partial-parsing batch. Public-only scope remains authoritative.
 No executable BDD harness or completed feature family is claimed.
+
+Worker return after language integration: parse-cache-family now has30 repeated
+public sequence cases and draft features. Coordinator review is pending. The
+partial_parsing worker moved to NEW partial-parsing-edges paths for the listed
+date/time-only gates, zones, fractional boundaries and token-carrier interactions.
+Do not edit its active paths. Previously returned partial-parsing and parse-cache
+paths are stable for review.
+
+## Parse-cache integration checkpoint
+
+Coordinator corrected the30-case public parse-cache batch: actual clear-error
+return capture, per-action warnings, installed-module hashes, precise operation
+IDs, explicit recovery inputs and list carriers, and an actual parsed-zone read
+for the both-list full-parse assertion. All30 cases repeat. Targeted reviewer
+checks20 stale value literals and2exception/recovery sequences. Features remain
+disputed reference compatibility, not approved default portable behavior.
+
+Independent partial-parsing review found10empty-text-to-null coercions and
+metadata/binding issues. pattern_repair now owns fixes in the original
+partial-parsing-family paths; inspect its live handle before editing. The
+partial_parsing worker continues NEW partial-parsing-edges, while
+language_completion continues object-lifecycle-family. No private coverage work
+is authorized or required.

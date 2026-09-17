@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "manually reviewed case-to-draft map",
+  "features": {
+    "spec/drafts/parse-cache/partial-mutation-cache.feature": [
+      "PC-DATE-PRISTINE", "PC-DATE-PRE-LOCAL-SCALAR", "PC-DATE-PRE-LOCAL-LIST",
+      "PC-DATE-PRE-GMT-SCALAR", "PC-DATE-PRE-GMT-LIST", "PC-DATE-PRE-BOTH",
+      "PC-DATE-PRE-PARSED", "PC-DATE-FAIL-PRE-LOCAL", "PC-DATE-FAIL-RESET",
+      "PC-DATE-FAIL-CLEAR-THEN-SUCCESS", "PC-DATE-RECOVER-WITH-PARSE",
+      "PC-TIME-PRISTINE", "PC-TIME-PRE-LOCAL-SCALAR", "PC-TIME-PRE-LOCAL-LIST",
+      "PC-TIME-PRE-GMT-SCALAR", "PC-TIME-PRE-GMT-LIST", "PC-TIME-PRE-BOTH",
+      "PC-TIME-PRE-PARSED", "PC-TIME-FAIL-PRE-GMT", "PC-TIME-FAIL-RESET",
+      "PC-TIME-FAIL-CLEAR-THEN-SUCCESS", "PC-TIME-RECOVER-WITH-PARSE"
+    ],
+    "spec/drafts/parse-cache/full-parse-reset.feature": [
+      "PC-PARSE-PRISTINE", "PC-PARSE-PRE-LOCAL", "PC-PARSE-PRE-GMT",
+      "PC-PARSE-PRE-BOTH-LIST", "PC-PARSE-FAIL", "PC-PARSE-FAIL-LOCAL-OBSERVER",
+      "PC-PARSE-FAIL-GMT-OBSERVER", "PC-PARSE-FAIL-RECOVER"
+    ]
+  }
+}

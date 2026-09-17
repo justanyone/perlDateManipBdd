@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "status": "research-only public binding map; excluded from portable handoff",
+  "reference": "Date-Manip 7.00",
+  "bindings": [
+    {"operation_id":"date.parse-text","module":"Date::Manip::Date","callable":"parse","source":"local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:101","observable_channels":["numeric status","receiver value","err"]},
+    {"operation_id":"date.parse-date-only","module":"Date::Manip::Date","callable":"parse_date","source":"local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:409","observable_channels":["numeric status","receiver value","err"]},
+    {"operation_id":"time.parse-text","module":"Date::Manip::Date","callable":"parse_time","source":"local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:375","observable_channels":["numeric status","receiver value","err"]},
+    {"operation_id":"date.read-value","module":"Date::Manip::Date","callable":"value","source":"local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:2607","observable_channels":["parsed-zone/local/GMT selection","scalar text/list fields","err","exception"]},
+    {"operation_id":"error.read-state","module":"Date::Manip::Obj","callable":"err","source":"local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:331","observable_channels":["error text","clear-error state transition"]}
+  ]
+}

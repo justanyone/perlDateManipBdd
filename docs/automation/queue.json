@@ -93,7 +93,7 @@
         "Feature text remains language-neutral."
       ],
       "owner": "coordinator review; partial_parsing owns new cache characterization",
-      "progress": "Calendar batch retained. New parsing corpus: 291 repeated binding cases, 283 authored candidate literals checked against saved evidence, 8 legacy configuration exceptions separate. Rendering worker revised 24 repeated invocations and draft features; coordinator review pending. Pattern parsing assigned; remaining natural-language/time/language and calendar partitions open. Coordinator authored69 additional calendar/epoch candidate cases from existing observations; exact saved literals and independent epoch/week facts checked. Pattern fidelity repair and full original language batch active. Pattern batch integrated as65 draft requests after native empty-return/full-capture/observer repairs; exact literal checks pass. Language64-record and partial-parsing71-case batches returned, coordinator review pending. Language64records/68draftrows integrated after call-order/fresh-value corrections and exact literal/provenance review; selector aliases remain preliminary without authored standalone scenarios.",
+      "progress": "Calendar batch retained. New parsing corpus: 291 repeated binding cases, 283 authored candidate literals checked against saved evidence, 8 legacy configuration exceptions separate. Rendering worker revised 24 repeated invocations and draft features; coordinator review pending. Pattern parsing assigned; remaining natural-language/time/language and calendar partitions open. Coordinator authored69 additional calendar/epoch candidate cases from existing observations; exact saved literals and independent epoch/week facts checked. Pattern fidelity repair and full original language batch active. Pattern batch integrated as65 draft requests after native empty-return/full-capture/observer repairs; exact literal checks pass. Language64-record and partial-parsing71-case batches returned, coordinator review pending. Language64records/68draftrows integrated after call-order/fresh-value corrections and exact literal/provenance review; selector aliases remain preliminary without authored standalone scenarios. Parse-cache30-case disputed draft integrated after observer/capture/provenance repairs;20stale literals and2exception sequences checked. Independent partial-parsing review found10empty-to-null coercions; repair active before integration.",
       "evidence": [
         "docs/research/observations/calendar.json",
         "docs/research/observations/calendar-review.json",
@@ -112,7 +112,10 @@
         "tools/review/pattern_literals.py",
         "docs/research/language-family/coverage.json",
         "tools/review/language_literals.py",
-        "spec/drafts/languages/"
+        "spec/drafts/languages/",
+        "docs/research/parse-cache-family/feature-map.json",
+        "tools/review/parse_cache_literals.py",
+        "spec/drafts/parse-cache/"
       ]
     },
     {
