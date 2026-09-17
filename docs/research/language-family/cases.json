@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "original research fixtures; results require review before promotion",
+  "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+  "target_date": "2040-02-29",
+  "target_weekday": "Wednesday",
+  "date_order": "non-US",
+  "reference_assertions": {"distribution_version":"7.00","dm6_backend_version":"7.00","dm5_backend_version":"5.66","tzdata":"tzdata2026c","tzcode":"tzcode2026c"},
+  "languages": [
+    {"id":"lang.catalan","canonical":"Catalan","source_module":"catalan","ascii":{"full_date":"29 Febrer 2040","weekday_date":"Dimecres 29 Febrer 2040","tomorrow":"dema"},"utf8":{"full_date":"29 Febrer 2040","weekday_date":"Dimecres 29 Febrer 2040","tomorrow":"demà"}},
+    {"id":"lang.danish","canonical":"Danish","source_module":"danish","ascii":{"full_date":"29 Februar 2040","weekday_date":"Onsdag 29 Februar 2040","tomorrow":"imorgen"},"utf8":{"full_date":"29 Februar 2040","weekday_date":"Onsdag 29 Februar 2040","tomorrow":"imorgen"}},
+    {"id":"lang.dutch","canonical":"Dutch","source_module":"dutch","ascii":{"full_date":"29 februari 2040","weekday_date":"woensdag 29 februari 2040","tomorrow":"morgen"},"utf8":{"full_date":"29 februari 2040","weekday_date":"woensdag 29 februari 2040","tomorrow":"morgen"}},
+    {"id":"lang.english","canonical":"English","source_module":"english","ascii":{"full_date":"29 February 2040","weekday_date":"Wednesday 29 February 2040","tomorrow":"tomorrow"},"utf8":{"full_date":"29 February 2040","weekday_date":"Wednesday 29 February 2040","tomorrow":"tomorrow"}},
+    {"id":"lang.finnish","canonical":"Finnish","source_module":"finnish","ascii":{"full_date":"29 helmikuuta 2040","weekday_date":"keskiviikko 29 helmikuuta 2040","tomorrow":"huomenna"},"utf8":{"full_date":"29 helmikuuta 2040","weekday_date":"keskiviikko 29 helmikuuta 2040","tomorrow":"huomenna"}},
+    {"id":"lang.french","canonical":"French","source_module":"french","ascii":{"full_date":"29 fevrier 2040","weekday_date":"mercredi 29 fevrier 2040","tomorrow":"demain"},"utf8":{"full_date":"29 février 2040","weekday_date":"mercredi 29 février 2040","tomorrow":"demain"}},
+    {"id":"lang.german","canonical":"German","source_module":"german","ascii":{"full_date":"29 Februar 2040","weekday_date":"Mittwoch 29 Februar 2040","tomorrow":"morgen","special":"Mi. 29. Feb. 2040"},"utf8":{"full_date":"29 Februar 2040","weekday_date":"Mittwoch 29 Februar 2040","tomorrow":"morgen","special":"Mi. 29. Feb. 2040"},"special_rule":"remove trailing periods"},
+    {"id":"lang.italian","canonical":"Italian","source_module":"italian","ascii":{"full_date":"29 Febbraio 2040","weekday_date":"Mercoledi 29 Febbraio 2040","tomorrow":"domani"},"utf8":{"full_date":"29 Febbraio 2040","weekday_date":"Mercoledì 29 Febbraio 2040","tomorrow":"domani"}},
+    {"id":"lang.norwegian","canonical":"Norwegian","source_module":"norwegian","ascii":{"full_date":"29 februar 2040","weekday_date":"onsdag 29 februar 2040","tomorrow":"i morgen","special":"on. 29. feb. 2040"},"utf8":{"full_date":"29 februar 2040","weekday_date":"onsdag 29 februar 2040","tomorrow":"i morgen","special":"on. 29. feb. 2040"},"special_rule":"remove trailing periods"},
+    {"id":"lang.polish","canonical":"Polish","source_module":"polish","ascii":{"full_date":"29 lutego 2040","weekday_date":"sroda 29 lutego 2040","tomorrow":"jutro"},"utf8":{"full_date":"29 lutego 2040","weekday_date":"środa 29 lutego 2040","tomorrow":"jutro"}},
+    {"id":"lang.portuguese","canonical":"Portuguese","source_module":"portugue","ascii":{"full_date":"29 Fevereiro 2040","weekday_date":"quarta 29 Fevereiro 2040","tomorrow":"amanha"},"utf8":{"full_date":"29 Fevereiro 2040","weekday_date":"quarta 29 Fevereiro 2040","tomorrow":"amanhã"}},
+    {"id":"lang.romanian","canonical":"Romanian","source_module":"romanian","ascii":{"full_date":"29 februarie 2040","weekday_date":"miercuri 29 februarie 2040","tomorrow":"miine"},"utf8":{"full_date":"29 februarie 2040","weekday_date":"miercuri 29 februarie 2040","tomorrow":"mîine"}},
+    {"id":"lang.russian","canonical":"Russian","source_module":"russian","ascii":{"full_date":"29 февраля 2040","weekday_date":"среда 29 февраля 2040","tomorrow":"завтра","special":"(среда) 29 февраля 2040 г."},"utf8":{"full_date":"29 февраля 2040","weekday_date":"среда 29 февраля 2040","tomorrow":"завтра","special":"(среда) 29 февраля 2040 г."},"special_rule":"remove parentheses and strip the year marker"},
+    {"id":"lang.spanish","canonical":"Spanish","source_module":"spanish","ascii":{"full_date":"29 Febrero 2040","weekday_date":"Miercoles 29 Febrero 2040","tomorrow":"manana"},"utf8":{"full_date":"29 Febrero 2040","weekday_date":"Miércoles 29 Febrero 2040","tomorrow":"mañana"}},
+    {"id":"lang.swedish","canonical":"Swedish","source_module":"swedish","ascii":{"full_date":"29 Februari 2040","weekday_date":"Onsdag 29 Februari 2040","tomorrow":"i morgon"},"utf8":{"full_date":"29 Februari 2040","weekday_date":"Onsdag 29 Februari 2040","tomorrow":"i morgon"}},
+    {"id":"lang.turkish","canonical":"Turkish","source_module":"turkish","ascii":{"full_date":"29 subat 2040","weekday_date":"carsamba 29 subat 2040","tomorrow":"yarin","special":"car. 29. sub. 2040"},"utf8":{"full_date":"29 şubat 2040","weekday_date":"çarşamba 29 şubat 2040","tomorrow":"yarın","special":"çar. 29. şub. 2040"},"special_rule":"remove trailing periods"}
+  ],
+  "research_sources": [
+    "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang.pod",
+    "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/*.pod",
+    "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/*.pm",
+    "/tmp/Date-Manip-7.00/lib/Date/Manip/DM5.pod"
+  ]
+}

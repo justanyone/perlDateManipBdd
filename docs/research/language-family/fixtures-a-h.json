@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "family": "language-selection fixture candidates, A-H",
+  "status": "research-only; every case is an unobserved candidate, not an approved expectation or portable fixture",
+  "reference": {
+    "distribution": "Date::Manip",
+    "version": "7.00",
+    "profile": "dm6-reference",
+    "fixed_clock": "2040-02-28 10:20:30 UTC",
+    "civil_date_target": "2040-02-29",
+    "weekday_fact_for_target": "Wednesday"
+  },
+  "method": "A deliberately small set of original probe phrases was composed from the public language tables. It records only the vocabulary necessary for these candidates and does not reproduce a language dictionary, upstream example, test, or parsing algorithm. Formatter strings are candidates to check with the language selected; they are not observed results.",
+  "case_count": {
+    "languages": 8,
+    "candidate_cases": 41,
+    "ordinary_cases_per_language": 5,
+    "additional_german_trailing_period_case": 1
+  },
+  "common_case_kinds": [
+    "full-date parse to the civil-date target",
+    "weekday-bearing parse to the same target",
+    "relative tomorrow parse from the fixed clock",
+    "localized %A rendering candidate for the target",
+    "localized %B rendering candidate for the target"
+  ],
+  "fixtures": [
+    {
+      "id": "lang.catalan",
+      "canonical": "Catalan",
+      "aliases": ["ca"],
+      "candidate_cases": [
+        {"kind": "full-date", "input": "29 Febrer 2040", "meaning_candidate": "2040-02-29"},
+        {"kind": "weekday-bearing-date", "weekday_token": "Dimecres", "input": "Dimecres 29 Febrer 2040", "meaning_candidate": "2040-02-29"},
+        {"kind": "relative-tomorrow", "input": "demà", "anchor": "2040-02-28 10:20:30 UTC", "meaning_candidate": "2040-02-29"},
+        {"kind": "format-%A", "date": "2040-02-29", "localized_rendering_candidate": "Dimecres"},
+        {"kind": "format-%B", "date": "2040-02-29", "localized_rendering_candidate": "Febrer"}
+      ],
+      "encoding_variants": {
+        "module_encodings": ["utf-8", "iso-8859-1", "perl"],
+        "ascii_input_candidate": "dema",
+        "utf8_input_candidate": "demà",
+        "scope": "The two tomorrow spellings are table alternatives; probe them separately with the encoding configuration explicit."
+      },
+      "consulted_locations": [
+        "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/catalan.pod:31-108,109-190,658-699",
+        "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/catalan.pm:19,45-52,80-92,153-157"
+      ],
+      "vocabulary_boundary": "Only Dimecres, Febrer, and the two tomorrow spellings are retained; abbreviated forms, other dates, fields, recurrence words, and separators remain unplanned."
+    },
+    {
+      "id": "lang.danish",
+      "canonical": "Danish",
+      "aliases": ["da"],
+      "candidate_cases": [
+        {"kind": "full-date", "input": "29. Februar 2040", "meaning_candidate": "2040-02-29"},
+        {"kind": "weekday-bearing-date", "weekday_token": "Onsdag", "input": "Onsdag 29. Februar 2040", "meaning_candidate": "2040-02-29"},
+        {"kind": "relative-tomorrow", "input": "imorgen", "anchor": "2040-02-28 10:20:30 UTC", "meaning_candidate": "2040-02-29"},
+        {"kind": "format-%A", "date": "2040-02-29", "localized_rendering_candidate": "Onsdag"},
+        {"kind": "format-%B", "date": "2040-02-29", "localized_rendering_candidate": "Februar"}
+      ],
+      "encoding_variants": {
+        "module_encodings": ["utf-8", "iso-8859-1", "perl"],
+        "utf8_table_variant_outside_core_case": "Lørdag",
+        "ascii_table_variant_outside_core_case": "Lordag",
+        "scope": "These Saturday alternatives establish an encoding partition without expanding the weekday target beyond Wednesday."
+      },
+      "consulted_locations": [
+        "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/danish.pod:31-89,90-149,558-596",
+        "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/danish.pm:19,29-36,64-76,135-139"
+      ],
+      "vocabulary_boundary": "Only Onsdag, Februar, imorgen, and one documented encoding contrast are retained; other words and numerical forms remain outside this plan."
+    },
+    {
+      "id": "lang.dutch",
+      "canonical": "Dutch",
+      "aliases": ["Nederlands", "nl"],
+      "candidate_cases": [
+        {"kind": "full-date", "input": "29 februari 2040", "meaning_candidate": "2040-02-29"},
+        {"kind": "weekday-bearing-date", "weekday_token": "woensdag", "input": "woensdag 29 februari 2040", "meaning_candidate": "2040-02-29"},
+        {"kind": "relative-tomorrow", "input": "morgen", "anchor": "2040-02-28 10:20:30 UTC", "meaning_candidate": "2040-02-29"},
+        {"kind": "format-%A", "date": "2040-02-29", "localized_rendering_candidate": "woensdag"},
+        {"kind": "format-%B", "date": "2040-02-29", "localized_rendering_candidate": "februari"}
+      ],
+      "encoding_variants": {
+        "module_encodings": [],
+        "core_cases": "ASCII-only",
+        "utf8_table_variant_outside_core_case": "tweeëntwintig",
+        "ascii_table_variant_outside_core_case": "tweeentwintig",
+        "scope": "The source declares no module encoding list. The number alternatives are an unexecuted boundary to revisit only if an encoding probe is added."
+      },
+      "consulted_locations": [
+        "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/dutch.pod:31-91,92-149,640-679",
+        "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/dutch.pm:19,52-59,100-112,136-157,299-302"
+      ],
+      "vocabulary_boundary": "Only woensdag, februari, morgen, and one number-spelling encoding contrast are retained; the remaining Dutch token classes are not covered."
+    },
+    {
+      "id": "lang.english",
+      "canonical": "English",
+      "aliases": ["en", "en_us"],
+      "candidate_cases": [
+        {"kind": "full-date", "input": "February 29 2040", "meaning_candidate": "2040-02-29"},
+        {"kind": "weekday-bearing-date", "weekday_token": "Wednesday", "input": "Wednesday February 29 2040", "meaning_candidate": "2040-02-29"},
+        {"kind": "relative-tomorrow", "input": "tomorrow", "anchor": "2040-02-28 10:20:30 UTC", "meaning_candidate": "2040-02-29"},
+        {"kind": "format-%A", "date": "2040-02-29", "localized_rendering_candidate": "Wednesday"},
+        {"kind": "format-%B", "date": "2040-02-29", "localized_rendering_candidate": "February"}
+      ],
+      "encoding_variants": {
+        "module_encodings": [],
+        "core_cases": "ASCII-only; no UTF-8 spelling is proposed for this limited vocabulary."
+      },
+      "consulted_locations": [
+        "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/english.pod:31-103,104-170,590-628",
+        "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/english.pm:20,38-45,73-85,144-149"
+      ],
+      "vocabulary_boundary": "Only Wednesday, February, and tomorrow are retained; the plan does not enumerate English aliases, ordinal forms, or other relative terms."
+    },
+    {
+      "id": "lang.finnish",
+      "canonical": "Finnish",
+      "aliases": ["fi", "fi_fi"],
+      "candidate_cases": [
+        {"kind": "full-date", "input": "29. helmikuuta 2040", "meaning_candidate": "2040-02-29"},
+        {"kind": "weekday-bearing-date", "weekday_token": "keskiviikko", "input": "keskiviikko 29. helmikuuta 2040", "meaning_candidate": "2040-02-29"},
+        {"kind": "relative-tomorrow", "input": "huomenna", "anchor": "2040-02-28 10:20:30 UTC", "meaning_candidate": "2040-02-29"},
+        {"kind": "format-%A", "date": "2040-02-29", "localized_rendering_candidate": "keskiviikko"},
+        {"kind": "format-%B", "date": "2040-02-29", "localized_rendering_candidate": "helmikuu"}
+      ],
+      "encoding_variants": {
+        "module_encodings": ["utf-8", "iso-8859-1", "perl"],
+        "utf8_table_variant_outside_core_case": "päivä",
+        "ascii_table_variant_outside_core_case": "paiva",
+        "scope": "The full-date candidate uses the separately listed February inflection; UTF-8 versus ASCII is left as a distinct probe partition."
+      },
+      "consulted_locations": [
+        "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/finnish.pod:31-128,129-191,667-713",
+        "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/finnish.pm:20,33-40,71-83,271-279"
+      ],
+      "vocabulary_boundary": "Only the selected Wednesday, February forms, huomenna, and one encoding contrast are retained; Finnish case/inflection coverage remains open."
+    },
+    {
+      "id": "lang.french",
+      "canonical": "French",
+      "aliases": ["fr", "fr_fr"],
+      "candidate_cases": [
+        {"kind": "full-date", "input": "29 février 2040", "meaning_candidate": "2040-02-29"},
+        {"kind": "weekday-bearing-date", "weekday_token": "mercredi", "input": "mercredi 29 février 2040", "meaning_candidate": "2040-02-29"},
+        {"kind": "relative-tomorrow", "input": "demain", "anchor": "2040-02-28 10:20:30 UTC", "meaning_candidate": "2040-02-29"},
+        {"kind": "format-%A", "date": "2040-02-29", "localized_rendering_candidate": "mercredi"},
+        {"kind": "format-%B", "date": "2040-02-29", "localized_rendering_candidate": "février"}
+      ],
+      "encoding_variants": {
+        "module_encodings": ["utf-8", "iso-8859-1", "perl"],
+        "utf8_input_candidate": "29 février 2040",
+        "ascii_input_candidate": "29 fevrier 2040",
+        "scope": "The source table lists both February spellings; probe each independently under an explicit encoding choice."
+      },
+      "consulted_locations": [
+        "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/french.pod:31-122,123-185,661-698",
+        "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/french.pm:19,37-44,75-87,150-152"
+      ],
+      "vocabulary_boundary": "Only mercredi, the February alternatives, and demain are retained; abbreviations, other accented words, and grammatical variants remain unplanned."
+    },
+    {
+      "id": "lang.german",
+      "canonical": "German",
+      "aliases": ["de", "de_de"],
+      "candidate_cases": [
+        {"kind": "full-date", "input": "29. Februar 2040", "meaning_candidate": "2040-02-29"},
+        {"kind": "weekday-bearing-date", "weekday_token": "Mittwoch", "input": "Mittwoch 29. Februar 2040", "meaning_candidate": "2040-02-29"},
+        {"kind": "relative-tomorrow", "input": "morgen", "anchor": "2040-02-28 10:20:30 UTC", "meaning_candidate": "2040-02-29"},
+        {"kind": "format-%A", "date": "2040-02-29", "localized_rendering_candidate": "Mittwoch"},
+        {"kind": "format-%B", "date": "2040-02-29", "localized_rendering_candidate": "Februar"},
+        {"kind": "trailing-period-edge", "input_without_final_period": "Mittwoch 29. Februar 2040", "input_with_final_period": "Mittwoch 29. Februar 2040.", "comparison_candidate": "The language module declares trailing-period removal; probe whether both inputs have the same observable parse result."}
+      ],
+      "encoding_variants": {
+        "module_encodings": ["utf-8", "iso-8859-1", "perl"],
+        "utf8_table_variant_outside_core_case": "März",
+        "ascii_table_variant_outside_core_case": "Maerz",
+        "scope": "The March alternatives expose an encoding partition while retaining February as the target month."
+      },
+      "consulted_locations": [
+        "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/german.pod:31-94,95-158,630-667",
+        "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/german.pm:19,24,37-44,72-84,249-252"
+      ],
+      "vocabulary_boundary": "Only Mittwoch, Februar, morgen, the trailing-period declaration, and one March encoding contrast are retained; other German vocabulary and punctuation behavior remain open."
+    },
+    {
+      "id": "lang.italian",
+      "canonical": "Italian",
+      "aliases": ["it", "it_it"],
+      "candidate_cases": [
+        {"kind": "full-date", "input": "29 febbraio 2040", "meaning_candidate": "2040-02-29"},
+        {"kind": "weekday-bearing-date", "weekday_token": "Mercoledì", "input": "Mercoledì 29 febbraio 2040", "meaning_candidate": "2040-02-29"},
+        {"kind": "relative-tomorrow", "input": "domani", "anchor": "2040-02-28 10:20:30 UTC", "meaning_candidate": "2040-02-29"},
+        {"kind": "format-%A", "date": "2040-02-29", "localized_rendering_candidate": "Mercoledì"},
+        {"kind": "format-%B", "date": "2040-02-29", "localized_rendering_candidate": "Febbraio"}
+      ],
+      "encoding_variants": {
+        "module_encodings": ["utf-8", "iso-8859-1", "perl"],
+        "utf8_input_candidate": "Mercoledì 29 febbraio 2040",
+        "ascii_input_candidate": "Mercoledi 29 febbraio 2040",
+        "scope": "The source table lists both Wednesday spellings; run them as separate probes with encoding explicit."
+      },
+      "consulted_locations": [
+        "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/italian.pod:31-89,90-150,664-702",
+        "/tmp/Date-Manip-7.00/lib/Date/Manip/Lang/italian.pm:19,29-36,64-76,135-137"
+      ],
+      "vocabulary_boundary": "Only the Wednesday alternatives, Febbraio, and domani are retained; other Italian forms and syntax remain unplanned."
+    }
+  ],
+  "remaining_boundaries": [
+    "Select canonical names and each alias in isolated processes before treating any probe as a language-selection result.",
+    "Set Encoding explicitly before every non-ASCII case; selection order and encoding interaction have not been observed here.",
+    "Confirm full-date word order, punctuation, acceptance channel, parsed time default, and formatter behavior with a reference probe before freezing literals.",
+    "The table-derived lexical candidates do not establish a portable translation dictionary or a contract for a future implementation."
+  ]
+}

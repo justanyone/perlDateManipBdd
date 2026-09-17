@@ -1,0 +1,162 @@
+{
+  "languages": [
+    {
+      "id": "lang.catalan",
+      "canonical": "Catalan",
+      "aliases": [
+        "ca"
+      ],
+      "candidate_fixture": "Select the canonical name, then select ca; parse one separately reviewed Catalan-only token once an original fixture is approved.",
+      "status": "unobserved"
+    },
+    {
+      "id": "lang.danish",
+      "canonical": "Danish",
+      "aliases": [
+        "da"
+      ],
+      "candidate_fixture": "Select the canonical name, then select da; parse one separately reviewed Danish-only token once an original fixture is approved.",
+      "status": "unobserved"
+    },
+    {
+      "id": "lang.dutch",
+      "canonical": "Dutch",
+      "aliases": [
+        "Nederlands",
+        "nl"
+      ],
+      "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed Dutch-only token once an original fixture is approved.",
+      "status": "unobserved"
+    },
+    {
+      "id": "lang.english",
+      "canonical": "English",
+      "aliases": [
+        "en",
+        "en_us"
+      ],
+      "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed English-only token once an original fixture is approved.",
+      "status": "unobserved"
+    },
+    {
+      "id": "lang.finnish",
+      "canonical": "Finnish",
+      "aliases": [
+        "fi",
+        "fi_fi"
+      ],
+      "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed Finnish-only token once an original fixture is approved.",
+      "status": "unobserved"
+    },
+    {
+      "id": "lang.french",
+      "canonical": "French",
+      "aliases": [
+        "fr",
+        "fr_fr"
+      ],
+      "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed French-only token once an original fixture is approved.",
+      "status": "unobserved"
+    },
+    {
+      "id": "lang.german",
+      "canonical": "German",
+      "aliases": [
+        "de",
+        "de_de"
+      ],
+      "candidate_fixture": "Select the canonical name and aliases; include a trailing-period normalization partition.",
+      "status": "unobserved"
+    },
+    {
+      "id": "lang.italian",
+      "canonical": "Italian",
+      "aliases": [
+        "it",
+        "it_it"
+      ],
+      "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed Italian-only token once an original fixture is approved.",
+      "status": "unobserved"
+    },
+    {
+      "id": "lang.norwegian",
+      "canonical": "Norwegian",
+      "aliases": [
+        "nb",
+        "nb_no"
+      ],
+      "candidate_fixture": "Select the canonical name and aliases; include a trailing-period normalization partition.",
+      "status": "unobserved"
+    },
+    {
+      "id": "lang.polish",
+      "canonical": "Polish",
+      "aliases": [
+        "pl",
+        "pl_pl"
+      ],
+      "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed Polish-only token once an original fixture is approved.",
+      "status": "unobserved"
+    },
+    {
+      "id": "lang.portuguese",
+      "canonical": "Portuguese",
+      "aliases": [
+        "pt",
+        "pt_pt"
+      ],
+      "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed Portuguese-only token once an original fixture is approved.",
+      "status": "unobserved"
+    },
+    {
+      "id": "lang.romanian",
+      "canonical": "Romanian",
+      "aliases": [
+        "ro",
+        "ro_ro"
+      ],
+      "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed Romanian-only token once an original fixture is approved.",
+      "status": "unobserved"
+    },
+    {
+      "id": "lang.russian",
+      "canonical": "Russian",
+      "aliases": [
+        "ru",
+        "ru_ru"
+      ],
+      "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed Russian-only token once an original fixture is approved.",
+      "status": "unobserved"
+    },
+    {
+      "id": "lang.spanish",
+      "canonical": "Spanish",
+      "aliases": [
+        "es",
+        "es_es"
+      ],
+      "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed Spanish-only token once an original fixture is approved.",
+      "status": "unobserved"
+    },
+    {
+      "id": "lang.swedish",
+      "canonical": "Swedish",
+      "aliases": [
+        "sv"
+      ],
+      "candidate_fixture": "Select the canonical name, then sv; parse one separately reviewed Swedish-only token once an original fixture is approved.",
+      "status": "unobserved"
+    },
+    {
+      "id": "lang.turkish",
+      "canonical": "Turkish",
+      "aliases": [
+        "tr",
+        "tr_tr"
+      ],
+      "candidate_fixture": "Select the canonical name and aliases; include a trailing-period normalization partition.",
+      "status": "unobserved"
+    }
+  ],
+  "selectors": 45
+}

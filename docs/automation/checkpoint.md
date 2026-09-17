@@ -321,3 +321,18 @@ these are no longer needed. Discovery inventories retain private classifications
 for boundary documentation only, with no test obligation. Current workers were
 notified; public lifecycle and parsing-cache characterization continue. Historical
 private-coverage requirements above are superseded by this correction.
+
+## Language integration checkpoint
+
+Coordinator checked64 language runtime records and68 draft rows, corrected legacy
+call order and fresh-object wording, and added exact provenance checks. Both
+32-record corpora repeated with unchanged observation payloads. The new
+`tools/review/language_literals.py` checks Unicode renderings, empty text versus
+missing results, inputs, failure setup and warning counts. Broader language
+vocabulary/encoding/state boundaries remain open. The45-selector corpus is
+preliminary and still needs full isolation/provenance review and English scenarios.
+
+Current independent workers: language_completion owns object-lifecycle-family;
+partial_parsing owns parse-cache-family; pattern_repair is independently reviewing
+the stable71-case partial-parsing batch. Public-only scope remains authoritative.
+No executable BDD harness or completed feature family is claimed.

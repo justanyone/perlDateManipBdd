@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "status": "research accounting; counts are not a completeness or approval claim",
+  "canonical_languages": {
+    "inventory": "docs/research/language-family/selector-inventory.json",
+    "count": 16,
+    "fixture": "docs/research/language-family/cases.json",
+    "dm6_rows": 32,
+    "dm5_rows": 32,
+    "modes_per_profile": 2,
+    "repetitions_per_row": 2
+  },
+  "selection_strings": {
+    "inventory": "docs/research/language-family/selectors.tsv",
+    "observations": "docs/research/language-family/selector-observations.json",
+    "count": 45,
+    "relationship": "Each selector row maps to one of the same 16 stable lang.* IDs. The canonical runtime corpus does not rerun aliases."
+  },
+  "runtime_operation_plan_for_initialized_rows": [
+    "date.parse-text through the DM6 object profile, or date.parse-leading-tokens through DM5, for one localized full date",
+    "the same parse contract for the date with its localized Wednesday",
+    "the same parse contract for one localized tomorrow term from the fixed clock",
+    "date.render-pattern for localized full weekday and month names"
+  ],
+  "dm5_initialization_failures": {
+    "row_count": 6,
+    "languages": ["lang.catalan", "lang.finnish", "lang.norwegian"],
+    "dependent_operations_executed": false
+  },
+  "special_preprocessing_languages": [
+    "lang.german",
+    "lang.norwegian",
+    "lang.russian",
+    "lang.turkish"
+  ],
+  "special_preprocessing_case_map": [
+    {"language_id":"lang.german","dm6_utf8_case_id":"LANG-DM6-UTF8-german-PREPROCESS","dm5_case_ids":["LANG-DM5-LEGACY-DEFAULT-german-PREPROCESS","LANG-DM5-LEGACY-INTERNATIONAL-german-PREPROCESS"]},
+    {"language_id":"lang.norwegian","dm6_utf8_case_id":"LANG-DM6-UTF8-norwegian-PREPROCESS","dm5_case_ids":[],"dm5_reason":"initialization failed, so no preprocessing call was made"},
+    {"language_id":"lang.russian","dm6_utf8_case_id":"LANG-DM6-UTF8-russian-PREPROCESS","dm5_case_ids":["LANG-DM5-LEGACY-DEFAULT-russian-PREPROCESS","LANG-DM5-LEGACY-INTERNATIONAL-russian-PREPROCESS"]},
+    {"language_id":"lang.turkish","dm6_utf8_case_id":"LANG-DM6-UTF8-turkish-PREPROCESS","dm5_case_ids":["LANG-DM5-LEGACY-DEFAULT-turkish-PREPROCESS","LANG-DM5-LEGACY-INTERNATIONAL-turkish-PREPROCESS"]}
+  ],
+  "draft_features": [
+    "spec/drafts/languages/canonical-dm6.feature",
+    "spec/drafts/languages/dm5-comparisons.feature"
+  ],
+  "remaining_boundary_source": "docs/research/language-family/README.md"
+}

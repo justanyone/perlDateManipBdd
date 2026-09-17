@@ -1,0 +1,3469 @@
+{
+  "clean_environment_keys": [
+    "LANG",
+    "LC_ALL",
+    "PATH",
+    "PERL5LIB",
+    "PERL_HASH_SEED",
+    "PERL_PERTURB_KEYS",
+    "TZ"
+  ],
+  "command": "python3 tools/probes/language-family/run-corpus.py dm5",
+  "fixture_file": "docs/research/language-family/cases.json",
+  "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+  "fresh_temporary_working_directory_per_attempt": true,
+  "observations": [
+    {
+      "case_id": "dm5-legacy-default-lang.catalan",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Catalan",
+        "case_id": "LANG-DM5-LEGACY-DEFAULT-catalan",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Febrer 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "dema",
+          "weekday_date": "Dimecres 29 Febrer 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.catalan",
+        "mode": "legacy-default",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.catalan",
+          "language.profile.dm5",
+          "language.mode.legacy-default"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": false,
+          "full_date": null,
+          "matching_weekday": null,
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": null,
+          "setup": {
+            "exception": "Can't use an undefined value as an ARRAY reference at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 3919, <$fixture_fh> line 1.\n",
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Catalan",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=0",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": null
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-international-lang.catalan",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Catalan",
+        "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-catalan",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Febrer 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "demà",
+          "weekday_date": "Dimecres 29 Febrer 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.catalan",
+        "mode": "legacy-international",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.catalan",
+          "language.profile.dm5",
+          "language.mode.legacy-international"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": false,
+          "full_date": null,
+          "matching_weekday": null,
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": null,
+          "setup": {
+            "exception": "Can't use an undefined value as an ARRAY reference at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 3919, <$fixture_fh> line 1.\n",
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Catalan",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=1",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": null
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-default-lang.danish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Danish",
+        "case_id": "LANG-DM5-LEGACY-DEFAULT-danish",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Februar 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "imorgen",
+          "weekday_date": "Onsdag 29 Februar 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.danish",
+        "mode": "legacy-default",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.danish",
+          "language.profile.dm5",
+          "language.mode.legacy-default"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 Februar 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "Onsdag 29 Februar 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "Onsdag|Februar"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Danish",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=0",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "imorgen",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-international-lang.danish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Danish",
+        "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-danish",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Februar 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "imorgen",
+          "weekday_date": "Onsdag 29 Februar 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.danish",
+        "mode": "legacy-international",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.danish",
+          "language.profile.dm5",
+          "language.mode.legacy-international"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 Februar 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "Onsdag 29 Februar 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "Onsdag|Februar"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Danish",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=1",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "imorgen",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-default-lang.dutch",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Dutch",
+        "case_id": "LANG-DM5-LEGACY-DEFAULT-dutch",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 februari 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "morgen",
+          "weekday_date": "woensdag 29 februari 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.dutch",
+        "mode": "legacy-default",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.dutch",
+          "language.profile.dm5",
+          "language.mode.legacy-default"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 februari 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "woensdag 29 februari 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "woensdag|februari"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Dutch",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=0",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "morgen",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-international-lang.dutch",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Dutch",
+        "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-dutch",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 februari 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "morgen",
+          "weekday_date": "woensdag 29 februari 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.dutch",
+        "mode": "legacy-international",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.dutch",
+          "language.profile.dm5",
+          "language.mode.legacy-international"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 februari 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "woensdag 29 februari 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "woensdag|"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Dutch",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=1",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "morgen",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-default-lang.english",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "English",
+        "case_id": "LANG-DM5-LEGACY-DEFAULT-english",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 February 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "tomorrow",
+          "weekday_date": "Wednesday 29 February 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.english",
+        "mode": "legacy-default",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.english",
+          "language.profile.dm5",
+          "language.mode.legacy-default"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 February 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "Wednesday 29 February 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "Wednesday|February"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=English",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=0",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "tomorrow",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-international-lang.english",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "English",
+        "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-english",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 February 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "tomorrow",
+          "weekday_date": "Wednesday 29 February 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.english",
+        "mode": "legacy-international",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.english",
+          "language.profile.dm5",
+          "language.mode.legacy-international"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 February 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "Wednesday 29 February 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "Wednesday|February"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=English",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=1",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "tomorrow",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n",
+          "Use of uninitialized value $f{\"b\"} in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1796, <$fixture_fh> line 1.\n",
+          "Use of uninitialized value $f{\"b\"} in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1797, <$fixture_fh> line 1.\n",
+          "Use of uninitialized value $f{\"b\"} in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1799, <$fixture_fh> line 1.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-default-lang.finnish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Finnish",
+        "case_id": "LANG-DM5-LEGACY-DEFAULT-finnish",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 helmikuuta 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "huomenna",
+          "weekday_date": "keskiviikko 29 helmikuuta 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.finnish",
+        "mode": "legacy-default",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.finnish",
+          "language.profile.dm5",
+          "language.mode.legacy-default"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": false,
+          "full_date": null,
+          "matching_weekday": null,
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": null,
+          "setup": {
+            "exception": "ERROR: Unknown language in Date::Manip.\n at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 402, <$fixture_fh> line 1.\n\tDate::Manip::DM5::Date_Init(\"IgnoreGlobalCnf=1\", \"PersonalCnf=\", \"PersonalCnfPath=\", \"ForceDate=2040-02-28-10:20:30\", \"TZ=Etc/UTC\", \"Language=Finnish\", \"DateFormat=non-US\", \"Internal=0\", ...) called at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 177\n\teval {...} called at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 177\n\tmain::probe_dm5() called at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 34\n",
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Finnish",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=0",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": null
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-international-lang.finnish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Finnish",
+        "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-finnish",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 helmikuuta 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "huomenna",
+          "weekday_date": "keskiviikko 29 helmikuuta 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.finnish",
+        "mode": "legacy-international",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.finnish",
+          "language.profile.dm5",
+          "language.mode.legacy-international"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": false,
+          "full_date": null,
+          "matching_weekday": null,
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": null,
+          "setup": {
+            "exception": "ERROR: Unknown language in Date::Manip.\n at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 402, <$fixture_fh> line 1.\n\tDate::Manip::DM5::Date_Init(\"IgnoreGlobalCnf=1\", \"PersonalCnf=\", \"PersonalCnfPath=\", \"ForceDate=2040-02-28-10:20:30\", \"TZ=Etc/UTC\", \"Language=Finnish\", \"DateFormat=non-US\", \"Internal=0\", ...) called at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 177\n\teval {...} called at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 177\n\tmain::probe_dm5() called at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 34\n",
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Finnish",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=1",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": null
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-default-lang.french",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "French",
+        "case_id": "LANG-DM5-LEGACY-DEFAULT-french",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 fevrier 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "demain",
+          "weekday_date": "mercredi 29 fevrier 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.french",
+        "mode": "legacy-default",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.french",
+          "language.profile.dm5",
+          "language.mode.legacy-default"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 fevrier 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "mercredi 29 fevrier 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "mercredi|fevrier"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=French",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=0",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "demain",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-international-lang.french",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "French",
+        "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-french",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 février 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "demain",
+          "weekday_date": "mercredi 29 février 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.french",
+        "mode": "legacy-international",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.french",
+          "language.profile.dm5",
+          "language.mode.legacy-international"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 février 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "mercredi 29 février 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "mercredi|février"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=French",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=1",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "demain",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-default-lang.german",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "German",
+        "case_id": "LANG-DM5-LEGACY-DEFAULT-german",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Februar 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": "Mi. 29. Feb. 2040",
+          "special_rule": "remove trailing periods",
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "morgen",
+          "weekday_date": "Mittwoch 29 Februar 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.german",
+        "mode": "legacy-default",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.german",
+          "language.profile.dm5",
+          "language.mode.legacy-default"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 Februar 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "Mittwoch 29 Februar 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "Mittwoch|Februar"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=German",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=0",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": {
+            "case_id": "LANG-DM5-LEGACY-DEFAULT-german-PREPROCESS",
+            "defined": true,
+            "exception": null,
+            "input": "Mi. 29. Feb. 2040",
+            "value": "2040022900:00:00"
+          },
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "morgen",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-international-lang.german",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "German",
+        "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-german",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Februar 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": "Mi. 29. Feb. 2040",
+          "special_rule": "remove trailing periods",
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "morgen",
+          "weekday_date": "Mittwoch 29 Februar 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.german",
+        "mode": "legacy-international",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.german",
+          "language.profile.dm5",
+          "language.mode.legacy-international"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 Februar 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "Mittwoch 29 Februar 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "Mittwoch|Februar"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=German",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=1",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": {
+            "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-german-PREPROCESS",
+            "defined": true,
+            "exception": null,
+            "input": "Mi. 29. Feb. 2040",
+            "value": "2040022900:00:00"
+          },
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "morgen",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-default-lang.italian",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Italian",
+        "case_id": "LANG-DM5-LEGACY-DEFAULT-italian",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Febbraio 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "domani",
+          "weekday_date": "Mercoledi 29 Febbraio 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.italian",
+        "mode": "legacy-default",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.italian",
+          "language.profile.dm5",
+          "language.mode.legacy-default"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 Febbraio 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "Mercoledi 29 Febbraio 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "Mercoledi|Febbraio"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Italian",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=0",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "domani",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${ <-- HERE i}|marted${i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 996, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${ <-- HERE i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 996, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${ <-- HERE i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 996, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${i}|gioved${ <-- HERE i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 996, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${i}|gioved${i}|luned${ <-- HERE i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 996, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(\\d{1,2})\\s*(mercoled${ <-- HERE i}|marted${i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1212, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(\\d{1,2})\\s*(mercoled${i}|marted${ <-- HERE i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1212, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(\\d{1,2})\\s*(mercoled${i}|marted${i}|venerd${ <-- HERE i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1212, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(\\d{1,2})\\s*(mercoled${i}|marted${i}|venerd${i}|gioved${ <-- HERE i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1212, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(\\d{1,2})\\s*(mercoled${i}|marted${i}|venerd${i}|gioved${i}|luned${ <-- HERE i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1212, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${ <-- HERE i}|marted${i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(?:settimane|settimana|sett)\\s*(\\d{1,2})(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${ <-- HERE i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(?:settimane|settimana|sett)\\s*(\\d{1,2})(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${ <-- HERE i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(?:settimane|settimana|sett)\\s*(\\d{1,2})(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${i}|gioved${ <-- HERE i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(?:settimane|settimana|sett)\\s*(\\d{1,2})(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${i}|gioved${i}|luned${ <-- HERE i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(?:settimane|settimana|sett)\\s*(\\d{1,2})(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${ <-- HERE i}|marted${i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(\\d{1,2})\\s*(?:settimane|settimana|sett)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${ <-- HERE i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(\\d{1,2})\\s*(?:settimane|settimana|sett)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${ <-- HERE i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(\\d{1,2})\\s*(?:settimane|settimana|sett)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${i}|gioved${ <-- HERE i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(\\d{1,2})\\s*(?:settimane|settimana|sett)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${i}|gioved${i}|luned${ <-- HERE i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(\\d{1,2})\\s*(?:settimane|settimana|sett)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${ <-- HERE i}|marted${i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)($|[^a-z])/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1233, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${i}|marted${ <-- HERE i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)($|[^a-z])/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1233, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${i}|marted${i}|venerd${ <-- HERE i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)($|[^a-z])/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1233, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${i}|marted${i}|venerd${i}|gioved${ <-- HERE i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)($|[^a-z])/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1233, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${i}|marted${i}|venerd${i}|gioved${i}|luned${ <-- HERE i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)($|[^a-z])/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1233, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${ <-- HERE i}|marted${i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven),/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1235, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${i}|marted${ <-- HERE i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven),/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1235, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${i}|marted${i}|venerd${ <-- HERE i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven),/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1235, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${i}|marted${i}|venerd${i}|gioved${ <-- HERE i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven),/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1235, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${i}|marted${i}|venerd${i}|gioved${i}|luned${ <-- HERE i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven),/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1235, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${ <-- HERE i}|marted${i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)($|[^a-z])/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1235, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${i}|marted${ <-- HERE i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)($|[^a-z])/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1235, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${i}|marted${i}|venerd${ <-- HERE i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)($|[^a-z])/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1235, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${i}|marted${i}|venerd${i}|gioved${ <-- HERE i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)($|[^a-z])/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1235, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${i}|marted${i}|venerd${i}|gioved${i}|luned${ <-- HERE i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)($|[^a-z])/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1235, <$fixture_fh> line 1.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-international-lang.italian",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Italian",
+        "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-italian",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Febbraio 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "domani",
+          "weekday_date": "Mercoledì 29 Febbraio 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.italian",
+        "mode": "legacy-international",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.italian",
+          "language.profile.dm5",
+          "language.mode.legacy-international"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 Febbraio 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "Mercoledì 29 Febbraio 2040",
+            "value": ""
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "Mercoled${i}|Febbraio"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Italian",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=1",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "domani",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${ <-- HERE i}|marted${i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 996, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${ <-- HERE i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 996, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${ <-- HERE i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 996, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${i}|gioved${ <-- HERE i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 996, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${i}|gioved${i}|luned${ <-- HERE i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 996, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(\\d{1,2})\\s*(mercoled${ <-- HERE i}|marted${i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1212, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(\\d{1,2})\\s*(mercoled${i}|marted${ <-- HERE i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1212, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(\\d{1,2})\\s*(mercoled${i}|marted${i}|venerd${ <-- HERE i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1212, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(\\d{1,2})\\s*(mercoled${i}|marted${i}|venerd${i}|gioved${ <-- HERE i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1212, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(\\d{1,2})\\s*(mercoled${i}|marted${i}|venerd${i}|gioved${i}|luned${ <-- HERE i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1212, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${ <-- HERE i}|marted${i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(?:settimane|settimana|sett)\\s*(\\d{1,2})(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${ <-- HERE i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(?:settimane|settimana|sett)\\s*(\\d{1,2})(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${ <-- HERE i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(?:settimane|settimana|sett)\\s*(\\d{1,2})(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${i}|gioved${ <-- HERE i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(?:settimane|settimana|sett)\\s*(\\d{1,2})(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${i}|gioved${i}|luned${ <-- HERE i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(?:settimane|settimana|sett)\\s*(\\d{1,2})(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${ <-- HERE i}|marted${i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(\\d{1,2})\\s*(?:settimane|settimana|sett)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${ <-- HERE i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(\\d{1,2})\\s*(?:settimane|settimana|sett)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${ <-- HERE i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(\\d{1,2})\\s*(?:settimane|settimana|sett)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${i}|gioved${ <-- HERE i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(\\d{1,2})\\s*(?:settimane|settimana|sett)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^(mercoled${i}|marted${i}|venerd${i}|gioved${i}|luned${ <-- HERE i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)\\s*(\\d{1,2})\\s*(?:settimane|settimana|sett)(?:\\s*(?:della|del)?\\s*(\\d{4}|\\d{2}))?$/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1223, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${ <-- HERE i}|marted${i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)($|[^a-z])/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1233, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${i}|marted${ <-- HERE i}|venerd${i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)($|[^a-z])/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1233, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${i}|marted${i}|venerd${ <-- HERE i}|gioved${i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)($|[^a-z])/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1233, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${i}|marted${i}|venerd${i}|gioved${ <-- HERE i}|luned${i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)($|[^a-z])/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1233, <$fixture_fh> line 1.\n",
+          "Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/(^|[^a-z])(mercoled${i}|marted${i}|venerd${i}|gioved${i}|luned${ <-- HERE i}|mercoledi|domenica|giovedi|venerdi|martedi|sabato|lunedi|mar|gio|mer|lun|dom|sab|ven)($|[^a-z])/ at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 1233, <$fixture_fh> line 1.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-default-lang.norwegian",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Norwegian",
+        "case_id": "LANG-DM5-LEGACY-DEFAULT-norwegian",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 februar 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": "on. 29. feb. 2040",
+          "special_rule": "remove trailing periods",
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "i morgen",
+          "weekday_date": "onsdag 29 februar 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.norwegian",
+        "mode": "legacy-default",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.norwegian",
+          "language.profile.dm5",
+          "language.mode.legacy-default"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": false,
+          "full_date": null,
+          "matching_weekday": null,
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": null,
+          "setup": {
+            "exception": "ERROR: Unknown language in Date::Manip.\n at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 402, <$fixture_fh> line 1.\n\tDate::Manip::DM5::Date_Init(\"IgnoreGlobalCnf=1\", \"PersonalCnf=\", \"PersonalCnfPath=\", \"ForceDate=2040-02-28-10:20:30\", \"TZ=Etc/UTC\", \"Language=Norwegian\", \"DateFormat=non-US\", \"Internal=0\", ...) called at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 177\n\teval {...} called at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 177\n\tmain::probe_dm5() called at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 34\n",
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Norwegian",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=0",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": null
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-international-lang.norwegian",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Norwegian",
+        "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-norwegian",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 februar 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": "on. 29. feb. 2040",
+          "special_rule": "remove trailing periods",
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "i morgen",
+          "weekday_date": "onsdag 29 februar 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.norwegian",
+        "mode": "legacy-international",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.norwegian",
+          "language.profile.dm5",
+          "language.mode.legacy-international"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": false,
+          "full_date": null,
+          "matching_weekday": null,
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": null,
+          "setup": {
+            "exception": "ERROR: Unknown language in Date::Manip.\n at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 402, <$fixture_fh> line 1.\n\tDate::Manip::DM5::Date_Init(\"IgnoreGlobalCnf=1\", \"PersonalCnf=\", \"PersonalCnfPath=\", \"ForceDate=2040-02-28-10:20:30\", \"TZ=Etc/UTC\", \"Language=Norwegian\", \"DateFormat=non-US\", \"Internal=0\", ...) called at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 177\n\teval {...} called at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 177\n\tmain::probe_dm5() called at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 34\n",
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Norwegian",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=1",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": null
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-default-lang.polish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Polish",
+        "case_id": "LANG-DM5-LEGACY-DEFAULT-polish",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 lutego 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "jutro",
+          "weekday_date": "sroda 29 lutego 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.polish",
+        "mode": "legacy-default",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.polish",
+          "language.profile.dm5",
+          "language.mode.legacy-default"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 lutego 2040",
+            "value": ""
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "sroda 29 lutego 2040",
+            "value": ""
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "sroda|luty"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Polish",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=0",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "jutro",
+            "value": "2040030610:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n",
+          "Use of uninitialized value $add in addition (+) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 7210, <$fixture_fh> line 1.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-international-lang.polish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Polish",
+        "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-polish",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 lutego 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "jutro",
+          "weekday_date": "środa 29 lutego 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.polish",
+        "mode": "legacy-international",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.polish",
+          "language.profile.dm5",
+          "language.mode.legacy-international"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 lutego 2040",
+            "value": ""
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "środa 29 lutego 2040",
+            "value": ""
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "roda|luty"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Polish",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=1",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "jutro",
+            "value": "2040030610:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n",
+          "Use of uninitialized value $add in addition (+) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm line 7210, <$fixture_fh> line 1.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-default-lang.portuguese",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Portuguese",
+        "case_id": "LANG-DM5-LEGACY-DEFAULT-portuguese",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Fevereiro 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "amanha",
+          "weekday_date": "quarta 29 Fevereiro 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.portuguese",
+        "mode": "legacy-default",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.portuguese",
+          "language.profile.dm5",
+          "language.mode.legacy-default"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 Fevereiro 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "quarta 29 Fevereiro 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "Quarta|Fevereiro"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Portuguese",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=0",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "amanha",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-international-lang.portuguese",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Portuguese",
+        "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-portuguese",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Fevereiro 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "amanhã",
+          "weekday_date": "quarta 29 Fevereiro 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.portuguese",
+        "mode": "legacy-international",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.portuguese",
+          "language.profile.dm5",
+          "language.mode.legacy-international"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 Fevereiro 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "quarta 29 Fevereiro 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "Quarta|Fevereiro"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Portuguese",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=1",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "amanhã",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-default-lang.romanian",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Romanian",
+        "case_id": "LANG-DM5-LEGACY-DEFAULT-romanian",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 februarie 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "miine",
+          "weekday_date": "miercuri 29 februarie 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.romanian",
+        "mode": "legacy-default",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.romanian",
+          "language.profile.dm5",
+          "language.mode.legacy-default"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 februarie 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "miercuri 29 februarie 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "miercuri|februarie"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Romanian",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=0",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "miine",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-international-lang.romanian",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Romanian",
+        "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-romanian",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 februarie 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "mîine",
+          "weekday_date": "miercuri 29 februarie 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.romanian",
+        "mode": "legacy-international",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.romanian",
+          "language.profile.dm5",
+          "language.mode.legacy-international"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 februarie 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "miercuri 29 februarie 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "miercuri|februarie"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Romanian",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=1",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "mîine",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-default-lang.russian",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Russian",
+        "case_id": "LANG-DM5-LEGACY-DEFAULT-russian",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 февраля 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": "(среда) 29 февраля 2040 г.",
+          "special_rule": "remove parentheses and strip the year marker",
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "завтра",
+          "weekday_date": "среда 29 февраля 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.russian",
+        "mode": "legacy-default",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.russian",
+          "language.profile.dm5",
+          "language.mode.legacy-default"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 февраля 2040",
+            "value": ""
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "среда 29 февраля 2040",
+            "value": ""
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "ÓÒÅÄÁ|ÆÅ×ÒÁÌÑ"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Russian",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=0",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": {
+            "case_id": "LANG-DM5-LEGACY-DEFAULT-russian-PREPROCESS",
+            "defined": true,
+            "exception": null,
+            "input": "(среда) 29 февраля 2040 г.",
+            "value": ""
+          },
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "завтра",
+            "value": ""
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-international-lang.russian",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Russian",
+        "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-russian",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 февраля 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": "(среда) 29 февраля 2040 г.",
+          "special_rule": "remove parentheses and strip the year marker",
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "завтра",
+          "weekday_date": "среда 29 февраля 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.russian",
+        "mode": "legacy-international",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.russian",
+          "language.profile.dm5",
+          "language.mode.legacy-international"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 февраля 2040",
+            "value": ""
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "среда 29 февраля 2040",
+            "value": ""
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "ÓÒÅÄÁ|ÆÅ×ÒÁÌØ"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Russian",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=1",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": {
+            "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-russian-PREPROCESS",
+            "defined": true,
+            "exception": null,
+            "input": "(среда) 29 февраля 2040 г.",
+            "value": ""
+          },
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "завтра",
+            "value": ""
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-default-lang.spanish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Spanish",
+        "case_id": "LANG-DM5-LEGACY-DEFAULT-spanish",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Febrero 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "manana",
+          "weekday_date": "Miercoles 29 Febrero 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.spanish",
+        "mode": "legacy-default",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.spanish",
+          "language.profile.dm5",
+          "language.mode.legacy-default"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 Febrero 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "Miercoles 29 Febrero 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "Miercoles|Febrero"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Spanish",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=0",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "manana",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-international-lang.spanish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Spanish",
+        "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-spanish",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Febrero 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "mañana",
+          "weekday_date": "Miércoles 29 Febrero 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.spanish",
+        "mode": "legacy-international",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.spanish",
+          "language.profile.dm5",
+          "language.mode.legacy-international"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 Febrero 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "Miércoles 29 Febrero 2040",
+            "value": ""
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "Miercoles|Febrero"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Spanish",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=1",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "mañana",
+            "value": ""
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-default-lang.swedish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Swedish",
+        "case_id": "LANG-DM5-LEGACY-DEFAULT-swedish",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Februari 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "i morgon",
+          "weekday_date": "Onsdag 29 Februari 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.swedish",
+        "mode": "legacy-default",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.swedish",
+          "language.profile.dm5",
+          "language.mode.legacy-default"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 Februari 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "Onsdag 29 Februari 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "Onsdag|Februari"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Swedish",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=0",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "i morgon",
+            "value": ""
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-international-lang.swedish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Swedish",
+        "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-swedish",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Februari 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "i morgon",
+          "weekday_date": "Onsdag 29 Februari 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.swedish",
+        "mode": "legacy-international",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.swedish",
+          "language.profile.dm5",
+          "language.mode.legacy-international"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 Februari 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "Onsdag 29 Februari 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "Onsdag|Februari"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Swedish",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=1",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "i morgon",
+            "value": ""
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-default-lang.turkish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Turkish",
+        "case_id": "LANG-DM5-LEGACY-DEFAULT-turkish",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 subat 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": "car. 29. sub. 2040",
+          "special_rule": "remove trailing periods",
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "yarin",
+          "weekday_date": "carsamba 29 subat 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.turkish",
+        "mode": "legacy-default",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.turkish",
+          "language.profile.dm5",
+          "language.mode.legacy-default"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 subat 2040",
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "carsamba 29 subat 2040",
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "carsamba|subat"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Turkish",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=0",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": {
+            "case_id": "LANG-DM5-LEGACY-DEFAULT-turkish-PREPROCESS",
+            "defined": true,
+            "exception": null,
+            "input": "car. 29. sub. 2040",
+            "value": "2040022900:00:00"
+          },
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "yarin",
+            "value": "2040022910:20:30"
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm5-legacy-international-lang.turkish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Turkish",
+        "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-turkish",
+        "contract_ids": [
+          "date.parse-leading-tokens",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 şubat 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": "çar. 29. şub. 2040",
+          "special_rule": "remove trailing periods",
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "yarın",
+          "weekday_date": "çarşamba 29 şubat 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.turkish",
+        "mode": "legacy-international",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.turkish",
+          "language.profile.dm5",
+          "language.mode.legacy-international"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "backend_version": "5.66",
+          "dependent_operations_executed": true,
+          "full_date": {
+            "defined": true,
+            "exception": null,
+            "input": "29 şubat 2040",
+            "value": ""
+          },
+          "matching_weekday": {
+            "defined": true,
+            "exception": null,
+            "input": "çarşamba 29 şubat 2040",
+            "value": ""
+          },
+          "reference_assertions": {
+            "backend_version": "5.66",
+            "distribution_version": "7.00",
+            "timezone_data": "not exposed by DM5"
+          },
+          "rendering": {
+            "defined": true,
+            "exception": null,
+            "value": "çarþamba|þubat"
+          },
+          "setup": {
+            "exception": null,
+            "requested": [
+              "IgnoreGlobalCnf=1",
+              "PersonalCnf=",
+              "PersonalCnfPath=",
+              "ForceDate=2040-02-28-10:20:30",
+              "TZ=Etc/UTC",
+              "Language=Turkish",
+              "DateFormat=non-US",
+              "Internal=0",
+              "IntCharSet=1",
+              "TodayIsMidnight=1",
+              "EraseHolidays=1"
+            ],
+            "status": null
+          },
+          "special_preprocessing": {
+            "case_id": "LANG-DM5-LEGACY-INTERNATIONAL-turkish-PREPROCESS",
+            "defined": true,
+            "exception": null,
+            "input": "çar. 29. şub. 2040",
+            "value": ""
+          },
+          "tomorrow": {
+            "defined": true,
+            "exception": null,
+            "input": "yarın",
+            "value": ""
+          }
+        },
+        "schema_version": 1,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/language-family/probe.pl line 163.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    }
+  ],
+  "parallel_workers": 4,
+  "profile": "dm5",
+  "reference_assertions": {
+    "distribution_version": "7.00",
+    "dm5_backend_version": "5.66",
+    "dm6_backend_version": "7.00",
+    "tzcode": "tzcode2026c",
+    "tzdata": "tzdata2026c"
+  },
+  "repetitions": 2,
+  "schema_version": 1,
+  "sha256": {
+    "/tmp/Date-Manip-7.00.tar.gz": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+    "docs/research/language-family/cases.json": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm": "c31d2bf42f317bb811fa5e838778d12b0e5ff8dd38b012114fe9fa4471845c2e",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm": "c181a8d908efbc2c18cc0a59e10e90628161dc3acf811c9c0292985280953d85",
+    "tools/probes/language-family/probe.pl": "3036d40f7858c8154f9ff2bd5555f4193a3bc7a6065eba1ae3015dc90d2b7f8a",
+    "tools/probes/language-family/run-corpus.py": "c7fdd9a6dd60f8e34847a3511205ae0cc759144877797bb1a13dc131affc060f"
+  },
+  "status": "research evidence; no expected value is approved",
+  "timeout_seconds": 15
+}

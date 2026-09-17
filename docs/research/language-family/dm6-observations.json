@@ -1,0 +1,5382 @@
+{
+  "clean_environment_keys": [
+    "LANG",
+    "LC_ALL",
+    "PATH",
+    "PERL5LIB",
+    "PERL_HASH_SEED",
+    "PERL_PERTURB_KEYS",
+    "TZ"
+  ],
+  "command": "python3 tools/probes/language-family/run-corpus.py dm6",
+  "fixture_file": "docs/research/language-family/cases.json",
+  "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+  "fresh_temporary_working_directory_per_attempt": true,
+  "observations": [
+    {
+      "case_id": "dm6-ascii-lang.catalan",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Catalan",
+        "case_id": "LANG-DM6-ASCII-catalan",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Febrer 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "dema",
+          "weekday_date": "Dimecres 29 Febrer 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.catalan",
+        "mode": "ascii",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.catalan",
+          "language.profile.dm6",
+          "language.mode.ascii"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 Febrer 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Catalan"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Catalan",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "Dimecres 29 Febrer 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Catalan"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Catalan",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Catalan"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Catalan",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "Dimecres|Febrer"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "dema",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Catalan"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Catalan",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-utf8-lang.catalan",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Catalan",
+        "case_id": "LANG-DM6-UTF8-catalan",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Febrer 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "demà",
+          "weekday_date": "Dimecres 29 Febrer 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.catalan",
+        "mode": "utf8",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.catalan",
+          "language.profile.dm6",
+          "language.mode.utf8"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 Febrer 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Catalan"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Catalan",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "Dimecres 29 Febrer 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Catalan"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Catalan",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Catalan"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Catalan",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "Dimecres|Febrer"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "demà",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Catalan"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Catalan",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-ascii-lang.danish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Danish",
+        "case_id": "LANG-DM6-ASCII-danish",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Februar 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "imorgen",
+          "weekday_date": "Onsdag 29 Februar 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.danish",
+        "mode": "ascii",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.danish",
+          "language.profile.dm6",
+          "language.mode.ascii"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 Februar 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Danish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Danish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "Onsdag 29 Februar 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Danish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Danish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Danish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Danish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "Onsdag|Februar"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "imorgen",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Danish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Danish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-utf8-lang.danish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Danish",
+        "case_id": "LANG-DM6-UTF8-danish",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Februar 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "imorgen",
+          "weekday_date": "Onsdag 29 Februar 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.danish",
+        "mode": "utf8",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.danish",
+          "language.profile.dm6",
+          "language.mode.utf8"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 Februar 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Danish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Danish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "Onsdag 29 Februar 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Danish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Danish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Danish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Danish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "Onsdag|Februar"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "imorgen",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Danish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Danish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-ascii-lang.dutch",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Dutch",
+        "case_id": "LANG-DM6-ASCII-dutch",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 februari 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "morgen",
+          "weekday_date": "woensdag 29 februari 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.dutch",
+        "mode": "ascii",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.dutch",
+          "language.profile.dm6",
+          "language.mode.ascii"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 februari 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Dutch"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Dutch",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "woensdag 29 februari 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Dutch"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Dutch",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Dutch"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Dutch",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "woensdag|februari"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "morgen",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Dutch"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Dutch",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-utf8-lang.dutch",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Dutch",
+        "case_id": "LANG-DM6-UTF8-dutch",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 februari 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "morgen",
+          "weekday_date": "woensdag 29 februari 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.dutch",
+        "mode": "utf8",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.dutch",
+          "language.profile.dm6",
+          "language.mode.utf8"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 februari 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Dutch"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Dutch",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "woensdag 29 februari 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Dutch"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Dutch",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Dutch"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Dutch",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "woensdag|februari"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "morgen",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Dutch"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Dutch",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-ascii-lang.english",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "English",
+        "case_id": "LANG-DM6-ASCII-english",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 February 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "tomorrow",
+          "weekday_date": "Wednesday 29 February 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.english",
+        "mode": "ascii",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.english",
+          "language.profile.dm6",
+          "language.mode.ascii"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 February 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "English"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=English",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "Wednesday 29 February 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "English"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=English",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "English"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=English",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "Wednesday|February"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "tomorrow",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "English"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=English",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-utf8-lang.english",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "English",
+        "case_id": "LANG-DM6-UTF8-english",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 February 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "tomorrow",
+          "weekday_date": "Wednesday 29 February 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.english",
+        "mode": "utf8",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.english",
+          "language.profile.dm6",
+          "language.mode.utf8"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 February 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "English"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=English",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "Wednesday 29 February 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "English"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=English",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "English"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=English",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "Wednesday|February"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "tomorrow",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "English"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=English",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-ascii-lang.finnish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Finnish",
+        "case_id": "LANG-DM6-ASCII-finnish",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 helmikuuta 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "huomenna",
+          "weekday_date": "keskiviikko 29 helmikuuta 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.finnish",
+        "mode": "ascii",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.finnish",
+          "language.profile.dm6",
+          "language.mode.ascii"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 helmikuuta 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Finnish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Finnish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "keskiviikko 29 helmikuuta 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Finnish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Finnish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Finnish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Finnish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "keskiviikko|helmikuu"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "huomenna",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Finnish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Finnish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-utf8-lang.finnish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Finnish",
+        "case_id": "LANG-DM6-UTF8-finnish",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 helmikuuta 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "huomenna",
+          "weekday_date": "keskiviikko 29 helmikuuta 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.finnish",
+        "mode": "utf8",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.finnish",
+          "language.profile.dm6",
+          "language.mode.utf8"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 helmikuuta 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Finnish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Finnish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "keskiviikko 29 helmikuuta 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Finnish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Finnish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Finnish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Finnish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "keskiviikko|helmikuu"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "huomenna",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Finnish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Finnish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-ascii-lang.french",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "French",
+        "case_id": "LANG-DM6-ASCII-french",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 fevrier 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "demain",
+          "weekday_date": "mercredi 29 fevrier 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.french",
+        "mode": "ascii",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.french",
+          "language.profile.dm6",
+          "language.mode.ascii"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 fevrier 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "French"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=French",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "mercredi 29 fevrier 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "French"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=French",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "French"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=French",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "mercredi|février"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "demain",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "French"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=French",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-utf8-lang.french",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "French",
+        "case_id": "LANG-DM6-UTF8-french",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 février 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "demain",
+          "weekday_date": "mercredi 29 février 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.french",
+        "mode": "utf8",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.french",
+          "language.profile.dm6",
+          "language.mode.utf8"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 février 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "French"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=French",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "mercredi 29 février 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "French"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=French",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "French"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=French",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "mercredi|février"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "demain",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "French"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=French",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-ascii-lang.german",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "German",
+        "case_id": "LANG-DM6-ASCII-german",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Februar 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": "Mi. 29. Feb. 2040",
+          "special_rule": "remove trailing periods",
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "morgen",
+          "weekday_date": "Mittwoch 29 Februar 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.german",
+        "mode": "ascii",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.german",
+          "language.profile.dm6",
+          "language.mode.ascii"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 Februar 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "German"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=German",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "Mittwoch 29 Februar 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "German"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=German",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "German"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=German",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "Mittwoch|Februar"
+          },
+          "special_preprocessing": {
+            "case_id": "LANG-DM6-ASCII-german-PREPROCESS",
+            "error": "",
+            "exception": null,
+            "input": "Mi. 29. Feb. 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "German"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=German",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "morgen",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "German"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=German",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-utf8-lang.german",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "German",
+        "case_id": "LANG-DM6-UTF8-german",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Februar 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": "Mi. 29. Feb. 2040",
+          "special_rule": "remove trailing periods",
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "morgen",
+          "weekday_date": "Mittwoch 29 Februar 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.german",
+        "mode": "utf8",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.german",
+          "language.profile.dm6",
+          "language.mode.utf8"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 Februar 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "German"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=German",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "Mittwoch 29 Februar 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "German"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=German",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "German"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=German",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "Mittwoch|Februar"
+          },
+          "special_preprocessing": {
+            "case_id": "LANG-DM6-UTF8-german-PREPROCESS",
+            "error": "",
+            "exception": null,
+            "input": "Mi. 29. Feb. 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "German"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=German",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "morgen",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "German"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=German",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-ascii-lang.italian",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Italian",
+        "case_id": "LANG-DM6-ASCII-italian",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Febbraio 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "domani",
+          "weekday_date": "Mercoledi 29 Febbraio 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.italian",
+        "mode": "ascii",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.italian",
+          "language.profile.dm6",
+          "language.mode.ascii"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 Febbraio 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Italian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Italian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "Mercoledi 29 Febbraio 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Italian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Italian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Italian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Italian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "Mercoledì|Febbraio"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "domani",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Italian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Italian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-utf8-lang.italian",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Italian",
+        "case_id": "LANG-DM6-UTF8-italian",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Febbraio 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "domani",
+          "weekday_date": "Mercoledì 29 Febbraio 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.italian",
+        "mode": "utf8",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.italian",
+          "language.profile.dm6",
+          "language.mode.utf8"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 Febbraio 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Italian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Italian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "Mercoledì 29 Febbraio 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Italian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Italian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Italian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Italian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "Mercoledì|Febbraio"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "domani",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Italian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Italian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-ascii-lang.norwegian",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Norwegian",
+        "case_id": "LANG-DM6-ASCII-norwegian",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 februar 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": "on. 29. feb. 2040",
+          "special_rule": "remove trailing periods",
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "i morgen",
+          "weekday_date": "onsdag 29 februar 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.norwegian",
+        "mode": "ascii",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.norwegian",
+          "language.profile.dm6",
+          "language.mode.ascii"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 februar 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Norwegian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Norwegian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "onsdag 29 februar 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Norwegian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Norwegian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Norwegian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Norwegian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "onsdag|februar"
+          },
+          "special_preprocessing": {
+            "case_id": "LANG-DM6-ASCII-norwegian-PREPROCESS",
+            "error": "",
+            "exception": null,
+            "input": "on. 29. feb. 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Norwegian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Norwegian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "i morgen",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Norwegian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Norwegian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-utf8-lang.norwegian",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Norwegian",
+        "case_id": "LANG-DM6-UTF8-norwegian",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 februar 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": "on. 29. feb. 2040",
+          "special_rule": "remove trailing periods",
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "i morgen",
+          "weekday_date": "onsdag 29 februar 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.norwegian",
+        "mode": "utf8",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.norwegian",
+          "language.profile.dm6",
+          "language.mode.utf8"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 februar 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Norwegian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Norwegian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "onsdag 29 februar 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Norwegian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Norwegian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Norwegian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Norwegian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "onsdag|februar"
+          },
+          "special_preprocessing": {
+            "case_id": "LANG-DM6-UTF8-norwegian-PREPROCESS",
+            "error": "",
+            "exception": null,
+            "input": "on. 29. feb. 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Norwegian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Norwegian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "i morgen",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Norwegian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Norwegian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-ascii-lang.polish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Polish",
+        "case_id": "LANG-DM6-ASCII-polish",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 lutego 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "jutro",
+          "weekday_date": "sroda 29 lutego 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.polish",
+        "mode": "ascii",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.polish",
+          "language.profile.dm6",
+          "language.mode.ascii"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 lutego 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Polish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Polish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "sroda 29 lutego 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Polish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Polish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Polish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Polish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "środa|luty"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "jutro",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Polish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Polish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-utf8-lang.polish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Polish",
+        "case_id": "LANG-DM6-UTF8-polish",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 lutego 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "jutro",
+          "weekday_date": "środa 29 lutego 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.polish",
+        "mode": "utf8",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.polish",
+          "language.profile.dm6",
+          "language.mode.utf8"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 lutego 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Polish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Polish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "środa 29 lutego 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Polish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Polish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Polish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Polish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "środa|luty"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "jutro",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Polish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Polish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-ascii-lang.portuguese",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Portuguese",
+        "case_id": "LANG-DM6-ASCII-portuguese",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Fevereiro 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "amanha",
+          "weekday_date": "quarta 29 Fevereiro 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.portuguese",
+        "mode": "ascii",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.portuguese",
+          "language.profile.dm6",
+          "language.mode.ascii"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 Fevereiro 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Portuguese"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Portuguese",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "quarta 29 Fevereiro 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Portuguese"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Portuguese",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Portuguese"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Portuguese",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "quarta|Fevereiro"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "amanha",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Portuguese"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Portuguese",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-utf8-lang.portuguese",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Portuguese",
+        "case_id": "LANG-DM6-UTF8-portuguese",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Fevereiro 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "amanhã",
+          "weekday_date": "quarta 29 Fevereiro 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.portuguese",
+        "mode": "utf8",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.portuguese",
+          "language.profile.dm6",
+          "language.mode.utf8"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 Fevereiro 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Portuguese"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Portuguese",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "quarta 29 Fevereiro 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Portuguese"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Portuguese",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Portuguese"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Portuguese",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "quarta|Fevereiro"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "amanhã",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Portuguese"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Portuguese",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-ascii-lang.romanian",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Romanian",
+        "case_id": "LANG-DM6-ASCII-romanian",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 februarie 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "miine",
+          "weekday_date": "miercuri 29 februarie 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.romanian",
+        "mode": "ascii",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.romanian",
+          "language.profile.dm6",
+          "language.mode.ascii"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 februarie 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Romanian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Romanian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "miercuri 29 februarie 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Romanian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Romanian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Romanian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Romanian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "miercuri|februarie"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "miine",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Romanian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Romanian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-utf8-lang.romanian",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Romanian",
+        "case_id": "LANG-DM6-UTF8-romanian",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 februarie 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "mîine",
+          "weekday_date": "miercuri 29 februarie 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.romanian",
+        "mode": "utf8",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.romanian",
+          "language.profile.dm6",
+          "language.mode.utf8"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 februarie 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Romanian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Romanian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "miercuri 29 februarie 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Romanian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Romanian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Romanian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Romanian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "miercuri|februarie"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "mîine",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Romanian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Romanian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-ascii-lang.russian",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Russian",
+        "case_id": "LANG-DM6-ASCII-russian",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 февраля 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": "(среда) 29 февраля 2040 г.",
+          "special_rule": "remove parentheses and strip the year marker",
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "завтра",
+          "weekday_date": "среда 29 февраля 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.russian",
+        "mode": "ascii",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.russian",
+          "language.profile.dm6",
+          "language.mode.ascii"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "[parse] Invalid date string",
+            "exception": null,
+            "input": "29 февраля 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Russian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Russian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 1,
+            "value": null
+          },
+          "matching_weekday": {
+            "error": "[parse] Invalid date string",
+            "exception": null,
+            "input": "среда 29 февраля 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Russian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Russian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 1,
+            "value": null
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Russian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Russian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "среда|февраля"
+          },
+          "special_preprocessing": {
+            "case_id": "LANG-DM6-ASCII-russian-PREPROCESS",
+            "error": "[parse] Invalid date string",
+            "exception": null,
+            "input": "(среда) 29 февраля 2040 г.",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Russian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Russian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 1,
+            "value": null
+          },
+          "tomorrow": {
+            "error": "[parse] Invalid date string",
+            "exception": null,
+            "input": "завтра",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Russian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Russian",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 1,
+            "value": null
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-utf8-lang.russian",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Russian",
+        "case_id": "LANG-DM6-UTF8-russian",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 февраля 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": "(среда) 29 февраля 2040 г.",
+          "special_rule": "remove parentheses and strip the year marker",
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "завтра",
+          "weekday_date": "среда 29 февраля 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.russian",
+        "mode": "utf8",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.russian",
+          "language.profile.dm6",
+          "language.mode.utf8"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 февраля 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Russian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Russian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "среда 29 февраля 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Russian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Russian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Russian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Russian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "среда|февраля"
+          },
+          "special_preprocessing": {
+            "case_id": "LANG-DM6-UTF8-russian-PREPROCESS",
+            "error": "",
+            "exception": null,
+            "input": "(среда) 29 февраля 2040 г.",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Russian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Russian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "завтра",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Russian"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Russian",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-ascii-lang.spanish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Spanish",
+        "case_id": "LANG-DM6-ASCII-spanish",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Febrero 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "manana",
+          "weekday_date": "Miercoles 29 Febrero 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.spanish",
+        "mode": "ascii",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.spanish",
+          "language.profile.dm6",
+          "language.mode.ascii"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 Febrero 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Spanish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Spanish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "Miercoles 29 Febrero 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Spanish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Spanish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Spanish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Spanish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "Miércoles|Febrero"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "manana",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Spanish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Spanish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-utf8-lang.spanish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Spanish",
+        "case_id": "LANG-DM6-UTF8-spanish",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Febrero 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "mañana",
+          "weekday_date": "Miércoles 29 Febrero 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.spanish",
+        "mode": "utf8",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.spanish",
+          "language.profile.dm6",
+          "language.mode.utf8"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 Febrero 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Spanish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Spanish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "Miércoles 29 Febrero 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Spanish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Spanish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Spanish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Spanish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "Miércoles|Febrero"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "mañana",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Spanish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Spanish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-ascii-lang.swedish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Swedish",
+        "case_id": "LANG-DM6-ASCII-swedish",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Februari 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "i morgon",
+          "weekday_date": "Onsdag 29 Februari 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.swedish",
+        "mode": "ascii",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.swedish",
+          "language.profile.dm6",
+          "language.mode.ascii"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 Februari 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Swedish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Swedish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "Onsdag 29 Februari 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Swedish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Swedish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Swedish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Swedish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "Onsdag|Februari"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "i morgon",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Swedish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Swedish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-utf8-lang.swedish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Swedish",
+        "case_id": "LANG-DM6-UTF8-swedish",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 Februari 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": null,
+          "special_rule": null,
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "i morgon",
+          "weekday_date": "Onsdag 29 Februari 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.swedish",
+        "mode": "utf8",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.swedish",
+          "language.profile.dm6",
+          "language.mode.utf8"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 Februari 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Swedish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Swedish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "Onsdag 29 Februari 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Swedish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Swedish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Swedish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Swedish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "Onsdag|Februari"
+          },
+          "special_preprocessing": null,
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "i morgon",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Swedish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Swedish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-ascii-lang.turkish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Turkish",
+        "case_id": "LANG-DM6-ASCII-turkish",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 subat 2040",
+          "input_mode": "ascii",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": "car. 29. sub. 2040",
+          "special_rule": "remove trailing periods",
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "yarin",
+          "weekday_date": "carsamba 29 subat 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.turkish",
+        "mode": "ascii",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.turkish",
+          "language.profile.dm6",
+          "language.mode.ascii"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 subat 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Turkish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Turkish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "carsamba 29 subat 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Turkish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Turkish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Turkish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Turkish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "çarşamba|şubat"
+          },
+          "special_preprocessing": {
+            "case_id": "LANG-DM6-ASCII-turkish-PREPROCESS",
+            "error": "",
+            "exception": null,
+            "input": "car. 29. sub. 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Turkish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Turkish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "yarin",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "ASCII",
+                "language": "Turkish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Turkish",
+                "Encoding=ASCII",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "dm6-utf8-lang.turkish",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "canonical_language": "Turkish",
+        "case_id": "LANG-DM6-UTF8-turkish",
+        "contract_ids": [
+          "date.parse-text",
+          "date.render-pattern",
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "fixture": {
+          "date_order": "non-US",
+          "fixed_clock": "2040-02-28-10:20:30,Etc/UTC",
+          "full_date": "29 şubat 2040",
+          "input_mode": "utf8",
+          "render_pattern": "%A|%B",
+          "render_source": "2040-02-29 16:05:09",
+          "special": "çar. 29. şub. 2040",
+          "special_rule": "remove trailing periods",
+          "target_date": "2040-02-29",
+          "target_weekday": "Wednesday",
+          "tomorrow": "yarın",
+          "weekday_date": "çarşamba 29 şubat 2040"
+        },
+        "fixture_sha256": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+        "language_id": "lang.turkish",
+        "mode": "utf8",
+        "operation_id": "language.canonical-runtime-corpus",
+        "partition_ids": [
+          "language.lang.turkish",
+          "language.profile.dm6",
+          "language.mode.utf8"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "backend_version": "7.00",
+          "full_date": {
+            "error": "",
+            "exception": null,
+            "input": "29 şubat 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Turkish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Turkish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "matching_weekday": {
+            "error": "",
+            "exception": null,
+            "input": "çarşamba 29 şubat 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Turkish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Turkish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "reference_assertions": {
+            "backend_version": "7.00",
+            "distribution_version": "7.00",
+            "tzcode": "tzcode2026c",
+            "tzdata": "tzdata2026c"
+          },
+          "rendering": {
+            "error": "",
+            "exception": null,
+            "parse_status": 0,
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Turkish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Turkish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "value": "çarşamba|şubat"
+          },
+          "special_preprocessing": {
+            "case_id": "LANG-DM6-UTF8-turkish-PREPROCESS",
+            "error": "",
+            "exception": null,
+            "input": "çar. 29. şub. 2040",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Turkish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Turkish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          },
+          "tomorrow": {
+            "error": "",
+            "exception": null,
+            "input": "yarın",
+            "setup": {
+              "effective": {
+                "date_format": "non-US",
+                "encoding": "UTF-8",
+                "language": "Turkish"
+              },
+              "error": "",
+              "exception": null,
+              "requested": [
+                "Defaults=1",
+                "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+                "Language=Turkish",
+                "Encoding=UTF-8",
+                "DateFormat=non-US"
+              ],
+              "status": null
+            },
+            "status": 0,
+            "value": "2040022900:00:00"
+          }
+        },
+        "schema_version": 1,
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    }
+  ],
+  "parallel_workers": 4,
+  "profile": "dm6",
+  "reference_assertions": {
+    "distribution_version": "7.00",
+    "dm5_backend_version": "5.66",
+    "dm6_backend_version": "7.00",
+    "tzcode": "tzcode2026c",
+    "tzdata": "tzdata2026c"
+  },
+  "repetitions": 2,
+  "schema_version": 1,
+  "sha256": {
+    "/tmp/Date-Manip-7.00.tar.gz": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+    "docs/research/language-family/cases.json": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm": "c31d2bf42f317bb811fa5e838778d12b0e5ff8dd38b012114fe9fa4471845c2e",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm": "c181a8d908efbc2c18cc0a59e10e90628161dc3acf811c9c0292985280953d85",
+    "tools/probes/language-family/probe.pl": "3036d40f7858c8154f9ff2bd5555f4193a3bc7a6065eba1ae3015dc90d2b7f8a",
+    "tools/probes/language-family/run-corpus.py": "c7fdd9a6dd60f8e34847a3511205ae0cc759144877797bb1a13dc131affc060f"
+  },
+  "status": "research evidence; no expected value is approved",
+  "timeout_seconds": 15
+}
