@@ -1,0 +1,388 @@
+{
+  "schema_version": 1,
+  "status": "original research fixtures; results require review before promotion",
+  "reference": {
+    "distribution_version": "7.00",
+    "backend_version": "7.00",
+    "tzdata": "tzdata2026c",
+    "tzcode": "tzcode2026c"
+  },
+  "profile": {
+    "interface": "Date::Manip object API",
+    "configuration": [
+      "Defaults=1",
+      "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+      "Language=English",
+      "Encoding=ASCII",
+      "DateFormat=non-US"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "OBJ-001-DIRECT-CONSTRUCTORS",
+      "operation_id": "object.create",
+      "contract_ids": [
+        "object.create",
+        "date.read-value",
+        "delta.read-value",
+        "recur.set-frequency",
+        "error.read-state"
+      ],
+      "partition_ids": [
+        "object.create.target",
+        "object.create.initial-value"
+      ],
+      "action": "direct-constructors"
+    },
+    {
+      "case_id": "OBJ-002-RECEIVER-NEW-EMPTY",
+      "operation_id": "object.create",
+      "contract_ids": [
+        "object.create",
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "date.read-value",
+        "delta.read-value",
+        "recur.set-frequency",
+        "error.read-state"
+      ],
+      "partition_ids": [
+        "object.create.source",
+        "object.create.initial-value"
+      ],
+      "action": "receiver-new-empty"
+    },
+    {
+      "case_id": "OBJ-003-SHORTCUT-CLASS-MATRIX",
+      "operation_id": "date.create",
+      "contract_ids": [
+        "date.create",
+        "delta.create",
+        "recur.create"
+      ],
+      "partition_ids": [
+        "object.create.target",
+        "date.create.receiver-kind"
+      ],
+      "action": "shortcut-class-matrix"
+    },
+    {
+      "case_id": "OBJ-004-SHORTCUT-INITIAL-VALUES",
+      "operation_id": "date.create",
+      "contract_ids": [
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "date.read-value",
+        "delta.read-value",
+        "recur.set-frequency",
+        "error.read-state"
+      ],
+      "partition_ids": [
+        "object.create.initial-value",
+        "date.create.initial-value"
+      ],
+      "action": "shortcut-initial-values"
+    },
+    {
+      "case_id": "OBJ-005-CROSS-KIND-CLASS-NEW",
+      "operation_id": "object.create",
+      "contract_ids": [
+        "object.create",
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "date.read-value",
+        "delta.read-value",
+        "recur.set-frequency",
+        "error.read-state"
+      ],
+      "partition_ids": [
+        "object.create.source",
+        "object.create.initial-value"
+      ],
+      "action": "cross-kind-class-new"
+    },
+    {
+      "case_id": "OBJ-006-CONFIG-SHARED-SAME-KIND",
+      "operation_id": "object.create",
+      "contract_ids": [
+        "object.create",
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "error.read-state"
+      ],
+      "partition_ids": [
+        "object.create.source",
+        "context.create.isolation"
+      ],
+      "action": "config-shared-same-kind",
+      "cross_reference": [
+        "CFG-CONTEXT-DERIVE"
+      ]
+    },
+    {
+      "case_id": "OBJ-007-CONFIG-SHARED-SHORTCUTS",
+      "operation_id": "date.create",
+      "contract_ids": [
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "error.read-state"
+      ],
+      "partition_ids": [
+        "object.create.target",
+        "context.create.isolation"
+      ],
+      "action": "config-shared-shortcuts",
+      "cross_reference": [
+        "CFG-CONTEXT-SERVICES"
+      ]
+    },
+    {
+      "case_id": "OBJ-008-CONFIG-ISOLATED-KINDS",
+      "operation_id": "context.create",
+      "contract_ids": [
+        "context.create",
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "error.read-state"
+      ],
+      "partition_ids": [
+        "context.create.receiver-kind",
+        "context.create.isolation"
+      ],
+      "action": "config-isolated-kinds",
+      "cross_reference": [
+        "CFG-CONTEXT-DERIVE"
+      ]
+    },
+    {
+      "case_id": "OBJ-009-DATE-VALUE-CONTEXTS",
+      "operation_id": "date.read-value",
+      "contract_ids": [
+        "date.create",
+        "date.read-value",
+        "error.read-state"
+      ],
+      "partition_ids": [
+        "date.read-value.representation",
+        "date.read-value.return-context",
+        "date.read-value.receiver-state"
+      ],
+      "action": "date-value-contexts"
+    },
+    {
+      "case_id": "OBJ-010-DATE-VALUE-UNSET",
+      "operation_id": "date.read-value",
+      "contract_ids": [
+        "date.create",
+        "date.read-value",
+        "error.read-state"
+      ],
+      "partition_ids": [
+        "date.read-value.return-context",
+        "date.read-value.receiver-state",
+        "error.read-state.state"
+      ],
+      "action": "date-value-unset"
+    },
+    {
+      "case_id": "OBJ-011-DELTA-VALUE-CONTEXTS",
+      "operation_id": "delta.read-value",
+      "contract_ids": [
+        "delta.create",
+        "delta.read-value",
+        "error.read-state"
+      ],
+      "partition_ids": [
+        "binding.Date::Manip::Delta.value.scalar-list"
+      ],
+      "action": "delta-value-contexts",
+      "mapping_status": "Mapped against the complete API contract map, including arithmetic and recurrence families."
+    },
+    {
+      "case_id": "OBJ-012-DELTA-VALUE-ERROR",
+      "operation_id": "delta.parse-text",
+      "contract_ids": [
+        "delta.create",
+        "error.read-state",
+        "delta.read-value",
+        "delta.parse-text"
+      ],
+      "partition_ids": [
+        "binding.Date::Manip::Delta.value.error-state",
+        "error.read-state.state"
+      ],
+      "action": "delta-value-error",
+      "mapping_status": "Mapped against the complete API contract map, including arithmetic and recurrence families."
+    },
+    {
+      "case_id": "OBJ-013-RECUR-CARRIER-GETTERS",
+      "operation_id": "recur.set-frequency",
+      "contract_ids": [
+        "recur.create",
+        "recur.set-frequency",
+        "recur.set-start",
+        "recur.set-end",
+        "recur.set-base-date",
+        "recur.set-modifiers",
+        "error.read-state"
+      ],
+      "partition_ids": [
+        "binding.Date::Manip::Recur.frequency.getter",
+        "binding.Date::Manip::Recur.range-getters"
+      ],
+      "action": "recur-carrier-getters",
+      "mapping_status": "Mapped against the complete API contract map, including arithmetic and recurrence families."
+    },
+    {
+      "case_id": "OBJ-014-DATE-SET",
+      "operation_id": "date.replace-field",
+      "contract_ids": [
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ],
+      "partition_ids": [
+        "date.replace-field.field-kind",
+        "date.replace-field.validation",
+        "date.replace-field.mutation"
+      ],
+      "action": "date-set"
+    },
+    {
+      "case_id": "OBJ-015-DELTA-SET",
+      "operation_id": "delta.replace-fields",
+      "contract_ids": [
+        "delta.create",
+        "error.read-state",
+        "delta.replace-fields",
+        "delta.read-value"
+      ],
+      "partition_ids": [
+        "binding.Date::Manip::Delta.set.hash",
+        "binding.Date::Manip::Delta.set.invalid"
+      ],
+      "action": "delta-set",
+      "mapping_status": "Mapped against the complete API contract map, including arithmetic and recurrence families."
+    },
+    {
+      "case_id": "OBJ-016-ERR-LIFECYCLE",
+      "operation_id": "error.read-state",
+      "contract_ids": [
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "error.read-state",
+        "date.parse-text",
+        "delta.parse-text",
+        "recur.parse"
+      ],
+      "partition_ids": [
+        "error.read-state.state",
+        "error.read-state.clear-argument"
+      ],
+      "action": "err-lifecycle",
+      "cross_reference": [
+        "CFG-ERROR-CLEAR"
+      ]
+    },
+    {
+      "case_id": "OBJ-017-ERR-ISOLATION",
+      "operation_id": "error.read-state",
+      "contract_ids": [
+        "error.read-state",
+        "object.create",
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "date.parse-text",
+        "delta.parse-text",
+        "recur.parse"
+      ],
+      "partition_ids": [
+        "error.read-state.sharing"
+      ],
+      "action": "err-isolation",
+      "cross_reference": [
+        "CFG-ERROR-CLEAR"
+      ]
+    },
+    {
+      "case_id": "OBJ-018-METHOD-CALLABILITY",
+      "operation_id": "object.create",
+      "contract_ids": [
+        "object.create",
+        "context.create",
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "date.read-value",
+        "date.replace-field",
+        "delta.read-value",
+        "delta.replace-fields",
+        "recur.set-frequency",
+        "recur.set-start",
+        "recur.set-end",
+        "recur.set-base-date",
+        "recur.set-modifiers",
+        "error.read-state",
+        "config.apply-settings",
+        "config.read-settings"
+      ],
+      "partition_ids": [
+        "binding.public-method-matrix",
+        "binding.clone-clear-reset-absence"
+      ],
+      "action": "method-callability",
+      "mapping_status": "clone, clear, and reset are not public methods on Date, Delta, or Recur in 7.00"
+    },
+    {
+      "case_id": "OBJ-019-INVALID-CONSTRUCTORS",
+      "operation_id": "object.create",
+      "contract_ids": [
+        "object.create",
+        "error.read-state",
+        "date.read-value",
+        "delta.read-value",
+        "recur.set-frequency"
+      ],
+      "partition_ids": [
+        "object.create.initial-value",
+        "error.read-state.state"
+      ],
+      "action": "invalid-constructors"
+    },
+    {
+      "case_id": "OBJ-020-RECUR-CARRIER-SET",
+      "operation_id": "recur.set-frequency",
+      "contract_ids": [
+        "recur.create",
+        "error.read-state",
+        "recur.set-frequency",
+        "recur.set-start",
+        "recur.set-end",
+        "recur.set-base-date",
+        "recur.set-modifiers",
+        "date.read-value"
+      ],
+      "partition_ids": [
+        "binding.Date::Manip::Recur.component-setters",
+        "binding.Date::Manip::Recur.frequency-reset"
+      ],
+      "action": "recur-carrier-set",
+      "mapping_status": "Mapped against the complete API contract map, including arithmetic and recurrence families."
+    }
+  ]
+}

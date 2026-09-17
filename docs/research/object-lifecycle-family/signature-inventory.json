@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "status": "public Date/Delta/Recur lifecycle surface for bounded research; not a completeness claim for all object APIs",
+  "reference": {
+    "distribution": "Date-Manip 7.00",
+    "tzdata": "tzdata2026c",
+    "tzcode": "tzcode2026c",
+    "public_documentation": [
+      "/tmp/Date-Manip-7.00/lib/Date/Manip/Obj.pod",
+      "/tmp/Date-Manip-7.00/lib/Date/Manip/Date.pod",
+      "/tmp/Date-Manip-7.00/lib/Date/Manip/Delta.pod",
+      "/tmp/Date-Manip-7.00/lib/Date/Manip/Recur.pod"
+    ]
+  },
+  "documented_call_shapes": [
+    {
+      "callable": "new",
+      "shape": "target class with optional source object, initial text, parser arguments, and final configuration-pair list; or existing receiver with optional initial text, parser arguments, and final configuration-pair list"
+    },
+    {
+      "callable": "new_config",
+      "shape": "existing receiver with optional initial text, parser arguments accepted through the same constructor path as new, and a final configuration-pair list"
+    },
+    {
+      "callable": "new_date/new_delta/new_recur",
+      "shape": "existing receiver with optional initial text and configuration-pair list"
+    },
+    {
+      "callable": "Date value",
+      "shape": "optional representation selector; scalar context returns serialized text and list context returns six fields"
+    },
+    {
+      "callable": "Date set",
+      "shape": "field selector, replacement values, and optional daylight-saving disambiguation flag"
+    },
+    {
+      "callable": "Delta value",
+      "shape": "no arguments; scalar context returns serialized text and list context returns seven fields"
+    },
+    {
+      "callable": "Delta set",
+      "shape": "option map; the documented compatibility form accepts field, value, and optional non-normalization flag"
+    },
+    {
+      "callable": "Recur frequency/start/end/basedate/modifiers",
+      "shape": "no arguments reads a component; documented component arguments replace that component"
+    },
+    {
+      "callable": "err",
+      "shape": "no argument reads current text; a truthy argument clears current text"
+    },
+    {
+      "callable": "config/get_config",
+      "shape": "configuration pairs apply settings; one or more names read settings"
+    }
+  ],
+  "receivers": [
+    {
+      "kind": "date",
+      "class": "Date::Manip::Date",
+      "public_lifecycle_calls": [
+        {
+          "callable": "new",
+          "observed_cases": [
+            "OBJ-001-DIRECT-CONSTRUCTORS",
+            "OBJ-002-RECEIVER-NEW-EMPTY",
+            "OBJ-005-CROSS-KIND-CLASS-NEW",
+            "OBJ-019-INVALID-CONSTRUCTORS"
+          ]
+        },
+        {
+          "callable": "new_config",
+          "observed_cases": [
+            "OBJ-008-CONFIG-ISOLATED-KINDS"
+          ]
+        },
+        {
+          "callable": "new_date",
+          "observed_cases": [
+            "OBJ-003-SHORTCUT-CLASS-MATRIX",
+            "OBJ-004-SHORTCUT-INITIAL-VALUES",
+            "OBJ-007-CONFIG-SHARED-SHORTCUTS"
+          ]
+        },
+        {
+          "callable": "new_delta",
+          "observed_cases": [
+            "OBJ-003-SHORTCUT-CLASS-MATRIX",
+            "OBJ-004-SHORTCUT-INITIAL-VALUES",
+            "OBJ-007-CONFIG-SHARED-SHORTCUTS"
+          ]
+        },
+        {
+          "callable": "new_recur",
+          "observed_cases": [
+            "OBJ-003-SHORTCUT-CLASS-MATRIX",
+            "OBJ-004-SHORTCUT-INITIAL-VALUES",
+            "OBJ-007-CONFIG-SHARED-SHORTCUTS"
+          ]
+        },
+        {
+          "callable": "value",
+          "forms": [
+            "scalar",
+            "list",
+            "omitted selector",
+            "empty selector",
+            "other selector",
+            "local",
+            "gmt"
+          ],
+          "observed_cases": [
+            "OBJ-009-DATE-VALUE-CONTEXTS",
+            "OBJ-010-DATE-VALUE-UNSET"
+          ]
+        },
+        {
+          "callable": "set",
+          "forms": [
+            "individual field",
+            "whole-date fields",
+            "unknown field"
+          ],
+          "observed_cases": [
+            "OBJ-014-DATE-SET"
+          ]
+        },
+        {
+          "callable": "err",
+          "forms": [
+            "read",
+            "read with false clear request",
+            "read with true clear request"
+          ],
+          "observed_cases": [
+            "OBJ-016-ERR-LIFECYCLE",
+            "OBJ-017-ERR-ISOLATION"
+          ]
+        },
+        {
+          "callable": "config/get_config",
+          "forms": [
+            "shared context",
+            "independent context"
+          ],
+          "observed_cases": [
+            "OBJ-006-CONFIG-SHARED-SAME-KIND",
+            "OBJ-007-CONFIG-SHARED-SHORTCUTS",
+            "OBJ-008-CONFIG-ISOLATED-KINDS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "duration",
+      "class": "Date::Manip::Delta",
+      "public_lifecycle_calls": [
+        {
+          "callable": "new/new_config/new_date/new_delta/new_recur",
+          "observed_cases": [
+            "OBJ-001-DIRECT-CONSTRUCTORS",
+            "OBJ-002-RECEIVER-NEW-EMPTY",
+            "OBJ-003-SHORTCUT-CLASS-MATRIX",
+            "OBJ-004-SHORTCUT-INITIAL-VALUES",
+            "OBJ-005-CROSS-KIND-CLASS-NEW",
+            "OBJ-008-CONFIG-ISOLATED-KINDS",
+            "OBJ-019-INVALID-CONSTRUCTORS"
+          ]
+        },
+        {
+          "callable": "value",
+          "forms": [
+            "scalar",
+            "list",
+            "valid",
+            "fresh zero",
+            "error-bearing"
+          ],
+          "observed_cases": [
+            "OBJ-011-DELTA-VALUE-CONTEXTS",
+            "OBJ-012-DELTA-VALUE-ERROR"
+          ]
+        },
+        {
+          "callable": "set",
+          "forms": [
+            "field map",
+            "unknown option"
+          ],
+          "observed_cases": [
+            "OBJ-015-DELTA-SET"
+          ]
+        },
+        {
+          "callable": "err/config/get_config",
+          "observed_cases": [
+            "OBJ-006-CONFIG-SHARED-SAME-KIND",
+            "OBJ-007-CONFIG-SHARED-SHORTCUTS",
+            "OBJ-008-CONFIG-ISOLATED-KINDS",
+            "OBJ-016-ERR-LIFECYCLE",
+            "OBJ-017-ERR-ISOLATION"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "recurrence",
+      "class": "Date::Manip::Recur",
+      "public_lifecycle_calls": [
+        {
+          "callable": "new/new_config/new_date/new_delta/new_recur",
+          "observed_cases": [
+            "OBJ-001-DIRECT-CONSTRUCTORS",
+            "OBJ-002-RECEIVER-NEW-EMPTY",
+            "OBJ-003-SHORTCUT-CLASS-MATRIX",
+            "OBJ-004-SHORTCUT-INITIAL-VALUES",
+            "OBJ-005-CROSS-KIND-CLASS-NEW",
+            "OBJ-008-CONFIG-ISOLATED-KINDS",
+            "OBJ-019-INVALID-CONSTRUCTORS"
+          ]
+        },
+        {
+          "callable": "frequency/start/end/basedate/modifiers",
+          "forms": [
+            "getters",
+            "setters",
+            "frequency replacement reset"
+          ],
+          "observed_cases": [
+            "OBJ-013-RECUR-CARRIER-GETTERS",
+            "OBJ-020-RECUR-CARRIER-SET"
+          ]
+        },
+        {
+          "callable": "err/config/get_config",
+          "observed_cases": [
+            "OBJ-006-CONFIG-SHARED-SAME-KIND",
+            "OBJ-007-CONFIG-SHARED-SHORTCUTS",
+            "OBJ-008-CONFIG-ISOLATED-KINDS",
+            "OBJ-016-ERR-LIFECYCLE",
+            "OBJ-017-ERR-ISOLATION"
+          ]
+        }
+      ]
+    }
+  ],
+  "public_absences": [
+    {
+      "name": "clone",
+      "receivers": [
+        "date",
+        "duration",
+        "recurrence"
+      ],
+      "observation": "no callable method; fresh same-kind construction is exercised through new"
+    },
+    {
+      "name": "clear",
+      "receivers": [
+        "date",
+        "duration",
+        "recurrence"
+      ],
+      "observation": "no callable method; the documented error-clear form is err with a truthy argument"
+    },
+    {
+      "name": "reset",
+      "receivers": [
+        "date",
+        "duration",
+        "recurrence"
+      ],
+      "observation": "no callable method; recurrence frequency replacement has its own documented clearing behavior"
+    },
+    {
+      "name": "value",
+      "receivers": [
+        "recurrence"
+      ],
+      "observation": "no general value method; public component getters carry recurrence state"
+    },
+    {
+      "name": "set",
+      "receivers": [
+        "recurrence"
+      ],
+      "observation": "no general set method; public component methods serve as setters when passed arguments"
+    }
+  ],
+  "contract_mapping_gaps": [],
+  "contract_mapping_source": "docs/research/api/contract-map.json (all operation families)"
+}

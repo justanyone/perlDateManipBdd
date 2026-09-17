@@ -220,8 +220,13 @@
       "evidence": [
         "docs/research/config-files-family/feature-map.json",
         "spec/drafts/config-files/loading.feature",
-        "tools/review/config_file_literals.py"
-      ]
+        "tools/review/config_file_literals.py",
+        "docs/research/object-lifecycle-family/README.md",
+        "docs/research/object-lifecycle-review.md",
+        "spec/drafts/object-lifecycle",
+        "tools/probes/object-lifecycle-family/review.py"
+      ],
+      "lifecycle_review": "20 repeated original public lifecycle cases integrated after independent repair and coordinator review; exact error/carrier sequence, effective configuration isolation, full public-operation mappings and normalized portable civil dates verified. Broader constructor/mutation partitions remain open."
     },
     {
       "id": "coverage-review",

@@ -1,0 +1,3106 @@
+{
+  "clean_environment_keys": [
+    "LANG",
+    "LC_ALL",
+    "PATH",
+    "PERL5LIB",
+    "PERL_HASH_SEED",
+    "PERL_PERTURB_KEYS",
+    "TZ"
+  ],
+  "command": "python3 tools/probes/object-lifecycle-family/run.py",
+  "fixture_file": "docs/research/object-lifecycle-family/cases.json",
+  "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+  "fresh_temporary_working_directory_per_attempt": true,
+  "observations": [
+    {
+      "case_id": "OBJ-001-DIRECT-CONSTRUCTORS",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-001-DIRECT-CONSTRUCTORS",
+        "contract_ids": [
+          "object.create",
+          "date.read-value",
+          "delta.read-value",
+          "recur.set-frequency",
+          "error.read-state"
+        ],
+        "cross_reference": null,
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": null,
+        "operation_id": "object.create",
+        "partition_ids": [
+          "object.create.target",
+          "object.create.initial-value"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "date": {
+            "class": "Date::Manip::Date",
+            "list": {
+              "count": 6,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                2040,
+                2,
+                29,
+                16,
+                5,
+                9
+              ]
+            },
+            "scalar": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040022916:05:09"
+            }
+          },
+          "delta": {
+            "class": "Date::Manip::Delta",
+            "list": {
+              "count": 7,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                0,
+                0,
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            "scalar": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "0:0:0:1:2:3:4"
+            }
+          },
+          "dependent_calls_executed": true,
+          "recur": {
+            "class": "Date::Manip::Recur",
+            "frequency_list": {
+              "count": 1,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                "0:0:1:0:0:0:0"
+              ]
+            },
+            "frequency_scalar": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "0:0:1:0:0:0:0"
+            }
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "direct-constructors"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-002-RECEIVER-NEW-EMPTY",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-002-RECEIVER-NEW-EMPTY",
+        "contract_ids": [
+          "object.create",
+          "date.create",
+          "delta.create",
+          "recur.create",
+          "date.read-value",
+          "delta.read-value",
+          "recur.set-frequency",
+          "error.read-state"
+        ],
+        "cross_reference": null,
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": null,
+        "operation_id": "object.create",
+        "partition_ids": [
+          "object.create.source",
+          "object.create.initial-value"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "date": {
+            "child": {
+              "class": "Date::Manip::Date",
+              "list": {
+                "count": 0,
+                "error_after": "[value] Object does not contain a date",
+                "error_before": "[value] Object does not contain a date",
+                "exception": null,
+                "value": []
+              },
+              "scalar": {
+                "defined": true,
+                "error_after": "[value] Object does not contain a date",
+                "error_before": "",
+                "exception": null,
+                "value": ""
+              }
+            },
+            "source": {
+              "class": "Date::Manip::Date",
+              "list": {
+                "count": 6,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": [
+                  2040,
+                  2,
+                  29,
+                  16,
+                  5,
+                  9
+                ]
+              },
+              "scalar": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "2040022916:05:09"
+              }
+            }
+          },
+          "delta": {
+            "child": {
+              "class": "Date::Manip::Delta",
+              "list": {
+                "count": 7,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "scalar": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "0:0:0:0:0:0:0"
+              }
+            },
+            "source": {
+              "class": "Date::Manip::Delta",
+              "list": {
+                "count": 7,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": [
+                  0,
+                  0,
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              "scalar": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "0:0:0:1:2:3:4"
+              }
+            }
+          },
+          "dependent_calls_executed": true,
+          "recur": {
+            "child": {
+              "class": "Date::Manip::Recur",
+              "frequency_list": {
+                "count": 1,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": [
+                  ""
+                ]
+              },
+              "frequency_scalar": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": ""
+              }
+            },
+            "source": {
+              "class": "Date::Manip::Recur",
+              "frequency_list": {
+                "count": 1,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": [
+                  "0:0:1:0:0:0:0"
+                ]
+              },
+              "frequency_scalar": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "0:0:1:0:0:0:0"
+              }
+            }
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "receiver-new-empty"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-003-SHORTCUT-CLASS-MATRIX",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-003-SHORTCUT-CLASS-MATRIX",
+        "contract_ids": [
+          "date.create",
+          "delta.create",
+          "recur.create"
+        ],
+        "cross_reference": null,
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": null,
+        "operation_id": "date.create",
+        "partition_ids": [
+          "object.create.target",
+          "date.create.receiver-kind"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "date": {
+            "new_date": "Date::Manip::Date",
+            "new_delta": "Date::Manip::Delta",
+            "new_recur": "Date::Manip::Recur"
+          },
+          "delta": {
+            "new_date": "Date::Manip::Date",
+            "new_delta": "Date::Manip::Delta",
+            "new_recur": "Date::Manip::Recur"
+          },
+          "dependent_calls_executed": true,
+          "recur": {
+            "new_date": "Date::Manip::Date",
+            "new_delta": "Date::Manip::Delta",
+            "new_recur": "Date::Manip::Recur"
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "shortcut-class-matrix"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-004-SHORTCUT-INITIAL-VALUES",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-004-SHORTCUT-INITIAL-VALUES",
+        "contract_ids": [
+          "date.create",
+          "delta.create",
+          "recur.create",
+          "date.read-value",
+          "delta.read-value",
+          "recur.set-frequency",
+          "error.read-state"
+        ],
+        "cross_reference": null,
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": null,
+        "operation_id": "date.create",
+        "partition_ids": [
+          "object.create.initial-value",
+          "date.create.initial-value"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "date_to_delta": {
+            "class": "Date::Manip::Delta",
+            "list": {
+              "count": 7,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                0,
+                0,
+                0,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "scalar": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "0:0:0:2:3:4:5"
+            }
+          },
+          "delta_to_recur": {
+            "class": "Date::Manip::Recur",
+            "frequency_list": {
+              "count": 1,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                "0:0:0:1:0:0:0"
+              ]
+            },
+            "frequency_scalar": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "0:0:0:1:0:0:0"
+            }
+          },
+          "dependent_calls_executed": true,
+          "recur_to_date": {
+            "class": "Date::Manip::Date",
+            "list": {
+              "count": 6,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                2040,
+                3,
+                1,
+                5,
+                6,
+                7
+              ]
+            },
+            "scalar": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040030105:06:07"
+            }
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "shortcut-initial-values"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-005-CROSS-KIND-CLASS-NEW",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-005-CROSS-KIND-CLASS-NEW",
+        "contract_ids": [
+          "object.create",
+          "date.create",
+          "delta.create",
+          "recur.create",
+          "date.read-value",
+          "delta.read-value",
+          "recur.set-frequency",
+          "error.read-state"
+        ],
+        "cross_reference": null,
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": null,
+        "operation_id": "object.create",
+        "partition_ids": [
+          "object.create.source",
+          "object.create.initial-value"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "date_to_recur": {
+            "class": "Date::Manip::Recur",
+            "frequency_list": {
+              "count": 1,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                "0:0:0:1:0:0:0"
+              ]
+            },
+            "frequency_scalar": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "0:0:0:1:0:0:0"
+            }
+          },
+          "delta_to_date": {
+            "class": "Date::Manip::Date",
+            "list": {
+              "count": 6,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                2040,
+                3,
+                2,
+                6,
+                7,
+                8
+              ]
+            },
+            "scalar": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040030206:07:08"
+            }
+          },
+          "dependent_calls_executed": true,
+          "recur_to_delta": {
+            "class": "Date::Manip::Delta",
+            "list": {
+              "count": 7,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                0,
+                0,
+                0,
+                3,
+                4,
+                5,
+                6
+              ]
+            },
+            "scalar": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "0:0:0:3:4:5:6"
+            }
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "cross-kind-class-new"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-006-CONFIG-SHARED-SAME-KIND",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-006-CONFIG-SHARED-SAME-KIND",
+        "contract_ids": [
+          "object.create",
+          "date.create",
+          "delta.create",
+          "recur.create",
+          "config.apply-settings",
+          "config.read-settings",
+          "error.read-state"
+        ],
+        "cross_reference": [
+          "CFG-CONTEXT-DERIVE"
+        ],
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": null,
+        "operation_id": "object.create",
+        "partition_ids": [
+          "object.create.source",
+          "context.create.isolation"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "date": {
+            "after_child_change": {
+              "child": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "non-US"
+              },
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "non-US"
+              }
+            },
+            "after_source_change": {
+              "child": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              },
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              }
+            },
+            "child_change": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": false,
+              "status_reference_type": null
+            },
+            "classes": [
+              "Date::Manip::Date",
+              "Date::Manip::Date"
+            ],
+            "initial_source_config": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": false,
+              "status_reference_type": null
+            },
+            "source_change": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": false,
+              "status_reference_type": null
+            }
+          },
+          "delta": {
+            "after_child_change": {
+              "child": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "non-US"
+              },
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "non-US"
+              }
+            },
+            "after_source_change": {
+              "child": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              },
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              }
+            },
+            "child_change": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": true,
+              "status_reference_type": "HASH"
+            },
+            "classes": [
+              "Date::Manip::Delta",
+              "Date::Manip::Delta"
+            ],
+            "initial_source_config": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": true,
+              "status_reference_type": "HASH"
+            },
+            "source_change": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": true,
+              "status_reference_type": "HASH"
+            }
+          },
+          "dependent_calls_executed": true,
+          "recur": {
+            "after_child_change": {
+              "child": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "non-US"
+              },
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "non-US"
+              }
+            },
+            "after_source_change": {
+              "child": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              },
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              }
+            },
+            "child_change": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": false,
+              "status_reference_type": null
+            },
+            "classes": [
+              "Date::Manip::Recur",
+              "Date::Manip::Recur"
+            ],
+            "initial_source_config": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": false,
+              "status_reference_type": null
+            },
+            "source_change": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": false,
+              "status_reference_type": null
+            }
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "config-shared-same-kind"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-007-CONFIG-SHARED-SHORTCUTS",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-007-CONFIG-SHARED-SHORTCUTS",
+        "contract_ids": [
+          "date.create",
+          "delta.create",
+          "recur.create",
+          "config.apply-settings",
+          "config.read-settings",
+          "error.read-state"
+        ],
+        "cross_reference": [
+          "CFG-CONTEXT-SERVICES"
+        ],
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": null,
+        "operation_id": "date.create",
+        "partition_ids": [
+          "object.create.target",
+          "context.create.isolation"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "date": {
+            "child_change": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": false,
+              "status_reference_type": null
+            },
+            "classes": [
+              "Date::Manip::Date",
+              "Date::Manip::Delta",
+              "Date::Manip::Recur"
+            ],
+            "initial_source_config": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": false,
+              "status_reference_type": null
+            },
+            "observed": {
+              "children": [
+                {
+                  "defined": true,
+                  "error_after": "",
+                  "error_before": "",
+                  "exception": null,
+                  "value": "non-US"
+                },
+                {
+                  "defined": true,
+                  "error_after": "",
+                  "error_before": "",
+                  "exception": null,
+                  "value": "non-US"
+                },
+                {
+                  "defined": true,
+                  "error_after": "",
+                  "error_before": "",
+                  "exception": null,
+                  "value": "non-US"
+                }
+              ],
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "non-US"
+              }
+            }
+          },
+          "delta": {
+            "child_change": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": false,
+              "status_reference_type": null
+            },
+            "classes": [
+              "Date::Manip::Date",
+              "Date::Manip::Delta",
+              "Date::Manip::Recur"
+            ],
+            "initial_source_config": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": true,
+              "status_reference_type": "HASH"
+            },
+            "observed": {
+              "children": [
+                {
+                  "defined": true,
+                  "error_after": "",
+                  "error_before": "",
+                  "exception": null,
+                  "value": "non-US"
+                },
+                {
+                  "defined": true,
+                  "error_after": "",
+                  "error_before": "",
+                  "exception": null,
+                  "value": "non-US"
+                },
+                {
+                  "defined": true,
+                  "error_after": "",
+                  "error_before": "",
+                  "exception": null,
+                  "value": "non-US"
+                }
+              ],
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "non-US"
+              }
+            }
+          },
+          "dependent_calls_executed": true,
+          "recur": {
+            "child_change": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": false,
+              "status_reference_type": null
+            },
+            "classes": [
+              "Date::Manip::Date",
+              "Date::Manip::Delta",
+              "Date::Manip::Recur"
+            ],
+            "initial_source_config": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": false,
+              "status_reference_type": null
+            },
+            "observed": {
+              "children": [
+                {
+                  "defined": true,
+                  "error_after": "",
+                  "error_before": "",
+                  "exception": null,
+                  "value": "non-US"
+                },
+                {
+                  "defined": true,
+                  "error_after": "",
+                  "error_before": "",
+                  "exception": null,
+                  "value": "non-US"
+                },
+                {
+                  "defined": true,
+                  "error_after": "",
+                  "error_before": "",
+                  "exception": null,
+                  "value": "non-US"
+                }
+              ],
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "non-US"
+              }
+            }
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "config-shared-shortcuts"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-008-CONFIG-ISOLATED-KINDS",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-008-CONFIG-ISOLATED-KINDS",
+        "contract_ids": [
+          "context.create",
+          "date.create",
+          "delta.create",
+          "recur.create",
+          "config.apply-settings",
+          "config.read-settings",
+          "error.read-state"
+        ],
+        "cross_reference": [
+          "CFG-CONTEXT-DERIVE"
+        ],
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": null,
+        "operation_id": "context.create",
+        "partition_ids": [
+          "context.create.receiver-kind",
+          "context.create.isolation"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "date": {
+            "after_child_change": {
+              "child": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              },
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              }
+            },
+            "after_source_change": {
+              "child": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              },
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "non-US"
+              }
+            },
+            "child_change": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": false,
+              "status_reference_type": null
+            },
+            "classes": [
+              "Date::Manip::Date",
+              "Date::Manip::Date"
+            ],
+            "initial": {
+              "child": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "non-US"
+              },
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              }
+            },
+            "initial_source_config": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": false,
+              "status_reference_type": null
+            },
+            "source_change": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": false,
+              "status_reference_type": null
+            }
+          },
+          "delta": {
+            "after_child_change": {
+              "child": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              },
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              }
+            },
+            "after_source_change": {
+              "child": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              },
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "non-US"
+              }
+            },
+            "child_change": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": true,
+              "status_reference_type": "HASH"
+            },
+            "classes": [
+              "Date::Manip::Delta",
+              "Date::Manip::Delta"
+            ],
+            "initial": {
+              "child": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "non-US"
+              },
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              }
+            },
+            "initial_source_config": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": true,
+              "status_reference_type": "HASH"
+            },
+            "source_change": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": true,
+              "status_reference_type": "HASH"
+            }
+          },
+          "dependent_calls_executed": true,
+          "recur": {
+            "after_child_change": {
+              "child": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              },
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              }
+            },
+            "after_source_change": {
+              "child": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              },
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "non-US"
+              }
+            },
+            "child_change": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": false,
+              "status_reference_type": null
+            },
+            "classes": [
+              "Date::Manip::Recur",
+              "Date::Manip::Recur"
+            ],
+            "initial": {
+              "child": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "non-US"
+              },
+              "source": {
+                "defined": true,
+                "error_after": "",
+                "error_before": "",
+                "exception": null,
+                "value": "US"
+              }
+            },
+            "initial_source_config": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": false,
+              "status_reference_type": null
+            },
+            "source_change": {
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "status": null,
+              "status_defined": false,
+              "status_reference_type": null
+            }
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "config-isolated-kinds"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-009-DATE-VALUE-CONTEXTS",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-009-DATE-VALUE-CONTEXTS",
+        "contract_ids": [
+          "date.create",
+          "date.read-value",
+          "error.read-state"
+        ],
+        "cross_reference": null,
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": null,
+        "operation_id": "date.read-value",
+        "partition_ids": [
+          "date.read-value.representation",
+          "date.read-value.return-context",
+          "date.read-value.receiver-state"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "dependent_calls_executed": true,
+          "empty": {
+            "list": {
+              "count": 6,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                2040,
+                2,
+                29,
+                16,
+                5,
+                9
+              ]
+            },
+            "scalar": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040022916:05:09"
+            }
+          },
+          "gmt": {
+            "list": {
+              "count": 6,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                2040,
+                2,
+                29,
+                21,
+                5,
+                9
+              ]
+            },
+            "scalar": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040022921:05:09"
+            }
+          },
+          "local": {
+            "list": {
+              "count": 6,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                2040,
+                2,
+                29,
+                21,
+                5,
+                9
+              ]
+            },
+            "scalar": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040022921:05:09"
+            }
+          },
+          "omitted": {
+            "list": {
+              "count": 6,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                2040,
+                2,
+                29,
+                16,
+                5,
+                9
+              ]
+            },
+            "scalar": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040022916:05:09"
+            }
+          },
+          "other": {
+            "list": {
+              "count": 6,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                2040,
+                2,
+                29,
+                16,
+                5,
+                9
+              ]
+            },
+            "scalar": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040022916:05:09"
+            }
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "date-value-contexts"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-010-DATE-VALUE-UNSET",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-010-DATE-VALUE-UNSET",
+        "contract_ids": [
+          "date.create",
+          "date.read-value",
+          "error.read-state"
+        ],
+        "cross_reference": null,
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": null,
+        "operation_id": "date.read-value",
+        "partition_ids": [
+          "date.read-value.return-context",
+          "date.read-value.receiver-state",
+          "error.read-state.state"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "dependent_calls_executed": true,
+          "list": {
+            "count": 0,
+            "error_after": "[value] Object does not contain a date",
+            "error_before": "",
+            "exception": null,
+            "value": []
+          },
+          "scalar": {
+            "defined": true,
+            "error_after": "[value] Object does not contain a date",
+            "error_before": "",
+            "exception": null,
+            "value": ""
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "date-value-unset"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-011-DELTA-VALUE-CONTEXTS",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-011-DELTA-VALUE-CONTEXTS",
+        "contract_ids": [
+          "delta.create",
+          "delta.read-value",
+          "error.read-state"
+        ],
+        "cross_reference": null,
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": "Mapped against the complete API contract map, including arithmetic and recurrence families.",
+        "operation_id": "delta.read-value",
+        "partition_ids": [
+          "binding.Date::Manip::Delta.value.scalar-list"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "dependent_calls_executed": true,
+          "fresh": {
+            "list": {
+              "count": 7,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "scalar": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "0:0:0:0:0:0:0"
+            }
+          },
+          "valid": {
+            "list": {
+              "count": 7,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                0,
+                0,
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            "scalar": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "0:0:0:1:2:3:4"
+            }
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "delta-value-contexts"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-012-DELTA-VALUE-ERROR",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-012-DELTA-VALUE-ERROR",
+        "contract_ids": [
+          "delta.create",
+          "error.read-state",
+          "delta.read-value",
+          "delta.parse-text"
+        ],
+        "cross_reference": null,
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": "Mapped against the complete API contract map, including arithmetic and recurrence families.",
+        "operation_id": "delta.parse-text",
+        "partition_ids": [
+          "binding.Date::Manip::Delta.value.error-state",
+          "error.read-state.state"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "dependent_calls_executed": true,
+          "list": {
+            "count": 0,
+            "error_after": "[parse] Invalid delta string",
+            "error_before": "[parse] Invalid delta string",
+            "exception": null,
+            "value": []
+          },
+          "list_parse_status": 1,
+          "scalar": {
+            "defined": true,
+            "error_after": "[parse] Invalid delta string",
+            "error_before": "[parse] Invalid delta string",
+            "exception": null,
+            "value": ""
+          },
+          "scalar_parse_status": 1
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "delta-value-error"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-013-RECUR-CARRIER-GETTERS",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-013-RECUR-CARRIER-GETTERS",
+        "contract_ids": [
+          "recur.create",
+          "recur.set-frequency",
+          "recur.set-start",
+          "recur.set-end",
+          "recur.set-base-date",
+          "recur.set-modifiers",
+          "error.read-state"
+        ],
+        "cross_reference": null,
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": "Mapped against the complete API contract map, including arithmetic and recurrence families.",
+        "operation_id": "recur.set-frequency",
+        "partition_ids": [
+          "binding.Date::Manip::Recur.frequency.getter",
+          "binding.Date::Manip::Recur.range-getters"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "dependent_calls_executed": true,
+          "fresh": {
+            "basedate": {
+              "count": 2,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                null,
+                null
+              ]
+            },
+            "end": {
+              "defined": false,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": null
+            },
+            "frequency": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": ""
+            },
+            "modifiers": {
+              "count": 0,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": []
+            },
+            "start": {
+              "defined": false,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": null
+            }
+          },
+          "valid": {
+            "basedate": {
+              "count": 2,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                null,
+                null
+              ]
+            },
+            "end": {
+              "defined": false,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": null
+            },
+            "frequency_list": {
+              "count": 1,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": [
+                "0:0:1:0:0:0:0"
+              ]
+            },
+            "frequency_scalar": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "0:0:1:0:0:0:0"
+            },
+            "modifiers": {
+              "count": 0,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": []
+            },
+            "start": {
+              "defined": false,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": null
+            }
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "recur-carrier-getters"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-014-DATE-SET",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-014-DATE-SET",
+        "contract_ids": [
+          "date.create",
+          "date.replace-field",
+          "date.read-value",
+          "error.read-state"
+        ],
+        "cross_reference": null,
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": null,
+        "operation_id": "date.replace-field",
+        "partition_ids": [
+          "date.replace-field.field-kind",
+          "date.replace-field.validation",
+          "date.replace-field.mutation"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "dependent_calls_executed": true,
+          "impossible_whole_date": {
+            "before": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040022916:05:09"
+            },
+            "error_after_set": "[set] Invalid date argument",
+            "getter": {
+              "defined": true,
+              "error_after": "[value] Object does not contain a date",
+              "error_before": "[set] Invalid date argument",
+              "exception": null,
+              "value": ""
+            },
+            "status": 1
+          },
+          "individual_day_31": {
+            "before": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040022916:05:09"
+            },
+            "error_after_set": "",
+            "getter": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040023116:05:09"
+            },
+            "status": 0
+          },
+          "success": {
+            "before": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040022916:05:09"
+            },
+            "error_after_set": "",
+            "getter": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040020116:05:09"
+            },
+            "status": 0
+          },
+          "unknown_field": {
+            "before": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040022916:05:09"
+            },
+            "error_after_set": "[set] Invalid field",
+            "getter": {
+              "defined": true,
+              "error_after": "[value] Object does not contain a date",
+              "error_before": "[set] Invalid field",
+              "exception": null,
+              "value": ""
+            },
+            "status": 1
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "date-set"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-015-DELTA-SET",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-015-DELTA-SET",
+        "contract_ids": [
+          "delta.create",
+          "error.read-state",
+          "delta.replace-fields",
+          "delta.read-value"
+        ],
+        "cross_reference": null,
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": "Mapped against the complete API contract map, including arithmetic and recurrence families.",
+        "operation_id": "delta.replace-fields",
+        "partition_ids": [
+          "binding.Date::Manip::Delta.set.hash",
+          "binding.Date::Manip::Delta.set.invalid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "dependent_calls_executed": true,
+          "invalid": {
+            "before": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "0:0:0:1:2:3:4"
+            },
+            "error_after_set": "[set] Unknown option: bogus",
+            "getter": {
+              "defined": true,
+              "error_after": "[set] Unknown option: bogus",
+              "error_before": "[set] Unknown option: bogus",
+              "exception": null,
+              "value": ""
+            },
+            "status": 1
+          },
+          "success": {
+            "before": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "0:0:0:1:2:3:4"
+            },
+            "error_after_set": "",
+            "getter": {
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "0:0:0:1:5:3:4"
+            },
+            "status": 0
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "delta-set"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-016-ERR-LIFECYCLE",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-016-ERR-LIFECYCLE",
+        "contract_ids": [
+          "date.create",
+          "delta.create",
+          "recur.create",
+          "error.read-state",
+          "date.parse-text",
+          "delta.parse-text",
+          "recur.parse"
+        ],
+        "cross_reference": [
+          "CFG-ERROR-CLEAR"
+        ],
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": null,
+        "operation_id": "error.read-state",
+        "partition_ids": [
+          "error.read-state.state",
+          "error.read-state.clear-argument"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "date": {
+            "after_failure": "[parse] Invalid date string",
+            "after_false": "[parse] Invalid date string",
+            "after_true": "",
+            "false_return": "[parse] Invalid date string",
+            "status": 1,
+            "true_return": null,
+            "true_return_defined": false
+          },
+          "delta": {
+            "after_failure": "[parse] Invalid delta string",
+            "after_false": "[parse] Invalid delta string",
+            "after_true": "",
+            "false_return": "[parse] Invalid delta string",
+            "status": 1,
+            "true_return": null,
+            "true_return_defined": false
+          },
+          "dependent_calls_executed": true,
+          "recur": {
+            "after_failure": "[parse] Invalid frequency string",
+            "after_false": "[parse] Invalid frequency string",
+            "after_true": "",
+            "false_return": "[parse] Invalid frequency string",
+            "status": 1,
+            "true_return": null,
+            "true_return_defined": false
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "err-lifecycle"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-017-ERR-ISOLATION",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-017-ERR-ISOLATION",
+        "contract_ids": [
+          "error.read-state",
+          "object.create",
+          "date.create",
+          "delta.create",
+          "recur.create",
+          "date.parse-text",
+          "delta.parse-text",
+          "recur.parse"
+        ],
+        "cross_reference": [
+          "CFG-ERROR-CLEAR"
+        ],
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": null,
+        "operation_id": "error.read-state",
+        "partition_ids": [
+          "error.read-state.sharing"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "date": {
+            "sibling_error": "[parse] Invalid date string",
+            "sibling_status": 1,
+            "source_after": "",
+            "source_before": ""
+          },
+          "delta": {
+            "sibling_error": "[parse] Invalid delta string",
+            "sibling_status": 1,
+            "source_after": "",
+            "source_before": ""
+          },
+          "dependent_calls_executed": true,
+          "recur": {
+            "sibling_error": "[parse] Invalid frequency string",
+            "sibling_status": 1,
+            "source_after": "",
+            "source_before": ""
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "err-isolation"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-018-METHOD-CALLABILITY",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-018-METHOD-CALLABILITY",
+        "contract_ids": [
+          "object.create",
+          "context.create",
+          "date.create",
+          "delta.create",
+          "recur.create",
+          "date.read-value",
+          "date.replace-field",
+          "delta.read-value",
+          "delta.replace-fields",
+          "recur.set-frequency",
+          "recur.set-start",
+          "recur.set-end",
+          "recur.set-base-date",
+          "recur.set-modifiers",
+          "error.read-state",
+          "config.apply-settings",
+          "config.read-settings"
+        ],
+        "cross_reference": null,
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": "clone, clear, and reset are not public methods on Date, Delta, or Recur in 7.00",
+        "operation_id": "object.create",
+        "partition_ids": [
+          "binding.public-method-matrix",
+          "binding.clone-clear-reset-absence"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "date": {
+            "clear": false,
+            "clone": false,
+            "config": true,
+            "err": true,
+            "get_config": true,
+            "new": true,
+            "new_config": true,
+            "new_date": true,
+            "new_delta": true,
+            "new_recur": true,
+            "reset": false,
+            "set": true,
+            "value": true
+          },
+          "delta": {
+            "clear": false,
+            "clone": false,
+            "config": true,
+            "err": true,
+            "get_config": true,
+            "new": true,
+            "new_config": true,
+            "new_date": true,
+            "new_delta": true,
+            "new_recur": true,
+            "reset": false,
+            "set": true,
+            "value": true
+          },
+          "dependent_calls_executed": true,
+          "recur": {
+            "clear": false,
+            "clone": false,
+            "config": true,
+            "err": true,
+            "get_config": true,
+            "new": true,
+            "new_config": true,
+            "new_date": true,
+            "new_delta": true,
+            "new_recur": true,
+            "reset": false,
+            "set": false,
+            "value": false
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "method-callability"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-019-INVALID-CONSTRUCTORS",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-019-INVALID-CONSTRUCTORS",
+        "contract_ids": [
+          "object.create",
+          "error.read-state",
+          "date.read-value",
+          "delta.read-value",
+          "recur.set-frequency"
+        ],
+        "cross_reference": null,
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": null,
+        "operation_id": "object.create",
+        "partition_ids": [
+          "object.create.initial-value",
+          "error.read-state.state"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "date": {
+            "class": "Date::Manip::Date",
+            "error_before_getter": "[parse] Invalid date string",
+            "getter": {
+              "defined": true,
+              "error_after": "[value] Object does not contain a date",
+              "error_before": "[parse] Invalid date string",
+              "exception": null,
+              "value": ""
+            }
+          },
+          "delta": {
+            "class": "Date::Manip::Delta",
+            "error_before_getter": "[parse] Invalid delta string",
+            "getter": {
+              "defined": true,
+              "error_after": "[parse] Invalid delta string",
+              "error_before": "[parse] Invalid delta string",
+              "exception": null,
+              "value": ""
+            }
+          },
+          "dependent_calls_executed": true,
+          "recur": {
+            "class": "Date::Manip::Recur",
+            "error_before_getter": "[parse] Invalid frequency string",
+            "frequency": {
+              "defined": true,
+              "error_after": "[parse] Invalid frequency string",
+              "error_before": "[parse] Invalid frequency string",
+              "exception": null,
+              "value": ""
+            }
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "invalid-constructors"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    },
+    {
+      "case_id": "OBJ-020-RECUR-CARRIER-SET",
+      "exit_status": 0,
+      "fixture_hash_matches": true,
+      "json_decode_error": null,
+      "observation": {
+        "call_stdout": "",
+        "case_id": "OBJ-020-RECUR-CARRIER-SET",
+        "contract_ids": [
+          "recur.create",
+          "error.read-state",
+          "recur.set-frequency",
+          "recur.set-start",
+          "recur.set-end",
+          "recur.set-base-date",
+          "recur.set-modifiers",
+          "date.read-value"
+        ],
+        "cross_reference": null,
+        "environment": {
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "PERL_HASH_SEED": "0",
+          "PERL_PERTURB_KEYS": "0",
+          "TZ": "Etc/UTC",
+          "cwd": "fresh temporary directory"
+        },
+        "exception": null,
+        "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+        "mapping_status": "Mapped against the complete API contract map, including arithmetic and recurrence families.",
+        "operation_id": "recur.set-frequency",
+        "partition_ids": [
+          "binding.Date::Manip::Recur.component-setters",
+          "binding.Date::Manip::Recur.frequency-reset"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "profile_configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=non-US"
+        ],
+        "raw_return": {
+          "after_frequency_replace": {
+            "actual_base": {
+              "class": null,
+              "defined": false,
+              "error_after": null,
+              "error_before": null,
+              "exception": null,
+              "value": null
+            },
+            "end": {
+              "class": null,
+              "defined": false,
+              "error_after": null,
+              "error_before": null,
+              "exception": null,
+              "value": null
+            },
+            "error": "",
+            "frequency": "0:0:0:2:0:0:0",
+            "modifiers": [],
+            "specified_base": {
+              "class": null,
+              "defined": false,
+              "error_after": null,
+              "error_before": null,
+              "exception": null,
+              "value": null
+            },
+            "start": {
+              "class": null,
+              "defined": false,
+              "error_after": null,
+              "error_before": null,
+              "exception": null,
+              "value": null
+            }
+          },
+          "after_modifiers": {
+            "actual_base": {
+              "class": null,
+              "defined": false,
+              "error_after": null,
+              "error_before": null,
+              "exception": null,
+              "value": null
+            },
+            "end": {
+              "class": "Date::Manip::Date",
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040030508:00:00"
+            },
+            "error": "",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [
+              "fd1",
+              "bd2"
+            ],
+            "specified_base": {
+              "class": null,
+              "defined": false,
+              "error_after": null,
+              "error_before": null,
+              "exception": null,
+              "value": null
+            },
+            "start": {
+              "class": "Date::Manip::Date",
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040030108:00:00"
+            }
+          },
+          "after_range_and_base": {
+            "actual_base": {
+              "class": null,
+              "defined": false,
+              "error_after": null,
+              "error_before": null,
+              "exception": null,
+              "value": null
+            },
+            "end": {
+              "class": "Date::Manip::Date",
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040030508:00:00"
+            },
+            "error": "",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [],
+            "specified_base": {
+              "class": "Date::Manip::Date",
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040022908:00:00"
+            },
+            "start": {
+              "class": "Date::Manip::Date",
+              "defined": true,
+              "error_after": "",
+              "error_before": "",
+              "exception": null,
+              "value": "2040030108:00:00"
+            }
+          },
+          "dependent_calls_executed": true,
+          "frequency_replace_status": 0,
+          "setter_statuses": {
+            "basedate": 0,
+            "end": 0,
+            "frequency": 0,
+            "modifiers": 0,
+            "start": 0
+          }
+        },
+        "reference_assertions": {
+          "backend_version": "7.00",
+          "distribution_version": "7.00",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "request": {
+          "action": "recur-carrier-set"
+        },
+        "schema_version": 1,
+        "setup": {
+          "class": "Date::Manip::Date",
+          "effective": {
+            "dateformat": "non-US",
+            "encoding": "ASCII",
+            "language": "English"
+          },
+          "error_after": "",
+          "error_before": "",
+          "exception": null,
+          "status": null
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "stderr": ""
+    }
+  ],
+  "parallel_workers": 4,
+  "reference_assertions": {
+    "backend_version": "7.00",
+    "distribution_version": "7.00",
+    "tzcode": "tzcode2026c",
+    "tzdata": "tzdata2026c"
+  },
+  "repetitions": 2,
+  "schema_version": 1,
+  "sha256": {
+    "docs/research/object-lifecycle-family/cases.json": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm": "c181a8d908efbc2c18cc0a59e10e90628161dc3acf811c9c0292985280953d85",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm": "f977a78616d58d288d7d9f862876677a7bd1edcb8a1658ecc9bae5c7a68bbf00",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm": "5ece620f80b039048d09b72fcb30f0e09ce8bb1151a0720db80ebdd2f9d7686f",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm": "6daf668372ada128ea8a0ada4ca1b5fb79096ed7fb8977b98658eb1b51f141cc",
+    "tools/probes/object-lifecycle-family/probe.pl": "4c99bdecb617c36bd579c9858bc1a2de86372052358c9b5e3b52d6301fc36e51",
+    "tools/probes/object-lifecycle-family/run.py": "a6d8b90bd98aa65fca8aff20a7973651249cba131415902776704a2ede2977f5"
+  },
+  "status": "research evidence; no expected value is approved",
+  "timeout_seconds": 15
+}

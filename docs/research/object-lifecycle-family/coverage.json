@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "status": "bounded draft mapping; cases are repeatable research observations and remain unapproved",
+  "fixture_sha256": "e10918faaca166fc0678c856be8c8b418516509546214d27db15b876148fe5c8",
+  "features": [
+    "spec/drafts/object-lifecycle/creation-and-context.feature",
+    "spec/drafts/object-lifecycle/value-state-and-errors.feature"
+  ],
+  "case_mappings": [
+    {
+      "case_id": "OBJ-001-DIRECT-CONSTRUCTORS",
+      "feature": "creation-and-context.feature",
+      "scenario": "Each direct constructor parses an initial value",
+      "contract_ids": [
+        "object.create",
+        "date.read-value",
+        "delta.read-value",
+        "recur.set-frequency",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "OBJ-002-RECEIVER-NEW-EMPTY",
+      "feature": "creation-and-context.feature",
+      "scenario": "Receiver construction keeps the kind and starts with a fresh carrier",
+      "contract_ids": [
+        "object.create",
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "date.read-value",
+        "delta.read-value",
+        "recur.set-frequency",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "OBJ-003-SHORTCUT-CLASS-MATRIX",
+      "feature": "creation-and-context.feature",
+      "scenario": "Every receiver kind can use every typed construction shortcut",
+      "contract_ids": [
+        "date.create",
+        "delta.create",
+        "recur.create"
+      ]
+    },
+    {
+      "case_id": "OBJ-004-SHORTCUT-INITIAL-VALUES",
+      "feature": "creation-and-context.feature",
+      "scenario": "Typed shortcuts parse their supplied initial text",
+      "contract_ids": [
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "date.read-value",
+        "delta.read-value",
+        "recur.set-frequency",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "OBJ-005-CROSS-KIND-CLASS-NEW",
+      "feature": "creation-and-context.feature",
+      "scenario": "A class constructor accepts a source receiver of another kind",
+      "contract_ids": [
+        "object.create",
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "date.read-value",
+        "delta.read-value",
+        "recur.set-frequency",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "OBJ-006-CONFIG-SHARED-SAME-KIND",
+      "feature": "creation-and-context.feature",
+      "scenario": "Same-kind receiver construction shares configuration changes",
+      "contract_ids": [
+        "object.create",
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "OBJ-007-CONFIG-SHARED-SHORTCUTS",
+      "feature": "creation-and-context.feature",
+      "scenario": "Typed shortcuts share configuration across all receiver kinds",
+      "contract_ids": [
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "OBJ-008-CONFIG-ISOLATED-KINDS",
+      "feature": "creation-and-context.feature",
+      "scenario": "Independent-context construction isolates every receiver kind",
+      "contract_ids": [
+        "context.create",
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "config.apply-settings",
+        "config.read-settings",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "OBJ-009-DATE-VALUE-CONTEXTS",
+      "feature": "value-state-and-errors.feature",
+      "scenario": "Date value selectors preserve scalar and list return forms",
+      "contract_ids": [
+        "date.create",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "OBJ-010-DATE-VALUE-UNSET",
+      "feature": "value-state-and-errors.feature",
+      "scenario": "An unset date distinguishes empty scalar text from an empty list",
+      "contract_ids": [
+        "date.create",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "OBJ-011-DELTA-VALUE-CONTEXTS",
+      "feature": "value-state-and-errors.feature",
+      "scenario": "Duration values expose seven fields in list context",
+      "contract_ids": [
+        "delta.create",
+        "delta.read-value",
+        "error.read-state"
+      ],
+      "mapping_status": "Mapped against the complete API contract map, including arithmetic and recurrence families."
+    },
+    {
+      "case_id": "OBJ-012-DELTA-VALUE-ERROR",
+      "feature": "value-state-and-errors.feature",
+      "scenario": "A failed duration parse leaves empty scalar and list results",
+      "contract_ids": [
+        "delta.create",
+        "error.read-state",
+        "delta.read-value",
+        "delta.parse-text"
+      ],
+      "mapping_status": "Mapped against the complete API contract map, including arithmetic and recurrence families."
+    },
+    {
+      "case_id": "OBJ-013-RECUR-CARRIER-GETTERS",
+      "feature": "value-state-and-errors.feature",
+      "scenario": "Recurrence component getters preserve absent values",
+      "contract_ids": [
+        "recur.create",
+        "recur.set-frequency",
+        "recur.set-start",
+        "recur.set-end",
+        "recur.set-base-date",
+        "recur.set-modifiers",
+        "error.read-state"
+      ],
+      "mapping_status": "Mapped against the complete API contract map, including arithmetic and recurrence families."
+    },
+    {
+      "case_id": "OBJ-014-DATE-SET",
+      "feature": "value-state-and-errors.feature",
+      "scenario": "Date field replacement distinguishes component and whole-date validation",
+      "contract_ids": [
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "OBJ-015-DELTA-SET",
+      "feature": "value-state-and-errors.feature",
+      "scenario": "Duration replacement preserves success and failure state",
+      "contract_ids": [
+        "delta.create",
+        "error.read-state",
+        "delta.replace-fields",
+        "delta.read-value"
+      ],
+      "mapping_status": "Mapped against the complete API contract map, including arithmetic and recurrence families."
+    },
+    {
+      "case_id": "OBJ-016-ERR-LIFECYCLE",
+      "feature": "value-state-and-errors.feature",
+      "scenario": "Error reads clear state only for a truthy clear request",
+      "contract_ids": [
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "error.read-state",
+        "date.parse-text",
+        "delta.parse-text",
+        "recur.parse"
+      ]
+    },
+    {
+      "case_id": "OBJ-017-ERR-ISOLATION",
+      "feature": "value-state-and-errors.feature",
+      "scenario": "A child parse error does not change its source receiver's error",
+      "contract_ids": [
+        "error.read-state",
+        "object.create",
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "date.parse-text",
+        "delta.parse-text",
+        "recur.parse"
+      ]
+    },
+    {
+      "case_id": "OBJ-018-METHOD-CALLABILITY",
+      "feature": "creation-and-context.feature",
+      "scenario": "Lifecycle method availability follows the public receiver surfaces",
+      "contract_ids": [
+        "object.create",
+        "context.create",
+        "date.create",
+        "delta.create",
+        "recur.create",
+        "date.read-value",
+        "date.replace-field",
+        "delta.read-value",
+        "delta.replace-fields",
+        "recur.set-frequency",
+        "recur.set-start",
+        "recur.set-end",
+        "recur.set-base-date",
+        "recur.set-modifiers",
+        "error.read-state",
+        "config.apply-settings",
+        "config.read-settings"
+      ]
+    },
+    {
+      "case_id": "OBJ-019-INVALID-CONSTRUCTORS",
+      "feature": "creation-and-context.feature",
+      "scenario": "Invalid constructor text leaves typed objects with errors",
+      "contract_ids": [
+        "object.create",
+        "error.read-state",
+        "date.read-value",
+        "delta.read-value",
+        "recur.set-frequency"
+      ]
+    },
+    {
+      "case_id": "OBJ-020-RECUR-CARRIER-SET",
+      "feature": "value-state-and-errors.feature",
+      "scenario": "Recurrence component setters expose modifier and frequency resets",
+      "contract_ids": [
+        "recur.create",
+        "error.read-state",
+        "recur.set-frequency",
+        "recur.set-start",
+        "recur.set-end",
+        "recur.set-base-date",
+        "recur.set-modifiers",
+        "date.read-value"
+      ],
+      "mapping_status": "Mapped against the complete API contract map, including arithmetic and recurrence families."
+    }
+  ],
+  "separately_owned": [
+    "parse-cache-family owns converted Date value carrier cache behavior before parse_date and parse_time mutation, including failures, clearing, retries, and full-parse recovery"
+  ]
+}

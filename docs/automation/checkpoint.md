@@ -454,3 +454,18 @@ semantic integration is still next. partial_parsing now owns NEW date-set-family
 paths. Other workers have returned; check live handles before reassigning them.
 The accepted99% statement/95% branch gate and review of every uncovered path remain
 unchanged. There is still no executable BDD harness, and the goal remains active.
+
+## Lifecycle integration checkpoint
+
+Integrated20 public lifecycle cases after reviewing all feature statements and the
+independent repair report. Targeted evidence checker verifies20 mappings, hashes,
+selected exact mutation/error carriers and actual bidirectional isolation; both
+feature files have valid lightweight structure. Date presentation explicitly
+normalizes civil fields without claiming native scalar bytes. Unsupported methods
+remain binding-only, and impossible-date component mutation remains disputed.
+
+partial_parsing owns NEW date-set-family work; coverage_setup owns NEW
+fixed-offset-family work targeting408 generated offset routes; pattern_repair
+owns NEW zone-transition-boundaries work. Returned52 parsing-edge cases and
+denominator audit still await integration. No family completeness or BDD pass
+is claimed.
