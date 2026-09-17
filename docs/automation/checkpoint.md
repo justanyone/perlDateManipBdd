@@ -715,3 +715,24 @@ pattern_repair owns date-set source-separation repair but must remain read-only
 until the collector is terminal; root must explicitly release edits. coverage_setup
 owns NEW week-rules-family finite105-setting matrix; partial_parsing owns behavior
 gap ledger. Portable-draft-audit returned for root review. No completion claim.
+
+
+## Portable audit and navigation vocabulary repair
+
+Integrated the historical52-feature audit at04f60c3. It identifies concrete public
+specification ambiguities and source-binding leakage without claiming export
+approval. Root repaired navigation's ordinary public scenarios: named serialized
+wall/ordered-field/local/UTC observers replace Perl context wording, and native
+module-load warning assertions remain only in excluded scenarios. All87 literal
+checks and the real parser pass; binding metadata preserves exact calls and order.
+
+Expanded coverage session61966 remains live (240/472 raw covered payloads existed
+at the latest count); date-set agent must still keep corpus files read-only until
+root releases edits after terminal verification. Root additionally built a numeric
+uncovered-location extractor and verified it on the30-case database: exact5802
+statement/3080branch totals and6318 outstanding outcome records, without copying
+source text. These coverage changes remain pending full-run review/integration.
+
+coverage_setup returned the105-setting week-rule matrix (20580 forward pairs and
+196 selected inverse results) for root review; it now owns NEW week-rules-edges.
+partial_parsing continues ledger snapshot verification. No final completeness claim.

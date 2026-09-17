@@ -18,10 +18,8 @@ Feature: Return previous and next occurrences through functional profiles
 
   Scenario: Functional profiles navigate weekday and partial-clock predicates
     When I make the functional navigation request in each row
-    Then each call returns a defined scalar containing the stated result
+    Then each call returns a text value containing the stated result
     And no call raises an exception
-    And current-profile rows emit no warning
-    And compatibility-profile rows emit only the separately classified deprecation warning
     And the exact requests and results are:
       | case | profile | direction | input text | exact arguments | result |
       | NAV-DM6-NEXT-NUMERIC-CURR0 | current | next | 2040-11-23 18:15:00 Etc/UTC | [number 5, number 0] | 2040-11-30 18:15:00 |
@@ -61,12 +59,10 @@ Feature: Return previous and next occurrences through functional profiles
       | NAV-DM5-NEXT-LEAP-MIDNIGHT | compatibility | next | 2040-02-28 23:59:59 | [null, number 0, number 0, number 0, number 0] | 2040-02-29 00:00:00 |
       | NAV-DM5-PREV-YEAR-WEEKDAY | compatibility | previous | 2040-01-01 00:00:00 | [number 6, number 0] | 2039-12-31 00:00:00 |
 
-  Scenario: Invalid source and weekday inputs return defined empty text
+  Scenario: Invalid source and weekday inputs return empty text
     When I make the invalid functional request in each row
-    Then each call returns a defined scalar equal to empty text
+    Then each call returns a text value equal to empty text
     And no call raises an exception
-    And current-profile rows emit no warning
-    And compatibility-profile rows emit only the separately classified deprecation warning
     And the exact requests are:
       | case | profile | direction | input text | exact arguments |
       | NAV-DM6-NEXT-INVALID-DATE | current | next | not a valid date phrase | [number 5, number 1] |
@@ -93,7 +89,7 @@ Feature: Return previous and next occurrences through functional profiles
   @reference-binding @excluded-from-portable-handoff @observed-compatibility @disputed
   Scenario: Omitted inclusion mode acts as strict navigation and warns
     When I make the omitted-argument request in each row
-    Then each call returns a defined scalar equal to "2040-11-30 18:15:00"
+    Then each call returns a text value equal to "2040-11-30 18:15:00"
     And no call raises an exception
     And the exact requests and warning counts are:
       | case | profile | direction | input text | exact arguments | warnings |
@@ -105,11 +101,9 @@ Feature: Return previous and next occurrences through functional profiles
     When I make the extra-argument request in each row
     Then neither call raises an exception
     And the exact profile results are:
-      | case | profile | direction | input text | exact arguments | return type | result |
-      | NAV-DM6-NEXT-EXTRA-COMPONENT | current | next | 2040-11-23 18:15:00 Etc/UTC | [number 5, number 1, number 12, number 0, number 0, number 9] | defined scalar | empty text |
-      | NAV-DM5-NEXT-EXTRA-COMPONENT | compatibility | next | 2040-11-23 18:15:00 | [number 5, number 1, number 12, number 0, number 0, number 9] | defined scalar | 2040-11-23 12:00:00 |
-    And the current-profile case emits no warning
-    And the compatibility-profile case emits only its deprecation warning
+      | case | profile | direction | input text | exact arguments | result type | result |
+      | NAV-DM6-NEXT-EXTRA-COMPONENT | current | next | 2040-11-23 18:15:00 Etc/UTC | [number 5, number 1, number 12, number 0, number 0, number 9] | text | empty text |
+      | NAV-DM5-NEXT-EXTRA-COMPONENT | compatibility | next | 2040-11-23 18:15:00 | [number 5, number 1, number 12, number 0, number 0, number 9] | text | 2040-11-23 12:00:00 |
 
   @reference-binding @excluded-from-portable-handoff
   Scenario: Compatibility loading emits its exact native deprecation diagnostic

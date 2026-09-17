@@ -170,3 +170,10 @@ byte for byte. A separate Python standard-calendar check confirmed the weekday o
 `tools/runner-trial/parse-features.pl spec/drafts/navigation/*.feature`; both files
 contain six accepted scenarios (their data tables carry the 87 requests). The BDD
 runner dependency is installed separately from the Date::Manip reference prefix.
+
+
+Portable wording now names serialized-wall, ordered-field, local-text and UTC-text
+observers instead of imposing Perl scalar/list evaluation contexts. Their exact
+bindings live in `coverage-map.json`. Ordinary functional scenarios retain all
+requests/results while deprecation assertions stay in the excluded binding case.
+The observable order and all frozen result literals are unchanged.

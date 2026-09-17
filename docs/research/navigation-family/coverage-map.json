@@ -1799,5 +1799,32 @@
       "feature": "spec/drafts/navigation/functional-navigation.feature",
       "excluded_from_portable_handoff": true
     }
-  ]
+  ],
+  "portable_observers": {
+    "serialized wall text": {
+      "operation_id": "date.read-value",
+      "binding": "Date::Manip::Date::value() in scalar context",
+      "presentation": "six fields rendered YYYY-MM-DD HH:MM:SS"
+    },
+    "ordered date-time fields": {
+      "operation_id": "date.read-value",
+      "binding": "Date::Manip::Date::value() in list context",
+      "field_order": [
+        "year",
+        "month",
+        "day",
+        "hour",
+        "minute",
+        "second"
+      ]
+    },
+    "local text": {
+      "operation_id": "date.read-value",
+      "binding": "Date::Manip::Date::value(\"local\") in scalar context"
+    },
+    "UTC text": {
+      "operation_id": "date.read-value",
+      "binding": "Date::Manip::Date::value(\"gmt\") in scalar context"
+    }
+  }
 }

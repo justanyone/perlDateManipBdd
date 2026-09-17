@@ -12,15 +12,15 @@ Feature: Move a stored date to a previous or next weekday or clock occurrence
 
   Background:
     Given a fresh object date-time context for every row
-    And every valid receiver is read first in scalar and list context
+    And every valid receiver is read first as serialized wall text and as ordered date-time fields
     And no converted-zone value is read before navigation
-    And after navigation the receiver is read in scalar, list, local, and GMT order
+    And after navigation the receiver is read as serialized wall text, ordered date-time fields, local text, and UTC text in that order
     And every error is observed immediately before and after its associated call
 
   Scenario: Navigate valid weekday and clock predicates
     When I make the object navigation request in each row
     Then each navigation status is numeric 0
-    And each scalar and list observer contains the six fields of the wall result
+    And the serialized wall text and ordered-field observers contain the six fields of the wall result
     And every call and observer error is empty
     And no call raises an exception or emits a warning
     And the exact requests and results are:
@@ -56,10 +56,10 @@ Feature: Move a stored date to a previous or next weekday or clock occurrence
     When I make the invalid object navigation request in each row
     Then every status is numeric 1 and no call raises an exception or warning
     And the immediate error equals the stated call error
-    And scalar, list, local, and GMT observers expose empty text or an empty list while that error remains
+    And serialized-wall, ordered-field, local-text, and UTC-text observers expose empty text or an empty list while that error remains
     When I clear the error after those observers
     Then error clearing returns an absent value and leaves the error empty
-    And the scalar and GMT values again equal "2040-11-23 18:15:00"
+    And the serialized wall and UTC text values again equal "2040-11-23 18:15:00"
     And the exact requests are:
       | case | direction | initial receiver | exact arguments | call error |
       | NAV-OO-NEXT-DOW-EIGHT | next | 2040-11-23 18:15:00 Etc/UTC | [number 8, number 1] | [next] Invalid DOW: 8 |
@@ -73,7 +73,7 @@ Feature: Move a stored date to a previous or next weekday or clock occurrence
     Then every status is numeric 1 and no call raises an exception or warning
     And the immediate error equals the stated call error
     And all four value observers expose an empty carrier
-    And the first scalar observer sets error "[value] Object does not contain a date"
+    And the first serialized-wall observer sets error "[value] Object does not contain a date"
     And clearing that observer error still leaves an empty carrier
     And the exact requests are:
       | case | direction | receiver preparation | exact arguments | call error |
@@ -85,8 +85,8 @@ Feature: Move a stored date to a previous or next weekday or clock occurrence
     When I make the object navigation request in each row
     Then every numeric status is 0 despite immediate error "[set] Invalid date/timezone"
     And no call raises an exception or warning
-    And the scalar, list, local, and GMT observers expose an empty carrier
-    And the first scalar observer changes the error to "[value] Object does not contain a date"
+    And the serialized-wall, ordered-field, local-text, and UTC-text observers expose an empty carrier
+    And the first serialized-wall observer changes the error to "[value] Object does not contain a date"
     And clearing that error still leaves an empty carrier
     And the exact requests are:
       | case | direction | initial receiver | exact arguments |

@@ -104,3 +104,14 @@ for case, record, mapped in zip(cases, data['observations'], mapping['cases']):
             assert cleared['state']['scalar']['value'] == expected
             assert cleared['state']['gmt']['value'] == expected
 print('87 navigation requests, mapped literals, exception completion, mutation outcomes and module hashes verified')
+
+# Portable observer vocabulary must not reintroduce source calling conventions.
+object_text = features['spec/drafts/navigation/object-navigation.feature']
+background = object_text.split('  Scenario:')[0]
+assert 'scalar' not in background and 'list context' not in background
+functional_text = features['spec/drafts/navigation/functional-navigation.feature']
+for block in functional_text.split('  Scenario:'):
+    if block.lstrip().startswith(('Functional profiles navigate', 'Invalid source and weekday', 'Extra clock components')):
+        assert 'deprecation' not in block and 'defined scalar' not in block
+for observer in mapping['portable_observers'].values():
+    assert observer['operation_id'] in canonical
