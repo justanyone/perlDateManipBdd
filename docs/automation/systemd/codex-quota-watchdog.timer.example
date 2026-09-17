@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Codex quota watchdog every ten minutes
+
+[Timer]
+OnActiveSec=10s
+OnUnitActiveSec=10min
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

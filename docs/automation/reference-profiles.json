@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-09-17",
+  "purpose": "Research-only reproducible reference-profile evidence; this is not a portable fixture, BDD runner result, or adapter assertion input.",
+  "export_status": "Keep with reference research. Do not include this Perl/profile record in a future implementation-only handoff.",
+  "reference": {
+    "release": "Date-Manip-7.00",
+    "distribution_version": "7.00",
+    "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+    "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz"
+  },
+  "tool_sha256": {
+    "install-date-manip-reference.sh": "74e0a78d4fe843c0e1b70600d440c6a50b1f6b08578cbe4b971c905d8bf751d8",
+    "profile-probe.pl": "a8a7239ea91b1f3ee6a3503f9b91082582b150311726e731544e5746471584ed",
+    "run-isolated-profiles.sh": "a7c2b2483313ab3f1e56d344f9d7b502101eb9c75233b73e2a5b0aeced9dc9cb"
+  },
+  "execution": {
+    "method": "Each profile ran twice in separate Perl processes; canonical JSON bytes compared equal.",
+    "environment": {
+      "LANG": "C.UTF-8",
+      "LC_ALL": "C.UTF-8",
+      "TZ": "Etc/UTC"
+    },
+    "perl_version": "5.40.1",
+    "perl_archname": "x86_64-linux-gnu-thread-multi",
+    "os_name": "linux"
+  },
+  "profiles": [
+    {
+      "name": "dm6",
+      "interface": "Date::Manip::DM6",
+      "distribution_version": "7.00",
+      "backend_version": "7.00",
+      "timezone_data": {
+        "tzdata": "tzdata2026c",
+        "tzcode": "tzcode2026c"
+      },
+      "configuration_error": "",
+      "configuration": [
+        "Defaults=1",
+        "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+        "Language=English",
+        "Encoding=ASCII",
+        "DateFormat=US",
+        "Printable=0",
+        "FirstDay=1",
+        "Week1ofYear=jan4",
+        "DefaultTime=midnight",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "EraseHolidays=1",
+        "EraseEvents=1"
+      ],
+      "observations": {
+        "fixed_tomorrow": "2040022900:00:00",
+        "leap_date": "2040022916:05:09",
+        "next_work_day": "2040030516:05:09"
+      }
+    },
+    {
+      "name": "dm5",
+      "interface": "Date::Manip::DM5",
+      "distribution_version": "7.00",
+      "backend_version": "5.66",
+      "timezone_data": "not exposed by the DM5 backend; profile zone is fixed through the explicit TZ configuration and process environment",
+      "configuration_error": null,
+      "configuration": [
+        "IgnoreGlobalCnf=1",
+        "PersonalCnf=",
+        "PersonalCnfPath=",
+        "ForceDate=2040-02-28-10:20:30",
+        "TZ=Etc/UTC",
+        "Language=English",
+        "DateFormat=US",
+        "Internal=0",
+        "FirstDay=1",
+        "Jan1Week1=0",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "TodayIsMidnight=1",
+        "EraseHolidays=1"
+      ],
+      "observations": {
+        "fixed_tomorrow": "2040022910:20:30",
+        "leap_date": "2040022916:05:09",
+        "next_work_day": "2040030516:05:09"
+      }
+    },
+    {
+      "name": "oo",
+      "interface": "Date::Manip::Date",
+      "distribution_version": "7.00",
+      "timezone_data": {
+        "tzdata": "tzdata2026c",
+        "tzcode": "tzcode2026c"
+      },
+      "configuration_error": null,
+      "configuration": [
+        "Defaults=1",
+        "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+        "Language=English",
+        "Encoding=ASCII",
+        "DateFormat=US",
+        "Printable=0",
+        "FirstDay=1",
+        "Week1ofYear=jan4",
+        "DefaultTime=midnight",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "EraseHolidays=1",
+        "EraseEvents=1"
+      ],
+      "observations": {
+        "fixed_tomorrow": {
+          "status": 0,
+          "value": "2040022900:00:00"
+        },
+        "leap_date": {
+          "status": 0,
+          "value": "2040022916:05:09"
+        }
+      }
+    }
+  ]
+}

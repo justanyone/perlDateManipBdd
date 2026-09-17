@@ -56,6 +56,33 @@ skills. Review new dependencies' actual licenses before inclusion.
   Report Perl/Date::Manip versions, command, results, skips, and remaining gaps.
   Until then, do not present documentation checks as passing BDD tests.
 
+## Authorized unattended work and delegation
+
+The user authorized completing the portable specification and reference observations,
+then implementing and verifying the Perl test harness. Do not implement the future
+non-Perl library. Use goal mode and the dependency-aware queue in
+docs/automation/queue.json; read docs/automation/checkpoint.md on continuation.
+The coordinator alone updates queue ownership/status and integration decisions.
+Workers update only their assigned outputs and report evidence before acceptance.
+
+Use parallel sub-agents for independent batches, with up to three workers plus the
+coordinator when useful. Start with two workers; use the third when work is independent.
+Use `gpt-5.6-luna` at low/medium effort for bounded extraction and straightforward
+checks, `gpt-5.6-terra` at medium effort for normal feature/probe/adapter work, and
+`gpt-5.6-sol` or the parent model at high effort for difficult semantics or independent
+review. Escalate on demonstrated uncertainty rather than repeated weak-model retries.
+Use scripts for mechanical enumeration and validation. Give workers a concise task
+and the necessary file paths rather than the full conversation whenever possible.
+Do not have parallel workers edit the same files. Do not delegate the same work
+twice unless an independent review is intentionally required.
+
+Checkpoint after each verified batch with evidence, unresolved issues, active owners,
+and the exact next action. A quota interruption does not make a batch complete.
+Respect explicit user pauses, task cancellation, blocked decisions and budget stops.
+Do not consume paid credits, switch billing methods, or bypass permissions to recover
+from a usage limit. The ten-minute watchdog is limited to quota recovery of the
+configured goal; it does not turn all idle sessions into new work.
+
 ## Load guidance only when relevant
 
 For later implementation work in another language, follow

@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "purpose": "Durable work queue for the language-neutral Date::Manip English specification.",
+  "scope": {
+    "included": "Reference research, API accounting, original English Gherkin features, observations, coverage review, and a verified Perl/Date::Manip BDD harness and adapter.",
+    "excluded": "A future non-Perl implementation and any transfer of upstream source, copied tests/data, translated algorithms, or Perl binding code to it."
+  },
+  "coordination": {
+    "queue_update_owner": "coordinator",
+    "rule": "Only the coordinator changes this queue or the checkpoint. Contributors report evidence and proposed status changes to the coordinator."
+  },
+  "baseline": {
+    "id": "workspace-setup",
+    "status": "current",
+    "owner": "root",
+    "meaning": "The repository planning baseline is available; this is not a completed project work batch."
+  },
+  "batches": [
+    {
+      "id": "reference-setup",
+      "title": "Establish the reproducible reference profiles",
+      "status": "complete",
+      "depends_on": [],
+      "outputs": [
+        "Pinned-reference and environment record",
+        "Named DM6 and DM5 compatibility profiles",
+        "Repeatable isolated-probe procedure"
+      ],
+      "acceptance": [
+        "Exact Date::Manip release or commit, archive hash, Perl/runtime details, locale, timezone, reference time, configuration sources, and timezone-data identifiers are recorded.",
+        "Repeated isolated probes have reproducible results for each profile.",
+        "Reference setup does not depend on a Perl BDD runner, step definitions, or adapter."
+      ],
+      "owner": "coordinator-reviewed",
+      "evidence": [
+        "docs/reference-environment.md",
+        "docs/automation/reference-profiles.json",
+        "tools/reference/run-isolated-profiles.sh"
+      ],
+      "review": "Coordinator repeated all three profiles, verified script hashes, and independently checked leap-day and weekday facts. DM5 has distinct 5.66 API version and no claimed DM6 timezone-data identifier."
+    },
+    {
+      "id": "api-reconciliation",
+      "title": "Reconcile callable and source-side API inventory",
+      "status": "in_progress",
+      "depends_on": [
+        "reference-setup"
+      ],
+      "outputs": [
+        "Reconciled declaration and callable inventory",
+        "Stable public contract IDs and generic-operation mappings",
+        "Recorded dispositions for private, generated, compatibility, tooling, and data-only entries",
+        "Auxiliary option/directive/grammar inventories"
+      ],
+      "acceptance": [
+        "Documentation, exports, inheritance, aliases, generated symbols, runtime callability, and declarations are reconciled against the pinned reference.",
+        "Every inventory row has a visible disposition; each public operation has a portable mapping or a stated exclusion.",
+        "No completeness claim is derived solely from scenario counts."
+      ],
+      "owner": "api_reconciliation + calendar_contracts",
+      "progress": "423 declaration identities, 164 public declarations, 96 operation IDs and 153 OO receiver bindings independently audited. Remaining signature and auxiliary partition catalogues are being enumerated."
+    },
+    {
+      "id": "spec-interpretation-formatting",
+      "title": "Specify interpretation, rendering, and calendar-query behavior",
+      "status": "pending",
+      "depends_on": [
+        "reference-setup",
+        "api-reconciliation"
+      ],
+      "parallel_group": "feature-families",
+      "outputs": [
+        "Original English feature cases",
+        "Literal reviewed observations",
+        "Partition and contract mappings"
+      ],
+      "acceptance": [
+        "Cases cover success, boundaries, invalid input, options, result variants, and relevant state.",
+        "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
+        "Feature text remains language-neutral."
+      ]
+    },
+    {
+      "id": "spec-arithmetic-deltas",
+      "title": "Specify dates, deltas, durations, and arithmetic behavior",
+      "status": "pending",
+      "depends_on": [
+        "reference-setup",
+        "api-reconciliation"
+      ],
+      "parallel_group": "feature-families",
+      "outputs": [
+        "Original English feature cases",
+        "Literal reviewed observations",
+        "Partition and contract mappings"
+      ],
+      "acceptance": [
+        "Cases include calendar versus elapsed semantics, limits, invalid input, return variants, and DST interactions where applicable.",
+        "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
+        "Feature text remains language-neutral."
+      ]
+    },
+    {
+      "id": "spec-recurrence",
+      "title": "Specify recurrence syntax, modifiers, and occurrence behavior",
+      "status": "pending",
+      "depends_on": [
+        "reference-setup",
+        "api-reconciliation"
+      ],
+      "parallel_group": "feature-families",
+      "outputs": [
+        "Original English feature cases",
+        "Literal reviewed observations",
+        "Grammar and modifier partitions"
+      ],
+      "acceptance": [
+        "Cases cover supported forms, limits, no-match and invalid conventions, modifiers, and ordered-result behavior.",
+        "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
+        "Feature text remains language-neutral."
+      ]
+    },
+    {
+      "id": "spec-zones-business",
+      "title": "Specify timezones, business calendars, holidays, and events",
+      "status": "pending",
+      "depends_on": [
+        "reference-setup",
+        "api-reconciliation"
+      ],
+      "parallel_group": "feature-families",
+      "outputs": [
+        "Original English feature cases",
+        "Literal reviewed observations",
+        "Zone, business-rule, holiday, and event partitions"
+      ],
+      "acceptance": [
+        "Cases cover DST gaps and overlaps, zone resolution, customization, business-day rules, holidays/events, and environment-dependent dispositions.",
+        "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
+        "Feature text remains language-neutral."
+      ]
+    },
+    {
+      "id": "spec-configuration-objects",
+      "title": "Specify configuration and observable object/value lifecycle behavior",
+      "status": "pending",
+      "depends_on": [
+        "reference-setup",
+        "api-reconciliation"
+      ],
+      "parallel_group": "feature-families",
+      "outputs": [
+        "Original English feature cases",
+        "Literal reviewed observations",
+        "Configuration, mutation, context, and error-channel partitions"
+      ],
+      "acceptance": [
+        "Cases isolate configuration and backend state, distinguish absent/empty/invalid/no-match results, and cover observable lifecycle transitions.",
+        "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
+        "Feature text remains language-neutral."
+      ]
+    },
+    {
+      "id": "coverage-review",
+      "title": "Audit specification coverage and prepare the reviewed English handoff",
+      "status": "pending",
+      "depends_on": [
+        "api-reconciliation",
+        "spec-interpretation-formatting",
+        "spec-arithmetic-deltas",
+        "spec-recurrence",
+        "spec-zones-business",
+        "spec-configuration-objects"
+      ],
+      "outputs": [
+        "Coverage report by capability, partition, profile, directive, language, configuration, and state",
+        "Visible dispositions for gaps, skips, unsupported variants, and disputed cases",
+        "Reviewed export set limited to original portable English materials"
+      ],
+      "acceptance": [
+        "Every in-scope public operation has direct behavioral coverage and every private declaration has an indirect mapping or reviewed exclusion. Binding-only and unsupported operations have explicit, justified dispositions; deferred or unobserved in-scope work prevents completion.",
+        "Coverage denominators retain skipped, unsupported, and disputed entries.",
+        "The handoff excludes upstream source/tests/data, translated algorithms, and Perl binding code."
+      ]
+    },
+    {
+      "id": "internal-spec-review",
+      "title": "Review and freeze the portable English specification",
+      "status": "pending",
+      "depends_on": [
+        "coverage-review"
+      ],
+      "outputs": [
+        "Reviewed feature and glossary set",
+        "Review dispositions for ambiguities, disputed cases, and compatibility profiles",
+        "Frozen literal expectations for adapter use"
+      ],
+      "acceptance": [
+        "Every feature assertion has an approved semantic meaning and reviewed literal expectation.",
+        "The review confirms that portable features contain no implementation-language code or translated upstream algorithm.",
+        "Source-separation requirements are recorded before Perl binding work begins.",
+        "No required capability or partition remains merely proposed, unobserved, or deferred. Genuine environment-dependent profiles have executable specified checks or an explicit user-scope disposition."
+      ]
+    },
+    {
+      "id": "perl-harness-setup",
+      "title": "Establish the Perl BDD runner and harness conventions",
+      "status": "pending",
+      "depends_on": [
+        "internal-spec-review"
+      ],
+      "outputs": [
+        "Pinned and license-reviewed runner dependency",
+        "Original harness layout and execution documentation",
+        "Runner trial covering feature parsing, outlines, tables, tags, Unicode, escaping, and failure reporting"
+      ],
+      "acceptance": [
+        "The runner executes the approved feature grammar and a deliberately failing assertion demonstrates test sensitivity.",
+        "README records exact installation and run commands.",
+        "Dependency licensing and provenance are recorded without bundling upstream Date::Manip material."
+      ]
+    },
+    {
+      "id": "perl-adapter-implementation",
+      "title": "Implement the original Perl/Date::Manip BDD adapter",
+      "status": "pending",
+      "depends_on": [
+        "perl-harness-setup"
+      ],
+      "outputs": [
+        "Original Perl step definitions and adapter",
+        "Profile-isolated fixture and process strategy",
+        "Binding-specific compatibility coverage where required"
+      ],
+      "acceptance": [
+        "Steps call the separately installed Date::Manip dependency and assert frozen literals rather than calculate expectations with the operation under test.",
+        "The adapter preserves observable errors, state, ordering, scalar/list context, and undef/empty/zero distinctions.",
+        "No Date::Manip algorithm, upstream test, or upstream source is copied into the adapter."
+      ]
+    },
+    {
+      "id": "perl-validation",
+      "title": "Run and report the complete Perl BDD suite",
+      "status": "pending",
+      "depends_on": [
+        "perl-adapter-implementation"
+      ],
+      "outputs": [
+        "Relevant and full-suite test results",
+        "Recorded Perl and Date::Manip versions, commands, skips, and remaining gaps",
+        "Final source-separation audit for the portable export"
+      ],
+      "acceptance": [
+        "Relevant tests and the full suite pass, with any skips or unsupported variants explicitly reported.",
+        "Results distinguish executable BDD verification from planning/documentation checks.",
+        "The final portable handoff remains limited to approved original English materials and excludes Perl binding artifacts."
+      ]
+    }
+  ]
+}

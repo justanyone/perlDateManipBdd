@@ -39,3 +39,8 @@ inc/
 /.carmel/
 # cpanfile.snapshot should generally be ignored for library code, otherwise included
 # cpanfile.snapshot
+
+# Local reference dependencies and automation state (never exported)
+/.local/
+/.automation/
+__pycache__/

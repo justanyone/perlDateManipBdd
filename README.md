@@ -5,9 +5,11 @@ Date::Manip library, aiming to cover every function and method.
 
 ## Status
 
-This project is in its initial setup stage. Upstream source discovery, licensing
-research, and contributor guidance are in place. The test harness and scenarios
-have not yet been implemented; there is no test command or coverage claim yet.
+The specification plan, draft English features, source inventory, and initial
+reference observations are available. Work is now proceeding through a
+[checkpointed queue](docs/automation/queue.json): complete the portable
+specification, then implement and verify its Perl test harness. Draft examples
+are not a complete specification or an executable BDD suite yet.
 
 ## Getting started
 
@@ -20,6 +22,8 @@ cd perlDateManipBdd
 
 ## Project guidance
 
+- [Current checkpoint and continuation instructions](docs/automation/checkpoint.md)
+- [Ten-minute usage monitor and its restart limitation](docs/automation/watchdog.md)
 - [Plan for the portable BDD specification](docs/planning/README.md), including
   English feature examples, Perl API mappings, boundary analysis, and observed results
 - [Upstream source map and complete file inventories](docs/upstream.md)

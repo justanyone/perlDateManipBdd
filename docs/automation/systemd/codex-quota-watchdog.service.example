@@ -1,0 +1,6 @@
+[Unit]
+Description=Codex quota watchdog (detection only)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /path/to/perlDateManipBdd/tools/automation/codex_quota_watchdog.py --codex-home /path/to/codex-home --thread-id REPLACE_THREAD_ID --goal-id REPLACE_GOAL_ID --expected-cwd /path/to/perlDateManipBdd --pause-file /path/to/perlDateManipBdd/.automation/watchdog.pause

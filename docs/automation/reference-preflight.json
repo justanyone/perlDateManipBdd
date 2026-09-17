@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-09-17",
+  "status": "preflight_partial",
+  "scope": "Read-only checks of temporary reference and runner artifacts; this record does not establish the reproducible-reference gate.",
+  "reference": {
+    "archive": "/tmp/Date-Manip-7.00.tar.gz",
+    "expected_sha256_source": "docs/upstream-source.json",
+    "expected_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+    "observed_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+    "sha256_match": true,
+    "temporary_extraction": "/tmp/Date-Manip-7.00",
+    "module": {
+      "path": "/tmp/Date-Manip-7.00/lib/Date/Manip.pm",
+      "version": "7.00",
+      "version_match": true,
+      "bundled_tzdata": "tzdata2026c",
+      "bundled_tzcode": "tzcode2026c",
+      "tz_versions_observed_via": "Date::Manip::Zones and Date::Manip::TZ",
+      "extraction_is_temporary": true
+    },
+    "runtime": {
+      "perl_version": "5.40.1",
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "os_name": "linux",
+      "os_version": "6.1.0",
+      "locale_environment": {
+        "LANG": "en_US.UTF-8",
+        "LC_ALL": "C.UTF-8",
+        "LC_CTYPE": "C.UTF-8",
+        "LC_TIME": "C.UTF-8"
+      },
+      "TZ_environment": "unset",
+      "system_localtime": "/usr/share/zoneinfo/America/Chicago",
+      "system_tzdata_version_observed": "2026c",
+      "system_tzdata_evidence": "/usr/share/zoneinfo/tzdata.zi begins '# version 2026c'",
+      "reference_clock_fixed": false,
+      "configuration_inputs_isolated": false
+    }
+  },
+  "runner": {
+    "archive": "/tmp/Test-BDD-Cucumber-0.87.tar.gz",
+    "archive_sha256": "afa2f8a1c5aaa7435270088b33edf7ecc94987181e4e5f4af0907a61bc258a43",
+    "archive_metadata_version": "0.87",
+    "archive_contains_pherkin": true,
+    "installed_module": false,
+    "installed_probe_error": "Can't locate Test/BDD/Cucumber.pm in @INC",
+    "source_tree_probe": {
+      "path": "/tmp/Test-BDD-Cucumber-0.87",
+      "module_source_present": true,
+      "loadable_with_current_dependencies": false,
+      "observed_missing_dependency": "Types::Standard"
+    },
+    "currently_missing_or_unverified_dependencies": [
+      "Cucumber::TagExpressions",
+      "File::Find::Rule",
+      "MooX::HandlesVia",
+      "Types::Standard"
+    ],
+    "no_install_performed": true
+  },
+  "missing_requirements": [
+    "Create a durable, documented reference environment rather than relying on /tmp extractions.",
+    "Fix and record reference clock, timezone, language/encoding, and Date::Manip configuration sources.",
+    "Install or otherwise provide Test::BDD::Cucumber 0.87 and all declared dependencies, then run a parser/runner trial.",
+    "Repeat isolated probes to establish deterministic reference results for each backend/profile.",
+    "Record DM5 compatibility observations and complete the remaining reference setup gates."
+  ],
+  "limitations": [
+    "This is a preflight record only; it does not claim the reference phase or BDD suite is complete.",
+    "Temporary files under /tmp are not a hermetic or durable environment."
+  ]
+}
