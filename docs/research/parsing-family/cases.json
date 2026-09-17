@@ -1,0 +1,3837 @@
+{
+  "schema_version": 1,
+  "status": "original proposed input corpus; no implied success or support",
+  "cases": [
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-01-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYYMMDD",
+      "text": "20400229",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-01-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYYMMDD",
+      "text": "20400229",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-01-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYYMMDD",
+      "text": "20400229",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-02-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYY-MM-DD",
+      "text": "2040-02-29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-02-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYY-MM-DD",
+      "text": "2040-02-29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-02-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYY-MM-DD",
+      "text": "2040-02-29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-03-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YYMMDD",
+      "text": "400229",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-03-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YYMMDD",
+      "text": "400229",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-03-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YYMMDD",
+      "text": "400229",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-04-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YY-MM-DD",
+      "text": "40-02-29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-04-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YY-MM-DD",
+      "text": "40-02-29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-04-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YY-MM-DD",
+      "text": "40-02-29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-05-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YYMMDD",
+      "text": "-400229",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-05-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YYMMDD",
+      "text": "-400229",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-05-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YYMMDD",
+      "text": "-400229",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-06-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YY-MM-DD",
+      "text": "-40-02-29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-06-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YY-MM-DD",
+      "text": "-40-02-29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-06-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YY-MM-DD",
+      "text": "-40-02-29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-07-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "--MMDD",
+      "text": "--0229",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-07-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "--MMDD",
+      "text": "--0229",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-07-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "--MMDD",
+      "text": "--0229",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-08-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "--MM-DD",
+      "text": "--02-29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-08-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "--MM-DD",
+      "text": "--02-29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-08-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "--MM-DD",
+      "text": "--02-29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-09-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "---DD",
+      "text": "---29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-09-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "---DD",
+      "text": "---29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-09-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "---DD",
+      "text": "---29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-10-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYYDoY",
+      "text": "2040060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-10-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYYDoY",
+      "text": "2040060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-10-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYYDoY",
+      "text": "2040060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-11-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYY-DoY",
+      "text": "2040-060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-11-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYY-DoY",
+      "text": "2040-060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-11-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYY-DoY",
+      "text": "2040-060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-12-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YYDoY",
+      "text": "40060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-12-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YYDoY",
+      "text": "40060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-12-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YYDoY",
+      "text": "40060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-13-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YY-DoY",
+      "text": "40-060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-13-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YY-DoY",
+      "text": "40-060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-13-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YY-DoY",
+      "text": "40-060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-14-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YYDoY",
+      "text": "-40060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-14-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YYDoY",
+      "text": "-40060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-14-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YYDoY",
+      "text": "-40060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-15-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YY-DoY",
+      "text": "-40-060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-15-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YY-DoY",
+      "text": "-40-060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-15-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YY-DoY",
+      "text": "-40-060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-16-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-DoY",
+      "text": "-060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-16-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-DoY",
+      "text": "-060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-16-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-DoY",
+      "text": "-060",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-17-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYYWwwD",
+      "text": "2040W093",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-17-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYYWwwD",
+      "text": "2040W093",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-17-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYYWwwD",
+      "text": "2040W093",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-18-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYY-Www-D",
+      "text": "2040-W09-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-18-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYY-Www-D",
+      "text": "2040-W09-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-18-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "CCYY-Www-D",
+      "text": "2040-W09-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-19-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YYWwwD",
+      "text": "40W093",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-19-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YYWwwD",
+      "text": "40W093",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-19-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YYWwwD",
+      "text": "40W093",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-20-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YY-Www-D",
+      "text": "40-W09-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-20-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YY-Www-D",
+      "text": "40-W09-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-20-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "YY-Www-D",
+      "text": "40-W09-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-21-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YYWwwD",
+      "text": "-40W093",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-21-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YYWwwD",
+      "text": "-40W093",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-21-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YYWwwD",
+      "text": "-40W093",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-22-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YY-Www-D",
+      "text": "-40-W09-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-22-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YY-Www-D",
+      "text": "-40-W09-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-22-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YY-Www-D",
+      "text": "-40-W09-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-23-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YWwwD",
+      "text": "-0W093",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-23-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YWwwD",
+      "text": "-0W093",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-23-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-YWwwD",
+      "text": "-0W093",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-24-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-Y-Www-D",
+      "text": "-0-W09-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-24-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-Y-Www-D",
+      "text": "-0-W09-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-24-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-Y-Www-D",
+      "text": "-0-W09-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-25-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-WwwD",
+      "text": "-W093",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-25-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-WwwD",
+      "text": "-W093",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-25-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-WwwD",
+      "text": "-W093",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-26-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-Www-D",
+      "text": "-W09-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-26-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-Www-D",
+      "text": "-W09-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-26-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-Www-D",
+      "text": "-W09-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-27-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-W-D",
+      "text": "-W-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-27-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-W-D",
+      "text": "-W-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-27-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "-W-D",
+      "text": "-W-3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-28-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "---D",
+      "text": "---3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-28-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "---D",
+      "text": "---3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-COMPLETE-28-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.COMPLETE",
+      "production": "---D",
+      "text": "---3",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-01-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "CCYY-MM",
+      "text": "2040-02",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-01-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "CCYY-MM",
+      "text": "2040-02",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-01-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "CCYY-MM",
+      "text": "2040-02",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-02-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "CCYY",
+      "text": "2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-02-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "CCYY",
+      "text": "2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-02-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "CCYY",
+      "text": "2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-03-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "CC",
+      "text": "20",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-03-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "CC",
+      "text": "20",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-03-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "CC",
+      "text": "20",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-04-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-YYMM",
+      "text": "-4002",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-04-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-YYMM",
+      "text": "-4002",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-04-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-YYMM",
+      "text": "-4002",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-05-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-YY-MM",
+      "text": "-40-02",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-05-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-YY-MM",
+      "text": "-40-02",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-05-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-YY-MM",
+      "text": "-40-02",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-06-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-YY",
+      "text": "-40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-06-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-YY",
+      "text": "-40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-06-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-YY",
+      "text": "-40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-07-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "--MM",
+      "text": "--02",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-07-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "--MM",
+      "text": "--02",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-07-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "--MM",
+      "text": "--02",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-08-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "CCYYWww",
+      "text": "2040W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-08-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "CCYYWww",
+      "text": "2040W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-08-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "CCYYWww",
+      "text": "2040W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-09-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "CCYY-Www",
+      "text": "2040-W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-09-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "CCYY-Www",
+      "text": "2040-W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-09-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "CCYY-Www",
+      "text": "2040-W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-10-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "YYWww",
+      "text": "40W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-10-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "YYWww",
+      "text": "40W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-10-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "YYWww",
+      "text": "40W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-11-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "YY-Www",
+      "text": "40-W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-11-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "YY-Www",
+      "text": "40-W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-11-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "YY-Www",
+      "text": "40-W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-12-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-YYWww",
+      "text": "-40W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-12-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-YYWww",
+      "text": "-40W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-12-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-YYWww",
+      "text": "-40W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-13-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-YY-Www",
+      "text": "-40-W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-13-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-YY-Www",
+      "text": "-40-W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-13-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-YY-Www",
+      "text": "-40-W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-14-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-Www",
+      "text": "-W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-14-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-Www",
+      "text": "-W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-ISO-DATE-TRUNCATED-14-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.ISO.DATE.TRUNCATED",
+      "production": "-Www",
+      "text": "-W09",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NUMERIC-01-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NUMERIC",
+      "production": "M/D",
+      "text": "2/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NUMERIC-01-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NUMERIC",
+      "production": "M/D",
+      "text": "2/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NUMERIC-01-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NUMERIC",
+      "production": "M/D",
+      "text": "2/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NUMERIC-02-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NUMERIC",
+      "production": "M/D/YY",
+      "text": "2/29/40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NUMERIC-02-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NUMERIC",
+      "production": "M/D/YY",
+      "text": "2/29/40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NUMERIC-02-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NUMERIC",
+      "production": "M/D/YY",
+      "text": "2/29/40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NUMERIC-03-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NUMERIC",
+      "production": "M/D/YYYY",
+      "text": "2/29/2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NUMERIC-03-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NUMERIC",
+      "production": "M/D/YYYY",
+      "text": "2/29/2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NUMERIC-03-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NUMERIC",
+      "production": "M/D/YYYY",
+      "text": "2/29/2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NUMERIC-04-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NUMERIC",
+      "production": "YYYY/M/D",
+      "text": "2040/2/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NUMERIC-04-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NUMERIC",
+      "production": "YYYY/M/D",
+      "text": "2040/2/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NUMERIC-04-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NUMERIC",
+      "production": "YYYY/M/D",
+      "text": "2040/2/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NUMERIC-05-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NUMERIC",
+      "production": "YYYY:MM:DD",
+      "text": "2040:02:29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NUMERIC-05-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NUMERIC",
+      "production": "YYYY:MM:DD",
+      "text": "2040:02:29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NUMERIC-05-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NUMERIC",
+      "production": "YYYY:MM:DD",
+      "text": "2040:02:29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-01-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "MMM/D",
+      "text": "Feb/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-01-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "MMM/D",
+      "text": "Feb/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-01-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "MMM/D",
+      "text": "Feb/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-02-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "MMM/D/YY",
+      "text": "Feb/29/40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-02-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "MMM/D/YY",
+      "text": "Feb/29/40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-02-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "MMM/D/YY",
+      "text": "Feb/29/40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-03-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "MMM/D/YYYY",
+      "text": "Feb/29/2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-03-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "MMM/D/YYYY",
+      "text": "Feb/29/2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-03-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "MMM/D/YYYY",
+      "text": "Feb/29/2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-04-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "D/MMM",
+      "text": "29/Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-04-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "D/MMM",
+      "text": "29/Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-04-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "D/MMM",
+      "text": "29/Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-05-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "D/MMM/YY",
+      "text": "29/Feb/40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-05-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "D/MMM/YY",
+      "text": "29/Feb/40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-05-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "D/MMM/YY",
+      "text": "29/Feb/40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-06-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "D/MMM/YYYY",
+      "text": "29/Feb/2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-06-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "D/MMM/YYYY",
+      "text": "29/Feb/2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-06-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "D/MMM/YYYY",
+      "text": "29/Feb/2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-07-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "YYYY/MMM/D",
+      "text": "2040/Feb/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-07-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "YYYY/MMM/D",
+      "text": "2040/Feb/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-07-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "YYYY/MMM/D",
+      "text": "2040/Feb/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-08-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "MMM/D YY",
+      "text": "Feb/29 40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-08-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "MMM/D YY",
+      "text": "Feb/29 40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-08-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "MMM/D YY",
+      "text": "Feb/29 40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-09-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "MMM/D YYYY",
+      "text": "Feb/29 2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-09-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "MMM/D YYYY",
+      "text": "Feb/29 2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-09-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "MMM/D YYYY",
+      "text": "Feb/29 2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-10-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "D/MMM YY",
+      "text": "29/Feb 40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-10-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "D/MMM YY",
+      "text": "29/Feb 40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-10-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "D/MMM YY",
+      "text": "29/Feb 40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-11-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "D/MMM YYYY",
+      "text": "29/Feb 2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-11-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "D/MMM YYYY",
+      "text": "29/Feb 2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-11-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "D/MMM YYYY",
+      "text": "29/Feb 2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-12-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "YY MMM/D",
+      "text": "40 Feb/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-12-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "YY MMM/D",
+      "text": "40 Feb/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-12-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "YY MMM/D",
+      "text": "40 Feb/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-13-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "YYYY MMM/D",
+      "text": "2040 Feb/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-13-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "YYYY MMM/D",
+      "text": "2040 Feb/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-13-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "YYYY MMM/D",
+      "text": "2040 Feb/29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-14-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "YY D/MMM",
+      "text": "40 29/Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-14-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "YY D/MMM",
+      "text": "40 29/Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-14-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "YY D/MMM",
+      "text": "40 29/Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-15-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "YYYY D/MMM",
+      "text": "2040 29/Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-15-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "YYYY D/MMM",
+      "text": "2040 29/Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-SEPARATED-15-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.SEPARATED",
+      "production": "YYYY D/MMM",
+      "text": "2040 29/Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-01-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "MMMD",
+      "text": "Feb29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-01-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "MMMD",
+      "text": "Feb29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-01-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "MMMD",
+      "text": "Feb29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-02-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "MMMDDYY",
+      "text": "Feb2940",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-02-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "MMMDDYY",
+      "text": "Feb2940",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-02-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "MMMDDYY",
+      "text": "Feb2940",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-03-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "MMMDDYYYY",
+      "text": "Feb292040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-03-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "MMMDDYYYY",
+      "text": "Feb292040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-03-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "MMMDDYYYY",
+      "text": "Feb292040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-04-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "DMMM",
+      "text": "29Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-04-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "DMMM",
+      "text": "29Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-04-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "DMMM",
+      "text": "29Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-05-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "DMMMYY",
+      "text": "29Feb40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-05-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "DMMMYY",
+      "text": "29Feb40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-05-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "DMMMYY",
+      "text": "29Feb40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-06-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "DMMMYYYY",
+      "text": "29Feb2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-06-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "DMMMYYYY",
+      "text": "29Feb2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-06-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "DMMMYYYY",
+      "text": "29Feb2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-07-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "YYYYMMMD",
+      "text": "2040Feb29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-07-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "YYYYMMMD",
+      "text": "2040Feb29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-07-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "YYYYMMMD",
+      "text": "2040Feb29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-08-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "MMMD YY",
+      "text": "Feb29 40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-08-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "MMMD YY",
+      "text": "Feb29 40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-08-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "MMMD YY",
+      "text": "Feb29 40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-09-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "MMMD YYYY",
+      "text": "Feb29 2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-09-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "MMMD YYYY",
+      "text": "Feb29 2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-09-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "MMMD YYYY",
+      "text": "Feb29 2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-10-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "DMMM YY",
+      "text": "29Feb 40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-10-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "DMMM YY",
+      "text": "29Feb 40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-10-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "DMMM YY",
+      "text": "29Feb 40",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-11-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "DMMM YYYY",
+      "text": "29Feb 2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-11-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "DMMM YYYY",
+      "text": "29Feb 2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-11-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "DMMM YYYY",
+      "text": "29Feb 2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-12-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "YY MMMD",
+      "text": "40 Feb29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-12-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "YY MMMD",
+      "text": "40 Feb29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-12-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "YY MMMD",
+      "text": "40 Feb29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-13-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "YYYY MMMD",
+      "text": "2040 Feb29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-13-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "YYYY MMMD",
+      "text": "2040 Feb29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-13-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "YYYY MMMD",
+      "text": "2040 Feb29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-14-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "YY DMMM",
+      "text": "40 29Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-14-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "YY DMMM",
+      "text": "40 29Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-14-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "YY DMMM",
+      "text": "40 29Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-15-DEFAULT-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "YYYY DMMM",
+      "text": "2040 29Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-15-DEFAULT-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "YYYY DMMM",
+      "text": "2040 29Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-NAMED-JOINED-15-DEFAULT-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.NAMED.JOINED",
+      "production": "YYYY DMMM",
+      "text": "2040 29Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-01-DISABLED-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMMYYYY",
+      "text": "Feb2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-01-DISABLED-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMMYYYY",
+      "text": "Feb2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-01-DISABLED-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMMYYYY",
+      "text": "Feb2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-01-FIRST-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMMYYYY",
+      "text": "Feb2040",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=first"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-01-FIRST-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMMYYYY",
+      "text": "Feb2040",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=first"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-01-FIRST-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMMYYYY",
+      "text": "Feb2040",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=first"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-01-LAST-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMMYYYY",
+      "text": "Feb2040",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=last"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-01-LAST-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMMYYYY",
+      "text": "Feb2040",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=last"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-01-LAST-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMMYYYY",
+      "text": "Feb2040",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=last"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-02-DISABLED-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYYMMM",
+      "text": "2040Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-02-DISABLED-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYYMMM",
+      "text": "2040Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-02-DISABLED-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYYMMM",
+      "text": "2040Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-02-FIRST-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYYMMM",
+      "text": "2040Feb",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=first"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-02-FIRST-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYYMMM",
+      "text": "2040Feb",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=first"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-02-FIRST-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYYMMM",
+      "text": "2040Feb",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=first"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-02-LAST-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYYMMM",
+      "text": "2040Feb",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=last"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-02-LAST-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYYMMM",
+      "text": "2040Feb",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=last"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-02-LAST-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYYMMM",
+      "text": "2040Feb",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=last"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-03-DISABLED-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMM/YYYY",
+      "text": "Feb/2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-03-DISABLED-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMM/YYYY",
+      "text": "Feb/2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-03-DISABLED-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMM/YYYY",
+      "text": "Feb/2040",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-03-FIRST-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMM/YYYY",
+      "text": "Feb/2040",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=first"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-03-FIRST-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMM/YYYY",
+      "text": "Feb/2040",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=first"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-03-FIRST-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMM/YYYY",
+      "text": "Feb/2040",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=first"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-03-LAST-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMM/YYYY",
+      "text": "Feb/2040",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=last"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-03-LAST-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMM/YYYY",
+      "text": "Feb/2040",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=last"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-03-LAST-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "MMM/YYYY",
+      "text": "Feb/2040",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=last"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-04-DISABLED-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYY/MMM",
+      "text": "2040/Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-04-DISABLED-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYY/MMM",
+      "text": "2040/Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-04-DISABLED-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYY/MMM",
+      "text": "2040/Feb",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-04-FIRST-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYY/MMM",
+      "text": "2040/Feb",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=first"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-04-FIRST-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYY/MMM",
+      "text": "2040/Feb",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=first"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-04-FIRST-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYY/MMM",
+      "text": "2040/Feb",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=first"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-04-LAST-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYY/MMM",
+      "text": "2040/Feb",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=last"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-04-LAST-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYY/MMM",
+      "text": "2040/Feb",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=last"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-COMMON-MONTHYEAR-04-LAST-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": "DATE.GRAMMAR.COMMON.MONTHYEAR",
+      "production": "YYYY/MMM",
+      "text": "2040/Feb",
+      "options": [],
+      "configuration": [
+        "Format_MMMYYYY=last"
+      ],
+      "partition_ids": [
+        "context-defaults"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-EMPTY-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "text-empty"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-EMPTY-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "text-empty"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-EMPTY-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "text-empty"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-INVALID-LEAP-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2039-02-29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-INVALID-LEAP-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2039-02-29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-INVALID-LEAP-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2039-02-29",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-MONTH-ZERO-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-00-17",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-MONTH-ZERO-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-00-17",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-MONTH-ZERO-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-00-17",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-MONTH-HIGH-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-13-17",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-MONTH-HIGH-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-13-17",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-MONTH-HIGH-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-13-17",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-DAY-ZERO-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-02-00",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-DAY-ZERO-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-02-00",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-DAY-ZERO-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-02-00",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-DAY-HIGH-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-02-30",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-DAY-HIGH-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-02-30",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-DAY-HIGH-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-02-30",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-LEFTOVER-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-02-29 rubbish",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-LEFTOVER-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-02-29 rubbish",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-LEFTOVER-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-02-29 rubbish",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-MIXED-DASHES-OO",
+      "profile": "oo",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-0229",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-MIXED-DASHES-DM6",
+      "profile": "dm6",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-0229",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    },
+    {
+      "case_id": "PARSE-INVALID-MIXED-DASHES-DM5",
+      "profile": "dm5",
+      "operation_id": "date.parse-text",
+      "syntax_id": null,
+      "production": null,
+      "text": "2040-0229",
+      "options": [],
+      "configuration": [],
+      "partition_ids": [
+        "invalid-and-ambiguous"
+      ]
+    }
+  ]
+}

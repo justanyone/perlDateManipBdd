@@ -46,15 +46,16 @@ Current independent worker outputs:
   397 unobserved method-partition obligations, not 397 executed cases.
 - `configuration-domains.json` records 38 configuration keys and documented
   domains/defaults; runtime-only ambiguities and file-section grammar remain open.
-- Active workers: `zones_business_features`, `arithmetic_features`, and
-  `configuration_features`. Rendering has returned a draft for coordinator review. Each owns its corresponding `spec/drafts/` family,
-  `tools/probes/*-family/`, and `docs/research/*-family/` directories. Inspect live
-  agent status before restarting workers; partial files are not completion evidence.
-- Worker batches under coordinator review: arithmetic has
-  59 repeated cases spanning 16 operation IDs; recurrence has 35 candidate IDs in
-  three drafts, 31 repeatable observations, and mappings spanning 12 operation IDs.
-  Their README files list substantial remaining obligations. A partition-ID link
-  is not evidence that every dimension in that partition has been discharged.
+- Active workers: `arithmetic_features` (grammar/field-range/operand expansion),
+  `recurrence_features` (grammar, setters, modifiers and limit controls), and
+  `configuration_features` (new pattern-parsing family only). Inspect live agent
+  status before restarting work. Rendering, configuration and zones/business
+  batches await coordinator review.
+- Completed worker drafts awaiting review: rendering has 24 repeated invocations
+  with exact bulk-request features and per-pattern mappings; configuration has
+  40 repeated cases sampling 38 keys with corrected non-mutating snapshots;
+  zones/business has 33 repeated cases sampling all 23 operation IDs. None is
+  a complete behavioral coverage claim.
 
 Independent read-only audit found exact correspondence with all 423 declaration
 rows, mappings for 164 public declaration bindings and 96 generic operation IDs,
@@ -67,7 +68,7 @@ Current next actions: continue English feature authoring and literal-observation
 review against the accepted catalogues. Review arithmetic and recurrence worker
 artifacts first, including fixture fidelity, literal results, English step meaning,
 and incomplete coverage. The coordinator also owns calendar, parsing, and language
-work; rendering, zone/business, and configuration/object workers are active.
+work; pattern parsing, arithmetic expansion, and recurrence expansion workers are active.
 Do not re-enumerate finished syntax inventories. Required input/option variants
 and unobserved partitions stay visible during feature authoring.
 
@@ -160,3 +161,22 @@ repeated twice in each of two byte-identical review runs. Targeted lifecycle
 literal checks and all partition links pass. These are reviewed draft corrections,
 not a completed recurrence family or an executed BDD suite. Continue full semantic
 review and the listed gaps before promoting any family.
+
+## Parsing corpus checkpoint
+
+Coordinator added 291 isolated date-text binding cases: all 42 inventoried ISO
+complete/truncated date spellings, 35 common numeric/separated/joined spellings,
+four month-year spellings under three settings, and eight invalid/empty/mixed
+inputs, each in OO/DM6/DM5. Two runs per case repeat. There are 283 authored draft
+feature rows whose literal results match evidence; eight legacy unsupported
+configuration exceptions occur before parsing and remain separate.
+`tools/review/parsing_literals.py` verifies all provenance hashes, input/result
+correspondence, diagnostics, and independent ordinal/week facts. It reports 223
+valid civil results, 60 rejected parses, and zero approved specification cases.
+
+The two parsing feature files remain draft. Joined month/year precedence and the
+rejected joined two-digit-year form need semantic disposition. See
+`docs/research/parsing-family/README.md` for remaining parsing/language/state work.
+Next coordinator task: review completed rendering/configuration/zones batches,
+then expand remaining text/time/language grammar and calendar features while the
+three current workers proceed in their separate directories. No harness exists.

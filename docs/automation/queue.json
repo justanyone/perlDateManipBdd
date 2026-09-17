@@ -91,15 +91,18 @@
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
       ],
-      "owner": "coordinator + rendering_features",
-      "progress": "231 calendar/epoch binding observations repeated; independent review190 reviewed,28 compatibility,3 invalid,10 unreviewed.52 original English candidate cases linked to116 calls,50 fact-reviewed and2 compatibility review. Date/time syntax, rendering, language and remaining calendar partitions still need cases.",
+      "owner": "coordinator + configuration_features (pattern parsing)",
+      "progress": "Calendar batch retained. New parsing corpus: 291 repeated binding cases, 283 authored candidate literals checked against saved evidence, 8 legacy configuration exceptions separate. Rendering worker revised 24 repeated invocations and draft features; coordinator review pending. Pattern parsing assigned; remaining natural-language/time/language and calendar partitions open.",
       "evidence": [
         "docs/research/observations/calendar.json",
         "docs/research/observations/calendar-review.json",
         "spec/drafts/calendar.feature",
         "spec/drafts/calendar-validation.feature",
         "docs/research/calendar-feature-map.json",
-        "docs/research/calendar-validation-map.json"
+        "docs/research/calendar-validation-map.json",
+        "docs/research/parsing-family/README.md",
+        "docs/research/parsing-family/feature-map.json",
+        "tools/review/parsing_literals.py"
       ]
     },
     {
@@ -121,8 +124,8 @@
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
       ],
-      "owner": "coordinator-review",
-      "progress": "Worker delivered59 repeated cases and draft features spanning16operation IDs. Detailed method/binding/partition coverage and literal review pending; reported gaps remain."
+      "owner": "arithmetic_features",
+      "progress": "First 59-case batch corrected for explicit options, field order and semantic labels. Worker now expanding all delta productions, fields/ranges and OO operand/mode variants. Review remains pending."
     },
     {
       "id": "spec-recurrence",
@@ -143,8 +146,8 @@
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
       ],
-      "owner": "coordinator-review",
-      "progress": "Worker delivered35 candidate case IDs across3draft files,31fresh repeatable observations, and mappings spanning12operation IDs. Full grammar/context grids and method variant coverage remain; review pending."
+      "owner": "recurrence_features",
+      "progress": "Coordinator committed corrected 31-case/35-ID draft with concrete lifecycle assertions and repeatability checks. Worker now expanding frequency grammar, setters, modifiers and range/attempt limits."
     },
     {
       "id": "spec-zones-business",
@@ -165,7 +168,8 @@
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
       ],
-      "owner": "zones_business_features"
+      "owner": "coordinator-review",
+      "progress": "Worker returned 33 repeated cases sampling all 23 operation IDs, including non-whole-hour wrappers and error controls. None of the broad partitions is discharged; review and further boundaries remain."
     },
     {
       "id": "spec-configuration-objects",
@@ -186,7 +190,8 @@
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
       ],
-      "owner": "configuration_features"
+      "owner": "coordinator-review",
+      "progress": "Worker returned 40 repeated cases narrowly sampling all 38 configuration keys plus lifecycle cases. Observer-induced unset-value errors corrected. Feature/evidence review and broader domains remain."
     },
     {
       "id": "coverage-review",
