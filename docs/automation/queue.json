@@ -322,7 +322,15 @@
         "docs/research/behavior-gap-ledger/README.md",
         "docs/research/behavior-gap-ledger/ledger.json"
       ],
-      "preparatory_review": "Public-call instrumentation verified for OO, DM6 and DM5 with identical plain/instrumented channels. Seven coverage-summary safeguard tests pass. Only 16 of 804 modules loaded: no whole-library coverage claim. Denominator audit returned and awaits coordinator integration; coverage review remains pending. Representative generated-module routes independently verified; TZdata generation-tool exclusion explicitly reviewed, raw inventory retained. Full runtime denominator and final suite remain incomplete."
+      "preparatory_review": "Public-call instrumentation verified for OO, DM6 and DM5 with identical plain/instrumented channels. Seven coverage-summary safeguard tests pass. Only 16 of 804 modules loaded: no whole-library coverage claim. Denominator audit returned and awaits coordinator integration; coverage review remains pending. Representative generated-module routes independently verified; TZdata generation-tool exclusion explicitly reviewed, raw inventory retained. Full runtime denominator and final suite remain incomplete.",
+      "active_diagnostic": {
+        "manifest": "tools/coverage-corpus/broad-manifest.json",
+        "output": "/tmp/public-coverage-corpus-broad-root",
+        "case_count": 965,
+        "family_count": 15,
+        "state": "running; verify process handle in checkpoint before resuming",
+        "not_final_suite": true
+      }
     },
     {
       "id": "internal-spec-review",

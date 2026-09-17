@@ -978,3 +978,20 @@ parser-snapshot.json; syntax only, no BDD execution or completeness claim.
 Workers now pursue new public domains: partial_parsing leap-year, pattern_repair
 month/year lengths, week_edges_finish weekday. No root capture processes remain.
 All final gates remain open.
+
+## Broader source-coverage diagnostic running
+
+Root created broad-manifest.json:965 distinct public probe/case requests in15
+families, adding107 arithmetic,36 recurrence,40 configuration,30 parse/value history,
+20 object lifecycle,24 rendering and236 week-edge requests to prior472. All15 probe
+files verified byte-equal committedHEAD before launch. Collector recognizes the
+existing exact DM5 load warning in setup_warnings as well as prior channels; tests
+prove warning counts/messages and other outputs cannot be normalized away. All10
+coverage tests pass.
+
+ACTIVE HANDLE: exec session20949, command collect.py --manifest
+tools/coverage-corpus/broad-manifest.json --output /tmp/public-coverage-corpus-broad-root
+--normalize-dm5-deprecation-sites. Last poll confirmed live. Do not restart on
+timeout; poll this handle and preserve raw outputs. No metrics/final report yet.
+Keep these committed probe sources stable until terminal. Workers edit only NEW
+leap-year/calendar-length/weekday directories, so no conflict. All final gates open.

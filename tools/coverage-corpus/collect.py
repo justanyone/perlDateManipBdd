@@ -68,7 +68,7 @@ def normalize_deprecation_sites(value):
         return value
     answer = {}
     for key, item in value.items():
-        if key in ("warnings", "load_warnings", "configuration_warnings") and isinstance(item, list):
+        if key in ("warnings", "load_warnings", "configuration_warnings", "setup_warnings") and isinstance(item, list):
             answer[key] = [re.sub(r"at \(eval \d+\)(?:\[[^\]\n]+\])?(?= line \d+\.\n?$)",
                                  "at (eval LOCATION)", warning)
                            if isinstance(warning, str) and warning.startswith(DEPRECATION + " at ")

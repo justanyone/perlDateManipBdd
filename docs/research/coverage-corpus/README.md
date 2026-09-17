@@ -94,3 +94,20 @@ The coordinator verified every saved raw payload hash and comparison, and checke
 that the extracted statement/branch totals exactly match the merged JSON report.
 Location identifiers identify measured criteria; assigning each gap to a public
 behavior and writing a discriminating assertion still requires source review.
+
+## Broader committed-family corpus
+
+`tools/coverage-corpus/broad-manifest.json` adds arithmetic, recurrence, configuration,
+parse/value history, object lifecycle, rendering and week-rule edges to the original
+eight families:965 public requests across15 families. This is reference-probe
+coverage, not the eventual BDD harness. Run into a fresh directory:
+
+```sh
+python3 tools/coverage-corpus/collect.py --manifest tools/coverage-corpus/broad-manifest.json --output /tmp/public-coverage-corpus-broad --normalize-dm5-deprecation-sites
+```
+
+The exact existing DM5 deprecation-location normalization also recognizes the
+`setup_warnings` channel used by arithmetic probes. Other message text, warning
+counts, exceptions, returned values and stderr remain exact. Raw outputs remain
+saved. Expanded fidelity tests cover every recognized warning channel. The initial
+broader run is pending; no coverage improvement is claimed before it completes.
