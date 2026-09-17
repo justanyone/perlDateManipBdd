@@ -144,11 +144,17 @@
         "docs/research/week-rules-family/README.md",
         "docs/research/week-rules-family/coverage-map.json",
         "docs/research/week-rules-family/observations.json",
-        "spec/drafts/week-rules/week-rules.feature"
+        "spec/drafts/week-rules/week-rules.feature",
+        "docs/research/week-rules-edges/README.md",
+        "docs/research/week-rules-edges/coverage-map.json",
+        "docs/research/week-rules-edges/observations.json",
+        "spec/drafts/week-rules-edges",
+        "tools/probes/week-rules-edges/review.py"
       ],
       "partial_parsing_edges_review": "52 repeatable public edge requests integrated after independent repair and root review. Explicit setup, 48 outline-row comparisons, native failure lifecycle and binding-only warnings checked; broader domains and source coverage remain open.",
       "input_history_review": "17 repeatable public Date::input cases integrated after provenance repair, canonical-binding correction and explicit not-called configuration metadata. Reviewer requires runtime/profile/module/process evidence and checks feature literals. Constructor retention added; wider transitions remain open.",
-      "completeness_query_review": "11 isolated receiver setups,132 public complete() queries and36 warnings reviewed with literal expectations. Mutation and other remaining partitions explicitly open."
+      "completeness_query_review": "11 isolated receiver setups,132 public complete() queries and36 warnings reviewed with literal expectations. Mutation and other remaining partitions explicitly open.",
+      "week_rule_edges_review": "236 isolated public requests independently reproduced: 39 Base calls,17 configuration attempts,180 facade calls;232 portable rows and236 excluded binding rows checked by exact case identity. Remaining domains explicit; no whole-partition completion claim."
     },
     {
       "id": "spec-arithmetic-deltas",

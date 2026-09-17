@@ -1,0 +1,2380 @@
+{
+  "binding_only_feature": {
+    "assertion_ids": [
+      "WRE-BASE-INVERSE-WEEK-0",
+      "WRE-BASE-INVERSE-WEEK-NEG1",
+      "WRE-BASE-INVERSE-WEEK-52",
+      "WRE-BASE-INVERSE-WEEK-53",
+      "WRE-BASE-INVERSE-WEEK-54",
+      "WRE-BASE-INVERSE-WEEK-UNDEFINED",
+      "WRE-BASE-INVERSE-WEEK-TEXT",
+      "WRE-BASE-INVERSE-YEAR-UNDEFINED",
+      "WRE-BASE-INVERSE-YEAR-NEG1",
+      "WRE-BASE-INVERSE-YEAR-0",
+      "WRE-BASE-INVERSE-YEAR-1",
+      "WRE-BASE-INVERSE-YEAR-9999",
+      "WRE-BASE-INVERSE-YEAR-10000",
+      "WRE-BASE-INVERSE-YEAR-TEXT",
+      "WRE-BASE-FORWARD-DATE-VALID",
+      "WRE-BASE-FORWARD-DATE-EMPTY",
+      "WRE-BASE-FORWARD-DATE-YEAR",
+      "WRE-BASE-FORWARD-DATE-YEAR-MONTH",
+      "WRE-BASE-FORWARD-DATE-EXTRA",
+      "WRE-BASE-FORWARD-DATE-MONTH-0",
+      "WRE-BASE-FORWARD-DATE-MONTH-13",
+      "WRE-BASE-FORWARD-DATE-DAY-0",
+      "WRE-BASE-FORWARD-DATE-DAY-32",
+      "WRE-BASE-FORWARD-DATE-FEB-30",
+      "WRE-BASE-FORWARD-DATE-YEAR-NEG1",
+      "WRE-BASE-FORWARD-DATE-YEAR-0",
+      "WRE-BASE-FORWARD-DATE-YEAR-1",
+      "WRE-BASE-FORWARD-DATE-YEAR-9999",
+      "WRE-BASE-FORWARD-DATE-YEAR-10000",
+      "WRE-BASE-FORWARD-DATE-TEXT-YEAR",
+      "WRE-BASE-FORWARD-DATE-TEXT-MONTH",
+      "WRE-BASE-FORWARD-DATE-TEXT-DAY",
+      "WRE-BASE-FORWARD-ARG-UNDEFINED",
+      "WRE-BASE-FORWARD-ARG-TEXT",
+      "WRE-BASE-FORWARD-ARG-HASH",
+      "WRE-BASE-ARITY-NO-ARGUMENTS",
+      "WRE-BASE-ARITY-ONE-SCALAR",
+      "WRE-BASE-ARITY-THREE-SCALARS",
+      "WRE-BASE-ARITY-FOUR-SCALARS",
+      "WRE-BASE-CONFIG-FIRSTDAY-0",
+      "WRE-BASE-CONFIG-FIRSTDAY-8",
+      "WRE-BASE-CONFIG-FIRSTDAY-NEG1",
+      "WRE-BASE-CONFIG-FIRSTDAY-EMPTY",
+      "WRE-BASE-CONFIG-FIRSTDAY-UNDEFINED",
+      "WRE-BASE-CONFIG-FIRSTDAY-MISSING",
+      "WRE-BASE-CONFIG-FIRSTDAY-NAME",
+      "WRE-BASE-CONFIG-FIRSTDAY-FRACTION",
+      "WRE-BASE-CONFIG-WEEKRULE-JAN0",
+      "WRE-BASE-CONFIG-WEEKRULE-JAN8",
+      "WRE-BASE-CONFIG-WEEKRULE-DOW0",
+      "WRE-BASE-CONFIG-WEEKRULE-DOW8",
+      "WRE-BASE-CONFIG-WEEKRULE-EMPTY",
+      "WRE-BASE-CONFIG-WEEKRULE-UNDEFINED",
+      "WRE-BASE-CONFIG-WEEKRULE-MISSING",
+      "WRE-BASE-CONFIG-WEEKRULE-FIRST-DAY",
+      "WRE-BASE-CONFIG-WEEKRULE-UPPERCASE",
+      "WRE-OO-JAN4-F1-OMITTED",
+      "WRE-OO-JAN4-F1-UNDEFINED",
+      "WRE-OO-JAN4-F1-1",
+      "WRE-OO-JAN4-F1-2",
+      "WRE-OO-JAN4-F1-3",
+      "WRE-OO-JAN4-F1-4",
+      "WRE-OO-JAN4-F1-5",
+      "WRE-OO-JAN4-F1-6",
+      "WRE-OO-JAN4-F1-7",
+      "WRE-OO-JAN4-F1-0",
+      "WRE-OO-JAN4-F1-8",
+      "WRE-OO-JAN4-F1-NEG1",
+      "WRE-OO-JAN4-F1-EMPTY",
+      "WRE-OO-JAN4-F1-NAME",
+      "WRE-OO-JAN4-F1-FRACTION",
+      "WRE-OO-JAN4-F7-OMITTED",
+      "WRE-OO-JAN4-F7-UNDEFINED",
+      "WRE-OO-JAN4-F7-1",
+      "WRE-OO-JAN4-F7-2",
+      "WRE-OO-JAN4-F7-3",
+      "WRE-OO-JAN4-F7-4",
+      "WRE-OO-JAN4-F7-5",
+      "WRE-OO-JAN4-F7-6",
+      "WRE-OO-JAN4-F7-7",
+      "WRE-OO-JAN4-F7-0",
+      "WRE-OO-JAN4-F7-8",
+      "WRE-OO-JAN4-F7-NEG1",
+      "WRE-OO-JAN4-F7-EMPTY",
+      "WRE-OO-JAN4-F7-NAME",
+      "WRE-OO-JAN4-F7-FRACTION",
+      "WRE-OO-JAN1-F1-OMITTED",
+      "WRE-OO-JAN1-F1-UNDEFINED",
+      "WRE-OO-JAN1-F1-1",
+      "WRE-OO-JAN1-F1-2",
+      "WRE-OO-JAN1-F1-3",
+      "WRE-OO-JAN1-F1-4",
+      "WRE-OO-JAN1-F1-5",
+      "WRE-OO-JAN1-F1-6",
+      "WRE-OO-JAN1-F1-7",
+      "WRE-OO-JAN1-F1-0",
+      "WRE-OO-JAN1-F1-8",
+      "WRE-OO-JAN1-F1-NEG1",
+      "WRE-OO-JAN1-F1-EMPTY",
+      "WRE-OO-JAN1-F1-NAME",
+      "WRE-OO-JAN1-F1-FRACTION",
+      "WRE-OO-JAN1-F7-OMITTED",
+      "WRE-OO-JAN1-F7-UNDEFINED",
+      "WRE-OO-JAN1-F7-1",
+      "WRE-OO-JAN1-F7-2",
+      "WRE-OO-JAN1-F7-3",
+      "WRE-OO-JAN1-F7-4",
+      "WRE-OO-JAN1-F7-5",
+      "WRE-OO-JAN1-F7-6",
+      "WRE-OO-JAN1-F7-7",
+      "WRE-OO-JAN1-F7-0",
+      "WRE-OO-JAN1-F7-8",
+      "WRE-OO-JAN1-F7-NEG1",
+      "WRE-OO-JAN1-F7-EMPTY",
+      "WRE-OO-JAN1-F7-NAME",
+      "WRE-OO-JAN1-F7-FRACTION",
+      "WRE-DM6-JAN4-F1-OMITTED",
+      "WRE-DM6-JAN4-F1-UNDEFINED",
+      "WRE-DM6-JAN4-F1-1",
+      "WRE-DM6-JAN4-F1-2",
+      "WRE-DM6-JAN4-F1-3",
+      "WRE-DM6-JAN4-F1-4",
+      "WRE-DM6-JAN4-F1-5",
+      "WRE-DM6-JAN4-F1-6",
+      "WRE-DM6-JAN4-F1-7",
+      "WRE-DM6-JAN4-F1-0",
+      "WRE-DM6-JAN4-F1-8",
+      "WRE-DM6-JAN4-F1-NEG1",
+      "WRE-DM6-JAN4-F1-EMPTY",
+      "WRE-DM6-JAN4-F1-NAME",
+      "WRE-DM6-JAN4-F1-FRACTION",
+      "WRE-DM6-JAN4-F7-OMITTED",
+      "WRE-DM6-JAN4-F7-UNDEFINED",
+      "WRE-DM6-JAN4-F7-1",
+      "WRE-DM6-JAN4-F7-2",
+      "WRE-DM6-JAN4-F7-3",
+      "WRE-DM6-JAN4-F7-4",
+      "WRE-DM6-JAN4-F7-5",
+      "WRE-DM6-JAN4-F7-6",
+      "WRE-DM6-JAN4-F7-7",
+      "WRE-DM6-JAN4-F7-0",
+      "WRE-DM6-JAN4-F7-8",
+      "WRE-DM6-JAN4-F7-NEG1",
+      "WRE-DM6-JAN4-F7-EMPTY",
+      "WRE-DM6-JAN4-F7-NAME",
+      "WRE-DM6-JAN4-F7-FRACTION",
+      "WRE-DM6-JAN1-F1-OMITTED",
+      "WRE-DM6-JAN1-F1-UNDEFINED",
+      "WRE-DM6-JAN1-F1-1",
+      "WRE-DM6-JAN1-F1-2",
+      "WRE-DM6-JAN1-F1-3",
+      "WRE-DM6-JAN1-F1-4",
+      "WRE-DM6-JAN1-F1-5",
+      "WRE-DM6-JAN1-F1-6",
+      "WRE-DM6-JAN1-F1-7",
+      "WRE-DM6-JAN1-F1-0",
+      "WRE-DM6-JAN1-F1-8",
+      "WRE-DM6-JAN1-F1-NEG1",
+      "WRE-DM6-JAN1-F1-EMPTY",
+      "WRE-DM6-JAN1-F1-NAME",
+      "WRE-DM6-JAN1-F1-FRACTION",
+      "WRE-DM6-JAN1-F7-OMITTED",
+      "WRE-DM6-JAN1-F7-UNDEFINED",
+      "WRE-DM6-JAN1-F7-1",
+      "WRE-DM6-JAN1-F7-2",
+      "WRE-DM6-JAN1-F7-3",
+      "WRE-DM6-JAN1-F7-4",
+      "WRE-DM6-JAN1-F7-5",
+      "WRE-DM6-JAN1-F7-6",
+      "WRE-DM6-JAN1-F7-7",
+      "WRE-DM6-JAN1-F7-0",
+      "WRE-DM6-JAN1-F7-8",
+      "WRE-DM6-JAN1-F7-NEG1",
+      "WRE-DM6-JAN1-F7-EMPTY",
+      "WRE-DM6-JAN1-F7-NAME",
+      "WRE-DM6-JAN1-F7-FRACTION",
+      "WRE-DM5-JAN4-F1-OMITTED",
+      "WRE-DM5-JAN4-F1-UNDEFINED",
+      "WRE-DM5-JAN4-F1-1",
+      "WRE-DM5-JAN4-F1-2",
+      "WRE-DM5-JAN4-F1-3",
+      "WRE-DM5-JAN4-F1-4",
+      "WRE-DM5-JAN4-F1-5",
+      "WRE-DM5-JAN4-F1-6",
+      "WRE-DM5-JAN4-F1-7",
+      "WRE-DM5-JAN4-F1-0",
+      "WRE-DM5-JAN4-F1-8",
+      "WRE-DM5-JAN4-F1-NEG1",
+      "WRE-DM5-JAN4-F1-EMPTY",
+      "WRE-DM5-JAN4-F1-NAME",
+      "WRE-DM5-JAN4-F1-FRACTION",
+      "WRE-DM5-JAN4-F7-OMITTED",
+      "WRE-DM5-JAN4-F7-UNDEFINED",
+      "WRE-DM5-JAN4-F7-1",
+      "WRE-DM5-JAN4-F7-2",
+      "WRE-DM5-JAN4-F7-3",
+      "WRE-DM5-JAN4-F7-4",
+      "WRE-DM5-JAN4-F7-5",
+      "WRE-DM5-JAN4-F7-6",
+      "WRE-DM5-JAN4-F7-7",
+      "WRE-DM5-JAN4-F7-0",
+      "WRE-DM5-JAN4-F7-8",
+      "WRE-DM5-JAN4-F7-NEG1",
+      "WRE-DM5-JAN4-F7-EMPTY",
+      "WRE-DM5-JAN4-F7-NAME",
+      "WRE-DM5-JAN4-F7-FRACTION",
+      "WRE-DM5-JAN1-F1-OMITTED",
+      "WRE-DM5-JAN1-F1-UNDEFINED",
+      "WRE-DM5-JAN1-F1-1",
+      "WRE-DM5-JAN1-F1-2",
+      "WRE-DM5-JAN1-F1-3",
+      "WRE-DM5-JAN1-F1-4",
+      "WRE-DM5-JAN1-F1-5",
+      "WRE-DM5-JAN1-F1-6",
+      "WRE-DM5-JAN1-F1-7",
+      "WRE-DM5-JAN1-F1-0",
+      "WRE-DM5-JAN1-F1-8",
+      "WRE-DM5-JAN1-F1-NEG1",
+      "WRE-DM5-JAN1-F1-EMPTY",
+      "WRE-DM5-JAN1-F1-NAME",
+      "WRE-DM5-JAN1-F1-FRACTION",
+      "WRE-DM5-JAN1-F7-OMITTED",
+      "WRE-DM5-JAN1-F7-UNDEFINED",
+      "WRE-DM5-JAN1-F7-1",
+      "WRE-DM5-JAN1-F7-2",
+      "WRE-DM5-JAN1-F7-3",
+      "WRE-DM5-JAN1-F7-4",
+      "WRE-DM5-JAN1-F7-5",
+      "WRE-DM5-JAN1-F7-6",
+      "WRE-DM5-JAN1-F7-7",
+      "WRE-DM5-JAN1-F7-0",
+      "WRE-DM5-JAN1-F7-8",
+      "WRE-DM5-JAN1-F7-NEG1",
+      "WRE-DM5-JAN1-F7-EMPTY",
+      "WRE-DM5-JAN1-F7-NAME",
+      "WRE-DM5-JAN1-F7-FRACTION"
+    ],
+    "path": "spec/drafts/week-rules-edges/perl-binding.feature",
+    "tags": [
+      "source-binding",
+      "perl-binding",
+      "excluded-from-portable-handoff"
+    ]
+  },
+  "case_map": [
+    {
+      "case_id": "WRE-BASE-INVERSE-WEEK-0",
+      "classification": "observed-compatibility",
+      "observation_index": 0,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-WEEK-NEG1",
+      "classification": "observed-compatibility",
+      "observation_index": 1,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-WEEK-52",
+      "classification": "documented",
+      "observation_index": 2,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-WEEK-53",
+      "classification": "observed-compatibility",
+      "observation_index": 3,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-WEEK-54",
+      "classification": "observed-compatibility",
+      "observation_index": 4,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-WEEK-UNDEFINED",
+      "classification": "observed-compatibility",
+      "observation_index": 5,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-WEEK-TEXT",
+      "classification": "observed-compatibility",
+      "observation_index": 6,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-YEAR-UNDEFINED",
+      "classification": "observed-compatibility",
+      "observation_index": 7,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-YEAR-NEG1",
+      "classification": "observed-compatibility",
+      "observation_index": 8,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-YEAR-0",
+      "classification": "observed-compatibility",
+      "observation_index": 9,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-YEAR-1",
+      "classification": "documented-boundary",
+      "observation_index": 10,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-YEAR-9999",
+      "classification": "documented-boundary",
+      "observation_index": 11,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-YEAR-10000",
+      "classification": "observed-compatibility",
+      "observation_index": 12,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-YEAR-TEXT",
+      "classification": "observed-compatibility",
+      "observation_index": 13,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-VALID",
+      "classification": "documented-control",
+      "observation_index": 14,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-EMPTY",
+      "classification": "observed-compatibility",
+      "observation_index": 15,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-YEAR",
+      "classification": "observed-compatibility",
+      "observation_index": 16,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-YEAR-MONTH",
+      "classification": "observed-compatibility",
+      "observation_index": 17,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-EXTRA",
+      "classification": "observed-compatibility",
+      "observation_index": 18,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-MONTH-0",
+      "classification": "observed-compatibility",
+      "observation_index": 19,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-MONTH-13",
+      "classification": "observed-compatibility",
+      "observation_index": 20,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-DAY-0",
+      "classification": "observed-compatibility",
+      "observation_index": 21,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-DAY-32",
+      "classification": "observed-compatibility",
+      "observation_index": 22,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-FEB-30",
+      "classification": "observed-compatibility",
+      "observation_index": 23,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-YEAR-NEG1",
+      "classification": "observed-compatibility",
+      "observation_index": 24,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-YEAR-0",
+      "classification": "observed-compatibility",
+      "observation_index": 25,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-YEAR-1",
+      "classification": "documented-boundary",
+      "observation_index": 26,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-YEAR-9999",
+      "classification": "documented-boundary",
+      "observation_index": 27,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-YEAR-10000",
+      "classification": "observed-compatibility",
+      "observation_index": 28,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-TEXT-YEAR",
+      "classification": "observed-compatibility",
+      "observation_index": 29,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-TEXT-MONTH",
+      "classification": "observed-compatibility",
+      "observation_index": 30,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-TEXT-DAY",
+      "classification": "observed-compatibility",
+      "observation_index": 31,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-ARG-UNDEFINED",
+      "classification": "binding-failure",
+      "observation_index": 32,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-ARG-TEXT",
+      "classification": "binding-failure",
+      "observation_index": 33,
+      "partition_id": "calendar.week-number.p4",
+      "portable": false,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-ARG-HASH",
+      "classification": "binding-failure",
+      "observation_index": 34,
+      "partition_id": "calendar.week-number.p4",
+      "portable": false,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-ARITY-NO-ARGUMENTS",
+      "classification": "binding-failure",
+      "observation_index": 35,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-ARITY-ONE-SCALAR",
+      "classification": "binding-failure",
+      "observation_index": 36,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-ARITY-THREE-SCALARS",
+      "classification": "binding-failure",
+      "observation_index": 37,
+      "partition_id": "calendar.week-number.p4",
+      "portable": false,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-ARITY-FOUR-SCALARS",
+      "classification": "binding-failure",
+      "observation_index": 38,
+      "partition_id": "calendar.week-number.p4",
+      "portable": false,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-FIRSTDAY-0",
+      "classification": "observed-compatibility",
+      "observation_index": 39,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-FIRSTDAY-8",
+      "classification": "observed-compatibility",
+      "observation_index": 40,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-FIRSTDAY-NEG1",
+      "classification": "observed-compatibility",
+      "observation_index": 41,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-FIRSTDAY-EMPTY",
+      "classification": "observed-compatibility",
+      "observation_index": 42,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-FIRSTDAY-UNDEFINED",
+      "classification": "observed-compatibility",
+      "observation_index": 43,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-FIRSTDAY-MISSING",
+      "classification": "observed-compatibility",
+      "observation_index": 44,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-FIRSTDAY-NAME",
+      "classification": "observed-compatibility",
+      "observation_index": 45,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-FIRSTDAY-FRACTION",
+      "classification": "observed-compatibility",
+      "observation_index": 46,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-JAN0",
+      "classification": "observed-compatibility",
+      "observation_index": 47,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-JAN8",
+      "classification": "observed-compatibility",
+      "observation_index": 48,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-DOW0",
+      "classification": "observed-compatibility",
+      "observation_index": 49,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-DOW8",
+      "classification": "observed-compatibility",
+      "observation_index": 50,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-EMPTY",
+      "classification": "observed-compatibility",
+      "observation_index": 51,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-UNDEFINED",
+      "classification": "observed-compatibility",
+      "observation_index": 52,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-MISSING",
+      "classification": "observed-compatibility",
+      "observation_index": 53,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-FIRST-DAY",
+      "classification": "observed-compatibility",
+      "observation_index": 54,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-UPPERCASE",
+      "classification": "documented",
+      "observation_index": 55,
+      "partition_id": "calendar.week-number.p4",
+      "portable": true,
+      "profile": "base"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-OMITTED",
+      "classification": "observed-compatibility",
+      "observation_index": 56,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-UNDEFINED",
+      "classification": "observed-compatibility",
+      "observation_index": 57,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-1",
+      "classification": "documented",
+      "observation_index": 58,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-2",
+      "classification": "documented",
+      "observation_index": 59,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-3",
+      "classification": "documented",
+      "observation_index": 60,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-4",
+      "classification": "documented",
+      "observation_index": 61,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-5",
+      "classification": "documented",
+      "observation_index": 62,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-6",
+      "classification": "documented",
+      "observation_index": 63,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-7",
+      "classification": "documented",
+      "observation_index": 64,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-0",
+      "classification": "observed-compatibility",
+      "observation_index": 65,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-8",
+      "classification": "observed-compatibility",
+      "observation_index": 66,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-NEG1",
+      "classification": "observed-compatibility",
+      "observation_index": 67,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-EMPTY",
+      "classification": "observed-compatibility",
+      "observation_index": 68,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-NAME",
+      "classification": "observed-compatibility",
+      "observation_index": 69,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-FRACTION",
+      "classification": "observed-compatibility",
+      "observation_index": 70,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-OMITTED",
+      "classification": "observed-compatibility",
+      "observation_index": 71,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-UNDEFINED",
+      "classification": "observed-compatibility",
+      "observation_index": 72,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-1",
+      "classification": "documented",
+      "observation_index": 73,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-2",
+      "classification": "documented",
+      "observation_index": 74,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-3",
+      "classification": "documented",
+      "observation_index": 75,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-4",
+      "classification": "documented",
+      "observation_index": 76,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-5",
+      "classification": "documented",
+      "observation_index": 77,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-6",
+      "classification": "documented",
+      "observation_index": 78,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-7",
+      "classification": "documented",
+      "observation_index": 79,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-0",
+      "classification": "observed-compatibility",
+      "observation_index": 80,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-8",
+      "classification": "observed-compatibility",
+      "observation_index": 81,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-NEG1",
+      "classification": "observed-compatibility",
+      "observation_index": 82,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-EMPTY",
+      "classification": "observed-compatibility",
+      "observation_index": 83,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-NAME",
+      "classification": "observed-compatibility",
+      "observation_index": 84,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-FRACTION",
+      "classification": "observed-compatibility",
+      "observation_index": 85,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-OMITTED",
+      "classification": "observed-compatibility",
+      "observation_index": 86,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-UNDEFINED",
+      "classification": "observed-compatibility",
+      "observation_index": 87,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-1",
+      "classification": "documented",
+      "observation_index": 88,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-2",
+      "classification": "documented",
+      "observation_index": 89,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-3",
+      "classification": "documented",
+      "observation_index": 90,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-4",
+      "classification": "documented",
+      "observation_index": 91,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-5",
+      "classification": "documented",
+      "observation_index": 92,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-6",
+      "classification": "documented",
+      "observation_index": 93,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-7",
+      "classification": "documented",
+      "observation_index": 94,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-0",
+      "classification": "observed-compatibility",
+      "observation_index": 95,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-8",
+      "classification": "observed-compatibility",
+      "observation_index": 96,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-NEG1",
+      "classification": "observed-compatibility",
+      "observation_index": 97,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-EMPTY",
+      "classification": "observed-compatibility",
+      "observation_index": 98,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-NAME",
+      "classification": "observed-compatibility",
+      "observation_index": 99,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-FRACTION",
+      "classification": "observed-compatibility",
+      "observation_index": 100,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-OMITTED",
+      "classification": "observed-compatibility",
+      "observation_index": 101,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-UNDEFINED",
+      "classification": "observed-compatibility",
+      "observation_index": 102,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-1",
+      "classification": "documented",
+      "observation_index": 103,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-2",
+      "classification": "documented",
+      "observation_index": 104,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-3",
+      "classification": "documented",
+      "observation_index": 105,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-4",
+      "classification": "documented",
+      "observation_index": 106,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-5",
+      "classification": "documented",
+      "observation_index": 107,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-6",
+      "classification": "documented",
+      "observation_index": 108,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-7",
+      "classification": "documented",
+      "observation_index": 109,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-0",
+      "classification": "observed-compatibility",
+      "observation_index": 110,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-8",
+      "classification": "observed-compatibility",
+      "observation_index": 111,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-NEG1",
+      "classification": "observed-compatibility",
+      "observation_index": 112,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-EMPTY",
+      "classification": "observed-compatibility",
+      "observation_index": 113,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-NAME",
+      "classification": "observed-compatibility",
+      "observation_index": 114,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-FRACTION",
+      "classification": "observed-compatibility",
+      "observation_index": 115,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "oo"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-OMITTED",
+      "classification": "observed-compatibility",
+      "observation_index": 116,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-UNDEFINED",
+      "classification": "observed-compatibility",
+      "observation_index": 117,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-1",
+      "classification": "documented",
+      "observation_index": 118,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-2",
+      "classification": "documented",
+      "observation_index": 119,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-3",
+      "classification": "documented",
+      "observation_index": 120,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-4",
+      "classification": "documented",
+      "observation_index": 121,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-5",
+      "classification": "documented",
+      "observation_index": 122,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-6",
+      "classification": "documented",
+      "observation_index": 123,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-7",
+      "classification": "documented",
+      "observation_index": 124,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-0",
+      "classification": "observed-compatibility",
+      "observation_index": 125,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-8",
+      "classification": "observed-compatibility",
+      "observation_index": 126,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-NEG1",
+      "classification": "observed-compatibility",
+      "observation_index": 127,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-EMPTY",
+      "classification": "observed-compatibility",
+      "observation_index": 128,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-NAME",
+      "classification": "observed-compatibility",
+      "observation_index": 129,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-FRACTION",
+      "classification": "observed-compatibility",
+      "observation_index": 130,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-OMITTED",
+      "classification": "observed-compatibility",
+      "observation_index": 131,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-UNDEFINED",
+      "classification": "observed-compatibility",
+      "observation_index": 132,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-1",
+      "classification": "documented",
+      "observation_index": 133,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-2",
+      "classification": "documented",
+      "observation_index": 134,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-3",
+      "classification": "documented",
+      "observation_index": 135,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-4",
+      "classification": "documented",
+      "observation_index": 136,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-5",
+      "classification": "documented",
+      "observation_index": 137,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-6",
+      "classification": "documented",
+      "observation_index": 138,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-7",
+      "classification": "documented",
+      "observation_index": 139,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-0",
+      "classification": "observed-compatibility",
+      "observation_index": 140,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-8",
+      "classification": "observed-compatibility",
+      "observation_index": 141,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-NEG1",
+      "classification": "observed-compatibility",
+      "observation_index": 142,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-EMPTY",
+      "classification": "observed-compatibility",
+      "observation_index": 143,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-NAME",
+      "classification": "observed-compatibility",
+      "observation_index": 144,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-FRACTION",
+      "classification": "observed-compatibility",
+      "observation_index": 145,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-OMITTED",
+      "classification": "observed-compatibility",
+      "observation_index": 146,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-UNDEFINED",
+      "classification": "observed-compatibility",
+      "observation_index": 147,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-1",
+      "classification": "documented",
+      "observation_index": 148,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-2",
+      "classification": "documented",
+      "observation_index": 149,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-3",
+      "classification": "documented",
+      "observation_index": 150,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-4",
+      "classification": "documented",
+      "observation_index": 151,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-5",
+      "classification": "documented",
+      "observation_index": 152,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-6",
+      "classification": "documented",
+      "observation_index": 153,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-7",
+      "classification": "documented",
+      "observation_index": 154,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-0",
+      "classification": "observed-compatibility",
+      "observation_index": 155,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-8",
+      "classification": "observed-compatibility",
+      "observation_index": 156,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-NEG1",
+      "classification": "observed-compatibility",
+      "observation_index": 157,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-EMPTY",
+      "classification": "observed-compatibility",
+      "observation_index": 158,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-NAME",
+      "classification": "observed-compatibility",
+      "observation_index": 159,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-FRACTION",
+      "classification": "observed-compatibility",
+      "observation_index": 160,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-OMITTED",
+      "classification": "observed-compatibility",
+      "observation_index": 161,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-UNDEFINED",
+      "classification": "observed-compatibility",
+      "observation_index": 162,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-1",
+      "classification": "documented",
+      "observation_index": 163,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-2",
+      "classification": "documented",
+      "observation_index": 164,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-3",
+      "classification": "documented",
+      "observation_index": 165,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-4",
+      "classification": "documented",
+      "observation_index": 166,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-5",
+      "classification": "documented",
+      "observation_index": 167,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-6",
+      "classification": "documented",
+      "observation_index": 168,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-7",
+      "classification": "documented",
+      "observation_index": 169,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-0",
+      "classification": "observed-compatibility",
+      "observation_index": 170,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-8",
+      "classification": "observed-compatibility",
+      "observation_index": 171,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-NEG1",
+      "classification": "observed-compatibility",
+      "observation_index": 172,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-EMPTY",
+      "classification": "observed-compatibility",
+      "observation_index": 173,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-NAME",
+      "classification": "observed-compatibility",
+      "observation_index": 174,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-FRACTION",
+      "classification": "observed-compatibility",
+      "observation_index": 175,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm6"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-OMITTED",
+      "classification": "observed-compatibility",
+      "observation_index": 176,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-UNDEFINED",
+      "classification": "observed-compatibility",
+      "observation_index": 177,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-1",
+      "classification": "documented",
+      "observation_index": 178,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-2",
+      "classification": "documented",
+      "observation_index": 179,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-3",
+      "classification": "documented",
+      "observation_index": 180,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-4",
+      "classification": "documented",
+      "observation_index": 181,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-5",
+      "classification": "documented",
+      "observation_index": 182,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-6",
+      "classification": "documented",
+      "observation_index": 183,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-7",
+      "classification": "documented",
+      "observation_index": 184,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-0",
+      "classification": "observed-compatibility",
+      "observation_index": 185,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-8",
+      "classification": "observed-compatibility",
+      "observation_index": 186,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-NEG1",
+      "classification": "observed-compatibility",
+      "observation_index": 187,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-EMPTY",
+      "classification": "observed-compatibility",
+      "observation_index": 188,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-NAME",
+      "classification": "observed-compatibility",
+      "observation_index": 189,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-FRACTION",
+      "classification": "observed-compatibility",
+      "observation_index": 190,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-OMITTED",
+      "classification": "observed-compatibility",
+      "observation_index": 191,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-UNDEFINED",
+      "classification": "observed-compatibility",
+      "observation_index": 192,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-1",
+      "classification": "documented",
+      "observation_index": 193,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-2",
+      "classification": "documented",
+      "observation_index": 194,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-3",
+      "classification": "documented",
+      "observation_index": 195,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-4",
+      "classification": "documented",
+      "observation_index": 196,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-5",
+      "classification": "documented",
+      "observation_index": 197,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-6",
+      "classification": "documented",
+      "observation_index": 198,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-7",
+      "classification": "documented",
+      "observation_index": 199,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-0",
+      "classification": "observed-compatibility",
+      "observation_index": 200,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-8",
+      "classification": "observed-compatibility",
+      "observation_index": 201,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-NEG1",
+      "classification": "observed-compatibility",
+      "observation_index": 202,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-EMPTY",
+      "classification": "observed-compatibility",
+      "observation_index": 203,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-NAME",
+      "classification": "observed-compatibility",
+      "observation_index": 204,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-FRACTION",
+      "classification": "observed-compatibility",
+      "observation_index": 205,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-OMITTED",
+      "classification": "observed-compatibility",
+      "observation_index": 206,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-UNDEFINED",
+      "classification": "observed-compatibility",
+      "observation_index": 207,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-1",
+      "classification": "documented",
+      "observation_index": 208,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-2",
+      "classification": "documented",
+      "observation_index": 209,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-3",
+      "classification": "documented",
+      "observation_index": 210,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-4",
+      "classification": "documented",
+      "observation_index": 211,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-5",
+      "classification": "documented",
+      "observation_index": 212,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-6",
+      "classification": "documented",
+      "observation_index": 213,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-7",
+      "classification": "documented",
+      "observation_index": 214,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-0",
+      "classification": "observed-compatibility",
+      "observation_index": 215,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-8",
+      "classification": "observed-compatibility",
+      "observation_index": 216,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-NEG1",
+      "classification": "observed-compatibility",
+      "observation_index": 217,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-EMPTY",
+      "classification": "observed-compatibility",
+      "observation_index": 218,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-NAME",
+      "classification": "observed-compatibility",
+      "observation_index": 219,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-FRACTION",
+      "classification": "observed-compatibility",
+      "observation_index": 220,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-OMITTED",
+      "classification": "observed-compatibility",
+      "observation_index": 221,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-UNDEFINED",
+      "classification": "observed-compatibility",
+      "observation_index": 222,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-1",
+      "classification": "documented",
+      "observation_index": 223,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-2",
+      "classification": "documented",
+      "observation_index": 224,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-3",
+      "classification": "documented",
+      "observation_index": 225,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-4",
+      "classification": "documented",
+      "observation_index": 226,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-5",
+      "classification": "documented",
+      "observation_index": 227,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-6",
+      "classification": "documented",
+      "observation_index": 228,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-7",
+      "classification": "documented",
+      "observation_index": 229,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-0",
+      "classification": "observed-compatibility",
+      "observation_index": 230,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-8",
+      "classification": "observed-compatibility",
+      "observation_index": 231,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-NEG1",
+      "classification": "observed-compatibility",
+      "observation_index": 232,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-EMPTY",
+      "classification": "observed-compatibility",
+      "observation_index": 233,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-NAME",
+      "classification": "observed-compatibility",
+      "observation_index": 234,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-FRACTION",
+      "classification": "observed-compatibility",
+      "observation_index": 235,
+      "partition_id": "calendar.week-number.p5",
+      "portable": true,
+      "profile": "dm5"
+    }
+  ],
+  "operation_id": "calendar.week-number",
+  "portable_features": {
+    "spec/drafts/week-rules-edges/base-edge-requests.feature": [
+      "WRE-BASE-INVERSE-WEEK-0",
+      "WRE-BASE-INVERSE-WEEK-NEG1",
+      "WRE-BASE-INVERSE-WEEK-52",
+      "WRE-BASE-INVERSE-WEEK-53",
+      "WRE-BASE-INVERSE-WEEK-54",
+      "WRE-BASE-INVERSE-WEEK-UNDEFINED",
+      "WRE-BASE-INVERSE-WEEK-TEXT",
+      "WRE-BASE-INVERSE-YEAR-UNDEFINED",
+      "WRE-BASE-INVERSE-YEAR-NEG1",
+      "WRE-BASE-INVERSE-YEAR-0",
+      "WRE-BASE-INVERSE-YEAR-1",
+      "WRE-BASE-INVERSE-YEAR-9999",
+      "WRE-BASE-INVERSE-YEAR-10000",
+      "WRE-BASE-INVERSE-YEAR-TEXT",
+      "WRE-BASE-FORWARD-DATE-VALID",
+      "WRE-BASE-FORWARD-DATE-EMPTY",
+      "WRE-BASE-FORWARD-DATE-YEAR",
+      "WRE-BASE-FORWARD-DATE-YEAR-MONTH",
+      "WRE-BASE-FORWARD-DATE-EXTRA",
+      "WRE-BASE-FORWARD-DATE-MONTH-0",
+      "WRE-BASE-FORWARD-DATE-MONTH-13",
+      "WRE-BASE-FORWARD-DATE-DAY-0",
+      "WRE-BASE-FORWARD-DATE-DAY-32",
+      "WRE-BASE-FORWARD-DATE-FEB-30",
+      "WRE-BASE-FORWARD-DATE-YEAR-NEG1",
+      "WRE-BASE-FORWARD-DATE-YEAR-0",
+      "WRE-BASE-FORWARD-DATE-YEAR-1",
+      "WRE-BASE-FORWARD-DATE-YEAR-9999",
+      "WRE-BASE-FORWARD-DATE-YEAR-10000",
+      "WRE-BASE-FORWARD-DATE-TEXT-YEAR",
+      "WRE-BASE-FORWARD-DATE-TEXT-MONTH",
+      "WRE-BASE-FORWARD-DATE-TEXT-DAY",
+      "WRE-BASE-FORWARD-ARG-UNDEFINED",
+      "WRE-BASE-ARITY-NO-ARGUMENTS",
+      "WRE-BASE-ARITY-ONE-SCALAR",
+      "WRE-BASE-CONFIG-FIRSTDAY-0",
+      "WRE-BASE-CONFIG-FIRSTDAY-8",
+      "WRE-BASE-CONFIG-FIRSTDAY-NEG1",
+      "WRE-BASE-CONFIG-FIRSTDAY-EMPTY",
+      "WRE-BASE-CONFIG-FIRSTDAY-UNDEFINED",
+      "WRE-BASE-CONFIG-FIRSTDAY-MISSING",
+      "WRE-BASE-CONFIG-FIRSTDAY-NAME",
+      "WRE-BASE-CONFIG-FIRSTDAY-FRACTION",
+      "WRE-BASE-CONFIG-WEEKRULE-JAN0",
+      "WRE-BASE-CONFIG-WEEKRULE-JAN8",
+      "WRE-BASE-CONFIG-WEEKRULE-DOW0",
+      "WRE-BASE-CONFIG-WEEKRULE-DOW8",
+      "WRE-BASE-CONFIG-WEEKRULE-EMPTY",
+      "WRE-BASE-CONFIG-WEEKRULE-UNDEFINED",
+      "WRE-BASE-CONFIG-WEEKRULE-MISSING",
+      "WRE-BASE-CONFIG-WEEKRULE-FIRST-DAY",
+      "WRE-BASE-CONFIG-WEEKRULE-UPPERCASE"
+    ],
+    "spec/drafts/week-rules-edges/legacy-overrides.feature": [
+      "WRE-OO-JAN4-F1-OMITTED",
+      "WRE-OO-JAN4-F1-UNDEFINED",
+      "WRE-OO-JAN4-F1-1",
+      "WRE-OO-JAN4-F1-2",
+      "WRE-OO-JAN4-F1-3",
+      "WRE-OO-JAN4-F1-4",
+      "WRE-OO-JAN4-F1-5",
+      "WRE-OO-JAN4-F1-6",
+      "WRE-OO-JAN4-F1-7",
+      "WRE-OO-JAN4-F1-0",
+      "WRE-OO-JAN4-F1-8",
+      "WRE-OO-JAN4-F1-NEG1",
+      "WRE-OO-JAN4-F1-EMPTY",
+      "WRE-OO-JAN4-F1-NAME",
+      "WRE-OO-JAN4-F1-FRACTION",
+      "WRE-OO-JAN4-F7-OMITTED",
+      "WRE-OO-JAN4-F7-UNDEFINED",
+      "WRE-OO-JAN4-F7-1",
+      "WRE-OO-JAN4-F7-2",
+      "WRE-OO-JAN4-F7-3",
+      "WRE-OO-JAN4-F7-4",
+      "WRE-OO-JAN4-F7-5",
+      "WRE-OO-JAN4-F7-6",
+      "WRE-OO-JAN4-F7-7",
+      "WRE-OO-JAN4-F7-0",
+      "WRE-OO-JAN4-F7-8",
+      "WRE-OO-JAN4-F7-NEG1",
+      "WRE-OO-JAN4-F7-EMPTY",
+      "WRE-OO-JAN4-F7-NAME",
+      "WRE-OO-JAN4-F7-FRACTION",
+      "WRE-OO-JAN1-F1-OMITTED",
+      "WRE-OO-JAN1-F1-UNDEFINED",
+      "WRE-OO-JAN1-F1-1",
+      "WRE-OO-JAN1-F1-2",
+      "WRE-OO-JAN1-F1-3",
+      "WRE-OO-JAN1-F1-4",
+      "WRE-OO-JAN1-F1-5",
+      "WRE-OO-JAN1-F1-6",
+      "WRE-OO-JAN1-F1-7",
+      "WRE-OO-JAN1-F1-0",
+      "WRE-OO-JAN1-F1-8",
+      "WRE-OO-JAN1-F1-NEG1",
+      "WRE-OO-JAN1-F1-EMPTY",
+      "WRE-OO-JAN1-F1-NAME",
+      "WRE-OO-JAN1-F1-FRACTION",
+      "WRE-OO-JAN1-F7-OMITTED",
+      "WRE-OO-JAN1-F7-UNDEFINED",
+      "WRE-OO-JAN1-F7-1",
+      "WRE-OO-JAN1-F7-2",
+      "WRE-OO-JAN1-F7-3",
+      "WRE-OO-JAN1-F7-4",
+      "WRE-OO-JAN1-F7-5",
+      "WRE-OO-JAN1-F7-6",
+      "WRE-OO-JAN1-F7-7",
+      "WRE-OO-JAN1-F7-0",
+      "WRE-OO-JAN1-F7-8",
+      "WRE-OO-JAN1-F7-NEG1",
+      "WRE-OO-JAN1-F7-EMPTY",
+      "WRE-OO-JAN1-F7-NAME",
+      "WRE-OO-JAN1-F7-FRACTION",
+      "WRE-DM6-JAN4-F1-OMITTED",
+      "WRE-DM6-JAN4-F1-UNDEFINED",
+      "WRE-DM6-JAN4-F1-1",
+      "WRE-DM6-JAN4-F1-2",
+      "WRE-DM6-JAN4-F1-3",
+      "WRE-DM6-JAN4-F1-4",
+      "WRE-DM6-JAN4-F1-5",
+      "WRE-DM6-JAN4-F1-6",
+      "WRE-DM6-JAN4-F1-7",
+      "WRE-DM6-JAN4-F1-0",
+      "WRE-DM6-JAN4-F1-8",
+      "WRE-DM6-JAN4-F1-NEG1",
+      "WRE-DM6-JAN4-F1-EMPTY",
+      "WRE-DM6-JAN4-F1-NAME",
+      "WRE-DM6-JAN4-F1-FRACTION",
+      "WRE-DM6-JAN4-F7-OMITTED",
+      "WRE-DM6-JAN4-F7-UNDEFINED",
+      "WRE-DM6-JAN4-F7-1",
+      "WRE-DM6-JAN4-F7-2",
+      "WRE-DM6-JAN4-F7-3",
+      "WRE-DM6-JAN4-F7-4",
+      "WRE-DM6-JAN4-F7-5",
+      "WRE-DM6-JAN4-F7-6",
+      "WRE-DM6-JAN4-F7-7",
+      "WRE-DM6-JAN4-F7-0",
+      "WRE-DM6-JAN4-F7-8",
+      "WRE-DM6-JAN4-F7-NEG1",
+      "WRE-DM6-JAN4-F7-EMPTY",
+      "WRE-DM6-JAN4-F7-NAME",
+      "WRE-DM6-JAN4-F7-FRACTION",
+      "WRE-DM6-JAN1-F1-OMITTED",
+      "WRE-DM6-JAN1-F1-UNDEFINED",
+      "WRE-DM6-JAN1-F1-1",
+      "WRE-DM6-JAN1-F1-2",
+      "WRE-DM6-JAN1-F1-3",
+      "WRE-DM6-JAN1-F1-4",
+      "WRE-DM6-JAN1-F1-5",
+      "WRE-DM6-JAN1-F1-6",
+      "WRE-DM6-JAN1-F1-7",
+      "WRE-DM6-JAN1-F1-0",
+      "WRE-DM6-JAN1-F1-8",
+      "WRE-DM6-JAN1-F1-NEG1",
+      "WRE-DM6-JAN1-F1-EMPTY",
+      "WRE-DM6-JAN1-F1-NAME",
+      "WRE-DM6-JAN1-F1-FRACTION",
+      "WRE-DM6-JAN1-F7-OMITTED",
+      "WRE-DM6-JAN1-F7-UNDEFINED",
+      "WRE-DM6-JAN1-F7-1",
+      "WRE-DM6-JAN1-F7-2",
+      "WRE-DM6-JAN1-F7-3",
+      "WRE-DM6-JAN1-F7-4",
+      "WRE-DM6-JAN1-F7-5",
+      "WRE-DM6-JAN1-F7-6",
+      "WRE-DM6-JAN1-F7-7",
+      "WRE-DM6-JAN1-F7-0",
+      "WRE-DM6-JAN1-F7-8",
+      "WRE-DM6-JAN1-F7-NEG1",
+      "WRE-DM6-JAN1-F7-EMPTY",
+      "WRE-DM6-JAN1-F7-NAME",
+      "WRE-DM6-JAN1-F7-FRACTION",
+      "WRE-DM5-JAN4-F1-OMITTED",
+      "WRE-DM5-JAN4-F1-UNDEFINED",
+      "WRE-DM5-JAN4-F1-1",
+      "WRE-DM5-JAN4-F1-2",
+      "WRE-DM5-JAN4-F1-3",
+      "WRE-DM5-JAN4-F1-4",
+      "WRE-DM5-JAN4-F1-5",
+      "WRE-DM5-JAN4-F1-6",
+      "WRE-DM5-JAN4-F1-7",
+      "WRE-DM5-JAN4-F1-0",
+      "WRE-DM5-JAN4-F1-8",
+      "WRE-DM5-JAN4-F1-NEG1",
+      "WRE-DM5-JAN4-F1-EMPTY",
+      "WRE-DM5-JAN4-F1-NAME",
+      "WRE-DM5-JAN4-F1-FRACTION",
+      "WRE-DM5-JAN4-F7-OMITTED",
+      "WRE-DM5-JAN4-F7-UNDEFINED",
+      "WRE-DM5-JAN4-F7-1",
+      "WRE-DM5-JAN4-F7-2",
+      "WRE-DM5-JAN4-F7-3",
+      "WRE-DM5-JAN4-F7-4",
+      "WRE-DM5-JAN4-F7-5",
+      "WRE-DM5-JAN4-F7-6",
+      "WRE-DM5-JAN4-F7-7",
+      "WRE-DM5-JAN4-F7-0",
+      "WRE-DM5-JAN4-F7-8",
+      "WRE-DM5-JAN4-F7-NEG1",
+      "WRE-DM5-JAN4-F7-EMPTY",
+      "WRE-DM5-JAN4-F7-NAME",
+      "WRE-DM5-JAN4-F7-FRACTION",
+      "WRE-DM5-JAN1-F1-OMITTED",
+      "WRE-DM5-JAN1-F1-UNDEFINED",
+      "WRE-DM5-JAN1-F1-1",
+      "WRE-DM5-JAN1-F1-2",
+      "WRE-DM5-JAN1-F1-3",
+      "WRE-DM5-JAN1-F1-4",
+      "WRE-DM5-JAN1-F1-5",
+      "WRE-DM5-JAN1-F1-6",
+      "WRE-DM5-JAN1-F1-7",
+      "WRE-DM5-JAN1-F1-0",
+      "WRE-DM5-JAN1-F1-8",
+      "WRE-DM5-JAN1-F1-NEG1",
+      "WRE-DM5-JAN1-F1-EMPTY",
+      "WRE-DM5-JAN1-F1-NAME",
+      "WRE-DM5-JAN1-F1-FRACTION",
+      "WRE-DM5-JAN1-F7-OMITTED",
+      "WRE-DM5-JAN1-F7-UNDEFINED",
+      "WRE-DM5-JAN1-F7-1",
+      "WRE-DM5-JAN1-F7-2",
+      "WRE-DM5-JAN1-F7-3",
+      "WRE-DM5-JAN1-F7-4",
+      "WRE-DM5-JAN1-F7-5",
+      "WRE-DM5-JAN1-F7-6",
+      "WRE-DM5-JAN1-F7-7",
+      "WRE-DM5-JAN1-F7-0",
+      "WRE-DM5-JAN1-F7-8",
+      "WRE-DM5-JAN1-F7-NEG1",
+      "WRE-DM5-JAN1-F7-EMPTY",
+      "WRE-DM5-JAN1-F7-NAME",
+      "WRE-DM5-JAN1-F7-FRACTION"
+    ]
+  },
+  "reference": "Date-Manip 7.00",
+  "schema_version": 2,
+  "status": "exact research-to-draft correspondence; not BDD execution or semantic approval"
+}

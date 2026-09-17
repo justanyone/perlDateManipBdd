@@ -1,0 +1,5034 @@
+{
+  "cases": [
+    {
+      "case_id": "WRE-BASE-INVERSE-WEEK-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [
+          2040,
+          0
+        ],
+        "shape": "inverse"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-WEEK-NEG1",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [
+          2040,
+          -1
+        ],
+        "shape": "inverse"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-WEEK-52",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [
+          2040,
+          52
+        ],
+        "shape": "inverse"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-WEEK-53",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [
+          2040,
+          53
+        ],
+        "shape": "inverse"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-WEEK-54",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [
+          2040,
+          54
+        ],
+        "shape": "inverse"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-WEEK-UNDEFINED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [
+          2040,
+          null
+        ],
+        "shape": "inverse"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-WEEK-TEXT",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [
+          2040,
+          "two"
+        ],
+        "shape": "inverse"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-YEAR-UNDEFINED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [
+          null,
+          1
+        ],
+        "shape": "inverse"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-YEAR-NEG1",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [
+          -1,
+          1
+        ],
+        "shape": "inverse"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-YEAR-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [
+          0,
+          1
+        ],
+        "shape": "inverse"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-YEAR-1",
+      "classification": "documented-boundary",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [
+          1,
+          1
+        ],
+        "shape": "inverse"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-YEAR-9999",
+      "classification": "documented-boundary",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [
+          9999,
+          1
+        ],
+        "shape": "inverse"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-YEAR-10000",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [
+          10000,
+          1
+        ],
+        "shape": "inverse"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-INVERSE-YEAR-TEXT",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [
+          "year",
+          1
+        ],
+        "shape": "inverse"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-VALID",
+      "classification": "documented-control",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [
+          2040,
+          1,
+          1
+        ],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-EMPTY",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-YEAR",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [
+          2040
+        ],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-YEAR-MONTH",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [
+          2040,
+          1
+        ],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-EXTRA",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [
+          2040,
+          1,
+          1,
+          12
+        ],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-MONTH-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [
+          2040,
+          0,
+          1
+        ],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-MONTH-13",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [
+          2040,
+          13,
+          1
+        ],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-DAY-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [
+          2040,
+          1,
+          0
+        ],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-DAY-32",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [
+          2040,
+          1,
+          32
+        ],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-FEB-30",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [
+          2040,
+          2,
+          30
+        ],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-YEAR-NEG1",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [
+          -1,
+          1,
+          1
+        ],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-YEAR-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [
+          0,
+          1,
+          1
+        ],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-YEAR-1",
+      "classification": "documented-boundary",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [
+          1,
+          1,
+          1
+        ],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-YEAR-9999",
+      "classification": "documented-boundary",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [
+          9999,
+          1,
+          1
+        ],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-YEAR-10000",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [
+          10000,
+          1,
+          1
+        ],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-TEXT-YEAR",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [
+          "year",
+          1,
+          1
+        ],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-TEXT-MONTH",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [
+          2040,
+          "month",
+          1
+        ],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-DATE-TEXT-DAY",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "date-list",
+        "argument_value": [
+          2040,
+          1,
+          "day"
+        ],
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-ARG-UNDEFINED",
+      "classification": "binding-failure",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "undefined",
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-ARG-TEXT",
+      "classification": "binding-failure",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "text",
+        "argument_value": "2040-01-01",
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-FORWARD-ARG-HASH",
+      "classification": "binding-failure",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "argument_carrier": "hash",
+        "argument_value": {
+          "day": 1,
+          "month": 1,
+          "year": 2040
+        },
+        "shape": "forward"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-ARITY-NO-ARGUMENTS",
+      "classification": "binding-failure",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [],
+        "shape": "raw-arguments"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-ARITY-ONE-SCALAR",
+      "classification": "binding-failure",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [
+          2040
+        ],
+        "shape": "raw-arguments"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-ARITY-THREE-SCALARS",
+      "classification": "binding-failure",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [
+          2040,
+          1,
+          1
+        ],
+        "shape": "raw-arguments"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-ARITY-FOUR-SCALARS",
+      "classification": "binding-failure",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "method_arguments": [
+          2040,
+          1,
+          1,
+          12
+        ],
+        "shape": "raw-arguments"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-FIRSTDAY-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-config",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "expected_domain": "invalid",
+        "setting": "FirstDay",
+        "shape": "configuration",
+        "value": 0,
+        "value_shape": "value"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-FIRSTDAY-8",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-config",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "expected_domain": "invalid",
+        "setting": "FirstDay",
+        "shape": "configuration",
+        "value": 8,
+        "value_shape": "value"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-FIRSTDAY-NEG1",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-config",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "expected_domain": "invalid",
+        "setting": "FirstDay",
+        "shape": "configuration",
+        "value": -1,
+        "value_shape": "value"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-FIRSTDAY-EMPTY",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-config",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "expected_domain": "invalid",
+        "setting": "FirstDay",
+        "shape": "configuration",
+        "value": "",
+        "value_shape": "value"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-FIRSTDAY-UNDEFINED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-config",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "expected_domain": "invalid",
+        "setting": "FirstDay",
+        "shape": "configuration",
+        "value_shape": "undefined"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-FIRSTDAY-MISSING",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-config",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "expected_domain": "invalid",
+        "setting": "FirstDay",
+        "shape": "configuration",
+        "value_shape": "missing"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-FIRSTDAY-NAME",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-config",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "expected_domain": "invalid",
+        "setting": "FirstDay",
+        "shape": "configuration",
+        "value": "Monday",
+        "value_shape": "value"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-FIRSTDAY-FRACTION",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-config",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "expected_domain": "invalid",
+        "setting": "FirstDay",
+        "shape": "configuration",
+        "value": 1.5,
+        "value_shape": "value"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-JAN0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-config",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "expected_domain": "invalid",
+        "setting": "Week1ofYear",
+        "shape": "configuration",
+        "value": "jan0",
+        "value_shape": "value"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-JAN8",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-config",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "expected_domain": "invalid",
+        "setting": "Week1ofYear",
+        "shape": "configuration",
+        "value": "jan8",
+        "value_shape": "value"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-DOW0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-config",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "expected_domain": "invalid",
+        "setting": "Week1ofYear",
+        "shape": "configuration",
+        "value": "dow0",
+        "value_shape": "value"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-DOW8",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-config",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "expected_domain": "invalid",
+        "setting": "Week1ofYear",
+        "shape": "configuration",
+        "value": "dow8",
+        "value_shape": "value"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-EMPTY",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-config",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "expected_domain": "invalid",
+        "setting": "Week1ofYear",
+        "shape": "configuration",
+        "value": "",
+        "value_shape": "value"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-UNDEFINED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-config",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "expected_domain": "invalid",
+        "setting": "Week1ofYear",
+        "shape": "configuration",
+        "value_shape": "undefined"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-MISSING",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-config",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "expected_domain": "invalid",
+        "setting": "Week1ofYear",
+        "shape": "configuration",
+        "value_shape": "missing"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-FIRST-DAY",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-config",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "expected_domain": "invalid",
+        "setting": "Week1ofYear",
+        "shape": "configuration",
+        "value": "first-day",
+        "value_shape": "value"
+      }
+    },
+    {
+      "case_id": "WRE-BASE-CONFIG-WEEKRULE-UPPERCASE",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "base-config",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p4",
+      "profile": "base",
+      "request": {
+        "expected_domain": "valid-control",
+        "setting": "Week1ofYear",
+        "shape": "configuration",
+        "value": "JAN4",
+        "value_shape": "value"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-OMITTED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "omitted",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-UNDEFINED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "undefined",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-1",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-2",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 2,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-3",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 3,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-4",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 4,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-5",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-6",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 6,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-7",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 7,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 0,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-8",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 8,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-NEG1",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": -1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-EMPTY",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-NAME",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "Monday",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F1-FRACTION",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1.5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-OMITTED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "omitted",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-UNDEFINED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "undefined",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-1",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-2",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 2,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-3",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 3,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-4",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 4,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-5",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-6",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 6,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-7",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 7,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 0,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-8",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 8,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-NEG1",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": -1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-EMPTY",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-NAME",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "Monday",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN4-F7-FRACTION",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1.5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-OMITTED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "omitted",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-UNDEFINED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "undefined",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-1",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-2",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 2,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-3",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 3,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-4",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 4,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-5",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-6",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 6,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-7",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 7,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 0,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-8",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 8,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-NEG1",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": -1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-EMPTY",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-NAME",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "Monday",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F1-FRACTION",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1.5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-OMITTED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "omitted",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-UNDEFINED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "undefined",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-1",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-2",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 2,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-3",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 3,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-4",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 4,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-5",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-6",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 6,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-7",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 7,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 0,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-8",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 8,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-NEG1",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": -1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-EMPTY",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-NAME",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "Monday",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-OO-JAN1-F7-FRACTION",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "oo",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1.5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-OMITTED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "omitted",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-UNDEFINED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "undefined",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-1",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-2",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 2,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-3",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 3,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-4",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 4,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-5",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-6",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 6,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-7",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 7,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 0,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-8",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 8,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-NEG1",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": -1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-EMPTY",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-NAME",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "Monday",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F1-FRACTION",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1.5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-OMITTED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "omitted",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-UNDEFINED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "undefined",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-1",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-2",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 2,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-3",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 3,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-4",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 4,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-5",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-6",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 6,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-7",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 7,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 0,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-8",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 8,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-NEG1",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": -1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-EMPTY",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-NAME",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "Monday",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN4-F7-FRACTION",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1.5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-OMITTED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "omitted",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-UNDEFINED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "undefined",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-1",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-2",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 2,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-3",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 3,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-4",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 4,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-5",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-6",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 6,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-7",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 7,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 0,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-8",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 8,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-NEG1",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": -1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-EMPTY",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-NAME",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "Monday",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F1-FRACTION",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1.5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-OMITTED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "omitted",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-UNDEFINED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "undefined",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-1",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-2",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 2,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-3",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 3,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-4",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 4,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-5",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-6",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 6,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-7",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 7,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 0,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-8",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 8,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-NEG1",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": -1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-EMPTY",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-NAME",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "Monday",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM6-JAN1-F7-FRACTION",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm6",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1.5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-OMITTED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "omitted",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-UNDEFINED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "undefined",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-1",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-2",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 2,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-3",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 3,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-4",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 4,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-5",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-6",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 6,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-7",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 7,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 0,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-8",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 8,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-NEG1",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": -1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-EMPTY",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-NAME",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "Monday",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F1-FRACTION",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1.5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-OMITTED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "omitted",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-UNDEFINED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "undefined",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-1",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-2",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 2,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-3",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 3,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-4",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 4,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-5",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-6",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 6,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-7",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 7,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 0,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-8",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 8,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-NEG1",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": -1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-EMPTY",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-NAME",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "Monday",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN4-F7-FRACTION",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan4"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1.5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-OMITTED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "omitted",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-UNDEFINED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "undefined",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-1",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-2",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 2,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-3",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 3,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-4",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 4,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-5",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-6",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 6,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-7",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 7,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 0,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-8",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 8,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-NEG1",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": -1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-EMPTY",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-NAME",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "Monday",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F1-FRACTION",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 1,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1.5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-OMITTED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "omitted",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-UNDEFINED",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "override_shape": "undefined",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-1",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-2",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 2,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-3",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 3,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-4",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 4,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-5",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-6",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 6,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-7",
+      "classification": "documented",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 7,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-0",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 0,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-8",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 8,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-NEG1",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": -1,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-EMPTY",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-NAME",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": "Monday",
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    },
+    {
+      "case_id": "WRE-DM5-JAN1-F7-FRACTION",
+      "classification": "observed-compatibility",
+      "configuration": {
+        "first_day": 7,
+        "week1_of_year": "jan1"
+      },
+      "family": "facade-call",
+      "operation_id": "calendar.week-number",
+      "partition_id": "calendar.week-number.p5",
+      "profile": "dm5",
+      "request": {
+        "civil_date": [
+          2040,
+          1,
+          1
+        ],
+        "first_weekday": 1.5,
+        "override_shape": "value",
+        "shape": "legacy-number"
+      }
+    }
+  ],
+  "operation_id": "calendar.week-number",
+  "reference": "Date-Manip 7.00",
+  "schema_version": 2,
+  "scope": {
+    "base": "inverse invalid/missing values, malformed forward carriers and fields, year limits, and invalid rule settings",
+    "facades": "Date, DM6, and DM5 across jan4/jan1 and configured first weekdays 1/7, with omission, explicit undefined, overrides 1..7, and malformed overrides"
+  },
+  "status": "bounded p4/p5 public request manifest; no expected results"
+}

@@ -1,0 +1,66 @@
+{
+  "binding_only_feature": "spec/drafts/week-rules-edges/perl-binding.feature",
+  "bindings": [
+    {
+      "callable": "week_of_year",
+      "contexts": [
+        "scalar",
+        "list"
+      ],
+      "module": "Date::Manip::Base",
+      "profile": "base",
+      "public_error_observer": "err",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm:713"
+    },
+    {
+      "callable": "week_of_year",
+      "contexts": [
+        "scalar",
+        "list"
+      ],
+      "module": "Date::Manip::Date",
+      "profile": "oo",
+      "public_error_observer": "err",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm:3968"
+    },
+    {
+      "callable": "Date_WeekOfYear",
+      "contexts": [
+        "scalar",
+        "list"
+      ],
+      "module": "Date::Manip::DM6",
+      "profile": "dm6",
+      "public_error_observer": null,
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm:803"
+    },
+    {
+      "callable": "Date_WeekOfYear",
+      "contexts": [
+        "scalar",
+        "list"
+      ],
+      "module": "Date::Manip::DM5",
+      "profile": "dm5",
+      "public_error_observer": null,
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm:3272"
+    }
+  ],
+  "isolation": "Every request is repeated in two fresh Perl processes and temporary directories. Base scalar/list contexts use fresh receivers to prevent cache-dependent diagnostics.",
+  "operation_id": "calendar.week-number",
+  "reference": "Date-Manip 7.00",
+  "return_fidelity": "A completed undefined return, empty text, zero, scalar/list carrier, exception without return, warning sequence, stdout, and public error snapshot remain distinct.",
+  "schema_version": 2,
+  "status": "research-only public binding map; excluded from portable implementation handoff",
+  "supporting_public_calls": [
+    "Date::Manip::Obj::config",
+    "Date::Manip::Obj::get_config",
+    "Date::Manip::Obj::err",
+    "Date::Manip::Obj::version",
+    "Date::Manip::Date::parse",
+    "Date::Manip::DM6::Date_Init",
+    "Date::Manip::DM6::DateManipVersion",
+    "Date::Manip::DM5::Date_Init",
+    "Date::Manip::DM5::DateManipVersion"
+  ]
+}

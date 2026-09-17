@@ -876,3 +876,22 @@ cases parse without warnings. Both family and independent literal reviewers pass
 
 Remaining workers: languages, recurrence, and week-edge profiles/row validation.
 No active capture process remains for this batch. All final gates remain open.
+
+## Week-rule edge integration
+
+Root accepted236 public requests:39 Base calls,17 Base configuration attempts and
+180 Date/DM6/DM5 calls covering omission, explicit absence,1..7 overrides and selected
+invalids across jan1/jan4 and Monday/Sunday configuration. Root independently
+reproduced all236 in session9632; after review repairs every observation and loaded
+module hash remains equal to /tmp/week-rules-edges-root-review.json. Reviewer now
+requires exact case-keyed input/config/profile/outcome cells for232 portable rows
+and exact native channels for236 binding rows, with correct escaped-table parsing.
+Portable field orders, rule meanings and profile definitions are explicit. Four
+exclusively native carrier/arity cases stay binding-only. Seven interrupted calls
+have no fake returns. Independent calendar controls pass; parser expands52+180+236
+with no warnings/errors. All remaining domains retained in coverage-map.json; no
+complete week-number or whole-library coverage claim.
+
+week_edges_finish now owns configuration portability; partial_parsing recurrence;
+pattern_repair language initialization completion semantics. Root integrates only.
+All final specification, adapter, and coverage gates remain open.
