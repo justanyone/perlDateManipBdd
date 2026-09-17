@@ -253,3 +253,15 @@ original language-specific runtime batch. Arithmetic fidelity repair returned
 corrected option wording; root review/integration remains. Next root work: review
 recurrence expansion and arithmetic corrections, then continue unobserved parsing
 and object-usage edges and source-level coverage audit.
+
+## Recurrence expansion integration
+
+Coordinator reviewed the expanded recurrence batch and corrected English setup
+order for frequency/anchor installation, modifier order, append and recovery.
+The steps now include anchor restoration and intervening lookups exactly where
+the probe performs them. `tools/review/recurrence_literals.py` checks hashes and
+49 table rows plus append/recovery literals against36 repeated multi-action probes.
+There are69 mapped draft IDs. Modifier recovery and attempt-limit exceptions
+remain disputed; all outstanding grammar/method/modifier obligations are explicit
+in `docs/research/recurrence-family/remaining-obligations.md`. No complete family
+or executable BDD suite is claimed.

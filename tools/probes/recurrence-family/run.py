@@ -17,6 +17,9 @@ cases = [f'modifier-{name}' for name in modifier_cases] + [
     'create-and-empty-read', 'create-from-date-context', 'parse-serialized-and-recovery',
     'field-read-replace', 'nth-missing-and-indexes', 'navigation-and-bounds',
     'dates-temporary-range-and-empty-filter',
+    'frequency-numeric-and-written-shapes', 'frequency-invalid-and-recovery',
+    'typed-setter-equivalence', 'range-and-attempt-limits',
+    'modifier-boundaries-order-and-recovery',
     'functional-dm5-description', 'functional-dm6-description',
     'functional-dm5-endpoint', 'functional-dm6-endpoint',
 ]

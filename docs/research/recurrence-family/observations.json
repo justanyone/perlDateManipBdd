@@ -4,7 +4,7 @@
   "reference_profile_record": "docs/automation/reference-profiles.json",
   "reference_profile_sha256": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
   "probe": "tools/probes/recurrence-family/probe.pl",
-  "probe_sha256": "bbdd63bfbba5d23488a01e4869bd08f31b874e4ecf962e1f09f983188a686c27",
+  "probe_sha256": "b20c68a3bd63884a21c89c8eebf645d1625dfb56e37e236bcbebd594fdcf8ad0",
   "execution": {
     "command": "python3 tools/probes/recurrence-family/run.py",
     "separate_process_per_case": true,
@@ -1040,6 +1040,759 @@
         "2040041412:34:56",
         "2040041512:34:56"
       ],
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "frequency-numeric-and-written-shapes",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "shapes": [
+        {
+          "base_input": "2040-04-13 12:34:56",
+          "base_status": 0,
+          "frequency_status": 0,
+          "frequency_text": "0:0:0:2:0:0:0",
+          "label": "daily-two-day-interval",
+          "nth_zero": {
+            "date": "2040041312:34:56",
+            "index": 0,
+            "lookup_error": 0,
+            "object_error": ""
+          },
+          "state": {
+            "actual_base": null,
+            "base": "2040041312:34:56",
+            "end": null,
+            "error": "",
+            "frequency": "0:0:0:2:0:0:0",
+            "modifiers": [],
+            "start": null
+          }
+        },
+        {
+          "base_input": "2040-01-31 12:34:56",
+          "base_status": 0,
+          "frequency_status": 0,
+          "frequency_text": "0:1*0:31:0:0:0",
+          "label": "monthly-selected-day",
+          "nth_zero": {
+            "date": "2040013100:00:00",
+            "index": 0,
+            "lookup_error": 0,
+            "object_error": ""
+          },
+          "state": {
+            "actual_base": null,
+            "base": "2040013112:34:56",
+            "end": null,
+            "error": "",
+            "frequency": "0:1*0:31:0:0:0",
+            "modifiers": [],
+            "start": null
+          }
+        },
+        {
+          "base_input": "2040-04-13 12:34:56",
+          "base_status": 0,
+          "frequency_status": 0,
+          "frequency_text": "0:0:1*5:0:0:0",
+          "label": "weekly-selected-weekday",
+          "nth_zero": {
+            "date": "2040041300:00:00",
+            "index": 0,
+            "lookup_error": 0,
+            "object_error": ""
+          },
+          "state": {
+            "actual_base": null,
+            "base": "2040041312:34:56",
+            "end": null,
+            "error": "",
+            "frequency": "0:0:1*5:0:0:0",
+            "modifiers": [],
+            "start": null
+          }
+        },
+        {
+          "frequency_status": 0,
+          "frequency_text": "*2040:4:0:13:12:34:56",
+          "label": "fixed-calendar-selection",
+          "nth_zero": {
+            "date": "2040041312:34:56",
+            "index": 0,
+            "lookup_error": 0,
+            "object_error": ""
+          },
+          "state": {
+            "actual_base": null,
+            "base": null,
+            "end": null,
+            "error": "",
+            "frequency": "*2040:4:0:13:12:34:56",
+            "modifiers": [],
+            "start": null
+          }
+        },
+        {
+          "frequency_status": 0,
+          "frequency_text": "every Tuesday in June 2040",
+          "label": "written-weekday-in-month",
+          "nth_zero": {
+            "date": "2040060500:00:00",
+            "index": 0,
+            "lookup_error": 0,
+            "object_error": ""
+          },
+          "state": {
+            "actual_base": null,
+            "base": null,
+            "end": "2040123123:59:59",
+            "error": "",
+            "frequency": "1*6:1,2,3,4,5:2:0:0:0",
+            "modifiers": [],
+            "start": "2040010100:00:00"
+          }
+        },
+        {
+          "frequency_status": 0,
+          "frequency_text": "2nd Tuesday in June 2040",
+          "label": "written-ordinal-weekday",
+          "nth_zero": {
+            "date": "2040061200:00:00",
+            "index": 0,
+            "lookup_error": 0,
+            "object_error": ""
+          },
+          "state": {
+            "actual_base": null,
+            "base": null,
+            "end": "2040123123:59:59",
+            "error": "",
+            "frequency": "1*6:2:2:0:0:0",
+            "modifiers": [],
+            "start": "2040010100:00:00"
+          }
+        },
+        {
+          "frequency_status": 0,
+          "frequency_text": "last day of every month in 2040",
+          "label": "written-last-day",
+          "nth_zero": {
+            "date": "2040013100:00:00",
+            "index": 0,
+            "lookup_error": 0,
+            "object_error": ""
+          },
+          "state": {
+            "actual_base": null,
+            "base": null,
+            "end": "2040123123:59:59",
+            "error": "",
+            "frequency": "0:1*0:-1:0:0:0",
+            "modifiers": [],
+            "start": "2040010100:00:00"
+          }
+        },
+        {
+          "frequency_status": 0,
+          "frequency_text": "every 2nd day in 2040",
+          "label": "written-ordinal-day-interval",
+          "nth_zero": {
+            "date": "2040010100:00:00",
+            "index": 0,
+            "lookup_error": 0,
+            "object_error": ""
+          },
+          "state": {
+            "actual_base": null,
+            "base": null,
+            "end": "2040123123:59:59",
+            "error": "",
+            "frequency": "0:0:0:2*0:0:0",
+            "modifiers": [],
+            "start": "2040010100:00:00"
+          }
+        }
+      ],
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "frequency-invalid-and-recovery",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "invalid_date_fields": [
+        {
+          "field": "start",
+          "state": {
+            "actual_base": null,
+            "base": null,
+            "end": null,
+            "error": "[start] Invalid date string",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [],
+            "start": null
+          },
+          "status": 1
+        },
+        {
+          "field": "end",
+          "state": {
+            "actual_base": null,
+            "base": null,
+            "end": null,
+            "error": "[end] Invalid date string",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [],
+            "start": null
+          },
+          "status": 1
+        },
+        {
+          "field": "basedate",
+          "state": {
+            "actual_base": null,
+            "base": null,
+            "end": null,
+            "error": "[base] Invalid date string",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [],
+            "start": null
+          },
+          "status": 1
+        }
+      ],
+      "invalid_frequency_rows": [
+        {
+          "frequency_text": "0:0:0:bad:0:0:0",
+          "state": {
+            "actual_base": null,
+            "base": null,
+            "end": null,
+            "error": "[frequency] Invalid frequency string",
+            "frequency": "",
+            "modifiers": [],
+            "start": null
+          },
+          "status": 1
+        },
+        {
+          "frequency_text": "0:0:0:1:0:0",
+          "state": {
+            "actual_base": null,
+            "base": null,
+            "end": null,
+            "error": "[frequency] Invalid frequency string",
+            "frequency": "",
+            "modifiers": [],
+            "start": null
+          },
+          "status": 1
+        },
+        {
+          "frequency_text": "0:0*0:1*0:0:0:0",
+          "state": {
+            "actual_base": null,
+            "base": null,
+            "end": null,
+            "error": "[frequency] Invalid frequency string",
+            "frequency": "",
+            "modifiers": [],
+            "start": null
+          },
+          "status": 1
+        },
+        {
+          "frequency_text": "0:0:1*9:0:0:0",
+          "state": {
+            "actual_base": null,
+            "base": null,
+            "end": null,
+            "error": "[frequency] Day of week must be 1-7",
+            "frequency": "",
+            "modifiers": [],
+            "start": null
+          },
+          "status": 1
+        }
+      ],
+      "invalid_frequency_status": 1,
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "recovery_status": 0,
+      "state_after_invalid_frequency": {
+        "actual_base": null,
+        "base": null,
+        "end": null,
+        "error": "[frequency] Invalid frequency string",
+        "frequency": "",
+        "modifiers": [],
+        "start": null
+      },
+      "state_after_recovery": {
+        "actual_base": null,
+        "base": null,
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:2:0:0:0",
+        "modifiers": [],
+        "start": null
+      },
+      "state_after_valid": {
+        "actual_base": null,
+        "base": null,
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [],
+        "start": null
+      },
+      "valid_status": 0,
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "case_id": "typed-setter-equivalence",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "setter_rows": [
+        {
+          "carrier": "text",
+          "field": "start",
+          "frequency_status": 0,
+          "input": "2040-04-13 00:00:00",
+          "setter_status": 0,
+          "state": {
+            "actual_base": null,
+            "base": null,
+            "end": null,
+            "error": "",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [],
+            "start": "2040041300:00:00"
+          }
+        },
+        {
+          "carrier": "typed-date",
+          "field": "start",
+          "frequency_status": 0,
+          "input": "2040-04-13 00:00:00",
+          "setter_status": 0,
+          "state": {
+            "actual_base": null,
+            "base": null,
+            "end": null,
+            "error": "",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [],
+            "start": "2040041300:00:00"
+          }
+        },
+        {
+          "carrier": "text",
+          "field": "end",
+          "frequency_status": 0,
+          "input": "2040-04-15 23:59:59",
+          "setter_status": 0,
+          "state": {
+            "actual_base": null,
+            "base": null,
+            "end": "2040041523:59:59",
+            "error": "",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [],
+            "start": null
+          }
+        },
+        {
+          "carrier": "typed-date",
+          "field": "end",
+          "frequency_status": 0,
+          "input": "2040-04-15 23:59:59",
+          "setter_status": 0,
+          "state": {
+            "actual_base": null,
+            "base": null,
+            "end": "2040041523:59:59",
+            "error": "",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [],
+            "start": null
+          }
+        },
+        {
+          "carrier": "text",
+          "field": "basedate",
+          "frequency_status": 0,
+          "input": "2040-04-13 12:34:56",
+          "setter_status": 0,
+          "state": {
+            "actual_base": null,
+            "base": "2040041312:34:56",
+            "end": null,
+            "error": "",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [],
+            "start": null
+          }
+        },
+        {
+          "carrier": "typed-date",
+          "field": "basedate",
+          "frequency_status": 0,
+          "input": "2040-04-13 12:34:56",
+          "setter_status": 0,
+          "state": {
+            "actual_base": null,
+            "base": "2040041312:34:56",
+            "end": null,
+            "error": "",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [],
+            "start": null
+          }
+        }
+      ],
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "attempt_base_status": 0,
+      "attempt_frequency_status": 0,
+      "attempt_next": {
+        "date": null,
+        "exception": "Can't use an undefined value as an ARRAY reference at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm line 2682, <$profile_fh> line 1.\n",
+        "lookup_error": null,
+        "object_error": ""
+      },
+      "attempt_state": {
+        "actual_base": "2040010100:00:00",
+        "base": "2040020100:00:00",
+        "end": null,
+        "error": "",
+        "frequency": "1*2:0:30:0:0:0",
+        "modifiers": [],
+        "start": null
+      },
+      "case_id": "range-and-attempt-limits",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "input": {
+        "impossible_frequency": "1*2:0:30:0:0:0",
+        "max_recur_attempts": 1,
+        "operation": "next",
+        "range_frequency": "0:0:0:1:0:0:0",
+        "recur_range": "day",
+        "requested_anchor": "2040-02-01 00:00:00"
+      },
+      "max_attempts_config_status": null,
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "range_dates": [
+        "2040022800:00:00"
+      ],
+      "range_dates_error": "",
+      "range_parse_status": 0,
+      "range_state": {
+        "actual_base": null,
+        "base": null,
+        "end": "2040022823:59:59",
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [],
+        "start": "2040022800:00:00"
+      },
+      "recur_range_config_status": null,
+      "warnings": [],
+      "process_stderr": "",
+      "research_status": "repeatable"
+    },
+    {
+      "append_base_status": 0,
+      "append_modifier_status": 0,
+      "append_nth_zero": {
+        "date": "2040041712:34:56",
+        "index": 0,
+        "lookup_error": 0,
+        "object_error": ""
+      },
+      "case_id": "modifier-boundaries-order-and-recovery",
+      "configuration_return": null,
+      "distribution_version": "7.00",
+      "full_recovery_base_status": 0,
+      "full_recovery_frequency_status": 0,
+      "full_recovery_modifier_status": 0,
+      "full_recovery_nth_zero": {
+        "date": "2040041212:34:56",
+        "index": 0,
+        "lookup_error": 0,
+        "object_error": ""
+      },
+      "initial_base_status": 0,
+      "initial_modifier_status": 0,
+      "modifier_boundaries": [
+        {
+          "base_status": 0,
+          "frequency_status": 0,
+          "modifier": "PD0",
+          "modifier_status": 1,
+          "nth_zero": {
+            "date": null,
+            "index": 0,
+            "lookup_error": "Invalid recurrence",
+            "object_error": "[modifiers] Invalid modifier: pd0"
+          },
+          "state": {
+            "actual_base": null,
+            "base": "2040041312:34:56",
+            "end": null,
+            "error": "[modifiers] Invalid modifier: pd0",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [],
+            "start": null
+          }
+        },
+        {
+          "base_status": 0,
+          "frequency_status": 0,
+          "modifier": "PD8",
+          "modifier_status": 1,
+          "nth_zero": {
+            "date": null,
+            "index": 0,
+            "lookup_error": "Invalid recurrence",
+            "object_error": "[modifiers] Invalid modifier: pd8"
+          },
+          "state": {
+            "actual_base": null,
+            "base": "2040041312:34:56",
+            "end": null,
+            "error": "[modifiers] Invalid modifier: pd8",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [],
+            "start": null
+          }
+        },
+        {
+          "base_status": 0,
+          "frequency_status": 0,
+          "modifier": "FD0",
+          "modifier_status": 0,
+          "nth_zero": {
+            "date": "2040041312:34:56",
+            "index": 0,
+            "lookup_error": 0,
+            "object_error": ""
+          },
+          "state": {
+            "actual_base": null,
+            "base": "2040041312:34:56",
+            "end": null,
+            "error": "",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [
+              "fd0"
+            ],
+            "start": null
+          }
+        },
+        {
+          "base_status": 0,
+          "frequency_status": 0,
+          "modifier": "FW0",
+          "modifier_status": 0,
+          "nth_zero": {
+            "date": "2040041312:34:56",
+            "index": 0,
+            "lookup_error": 0,
+            "object_error": ""
+          },
+          "state": {
+            "actual_base": null,
+            "base": "2040041312:34:56",
+            "end": null,
+            "error": "",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [
+              "fw0"
+            ],
+            "start": null
+          }
+        },
+        {
+          "base_status": 0,
+          "frequency_status": 0,
+          "modifier": "IW0",
+          "modifier_status": 1,
+          "nth_zero": {
+            "date": null,
+            "index": 0,
+            "lookup_error": "Invalid recurrence",
+            "object_error": "[modifiers] Invalid modifier: iw0"
+          },
+          "state": {
+            "actual_base": null,
+            "base": "2040041312:34:56",
+            "end": null,
+            "error": "[modifiers] Invalid modifier: iw0",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [],
+            "start": null
+          }
+        },
+        {
+          "base_status": 0,
+          "frequency_status": 0,
+          "modifier": "IW8",
+          "modifier_status": 1,
+          "nth_zero": {
+            "date": null,
+            "index": 0,
+            "lookup_error": "Invalid recurrence",
+            "object_error": "[modifiers] Invalid modifier: iw8"
+          },
+          "state": {
+            "actual_base": null,
+            "base": "2040041312:34:56",
+            "end": null,
+            "error": "[modifiers] Invalid modifier: iw8",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [],
+            "start": null
+          }
+        }
+      ],
+      "modifier_order": [
+        {
+          "base_status": 0,
+          "modifier_status": 0,
+          "nth_zero": {
+            "date": null,
+            "index": 0,
+            "lookup_error": 0,
+            "object_error": ""
+          },
+          "order": [
+            "fd1",
+            "ibd"
+          ],
+          "state": {
+            "actual_base": null,
+            "base": "2040041312:34:56",
+            "end": null,
+            "error": "",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [
+              "fd1",
+              "ibd"
+            ],
+            "start": null
+          }
+        },
+        {
+          "base_status": 0,
+          "modifier_status": 0,
+          "nth_zero": {
+            "date": "2040041412:34:56",
+            "index": 0,
+            "lookup_error": 0,
+            "object_error": ""
+          },
+          "order": [
+            "ibd",
+            "fd1"
+          ],
+          "state": {
+            "actual_base": null,
+            "base": "2040041312:34:56",
+            "end": null,
+            "error": "",
+            "frequency": "0:0:0:1:0:0:0",
+            "modifiers": [
+              "ibd",
+              "fd1"
+            ],
+            "start": null
+          }
+        }
+      ],
+      "perl_archname": "x86_64-linux-gnu-thread-multi",
+      "perl_version": "v5.40.1",
+      "recovery_base_status": 0,
+      "recovery_modifier_status": 0,
+      "recovery_nth_zero": {
+        "date": null,
+        "index": 0,
+        "lookup_error": "Invalid recurrence",
+        "object_error": "[modifiers] Invalid modifier: unknown"
+      },
+      "rejected_modifier_status": 1,
+      "state_after_append": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "fd1",
+          "nd2"
+        ],
+        "start": null
+      },
+      "state_after_full_recovery": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "bd1"
+        ],
+        "start": null
+      },
+      "state_after_modifier_recovery": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": null,
+        "error": "[modifiers] Invalid modifier: unknown",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "bd1"
+        ],
+        "start": null
+      },
+      "state_after_rejected_modifier": {
+        "actual_base": "2040041312:34:56",
+        "base": "2040041312:34:56",
+        "end": null,
+        "error": "[modifiers] Invalid modifier: unknown",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "fd1",
+          "nd2"
+        ],
+        "start": null
+      },
+      "state_before_rejected_modifier": {
+        "actual_base": null,
+        "base": "2040041312:34:56",
+        "end": null,
+        "error": "",
+        "frequency": "0:0:0:1:0:0:0",
+        "modifiers": [
+          "fd1"
+        ],
+        "start": null
+      },
       "warnings": [],
       "process_stderr": "",
       "research_status": "repeatable"

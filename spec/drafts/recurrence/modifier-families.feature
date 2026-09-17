@@ -68,3 +68,65 @@ Feature: Apply one recurrence modifier to a candidate event
     Then modifier installation succeeds
     And the requested anchor is absent
     And indexed lookup returns no event with error "Incomplete recurrence"
+
+  Scenario Outline: Apply modifier parameter boundary <case>
+    Given a recurrence with frequency text "0:0:0:1:0:0:0"
+    And its modifier string is "<modifier>"
+    And its requested anchor is "2040-04-13 12:34:56" in "Etc/UTC"
+    When I ask for indexed event 0
+    Then modifier installation reports status <status>
+    And the object error is "<error>"
+    And the returned event value is "<event>"
+    And the lookup error is "<lookup>"
+
+    Examples:
+      | case                    | modifier | status | error                              | event               | lookup             |
+      | RECUR-MOD-PD-ZERO       | PD0      | 1      | [modifiers] Invalid modifier: pd0 | absent              | Invalid recurrence |
+      | RECUR-MOD-PD-EIGHT      | PD8      | 1      | [modifiers] Invalid modifier: pd8 | absent              | Invalid recurrence |
+      | RECUR-MOD-FD-ZERO       | FD0      | 0      |                                    | 2040-04-13 12:34:56 | 0                  |
+      | RECUR-MOD-FW-ZERO       | FW0      | 0      |                                    | 2040-04-13 12:34:56 | 0                  |
+      | RECUR-MOD-IW-ZERO       | IW0      | 1      | [modifiers] Invalid modifier: iw0 | absent              | Invalid recurrence |
+      | RECUR-MOD-IW-EIGHT      | IW8      | 1      | [modifiers] Invalid modifier: iw8 | absent              | Invalid recurrence |
+
+  Scenario Outline: Modifier order changes a candidate outcome for <case>
+    Given a recurrence with frequency text "0:0:0:1:0:0:0"
+    And its ordered modifier list is "<modifiers>"
+    And its requested anchor is "2040-04-13 12:34:56" in "Etc/UTC"
+    When I ask for indexed event 0
+    Then the lookup error is zero
+    And the returned event value is "<event>"
+
+    Examples:
+      | case                          | modifiers | event               |
+      | RECUR-MOD-ORDER-MOVE-FILTER   | fd1, ibd  | absent              |
+      | RECUR-MOD-ORDER-FILTER-MOVE   | ibd, fd1  | 2040-04-14 12:34:56 |
+
+  @RECUR-MOD-APPEND
+  Scenario: Append lower-case modifier arguments to an existing list
+    Given a recurrence with frequency text "0:0:0:1:0:0:0"
+    And its modifier string is "FD1"
+    And its requested anchor is "2040-04-13 12:34:56" in "Etc/UTC"
+    When I append modifier argument "nd2"
+    Then the stored modifier list is "fd1", "nd2"
+    When I restore the requested anchor to "2040-04-13 12:34:56" in "Etc/UTC"
+    Then indexed event 0 is "2040-04-17 12:34:56" in "Etc/UTC" with lookup error zero
+
+  @RECUR-MOD-REJECTED-RECOVERY @compatibility @disputed
+  Scenario: A rejected modifier update leaves an error until full recurrence replacement
+    Given a recurrence with frequency text "0:0:0:1:0:0:0"
+    And its modifier string is "FD1"
+    And its requested anchor is "2040-04-13 12:34:56" in "Etc/UTC"
+    When I append modifier argument "nd2"
+    And I restore the requested anchor to "2040-04-13 12:34:56" in "Etc/UTC"
+    And I request indexed event 0
+    And I replace the modifier list with invalid text "unknown"
+    Then replacement reports status 1
+    And the stored modifier list remains "fd1", "nd2"
+    And the object error is "[modifiers] Invalid modifier: unknown"
+    When I replace its modifier list with "BD1"
+    And I restore the requested anchor to "2040-04-13 12:34:56" in "Etc/UTC"
+    Then its object error remains "[modifiers] Invalid modifier: unknown"
+    And indexed lookup returns no event with error "Invalid recurrence"
+    When I replace the frequency with "0:0:0:1:0:0:0", set modifier "bd1", and restore the requested anchor
+    Then the object error is empty
+    And indexed event 0 is "2040-04-12 12:34:56" in "Etc/UTC" with lookup error zero
