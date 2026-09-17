@@ -366,7 +366,8 @@
         "state": "running; verify process handle in checkpoint before resuming",
         "not_final_suite": true
       },
-      "broad_diagnostic": "965 retained request pairs audited after original summary failure; 890byte-equal,75only known DM5 eval locations. Raw measured statements7261/11537,branches1192/6376;34loaded770unloaded. Annotation overlaps independently reconciled with numeric database. Actual BDD coverage and full path review pending."
+      "broad_diagnostic": "965 retained request pairs audited after original summary failure; 890byte-equal,75only known DM5 eval locations. Raw measured statements7261/11537,branches1192/6376;34loaded770unloaded. Annotation overlaps independently reconciled with numeric database. Actual BDD coverage and full path review pending.",
+      "instrumentation_repair": "Enabled condition counters required for logical-op branch counts. Corrected36case validation preserves identical public outputs and measures10/10statements6/6branches. Prior965case branch counts under-recorded and remain historical. New1474case expanded manifest prepared for corrected capture."
     },
     {
       "id": "internal-spec-review",

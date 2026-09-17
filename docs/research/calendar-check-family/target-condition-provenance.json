@@ -1,0 +1,9 @@
+{
+  "source_sha256": {
+    "tools/probes/calendar-check-family/coverage-locations.pl": "1f8c87f7152c2d8d599eb64580305f6bbd20e1afbfb44ff0f404238e62643e39",
+    "docs/research/calendar-check-family/coverage-condition-result.json": "8b83d920bd8744a91b6153663b7c82ba8ee19c48c770316af92b926775259aa2",
+    "docs/research/calendar-check-family/target-condition-coverage.json": "7d0744ac38270d12eedd7e35a2c9b40e7967d8db300ea4bfc16047707207efe6"
+  },
+  "external_merged_database": "/tmp/calendar-check-coverage-condition-root/merged_db",
+  "status": "condition instrumentation enabled; target10/10statements6/6branch outcomes; not whole-library or BDD coverage"
+}

@@ -56,7 +56,7 @@ for profile in oo dm6 dm5; do
 
   (cd "$covered_work" && env -i PATH="$clean_path" LANG=C.UTF-8 LC_ALL=C.UTF-8 TZ=Etc/UTC \
     PERL5LIB="$cover_arch_lib:$cover_lib:$date_lib" \
-    perl -MDevel::Cover=-db,"$coverage_db",-coverage,statement,branch,-silent,1,-select,"$module_root/Manip" \
+    perl -MDevel::Cover=-db,"$coverage_db",-coverage,statement,branch,condition,-silent,1,-select,"$module_root/Manip" \
       "$repo_root/tools/coverage/public_call_pilot.pl" "$profile") \
       >"$output_dir/covered-$profile.json" 2>"$output_dir/covered-$profile.stderr"
 

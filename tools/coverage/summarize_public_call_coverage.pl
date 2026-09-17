@@ -168,7 +168,8 @@ for my $profile (qw(oo dm6 dm5)) {
 my $result = {
   schema_version => 1,
   status => 'public-call instrumentation pilot; not a full-suite or completion coverage result',
-  coverage_tool => { name => 'Devel::Cover', version => $cover_version, criteria => [qw(statement branch)] },
+  coverage_tool => { name => 'Devel::Cover', version => $cover_version,
+    criteria => [qw(statement branch)], instrumented_criteria => [qw(statement branch condition)] },
   verified_runtime => {
     date_manip_version => $reference_version,
     perl_archname => $perl_archname,

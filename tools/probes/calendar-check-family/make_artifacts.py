@@ -209,7 +209,7 @@ for row in rows:
         "Every arity beyond the selected missing and one-extra controls.",
         "Runtime and Date-Manip releases other than the pinned reference.",
     ],
-    "measurement_note": 'Public observations exercise valid and invalid results, but Devel::Cover1.52 on Perl5.40.1 recorded zero hits for all6 target branch outcomes while all10 target statements executed. Branch completeness is unproven; investigate tool behavior, do not exclude these branches.',
+    "measurement_note": 'With condition instrumentation enabled, all36 public request pairs retain identical plain/instrumented outputs; all10 target statements and6 branch outcomes execute. Earlier zero branch hits were caused by disabled condition counters. Other input representations and actual BDD conformance remain unverified.',
     "scope_note": "No additional numeric civil branch is known from the reviewed 7.00 implementation; remaining items are representation and binding cross-products.",
 }, indent=2) + "\n")
 print(f"wrote features and maps for {len(rows)} cases")

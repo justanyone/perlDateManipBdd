@@ -37,12 +37,15 @@ extra fields are retained as observed compatibility behavior rather than
 promoted as valid portable inputs.
 
 `coverage-map.json` keeps every partition observed-partial. A focused run of all
-36 public requests preserved identical instrumented and plain output. All ten
-target statements executed, but Devel::Cover recorded zero hits for all six
-branch outcomes in these routines, despite the observed valid and invalid
-results. Branch completeness remains unproven pending instrumentation review.
-The measured records are in `target-coverage.json`; the complete capture summary
-is `coverage-result.json`. No zero-hit branch is excluded as unreachable.
+36 public requests preserved identical instrumented and plain output. With
+condition instrumentation enabled, all ten target statements and all six branch
+outcomes executed. The corrected records are in `target-condition-coverage.json`
+and `coverage-condition-result.json`, with extraction provenance alongside them.
+The historical `target-coverage.json` and `coverage-result.json` preserve the
+earlier zero branch hits caused by disabled condition counters. Devel::Cover uses
+those counters to derive logical-expression branch hits. No branch was excluded.
+These measurements cover only Base.pm lines 602–623 through research probes;
+they do not prove all input representations or actual BDD conformance.
 Remaining domains are other field positions
 and arities, mapping/nested/blessed/overloaded carriers, non-finite values,
 Unicode numeric text, and other releases. Timezone gaps and overlaps are not a

@@ -1152,3 +1152,24 @@ partition completion or BDD execution claim.
 Workers remain: week_edges_finish investigates validation branch measurement;
 pattern_repair finishes week-count-edges; partial_parsing year-day conversions.
 No root capture live. All final gates open.
+
+## Logical-op branch instrumentation repaired
+
+Independent minimal-fixture investigation found DevelCover1.52 requires condition
+counters for logical-op branch counts. Collector and legacy pilot now instrument
+statement,branch,condition while reporting statement/branch. Corrected36case
+validation capture55488 terminal exit0, artifact reviewer passes36byte-identical
+pairs. Target10/10statements6/6branches measured; previous0/6was capture settings.
+Both historical and corrected reports retained, maps/README updated without
+claiming whole-partition semantic or BDD completion.14coverage tests pass.
+
+Prepared calendar-expanded-manifest.json1474requests:prior965 plus84leapyear,
+171lengths,190weekday,36validation,28nthweekday. Next root action after commit:
+launch corrected collector to NEW /tmp/public-coverage-calendar-condition-root
+with knownDM5warning-location normalization, then preserve exact livehandle.
+Do not mutate committed probe/collector sources while capture runs.
+
+week_edges_finish now owns NEW tools/coverage-healthcheck/,
+tests/coverage/test_instrumentation_health.py and docs/research/coverage-instrumentation.md
+for original two-mode regression fixture and source explanation. Other workers
+retain week-count-edges and year-day conversions. All final gates open.

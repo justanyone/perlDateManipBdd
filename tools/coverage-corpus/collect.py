@@ -138,7 +138,8 @@ def main() -> None:
         plain = run([PERL, str(probe), case_id], plain_work, env(str(DATE_LIB)))
         database = output / "db" / label
         database.parent.mkdir(parents=True, exist_ok=True)
-        covered = run([PERL, f"-MDevel::Cover=-db,{database},-coverage,statement,branch,-silent,1,-select,{DATE_LIB}/Date/Manip", str(probe), case_id], covered_work, env(f"{cover_arch}:{COVER_LIB}:{DATE_LIB}"))
+        # Devel::Cover derives logical-op branch hits from condition counters.
+        covered = run([PERL, f"-MDevel::Cover=-db,{database},-coverage,statement,branch,condition,-silent,1,-select,{DATE_LIB}/Date/Manip", str(probe), case_id], covered_work, env(f"{cover_arch}:{COVER_LIB}:{DATE_LIB}"))
         for name, process in (("plain", plain), ("covered", covered)):
             (output / "work" / label / (name + ".stdout")).write_bytes(process.stdout)
             (output / "work" / label / (name + ".stderr")).write_bytes(process.stderr)
@@ -177,7 +178,9 @@ def main() -> None:
         "schema_version": 1,
         "status": "bounded public-probe coverage diagnostic; not a full suite or completion claim",
         "manifest": str(manifest_path.relative_to(ROOT)), "case_count": len(cases),
-        "coverage_tool": {"name": "Devel::Cover", "version": "1.52", "criteria": ["statement", "branch"]},
+        "coverage_tool": {"name": "Devel::Cover", "version": "1.52", "criteria": ["statement", "branch"],
+                          "instrumented_criteria": ["statement", "branch", "condition"],
+                          "condition_note": "Condition counters are required for logical-op branch accounting."},
         "runtime": {"date_manip_version": "7.00", "perl_archname": arch, "environment": {**env("profile-specific only"), "inherited_environment": False}},
         "hashes": {str(path.relative_to(ROOT)): digest(path) for path in [manifest_path, Path(__file__).resolve(), *sorted({probe for _, probe, _ in cases}), DATE_LIB / "Date/Manip.pm", cover_module]},
         "fidelity": fidelity,

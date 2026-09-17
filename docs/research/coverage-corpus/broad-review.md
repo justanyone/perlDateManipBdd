@@ -5,6 +5,15 @@ and 1,192 of 6,376 branch outcomes (18.6951%). These denominators cover 34 loade
 Date::Manip files; 770 installed module files were not loaded. This is a research
 probe diagnostic, not executable BDD coverage or whole-library completion.
 
+A subsequent focused [civil validation measurement](../calendar-check-family/README.md)
+found zero recorded branch hits despite observing both valid and invalid results.
+The cause was disabled condition instrumentation: Devel::Cover derives logical-op
+branch hits from condition counters. A corrected validation capture measured all
+six target branch outcomes with identical public results. This historical broad
+capture therefore under-records branches and must be replaced by a capture with
+condition instrumentation enabled. Its zero-hit paths are neither automatically
+excluded nor credited as covered.
+
 `broad-result.json` records every request and raw-output hash, pinned capture
 sources, the report hash, numeric extraction hash, audit sources, loaded module
 hashes, and the complete unloaded-file inventory. `broad-locations.json` lists
