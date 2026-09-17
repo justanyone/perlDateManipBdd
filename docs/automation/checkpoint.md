@@ -1023,3 +1023,17 @@ Do not mistake week-number coverage for direct week-count coverage.
 Broad coverage session20949 remains live, last poll no terminal output; completed
 raw pair review found376 pairs without fidelity differences. Continue samehandle.
 Workers retain leap-year, calendar-length and weekday ownership.
+
+## Configured week-count drafts
+
+Root authored105 portable matrix rows and105 excluded binding rows for1470 public
+week-count requests, retaining repeated reads. Explicit inputyears/rule meanings,
+exact count vectors and native list carriers. Reviewer validates105settings/14year
+types, probe/module hashes, every row/request/result, canonical operation and
+independent Gregorian facts. Both files parse105 examples without warnings.
+Mapping records p1..p3 observed-partial and p4 unobserved; invalid/year-limit/context
+mutation domains remain open. No new reference capture needed; literals unchanged.
+
+Leap-year and calendar-length workers delivered stable batches pending root review.
+Weekday worker continues. Broad coverage session20949 still active on last poll;
+continue samehandle before consuming report. All final gates remain open.
