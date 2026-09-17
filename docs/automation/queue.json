@@ -131,9 +131,13 @@
         "docs/research/partial-parsing-edges/README.md",
         "docs/research/partial-parsing-edges-review.md",
         "tools/review/partial_parsing_edge_literals.py",
-        "spec/drafts/partial-parsing-edges"
+        "spec/drafts/partial-parsing-edges",
+        "docs/research/input-history/README.md",
+        "spec/drafts/input-history/remembered-text.feature",
+        "tools/probes/input-history/review.py"
       ],
-      "partial_parsing_edges_review": "52 repeatable public edge requests integrated after independent repair and root review. Explicit setup, 48 outline-row comparisons, native failure lifecycle and binding-only warnings checked; broader domains and source coverage remain open."
+      "partial_parsing_edges_review": "52 repeatable public edge requests integrated after independent repair and root review. Explicit setup, 48 outline-row comparisons, native failure lifecycle and binding-only warnings checked; broader domains and source coverage remain open.",
+      "input_history_review": "16 repeatable public Date::input lifecycle cases; literal English requests/results and observer ordering reviewed. Additional transitions remain open."
     },
     {
       "id": "spec-arithmetic-deltas",

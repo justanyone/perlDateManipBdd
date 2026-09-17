@@ -492,3 +492,19 @@ date-set-family; coverage_setup owns fixed-offset-family; pattern_repair owns
 zone-transition-boundaries. Their outputs are not yet integrated. Continue these
 partitions and source-coverage gap discovery; complete specification and then
 harness remain required.
+
+## Input-history gap checkpoint
+
+A search found no concrete Date::input draft scenarios. Root added16 public
+source-text lifecycle cases with original English features and frozen native
+observations, each repeated twice. Prototype configuration warnings exposed a
+wrong calling shape and were corrected before evidence acceptance. All accepted
+runs are warning-free, pinned, isolated, and hash-recorded. Reviewer compares
+exact arguments, action returns, scalar/list input values, errors and normalized
+final date values. Pattern non-match with empty error is disputed. Remaining
+input-history transitions are listed explicitly; no completeness claim.
+
+Live workers were confirmed running: date-set-family, fixed-offset-family, and
+zone-transition-boundaries. Continue their independent batches and review before
+integration. The full specification, source coverage and Perl harness still need
+completion. Previous turn and this turn both made concrete repository progress.

@@ -1,0 +1,268 @@
+{
+  "feature": "spec/drafts/input-history/remembered-text.feature",
+  "cases": [
+    {
+      "case_id": "INPUT-FRESH",
+      "primary_operation": "date.read-input",
+      "public_operation_ids": [
+        "date.create",
+        "config.apply-settings",
+        "date.read-input",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version"
+      ]
+    },
+    {
+      "case_id": "INPUT-VALID",
+      "primary_operation": "date.read-input",
+      "public_operation_ids": [
+        "date.create",
+        "config.apply-settings",
+        "date.read-input",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.parse-text"
+      ]
+    },
+    {
+      "case_id": "INPUT-SPACING",
+      "primary_operation": "date.read-input",
+      "public_operation_ids": [
+        "date.create",
+        "config.apply-settings",
+        "date.read-input",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.parse-text"
+      ]
+    },
+    {
+      "case_id": "INPUT-EMPTY",
+      "primary_operation": "date.read-input",
+      "public_operation_ids": [
+        "date.create",
+        "config.apply-settings",
+        "date.read-input",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.parse-text"
+      ]
+    },
+    {
+      "case_id": "INPUT-ABSENT",
+      "primary_operation": "date.read-input",
+      "public_operation_ids": [
+        "date.create",
+        "config.apply-settings",
+        "date.read-input",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.parse-text"
+      ]
+    },
+    {
+      "case_id": "INPUT-INVALID",
+      "primary_operation": "date.read-input",
+      "public_operation_ids": [
+        "date.create",
+        "config.apply-settings",
+        "date.read-input",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.parse-text"
+      ]
+    },
+    {
+      "case_id": "INPUT-REPARSE",
+      "primary_operation": "date.read-input",
+      "public_operation_ids": [
+        "date.create",
+        "config.apply-settings",
+        "date.read-input",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.parse-text"
+      ]
+    },
+    {
+      "case_id": "INPUT-DATE-ONLY",
+      "primary_operation": "date.read-input",
+      "public_operation_ids": [
+        "date.create",
+        "config.apply-settings",
+        "date.read-input",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.parse-text",
+        "date.parse-date-only"
+      ]
+    },
+    {
+      "case_id": "INPUT-TIME-ONLY",
+      "primary_operation": "date.read-input",
+      "public_operation_ids": [
+        "date.create",
+        "config.apply-settings",
+        "date.read-input",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.parse-text",
+        "time.parse-text"
+      ]
+    },
+    {
+      "case_id": "INPUT-DATE-FAIL",
+      "primary_operation": "date.read-input",
+      "public_operation_ids": [
+        "date.create",
+        "config.apply-settings",
+        "date.read-input",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.parse-text",
+        "date.parse-date-only"
+      ]
+    },
+    {
+      "case_id": "INPUT-TIME-FAIL",
+      "primary_operation": "date.read-input",
+      "public_operation_ids": [
+        "date.create",
+        "config.apply-settings",
+        "date.read-input",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.parse-text",
+        "time.parse-text"
+      ]
+    },
+    {
+      "case_id": "INPUT-PATTERN",
+      "primary_operation": "date.read-input",
+      "public_operation_ids": [
+        "date.create",
+        "config.apply-settings",
+        "date.read-input",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.parse-text",
+        "date.parse-pattern"
+      ]
+    },
+    {
+      "case_id": "INPUT-PATTERN-FAIL",
+      "primary_operation": "date.read-input",
+      "public_operation_ids": [
+        "date.create",
+        "config.apply-settings",
+        "date.read-input",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.parse-text",
+        "date.parse-pattern"
+      ]
+    },
+    {
+      "case_id": "INPUT-SET",
+      "primary_operation": "date.read-input",
+      "public_operation_ids": [
+        "date.create",
+        "config.apply-settings",
+        "date.read-input",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.parse-text",
+        "date.replace-field"
+      ]
+    },
+    {
+      "case_id": "INPUT-CONVERT",
+      "primary_operation": "date.read-input",
+      "public_operation_ids": [
+        "date.create",
+        "config.apply-settings",
+        "date.read-input",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.parse-text",
+        "zone.convert-value"
+      ]
+    },
+    {
+      "case_id": "INPUT-CLEAR-ERROR",
+      "primary_operation": "date.read-input",
+      "public_operation_ids": [
+        "date.create",
+        "config.apply-settings",
+        "date.read-input",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "date.parse-text"
+      ]
+    }
+  ]
+}

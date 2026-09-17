@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "status": "original public requests; observations stored separately",
+  "cases": [
+    {
+      "case_id": "INPUT-FRESH",
+      "initial": null,
+      "actions": []
+    },
+    {
+      "case_id": "INPUT-VALID",
+      "initial": null,
+      "actions": [
+        {
+          "method": "parse",
+          "arguments": [
+            "2040-02-29 16:05:09 Etc/UTC"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "INPUT-SPACING",
+      "initial": null,
+      "actions": [
+        {
+          "method": "parse",
+          "arguments": [
+            "  February 29, 2040 16:05:09  "
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "INPUT-EMPTY",
+      "initial": "2040-02-29 16:05:09 Etc/UTC",
+      "actions": [
+        {
+          "method": "parse",
+          "arguments": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "INPUT-ABSENT",
+      "initial": "2040-02-29 16:05:09 Etc/UTC",
+      "actions": [
+        {
+          "method": "parse",
+          "arguments": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "INPUT-INVALID",
+      "initial": "2040-02-29 16:05:09 Etc/UTC",
+      "actions": [
+        {
+          "method": "parse",
+          "arguments": [
+            "not a calendar date"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "INPUT-REPARSE",
+      "initial": "2040-02-29 16:05:09 Etc/UTC",
+      "actions": [
+        {
+          "method": "parse",
+          "arguments": [
+            "March 1 2040"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "INPUT-DATE-ONLY",
+      "initial": "2040-02-29 16:05:09 Etc/UTC",
+      "actions": [
+        {
+          "method": "parse_date",
+          "arguments": [
+            "2040-03-02"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "INPUT-TIME-ONLY",
+      "initial": "2040-02-29 16:05:09 Etc/UTC",
+      "actions": [
+        {
+          "method": "parse_time",
+          "arguments": [
+            "07:08:09"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "INPUT-DATE-FAIL",
+      "initial": "2040-02-29 16:05:09 Etc/UTC",
+      "actions": [
+        {
+          "method": "parse_date",
+          "arguments": [
+            "not a calendar date"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "INPUT-TIME-FAIL",
+      "initial": "2040-02-29 16:05:09 Etc/UTC",
+      "actions": [
+        {
+          "method": "parse_time",
+          "arguments": [
+            "invalid clock"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "INPUT-PATTERN",
+      "initial": "2040-02-29 16:05:09 Etc/UTC",
+      "actions": [
+        {
+          "method": "parse_format",
+          "arguments": [
+            "%Y/%m/%d",
+            "2040/03/02"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "INPUT-PATTERN-FAIL",
+      "initial": "2040-02-29 16:05:09 Etc/UTC",
+      "actions": [
+        {
+          "method": "parse_format",
+          "arguments": [
+            "%Y/%m/%d",
+            "invalid"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "INPUT-SET",
+      "initial": "2040-02-29 16:05:09 Etc/UTC",
+      "actions": [
+        {
+          "method": "set",
+          "arguments": [
+            "d",
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "INPUT-CONVERT",
+      "initial": "2040-02-29 16:05:09 Etc/UTC",
+      "actions": [
+        {
+          "method": "convert",
+          "arguments": [
+            "America/New_York"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "INPUT-CLEAR-ERROR",
+      "initial": "2040-02-29 16:05:09 Etc/UTC",
+      "actions": [
+        {
+          "method": "parse",
+          "arguments": [
+            "not a calendar date"
+          ]
+        },
+        {
+          "method": "err",
+          "arguments": [
+            1
+          ]
+        }
+      ]
+    }
+  ]
+}

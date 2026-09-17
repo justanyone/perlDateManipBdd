@@ -1,0 +1,715 @@
+{
+  "schema_version": 1,
+  "repetitions": 2,
+  "timeout_seconds": 15,
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8",
+    "TZ": "Etc/UTC",
+    "PERL5LIB": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5"
+  },
+  "sha256": {
+    "docs/research/input-history/cases.json": "88591ae6eb5891fe7e0470d163cc03d0b49dad1287b9019d7215b94a74817c16",
+    "tools/probes/input-history/probe.pl": "4df82f487390e82d273ddce88ca51f92dd76849315127852710bc62186d83429",
+    "tools/probes/input-history/run.py": "0dccf30d2cda5c85c424b89c57f0d002167d8624d35b3b592629e1895642545b",
+    "docs/automation/reference-profiles.json": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm": "ae888d89540e0a35dca67a8e1f8f3f420cda95c84aaf8a6d29844e792c262362",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm": "363adb17d51c28fea9ca66b9716d01ccc193b88c36be24da85323d351f53f6e6",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/TZdata.pm": "a4749f31fe5acad42b7f6513ed47e0411c6e7753840641a11f6a5ddd945fe8eb",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm": "5fe1f12a7b59c57baf71c86e266b4ea06851eac0ec203a3507d019bcadbea97c",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm": "fc9a983c82699b5df63a9f14bb6a7cfe9817fc79e1f336b7803549e120691b5f",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm": "6daf668372ada128ea8a0ada4ca1b5fb79096ed7fb8977b98658eb1b51f141cc",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm": "5ece620f80b039048d09b72fcb30f0e09ce8bb1151a0720db80ebdd2f9d7686f",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm": "bc28ca7fc2b3cc57793cd5d3d5f956a48c8438b9738dc045fd9ee7f51d61f469",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm": "bce0c2d92075928e1c6f3a4cf1fa01740ea15d2da64470265a1b616ef352b6e1",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm": "f977a78616d58d288d7d9f862876677a7bd1edcb8a1658ecc9bae5c7a68bbf00",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm": "c31d2bf42f317bb811fa5e838778d12b0e5ff8dd38b012114fe9fa4471845c2e",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm": "c181a8d908efbc2c18cc0a59e10e90628161dc3acf811c9c0292985280953d85"
+  },
+  "observations": [
+    {
+      "call_stdout": "",
+      "case_id": "INPUT-FRESH",
+      "exception": null,
+      "observation": {
+        "actions": [],
+        "configuration_error": "",
+        "configuration_return": null,
+        "error_after_list": "",
+        "error_after_scalar": "",
+        "error_after_value": "[value] Object does not contain a date",
+        "error_before_input": "",
+        "input_list": [
+          ""
+        ],
+        "input_scalar": "",
+        "tzcode": "tzcode2026c",
+        "tzdata": "tzdata2026c",
+        "value": "",
+        "version": "7.00"
+      },
+      "request": {
+        "actions": [],
+        "case_id": "INPUT-FRESH",
+        "initial": null
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "INPUT-VALID",
+      "exception": null,
+      "observation": {
+        "actions": [
+          {
+            "defined": 1,
+            "error": "",
+            "result": 0
+          }
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "error_after_list": "",
+        "error_after_scalar": "",
+        "error_after_value": "",
+        "error_before_input": "",
+        "input_list": [
+          "2040-02-29 16:05:09 Etc/UTC"
+        ],
+        "input_scalar": "2040-02-29 16:05:09 Etc/UTC",
+        "tzcode": "tzcode2026c",
+        "tzdata": "tzdata2026c",
+        "value": "2040022916:05:09",
+        "version": "7.00"
+      },
+      "request": {
+        "actions": [
+          {
+            "arguments": [
+              "2040-02-29 16:05:09 Etc/UTC"
+            ],
+            "method": "parse"
+          }
+        ],
+        "case_id": "INPUT-VALID",
+        "initial": null
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "INPUT-SPACING",
+      "exception": null,
+      "observation": {
+        "actions": [
+          {
+            "defined": 1,
+            "error": "",
+            "result": 0
+          }
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "error_after_list": "",
+        "error_after_scalar": "",
+        "error_after_value": "",
+        "error_before_input": "",
+        "input_list": [
+          "  February 29, 2040 16:05:09  "
+        ],
+        "input_scalar": "  February 29, 2040 16:05:09  ",
+        "tzcode": "tzcode2026c",
+        "tzdata": "tzdata2026c",
+        "value": "2040022916:05:09",
+        "version": "7.00"
+      },
+      "request": {
+        "actions": [
+          {
+            "arguments": [
+              "  February 29, 2040 16:05:09  "
+            ],
+            "method": "parse"
+          }
+        ],
+        "case_id": "INPUT-SPACING",
+        "initial": null
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "INPUT-EMPTY",
+      "exception": null,
+      "observation": {
+        "actions": [
+          {
+            "defined": 1,
+            "error": "[parse] Empty date string",
+            "result": 1
+          }
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "error_after_list": "[parse] Empty date string",
+        "error_after_scalar": "[parse] Empty date string",
+        "error_after_value": "[value] Object does not contain a date",
+        "error_before_input": "[parse] Empty date string",
+        "initialization_error": "",
+        "initialization_status": 0,
+        "input_list": [
+          ""
+        ],
+        "input_scalar": "",
+        "tzcode": "tzcode2026c",
+        "tzdata": "tzdata2026c",
+        "value": "",
+        "version": "7.00"
+      },
+      "request": {
+        "actions": [
+          {
+            "arguments": [
+              ""
+            ],
+            "method": "parse"
+          }
+        ],
+        "case_id": "INPUT-EMPTY",
+        "initial": "2040-02-29 16:05:09 Etc/UTC"
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "INPUT-ABSENT",
+      "exception": null,
+      "observation": {
+        "actions": [
+          {
+            "defined": 1,
+            "error": "[parse] Empty date string",
+            "result": 1
+          }
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "error_after_list": "[parse] Empty date string",
+        "error_after_scalar": "[parse] Empty date string",
+        "error_after_value": "[value] Object does not contain a date",
+        "error_before_input": "[parse] Empty date string",
+        "initialization_error": "",
+        "initialization_status": 0,
+        "input_list": [
+          ""
+        ],
+        "input_scalar": "",
+        "tzcode": "tzcode2026c",
+        "tzdata": "tzdata2026c",
+        "value": "",
+        "version": "7.00"
+      },
+      "request": {
+        "actions": [
+          {
+            "arguments": [
+              null
+            ],
+            "method": "parse"
+          }
+        ],
+        "case_id": "INPUT-ABSENT",
+        "initial": "2040-02-29 16:05:09 Etc/UTC"
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "INPUT-INVALID",
+      "exception": null,
+      "observation": {
+        "actions": [
+          {
+            "defined": 1,
+            "error": "[parse] Invalid date string",
+            "result": 1
+          }
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "error_after_list": "[parse] Invalid date string",
+        "error_after_scalar": "[parse] Invalid date string",
+        "error_after_value": "[value] Object does not contain a date",
+        "error_before_input": "[parse] Invalid date string",
+        "initialization_error": "",
+        "initialization_status": 0,
+        "input_list": [
+          ""
+        ],
+        "input_scalar": "",
+        "tzcode": "tzcode2026c",
+        "tzdata": "tzdata2026c",
+        "value": "",
+        "version": "7.00"
+      },
+      "request": {
+        "actions": [
+          {
+            "arguments": [
+              "not a calendar date"
+            ],
+            "method": "parse"
+          }
+        ],
+        "case_id": "INPUT-INVALID",
+        "initial": "2040-02-29 16:05:09 Etc/UTC"
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "INPUT-REPARSE",
+      "exception": null,
+      "observation": {
+        "actions": [
+          {
+            "defined": 1,
+            "error": "",
+            "result": 0
+          }
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "error_after_list": "",
+        "error_after_scalar": "",
+        "error_after_value": "",
+        "error_before_input": "",
+        "initialization_error": "",
+        "initialization_status": 0,
+        "input_list": [
+          "March 1 2040"
+        ],
+        "input_scalar": "March 1 2040",
+        "tzcode": "tzcode2026c",
+        "tzdata": "tzdata2026c",
+        "value": "2040030100:00:00",
+        "version": "7.00"
+      },
+      "request": {
+        "actions": [
+          {
+            "arguments": [
+              "March 1 2040"
+            ],
+            "method": "parse"
+          }
+        ],
+        "case_id": "INPUT-REPARSE",
+        "initial": "2040-02-29 16:05:09 Etc/UTC"
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "INPUT-DATE-ONLY",
+      "exception": null,
+      "observation": {
+        "actions": [
+          {
+            "defined": 1,
+            "error": "",
+            "result": 0
+          }
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "error_after_list": "",
+        "error_after_scalar": "",
+        "error_after_value": "",
+        "error_before_input": "",
+        "initialization_error": "",
+        "initialization_status": 0,
+        "input_list": [
+          ""
+        ],
+        "input_scalar": "",
+        "tzcode": "tzcode2026c",
+        "tzdata": "tzdata2026c",
+        "value": "2040030216:05:09",
+        "version": "7.00"
+      },
+      "request": {
+        "actions": [
+          {
+            "arguments": [
+              "2040-03-02"
+            ],
+            "method": "parse_date"
+          }
+        ],
+        "case_id": "INPUT-DATE-ONLY",
+        "initial": "2040-02-29 16:05:09 Etc/UTC"
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "INPUT-TIME-ONLY",
+      "exception": null,
+      "observation": {
+        "actions": [
+          {
+            "defined": 1,
+            "error": "",
+            "result": 0
+          }
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "error_after_list": "",
+        "error_after_scalar": "",
+        "error_after_value": "",
+        "error_before_input": "",
+        "initialization_error": "",
+        "initialization_status": 0,
+        "input_list": [
+          ""
+        ],
+        "input_scalar": "",
+        "tzcode": "tzcode2026c",
+        "tzdata": "tzdata2026c",
+        "value": "2040022907:08:09",
+        "version": "7.00"
+      },
+      "request": {
+        "actions": [
+          {
+            "arguments": [
+              "07:08:09"
+            ],
+            "method": "parse_time"
+          }
+        ],
+        "case_id": "INPUT-TIME-ONLY",
+        "initial": "2040-02-29 16:05:09 Etc/UTC"
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "INPUT-DATE-FAIL",
+      "exception": null,
+      "observation": {
+        "actions": [
+          {
+            "defined": 1,
+            "error": "[parse_date] Invalid date string",
+            "result": 1
+          }
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "error_after_list": "[parse_date] Invalid date string",
+        "error_after_scalar": "[parse_date] Invalid date string",
+        "error_after_value": "[parse_date] Invalid date string",
+        "error_before_input": "[parse_date] Invalid date string",
+        "initialization_error": "",
+        "initialization_status": 0,
+        "input_list": [
+          "2040-02-29 16:05:09 Etc/UTC"
+        ],
+        "input_scalar": "2040-02-29 16:05:09 Etc/UTC",
+        "tzcode": "tzcode2026c",
+        "tzdata": "tzdata2026c",
+        "value": "",
+        "version": "7.00"
+      },
+      "request": {
+        "actions": [
+          {
+            "arguments": [
+              "not a calendar date"
+            ],
+            "method": "parse_date"
+          }
+        ],
+        "case_id": "INPUT-DATE-FAIL",
+        "initial": "2040-02-29 16:05:09 Etc/UTC"
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "INPUT-TIME-FAIL",
+      "exception": null,
+      "observation": {
+        "actions": [
+          {
+            "defined": 1,
+            "error": "[parse_time] Invalid time string",
+            "result": 1
+          }
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "error_after_list": "[parse_time] Invalid time string",
+        "error_after_scalar": "[parse_time] Invalid time string",
+        "error_after_value": "[parse_time] Invalid time string",
+        "error_before_input": "[parse_time] Invalid time string",
+        "initialization_error": "",
+        "initialization_status": 0,
+        "input_list": [
+          "2040-02-29 16:05:09 Etc/UTC"
+        ],
+        "input_scalar": "2040-02-29 16:05:09 Etc/UTC",
+        "tzcode": "tzcode2026c",
+        "tzdata": "tzdata2026c",
+        "value": "",
+        "version": "7.00"
+      },
+      "request": {
+        "actions": [
+          {
+            "arguments": [
+              "invalid clock"
+            ],
+            "method": "parse_time"
+          }
+        ],
+        "case_id": "INPUT-TIME-FAIL",
+        "initial": "2040-02-29 16:05:09 Etc/UTC"
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "INPUT-PATTERN",
+      "exception": null,
+      "observation": {
+        "actions": [
+          {
+            "defined": 1,
+            "error": "",
+            "result": 0
+          }
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "error_after_list": "",
+        "error_after_scalar": "",
+        "error_after_value": "",
+        "error_before_input": "",
+        "initialization_error": "",
+        "initialization_status": 0,
+        "input_list": [
+          "2040/03/02"
+        ],
+        "input_scalar": "2040/03/02",
+        "tzcode": "tzcode2026c",
+        "tzdata": "tzdata2026c",
+        "value": "2040030200:00:00",
+        "version": "7.00"
+      },
+      "request": {
+        "actions": [
+          {
+            "arguments": [
+              "%Y/%m/%d",
+              "2040/03/02"
+            ],
+            "method": "parse_format"
+          }
+        ],
+        "case_id": "INPUT-PATTERN",
+        "initial": "2040-02-29 16:05:09 Etc/UTC"
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "INPUT-PATTERN-FAIL",
+      "exception": null,
+      "observation": {
+        "actions": [
+          {
+            "defined": 1,
+            "error": "",
+            "result": 1
+          }
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "error_after_list": "",
+        "error_after_scalar": "",
+        "error_after_value": "[value] Object does not contain a date",
+        "error_before_input": "",
+        "initialization_error": "",
+        "initialization_status": 0,
+        "input_list": [
+          ""
+        ],
+        "input_scalar": "",
+        "tzcode": "tzcode2026c",
+        "tzdata": "tzdata2026c",
+        "value": "",
+        "version": "7.00"
+      },
+      "request": {
+        "actions": [
+          {
+            "arguments": [
+              "%Y/%m/%d",
+              "invalid"
+            ],
+            "method": "parse_format"
+          }
+        ],
+        "case_id": "INPUT-PATTERN-FAIL",
+        "initial": "2040-02-29 16:05:09 Etc/UTC"
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "INPUT-SET",
+      "exception": null,
+      "observation": {
+        "actions": [
+          {
+            "defined": 1,
+            "error": "",
+            "result": 0
+          }
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "error_after_list": "",
+        "error_after_scalar": "",
+        "error_after_value": "",
+        "error_before_input": "",
+        "initialization_error": "",
+        "initialization_status": 0,
+        "input_list": [
+          ""
+        ],
+        "input_scalar": "",
+        "tzcode": "tzcode2026c",
+        "tzdata": "tzdata2026c",
+        "value": "2040020116:05:09",
+        "version": "7.00"
+      },
+      "request": {
+        "actions": [
+          {
+            "arguments": [
+              "d",
+              1
+            ],
+            "method": "set"
+          }
+        ],
+        "case_id": "INPUT-SET",
+        "initial": "2040-02-29 16:05:09 Etc/UTC"
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "INPUT-CONVERT",
+      "exception": null,
+      "observation": {
+        "actions": [
+          {
+            "defined": 1,
+            "error": "",
+            "result": 0
+          }
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "error_after_list": "",
+        "error_after_scalar": "",
+        "error_after_value": "",
+        "error_before_input": "",
+        "initialization_error": "",
+        "initialization_status": 0,
+        "input_list": [
+          ""
+        ],
+        "input_scalar": "",
+        "tzcode": "tzcode2026c",
+        "tzdata": "tzdata2026c",
+        "value": "2040022911:05:09",
+        "version": "7.00"
+      },
+      "request": {
+        "actions": [
+          {
+            "arguments": [
+              "America/New_York"
+            ],
+            "method": "convert"
+          }
+        ],
+        "case_id": "INPUT-CONVERT",
+        "initial": "2040-02-29 16:05:09 Etc/UTC"
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "INPUT-CLEAR-ERROR",
+      "exception": null,
+      "observation": {
+        "actions": [
+          {
+            "defined": 1,
+            "error": "[parse] Invalid date string",
+            "result": 1
+          },
+          {
+            "defined": 0,
+            "error": "",
+            "result": null
+          }
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "error_after_list": "",
+        "error_after_scalar": "",
+        "error_after_value": "[value] Object does not contain a date",
+        "error_before_input": "",
+        "initialization_error": "",
+        "initialization_status": 0,
+        "input_list": [
+          ""
+        ],
+        "input_scalar": "",
+        "tzcode": "tzcode2026c",
+        "tzdata": "tzdata2026c",
+        "value": "",
+        "version": "7.00"
+      },
+      "request": {
+        "actions": [
+          {
+            "arguments": [
+              "not a calendar date"
+            ],
+            "method": "parse"
+          },
+          {
+            "arguments": [
+              1
+            ],
+            "method": "err"
+          }
+        ],
+        "case_id": "INPUT-CLEAR-ERROR",
+        "initial": "2040-02-29 16:05:09 Etc/UTC"
+      },
+      "warnings": []
+    }
+  ]
+}
