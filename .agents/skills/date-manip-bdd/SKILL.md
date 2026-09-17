@@ -12,6 +12,10 @@ See [provenance](../../../THIRD_PARTY_NOTICES.md).
 
 ## Establish the contract
 
+For specification planning, read [the portable specification plan](../../../docs/planning/README.md).
+Keep English contracts independent of Perl syntax and algorithms. Respect planning-only
+scope; observations in temporary probes are research, not permission to implement a runner.
+
 1. Identify the exact Date::Manip version/backend and Perl version being tested.
    Consult [the source map](../../../docs/upstream.md) only when locating or updating
    upstream source. Read the relevant module's POD and implementation, not all files.
@@ -27,8 +31,10 @@ See [provenance](../../../THIRD_PARTY_NOTICES.md).
 
 - Given: explicit timezone, language, reference date/time, and relevant business rules.
 - When: invoke the real function/method with concrete inputs.
-- Then: assert a hand-derived expected result, documented error, or observable effect.
-  Never compute the expectation with Date::Manip itself or reproduce its algorithm.
+- Then: assert a reviewed literal expected result, documented error, or observable effect.
+  During authoring, original probes may establish observed behavior; review and freeze
+  those results as literal expectations. During conformance testing, never calculate
+  the expected value using Date::Manip itself or reproduce its algorithm.
 - Use original prose and fixtures. Consult [licensing](../../../docs/licensing.md)
   before copying upstream tests, examples, or substantial documentation.
 - Isolate state. Backend selection can happen at import time, so use separate Perl
@@ -51,3 +57,8 @@ the harness and document dependencies and exact commands; do not invent passing 
 Run focused scenarios, then the applicable suite. Update the API-to-scenario map;
 report skipped/deferred entries separately from passes. Line/subroutine coverage
 supports, but does not prove, behavioral completeness.
+
+For a future implementation in another language, use the
+[source-separation policy](../../../docs/planning/source-separation.md). Do not export
+Perl mappings, upstream implementation, copied fixtures/data, translated algorithms,
+or source-exposed conversation context with the portable specification.

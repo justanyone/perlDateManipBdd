@@ -20,6 +20,8 @@ cd perlDateManipBdd
 
 ## Project guidance
 
+- [Plan for the portable BDD specification](docs/planning/README.md), including
+  English feature examples, Perl API mappings, boundary analysis, and observed results
 - [Upstream source map and complete file inventories](docs/upstream.md)
 - [Licensing assessment and redistribution requirements](docs/licensing.md)
 - [Repository instructions for Codex](AGENTS.md)

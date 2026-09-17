@@ -1,0 +1,199 @@
+{
+  "backend": "DM6",
+  "configuration": [
+    "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+    "Language=English",
+    "DateFormat=US",
+    "Printable=0",
+    "FirstDay=1",
+    "Week1ofYear=jan4",
+    "WorkWeekBeg=1",
+    "WorkWeekEnd=5",
+    "WorkDayBeg=09:00",
+    "WorkDayEnd=17:00",
+    "WorkDay24Hr=0",
+    "EraseHolidays=1",
+    "EraseEvents=1"
+  ],
+  "date_manip": "7.00",
+  "observations": [
+    {
+      "call": "ParseDateString(2040-02-29 16:05:09)",
+      "id": "PARSE-01",
+      "raw": "2040022916:05:09"
+    },
+    {
+      "call": "ParseDateString(2041-02-29 16:05:09)",
+      "id": "PARSE-02",
+      "raw": ""
+    },
+    {
+      "call": "ParseDateString(tomorrow)",
+      "id": "PARSE-03",
+      "raw": "2040022900:00:00"
+    },
+    {
+      "call": "ParseDateString(05/06/2040)",
+      "id": "PARSE-04",
+      "raw": "2040050600:00:00"
+    },
+    {
+      "call": "ParseDateString(05/06/2040); DateFormat=non-US",
+      "id": "PARSE-05",
+      "raw": "2040060500:00:00"
+    },
+    {
+      "call": "ParseDate(array reference)",
+      "id": "PARSE-06",
+      "raw": {
+        "remaining": [
+          "trailing"
+        ],
+        "return": "2040022916:05:09"
+      }
+    },
+    {
+      "call": "UnixDate(2040-02-29 16:05:09, %Y-%m-%d %H:%M:%S)",
+      "id": "FORMAT-01",
+      "raw": "2040-02-29 16:05:09"
+    },
+    {
+      "call": "Date_LeapYear(2000)",
+      "id": "CAL-2000",
+      "raw": 1
+    },
+    {
+      "call": "Date_LeapYear(2100)",
+      "id": "CAL-2100",
+      "raw": 0
+    },
+    {
+      "call": "Date_LeapYear(2400)",
+      "id": "CAL-2400",
+      "raw": 1
+    },
+    {
+      "call": "Date_DaysInMonth(2,2040)",
+      "id": "CAL-04",
+      "raw": 29
+    },
+    {
+      "call": "Date_DayOfWeek(2,29,2040)",
+      "id": "CAL-05",
+      "raw": 3
+    },
+    {
+      "call": "Date_DayOfYear(2,29,2040)",
+      "id": "CAL-06",
+      "raw": 60
+    },
+    {
+      "call": "Date_NthDayOfYear(2040,60.5)",
+      "id": "CAL-07",
+      "raw": [
+        2040,
+        2,
+        29,
+        12,
+        0,
+        0
+      ]
+    },
+    {
+      "call": "ParseDateDelta(2 hours 17 minutes)",
+      "id": "DELTA-01",
+      "raw": "0:0:0:0:2:17:0"
+    },
+    {
+      "call": "DateCalc(2040-02-28 16:05:09, +1 day, error out)",
+      "id": "ARITH-01",
+      "raw": {
+        "error": null,
+        "return": "2040022916:05:09"
+      }
+    },
+    {
+      "call": "DateCalc(2040-01-31 16:05:09, +1 month, error out)",
+      "id": "ARITH-02",
+      "raw": {
+        "error": null,
+        "return": "2040022916:05:09"
+      }
+    },
+    {
+      "call": "DateCalc(two dates, exact default)",
+      "id": "ARITH-03",
+      "raw": {
+        "error": null,
+        "return": "0:0:0:0:48:0:0"
+      }
+    },
+    {
+      "call": "Date_ConvTZ(2040070112:00:00, Etc/UTC, America/New_York)",
+      "id": "TZ-01",
+      "raw": "2040070108:00:00"
+    },
+    {
+      "call": "Date_SecsSince1970GMT(12,31,1969,23,59,59); local zone UTC",
+      "id": "EPOCH-01",
+      "raw": -1
+    },
+    {
+      "call": "Date_NextWorkDay(2040-03-02 16:05:09,1)",
+      "id": "BUSINESS-01",
+      "raw": "2040030516:05:09"
+    },
+    {
+      "call": "ParseRecur(daily recurrence, explicit base and closed range), list context",
+      "id": "RECUR-01",
+      "raw": [
+        "2040022809:00:00",
+        "2040022909:00:00",
+        "2040030109:00:00"
+      ]
+    },
+    {
+      "call": "Date.parse(valid); Date.value scalar and list",
+      "id": "OO-01",
+      "raw": {
+        "list": [
+          2040,
+          2,
+          29,
+          16,
+          5,
+          9
+        ],
+        "scalar": "2040022916:05:09",
+        "status": 0
+      }
+    },
+    {
+      "call": "Date.parse(invalid); Date.value",
+      "id": "OO-02",
+      "raw": {
+        "error_present": true,
+        "status": 1,
+        "value": ""
+      }
+    }
+  ],
+  "perl": "v5.40.1",
+  "status": "planning observations, not an executable feature suite or full coverage",
+  "recorded_on": "2026-09-17",
+  "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+  "probe_script_sha256": "8493f2463a6865d0a16a4587991ab8cfdf23e3f9beeda0d012494ffe1b672c72",
+  "environment": {
+    "TZ": "Etc/UTC",
+    "LC_ALL": "C"
+  },
+  "repeat": "Two fresh-process runs produced identical JSON. Within each run calls occurred in listed order.",
+  "provenance": "Original temporary probes using the public APIs; no upstream tests or implementation text copied. Probe source is not part of this planning-only change.",
+  "reference_platform": {
+    "os": "linux",
+    "arch": "x86_64-linux-gnu-thread-multi",
+    "tzdata": "tzdata2026c",
+    "tzcode": "tzcode2026c",
+    "note": "Queried from the same unchanged extracted release after the repeated probes."
+  }
+}

@@ -2,16 +2,22 @@
 
 ## Purpose and scope
 
-Build an independently authored BDD suite for Perl's Date::Manip. The goal is
-coverage of every function, including both functional backends and OO methods.
-The repository currently contains planning documentation, not an executable suite.
+Build an original, language-neutral English BDD specification of Date::Manip's
+observable functionality, then implement its test adapter using Perl/Date::Manip.
+A later library in another language will implement the same specification using
+independent code. Cover both functional backends and OO capabilities. The repository
+currently contains planning documentation and draft Gherkin, not an executable suite.
+Read docs/planning/README.md for specification work; do not implement the harness
+or complete suite during a planning-only request.
 
 Keep an API coverage inventory tied to an exact upstream release or commit.
 Reconcile documented APIs, exports, inheritance, aliases, and source subroutines;
 classify public, private, generated, and compatibility entries explicitly. Prioritize
 public behavior, but do not silently exclude private functions or claim complete
 coverage from a count of scenarios. Record coverage through public callers where
-appropriate, and explain every exclusion or unreachable entry.
+appropriate, and explain every exclusion or unreachable entry. Internal function
+coverage is a research-side accounting task; portable features must not require
+another language to reproduce private functions or algorithms.
 
 ## Licensing and attribution
 
@@ -31,8 +37,10 @@ skills. Review new dependencies' actual licenses before inclusion.
 
 ## Testing practice
 
-- Use real Date::Manip calls and independently derived expected values. Never
-  calculate an expected result with the same function being tested.
+- Use real Date::Manip calls. During specification authoring, capture observed
+  outputs from the pinned reference on original inputs, check them independently
+  where feasible, and freeze reviewed literal expectations. During a test run,
+  never calculate the expected result with the same function being tested.
 - Express scenarios as Given/When/Then, with observable outcomes and API mappings.
 - Fix timezone, language, reference time, and business-calendar configuration.
   Isolate configuration and backend selection between scenarios; use separate
@@ -49,6 +57,12 @@ skills. Review new dependencies' actual licenses before inclusion.
   Until then, do not present documentation checks as passing BDD tests.
 
 ## Load guidance only when relevant
+
+For later implementation work in another language, follow
+docs/planning/source-separation.md. Export only reviewed original portable features,
+glossary/protocol and expected values into a fresh workspace/session. Do not hand
+off upstream source, copied tests/data, translated algorithms, Perl adapters, source
+mappings, or this source-exposed research conversation.
 
 This file is the short, persistent repository context. Do not preload all docs,
 upstream files, skills, or references.
