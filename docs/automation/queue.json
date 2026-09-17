@@ -92,7 +92,7 @@
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
       ],
-      "owner": "coordinator + configuration_features (pattern parsing)",
+      "owner": "coordinator + configuration_features (languages)",
       "progress": "Calendar batch retained. New parsing corpus: 291 repeated binding cases, 283 authored candidate literals checked against saved evidence, 8 legacy configuration exceptions separate. Rendering worker revised 24 repeated invocations and draft features; coordinator review pending. Pattern parsing assigned; remaining natural-language/time/language and calendar partitions open.",
       "evidence": [
         "docs/research/observations/calendar.json",
@@ -125,8 +125,8 @@
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
       ],
-      "owner": "arithmetic_features",
-      "progress": "First 59-case batch corrected for explicit options, field order and semantic labels. Worker now expanding all delta productions, fields/ranges and OO operand/mode variants. Review remains pending."
+      "owner": "rendering_features (independent review)",
+      "progress": "107 repeatable cases returned, including20 grammar productions, field/range/mode samples and17DST/business/state edges. Independent arithmetic review active; known gaps remain."
     },
     {
       "id": "spec-recurrence",
@@ -192,7 +192,7 @@
         "Feature text remains language-neutral."
       ],
       "owner": "coordinator-review",
-      "progress": "Worker returned 40 repeated cases narrowly sampling all 38 configuration keys plus lifecycle cases. Observer-induced unset-value errors corrected. Feature/evidence review and broader domains remain."
+      "progress": "40 corrected repeatable cases; coordinator fixed backend fixture isolation and supported derivation carrier, checked29 table cases plus reset/derivation. Drafts remain incomplete across domains/files/state/receiver variants."
     },
     {
       "id": "coverage-review",

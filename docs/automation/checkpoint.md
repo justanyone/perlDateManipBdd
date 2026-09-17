@@ -196,3 +196,21 @@ cases, provenance hashes, and independent epoch/week facts. The rendering family
 remains draft with known untested boundaries. Arithmetic, recurrence, and explicit
 pattern-parsing workers remain assigned to independent expansions. Next root work
 is configuration/zones review and remaining parsing/language/calendar coverage.
+
+## Configuration review checkpoint
+
+Coordinator corrected the configuration probe's legacy fixture omission, reduced
+backend loading to the requested module, isolated its environment and working
+directory, and fixed the supported new-context option carrier. The derived context
+now reads non-US rather than the old malformed-call result US. Reset now starts
+with non-US. All 40 cases repeat; only the derived-context raw result changed.
+Two outline headers and concrete lifecycle wording were fixed. The new review
+script verifies 29 table cases plus derivation/reset; a lightweight draft structure
+checker verifies table widths and outline columns. Neither is a BDD runner.
+
+Current independent workers: recurrence expansion, rendering_features performing
+an independent arithmetic audit, and configuration_features authoring a new
+language-family corpus. Arithmetic returned107 repeated cases including DST and
+business boundaries. Pattern parsing returned52 directive samples and10 edge
+observations; review remains pending. Next root task is zones/business and pattern
+review, then remaining grammar/calendar edges and comprehensive coverage audit.

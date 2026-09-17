@@ -1,0 +1,3338 @@
+{
+  "command": "python3 tools/probes/configuration-family/run.py",
+  "observations": [
+    {
+      "case_id": "CFG-DM6-DEFAULTS",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-DEFAULTS",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.Defaults.valid",
+          "config.lifecycle.reset"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "dateformat",
+              "US"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "dateformat"
+          ],
+          "settings": [
+            [
+              "DateFormat",
+              "non-US"
+            ],
+            [
+              "Defaults",
+              "x"
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-CONFIGFILE-MISSING",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-CONFIGFILE-MISSING",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.ConfigFile.missing",
+          "config.error.warning"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "configfile",
+              ""
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "configfile"
+          ],
+          "settings": [
+            [
+              "ConfigFile",
+              "/tmp/date-manip-no-such-config"
+            ]
+          ]
+        },
+        "warnings": [
+          "ERROR: [config_file] file doesn't exist: /tmp/date-manip-no-such-config at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n",
+          "ERROR: [config] invalid config variable: configfile at /home/kevin/my_code/perlDateManipBdd/tools/probes/configuration-family/probe.pl line 32.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-LANGUAGE",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-LANGUAGE",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.Language.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "language",
+              "English"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "language"
+          ],
+          "settings": [
+            [
+              "Language",
+              "English"
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-ENCODING-INVALID",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-ENCODING-INVALID",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.Encoding.invalid",
+          "config.error.state"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "encoding",
+              "ASCII"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "encoding"
+          ],
+          "settings": [
+            [
+              "Encoding",
+              "not-an-encoding"
+            ]
+          ]
+        },
+        "warnings": [
+          "ERROR: [config_var] invalid: Encoding: not-an-encoding at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-FIRSTDAY",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-FIRSTDAY",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.FirstDay.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "firstday",
+              "7"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "firstday"
+          ],
+          "settings": [
+            [
+              "FirstDay",
+              "7"
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-WEEK1-INVALID",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-WEEK1-INVALID",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.Week1ofYear.invalid",
+          "config.error.state"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "week1ofyear",
+              "jan4"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "week1ofyear"
+          ],
+          "settings": [
+            [
+              "Week1ofYear",
+              "dow9"
+            ]
+          ]
+        },
+        "warnings": [
+          "ERROR: [config_var] invalid: Week1ofYear: dow9 at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-PRINTABLE",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-PRINTABLE",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.Printable.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "printable",
+              "2"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "printable"
+          ],
+          "settings": [
+            [
+              "Printable",
+              "2"
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-DATEFORMAT",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-DATEFORMAT",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.DateFormat.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "dateformat",
+              "US"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "dateformat"
+          ],
+          "settings": [
+            [
+              "DateFormat",
+              "US"
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-YYTOYYYY",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-YYTOYYYY",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.YYtoYYYY.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "yytoyyyy",
+              "89"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "yytoyyyy"
+          ],
+          "settings": [
+            [
+              "YYtoYYYY",
+              "C##"
+            ]
+          ]
+        },
+        "warnings": [
+          "ERROR: [config_var] invalid: YYtoYYYY: c## at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-DEFAULTTIME",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-DEFAULTTIME",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.DefaultTime.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "defaulttime",
+              "curr"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "defaulttime"
+          ],
+          "settings": [
+            [
+              "DefaultTime",
+              "curr"
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-PERIODSEP",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-PERIODSEP",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.PeriodTimeSep.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "periodtimesep",
+              "1"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "periodtimesep"
+          ],
+          "settings": [
+            [
+              "PeriodTimeSep",
+              "1"
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-MMMYYYY",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-MMMYYYY",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.Format_MMMYYYY.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "format_mmmyyyy",
+              "last"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "format_mmmyyyy"
+          ],
+          "settings": [
+            [
+              "Format_MMMYYYY",
+              "last"
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-WORKWEEK",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-WORKWEEK",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.WorkWeekBeg.valid",
+          "config.key.WorkWeekEnd.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "workweekbeg",
+              "2"
+            ],
+            [
+              "workweekend",
+              "6"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "workweekbeg",
+            "workweekend"
+          ],
+          "settings": [
+            [
+              "WorkWeekBeg",
+              "2"
+            ],
+            [
+              "WorkWeekEnd",
+              "6"
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-WORKDAY24",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-WORKDAY24",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.WorkDay24Hr.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "workday24hr",
+              "1"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "workday24hr"
+          ],
+          "settings": [
+            [
+              "WorkDay24Hr",
+              "1"
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-WORKDAY-INVALID",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-WORKDAY-INVALID",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.WorkDayBeg.invalid",
+          "config.key.WorkDayEnd.invalid",
+          "config.error.state"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "workdaybeg",
+              "09:00:00"
+            ],
+            [
+              "workdayend",
+              "17:00:00"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "workdaybeg",
+            "workdayend"
+          ],
+          "settings": [
+            [
+              "WorkDayBeg",
+              "18:00"
+            ],
+            [
+              "WorkDayEnd",
+              "17:00"
+            ]
+          ]
+        },
+        "warnings": [
+          "ERROR: [config_var] WorkDayBeg not before WorkDayEnd at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n",
+          "ERROR: [config_var] WorkDayBeg not before WorkDayEnd at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-TOMORROWFIRST",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-TOMORROWFIRST",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.TomorrowFirst.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "tomorrowfirst",
+              "0"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "tomorrowfirst"
+          ],
+          "settings": [
+            [
+              "TomorrowFirst",
+              "0"
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-ERASE-HOLIDAYS",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-ERASE-HOLIDAYS",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.EraseHolidays.present"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "eraseholidays",
+              ""
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "eraseholidays"
+          ],
+          "settings": [
+            [
+              "EraseHolidays",
+              ""
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-ERASE-EVENTS",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-ERASE-EVENTS",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.EraseEvents.present"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "eraseevents",
+              ""
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "eraseevents"
+          ],
+          "settings": [
+            [
+              "EraseEvents",
+              ""
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-RECURRANGE",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-RECURRANGE",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.RecurRange.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "recurrange",
+              "week"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "recurrange"
+          ],
+          "settings": [
+            [
+              "RecurRange",
+              "week"
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-MAXRECUR-INVALID",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-MAXRECUR-INVALID",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.MaxRecurAttempts.invalid",
+          "config.error.state"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "maxrecurattempts",
+              "no"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "maxrecurattempts"
+          ],
+          "settings": [
+            [
+              "MaxRecurAttempts",
+              "no"
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-SETDATE",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-SETDATE",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.SetDate.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "setdate",
+              1
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "setdate"
+          ],
+          "settings": [
+            [
+              "SetDate",
+              "2040-02-29-12:34:56,Etc/UTC"
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-FORCEDATE",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-FORCEDATE",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.ForceDate.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "forcedate",
+              1
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "forcedate"
+          ],
+          "settings": [
+            [
+              "ForceDate",
+              "2040-02-29-12:34:56,Etc/UTC"
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-POSIX",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-POSIX",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.Use_POSIX_Printf.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "use_posix_printf",
+              "1"
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "use_posix_printf"
+          ],
+          "settings": [
+            [
+              "Use_POSIX_Printf",
+              "1"
+            ]
+          ]
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-TZ-INVALID",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-TZ-INVALID",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.TZ.invalid",
+          "config.error.state"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "tz",
+              ""
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "tz"
+          ],
+          "settings": [
+            [
+              "TZ",
+              "No/Such_Zone"
+            ]
+          ]
+        },
+        "warnings": [
+          "WARNING: the TZ Date::Manip config variable is deprecated\n         and will be removed in version 7.00.  Please use\n         the SetDate or ForceDate config variables instead.\n at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n",
+          "Use of uninitialized value $mod in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 183.\n",
+          "Use of uninitialized value $mod in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 184.\n",
+          "Use of uninitialized value $mod in concatenation (.) or string at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 185.\n",
+          "ERROR: [config_var] invalid zone in SetDate:  at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM6-JAN1WEEK1",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM6-JAN1WEEK1",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.Jan1Week1.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "before": {
+            "class": "Date::Manip::Date",
+            "config_names": [
+              "dateformat",
+              "defaults",
+              "defaulttime",
+              "encoding",
+              "eraseevents",
+              "eraseholidays",
+              "firstday",
+              "forcedate",
+              "format_mmmyyyy",
+              "jan1week1",
+              "language",
+              "maxrecurattempts",
+              "periodtimesep",
+              "printable",
+              "recurrange",
+              "setdate",
+              "tomorrowfirst",
+              "tz",
+              "use_posix_printf",
+              "week1ofyear",
+              "workday24hr",
+              "workdaybeg",
+              "workdayend",
+              "workweekbeg",
+              "workweekend",
+              "yytoyyyy"
+            ],
+            "error_before_reads": ""
+          },
+          "queried": [
+            [
+              "jan1week1",
+              ""
+            ]
+          ],
+          "return": null
+        },
+        "request": {
+          "read": [
+            "jan1week1"
+          ],
+          "settings": [
+            [
+              "Jan1Week1",
+              "1"
+            ]
+          ]
+        },
+        "warnings": [
+          "WARNING: the jan1week1 Date::Manip config variable is deprecated\n         and will be removed in version 7.00.  Please use\n         the Week1ofYear config variable instead.\n at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM5-IGNOREGLOBAL",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM5-IGNOREGLOBAL",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.IgnoreGlobalCnf.present"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "initializer_return": null
+        },
+        "request": {
+          "settings": [
+            [
+              "IgnoreGlobalCnf",
+              ""
+            ]
+          ]
+        },
+        "setup_return": null,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM5-PATHSEP",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM5-PATHSEP",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.PathSep.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "initializer_return": null
+        },
+        "request": {
+          "settings": [
+            [
+              "PathSep",
+              ":"
+            ]
+          ]
+        },
+        "setup_return": null,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM5-GLOBAL-MISSING",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM5-GLOBAL-MISSING",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.GlobalCnf.missing",
+          "config.error.warning"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "initializer_return": null
+        },
+        "request": {
+          "settings": [
+            [
+              "GlobalCnf",
+              "/tmp/no-global-cnf"
+            ]
+          ]
+        },
+        "setup_return": null,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM5-PERSONAL",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM5-PERSONAL",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.PersonalCnf.empty",
+          "config.key.PersonalCnfPath.empty"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "initializer_return": null
+        },
+        "request": {
+          "settings": [
+            [
+              "PersonalCnf",
+              ""
+            ],
+            [
+              "PersonalCnfPath",
+              ""
+            ]
+          ]
+        },
+        "setup_return": null,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM5-CONVTZ",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM5-CONVTZ",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.ConvTZ.ignore"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "initializer_return": null
+        },
+        "request": {
+          "settings": [
+            [
+              "ConvTZ",
+              "IGNORE"
+            ]
+          ]
+        },
+        "setup_return": null,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM5-INTERNAL",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM5-INTERNAL",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.Internal.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "initializer_return": null
+        },
+        "request": {
+          "settings": [
+            [
+              "Internal",
+              "1"
+            ]
+          ]
+        },
+        "setup_return": null,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM5-DELTASIGNS",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM5-DELTASIGNS",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.DeltaSigns.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "initializer_return": null
+        },
+        "request": {
+          "settings": [
+            [
+              "DeltaSigns",
+              "1"
+            ]
+          ]
+        },
+        "setup_return": null,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM5-UPDATECURRTZ",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM5-UPDATECURRTZ",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.UpdateCurrTZ.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "initializer_return": null
+        },
+        "request": {
+          "settings": [
+            [
+              "UpdateCurrTZ",
+              "1"
+            ]
+          ]
+        },
+        "setup_return": null,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM5-INTCHARSET",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM5-INTCHARSET",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.IntCharSet.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "initializer_return": null
+        },
+        "request": {
+          "settings": [
+            [
+              "IntCharSet",
+              "0"
+            ]
+          ]
+        },
+        "setup_return": null,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-DM5-TODAYMIDNIGHT",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-DM5-TODAYMIDNIGHT",
+        "contract_ids": [
+          "config.apply-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.apply-settings",
+        "partition_ids": [
+          "config.key.TodayIsMidnight.valid"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "initializer_return": null
+        },
+        "request": {
+          "settings": [
+            [
+              "TodayIsMidnight",
+              "1"
+            ]
+          ]
+        },
+        "setup_return": null,
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-READ-ARITIES",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-READ-ARITIES",
+        "contract_ids": [
+          "config.read-settings"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "config.read-settings",
+        "partition_ids": [
+          "config.read-settings.arity-context",
+          "config.read-settings.name-case"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "error": "",
+          "list": [
+            ""
+          ],
+          "scalar": ""
+        },
+        "request": {
+          "names": [
+            "dateformat",
+            "DateFormat",
+            "no-such-key"
+          ],
+          "settings": [
+            [
+              "DateFormat",
+              "US"
+            ]
+          ]
+        },
+        "warnings": [
+          "ERROR: [config] invalid config variable: no-such-key at /home/kevin/my_code/perlDateManipBdd/tools/probes/configuration-family/probe.pl line 34.\n",
+          "ERROR: [config] invalid config variable: no-such-key at /home/kevin/my_code/perlDateManipBdd/tools/probes/configuration-family/probe.pl line 34.\n"
+        ]
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-ERROR-CLEAR",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-ERROR-CLEAR",
+        "contract_ids": [
+          "error.read-state"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "error.read-state",
+        "partition_ids": [
+          "error.read-state.state",
+          "error.read-state.clear-argument"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "after": "[parse] Invalid date string",
+          "before": "",
+          "clear_return": null,
+          "post_clear": "",
+          "status": 1
+        },
+        "request": {
+          "bad_text": "not a valid date phrase",
+          "clear": 1
+        },
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-OBJECT-KINDS",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-OBJECT-KINDS",
+        "contract_ids": [
+          "object.kind-check"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "object.kind-check",
+        "partition_ids": [
+          "object.kind-check.kind-matrix"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "date": [
+            1,
+            0,
+            0
+          ],
+          "delta": [
+            0,
+            1,
+            0
+          ],
+          "recur": [
+            0,
+            0,
+            1
+          ]
+        },
+        "request": {},
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-CONTEXT-DERIVE",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-CONTEXT-DERIVE",
+        "contract_ids": [
+          "context.create"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "context.create",
+        "partition_ids": [
+          "context.create.inheritance",
+          "context.create.isolation"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "derived": "non-US",
+          "derived_class": "Date::Manip::Date",
+          "source": "US"
+        },
+        "request": {},
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "case_id": "CFG-CONTEXT-SERVICES",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "CFG-CONTEXT-SERVICES",
+        "contract_ids": [
+          "context.base-service"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "operation_id": "context.base-service",
+        "partition_ids": [
+          "context.base-service.receiver-kind"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "date": "Date::Manip::Base",
+          "delta": "Date::Manip::Base"
+        },
+        "request": {},
+        "warnings": []
+      },
+      "repeatable": true,
+      "research_status": "repeatable",
+      "returncode": 0,
+      "stderr": ""
+    }
+  ],
+  "parallel_workers": 4,
+  "repetitions": 2,
+  "schema_version": 1,
+  "sha256": {
+    "docs/automation/reference-profiles.json": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
+    "docs/research/configuration-family/cases.json": "dbebbee493c7341b08c72909d0b5dda0a1f1be419f6d13b031ee6f94db63c5d7",
+    "tools/probes/configuration-family/probe.pl": "eba1db7d4c03f624644e05ce1339a21830916278e02908d32cdcbaca29a3352f",
+    "tools/probes/configuration-family/run.py": "85360cd4516846f10ca7c3218c23f4218faefe85cd2e6f5e716251cb070a8ce3"
+  },
+  "status": "research evidence; no expected value is approved",
+  "timeout_seconds": 15
+}
