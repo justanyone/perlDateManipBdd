@@ -58,10 +58,32 @@ def totals(summary: dict, paths: set[str]) -> tuple[dict, list[str]]:
     return answer, loaded
 
 
+DEPRECATION = "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00"
+
+def normalize_deprecation_sites(value):
+    """Only DM5's known module-load warning may lose its dynamic eval location."""
+    if isinstance(value, list):
+        return [normalize_deprecation_sites(item) for item in value]
+    if not isinstance(value, dict):
+        return value
+    answer = {}
+    for key, item in value.items():
+        if key in ("warnings", "load_warnings", "configuration_warnings") and isinstance(item, list):
+            answer[key] = [re.sub(r"at \(eval \d+\)(?:\[[^\]\n]+\])?(?= line \d+\.\n?$)",
+                                 "at (eval LOCATION)", warning)
+                           if isinstance(warning, str) and warning.startswith(DEPRECATION + " at ")
+                           else warning for warning in item]
+        else:
+            answer[key] = normalize_deprecation_sites(item)
+    return answer
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
+    parser.add_argument("--normalize-dm5-deprecation-sites", action="store_true",
+                        help="report and compare DM5 load warnings without dynamic eval-site attribution")
     args = parser.parse_args()
     manifest_path = args.manifest.resolve()
     output = args.output.resolve()
@@ -100,10 +122,17 @@ def main() -> None:
         database = output / "db" / label
         database.parent.mkdir(parents=True, exist_ok=True)
         covered = run([PERL, f"-MDevel::Cover=-db,{database},-coverage,statement,branch,-silent,1,-select,{DATE_LIB}/Date/Manip", str(probe), case_id], covered_work, env(f"{cover_arch}:{COVER_LIB}:{DATE_LIB}"))
-        if plain.returncode or covered.returncode or plain.stdout != covered.stdout or plain.stderr != covered.stderr:
+        for name, process in (("plain", plain), ("covered", covered)):
+            (output / "work" / label / (name + ".stdout")).write_bytes(process.stdout)
+            (output / "work" / label / (name + ".stderr")).write_bytes(process.stderr)
+        raw_equal = plain.stdout == covered.stdout
+        normalized_equal = False
+        if args.normalize_dm5_deprecation_sites and not raw_equal:
+            normalized_equal = normalize_deprecation_sites(json.loads(plain.stdout)) == normalize_deprecation_sites(json.loads(covered.stdout))
+        if plain.returncode or covered.returncode or not (raw_equal or normalized_equal) or plain.stderr != covered.stderr:
             raise RuntimeError(f"fidelity failure {label}: plain={plain.returncode}, covered={covered.returncode}")
         json.loads(plain.stdout)
-        return {"family": family, "case_id": case_id, "probe": str(probe.relative_to(ROOT)), "plain_stdout_sha256": hashlib.sha256(plain.stdout).hexdigest(), "covered_stdout_sha256": hashlib.sha256(covered.stdout).hexdigest(), "stderr_sha256": hashlib.sha256(plain.stderr).hexdigest(), "process_stderr": plain.stderr.decode("utf-8", "surrogateescape")}, database
+        return {"stdout_byte_identical": raw_equal, "comparison_adjustment": None if raw_equal else "DM5 deprecation dynamic eval site only", "family": family, "case_id": case_id, "probe": str(probe.relative_to(ROOT)), "plain_stdout_sha256": hashlib.sha256(plain.stdout).hexdigest(), "covered_stdout_sha256": hashlib.sha256(covered.stdout).hexdigest(), "stderr_sha256": hashlib.sha256(plain.stderr).hexdigest(), "process_stderr": plain.stderr.decode("utf-8", "surrogateescape")}, database
     with ThreadPoolExecutor(max_workers=4) as pool:
         collected = list(pool.map(collect_one, enumerate(cases)))
     fidelity = [item[0] for item in collected]
@@ -135,6 +164,7 @@ def main() -> None:
         "runtime": {"date_manip_version": "7.00", "perl_archname": arch, "environment": {**env("profile-specific only"), "inherited_environment": False}},
         "hashes": {str(path.relative_to(ROOT)): digest(path) for path in [manifest_path, Path(__file__).resolve(), *sorted({probe for _, probe, _ in cases}), DATE_LIB / "Date/Manip.pm", cover_module]},
         "fidelity": fidelity,
+        "fidelity_policy": {"normalize_dm5_deprecation_sites": args.normalize_dm5_deprecation_sites, "raw_stdout_different_cases": sum(not row["stdout_byte_identical"] for row in fidelity), "raw_outputs_retained": True},
         "source_inventory": {"file_count": len(files), "loaded_file_count": len(loaded_paths), "loaded_files": [str(Path(path).resolve().relative_to(module_root)) for path in sorted(loaded_paths)], "unloaded_file_count": len(unloaded), "unloaded_files": unloaded, "denominator_note": "Unloaded source files have no Devel::Cover criterion rows and are listed rather than manufactured as zero rows."},
         "date_manip_only_totals": coverage_totals,
         "uncovered_branch_modules": ranked[:20],

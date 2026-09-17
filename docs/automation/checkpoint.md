@@ -736,3 +736,26 @@ source text. These coverage changes remain pending full-run review/integration.
 coverage_setup returned the105-setting week-rule matrix (20580 forward pairs and
 196 selected inverse results) for root review; it now owns NEW week-rules-edges.
 partial_parsing continues ledger snapshot verification. No final completeness claim.
+
+
+## Expanded diagnostic completion and gap ledger
+
+Session61966 terminated successfully. Root verified all472 saved plain/covered
+payload pairs,412byte-identical and60with only the reported DM5 deprecation eval-site
+comparison adjustment; stderr empty for all. Measured34/804files,770explicitunloaded,
+4719/11537raw statements and655/6376rawbranches. Numeric extractor totals match
+and12539unexecuted/annotated outcome records are retained for review without source
+text. This is still a research-probe subset, not final BDD coverage. Coveragetests10pass.
+Date-set mutation hold released explicitly after terminal verification.
+
+The fixed-commit behavior ledger at688193e tracks397public obligations across96ops:
+158direct-partition observed,176primary-operation only,63support-only. All397remain
+unresolved; direct linkage is not full-domain completion. The initial verification exposed volatile worktree metadata in the comparison;
+root removed it from manifest hashes and made verification use the recorded commit.
+Regeneration retained all counts and final verification passed before staging. Subsequent worktree changes do not alter pinned
+content counts. All final gates remain open.
+
+Activeowners: pattern_repair date-set portability; partial_parsing config-files
+conditional-step split preserving36IDs; week_edges_finish (sol/high, escalated after
+priorworker repeatedly stopped partial) completes week-rules-edges bindings,
+reviewer and remaining assigned boundaries. Coreweek-rules matrix awaitsrootreview.

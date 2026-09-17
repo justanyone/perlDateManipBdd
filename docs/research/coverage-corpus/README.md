@@ -42,3 +42,55 @@ enumeration, `Date::Manip::Base` configuration, and `Date::Manip::Obj`
 construction. These locations identify public domains with remaining branches;
 they do not claim a one-to-one mapping from a particular Devel-Cover criterion to
 a source line. No upstream source excerpt or private call is included.
+
+## Expanded committed-family diagnostic
+
+The expanded manifest enumerates 472 cases from eight committed families. Run:
+
+```sh
+python3 tools/coverage-corpus/collect.py \
+  --manifest tools/coverage-corpus/expanded-manifest.json \
+  --output /tmp/public-coverage-expanded \
+  --normalize-dm5-deprecation-sites
+```
+
+The option addresses an observed instrumentation effect: Devel::Cover changes the
+`(eval NUMBER)` location and adds a caller annotation to DM5's module-load
+warning. Comparison removes that attribution only from the known deprecation
+message in warning fields. Return values, exceptions, other warnings, warning
+counts, and process stderr must still agree. Both raw stdout/stderr payloads are
+saved before comparison, and each adjusted case is marked. The default remains
+strict byte comparison. The dedicated tests verify that changed return values,
+warning content/counts and other diagnostics cannot use this exception.
+
+The verified run at `/tmp/public-coverage-corpus-expanded-root-v2` contains 412
+byte-identical pairs and 60 pairs requiring that documented adjustment. All 472
+process stderr pairs were empty and identical. It measured 34 of 804 installed
+files, retaining the other 770 as unloaded. Raw coverage was 4,719/11,537
+statements (40.9032%) and 655/6,376 branches (10.2729%). This corpus does not yet
+include all existing research families, and these are not full-library or final
+BDD-suite percentages. Its collector environment, recorded in the result, is
+authoritative; reused probes can also emit descriptive fixture-environment fields.
+
+`expanded-result.json` retains the module inventory, criteria totals, tool/runtime
+metadata, source hashes, fidelity policy and external report hashes.
+`expanded-locations.json` records all 12,539 unexecuted or annotated outcomes as
+file, tool-reported location, criterion index, outcome index, execution count and
+annotation flag. These are research-side review obligations, not portable tests;
+no upstream source expressions or algorithms are included. All are unresolved.
+The two statement and one branch upstream annotations remain unapproved exclusions.
+
+The original `locations.pl` extractor uses the separately installed coverage
+library's database API. With that library's architecture directory and ordinary
+library directory on `PERL5LIB`, run:
+
+```sh
+perl tools/coverage-corpus/locations.pl \
+  /tmp/public-coverage-expanded/merged_db \
+  "$PWD/local/date-manip-7.00/lib/perl5" > /tmp/coverage-locations.json
+```
+
+The coordinator verified every saved raw payload hash and comparison, and checked
+that the extracted statement/branch totals exactly match the merged JSON report.
+Location identifiers identify measured criteria; assigning each gap to a public
+behavior and writing a discriminating assertion still requires source review.
