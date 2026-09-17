@@ -1,7 +1,48 @@
 {
-  "schema_version": 1,
-  "feature": "spec/drafts/config-files/loading.feature",
-  "status": "draft; remaining file grammar and legacy profile open",
+  "schema_version": 2,
+  "status": "draft; split object and functional requests; remaining file grammar and legacy profile open",
+  "features": {
+    "spec/drafts/config-files/loading.feature": [
+      "CF-EMPTY-OO",
+      "CF-COMMENTS-OO",
+      "CF-ORDER-OO",
+      "CF-SPACE-CASE-OO",
+      "CF-LAST-WINS-OO",
+      "CF-CALL-OVERRIDE-OO",
+      "CF-FILE-OVERRIDE-OO",
+      "CF-NESTED-OO",
+      "CF-NESTED-RESUME-OO",
+      "CF-TWO-FILES-OO",
+      "CF-MISSING-OO",
+      "CF-EMPTY-PATH-OO",
+      "CF-MALFORMED-OO",
+      "CF-INLINE-COMMENT-OO",
+      "CF-QUOTED-VALUE-OO",
+      "CF-UNKNOWN-KEY-OO",
+      "CF-UNKNOWN-SECTION-OO",
+      "CF-SECTION-CASE-OO"
+    ],
+    "spec/drafts/config-files/functional-loading.feature": [
+      "CF-EMPTY-DM6",
+      "CF-COMMENTS-DM6",
+      "CF-ORDER-DM6",
+      "CF-SPACE-CASE-DM6",
+      "CF-LAST-WINS-DM6",
+      "CF-CALL-OVERRIDE-DM6",
+      "CF-FILE-OVERRIDE-DM6",
+      "CF-NESTED-DM6",
+      "CF-NESTED-RESUME-DM6",
+      "CF-TWO-FILES-DM6",
+      "CF-MISSING-DM6",
+      "CF-EMPTY-PATH-DM6",
+      "CF-MALFORMED-DM6",
+      "CF-INLINE-COMMENT-DM6",
+      "CF-QUOTED-VALUE-DM6",
+      "CF-UNKNOWN-KEY-DM6",
+      "CF-UNKNOWN-SECTION-DM6",
+      "CF-SECTION-CASE-DM6"
+    ]
+  },
   "bindings": {
     "object": [
       "Date::Manip::Date::config",
@@ -18,219 +59,849 @@
   "cases": [
     {
       "case_id": "CF-EMPTY-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "An empty file leaves the date order unchanged",
+      "observation_case": "CF-EMPTY-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-04-05 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-EMPTY-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "An empty file leaves the date order unchanged",
+      "observation_case": "CF-EMPTY-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-04-05 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-COMMENTS-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "Blank lines and whole-line comments are ignored",
+      "observation_case": "CF-COMMENTS-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-04-05 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-COMMENTS-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "Blank lines and whole-line comments are ignored",
+      "observation_case": "CF-COMMENTS-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-04-05 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-ORDER-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "A file changes numeric date order",
+      "observation_case": "CF-ORDER-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-ORDER-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "A file changes numeric date order",
+      "observation_case": "CF-ORDER-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-SPACE-CASE-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "Names and surrounding whitespace accept mixed case and CRLF",
+      "observation_case": "CF-SPACE-CASE-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-SPACE-CASE-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "Names and surrounding whitespace accept mixed case and CRLF",
+      "observation_case": "CF-SPACE-CASE-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-LAST-WINS-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "The last assignment in a file wins",
+      "observation_case": "CF-LAST-WINS-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-04-05 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-LAST-WINS-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "The last assignment in a file wins",
+      "observation_case": "CF-LAST-WINS-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-04-05 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-CALL-OVERRIDE-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "A later direct setting overrides the file",
+      "observation_case": "CF-CALL-OVERRIDE-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-04-05 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-CALL-OVERRIDE-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "A later direct setting overrides the file",
+      "observation_case": "CF-CALL-OVERRIDE-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-04-05 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-FILE-OVERRIDE-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "A later file overrides a direct setting",
+      "observation_case": "CF-FILE-OVERRIDE-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-FILE-OVERRIDE-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "A later file overrides a direct setting",
+      "observation_case": "CF-FILE-OVERRIDE-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-NESTED-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "An included file takes effect immediately",
+      "observation_case": "CF-NESTED-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-NESTED-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "An included file takes effect immediately",
+      "observation_case": "CF-NESTED-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-NESTED-RESUME-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "The including file resumes after an included file",
+      "observation_case": "CF-NESTED-RESUME-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-04-05 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-NESTED-RESUME-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "The including file resumes after an included file",
+      "observation_case": "CF-NESTED-RESUME-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-04-05 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-TWO-FILES-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "Later files override earlier files",
+      "observation_case": "CF-TWO-FILES-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-04-05 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-TWO-FILES-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "Later files override earlier files",
+      "observation_case": "CF-TWO-FILES-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-04-05 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-MISSING-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "A missing file warns and leaves parsing available",
+      "observation_case": "CF-MISSING-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-04-05 00:00:00",
       "configuration_warning": "missing configuration file",
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-MISSING-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "A missing file warns and leaves parsing available",
+      "observation_case": "CF-MISSING-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-04-05 00:00:00",
       "configuration_warning": "missing configuration file",
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-EMPTY-PATH-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "An empty file path leaves settings unchanged",
+      "observation_case": "CF-EMPTY-PATH-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-04-05 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-EMPTY-PATH-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "An empty file path leaves settings unchanged",
+      "observation_case": "CF-EMPTY-PATH-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-04-05 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-MALFORMED-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "An invalid line stops loading after earlier settings took effect",
+      "observation_case": "CF-MALFORMED-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": "invalid-configuration-line"
+      "configuration_exception": "invalid-configuration-line",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-MALFORMED-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "An invalid line stops loading after earlier settings took effect",
+      "observation_case": "CF-MALFORMED-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": "invalid-configuration-line"
+      "configuration_exception": "invalid-configuration-line",
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-INLINE-COMMENT-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "Trailing hash text is retained as part of a setting value",
+      "observation_case": "CF-INLINE-COMMENT-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-INLINE-COMMENT-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "Trailing hash text is retained as part of a setting value",
+      "observation_case": "CF-INLINE-COMMENT-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-QUOTED-VALUE-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "Quotation marks are retained in a setting value",
+      "observation_case": "CF-QUOTED-VALUE-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-QUOTED-VALUE-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "Quotation marks are retained in a setting value",
+      "observation_case": "CF-QUOTED-VALUE-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-UNKNOWN-KEY-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "An unknown setting warns while later settings are read",
+      "observation_case": "CF-UNKNOWN-KEY-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": "unknown configuration variable",
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-UNKNOWN-KEY-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "An unknown setting warns while later settings are read",
+      "observation_case": "CF-UNKNOWN-KEY-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": "unknown configuration variable",
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-UNKNOWN-SECTION-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "An unknown section warns and a later configuration section is read",
+      "observation_case": "CF-UNKNOWN-SECTION-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": "unknown configuration section",
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-UNKNOWN-SECTION-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "An unknown section warns and a later configuration section is read",
+      "observation_case": "CF-UNKNOWN-SECTION-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": "unknown configuration section",
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-SECTION-CASE-OO",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Date::config",
+      "profile": "oo",
+      "feature": "spec/drafts/config-files/loading.feature",
+      "scenario": "Configuration section names accept mixed case",
+      "observation_case": "CF-SECTION-CASE-OO",
+      "queries_date_order": true,
+      "configuration_query_binding": "Date::Manip::Date::get_config",
+      "parse_binding": "Date::Manip::Date::parse",
+      "contract_ids": [
+        "config.apply-settings",
+        "config.read-settings",
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     },
     {
       "case_id": "CF-SECTION-CASE-DM6",
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::DM6::Date_Init",
+      "profile": "dm6",
+      "feature": "spec/drafts/config-files/functional-loading.feature",
+      "scenario": "Configuration section names accept mixed case",
+      "observation_case": "CF-SECTION-CASE-DM6",
+      "queries_date_order": false,
+      "configuration_query_binding": null,
+      "parse_binding": "Date::Manip::DM6::ParseDate",
+      "contract_ids": [
+        "config.apply-settings",
+        "date.parse-leading-tokens",
+        "meta.reference-version"
+      ],
       "result": "2040-05-04 00:00:00",
       "configuration_warning": null,
-      "configuration_exception": null
+      "configuration_exception": null,
+      "research_status": "repeatable",
+      "portable_status": "candidate literal"
     }
   ]
 }

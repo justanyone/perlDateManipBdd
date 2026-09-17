@@ -25,11 +25,16 @@ behavior. Those cases are disputed compatibility, not prescribed desirable
 validation. Missing files and unknown variables/sections issue one warning;
 raw diagnostic strings and source locations stay in research evidence.
 
-`spec/drafts/config-files/loading.feature` gives every original file body as a
-JSON string, preserving whitespace and CRLF unambiguously, and states ordered
-settings, typed error/warning categories, subsequent parses and readable literal
-results. `feature-map.json` relates cases to reference profiles/bindings. Object
-setting queries are explicit; the functional profile makes no such query.
+`spec/drafts/config-files/loading.feature` and
+`spec/drafts/config-files/functional-loading.feature` give every original file
+body as a JSON string, preserving whitespace and CRLF unambiguously, and state
+ordered settings, typed error/warning categories, subsequent parses and readable
+literal results. The former contains 18 concrete object cases that each execute
+the public date-order query. The latter contains 18 concrete functional cases
+with no query step because that profile makes no such public call. There are no
+conditional or not-applicable steps. `feature-map.json` relates every case to its
+specific feature, scenario, public binding, observer use, and canonical contract
+IDs.
 
 ```sh
 python3 tools/probes/config-files-family/run.py > /tmp/config-files-candidate.json

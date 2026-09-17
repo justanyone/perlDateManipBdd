@@ -1,0 +1,703 @@
+{
+  "configurations": [
+    {
+      "case_id": "WR-F1-JAN1",
+      "first_day": 1,
+      "week1_of_year": "jan1"
+    },
+    {
+      "case_id": "WR-F1-JAN2",
+      "first_day": 1,
+      "week1_of_year": "jan2"
+    },
+    {
+      "case_id": "WR-F1-JAN3",
+      "first_day": 1,
+      "week1_of_year": "jan3"
+    },
+    {
+      "case_id": "WR-F1-JAN4",
+      "first_day": 1,
+      "week1_of_year": "jan4"
+    },
+    {
+      "case_id": "WR-F1-JAN5",
+      "first_day": 1,
+      "week1_of_year": "jan5"
+    },
+    {
+      "case_id": "WR-F1-JAN6",
+      "first_day": 1,
+      "week1_of_year": "jan6"
+    },
+    {
+      "case_id": "WR-F1-JAN7",
+      "first_day": 1,
+      "week1_of_year": "jan7"
+    },
+    {
+      "case_id": "WR-F1-DOW1",
+      "first_day": 1,
+      "week1_of_year": "dow1"
+    },
+    {
+      "case_id": "WR-F1-DOW2",
+      "first_day": 1,
+      "week1_of_year": "dow2"
+    },
+    {
+      "case_id": "WR-F1-DOW3",
+      "first_day": 1,
+      "week1_of_year": "dow3"
+    },
+    {
+      "case_id": "WR-F1-DOW4",
+      "first_day": 1,
+      "week1_of_year": "dow4"
+    },
+    {
+      "case_id": "WR-F1-DOW5",
+      "first_day": 1,
+      "week1_of_year": "dow5"
+    },
+    {
+      "case_id": "WR-F1-DOW6",
+      "first_day": 1,
+      "week1_of_year": "dow6"
+    },
+    {
+      "case_id": "WR-F1-DOW7",
+      "first_day": 1,
+      "week1_of_year": "dow7"
+    },
+    {
+      "case_id": "WR-F1-FIRSTDAY",
+      "first_day": 1,
+      "week1_of_year": "firstday"
+    },
+    {
+      "case_id": "WR-F2-JAN1",
+      "first_day": 2,
+      "week1_of_year": "jan1"
+    },
+    {
+      "case_id": "WR-F2-JAN2",
+      "first_day": 2,
+      "week1_of_year": "jan2"
+    },
+    {
+      "case_id": "WR-F2-JAN3",
+      "first_day": 2,
+      "week1_of_year": "jan3"
+    },
+    {
+      "case_id": "WR-F2-JAN4",
+      "first_day": 2,
+      "week1_of_year": "jan4"
+    },
+    {
+      "case_id": "WR-F2-JAN5",
+      "first_day": 2,
+      "week1_of_year": "jan5"
+    },
+    {
+      "case_id": "WR-F2-JAN6",
+      "first_day": 2,
+      "week1_of_year": "jan6"
+    },
+    {
+      "case_id": "WR-F2-JAN7",
+      "first_day": 2,
+      "week1_of_year": "jan7"
+    },
+    {
+      "case_id": "WR-F2-DOW1",
+      "first_day": 2,
+      "week1_of_year": "dow1"
+    },
+    {
+      "case_id": "WR-F2-DOW2",
+      "first_day": 2,
+      "week1_of_year": "dow2"
+    },
+    {
+      "case_id": "WR-F2-DOW3",
+      "first_day": 2,
+      "week1_of_year": "dow3"
+    },
+    {
+      "case_id": "WR-F2-DOW4",
+      "first_day": 2,
+      "week1_of_year": "dow4"
+    },
+    {
+      "case_id": "WR-F2-DOW5",
+      "first_day": 2,
+      "week1_of_year": "dow5"
+    },
+    {
+      "case_id": "WR-F2-DOW6",
+      "first_day": 2,
+      "week1_of_year": "dow6"
+    },
+    {
+      "case_id": "WR-F2-DOW7",
+      "first_day": 2,
+      "week1_of_year": "dow7"
+    },
+    {
+      "case_id": "WR-F2-FIRSTDAY",
+      "first_day": 2,
+      "week1_of_year": "firstday"
+    },
+    {
+      "case_id": "WR-F3-JAN1",
+      "first_day": 3,
+      "week1_of_year": "jan1"
+    },
+    {
+      "case_id": "WR-F3-JAN2",
+      "first_day": 3,
+      "week1_of_year": "jan2"
+    },
+    {
+      "case_id": "WR-F3-JAN3",
+      "first_day": 3,
+      "week1_of_year": "jan3"
+    },
+    {
+      "case_id": "WR-F3-JAN4",
+      "first_day": 3,
+      "week1_of_year": "jan4"
+    },
+    {
+      "case_id": "WR-F3-JAN5",
+      "first_day": 3,
+      "week1_of_year": "jan5"
+    },
+    {
+      "case_id": "WR-F3-JAN6",
+      "first_day": 3,
+      "week1_of_year": "jan6"
+    },
+    {
+      "case_id": "WR-F3-JAN7",
+      "first_day": 3,
+      "week1_of_year": "jan7"
+    },
+    {
+      "case_id": "WR-F3-DOW1",
+      "first_day": 3,
+      "week1_of_year": "dow1"
+    },
+    {
+      "case_id": "WR-F3-DOW2",
+      "first_day": 3,
+      "week1_of_year": "dow2"
+    },
+    {
+      "case_id": "WR-F3-DOW3",
+      "first_day": 3,
+      "week1_of_year": "dow3"
+    },
+    {
+      "case_id": "WR-F3-DOW4",
+      "first_day": 3,
+      "week1_of_year": "dow4"
+    },
+    {
+      "case_id": "WR-F3-DOW5",
+      "first_day": 3,
+      "week1_of_year": "dow5"
+    },
+    {
+      "case_id": "WR-F3-DOW6",
+      "first_day": 3,
+      "week1_of_year": "dow6"
+    },
+    {
+      "case_id": "WR-F3-DOW7",
+      "first_day": 3,
+      "week1_of_year": "dow7"
+    },
+    {
+      "case_id": "WR-F3-FIRSTDAY",
+      "first_day": 3,
+      "week1_of_year": "firstday"
+    },
+    {
+      "case_id": "WR-F4-JAN1",
+      "first_day": 4,
+      "week1_of_year": "jan1"
+    },
+    {
+      "case_id": "WR-F4-JAN2",
+      "first_day": 4,
+      "week1_of_year": "jan2"
+    },
+    {
+      "case_id": "WR-F4-JAN3",
+      "first_day": 4,
+      "week1_of_year": "jan3"
+    },
+    {
+      "case_id": "WR-F4-JAN4",
+      "first_day": 4,
+      "week1_of_year": "jan4"
+    },
+    {
+      "case_id": "WR-F4-JAN5",
+      "first_day": 4,
+      "week1_of_year": "jan5"
+    },
+    {
+      "case_id": "WR-F4-JAN6",
+      "first_day": 4,
+      "week1_of_year": "jan6"
+    },
+    {
+      "case_id": "WR-F4-JAN7",
+      "first_day": 4,
+      "week1_of_year": "jan7"
+    },
+    {
+      "case_id": "WR-F4-DOW1",
+      "first_day": 4,
+      "week1_of_year": "dow1"
+    },
+    {
+      "case_id": "WR-F4-DOW2",
+      "first_day": 4,
+      "week1_of_year": "dow2"
+    },
+    {
+      "case_id": "WR-F4-DOW3",
+      "first_day": 4,
+      "week1_of_year": "dow3"
+    },
+    {
+      "case_id": "WR-F4-DOW4",
+      "first_day": 4,
+      "week1_of_year": "dow4"
+    },
+    {
+      "case_id": "WR-F4-DOW5",
+      "first_day": 4,
+      "week1_of_year": "dow5"
+    },
+    {
+      "case_id": "WR-F4-DOW6",
+      "first_day": 4,
+      "week1_of_year": "dow6"
+    },
+    {
+      "case_id": "WR-F4-DOW7",
+      "first_day": 4,
+      "week1_of_year": "dow7"
+    },
+    {
+      "case_id": "WR-F4-FIRSTDAY",
+      "first_day": 4,
+      "week1_of_year": "firstday"
+    },
+    {
+      "case_id": "WR-F5-JAN1",
+      "first_day": 5,
+      "week1_of_year": "jan1"
+    },
+    {
+      "case_id": "WR-F5-JAN2",
+      "first_day": 5,
+      "week1_of_year": "jan2"
+    },
+    {
+      "case_id": "WR-F5-JAN3",
+      "first_day": 5,
+      "week1_of_year": "jan3"
+    },
+    {
+      "case_id": "WR-F5-JAN4",
+      "first_day": 5,
+      "week1_of_year": "jan4"
+    },
+    {
+      "case_id": "WR-F5-JAN5",
+      "first_day": 5,
+      "week1_of_year": "jan5"
+    },
+    {
+      "case_id": "WR-F5-JAN6",
+      "first_day": 5,
+      "week1_of_year": "jan6"
+    },
+    {
+      "case_id": "WR-F5-JAN7",
+      "first_day": 5,
+      "week1_of_year": "jan7"
+    },
+    {
+      "case_id": "WR-F5-DOW1",
+      "first_day": 5,
+      "week1_of_year": "dow1"
+    },
+    {
+      "case_id": "WR-F5-DOW2",
+      "first_day": 5,
+      "week1_of_year": "dow2"
+    },
+    {
+      "case_id": "WR-F5-DOW3",
+      "first_day": 5,
+      "week1_of_year": "dow3"
+    },
+    {
+      "case_id": "WR-F5-DOW4",
+      "first_day": 5,
+      "week1_of_year": "dow4"
+    },
+    {
+      "case_id": "WR-F5-DOW5",
+      "first_day": 5,
+      "week1_of_year": "dow5"
+    },
+    {
+      "case_id": "WR-F5-DOW6",
+      "first_day": 5,
+      "week1_of_year": "dow6"
+    },
+    {
+      "case_id": "WR-F5-DOW7",
+      "first_day": 5,
+      "week1_of_year": "dow7"
+    },
+    {
+      "case_id": "WR-F5-FIRSTDAY",
+      "first_day": 5,
+      "week1_of_year": "firstday"
+    },
+    {
+      "case_id": "WR-F6-JAN1",
+      "first_day": 6,
+      "week1_of_year": "jan1"
+    },
+    {
+      "case_id": "WR-F6-JAN2",
+      "first_day": 6,
+      "week1_of_year": "jan2"
+    },
+    {
+      "case_id": "WR-F6-JAN3",
+      "first_day": 6,
+      "week1_of_year": "jan3"
+    },
+    {
+      "case_id": "WR-F6-JAN4",
+      "first_day": 6,
+      "week1_of_year": "jan4"
+    },
+    {
+      "case_id": "WR-F6-JAN5",
+      "first_day": 6,
+      "week1_of_year": "jan5"
+    },
+    {
+      "case_id": "WR-F6-JAN6",
+      "first_day": 6,
+      "week1_of_year": "jan6"
+    },
+    {
+      "case_id": "WR-F6-JAN7",
+      "first_day": 6,
+      "week1_of_year": "jan7"
+    },
+    {
+      "case_id": "WR-F6-DOW1",
+      "first_day": 6,
+      "week1_of_year": "dow1"
+    },
+    {
+      "case_id": "WR-F6-DOW2",
+      "first_day": 6,
+      "week1_of_year": "dow2"
+    },
+    {
+      "case_id": "WR-F6-DOW3",
+      "first_day": 6,
+      "week1_of_year": "dow3"
+    },
+    {
+      "case_id": "WR-F6-DOW4",
+      "first_day": 6,
+      "week1_of_year": "dow4"
+    },
+    {
+      "case_id": "WR-F6-DOW5",
+      "first_day": 6,
+      "week1_of_year": "dow5"
+    },
+    {
+      "case_id": "WR-F6-DOW6",
+      "first_day": 6,
+      "week1_of_year": "dow6"
+    },
+    {
+      "case_id": "WR-F6-DOW7",
+      "first_day": 6,
+      "week1_of_year": "dow7"
+    },
+    {
+      "case_id": "WR-F6-FIRSTDAY",
+      "first_day": 6,
+      "week1_of_year": "firstday"
+    },
+    {
+      "case_id": "WR-F7-JAN1",
+      "first_day": 7,
+      "week1_of_year": "jan1"
+    },
+    {
+      "case_id": "WR-F7-JAN2",
+      "first_day": 7,
+      "week1_of_year": "jan2"
+    },
+    {
+      "case_id": "WR-F7-JAN3",
+      "first_day": 7,
+      "week1_of_year": "jan3"
+    },
+    {
+      "case_id": "WR-F7-JAN4",
+      "first_day": 7,
+      "week1_of_year": "jan4"
+    },
+    {
+      "case_id": "WR-F7-JAN5",
+      "first_day": 7,
+      "week1_of_year": "jan5"
+    },
+    {
+      "case_id": "WR-F7-JAN6",
+      "first_day": 7,
+      "week1_of_year": "jan6"
+    },
+    {
+      "case_id": "WR-F7-JAN7",
+      "first_day": 7,
+      "week1_of_year": "jan7"
+    },
+    {
+      "case_id": "WR-F7-DOW1",
+      "first_day": 7,
+      "week1_of_year": "dow1"
+    },
+    {
+      "case_id": "WR-F7-DOW2",
+      "first_day": 7,
+      "week1_of_year": "dow2"
+    },
+    {
+      "case_id": "WR-F7-DOW3",
+      "first_day": 7,
+      "week1_of_year": "dow3"
+    },
+    {
+      "case_id": "WR-F7-DOW4",
+      "first_day": 7,
+      "week1_of_year": "dow4"
+    },
+    {
+      "case_id": "WR-F7-DOW5",
+      "first_day": 7,
+      "week1_of_year": "dow5"
+    },
+    {
+      "case_id": "WR-F7-DOW6",
+      "first_day": 7,
+      "week1_of_year": "dow6"
+    },
+    {
+      "case_id": "WR-F7-DOW7",
+      "first_day": 7,
+      "week1_of_year": "dow7"
+    },
+    {
+      "case_id": "WR-F7-FIRSTDAY",
+      "first_day": 7,
+      "week1_of_year": "firstday"
+    }
+  ],
+  "date_order": [
+    {
+      "day": 1,
+      "label": "01-01",
+      "month": 1
+    },
+    {
+      "day": 2,
+      "label": "01-02",
+      "month": 1
+    },
+    {
+      "day": 3,
+      "label": "01-03",
+      "month": 1
+    },
+    {
+      "day": 4,
+      "label": "01-04",
+      "month": 1
+    },
+    {
+      "day": 5,
+      "label": "01-05",
+      "month": 1
+    },
+    {
+      "day": 6,
+      "label": "01-06",
+      "month": 1
+    },
+    {
+      "day": 7,
+      "label": "01-07",
+      "month": 1
+    },
+    {
+      "day": 25,
+      "label": "12-25",
+      "month": 12
+    },
+    {
+      "day": 26,
+      "label": "12-26",
+      "month": 12
+    },
+    {
+      "day": 27,
+      "label": "12-27",
+      "month": 12
+    },
+    {
+      "day": 28,
+      "label": "12-28",
+      "month": 12
+    },
+    {
+      "day": 29,
+      "label": "12-29",
+      "month": 12
+    },
+    {
+      "day": 30,
+      "label": "12-30",
+      "month": 12
+    },
+    {
+      "day": 31,
+      "label": "12-31",
+      "month": 12
+    }
+  ],
+  "inverse_weeks": [
+    1,
+    2
+  ],
+  "operation_id": "calendar.week-number",
+  "schema_version": 1,
+  "selected_inverse_configurations": [
+    "WR-F1-JAN1",
+    "WR-F1-JAN4",
+    "WR-F1-JAN7",
+    "WR-F1-DOW1",
+    "WR-F1-DOW7",
+    "WR-F1-FIRSTDAY",
+    "WR-F7-FIRSTDAY"
+  ],
+  "selection_method": "Python calendar.isleap and calendar.weekday chose the earliest year from 2000..2399 for each leap/nonleap \u00d7 Jan-1 Monday-based weekday type.",
+  "years": [
+    {
+      "jan1_weekday_monday0": 0,
+      "jan1_weekday_monday1": 1,
+      "leap": false,
+      "year": 2001
+    },
+    {
+      "jan1_weekday_monday0": 1,
+      "jan1_weekday_monday1": 2,
+      "leap": false,
+      "year": 2002
+    },
+    {
+      "jan1_weekday_monday0": 2,
+      "jan1_weekday_monday1": 3,
+      "leap": false,
+      "year": 2003
+    },
+    {
+      "jan1_weekday_monday0": 3,
+      "jan1_weekday_monday1": 4,
+      "leap": false,
+      "year": 2009
+    },
+    {
+      "jan1_weekday_monday0": 4,
+      "jan1_weekday_monday1": 5,
+      "leap": false,
+      "year": 2010
+    },
+    {
+      "jan1_weekday_monday0": 5,
+      "jan1_weekday_monday1": 6,
+      "leap": false,
+      "year": 2005
+    },
+    {
+      "jan1_weekday_monday0": 6,
+      "jan1_weekday_monday1": 7,
+      "leap": false,
+      "year": 2006
+    },
+    {
+      "jan1_weekday_monday0": 0,
+      "jan1_weekday_monday1": 1,
+      "leap": true,
+      "year": 2024
+    },
+    {
+      "jan1_weekday_monday0": 1,
+      "jan1_weekday_monday1": 2,
+      "leap": true,
+      "year": 2008
+    },
+    {
+      "jan1_weekday_monday0": 2,
+      "jan1_weekday_monday1": 3,
+      "leap": true,
+      "year": 2020
+    },
+    {
+      "jan1_weekday_monday0": 3,
+      "jan1_weekday_monday1": 4,
+      "leap": true,
+      "year": 2004
+    },
+    {
+      "jan1_weekday_monday0": 4,
+      "jan1_weekday_monday1": 5,
+      "leap": true,
+      "year": 2016
+    },
+    {
+      "jan1_weekday_monday0": 5,
+      "jan1_weekday_monday1": 6,
+      "leap": true,
+      "year": 2000
+    },
+    {
+      "jan1_weekday_monday0": 6,
+      "jan1_weekday_monday1": 7,
+      "leap": true,
+      "year": 2012
+    }
+  ]
+}

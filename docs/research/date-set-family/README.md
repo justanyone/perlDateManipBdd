@@ -16,13 +16,21 @@ python3 tools/probes/date-set-family/review.py
 python3 tools/review/feature_structure.py spec/drafts/date-set
 ```
 
-The runner launches each attempt in a fresh temporary working directory with a
-small fixed environment. It uses at most four workers, gives each process 15
-seconds, and executes every case twice. The stored file records hashes for the
-fixtures, both probe programs, the public documentation, and the installed
-Date, Obj, Base, and TZ modules. All 108 stored cases exited zero, decoded as
-JSON, matched the fixture hash, and repeated byte for byte. Per-call exceptions
-and warnings are part of the payload; they are not process failures.
+This source-separation repair changes the features, mapping, and reviewer and
+pins PATH to /usr/bin:/bin. The coordinator also made mutation-call completion
+explicit: interrupted calls have no returned status fields, rather than a
+fabricated undefined return. A fresh twice-isolated capture retained all 108
+underlying value/error/warning outcomes. Probe and runner hashes reflect these
+recording repairs. Exact native exception prefixes remain binding-only.
+
+The runner launches each attempt in a fresh temporary working directory. It
+fixes the locale, timezone, hash seeds, installed-module prefix, and `PATH`. It
+uses at most four workers, gives each process 15 seconds, and executes every
+case twice. The stored file records hashes for the fixtures, runner, probe,
+public documentation, and installed Date, Obj, Base, and TZ modules. All 108
+stored cases exited zero, decoded as JSON, matched the fixture hash, and
+repeated byte for byte. Per-call exceptions and warnings are part of the
+payload; they are not process failures.
 
 The public documentation permits `zone`, `zdate`, `date`, `time`, and the six
 individual selectors `y`, `m`, `d`, `h`, `mn`, and `s`. The cases exercise the
@@ -59,46 +67,53 @@ is also tagged as compatibility behavior. Gap civil times fail for every tested
 selector and explicit flag.
 
 Two 7.00 binding behaviors conflict with the documented input surface. Text and
-list offsets, along with an unresolved zone name, reach a nonexistent
-`Date::Manip::Base::__zone` method and raise an exception after clearing the
-carrier. The exact exception, including source path and line, remains in raw
-evidence; portable scenarios use its stable prefix and are tagged
-`@reference-binding @disputed`. Scalar text supplied in place of a date/time
-array similarly raises a stable array-reference exception.
+list offsets, along with an unresolved zone name, terminate without a returned
+status after clearing the carrier. Portable disputed scenarios retain that
+generic result, the empty request-error boundary, the empty typed value reads,
+and the later value error. The private `Date::Manip::Base::__zone` exception is
+kept only in the excluded Perl-binding feature. Text supplied where an ordered
+date/time field record is required has the same separation: its generic public
+outcome remains portable and its array-reference exception remains binding-side.
 
 Individual-field replacement performs substantially less validation than whole
 date or time replacement. Month 0 or 13, day 0, 31, 32 or -1, hour 24 with
 nonzero minutes, minute 60, second 60, text, and undefined input all return
-status zero in the tested binding. The raw scalar and returned six-field list
-preserve those malformed values; a later GMT read may normalize some values and
-may retain other non-civil fields. These rows are characterization scenarios,
-not portable validation requirements, and are tagged disputed. In contrast,
-whole `date` and `time` calls reject the corresponding invalid shapes or ranges,
-except that exactly 24:00:00 succeeds and converts to next-day midnight.
+status zero in the tested binding. Portable disputed rows retain the exact
+stored field record and UTC presentation. The native Perl scalar/list carriers
+and warning counts are asserted separately in the excluded binding feature. A
+later UTC read may normalize some values and may retain other non-civil fields.
+In contrast, whole `date` and `time` calls reject the corresponding invalid
+shapes or ranges, except that exactly 24:00:00 succeeds and converts to next-day
+midnight.
 
-Research records preserve Date-Manip's native scalar format
-`YYYYMMDDHH:MN:SS`, including malformed strings. Portable feature prose renders
-valid six-field values as `YYYY-MM-DD HH:MM:SS`. This is a lossless presentation
-normalization and does not claim that the binding returns the readable spelling.
-Malformed-field scenarios show the native scalar and the returned list
-separately and call converted output a six-field presentation rather than a
-normalized civil date.
+Research records and the excluded binding feature preserve Date-Manip's native
+scalar format `YYYYMMDDHH:MN:SS`, including malformed strings. Portable feature
+prose names language-neutral stored-date text, ordered field records,
+fixed-local text, and UTC text. Valid fields render as
+`YYYY-MM-DD HH:MM:SS`; this is a lossless presentation normalization and does
+not claim that the binding returns the readable spelling.
 
-The complete contract map supplies all canonical operation IDs. Every case maps
-the direct context constructor and its public zone/version checks,
+The complete contract map supplies all canonical operation IDs. Every source
+case maps the direct context constructor and its public zone/version checks,
 `date.replace-field`, the public receiver constructor, scalar/list/conversion
 observer, error observer, configuration mutation, and configuration reader. The
 five error-bearing receiver cases also map their explicit public `parse` setup.
-`coverage.json` maps all 108 fixture IDs to one English scenario each. No private
-callable is a portable test entrypoint.
+`coverage.json` maps all 108 fixture IDs to one portable English scenario each.
+It also maps 27 binding-case IDs back to their source fixture IDs: nine exact
+runtime exceptions, twelve native malformed carriers, and six nonzero warning
+rows. The binding warning census covers all 108 cases and asserts zero warnings
+for the remaining 102. No private callable is a portable test entrypoint.
 
 Every case row also includes a typed `initial receiver` and `exact request`.
 Those columns preserve text, numbers, lists, undefined values, omitted selectors,
 empty argument lists, and the full parse-error preparation without relying on
 scenario shorthand. The reviewer compares both columns directly with all 108
-fixtures. Perl warnings from undersized arrays, year zero, and an omitted
-selector are asserted in separate `@reference-binding` scenarios; portable
-failure scenarios retain only status, error, and carrier semantics.
+fixtures. Perl warnings from undersized arrays, year zero, nonnumeric and
+undefined field values, and an omitted selector are asserted in the feature-level
+`@source-binding @perl-binding @excluded-from-portable-handoff` profile.
+Portable scenarios retain only typed status, error, mutation, and value-read
+semantics. The excluded feature also preserves exact stable exception prefixes,
+native malformed scalar/list values, and observer call contexts.
 
 Remaining finite obligations are additional named-zone aliases and offset
 spellings after the 7.00 offset exception is resolved; dates near the supported
@@ -114,10 +129,11 @@ The expected literals were reviewed against the raw observations. The stored
 records and draft features remain research characterization pending project-level
 approval; they are not executable BDD test results.
 
-Coordinator review confirmed the108 exact request rows against their fixtures and
-strengthened the checker to compare result/status/error/list/warning columns with
-the same case's observation. It no longer relies only on a literal occurring
-somewhere in the feature corpus. Two additional Perl diagnostic scenarios have
-separate stable assertion IDs and source-case mappings. The actual pinned BDD
-parser accepts all three feature files,24 scenarios containing108 request rows.
-This does not mean those requests have executed through BDD step definitions.
+The reviewer confirms all 108 exact portable request rows against their fixtures
+and compares result, status, error, mutation, field-record, warning, and native
+binding columns with the same case's observation. It no longer relies only on a
+literal occurring somewhere in the feature corpus. Six binding assertions and
+27 binding rows have stable IDs and source-case mappings. The actual pinned BDD
+parser accepts all four feature files and 28 scenarios containing 108 portable
+request rows. This does not mean those requests have executed through BDD step
+definitions.

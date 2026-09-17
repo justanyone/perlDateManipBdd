@@ -53,6 +53,10 @@ WARNING_COUNTS = {
     "DSET-FIELD-017-UNDEFINED": 10,
     "DSET-FIELD-023-OMITTED-NAME": 1,
 }
+MALFORMED_CARRIER_CASES = [
+    *(f"DSET-FIELD-{n:03d}-" for n in range(8, 18)),
+    "DSET-FIELD-033-", "DSET-FIELD-034-",
+]
 
 
 def load(path):
@@ -105,21 +109,37 @@ def feature_request(case):
             + ", ".join(feature_atom(item) for item in arguments[1:]) + "]")
 
 
-def feature_case_rows(feature_texts, fixture_ids):
+def feature_rows(feature_texts, id_header, allowed_ids=None):
     rows = {}
-    for text in feature_texts.values():
+    for feature, text in feature_texts.items():
         header = None
         for line in text.splitlines():
             if line.lstrip().startswith("|"):
                 cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
-                if cells and cells[0] == "case":
+                if cells and cells[0] == id_header:
                     header = cells
-                elif header and cells and cells[0] in fixture_ids:
+                elif header and cells and (allowed_ids is None or cells[0] in allowed_ids):
                     assert cells[0] not in rows, cells[0]
-                    rows[cells[0]] = dict(zip(header, cells))
+                    rows[cells[0]] = {**dict(zip(header, cells)), "_feature": feature}
             else:
                 header = None
     return rows
+
+
+def feature_case_rows(feature_texts, fixture_ids):
+    return feature_rows(feature_texts, "case", fixture_ids)
+
+
+def stable_warning_summary(warnings):
+    prefixes = collections.Counter(warning.split(" at /home/", 1)[0] for warning in warnings)
+    return "; ".join(
+        f"{count} {'time' if count == 1 else 'times'} {message}"
+        for message, count in prefixes.items()
+    )
+
+
+def binding_case_id(kind, source_case_id):
+    return "DSET-BIND-" + kind + "-" + source_case_id.removeprefix("DSET-")
 
 
 def canonical_ids(document):
@@ -163,21 +183,44 @@ def main():
         for path in sorted(FEATURE_DIR.glob("*.feature"))
     }
     all_feature_text = "\n".join(feature_texts.values())
-    mentions = re.findall(r"DSET-(?:ZONE|ZDATE|DATE|TIME|FIELD)-[A-Z0-9-]+", all_feature_text)
-    assert collections.Counter(mentions) == collections.Counter(case_ids)
+    portable_text = "\n".join(
+        text for name, text in feature_texts.items() if name != "perl-binding.feature"
+    )
     request_rows = feature_case_rows(feature_texts, set(case_ids))
     assert set(request_rows) == set(case_ids)
     for case in fixtures:
         row = request_rows[case["case_id"]]
         assert row["initial receiver"] == feature_receiver(case), case["case_id"]
         assert row["exact request"] == feature_request(case), case["case_id"]
-    assert "@reference-binding @excluded-from-portable-handoff @DSET-BIND-SHORT-LISTS\n  Scenario: Perl reports each missing field" in all_feature_text
-    assert "@reference-binding @excluded-from-portable-handoff @DSET-BIND-FIELD-WARNINGS\n  Scenario: Perl reports binding warnings" in all_feature_text
+    binding_text = feature_texts["perl-binding.feature"]
+    assert binding_text.startswith(
+        "@draft @date-set @reference-dm700 @source-binding @perl-binding @excluded-from-portable-handoff"
+    )
+    for forbidden in ("Date::Manip::", "__zone", "ARRAY ref", "strict refs", "Perl"):
+        assert forbidden not in portable_text, forbidden
+    portable_without_ids = re.sub(r"DSET-[A-Z0-9-]+", "", portable_text)
+    assert not re.search(r"\bscalar\b|\blist context\b|\bnative\b", portable_without_ids, re.I)
 
     for binding in coverage["binding_assertions"]:
         assert set(binding["source_case_ids"]) <= set(case_ids)
         assert all_feature_text.count("@" + binding["assertion_id"]) == 1
-    assert len(coverage["binding_assertions"]) == 2
+        assert binding["feature"] == "perl-binding.feature"
+        assert f"Scenario: {binding['scenario']}" in binding_text
+    assert len(coverage["binding_assertions"]) == 6
+
+    binding_rows = feature_rows(feature_texts, "binding case")
+    binding_mappings = coverage["binding_case_mappings"]
+    assert [row["binding_case_id"] for row in binding_mappings] == list(binding_rows)
+    assert len(binding_rows) == len(binding_mappings) == 27
+    assertion_ids = {row["assertion_id"] for row in coverage["binding_assertions"]}
+    source_mapping = {row["case_id"]: row for row in coverage["case_mappings"]}
+    for mapping in binding_mappings:
+        assert mapping["assertion_id"] in assertion_ids
+        assert mapping["source_case_id"] in source_mapping
+        assert mapping["contract_ids"] == source_mapping[mapping["source_case_id"]]["contract_ids"]
+        row = binding_rows[mapping["binding_case_id"]]
+        assert row["source case"] == mapping["source_case_id"]
+        assert row["_feature"] == "perl-binding.feature"
     mappings = coverage["case_mappings"]
     assert [row["case_id"] for row in mappings] == case_ids
     canonical_needed = set(BASE_CONTRACTS + TAIL_CONTRACTS) | {"date.parse-text"}
@@ -284,22 +327,27 @@ def main():
         call = raw["call"]
         after = raw["after"]
         feature_row = request_rows[case_id]
-        for column, observer in (("wall result", "scalar"), ("GMT result", "gmt")):
+        for column, observer in (("wall result", "scalar"), ("UTC result", "gmt")):
             if column in feature_row:
                 assert feature_row[column] == normalize_native(after[observer]["value"]), (case_id, column)
-        if "native scalar" in feature_row:
-            assert feature_row["native scalar"] == after["scalar"]["value"], case_id
-        for column in ("fields", "returned fields"):
+        for column in ("fields", "returned fields", "stored fields"):
             if column in feature_row:
                 fields = ", ".join("undefined" if value is None else str(value) for value in after["list"]["value"])
                 assert feature_row[column] == fields, (case_id, column)
         if "status" in feature_row:
-            assert feature_row["status"] == str(call["status"]), case_id
+            status = "not returned" if not call["call_completed"] else (str(call["status"]) if call["status_defined"] else "absent")
+            assert feature_row["status"] == status, case_id
         for column, channel in (("call error", "error_after"), ("call error after", "error_after"), ("call error before", "error_before")):
             if column in feature_row:
                 assert feature_row[column] == (call[channel] or "empty"), (case_id, column)
-        if "warning count" in feature_row:
-            assert int(feature_row["warning count"]) == len(observation["warnings"]), case_id
+        if "stored-date text" in feature_row:
+            assert feature_row["stored-date text"] == (after["scalar"]["value"] or "empty text"), case_id
+        if "ordered fields" in feature_row:
+            fields = after["list"]["value"]
+            expected = "empty list" if fields == [] else ", ".join(map(str, fields))
+            assert feature_row["ordered fields"] == expected, case_id
+        if "error after stored-date read" in feature_row:
+            assert feature_row["error after stored-date read"] == after["scalar"]["error_after"], case_id
         if case_id in success_ids:
             assert call["status"] == 0 and call["status_defined"] is True
             assert call["exception"] is None and call["error_after"] == ""
@@ -308,13 +356,13 @@ def main():
             for observer in ("scalar", "list", "local", "gmt"):
                 assert after[observer]["error_before"] == after[observer]["error_after"] == ""
                 assert after[observer]["exception"] is None
-            scalar_literal = normalize_native(after["scalar"]["value"])
-            gmt_literal = normalize_native(after["gmt"]["value"])
-            assert scalar_literal in all_feature_text or after["scalar"]["value"] in all_feature_text, case_id
-            assert gmt_literal in all_feature_text, case_id
+            stored_literal = normalize_native(after["scalar"]["value"])
+            utc_literal = normalize_native(after["gmt"]["value"])
+            assert stored_literal in all_feature_text or after["scalar"]["value"] in all_feature_text, case_id
+            assert utc_literal in all_feature_text, case_id
         else:
-            assert call["status"] is None if case_id in exception_ids else call["status"] == 1
-            assert call["status_defined"] is (case_id not in exception_ids)
+            assert "status" not in call if case_id in exception_ids else call["status"] == 1
+            assert call["call_completed"] is (case_id not in exception_ids)
             if case_id in exception_ids:
                 assert call["exception"].startswith(EXCEPTION_PREFIX[case_id])
                 assert call["error_after"] == ""
@@ -340,8 +388,44 @@ def main():
     undefined = by_id["DSET-FIELD-017-UNDEFINED"]["after"]
     assert undefined["scalar"]["value"] == "20400216:05:09"
     assert undefined["list"]["value"] == [2040, 2, None, 16, 5, 9]
-    assert "@reference-binding @observed-compatibility @disputed" in all_feature_text
-    print("reviewed 108 Date set cases, exact requests, mappings, observer boundaries, and feature literals")
+
+    for case_id, expected_prefix in EXCEPTION_PREFIX.items():
+        binding_id = binding_case_id("EXCEPTION", case_id)
+        feature_row = binding_rows[binding_id]
+        fixture = next(case for case in fixtures if case["case_id"] == case_id)
+        assert feature_row["initial receiver"] == feature_receiver(fixture), case_id
+        assert feature_row["exact request"] == feature_request(fixture), case_id
+        assert feature_row["exception prefix"] == expected_prefix.replace('"', '\\"'), case_id
+        call = by_id[case_id]["call"]
+        assert not call["call_completed"] and "status" not in call and "status_defined" not in call
+        assert call["error_before"] == call["error_after"] == ""
+        assert call["exception"].startswith(expected_prefix)
+
+    malformed_ids = {full_case_id(prefix, fixtures) for prefix in MALFORMED_CARRIER_CASES}
+    assert len(malformed_ids) == 12
+    for case_id in malformed_ids:
+        binding_id = binding_case_id("CARRIER", case_id)
+        feature_row = binding_rows[binding_id]
+        after = by_id[case_id]["after"]
+        fields = ", ".join("undefined" if value is None else str(value) for value in after["list"]["value"])
+        assert feature_row["native scalar"] == after["scalar"]["value"], case_id
+        assert feature_row["native list fields"] == fields, case_id
+        observation = next(row["observation"] for row in rows if row["case_id"] == case_id)
+        assert int(feature_row["warning count"]) == len(observation["warnings"]), case_id
+
+    warning_ids = set(WARNING_COUNTS)
+    for case_id in warning_ids:
+        binding_id = binding_case_id("WARNING", case_id)
+        feature_row = binding_rows[binding_id]
+        observation = next(row["observation"] for row in rows if row["case_id"] == case_id)
+        assert int(feature_row["warning count"]) == len(observation["warnings"]), case_id
+        assert feature_row["stable warning prefixes with multiplicity"] == stable_warning_summary(observation["warnings"]), case_id
+    assert all(
+        not row["observation"]["warnings"]
+        for row in rows if row["case_id"] not in warning_ids
+    )
+
+    print("reviewed 108 Date set cases, 27 binding rows, exact requests, mappings, observer boundaries, and feature literals")
 
 
 if __name__ == "__main__":

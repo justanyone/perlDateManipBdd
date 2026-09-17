@@ -3,7 +3,6 @@
 import concurrent.futures
 import hashlib
 import json
-import os
 import pathlib
 import shutil
 import subprocess
@@ -23,7 +22,7 @@ ENV = {
     "PERL_HASH_SEED": "0",
     "PERL_PERTURB_KEYS": "0",
     "PERL5LIB": str(ROOT / "local/date-manip-7.00/lib/perl5"),
-    "PATH": os.environ.get("PATH", ""),
+    "PATH": "/usr/bin:/bin",
 }
 
 

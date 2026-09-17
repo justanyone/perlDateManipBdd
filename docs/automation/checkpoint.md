@@ -759,3 +759,28 @@ Activeowners: pattern_repair date-set portability; partial_parsing config-files
 conditional-step split preserving36IDs; week_edges_finish (sol/high, escalated after
 priorworker repeatedly stopped partial) completes week-rules-edges bindings,
 reviewer and remaining assigned boundaries. Coreweek-rules matrix awaitsrootreview.
+
+
+## Date-set, configuration-file and week-rule review
+
+Root reviewed three stable batches. Date-set preserves108public requests and moves
+native/private diagnostics into27binding rows/sixassertions. Root corrected the
+remaining fake undefined-status wording/records on9thrown calls; explicit completion
+flags and omitted return fields now distinguish interruption. Fresh two-attempt
+capture preserves all underlying outcomes; exact reviewer and28scenario parser pass.
+
+Config-files now has18object scenarios with actual date-order queries and18functional
+scenarios without those queries. No conditional sentinels remain; all36IDs, actual
+filebytes and observations stay intact. Familychecker36/36 and bothparserchecks pass.
+
+Coreweek-rules covers105valid Base configurations over14Gregorianyear types and
+14boundarydates each (20580pairs), plus196selectedinverse results. Root reproduced
+native payload, made inputyears/rulemeanings explicit, checked actualdomain sets,
+and preserved correct3-field native inverse carrier vs4-field labelled tableentry.
+Independentcalendar math checks everyliteral; realparser112examples. Wholeweek-number
+partitions remain unresolved outside this enumerated Base domain.
+
+Activeowners: week_edges_finish finishes edge/legacy week batch; pattern_repair
+repairs parse-cache portability/conditionalsteps; partial_parsing repairs arithmetic
+portability/blankcells/profiledefinitions. Root has no live coverage process left.
+All final specification/adapter/coverage gates remain open.

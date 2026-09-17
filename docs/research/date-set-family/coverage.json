@@ -5,7 +5,8 @@
   "features": [
     "spec/drafts/date-set/zone-and-zoned-date.feature",
     "spec/drafts/date-set/date-and-time.feature",
-    "spec/drafts/date-set/individual-fields.feature"
+    "spec/drafts/date-set/individual-fields.feature",
+    "spec/drafts/date-set/perl-binding.feature"
   ],
   "case_mappings": [
     {
@@ -45,7 +46,7 @@
     {
       "case_id": "DSET-ZONE-003-OFFSET-TEXT",
       "feature": "zone-and-zoned-date.feature",
-      "scenario": "Offset and unresolved zone inputs raise a Date-Manip 7.00 binding exception",
+      "scenario": "Offset and unresolved zone inputs end without a status and leave no stored date",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -62,7 +63,7 @@
     {
       "case_id": "DSET-ZONE-004-OFFSET-LIST",
       "feature": "zone-and-zoned-date.feature",
-      "scenario": "Offset and unresolved zone inputs raise a Date-Manip 7.00 binding exception",
+      "scenario": "Offset and unresolved zone inputs end without a status and leave no stored date",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -147,7 +148,7 @@
     {
       "case_id": "DSET-ZONE-009-INVALID-ZONE",
       "feature": "zone-and-zoned-date.feature",
-      "scenario": "Offset and unresolved zone inputs raise a Date-Manip 7.00 binding exception",
+      "scenario": "Offset and unresolved zone inputs end without a status and leave no stored date",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -335,7 +336,7 @@
     {
       "case_id": "DSET-ZONE-020-TWO-AS-SINGLE-ARG",
       "feature": "zone-and-zoned-date.feature",
-      "scenario": "Offset and unresolved zone inputs raise a Date-Manip 7.00 binding exception",
+      "scenario": "Offset and unresolved zone inputs end without a status and leave no stored date",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -386,7 +387,7 @@
     {
       "case_id": "DSET-ZDATE-003-OFFSET-LIST",
       "feature": "zone-and-zoned-date.feature",
-      "scenario": "Zoned-date offsets and unresolved names raise the same binding exception",
+      "scenario": "Zoned-date offsets and unresolved names end without a status and leave no stored date",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -505,7 +506,7 @@
     {
       "case_id": "DSET-ZDATE-010-INVALID-ZONE",
       "feature": "zone-and-zoned-date.feature",
-      "scenario": "Zoned-date offsets and unresolved names raise the same binding exception",
+      "scenario": "Zoned-date offsets and unresolved names end without a status and leave no stored date",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -591,7 +592,7 @@
     {
       "case_id": "DSET-ZDATE-015-OFFSET-TEXT",
       "feature": "zone-and-zoned-date.feature",
-      "scenario": "Zoned-date offsets and unresolved names raise the same binding exception",
+      "scenario": "Zoned-date offsets and unresolved names end without a status and leave no stored date",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -779,7 +780,7 @@
     {
       "case_id": "DSET-DATE-011-SCALAR",
       "feature": "date-and-time.feature",
-      "scenario": "A scalar whole-date carrier raises a binding exception",
+      "scenario": "A text whole-date input ends without a status and leaves no stored date",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -1102,7 +1103,7 @@
     {
       "case_id": "DSET-TIME-011-SCALAR",
       "feature": "date-and-time.feature",
-      "scenario": "A scalar time carrier raises a binding exception",
+      "scenario": "A text time input ends without a status and leaves no stored date",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -1392,7 +1393,7 @@
     {
       "case_id": "DSET-FIELD-008-MONTH-ZERO",
       "feature": "individual-fields.feature",
-      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "scenario": "Individual replacements expose malformed field records as observed",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -1409,7 +1410,7 @@
     {
       "case_id": "DSET-FIELD-009-DAY-ZERO",
       "feature": "individual-fields.feature",
-      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "scenario": "Individual replacements expose malformed field records as observed",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -1426,7 +1427,7 @@
     {
       "case_id": "DSET-FIELD-010-MONTH-13",
       "feature": "individual-fields.feature",
-      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "scenario": "Individual replacements expose malformed field records as observed",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -1443,7 +1444,7 @@
     {
       "case_id": "DSET-FIELD-011-DAY-31-COMPAT",
       "feature": "individual-fields.feature",
-      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "scenario": "Individual replacements expose malformed field records as observed",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -1460,7 +1461,7 @@
     {
       "case_id": "DSET-FIELD-012-DAY-32",
       "feature": "individual-fields.feature",
-      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "scenario": "Individual replacements expose malformed field records as observed",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -1477,7 +1478,7 @@
     {
       "case_id": "DSET-FIELD-013-HOUR-24",
       "feature": "individual-fields.feature",
-      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "scenario": "Individual replacements expose malformed field records as observed",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -1494,7 +1495,7 @@
     {
       "case_id": "DSET-FIELD-014-MINUTE-60",
       "feature": "individual-fields.feature",
-      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "scenario": "Individual replacements expose malformed field records as observed",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -1511,7 +1512,7 @@
     {
       "case_id": "DSET-FIELD-015-SECOND-60",
       "feature": "individual-fields.feature",
-      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "scenario": "Individual replacements expose malformed field records as observed",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -1528,7 +1529,7 @@
     {
       "case_id": "DSET-FIELD-016-NONNUMERIC",
       "feature": "individual-fields.feature",
-      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "scenario": "Individual replacements expose malformed field records as observed",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -1545,7 +1546,7 @@
     {
       "case_id": "DSET-FIELD-017-UNDEFINED",
       "feature": "individual-fields.feature",
-      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "scenario": "Individual replacements expose malformed field records as observed",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -1818,7 +1819,7 @@
     {
       "case_id": "DSET-FIELD-033-ISDST-TWO",
       "feature": "individual-fields.feature",
-      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "scenario": "Individual replacements expose malformed field records as observed",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -1835,7 +1836,7 @@
     {
       "case_id": "DSET-FIELD-034-NEGATIVE-DAY",
       "feature": "individual-fields.feature",
-      "scenario": "Individual replacements accept malformed or out-of-range field values",
+      "scenario": "Individual replacements expose malformed field records as observed",
       "contract_ids": [
         "object.create",
         "context.zone-service",
@@ -1922,8 +1923,273 @@
   "contract_mapping_gaps": [],
   "binding_assertions": [
     {
+      "assertion_id": "DSET-BIND-EXCEPTIONS",
+      "feature": "perl-binding.feature",
+      "source_case_ids": [
+        "DSET-ZONE-003-OFFSET-TEXT",
+        "DSET-ZONE-004-OFFSET-LIST",
+        "DSET-ZONE-009-INVALID-ZONE",
+        "DSET-ZONE-020-TWO-AS-SINGLE-ARG",
+        "DSET-ZDATE-003-OFFSET-LIST",
+        "DSET-ZDATE-010-INVALID-ZONE",
+        "DSET-ZDATE-015-OFFSET-TEXT",
+        "DSET-DATE-011-SCALAR",
+        "DSET-TIME-011-SCALAR"
+      ],
+      "scenario": "Perl exposes the exact runtime exception prefix for each interrupted request"
+    },
+    {
+      "assertion_id": "DSET-BIND-MALFORMED-CARRIERS",
+      "feature": "perl-binding.feature",
+      "source_case_ids": [
+        "DSET-FIELD-008-MONTH-ZERO",
+        "DSET-FIELD-009-DAY-ZERO",
+        "DSET-FIELD-010-MONTH-13",
+        "DSET-FIELD-011-DAY-31-COMPAT",
+        "DSET-FIELD-012-DAY-32",
+        "DSET-FIELD-013-HOUR-24",
+        "DSET-FIELD-014-MINUTE-60",
+        "DSET-FIELD-015-SECOND-60",
+        "DSET-FIELD-016-NONNUMERIC",
+        "DSET-FIELD-017-UNDEFINED",
+        "DSET-FIELD-033-ISDST-TWO",
+        "DSET-FIELD-034-NEGATIVE-DAY"
+      ],
+      "scenario": "Perl preserves native malformed scalar and list carriers after accepted field changes"
+    },
+    {
+      "assertion_id": "DSET-BIND-WARNING-CENSUS",
+      "feature": "perl-binding.feature",
+      "source_case_ids": [
+        "DSET-ZONE-001-EXPLICIT-NAMED",
+        "DSET-ZONE-002-OMITTED-LOCAL",
+        "DSET-ZONE-003-OFFSET-TEXT",
+        "DSET-ZONE-004-OFFSET-LIST",
+        "DSET-ZONE-005-ALIAS",
+        "DSET-ZONE-006-ZERO-AS-ISDST",
+        "DSET-ZONE-007-ONE-AS-ISDST",
+        "DSET-ZONE-008-EMPTY-ZONE",
+        "DSET-ZONE-009-INVALID-ZONE",
+        "DSET-ZONE-010-EXTRA-ARGUMENT",
+        "DSET-ZONE-011-UNSET-RECEIVER",
+        "DSET-ZONE-012-ERROR-RECEIVER",
+        "DSET-ZONE-013-OVERLAP-DEFAULT",
+        "DSET-ZONE-014-OVERLAP-STANDARD",
+        "DSET-ZONE-015-OVERLAP-DAYLIGHT",
+        "DSET-ZONE-016-GAP-DEFAULT",
+        "DSET-ZONE-017-GAP-STANDARD",
+        "DSET-ZONE-018-GAP-DAYLIGHT",
+        "DSET-ZONE-019-ISDST-TWO",
+        "DSET-ZONE-020-TWO-AS-SINGLE-ARG",
+        "DSET-ZDATE-001-LOCAL-UNSET",
+        "DSET-ZDATE-002-NAMED-ZONE",
+        "DSET-ZDATE-003-OFFSET-LIST",
+        "DSET-ZDATE-004-OVERLAP-DEFAULT",
+        "DSET-ZDATE-005-OVERLAP-STANDARD",
+        "DSET-ZDATE-006-OVERLAP-DAYLIGHT",
+        "DSET-ZDATE-007-LOCAL-OVERLAP-ISDST",
+        "DSET-ZDATE-008-GAP",
+        "DSET-ZDATE-009-INVALID-DATE",
+        "DSET-ZDATE-010-INVALID-ZONE",
+        "DSET-ZDATE-011-OMITTED-DATE",
+        "DSET-ZDATE-012-EXTRA-ARGUMENT",
+        "DSET-ZDATE-013-ISDST-TWO",
+        "DSET-ZDATE-014-ERROR-RECOVERY",
+        "DSET-ZDATE-015-OFFSET-TEXT",
+        "DSET-DATE-001-RETAIN-ZONE",
+        "DSET-DATE-002-UNSET-LOCAL",
+        "DSET-DATE-003-ERROR-RECOVERY",
+        "DSET-DATE-004-OVERLAP-DEFAULT",
+        "DSET-DATE-005-OVERLAP-STANDARD",
+        "DSET-DATE-006-OVERLAP-DAYLIGHT",
+        "DSET-DATE-007-GAP",
+        "DSET-DATE-008-INVALID-DATE",
+        "DSET-DATE-009-SHORT-ARRAY",
+        "DSET-DATE-010-LONG-ARRAY",
+        "DSET-DATE-011-SCALAR",
+        "DSET-DATE-012-OMITTED-DATE",
+        "DSET-DATE-013-EXTRA-ARGUMENT",
+        "DSET-DATE-014-ISDST-TWO",
+        "DSET-DATE-015-YEAR-ZERO",
+        "DSET-DATE-016-MONTH-ZERO",
+        "DSET-DATE-017-DAY-ZERO",
+        "DSET-DATE-018-HOUR-24-MIDNIGHT",
+        "DSET-DATE-019-HOUR-24-NONZERO",
+        "DSET-TIME-001-VALID",
+        "DSET-TIME-002-ALL-ZERO",
+        "DSET-TIME-003-OVERLAP-DEFAULT",
+        "DSET-TIME-004-OVERLAP-STANDARD",
+        "DSET-TIME-005-OVERLAP-DAYLIGHT",
+        "DSET-TIME-006-GAP-DEFAULT",
+        "DSET-TIME-007-GAP-STANDARD",
+        "DSET-TIME-008-GAP-DAYLIGHT",
+        "DSET-TIME-009-HOUR-24",
+        "DSET-TIME-010-SHORT-ARRAY",
+        "DSET-TIME-011-SCALAR",
+        "DSET-TIME-012-OMITTED-TIME",
+        "DSET-TIME-013-EXTRA-ARGUMENT",
+        "DSET-TIME-014-ISDST-TWO",
+        "DSET-TIME-015-UNSET-RECEIVER",
+        "DSET-TIME-016-ERROR-RECEIVER",
+        "DSET-TIME-017-MINUTE-60",
+        "DSET-TIME-018-SECOND-60",
+        "DSET-TIME-019-HOUR-24-NONZERO",
+        "DSET-TIME-020-NEGATIVE-HOUR",
+        "DSET-FIELD-001-YEAR",
+        "DSET-FIELD-002-MONTH",
+        "DSET-FIELD-003-DAY",
+        "DSET-FIELD-004-HOUR-ZERO",
+        "DSET-FIELD-005-MINUTE-ZERO",
+        "DSET-FIELD-006-SECOND-ZERO",
+        "DSET-FIELD-007-YEAR-ZERO",
+        "DSET-FIELD-008-MONTH-ZERO",
+        "DSET-FIELD-009-DAY-ZERO",
+        "DSET-FIELD-010-MONTH-13",
+        "DSET-FIELD-011-DAY-31-COMPAT",
+        "DSET-FIELD-012-DAY-32",
+        "DSET-FIELD-013-HOUR-24",
+        "DSET-FIELD-014-MINUTE-60",
+        "DSET-FIELD-015-SECOND-60",
+        "DSET-FIELD-016-NONNUMERIC",
+        "DSET-FIELD-017-UNDEFINED",
+        "DSET-FIELD-018-OMITTED-VALUE",
+        "DSET-FIELD-019-EXTRA-ARGUMENT",
+        "DSET-FIELD-020-UPPERCASE",
+        "DSET-FIELD-021-UNKNOWN",
+        "DSET-FIELD-022-EMPTY-NAME",
+        "DSET-FIELD-023-OMITTED-NAME",
+        "DSET-FIELD-024-MULTIPLE-FIELDS",
+        "DSET-FIELD-025-UNSET-RECEIVER",
+        "DSET-FIELD-026-ERROR-RECEIVER",
+        "DSET-FIELD-027-OVERLAP-DEFAULT",
+        "DSET-FIELD-028-OVERLAP-STANDARD",
+        "DSET-FIELD-029-OVERLAP-DAYLIGHT",
+        "DSET-FIELD-030-GAP-DEFAULT",
+        "DSET-FIELD-031-GAP-STANDARD",
+        "DSET-FIELD-032-GAP-DAYLIGHT",
+        "DSET-FIELD-033-ISDST-TWO",
+        "DSET-FIELD-034-NEGATIVE-DAY"
+      ],
+      "scenario": "Perl warning diagnostics match the complete mapped source-case census"
+    },
+    {
+      "assertion_id": "DSET-BIND-OBSERVER-CARRIERS",
+      "feature": "perl-binding.feature",
+      "source_case_ids": [
+        "DSET-ZONE-001-EXPLICIT-NAMED",
+        "DSET-ZONE-002-OMITTED-LOCAL",
+        "DSET-ZONE-003-OFFSET-TEXT",
+        "DSET-ZONE-004-OFFSET-LIST",
+        "DSET-ZONE-005-ALIAS",
+        "DSET-ZONE-006-ZERO-AS-ISDST",
+        "DSET-ZONE-007-ONE-AS-ISDST",
+        "DSET-ZONE-008-EMPTY-ZONE",
+        "DSET-ZONE-009-INVALID-ZONE",
+        "DSET-ZONE-010-EXTRA-ARGUMENT",
+        "DSET-ZONE-011-UNSET-RECEIVER",
+        "DSET-ZONE-012-ERROR-RECEIVER",
+        "DSET-ZONE-013-OVERLAP-DEFAULT",
+        "DSET-ZONE-014-OVERLAP-STANDARD",
+        "DSET-ZONE-015-OVERLAP-DAYLIGHT",
+        "DSET-ZONE-016-GAP-DEFAULT",
+        "DSET-ZONE-017-GAP-STANDARD",
+        "DSET-ZONE-018-GAP-DAYLIGHT",
+        "DSET-ZONE-019-ISDST-TWO",
+        "DSET-ZONE-020-TWO-AS-SINGLE-ARG",
+        "DSET-ZDATE-001-LOCAL-UNSET",
+        "DSET-ZDATE-002-NAMED-ZONE",
+        "DSET-ZDATE-003-OFFSET-LIST",
+        "DSET-ZDATE-004-OVERLAP-DEFAULT",
+        "DSET-ZDATE-005-OVERLAP-STANDARD",
+        "DSET-ZDATE-006-OVERLAP-DAYLIGHT",
+        "DSET-ZDATE-007-LOCAL-OVERLAP-ISDST",
+        "DSET-ZDATE-008-GAP",
+        "DSET-ZDATE-009-INVALID-DATE",
+        "DSET-ZDATE-010-INVALID-ZONE",
+        "DSET-ZDATE-011-OMITTED-DATE",
+        "DSET-ZDATE-012-EXTRA-ARGUMENT",
+        "DSET-ZDATE-013-ISDST-TWO",
+        "DSET-ZDATE-014-ERROR-RECOVERY",
+        "DSET-ZDATE-015-OFFSET-TEXT",
+        "DSET-DATE-001-RETAIN-ZONE",
+        "DSET-DATE-002-UNSET-LOCAL",
+        "DSET-DATE-003-ERROR-RECOVERY",
+        "DSET-DATE-004-OVERLAP-DEFAULT",
+        "DSET-DATE-005-OVERLAP-STANDARD",
+        "DSET-DATE-006-OVERLAP-DAYLIGHT",
+        "DSET-DATE-007-GAP",
+        "DSET-DATE-008-INVALID-DATE",
+        "DSET-DATE-009-SHORT-ARRAY",
+        "DSET-DATE-010-LONG-ARRAY",
+        "DSET-DATE-011-SCALAR",
+        "DSET-DATE-012-OMITTED-DATE",
+        "DSET-DATE-013-EXTRA-ARGUMENT",
+        "DSET-DATE-014-ISDST-TWO",
+        "DSET-DATE-015-YEAR-ZERO",
+        "DSET-DATE-016-MONTH-ZERO",
+        "DSET-DATE-017-DAY-ZERO",
+        "DSET-DATE-018-HOUR-24-MIDNIGHT",
+        "DSET-DATE-019-HOUR-24-NONZERO",
+        "DSET-TIME-001-VALID",
+        "DSET-TIME-002-ALL-ZERO",
+        "DSET-TIME-003-OVERLAP-DEFAULT",
+        "DSET-TIME-004-OVERLAP-STANDARD",
+        "DSET-TIME-005-OVERLAP-DAYLIGHT",
+        "DSET-TIME-006-GAP-DEFAULT",
+        "DSET-TIME-007-GAP-STANDARD",
+        "DSET-TIME-008-GAP-DAYLIGHT",
+        "DSET-TIME-009-HOUR-24",
+        "DSET-TIME-010-SHORT-ARRAY",
+        "DSET-TIME-011-SCALAR",
+        "DSET-TIME-012-OMITTED-TIME",
+        "DSET-TIME-013-EXTRA-ARGUMENT",
+        "DSET-TIME-014-ISDST-TWO",
+        "DSET-TIME-015-UNSET-RECEIVER",
+        "DSET-TIME-016-ERROR-RECEIVER",
+        "DSET-TIME-017-MINUTE-60",
+        "DSET-TIME-018-SECOND-60",
+        "DSET-TIME-019-HOUR-24-NONZERO",
+        "DSET-TIME-020-NEGATIVE-HOUR",
+        "DSET-FIELD-001-YEAR",
+        "DSET-FIELD-002-MONTH",
+        "DSET-FIELD-003-DAY",
+        "DSET-FIELD-004-HOUR-ZERO",
+        "DSET-FIELD-005-MINUTE-ZERO",
+        "DSET-FIELD-006-SECOND-ZERO",
+        "DSET-FIELD-007-YEAR-ZERO",
+        "DSET-FIELD-008-MONTH-ZERO",
+        "DSET-FIELD-009-DAY-ZERO",
+        "DSET-FIELD-010-MONTH-13",
+        "DSET-FIELD-011-DAY-31-COMPAT",
+        "DSET-FIELD-012-DAY-32",
+        "DSET-FIELD-013-HOUR-24",
+        "DSET-FIELD-014-MINUTE-60",
+        "DSET-FIELD-015-SECOND-60",
+        "DSET-FIELD-016-NONNUMERIC",
+        "DSET-FIELD-017-UNDEFINED",
+        "DSET-FIELD-018-OMITTED-VALUE",
+        "DSET-FIELD-019-EXTRA-ARGUMENT",
+        "DSET-FIELD-020-UPPERCASE",
+        "DSET-FIELD-021-UNKNOWN",
+        "DSET-FIELD-022-EMPTY-NAME",
+        "DSET-FIELD-023-OMITTED-NAME",
+        "DSET-FIELD-024-MULTIPLE-FIELDS",
+        "DSET-FIELD-025-UNSET-RECEIVER",
+        "DSET-FIELD-026-ERROR-RECEIVER",
+        "DSET-FIELD-027-OVERLAP-DEFAULT",
+        "DSET-FIELD-028-OVERLAP-STANDARD",
+        "DSET-FIELD-029-OVERLAP-DAYLIGHT",
+        "DSET-FIELD-030-GAP-DEFAULT",
+        "DSET-FIELD-031-GAP-STANDARD",
+        "DSET-FIELD-032-GAP-DAYLIGHT",
+        "DSET-FIELD-033-ISDST-TWO",
+        "DSET-FIELD-034-NEGATIVE-DAY"
+      ],
+      "scenario": "Perl uses the captured native observer contexts and order"
+    },
+    {
       "assertion_id": "DSET-BIND-SHORT-LISTS",
-      "feature": "date-and-time.feature",
+      "feature": "perl-binding.feature",
       "source_case_ids": [
         "DSET-DATE-009-SHORT-ARRAY",
         "DSET-TIME-010-SHORT-ARRAY"
@@ -1932,12 +2198,473 @@
     },
     {
       "assertion_id": "DSET-BIND-FIELD-WARNINGS",
-      "feature": "individual-fields.feature",
+      "feature": "perl-binding.feature",
       "source_case_ids": [
         "DSET-FIELD-007-YEAR-ZERO",
         "DSET-FIELD-023-OMITTED-NAME"
       ],
       "scenario": "Perl reports binding warnings for year zero and an omitted selector"
+    }
+  ],
+  "binding_case_mappings": [
+    {
+      "binding_case_id": "DSET-BIND-EXCEPTION-ZONE-003-OFFSET-TEXT",
+      "assertion_id": "DSET-BIND-EXCEPTIONS",
+      "source_case_id": "DSET-ZONE-003-OFFSET-TEXT",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-EXCEPTION-ZONE-004-OFFSET-LIST",
+      "assertion_id": "DSET-BIND-EXCEPTIONS",
+      "source_case_id": "DSET-ZONE-004-OFFSET-LIST",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-EXCEPTION-ZONE-009-INVALID-ZONE",
+      "assertion_id": "DSET-BIND-EXCEPTIONS",
+      "source_case_id": "DSET-ZONE-009-INVALID-ZONE",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-EXCEPTION-ZONE-020-TWO-AS-SINGLE-ARG",
+      "assertion_id": "DSET-BIND-EXCEPTIONS",
+      "source_case_id": "DSET-ZONE-020-TWO-AS-SINGLE-ARG",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-EXCEPTION-ZDATE-003-OFFSET-LIST",
+      "assertion_id": "DSET-BIND-EXCEPTIONS",
+      "source_case_id": "DSET-ZDATE-003-OFFSET-LIST",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-EXCEPTION-ZDATE-010-INVALID-ZONE",
+      "assertion_id": "DSET-BIND-EXCEPTIONS",
+      "source_case_id": "DSET-ZDATE-010-INVALID-ZONE",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-EXCEPTION-ZDATE-015-OFFSET-TEXT",
+      "assertion_id": "DSET-BIND-EXCEPTIONS",
+      "source_case_id": "DSET-ZDATE-015-OFFSET-TEXT",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-EXCEPTION-DATE-011-SCALAR",
+      "assertion_id": "DSET-BIND-EXCEPTIONS",
+      "source_case_id": "DSET-DATE-011-SCALAR",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-EXCEPTION-TIME-011-SCALAR",
+      "assertion_id": "DSET-BIND-EXCEPTIONS",
+      "source_case_id": "DSET-TIME-011-SCALAR",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-CARRIER-FIELD-008-MONTH-ZERO",
+      "assertion_id": "DSET-BIND-MALFORMED-CARRIERS",
+      "source_case_id": "DSET-FIELD-008-MONTH-ZERO",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-CARRIER-FIELD-009-DAY-ZERO",
+      "assertion_id": "DSET-BIND-MALFORMED-CARRIERS",
+      "source_case_id": "DSET-FIELD-009-DAY-ZERO",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-CARRIER-FIELD-010-MONTH-13",
+      "assertion_id": "DSET-BIND-MALFORMED-CARRIERS",
+      "source_case_id": "DSET-FIELD-010-MONTH-13",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-CARRIER-FIELD-011-DAY-31-COMPAT",
+      "assertion_id": "DSET-BIND-MALFORMED-CARRIERS",
+      "source_case_id": "DSET-FIELD-011-DAY-31-COMPAT",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-CARRIER-FIELD-012-DAY-32",
+      "assertion_id": "DSET-BIND-MALFORMED-CARRIERS",
+      "source_case_id": "DSET-FIELD-012-DAY-32",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-CARRIER-FIELD-013-HOUR-24",
+      "assertion_id": "DSET-BIND-MALFORMED-CARRIERS",
+      "source_case_id": "DSET-FIELD-013-HOUR-24",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-CARRIER-FIELD-014-MINUTE-60",
+      "assertion_id": "DSET-BIND-MALFORMED-CARRIERS",
+      "source_case_id": "DSET-FIELD-014-MINUTE-60",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-CARRIER-FIELD-015-SECOND-60",
+      "assertion_id": "DSET-BIND-MALFORMED-CARRIERS",
+      "source_case_id": "DSET-FIELD-015-SECOND-60",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-CARRIER-FIELD-016-NONNUMERIC",
+      "assertion_id": "DSET-BIND-MALFORMED-CARRIERS",
+      "source_case_id": "DSET-FIELD-016-NONNUMERIC",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-CARRIER-FIELD-017-UNDEFINED",
+      "assertion_id": "DSET-BIND-MALFORMED-CARRIERS",
+      "source_case_id": "DSET-FIELD-017-UNDEFINED",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-CARRIER-FIELD-033-ISDST-TWO",
+      "assertion_id": "DSET-BIND-MALFORMED-CARRIERS",
+      "source_case_id": "DSET-FIELD-033-ISDST-TWO",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-CARRIER-FIELD-034-NEGATIVE-DAY",
+      "assertion_id": "DSET-BIND-MALFORMED-CARRIERS",
+      "source_case_id": "DSET-FIELD-034-NEGATIVE-DAY",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-WARNING-DATE-009-SHORT-ARRAY",
+      "assertion_id": "DSET-BIND-WARNING-CENSUS",
+      "source_case_id": "DSET-DATE-009-SHORT-ARRAY",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-WARNING-TIME-010-SHORT-ARRAY",
+      "assertion_id": "DSET-BIND-WARNING-CENSUS",
+      "source_case_id": "DSET-TIME-010-SHORT-ARRAY",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-WARNING-FIELD-007-YEAR-ZERO",
+      "assertion_id": "DSET-BIND-WARNING-CENSUS",
+      "source_case_id": "DSET-FIELD-007-YEAR-ZERO",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-WARNING-FIELD-016-NONNUMERIC",
+      "assertion_id": "DSET-BIND-WARNING-CENSUS",
+      "source_case_id": "DSET-FIELD-016-NONNUMERIC",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-WARNING-FIELD-017-UNDEFINED",
+      "assertion_id": "DSET-BIND-WARNING-CENSUS",
+      "source_case_id": "DSET-FIELD-017-UNDEFINED",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "DSET-BIND-WARNING-FIELD-023-OMITTED-NAME",
+      "assertion_id": "DSET-BIND-WARNING-CENSUS",
+      "source_case_id": "DSET-FIELD-023-OMITTED-NAME",
+      "contract_ids": [
+        "object.create",
+        "context.zone-service",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "config.apply-settings",
+        "config.read-settings",
+        "date.create",
+        "date.replace-field",
+        "date.read-value",
+        "error.read-state"
+      ]
     }
   ]
 }

@@ -240,8 +240,8 @@ sub set_call {
   }
   return {
     error_before => $error_before,
-    status => $status,
-    status_defined => defined($status) ? JSON::PP::true : JSON::PP::false,
+    call_completed => $call_exception ? JSON::PP::false : JSON::PP::true,
+    ($call_exception ? () : (status => $status, status_defined => defined($status) ? JSON::PP::true : JSON::PP::false)),
     error_after => $obj->err(),
     exception => $call_exception,
   };
