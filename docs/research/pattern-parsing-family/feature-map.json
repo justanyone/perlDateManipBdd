@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "feature": "spec/drafts/pattern-parsing/explicit-patterns.feature",
+  "rule": "Every case_id occurs once in a feature Examples row or an individually tagged scenario; grouping does not merge requests.",
+  "research_binding": {
+    "operation_id": "date.parse-pattern",
+    "fixture": "dm700-english-ascii-utc-us-2040",
+    "oo": {
+      "module": "Date::Manip::Date",
+      "callable": "parse_format",
+      "request": "receiver, pattern, text",
+      "scalar_return": "status or pattern-error text",
+      "list_return": "status or pattern-error text followed by the complete named-capture map"
+    },
+    "dm6": {
+      "module": "Date::Manip::DM6",
+      "callable": "ParseDateFormat",
+      "request": "pattern, text",
+      "scalar_return": "serialized local date-time or empty text; an invalid regular expression can raise"
+    }
+  },
+  "groups": [
+    {
+      "scenario": "Parse one accepted directive through both public routes",
+      "outcome_type": "OO status and typed date-time; DM6 typed date-time",
+      "case_ids": [
+        "PTN-01", "PTN-02", "PTN-03", "PTN-04", "PTN-05", "PTN-06", "PTN-07", "PTN-08", "PTN-09", "PTN-10",
+        "PTN-11", "PTN-12", "PTN-13", "PTN-14", "PTN-15", "PTN-16", "PTN-17", "PTN-18", "PTN-19", "PTN-20",
+        "PTN-21", "PTN-22", "PTN-23", "PTN-24", "PTN-25", "PTN-26", "PTN-27", "PTN-28", "PTN-29",
+        "PTN-32", "PTN-33", "PTN-34", "PTN-35", "PTN-36", "PTN-37", "PTN-38", "PTN-39", "PTN-40", "PTN-41",
+        "PTN-42", "PTN-43", "PTN-44", "PTN-45", "PTN-46", "PTN-47", "PTN-48", "PTN-49", "PTN-50", "PTN-51", "PTN-52"
+      ]
+    },
+    {"scenario":"Keep the rejected Sunday-week composition visible","outcome_type":"OO failure status with no value read; DM6 empty text","case_ids":["PTN-30","PTN-31"]},
+    {"scenario":"Return the complete reference named-capture record","outcome_type":"OO status, typed date-time, and full named-capture map; DM6 typed date-time","case_ids":["PTN-53","PTN-54"]},
+    {"scenario":"Distinguish rejected patterns from a valid pattern that does not match","outcome_type":"OO error or no-match status with no value read; DM6 empty text","case_ids":["PTN-55","PTN-56","PTN-57","PTN-58","PTN-60","PTN-63"]},
+    {"scenario":"An invalid regular expression raises before either route can return a status","outcome_type":"OO and DM6 exceptions with no returned value","case_ids":["PTN-59"]},
+    {"scenario":"Preserve the observed DateFormat change after the percent-x pattern is used","outcome_type":"initial typed date-time followed by OO failure with no value read and DM6 empty text","case_ids":["PTN-61"]},
+    {"scenario":"The POSIX rendering setting does not change percent-x pattern parsing","outcome_type":"OO status and typed date-time; DM6 typed date-time","case_ids":["PTN-62"]},
+    {"scenario":"Preserve numeric-prefix acceptance for malformed epoch text","outcome_type":"OO status and typed date-time; DM6 typed date-time","case_ids":["PTN-64","PTN-65"]}
+  ]
+}

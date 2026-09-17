@@ -92,8 +92,8 @@
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
       ],
-      "owner": "coordinator + language_completion + pattern_repair",
-      "progress": "Calendar batch retained. New parsing corpus: 291 repeated binding cases, 283 authored candidate literals checked against saved evidence, 8 legacy configuration exceptions separate. Rendering worker revised 24 repeated invocations and draft features; coordinator review pending. Pattern parsing assigned; remaining natural-language/time/language and calendar partitions open. Coordinator authored69 additional calendar/epoch candidate cases from existing observations; exact saved literals and independent epoch/week facts checked. Pattern fidelity repair and full original language batch active.",
+      "owner": "coordinator review; partial_parsing owns new cache characterization",
+      "progress": "Calendar batch retained. New parsing corpus: 291 repeated binding cases, 283 authored candidate literals checked against saved evidence, 8 legacy configuration exceptions separate. Rendering worker revised 24 repeated invocations and draft features; coordinator review pending. Pattern parsing assigned; remaining natural-language/time/language and calendar partitions open. Coordinator authored69 additional calendar/epoch candidate cases from existing observations; exact saved literals and independent epoch/week facts checked. Pattern fidelity repair and full original language batch active. Pattern batch integrated as65 draft requests after native empty-return/full-capture/observer repairs; exact literal checks pass. Language64-record and partial-parsing71-case batches returned, coordinator review pending.",
       "evidence": [
         "docs/research/observations/calendar.json",
         "docs/research/observations/calendar-review.json",
@@ -106,7 +106,10 @@
         "tools/review/parsing_literals.py",
         "docs/research/calendar-additional-feature-map.json",
         "spec/drafts/epoch.feature",
-        "spec/drafts/calendar-positions.feature"
+        "spec/drafts/calendar-positions.feature",
+        "docs/research/pattern-parsing-family/feature-map.json",
+        "spec/drafts/pattern-parsing/explicit-patterns.feature",
+        "tools/review/pattern_literals.py"
       ]
     },
     {
@@ -194,7 +197,7 @@
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
       ],
-      "owner": "coordinator-review",
+      "owner": "coordinator + language_completion (new object lifecycle)",
       "progress": "40 corrected repeatable cases; coordinator fixed backend fixture isolation and supported derivation carrier, checked29 table cases plus reset/derivation. Drafts remain incomplete across domains/files/state/receiver variants."
     },
     {
@@ -215,7 +218,7 @@
         "Reviewed export set limited to original portable English materials"
       ],
       "acceptance": [
-        "Every in-scope public operation has direct behavioral coverage and every private declaration has an indirect mapping or reviewed exclusion. Binding-only and unsupported operations have explicit, justified dispositions; deferred or unobserved in-scope work prevents completion.",
+        "Every in-scope public operation and usage type has executable behavioral evidence. Every private declaration has demonstrated execution through tested callers or original binding tests. A proposed indirect mapping is insufficient. Unreachable entries require reviewed evidence; deferred, unobserved, or known untested in-scope work prevents completion.",
         "Coverage denominators retain skipped, unsupported, and disputed entries.",
         "The handoff excludes upstream source/tests/data, translated algorithms, and Perl binding code.",
         "Audit source-level function and branch execution and logic-predicted cases against the user definition of done; review prior exclusions, including tooling, rather than treating old dispositions as sufficient."

@@ -15,6 +15,28 @@ the durable state of the planning queue, rather than claiming that its work has 
   by the original Perl BDD harness, step definitions, adapter, and full-suite
   verification. A future non-Perl implementation remains out of scope.
 
+## Active review at continuation
+
+The strict completion gate in [definition-of-done.md](definition-of-done.md)
+remains authoritative. The coverage queue now explicitly requires actual private
+function execution; an indirect caller mapping is not sufficient evidence.
+
+Pattern parsing now has 65 repeated requests through OO and DM6, including 50
+successful directive rows. Coordinator review repaired empty-text versus absent
+returns, complete named-capture assertions, error snapshots before value reads,
+and per-attempt temporary directories. `tools/review/pattern_literals.py` checks
+provenance, exact table inputs/results, failure statuses, capture maps, exceptions,
+and the two setting sequences. Syntax and feature structure checks pass. The
+batch remains draft with broader domains explicitly untested; no BDD run or
+semantic promotion is claimed.
+
+Language and partial-parsing workers returned repaired 64-record language and
+71-case partial-parsing batches; coordinator review is next, before integration.
+Their prior paths are stable. Current active assignments are `language_completion`
+for NEW object-lifecycle-family paths and `partial_parsing` for NEW parse-cache-family
+paths. The latter characterizes a suspected stale value after date/time-only
+mutation, including prior getter reads. Check live handles before reassigning.
+
 ## Execution setup
 
 The user authorized goal mode, parallel workers selected by task complexity, and
