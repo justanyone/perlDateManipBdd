@@ -1,0 +1,1341 @@
+{
+  "binding_only_feature": {
+    "assertions": [
+      {
+        "case_id": "CFG-DM6-JAN1WEEK1",
+        "native_profile": "oo",
+        "request": {
+          "read": [
+            "jan1week1"
+          ],
+          "settings": [
+            [
+              "Jan1Week1",
+              "1"
+            ]
+          ]
+        },
+        "warnings": [
+          "WARNING: the jan1week1 Date::Manip config variable is deprecated\n         and will be removed in version 7.00.  Please use\n         the Week1ofYear config variable instead.\n at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ]
+      }
+    ],
+    "path": "spec/drafts/configuration/perl-binding.feature",
+    "tags": [
+      "source-binding",
+      "perl-binding",
+      "excluded-from-portable-handoff"
+    ]
+  },
+  "case_map": [
+    {
+      "case_id": "CFG-DM6-DEFAULTS",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "dateformat"
+        ],
+        "settings": [
+          {
+            "name": "DateFormat",
+            "value": {
+              "type": "text",
+              "value": "non-US"
+            }
+          },
+          {
+            "name": "Defaults",
+            "value": {
+              "type": "text",
+              "value": "x"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "dateformat",
+            "value": {
+              "type": "text",
+              "value": "US"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-CONFIGFILE-MISSING",
+      "diagnostic": "missing-file diagnostic for text \"/tmp/date-manip-no-such-config\"",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "configfile"
+        ],
+        "settings": [
+          {
+            "name": "ConfigFile",
+            "value": {
+              "type": "text",
+              "value": "/tmp/date-manip-no-such-config"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "configfile",
+            "value": {
+              "type": "text",
+              "value": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-LANGUAGE",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "language"
+        ],
+        "settings": [
+          {
+            "name": "Language",
+            "value": {
+              "type": "text",
+              "value": "English"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "language",
+            "value": {
+              "type": "text",
+              "value": "English"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-ENCODING-INVALID",
+      "diagnostic": "invalid-setting diagnostic containing text \"invalid: Encoding: not-an-encoding\"",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "encoding"
+        ],
+        "settings": [
+          {
+            "name": "Encoding",
+            "value": {
+              "type": "text",
+              "value": "not-an-encoding"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "encoding",
+            "value": {
+              "type": "text",
+              "value": "ASCII"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-FIRSTDAY",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "firstday"
+        ],
+        "settings": [
+          {
+            "name": "FirstDay",
+            "value": {
+              "type": "text",
+              "value": "7"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "firstday",
+            "value": {
+              "type": "text",
+              "value": "7"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-WEEK1-INVALID",
+      "diagnostic": "invalid-setting diagnostic containing text \"invalid: Week1ofYear: dow9\"",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "week1ofyear"
+        ],
+        "settings": [
+          {
+            "name": "Week1ofYear",
+            "value": {
+              "type": "text",
+              "value": "dow9"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "week1ofyear",
+            "value": {
+              "type": "text",
+              "value": "jan4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-PRINTABLE",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "printable"
+        ],
+        "settings": [
+          {
+            "name": "Printable",
+            "value": {
+              "type": "text",
+              "value": "2"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "printable",
+            "value": {
+              "type": "text",
+              "value": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-DATEFORMAT",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "dateformat"
+        ],
+        "settings": [
+          {
+            "name": "DateFormat",
+            "value": {
+              "type": "text",
+              "value": "US"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "dateformat",
+            "value": {
+              "type": "text",
+              "value": "US"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-YYTOYYYY",
+      "diagnostic": "invalid-setting diagnostic containing text \"invalid: YYtoYYYY: c##\"",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "yytoyyyy"
+        ],
+        "settings": [
+          {
+            "name": "YYtoYYYY",
+            "value": {
+              "type": "text",
+              "value": "C##"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "yytoyyyy",
+            "value": {
+              "type": "text",
+              "value": "89"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-DEFAULTTIME",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "defaulttime"
+        ],
+        "settings": [
+          {
+            "name": "DefaultTime",
+            "value": {
+              "type": "text",
+              "value": "curr"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "defaulttime",
+            "value": {
+              "type": "text",
+              "value": "curr"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-PERIODSEP",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "periodtimesep"
+        ],
+        "settings": [
+          {
+            "name": "PeriodTimeSep",
+            "value": {
+              "type": "text",
+              "value": "1"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "periodtimesep",
+            "value": {
+              "type": "text",
+              "value": "1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-MMMYYYY",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "format_mmmyyyy"
+        ],
+        "settings": [
+          {
+            "name": "Format_MMMYYYY",
+            "value": {
+              "type": "text",
+              "value": "last"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "format_mmmyyyy",
+            "value": {
+              "type": "text",
+              "value": "last"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-WORKWEEK",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "workweekbeg",
+          "workweekend"
+        ],
+        "settings": [
+          {
+            "name": "WorkWeekBeg",
+            "value": {
+              "type": "text",
+              "value": "2"
+            }
+          },
+          {
+            "name": "WorkWeekEnd",
+            "value": {
+              "type": "text",
+              "value": "6"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "workweekbeg",
+            "value": {
+              "type": "text",
+              "value": "2"
+            }
+          },
+          {
+            "name": "workweekend",
+            "value": {
+              "type": "text",
+              "value": "6"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-WORKDAY24",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "workday24hr"
+        ],
+        "settings": [
+          {
+            "name": "WorkDay24Hr",
+            "value": {
+              "type": "text",
+              "value": "1"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "workday24hr",
+            "value": {
+              "type": "text",
+              "value": "1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-WORKDAY-INVALID",
+      "diagnostic": "invalid-setting diagnostic containing text \"WorkDayBeg not before WorkDayEnd\"",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "workdaybeg",
+          "workdayend"
+        ],
+        "settings": [
+          {
+            "name": "WorkDayBeg",
+            "value": {
+              "type": "text",
+              "value": "18:00"
+            }
+          },
+          {
+            "name": "WorkDayEnd",
+            "value": {
+              "type": "text",
+              "value": "17:00"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "workdaybeg",
+            "value": {
+              "type": "text",
+              "value": "09:00:00"
+            }
+          },
+          {
+            "name": "workdayend",
+            "value": {
+              "type": "text",
+              "value": "17:00:00"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-TOMORROWFIRST",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "tomorrowfirst"
+        ],
+        "settings": [
+          {
+            "name": "TomorrowFirst",
+            "value": {
+              "type": "text",
+              "value": "0"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "tomorrowfirst",
+            "value": {
+              "type": "text",
+              "value": "0"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-ERASE-HOLIDAYS",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "eraseholidays"
+        ],
+        "settings": [
+          {
+            "name": "EraseHolidays",
+            "value": {
+              "type": "text",
+              "value": ""
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "eraseholidays",
+            "value": {
+              "type": "text",
+              "value": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-ERASE-EVENTS",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "eraseevents"
+        ],
+        "settings": [
+          {
+            "name": "EraseEvents",
+            "value": {
+              "type": "text",
+              "value": ""
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "eraseevents",
+            "value": {
+              "type": "text",
+              "value": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-RECURRANGE",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "recurrange"
+        ],
+        "settings": [
+          {
+            "name": "RecurRange",
+            "value": {
+              "type": "text",
+              "value": "week"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "recurrange",
+            "value": {
+              "type": "text",
+              "value": "week"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-MAXRECUR-INVALID",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "maxrecurattempts"
+        ],
+        "settings": [
+          {
+            "name": "MaxRecurAttempts",
+            "value": {
+              "type": "text",
+              "value": "no"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "maxrecurattempts",
+            "value": {
+              "type": "text",
+              "value": "no"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-SETDATE",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "setdate"
+        ],
+        "settings": [
+          {
+            "name": "SetDate",
+            "value": {
+              "type": "text",
+              "value": "2040-02-29-12:34:56,Etc/UTC"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "setdate",
+            "value": {
+              "type": "number",
+              "value": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-FORCEDATE",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "forcedate"
+        ],
+        "settings": [
+          {
+            "name": "ForceDate",
+            "value": {
+              "type": "text",
+              "value": "2040-02-29-12:34:56,Etc/UTC"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "forcedate",
+            "value": {
+              "type": "number",
+              "value": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-POSIX",
+      "diagnostic": "no diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "use_posix_printf"
+        ],
+        "settings": [
+          {
+            "name": "Use_POSIX_Printf",
+            "value": {
+              "type": "text",
+              "value": "1"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "use_posix_printf",
+            "value": {
+              "type": "text",
+              "value": "1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-TZ-INVALID",
+      "diagnostic": "invalid-zone diagnostic containing text \"invalid zone in SetDate\"",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "tz"
+        ],
+        "settings": [
+          {
+            "name": "TZ",
+            "value": {
+              "type": "text",
+              "value": "No/Such_Zone"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "tz",
+            "value": {
+              "type": "text",
+              "value": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM6-JAN1WEEK1",
+      "diagnostic": "deprecated-setting diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "current-object",
+      "request": {
+        "read_names": [
+          "jan1week1"
+        ],
+        "settings": [
+          {
+            "name": "Jan1Week1",
+            "value": {
+              "type": "text",
+              "value": "1"
+            }
+          }
+        ]
+      },
+      "result": {
+        "apply_result": {
+          "type": "absent"
+        },
+        "stored": [
+          {
+            "name": "jan1week1",
+            "value": {
+              "type": "text",
+              "value": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-DM5-IGNOREGLOBAL",
+      "diagnostic": "no request diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "legacy-functional",
+      "request": {
+        "settings": [
+          {
+            "name": "IgnoreGlobalCnf",
+            "value": {
+              "type": "text",
+              "value": ""
+            }
+          }
+        ]
+      },
+      "result": {
+        "initializer_result": {
+          "type": "absent"
+        }
+      }
+    },
+    {
+      "case_id": "CFG-DM5-PATHSEP",
+      "diagnostic": "no request diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "legacy-functional",
+      "request": {
+        "settings": [
+          {
+            "name": "PathSep",
+            "value": {
+              "type": "text",
+              "value": ":"
+            }
+          }
+        ]
+      },
+      "result": {
+        "initializer_result": {
+          "type": "absent"
+        }
+      }
+    },
+    {
+      "case_id": "CFG-DM5-GLOBAL-MISSING",
+      "diagnostic": "no request diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "legacy-functional",
+      "request": {
+        "settings": [
+          {
+            "name": "GlobalCnf",
+            "value": {
+              "type": "text",
+              "value": "/tmp/no-global-cnf"
+            }
+          }
+        ]
+      },
+      "result": {
+        "initializer_result": {
+          "type": "absent"
+        }
+      }
+    },
+    {
+      "case_id": "CFG-DM5-PERSONAL",
+      "diagnostic": "no request diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "legacy-functional",
+      "request": {
+        "settings": [
+          {
+            "name": "PersonalCnf",
+            "value": {
+              "type": "text",
+              "value": ""
+            }
+          },
+          {
+            "name": "PersonalCnfPath",
+            "value": {
+              "type": "text",
+              "value": ""
+            }
+          }
+        ]
+      },
+      "result": {
+        "initializer_result": {
+          "type": "absent"
+        }
+      }
+    },
+    {
+      "case_id": "CFG-DM5-CONVTZ",
+      "diagnostic": "no request diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "legacy-functional",
+      "request": {
+        "settings": [
+          {
+            "name": "ConvTZ",
+            "value": {
+              "type": "text",
+              "value": "IGNORE"
+            }
+          }
+        ]
+      },
+      "result": {
+        "initializer_result": {
+          "type": "absent"
+        }
+      }
+    },
+    {
+      "case_id": "CFG-DM5-INTERNAL",
+      "diagnostic": "no request diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "legacy-functional",
+      "request": {
+        "settings": [
+          {
+            "name": "Internal",
+            "value": {
+              "type": "text",
+              "value": "1"
+            }
+          }
+        ]
+      },
+      "result": {
+        "initializer_result": {
+          "type": "absent"
+        }
+      }
+    },
+    {
+      "case_id": "CFG-DM5-DELTASIGNS",
+      "diagnostic": "no request diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "legacy-functional",
+      "request": {
+        "settings": [
+          {
+            "name": "DeltaSigns",
+            "value": {
+              "type": "text",
+              "value": "1"
+            }
+          }
+        ]
+      },
+      "result": {
+        "initializer_result": {
+          "type": "absent"
+        }
+      }
+    },
+    {
+      "case_id": "CFG-DM5-UPDATECURRTZ",
+      "diagnostic": "no request diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "legacy-functional",
+      "request": {
+        "settings": [
+          {
+            "name": "UpdateCurrTZ",
+            "value": {
+              "type": "text",
+              "value": "1"
+            }
+          }
+        ]
+      },
+      "result": {
+        "initializer_result": {
+          "type": "absent"
+        }
+      }
+    },
+    {
+      "case_id": "CFG-DM5-INTCHARSET",
+      "diagnostic": "no request diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "legacy-functional",
+      "request": {
+        "settings": [
+          {
+            "name": "IntCharSet",
+            "value": {
+              "type": "text",
+              "value": "0"
+            }
+          }
+        ]
+      },
+      "result": {
+        "initializer_result": {
+          "type": "absent"
+        }
+      }
+    },
+    {
+      "case_id": "CFG-DM5-TODAYMIDNIGHT",
+      "diagnostic": "no request diagnostic",
+      "feature": "spec/drafts/configuration/configuration.feature",
+      "operation_id": "config.apply-settings",
+      "profile": "legacy-functional",
+      "request": {
+        "settings": [
+          {
+            "name": "TodayIsMidnight",
+            "value": {
+              "type": "text",
+              "value": "1"
+            }
+          }
+        ]
+      },
+      "result": {
+        "initializer_result": {
+          "type": "absent"
+        }
+      }
+    },
+    {
+      "case_id": "CFG-READ-ARITIES",
+      "feature": "spec/drafts/configuration/object-lifecycle.feature",
+      "operation_id": "config.read-settings",
+      "profile": "current-object",
+      "request": {
+        "names": [
+          "dateformat",
+          "DateFormat",
+          "no-such-key"
+        ],
+        "operation": "read ordered configuration collection",
+        "preload": [
+          {
+            "name": "DateFormat",
+            "value": {
+              "type": "text",
+              "value": "US"
+            }
+          }
+        ]
+      },
+      "result": {
+        "error": {
+          "type": "text",
+          "value": ""
+        },
+        "ordered_values": [
+          {
+            "type": "text",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CFG-ERROR-CLEAR",
+      "feature": "spec/drafts/configuration/object-lifecycle.feature",
+      "operation_id": "error.read-state",
+      "profile": "current-object",
+      "request": {
+        "clear_request": {
+          "type": "number",
+          "value": 1
+        },
+        "input": {
+          "type": "text",
+          "value": "not a valid date phrase"
+        },
+        "operation": "parse then clear error"
+      },
+      "result": {
+        "clear_result": {
+          "type": "absent"
+        },
+        "final_error": {
+          "type": "text",
+          "value": ""
+        },
+        "initial_error": {
+          "type": "text",
+          "value": ""
+        },
+        "parse_error": {
+          "type": "text",
+          "value": "[parse] Invalid date string"
+        },
+        "status": {
+          "type": "number",
+          "value": 1
+        }
+      }
+    },
+    {
+      "case_id": "CFG-OBJECT-KINDS",
+      "feature": "spec/drafts/configuration/object-lifecycle.feature",
+      "operation_id": "object.kind-check",
+      "profile": "current-object",
+      "request": {
+        "operation": "read value kinds",
+        "predicate_order": [
+          "is date value",
+          "is duration value",
+          "is recurrence value"
+        ],
+        "value_kinds": [
+          "date",
+          "duration",
+          "recurrence"
+        ]
+      },
+      "result": {
+        "date": {
+          "is_date_value": true,
+          "is_duration_value": false,
+          "is_recurrence_value": false
+        },
+        "duration": {
+          "is_date_value": false,
+          "is_duration_value": true,
+          "is_recurrence_value": false
+        },
+        "recurrence": {
+          "is_date_value": false,
+          "is_duration_value": false,
+          "is_recurrence_value": true
+        }
+      }
+    },
+    {
+      "case_id": "CFG-CONTEXT-DERIVE",
+      "feature": "spec/drafts/configuration/object-lifecycle.feature",
+      "operation_id": "context.create",
+      "profile": "current-object",
+      "request": {
+        "initial_text": {
+          "type": "omitted"
+        },
+        "numeric_date_order": {
+          "type": "text",
+          "value": "non-US"
+        },
+        "operation": "derive configuration context"
+      },
+      "result": {
+        "derived_kind": "date value",
+        "derived_numeric_date_order": {
+          "type": "text",
+          "value": "non-US"
+        },
+        "source_numeric_date_order": {
+          "type": "text",
+          "value": "US"
+        }
+      }
+    },
+    {
+      "case_id": "CFG-CONTEXT-SERVICES",
+      "feature": "spec/drafts/configuration/object-lifecycle.feature",
+      "operation_id": "context.base-service",
+      "profile": "current-object",
+      "request": {
+        "operation": "read calendar context service availability",
+        "value_kinds": [
+          "date",
+          "duration"
+        ]
+      },
+      "result": {
+        "date_value": {
+          "calendar_context_service_available": true
+        },
+        "duration_value": {
+          "calendar_context_service_available": true
+        }
+      }
+    }
+  ],
+  "reference": "Date-Manip 7.00",
+  "schema_version": 2,
+  "status": "research-to-draft correspondence; not BDD execution or semantic approval"
+}

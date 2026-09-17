@@ -1,0 +1,549 @@
+{
+  "commit": "997c94ee3c946514ec337e6a51d2649ee3ae553e",
+  "files": 67,
+  "exit_code": 0,
+  "stderr": "",
+  "rows": [
+    {
+      "error": null,
+      "expanded_count": 34,
+      "path": "spec/drafts/arithmetic/arithmetic-and-delta.feature",
+      "scenario_count": 18,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 10,
+      "path": "spec/drafts/arithmetic/arithmetic-calculation-modes.feature",
+      "scenario_count": 2,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 18,
+      "path": "spec/drafts/arithmetic/arithmetic-dst-business-edges.feature",
+      "scenario_count": 10,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 22,
+      "path": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+      "scenario_count": 3,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 37,
+      "path": "spec/drafts/calendar-positions.feature",
+      "scenario_count": 7,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 19,
+      "path": "spec/drafts/calendar-validation.feature",
+      "scenario_count": 2,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 33,
+      "path": "spec/drafts/calendar.feature",
+      "scenario_count": 5,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 3,
+      "path": "spec/drafts/completeness/binding-warnings.feature",
+      "scenario_count": 1,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 11,
+      "path": "spec/drafts/completeness/supplied-fields.feature",
+      "scenario_count": 1,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 18,
+      "path": "spec/drafts/config-files/functional-loading.feature",
+      "scenario_count": 18,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 18,
+      "path": "spec/drafts/config-files/loading.feature",
+      "scenario_count": 18,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 35,
+      "path": "spec/drafts/configuration/configuration.feature",
+      "scenario_count": 10,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 5,
+      "path": "spec/drafts/configuration/object-lifecycle.feature",
+      "scenario_count": 5,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 49,
+      "path": "spec/drafts/date-comparison/order.feature",
+      "scenario_count": 3,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 8,
+      "path": "spec/drafts/date-set/date-and-time.feature",
+      "scenario_count": 8,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 6,
+      "path": "spec/drafts/date-set/individual-fields.feature",
+      "scenario_count": 6,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 6,
+      "path": "spec/drafts/date-set/perl-binding.feature",
+      "scenario_count": 6,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 8,
+      "path": "spec/drafts/date-set/zone-and-zoned-date.feature",
+      "scenario_count": 8,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 10,
+      "path": "spec/drafts/day-ordinal/invalid-day.feature",
+      "scenario_count": 2,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 404,
+      "path": "spec/drafts/day-ordinal/legacy-day-ordinal.feature",
+      "scenario_count": 3,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 496,
+      "path": "spec/drafts/day-ordinal/localized-day-ordinal.feature",
+      "scenario_count": 1,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 20,
+      "path": "spec/drafts/day-ordinal/perl-binding.feature",
+      "scenario_count": 2,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 32,
+      "path": "spec/drafts/epoch.feature",
+      "scenario_count": 3,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 7,
+      "path": "spec/drafts/fixed-offsets/fixed-offsets.feature",
+      "scenario_count": 2,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 17,
+      "path": "spec/drafts/input-history/remembered-text.feature",
+      "scenario_count": 17,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 36,
+      "path": "spec/drafts/languages/canonical-dm6.feature",
+      "scenario_count": 3,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 32,
+      "path": "spec/drafts/languages/dm5-comparisons.feature",
+      "scenario_count": 3,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 3,
+      "path": "spec/drafts/languages/perl-binding.feature",
+      "scenario_count": 3,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 45,
+      "path": "spec/drafts/languages/selectors.feature",
+      "scenario_count": 1,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 6,
+      "path": "spec/drafts/navigation/functional-navigation.feature",
+      "scenario_count": 6,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 6,
+      "path": "spec/drafts/navigation/object-navigation.feature",
+      "scenario_count": 6,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 10,
+      "path": "spec/drafts/object-lifecycle/creation-and-context.feature",
+      "scenario_count": 10,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 10,
+      "path": "spec/drafts/object-lifecycle/value-state-and-errors.feature",
+      "scenario_count": 10,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 8,
+      "path": "spec/drafts/parse-cache/full-parse-reset.feature",
+      "scenario_count": 6,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 22,
+      "path": "spec/drafts/parse-cache/partial-mutation-cache.feature",
+      "scenario_count": 9,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 2,
+      "path": "spec/drafts/parse-cache/perl-binding.feature",
+      "scenario_count": 2,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 7,
+      "path": "spec/drafts/parsing/date-text-compatibility.feature",
+      "scenario_count": 2,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 276,
+      "path": "spec/drafts/parsing/date-text.feature",
+      "scenario_count": 3,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 9,
+      "path": "spec/drafts/partial-parsing-edges/date-only-zones-and-gates.feature",
+      "scenario_count": 5,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 18,
+      "path": "spec/drafts/partial-parsing-edges/leading-token-shapes.feature",
+      "scenario_count": 7,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 3,
+      "path": "spec/drafts/partial-parsing-edges/perl-binding-warnings.feature",
+      "scenario_count": 3,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 25,
+      "path": "spec/drafts/partial-parsing-edges/time-only-zones-and-fractions.feature",
+      "scenario_count": 8,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 53,
+      "path": "spec/drafts/partial-parsing/date-and-time-parts.feature",
+      "scenario_count": 8,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 2,
+      "path": "spec/drafts/partial-parsing/leading-tokens-perl-binding.feature",
+      "scenario_count": 1,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 16,
+      "path": "spec/drafts/partial-parsing/leading-tokens.feature",
+      "scenario_count": 8,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 65,
+      "path": "spec/drafts/pattern-parsing/explicit-patterns.feature",
+      "scenario_count": 8,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 9,
+      "path": "spec/drafts/recurrence/enumeration-and-compatibility.feature",
+      "scenario_count": 7,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 24,
+      "path": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "scenario_count": 7,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 4,
+      "path": "spec/drafts/recurrence/lifecycle.feature",
+      "scenario_count": 4,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 32,
+      "path": "spec/drafts/recurrence/modifier-families.feature",
+      "scenario_count": 8,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 1,
+      "path": "spec/drafts/recurrence/perl-binding.feature",
+      "scenario_count": 1,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 4,
+      "path": "spec/drafts/rendering/compatibility-rendering.feature",
+      "scenario_count": 4,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 5,
+      "path": "spec/drafts/rendering/extended-posix-rendering.feature",
+      "scenario_count": 5,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 5,
+      "path": "spec/drafts/rendering/native-rendering.feature",
+      "scenario_count": 5,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 18,
+      "path": "spec/drafts/replace-time/replace-time-portable.feature",
+      "scenario_count": 1,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 26,
+      "path": "spec/drafts/replace-time/replace-time.feature",
+      "scenario_count": 2,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 12,
+      "path": "spec/drafts/value-serialization/compatibility.feature",
+      "scenario_count": 2,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 22,
+      "path": "spec/drafts/value-serialization/join-fields.feature",
+      "scenario_count": 1,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 76,
+      "path": "spec/drafts/value-serialization/perl-binding.feature",
+      "scenario_count": 2,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 36,
+      "path": "spec/drafts/value-serialization/split-fields.feature",
+      "scenario_count": 1,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 52,
+      "path": "spec/drafts/week-rules-edges/base-edge-requests.feature",
+      "scenario_count": 1,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 180,
+      "path": "spec/drafts/week-rules-edges/legacy-overrides.feature",
+      "scenario_count": 1,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 236,
+      "path": "spec/drafts/week-rules-edges/perl-binding.feature",
+      "scenario_count": 1,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 112,
+      "path": "spec/drafts/week-rules/week-rules.feature",
+      "scenario_count": 2,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 24,
+      "path": "spec/drafts/zone-transition-boundaries/instant-boundaries.feature",
+      "scenario_count": 1,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 43,
+      "path": "spec/drafts/zone-transition-boundaries/period-boundaries.feature",
+      "scenario_count": 5,
+      "warnings": []
+    },
+    {
+      "error": null,
+      "expanded_count": 31,
+      "path": "spec/drafts/zones-business/zones-business.feature",
+      "scenario_count": 22,
+      "warnings": []
+    }
+  ],
+  "status": "committed Gherkin syntax snapshot; not BDD execution, semantic approval, or behavioral coverage",
+  "parser_version": "Test::BDD::Cucumber 0.87",
+  "parser_wrapper_sha256": "877af58d119b2f69fc953bc5f0093cdad6238a08b394eceb64bd52f7fd9b8ad3",
+  "feature_sha256": {
+    "spec/drafts/arithmetic/arithmetic-and-delta.feature": "bda9dbacf7328272f422238a655a92d5f72c5f1bdab2d8aaabd9d143109d33b2",
+    "spec/drafts/arithmetic/arithmetic-calculation-modes.feature": "5cb93b4fde9081c12e38d1c1f709662b9cb3ec47f8abd5b8e0caa41e45b25a02",
+    "spec/drafts/arithmetic/arithmetic-dst-business-edges.feature": "4d73a7e849586c5117e51ea0a9e2f261b54d8eeb5c87e408207d58c539ee6de1",
+    "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature": "cfcfcd5f311e2aae191968eda89a916cdadc010e05af7fc97d25f9d5e0efcff5",
+    "spec/drafts/calendar-positions.feature": "650597d7b4458625f717e07f35940b56788536825b4ceaa433907f828bc9d83c",
+    "spec/drafts/calendar-validation.feature": "e3f7ae597439f0134ea76945f8affff1e5d69aae238b9686f8ffa5397e0ad43c",
+    "spec/drafts/calendar.feature": "a34e8f6c6758b537fbfb3d19134208f33359d41d54ccc70380a9e54f6440aea7",
+    "spec/drafts/completeness/binding-warnings.feature": "68fe55a99a3e9a30edf1285dbe715c8945258dc5a0a08bd1e7d9ed891b29d16c",
+    "spec/drafts/completeness/supplied-fields.feature": "f9efdac4d2fe945009c3324fa4e4e682446278e672de7c8e2905381f9b6d3141",
+    "spec/drafts/config-files/functional-loading.feature": "a98061830446999ecd7b291f45ede5ddffe8dd0dcd3623498bd7feb60ad1bca1",
+    "spec/drafts/config-files/loading.feature": "2ac5f9b3fbaab46ca96042eae58fd9db761a2db3547cf665e53ed60a17302e4c",
+    "spec/drafts/configuration/configuration.feature": "c3b9c1e8e1876e8e2ede6aa445e6c07cc7e00a15e86295fbfccb1f64919890a3",
+    "spec/drafts/configuration/object-lifecycle.feature": "ecc2ab85c9cd15b89bbdb78b7647ef247b07caf7bb1effdf244dfee800d31ffe",
+    "spec/drafts/date-comparison/order.feature": "4df9dcbf25ba20270168ba958ff5832bb5099c6999cd22d7a74d894bf90316e4",
+    "spec/drafts/date-set/date-and-time.feature": "1ca24e7547fba0d59ed300ef32ee8b4624feaaede74df402cf4f8b574870997a",
+    "spec/drafts/date-set/individual-fields.feature": "bbdd0bab97711903043b316e57f17e554ff9e69e217ee75fca5032eb0e143d48",
+    "spec/drafts/date-set/perl-binding.feature": "29144e53d3b7a9236f671f38cee6c80dea9557b2b81ce54ef0aedd0710eb98f8",
+    "spec/drafts/date-set/zone-and-zoned-date.feature": "25ac46ee58e7bafae3c077b92741a61dcaa8c681318ba7aa8917e7806e621f75",
+    "spec/drafts/day-ordinal/invalid-day.feature": "d764c7742f19be331048ba20fb26cce3a1b7102d1457b3512d06f95f4a191a5b",
+    "spec/drafts/day-ordinal/legacy-day-ordinal.feature": "cfc586eb09bbb0f2dd729310a09241e847cae523fc4c1e97716d98b6acb35bb3",
+    "spec/drafts/day-ordinal/localized-day-ordinal.feature": "ed709119ec67bf786ff88fa49a6ee2abd7711d0281e8cbe1bc1a043bd4586f41",
+    "spec/drafts/day-ordinal/perl-binding.feature": "59c4953cb08f767bdb4c9992639dc9be428996c21336495812351306a3ab9798",
+    "spec/drafts/epoch.feature": "40e2eb2e1161f2c2dbd546641da3958741b0deeda9757b1d6f2d6f614eaa9975",
+    "spec/drafts/fixed-offsets/fixed-offsets.feature": "55754d9513c9a63d2c48960606cbe8bcbf149db969c677a5dfdf2668d3b03328",
+    "spec/drafts/input-history/remembered-text.feature": "7abc9aa1beb964d5446411e89120022dd85077aa519b18d3a39d516318a775c4",
+    "spec/drafts/languages/canonical-dm6.feature": "86696096a81019c4292cc6c04b22a5da8a0ad11748a75e9f87a48a58dc1ca565",
+    "spec/drafts/languages/dm5-comparisons.feature": "0ab5d1e9156ecc62ff8816d9660591919d2da68ebdc08d142d6f9365235c3992",
+    "spec/drafts/languages/perl-binding.feature": "73865e7ac580da2747ed60ec3ae39e0773275b72c5ec8074a1a471b37ef9c6b0",
+    "spec/drafts/languages/selectors.feature": "b660e28a6b3e5abc89793fcc04cf9cfae2903448b39127251857bedaa0be7d13",
+    "spec/drafts/navigation/functional-navigation.feature": "b28416369b9880b38b1fa21bc9628b5a5d29184f12bda6353c4ca3b9a3967836",
+    "spec/drafts/navigation/object-navigation.feature": "611cc48b3f6a81f3afa01a4bdbb7df4b7bdfc71acc6b89d9ab38e233f9ad93b9",
+    "spec/drafts/object-lifecycle/creation-and-context.feature": "20f401c65ee04995a8a06754cefa7ff648db92e1cd191ba509dee088611b122b",
+    "spec/drafts/object-lifecycle/value-state-and-errors.feature": "c7b0ec23b0bf104030cc23a1cf914ba438108a365a270760bd008aa91ecccc73",
+    "spec/drafts/parse-cache/full-parse-reset.feature": "67f57d5ec7310a39aec6ac2a38eb496006f2f44283656a7e3bda65fe7627b881",
+    "spec/drafts/parse-cache/partial-mutation-cache.feature": "8e273da68af0393585b5b08ae12f840cb59662254cfec3adfa5ab954a29ed4a2",
+    "spec/drafts/parse-cache/perl-binding.feature": "bf1045e2cdebb5ceb722f46d9c9dac9efad9c00d9c5b87aa930dc60bdc98185f",
+    "spec/drafts/parsing/date-text-compatibility.feature": "5fd1862b412b3680202800d0fb68e6617dc611642df2eaa57a02a1caa55ca380",
+    "spec/drafts/parsing/date-text.feature": "eaa72cf9a61433862640f0792cd36480d0d258cb8ade92318388f0f4d4a06010",
+    "spec/drafts/partial-parsing-edges/date-only-zones-and-gates.feature": "f0f143c4128875d77576446b6c74be0d2341956e5ba8d54f83a720bc670cebda",
+    "spec/drafts/partial-parsing-edges/leading-token-shapes.feature": "4656517cfaffce5663c96abd0876019bc11b5b3c797638accd1cc05722e6c4c7",
+    "spec/drafts/partial-parsing-edges/perl-binding-warnings.feature": "002b0e7361c375ac11ff3d3042cd2e283c70d8d22d0531235b91f6df5418c6e0",
+    "spec/drafts/partial-parsing-edges/time-only-zones-and-fractions.feature": "df1278ab443f90c99f82a2253d332469fe9567633945d8ae71fa9d817bf958ea",
+    "spec/drafts/partial-parsing/date-and-time-parts.feature": "a93e4baef82d3f8bbdbb085dd546ec8923790b0f831310d915e828cd8efe1797",
+    "spec/drafts/partial-parsing/leading-tokens-perl-binding.feature": "26f05498be747ac5ff760afb87aa090f35c8e435c50eb59bb3894e91661e0ee8",
+    "spec/drafts/partial-parsing/leading-tokens.feature": "df416dce0727ff803a51dc9f07d1983fa108fe4cf79efc63c041c8f76a718561",
+    "spec/drafts/pattern-parsing/explicit-patterns.feature": "7b16ba4deab63bcd7bc15536626549d744979984a720fc746a75838600325a15",
+    "spec/drafts/recurrence/enumeration-and-compatibility.feature": "0bd5aa9db9c6b5101af9ada37b65436631c49c196c0018b01f139551e5755886",
+    "spec/drafts/recurrence/grammar-and-boundaries.feature": "2cf8aa77733c9748483084cf2a1bfbd3611ec7b3565de26a5e3a6e396f8279b4",
+    "spec/drafts/recurrence/lifecycle.feature": "ab14a29ddbb46110e2c9c51314d3b65b98e9a82ecf940dd1b398e5dc671e190d",
+    "spec/drafts/recurrence/modifier-families.feature": "ca249bfb86effae3bdd32331e858cceb369103ed05c28aade4d76e464a2320b3",
+    "spec/drafts/recurrence/perl-binding.feature": "3db857d6cd6e87d9a9bb388b23df4557a86c5af1384538264f823eacae2ec8f4",
+    "spec/drafts/rendering/compatibility-rendering.feature": "0bd920ae50faefad910ede20322369d4bc0c38eb356d951a12932cec7e9affc2",
+    "spec/drafts/rendering/extended-posix-rendering.feature": "31d72101979e083370572f16e915aaae236afa67bb5447ff0352646bf325557f",
+    "spec/drafts/rendering/native-rendering.feature": "12d3f2f815ca128245db77b7ff82bf574e630f846920d7b19f49487cc6ffec8c",
+    "spec/drafts/replace-time/replace-time-portable.feature": "7362dfe77f46b32d4e3c855dda9a74e0b3f5d20070423a15c698e925b2b9f504",
+    "spec/drafts/replace-time/replace-time.feature": "18b5851ffcc39c4472cbfcebbdab17116814645b5bab287d72a3a6d3e7aca9ef",
+    "spec/drafts/value-serialization/compatibility.feature": "664ad3d77d79d1b59c02b8eb4ce9dd1805d6fadb80b67ab7f7094b361137c62e",
+    "spec/drafts/value-serialization/join-fields.feature": "be4873aa1bc968942a85254a5e95cc5c1c227e2da908d430c66566f386cb5ec9",
+    "spec/drafts/value-serialization/perl-binding.feature": "268f94745f60e952e1079824c4d2d254d4fe3889bae7a557a3db5328e296a233",
+    "spec/drafts/value-serialization/split-fields.feature": "a0e3a8493de4cdd5f0ba708b1f47bf71a34d36ee781a29eef3718ca6d626cd1d",
+    "spec/drafts/week-rules-edges/base-edge-requests.feature": "79480180da31e40e232946828622e3abd3f713dbf5a5e1a775ce34cec50f99c7",
+    "spec/drafts/week-rules-edges/legacy-overrides.feature": "7b658f63c0144612f9e949b7009202ff3aa0f039f06f5b02e7f9fa4423cc4209",
+    "spec/drafts/week-rules-edges/perl-binding.feature": "54c76d04e12d1d2175c40379a0c2edecf63af5831a6d7533f78301e9b35d337b",
+    "spec/drafts/week-rules/week-rules.feature": "c7ef89f43a18c7f94088b84a45458f975eab90f0ae8a149190aa8faa3b39afde",
+    "spec/drafts/zone-transition-boundaries/instant-boundaries.feature": "8b364ed32a66a7869e087c885fe65f3be2baa091d19ec4099f538e34b7fcc9b4",
+    "spec/drafts/zone-transition-boundaries/period-boundaries.feature": "a225f20529565ad6ee8578263961f1e07d7fce1c9c83a1429d7d2f5c43b70eb5",
+    "spec/drafts/zones-business/zones-business.feature": "6b09aad80f5b23a533a1b72c963e430249ff79545d38ef81066d1837bac6d234"
+  }
+}

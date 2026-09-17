@@ -961,3 +961,20 @@ real parser36+32+3+45 pass without warnings. Historical coverage unchanged.
 pattern_repair now owns new calendar month/year-length behavior batch; partial_parsing
 leap-year batch; week_edges_finish final configuration query-order repair. All final
 specification/harness/coverage gates remain open.
+
+## Configuration portability integration and committed syntax snapshot
+
+Root accepted40 typed public configuration/lifecycle rows and one excluded native
+deprecation binding row. All49 profile rows compare to frozen fixtures; no blank
+input/result cells. Kind predicates have named keys/order; service availability
+does not imply identity/sharing. Root replay session95918 terminal exit0 and
+/tmp/configuration-root-final.json byte-equals unchanged evidence. Exact reviewer
+and35+5+1 parser examples pass. Probes/evidence unchanged.
+
+Independent committed-tree parser snapshot at997c94e checks67 features/2932 expanded
+cases, zero errors/warnings, with each blob hash. Persisted in portable-draft-audit/
+parser-snapshot.json; syntax only, no BDD execution or completeness claim.
+
+Workers now pursue new public domains: partial_parsing leap-year, pattern_repair
+month/year lengths, week_edges_finish weekday. No root capture processes remain.
+All final gates remain open.

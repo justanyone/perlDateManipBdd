@@ -176,3 +176,11 @@ legacy module-load warning; that diagnostic remains in the explicit excluded
 binding case. All87 request/outcome checks and both real-parser checks pass.
 Date-set repairs are assigned separately and remain pending. Other findings in
 this report remain open until individually verified; this is not export approval.
+
+## Committed parser snapshot after portability repairs
+
+`parser-snapshot.json` records commit997c94ee3c946514ec337e6a51d2649ee3ae553e:
+67 committed feature files expanded to2932 cases without parser errors or warnings
+using Test::BDD::Cucumber0.87. Each file was read from that Git tree into a temporary
+checkout; active worker edits were excluded. Exact feature hashes and parser-wrapper
+hash are recorded. This is syntax evidence only, not approval or BDD execution.

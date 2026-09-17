@@ -1,0 +1,38 @@
+{
+  "bindings": [
+    {
+      "module": "Date::Manip::Date",
+      "portable_profile": "current-object",
+      "profile": "oo",
+      "public_calls": [
+        "config",
+        "get_config",
+        "err",
+        "parse",
+        "new_config",
+        "new_delta",
+        "new_recur",
+        "is_date",
+        "is_delta",
+        "is_recur",
+        "base"
+      ]
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "portable_profile": "legacy-functional",
+      "profile": "dm5",
+      "public_calls": [
+        "Date_Init"
+      ]
+    }
+  ],
+  "native_diagnostic_assertion": {
+    "case_id": "CFG-DM6-JAN1WEEK1",
+    "feature": "spec/drafts/configuration/perl-binding.feature"
+  },
+  "reference": "Date-Manip 7.00",
+  "return_fidelity": "Empty text, absent return, omitted input, number, boolean, and ordered collection are distinct in portable records. Native warnings remain separate.",
+  "schema_version": 2,
+  "status": "research-only source binding map; excluded from portable implementation handoff"
+}
