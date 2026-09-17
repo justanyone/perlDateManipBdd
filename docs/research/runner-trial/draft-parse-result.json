@@ -1,0 +1,308 @@
+{
+  "status": "syntax only; no steps executed",
+  "parser": "Test::BDD::Cucumber::Parser0.87",
+  "scope": "tracked spec/drafts feature files at base commit776402f plus untyped-docstring repair",
+  "feature_count": 37,
+  "scenario_count": 251,
+  "expanded_count": 1047,
+  "malformed_syntax_returns_nonzero": true,
+  "features": [
+    {
+      "error": null,
+      "expanded_count": 34,
+      "path": "spec/drafts/arithmetic/arithmetic-and-delta.feature",
+      "scenario_count": 18,
+      "warnings": [],
+      "sha256": "b9ca6998432fd79c392ed5746e55956ee28f12d9e91dccc46453c5054f19c69e"
+    },
+    {
+      "error": null,
+      "expanded_count": 10,
+      "path": "spec/drafts/arithmetic/arithmetic-calculation-modes.feature",
+      "scenario_count": 2,
+      "warnings": [],
+      "sha256": "b8a4debf6efbfb955eb3c1ffa77ef5d88e08362ceacb2f3b1c5018b4c018a015"
+    },
+    {
+      "error": null,
+      "expanded_count": 17,
+      "path": "spec/drafts/arithmetic/arithmetic-dst-business-edges.feature",
+      "scenario_count": 9,
+      "warnings": [],
+      "sha256": "d07a40d2ada3659949aeb5f4b75f98e5ffbf22dbbdbf48854f203f16329e3e05"
+    },
+    {
+      "error": null,
+      "expanded_count": 22,
+      "path": "spec/drafts/arithmetic/delta-grammar-and-format-matrix.feature",
+      "scenario_count": 3,
+      "warnings": [],
+      "sha256": "af4127afa0430bced91c551603bfff366d6f855b5e56e7ec152352e3e7845e7e"
+    },
+    {
+      "error": null,
+      "expanded_count": 37,
+      "path": "spec/drafts/calendar-positions.feature",
+      "scenario_count": 7,
+      "warnings": [],
+      "sha256": "650597d7b4458625f717e07f35940b56788536825b4ceaa433907f828bc9d83c"
+    },
+    {
+      "error": null,
+      "expanded_count": 19,
+      "path": "spec/drafts/calendar-validation.feature",
+      "scenario_count": 2,
+      "warnings": [],
+      "sha256": "e3f7ae597439f0134ea76945f8affff1e5d69aae238b9686f8ffa5397e0ad43c"
+    },
+    {
+      "error": null,
+      "expanded_count": 33,
+      "path": "spec/drafts/calendar.feature",
+      "scenario_count": 5,
+      "warnings": [],
+      "sha256": "a34e8f6c6758b537fbfb3d19134208f33359d41d54ccc70380a9e54f6440aea7"
+    },
+    {
+      "error": null,
+      "expanded_count": 36,
+      "path": "spec/drafts/config-files/loading.feature",
+      "scenario_count": 18,
+      "warnings": [],
+      "sha256": "db22ac5caa7134d3ede821d4b1cafbeef0a88ad01006b057db5330bafd49242a"
+    },
+    {
+      "error": null,
+      "expanded_count": 35,
+      "path": "spec/drafts/configuration/configuration.feature",
+      "scenario_count": 10,
+      "warnings": [],
+      "sha256": "c3b9c1e8e1876e8e2ede6aa445e6c07cc7e00a15e86295fbfccb1f64919890a3"
+    },
+    {
+      "error": null,
+      "expanded_count": 5,
+      "path": "spec/drafts/configuration/object-lifecycle.feature",
+      "scenario_count": 5,
+      "warnings": [],
+      "sha256": "ecc2ab85c9cd15b89bbdb78b7647ef247b07caf7bb1effdf244dfee800d31ffe"
+    },
+    {
+      "error": null,
+      "expanded_count": 32,
+      "path": "spec/drafts/epoch.feature",
+      "scenario_count": 3,
+      "warnings": [],
+      "sha256": "40e2eb2e1161f2c2dbd546641da3958741b0deeda9757b1d6f2d6f614eaa9975"
+    },
+    {
+      "error": null,
+      "expanded_count": 16,
+      "path": "spec/drafts/input-history/remembered-text.feature",
+      "scenario_count": 16,
+      "warnings": [],
+      "sha256": "6f2319979d9ea92ee8cc2e7110185e2d37fc1f9044ec4eeb7ba0adfc08095d49"
+    },
+    {
+      "error": null,
+      "expanded_count": 36,
+      "path": "spec/drafts/languages/canonical-dm6.feature",
+      "scenario_count": 3,
+      "warnings": [],
+      "sha256": "4c519bdbc93e1e6b2843b80babd6e7900a83a63844b47997cd3176cd0ecf9a06"
+    },
+    {
+      "error": null,
+      "expanded_count": 32,
+      "path": "spec/drafts/languages/dm5-comparisons.feature",
+      "scenario_count": 2,
+      "warnings": [],
+      "sha256": "472f88c27ad0875d1c5664a0c102e9d43e8ae013329df586ec028aa68f0f29c9"
+    },
+    {
+      "error": null,
+      "expanded_count": 45,
+      "path": "spec/drafts/languages/selectors.feature",
+      "scenario_count": 1,
+      "warnings": [],
+      "sha256": "b660e28a6b3e5abc89793fcc04cf9cfae2903448b39127251857bedaa0be7d13"
+    },
+    {
+      "error": null,
+      "expanded_count": 10,
+      "path": "spec/drafts/object-lifecycle/creation-and-context.feature",
+      "scenario_count": 10,
+      "warnings": [],
+      "sha256": "b31623700ad4d4b7bc9b1171c31a795bda0a328d5f31cce99da58467439da585"
+    },
+    {
+      "error": null,
+      "expanded_count": 10,
+      "path": "spec/drafts/object-lifecycle/value-state-and-errors.feature",
+      "scenario_count": 10,
+      "warnings": [],
+      "sha256": "ace54f1d4d724b9e18f22e312b835951c36f33989684bae7b235709889534340"
+    },
+    {
+      "error": null,
+      "expanded_count": 8,
+      "path": "spec/drafts/parse-cache/full-parse-reset.feature",
+      "scenario_count": 4,
+      "warnings": [],
+      "sha256": "7df857fd7e3ca89237d6140a329de23c0b0e2ea5e1cdc885b43fdd2b26cf4e3b"
+    },
+    {
+      "error": null,
+      "expanded_count": 22,
+      "path": "spec/drafts/parse-cache/partial-mutation-cache.feature",
+      "scenario_count": 9,
+      "warnings": [],
+      "sha256": "3958a9b9077fff83705c6088915f7fc998fab184d65605c480cf5272bb161935"
+    },
+    {
+      "error": null,
+      "expanded_count": 7,
+      "path": "spec/drafts/parsing/date-text-compatibility.feature",
+      "scenario_count": 2,
+      "warnings": [],
+      "sha256": "5fd1862b412b3680202800d0fb68e6617dc611642df2eaa57a02a1caa55ca380"
+    },
+    {
+      "error": null,
+      "expanded_count": 276,
+      "path": "spec/drafts/parsing/date-text.feature",
+      "scenario_count": 2,
+      "warnings": [],
+      "sha256": "10dc2e4306620ec5969edf75c83cc40dac54bf012798a56563c23cf924c7db8a"
+    },
+    {
+      "error": null,
+      "expanded_count": 9,
+      "path": "spec/drafts/partial-parsing-edges/date-only-zones-and-gates.feature",
+      "scenario_count": 5,
+      "warnings": [],
+      "sha256": "f0f143c4128875d77576446b6c74be0d2341956e5ba8d54f83a720bc670cebda"
+    },
+    {
+      "error": null,
+      "expanded_count": 18,
+      "path": "spec/drafts/partial-parsing-edges/leading-token-shapes.feature",
+      "scenario_count": 7,
+      "warnings": [],
+      "sha256": "4656517cfaffce5663c96abd0876019bc11b5b3c797638accd1cc05722e6c4c7"
+    },
+    {
+      "error": null,
+      "expanded_count": 3,
+      "path": "spec/drafts/partial-parsing-edges/perl-binding-warnings.feature",
+      "scenario_count": 3,
+      "warnings": [],
+      "sha256": "002b0e7361c375ac11ff3d3042cd2e283c70d8d22d0531235b91f6df5418c6e0"
+    },
+    {
+      "error": null,
+      "expanded_count": 25,
+      "path": "spec/drafts/partial-parsing-edges/time-only-zones-and-fractions.feature",
+      "scenario_count": 8,
+      "warnings": [],
+      "sha256": "df1278ab443f90c99f82a2253d332469fe9567633945d8ae71fa9d817bf958ea"
+    },
+    {
+      "error": null,
+      "expanded_count": 53,
+      "path": "spec/drafts/partial-parsing/date-and-time-parts.feature",
+      "scenario_count": 8,
+      "warnings": [],
+      "sha256": "a93e4baef82d3f8bbdbb085dd546ec8923790b0f831310d915e828cd8efe1797"
+    },
+    {
+      "error": null,
+      "expanded_count": 2,
+      "path": "spec/drafts/partial-parsing/leading-tokens-perl-binding.feature",
+      "scenario_count": 1,
+      "warnings": [],
+      "sha256": "26f05498be747ac5ff760afb87aa090f35c8e435c50eb59bb3894e91661e0ee8"
+    },
+    {
+      "error": null,
+      "expanded_count": 16,
+      "path": "spec/drafts/partial-parsing/leading-tokens.feature",
+      "scenario_count": 8,
+      "warnings": [],
+      "sha256": "df416dce0727ff803a51dc9f07d1983fa108fe4cf79efc63c041c8f76a718561"
+    },
+    {
+      "error": null,
+      "expanded_count": 65,
+      "path": "spec/drafts/pattern-parsing/explicit-patterns.feature",
+      "scenario_count": 8,
+      "warnings": [],
+      "sha256": "7b16ba4deab63bcd7bc15536626549d744979984a720fc746a75838600325a15"
+    },
+    {
+      "error": null,
+      "expanded_count": 9,
+      "path": "spec/drafts/recurrence/enumeration-and-compatibility.feature",
+      "scenario_count": 7,
+      "warnings": [],
+      "sha256": "b2c5f49c70881b7697c95ce73eb79b2b9ad82e665fa626506c437411c885ee0a"
+    },
+    {
+      "error": null,
+      "expanded_count": 24,
+      "path": "spec/drafts/recurrence/grammar-and-boundaries.feature",
+      "scenario_count": 7,
+      "warnings": [],
+      "sha256": "30318c2b08dadca9845a6a4abad733ca45b02103878018592f234bd15d8c5911"
+    },
+    {
+      "error": null,
+      "expanded_count": 4,
+      "path": "spec/drafts/recurrence/lifecycle.feature",
+      "scenario_count": 4,
+      "warnings": [],
+      "sha256": "ab14a29ddbb46110e2c9c51314d3b65b98e9a82ecf940dd1b398e5dc671e190d"
+    },
+    {
+      "error": null,
+      "expanded_count": 32,
+      "path": "spec/drafts/recurrence/modifier-families.feature",
+      "scenario_count": 8,
+      "warnings": [],
+      "sha256": "3c6202dd5724702af334363ccf5ae49825c3678213bd11e04b7488ec7d3a61a7"
+    },
+    {
+      "error": null,
+      "expanded_count": 4,
+      "path": "spec/drafts/rendering/compatibility-rendering.feature",
+      "scenario_count": 4,
+      "warnings": [],
+      "sha256": "0bd920ae50faefad910ede20322369d4bc0c38eb356d951a12932cec7e9affc2"
+    },
+    {
+      "error": null,
+      "expanded_count": 5,
+      "path": "spec/drafts/rendering/extended-posix-rendering.feature",
+      "scenario_count": 5,
+      "warnings": [],
+      "sha256": "3bc8fbfccad077766709bc5703f6aa10c1b42cc6f925f63106f6ef0b35f1f54f"
+    },
+    {
+      "error": null,
+      "expanded_count": 5,
+      "path": "spec/drafts/rendering/native-rendering.feature",
+      "scenario_count": 5,
+      "warnings": [],
+      "sha256": "12d3f2f815ca128245db77b7ff82bf574e630f846920d7b19f49487cc6ffec8c"
+    },
+    {
+      "error": null,
+      "expanded_count": 31,
+      "path": "spec/drafts/zones-business/zones-business.feature",
+      "scenario_count": 22,
+      "warnings": [],
+      "sha256": "6b09aad80f5b23a533a1b72c963e430249ff79545d38ef81066d1837bac6d234"
+    }
+  ],
+  "audit_script_sha256": "877af58d119b2f69fc953bc5f0093cdad6238a08b394eceb64bd52f7fd9b8ad3"
+}

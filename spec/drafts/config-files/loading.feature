@@ -14,7 +14,7 @@ Feature: Load configuration files through public configuration requests
   Scenario Outline: An empty file leaves the date order unchanged for <case>
     Given the "<profile>" public configuration profile
     And file "main.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       ""
       """
     When I apply these settings in the stated order:
@@ -35,7 +35,7 @@ Feature: Load configuration files through public configuration requests
   Scenario Outline: Blank lines and whole-line comments are ignored for <case>
     Given the "<profile>" public configuration profile
     And file "main.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "\n  # Original fixture comment\n\t\n"
       """
     When I apply these settings in the stated order:
@@ -56,7 +56,7 @@ Feature: Load configuration files through public configuration requests
   Scenario Outline: A file changes numeric date order for <case>
     Given the "<profile>" public configuration profile
     And file "main.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "DateFormat=non-US\n"
       """
     When I apply these settings in the stated order:
@@ -77,7 +77,7 @@ Feature: Load configuration files through public configuration requests
   Scenario Outline: Names and surrounding whitespace accept mixed case and CRLF for <case>
     Given the "<profile>" public configuration profile
     And file "main.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "  dAtEfOrMaT  =  non-US \r\n"
       """
     When I apply these settings in the stated order:
@@ -98,7 +98,7 @@ Feature: Load configuration files through public configuration requests
   Scenario Outline: The last assignment in a file wins for <case>
     Given the "<profile>" public configuration profile
     And file "main.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "DateFormat=non-US\nDateFormat=US\n"
       """
     When I apply these settings in the stated order:
@@ -119,7 +119,7 @@ Feature: Load configuration files through public configuration requests
   Scenario Outline: A later direct setting overrides the file for <case>
     Given the "<profile>" public configuration profile
     And file "main.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "DateFormat=non-US\n"
       """
     When I apply these settings in the stated order:
@@ -141,7 +141,7 @@ Feature: Load configuration files through public configuration requests
   Scenario Outline: A later file overrides a direct setting for <case>
     Given the "<profile>" public configuration profile
     And file "main.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "DateFormat=non-US\n"
       """
     When I apply these settings in the stated order:
@@ -163,11 +163,11 @@ Feature: Load configuration files through public configuration requests
   Scenario Outline: An included file takes effect immediately for <case>
     Given the "<profile>" public configuration profile
     And file "main.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "DateFormat=US\nConfigFile=child.cnf\n"
       """
     And file "child.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "DateFormat=non-US\n"
       """
     When I apply these settings in the stated order:
@@ -188,11 +188,11 @@ Feature: Load configuration files through public configuration requests
   Scenario Outline: The including file resumes after an included file for <case>
     Given the "<profile>" public configuration profile
     And file "main.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "DateFormat=US\nConfigFile=child.cnf\nDateFormat=US\n"
       """
     And file "child.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "DateFormat=non-US\n"
       """
     When I apply these settings in the stated order:
@@ -213,11 +213,11 @@ Feature: Load configuration files through public configuration requests
   Scenario Outline: Later files override earlier files for <case>
     Given the "<profile>" public configuration profile
     And file "main.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "DateFormat=non-US\n"
       """
     And file "child.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "DateFormat=US\n"
       """
     When I apply these settings in the stated order:
@@ -275,7 +275,7 @@ Feature: Load configuration files through public configuration requests
   Scenario Outline: An invalid line stops loading after earlier settings took effect for <case>
     Given the "<profile>" public configuration profile
     And file "main.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "DateFormat=non-US\nnot an assignment\nDateFormat=US\n"
       """
     When I apply these settings in the stated order:
@@ -297,7 +297,7 @@ Feature: Load configuration files through public configuration requests
   Scenario Outline: Trailing hash text is retained as part of a setting value for <case>
     Given the "<profile>" public configuration profile
     And file "main.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "DateFormat=non-US # fixture comment\n"
       """
     When I apply these settings in the stated order:
@@ -319,7 +319,7 @@ Feature: Load configuration files through public configuration requests
   Scenario Outline: Quotation marks are retained in a setting value for <case>
     Given the "<profile>" public configuration profile
     And file "main.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "DateFormat=\"non-US\"\n"
       """
     When I apply these settings in the stated order:
@@ -340,7 +340,7 @@ Feature: Load configuration files through public configuration requests
   Scenario Outline: An unknown setting warns while later settings are read for <case>
     Given the "<profile>" public configuration profile
     And file "main.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "NotASetting=example\nDateFormat=non-US\n"
       """
     When I apply these settings in the stated order:
@@ -361,7 +361,7 @@ Feature: Load configuration files through public configuration requests
   Scenario Outline: An unknown section warns and a later configuration section is read for <case>
     Given the "<profile>" public configuration profile
     And file "main.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "*FixtureNotes\nNote=original text\n*Conf\nDateFormat=non-US\n"
       """
     When I apply these settings in the stated order:
@@ -382,7 +382,7 @@ Feature: Load configuration files through public configuration requests
   Scenario Outline: Configuration section names accept mixed case for <case>
     Given the "<profile>" public configuration profile
     And file "main.cnf" contains the UTF-8 text decoded from this JSON string:
-      """json
+      """
       "*cOnF\nDateFormat=non-US\n"
       """
     When I apply these settings in the stated order:

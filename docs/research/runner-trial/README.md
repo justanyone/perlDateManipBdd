@@ -54,3 +54,24 @@ The49 dependency distributions also built and tested successfully.
 metadata. `trial-result.json` records the verified original trial counts, statuses
 and tool hashes. These are runner-capability results, not Date::Manip BDD passes.
 The Date::Manip adapter and whole-library coverage gates remain incomplete.
+
+## Draft syntax audit
+
+The public runner parser accepted all37 tracked draft files after replacing19
+unsupported typed docstring markers (`"""json`) with plain `"""` markers in
+configuration-file features. JSON contents and English instructions are unchanged;
+the existing36-case literal checker still verifies the exact decoded file bytes.
+The audit counted251 scenario declarations and1,047 expanded scenarios. This
+snapshot predates subsequent worker integrations and makes no semantic claim.
+A temporary malformed typed-docstring control returned a nonzero status, proving
+that parser errors make the audit fail.
+
+Invoke the public parser audit with explicit feature paths:
+
+```sh
+PERL5LIB="$PWD/local/bdd-runner/lib/perl5" \
+  perl tools/runner-trial/parse-features.pl spec/drafts/config-files/loading.feature
+```
+
+`draft-parse-result.json` records each parsed file hash. An in-progress worker's
+later edits invalidate that file's recorded syntax snapshot until it is rechecked.

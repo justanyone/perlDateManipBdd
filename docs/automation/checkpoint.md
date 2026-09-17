@@ -524,3 +524,18 @@ Worker state: date-set still active; fixed-offset408module batch returned and
 awaits root review. coverage_setup now repairs input-history provenance/bindings
 from independent report. pattern_repair repairs zone-transition row IDs/context
 after returning8cases. No workers edit root runner-trial paths.
+
+## Real-parser draft audit
+
+The pinned runner public parser now audits feature syntax. It found19 unsupported
+typed-docstring markers in configuration-file drafts. Root changed markers only
+to plain triple quotes and updated the36case literal checker; decoded file bytes
+and expectations still match. All37tracked features parse:251 declarations,1047
+expanded scenarios. Temporary malformed syntax correctly exits1. Snapshot hashes
+are in runner-trial/draft-parse-result.json; active worker edits may supersede
+their file snapshots. These counts are syntax evidence, not executed BDD cases.
+
+Date-set108case batch returned and awaits independent/root review. partial_parsing
+now independently reviews67zone-transition examples; pattern_repair independently
+reviews408offset loading evidence; coverage_setup repairs input-history findings.
+Keep returned batch paths separate from active repair ownership.

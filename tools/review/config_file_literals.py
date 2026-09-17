@@ -10,7 +10,7 @@ for path,digest in doc['sha256'].items():assert hashlib.sha256((R/path).read_byt
 text=(R/mapping['feature']).read_text();seen=[]
 for block in text.split('  Scenario Outline: ')[1:]:
  before,examples=block.split('    Examples:')
- files={name:json.loads(body) for name,body in re.findall(r'And file "([^"]+)" contains.*?\n      """json\n      (.*?)\n      """',before,re.S)}
+ files={name:json.loads(body) for name,body in re.findall(r'And file "([^"]+)" contains.*?\n      """\n      (.*?)\n      """',before,re.S)}
  settings=[]
  for line in before.splitlines():
   if line.strip().startswith('|'):
