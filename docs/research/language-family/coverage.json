@@ -14,7 +14,10 @@
     "inventory": "docs/research/language-family/selectors.tsv",
     "observations": "docs/research/language-family/selector-observations.json",
     "count": 45,
-    "relationship": "Each selector row maps to one of the same 16 stable lang.* IDs. The canonical runtime corpus does not rerun aliases."
+    "relationship": "Canonical and alias selectors each configure, parse an original localized full date and render weekday/month names in two fresh processes; otherprofiles/domains remain open.",
+    "feature_map": "docs/research/language-family/selector-feature-map.json",
+    "draft_cases": 45,
+    "profile": "OO UTF-8"
   },
   "runtime_operation_plan_for_initialized_rows": [
     "date.parse-text through the DM6 object profile, or date.parse-leading-tokens through DM5, for one localized full date",
@@ -24,7 +27,11 @@
   ],
   "dm5_initialization_failures": {
     "row_count": 6,
-    "languages": ["lang.catalan", "lang.finnish", "lang.norwegian"],
+    "languages": [
+      "lang.catalan",
+      "lang.finnish",
+      "lang.norwegian"
+    ],
     "dependent_operations_executed": false
   },
   "special_preprocessing_languages": [
@@ -34,14 +41,41 @@
     "lang.turkish"
   ],
   "special_preprocessing_case_map": [
-    {"language_id":"lang.german","dm6_utf8_case_id":"LANG-DM6-UTF8-german-PREPROCESS","dm5_case_ids":["LANG-DM5-LEGACY-DEFAULT-german-PREPROCESS","LANG-DM5-LEGACY-INTERNATIONAL-german-PREPROCESS"]},
-    {"language_id":"lang.norwegian","dm6_utf8_case_id":"LANG-DM6-UTF8-norwegian-PREPROCESS","dm5_case_ids":[],"dm5_reason":"initialization failed, so no preprocessing call was made"},
-    {"language_id":"lang.russian","dm6_utf8_case_id":"LANG-DM6-UTF8-russian-PREPROCESS","dm5_case_ids":["LANG-DM5-LEGACY-DEFAULT-russian-PREPROCESS","LANG-DM5-LEGACY-INTERNATIONAL-russian-PREPROCESS"]},
-    {"language_id":"lang.turkish","dm6_utf8_case_id":"LANG-DM6-UTF8-turkish-PREPROCESS","dm5_case_ids":["LANG-DM5-LEGACY-DEFAULT-turkish-PREPROCESS","LANG-DM5-LEGACY-INTERNATIONAL-turkish-PREPROCESS"]}
+    {
+      "language_id": "lang.german",
+      "dm6_utf8_case_id": "LANG-DM6-UTF8-german-PREPROCESS",
+      "dm5_case_ids": [
+        "LANG-DM5-LEGACY-DEFAULT-german-PREPROCESS",
+        "LANG-DM5-LEGACY-INTERNATIONAL-german-PREPROCESS"
+      ]
+    },
+    {
+      "language_id": "lang.norwegian",
+      "dm6_utf8_case_id": "LANG-DM6-UTF8-norwegian-PREPROCESS",
+      "dm5_case_ids": [],
+      "dm5_reason": "initialization failed, so no preprocessing call was made"
+    },
+    {
+      "language_id": "lang.russian",
+      "dm6_utf8_case_id": "LANG-DM6-UTF8-russian-PREPROCESS",
+      "dm5_case_ids": [
+        "LANG-DM5-LEGACY-DEFAULT-russian-PREPROCESS",
+        "LANG-DM5-LEGACY-INTERNATIONAL-russian-PREPROCESS"
+      ]
+    },
+    {
+      "language_id": "lang.turkish",
+      "dm6_utf8_case_id": "LANG-DM6-UTF8-turkish-PREPROCESS",
+      "dm5_case_ids": [
+        "LANG-DM5-LEGACY-DEFAULT-turkish-PREPROCESS",
+        "LANG-DM5-LEGACY-INTERNATIONAL-turkish-PREPROCESS"
+      ]
+    }
   ],
   "draft_features": [
     "spec/drafts/languages/canonical-dm6.feature",
-    "spec/drafts/languages/dm5-comparisons.feature"
+    "spec/drafts/languages/dm5-comparisons.feature",
+    "spec/drafts/languages/selectors.feature"
   ],
   "remaining_boundary_source": "docs/research/language-family/README.md"
 }

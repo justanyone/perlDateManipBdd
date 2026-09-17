@@ -102,5 +102,27 @@ for row in table_rows(ROOT / 'spec/drafts/languages/dm5-comparisons.feature'):
         assert row['special input'] == special['input'] and row['special result'] == civil(special['value']), case
     assert int(row['warning count']) == len(record['warnings']), case
 assert len(seen) == 68
+selector_document=json.loads((FAMILY/'selector-observations.json').read_text())
+for path,digest in selector_document['sha256'].items():
+    assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest,path
+selectors={r['selector']:r for r in selector_document['observations']}
+selector_map=json.loads((FAMILY/'selector-feature-map.json').read_text())
+by_case={r['case_id']:r for r in selector_map['cases']}
+assert len(selectors)==len(by_case)==45
+selector_count=0
+for row in table_rows(ROOT/'spec/drafts/languages/selectors.feature'):
+    selector_count+=1
+    mapped=by_case[row['case']]
+    assert mapped['selector']==row['selector']
+    wrapper=selectors[row['selector']];o=wrapper['observation']
+    assert wrapper['repeatable'] and wrapper['exit_status']==0 and wrapper['stderr']==''
+    assert o['exception'] is None and o['warnings']==[] and o['call_stdout']==''
+    assert o['canonical']==row['language'] and o['selected_language']==row['selector']
+    assert o['request']=={'text':row['input'],'pattern':'%A|%B'}
+    assert o['parse_status']==0 and o['parse_error']==o['error_after_value']==o['error_after_render']==''
+    assert o['configuration_return'] is None and o['configuration_error']==''
+    assert o['dependent_reads_executed'] and o['value']=='2040022900:00:00'
+    assert o['rendered']==row['weekday']+'|'+row['month']
+assert selector_count==45
 print(json.dumps({'reference_records_checked':len(records), 'draft_rows_checked':len(seen),
-                  'approved_specification_cases':0}, indent=2))
+                  'selector_rows_checked':selector_count,'approved_specification_cases':0}, indent=2))

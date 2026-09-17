@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "feature": "spec/drafts/languages/selectors.feature",
+  "status": "draft; not approved",
+  "public_bindings": {
+    "config.apply-settings": "Date::Manip::Obj::config",
+    "config.read-settings": "Date::Manip::Obj::get_config",
+    "date.parse-text": "Date::Manip::Date::parse",
+    "date.read-value": "Date::Manip::Date::value in scalar context",
+    "date.render-pattern": "Date::Manip::Date::printf in scalar context"
+  },
+  "cases": [
+    {
+      "case_id": "LANG-SELECT-01",
+      "selector": "Catalan",
+      "language_id": "lang.catalan",
+      "reference_record": "selector-observations.json: selector=Catalan"
+    },
+    {
+      "case_id": "LANG-SELECT-02",
+      "selector": "ca",
+      "language_id": "lang.catalan",
+      "reference_record": "selector-observations.json: selector=ca"
+    },
+    {
+      "case_id": "LANG-SELECT-03",
+      "selector": "Danish",
+      "language_id": "lang.danish",
+      "reference_record": "selector-observations.json: selector=Danish"
+    },
+    {
+      "case_id": "LANG-SELECT-04",
+      "selector": "da",
+      "language_id": "lang.danish",
+      "reference_record": "selector-observations.json: selector=da"
+    },
+    {
+      "case_id": "LANG-SELECT-05",
+      "selector": "Dutch",
+      "language_id": "lang.dutch",
+      "reference_record": "selector-observations.json: selector=Dutch"
+    },
+    {
+      "case_id": "LANG-SELECT-06",
+      "selector": "Nederlands",
+      "language_id": "lang.dutch",
+      "reference_record": "selector-observations.json: selector=Nederlands"
+    },
+    {
+      "case_id": "LANG-SELECT-07",
+      "selector": "nl",
+      "language_id": "lang.dutch",
+      "reference_record": "selector-observations.json: selector=nl"
+    },
+    {
+      "case_id": "LANG-SELECT-08",
+      "selector": "English",
+      "language_id": "lang.english",
+      "reference_record": "selector-observations.json: selector=English"
+    },
+    {
+      "case_id": "LANG-SELECT-09",
+      "selector": "en",
+      "language_id": "lang.english",
+      "reference_record": "selector-observations.json: selector=en"
+    },
+    {
+      "case_id": "LANG-SELECT-10",
+      "selector": "en_us",
+      "language_id": "lang.english",
+      "reference_record": "selector-observations.json: selector=en_us"
+    },
+    {
+      "case_id": "LANG-SELECT-11",
+      "selector": "Finnish",
+      "language_id": "lang.finnish",
+      "reference_record": "selector-observations.json: selector=Finnish"
+    },
+    {
+      "case_id": "LANG-SELECT-12",
+      "selector": "fi",
+      "language_id": "lang.finnish",
+      "reference_record": "selector-observations.json: selector=fi"
+    },
+    {
+      "case_id": "LANG-SELECT-13",
+      "selector": "fi_fi",
+      "language_id": "lang.finnish",
+      "reference_record": "selector-observations.json: selector=fi_fi"
+    },
+    {
+      "case_id": "LANG-SELECT-14",
+      "selector": "French",
+      "language_id": "lang.french",
+      "reference_record": "selector-observations.json: selector=French"
+    },
+    {
+      "case_id": "LANG-SELECT-15",
+      "selector": "fr",
+      "language_id": "lang.french",
+      "reference_record": "selector-observations.json: selector=fr"
+    },
+    {
+      "case_id": "LANG-SELECT-16",
+      "selector": "fr_fr",
+      "language_id": "lang.french",
+      "reference_record": "selector-observations.json: selector=fr_fr"
+    },
+    {
+      "case_id": "LANG-SELECT-17",
+      "selector": "German",
+      "language_id": "lang.german",
+      "reference_record": "selector-observations.json: selector=German"
+    },
+    {
+      "case_id": "LANG-SELECT-18",
+      "selector": "de",
+      "language_id": "lang.german",
+      "reference_record": "selector-observations.json: selector=de"
+    },
+    {
+      "case_id": "LANG-SELECT-19",
+      "selector": "de_de",
+      "language_id": "lang.german",
+      "reference_record": "selector-observations.json: selector=de_de"
+    },
+    {
+      "case_id": "LANG-SELECT-20",
+      "selector": "Italian",
+      "language_id": "lang.italian",
+      "reference_record": "selector-observations.json: selector=Italian"
+    },
+    {
+      "case_id": "LANG-SELECT-21",
+      "selector": "it",
+      "language_id": "lang.italian",
+      "reference_record": "selector-observations.json: selector=it"
+    },
+    {
+      "case_id": "LANG-SELECT-22",
+      "selector": "it_it",
+      "language_id": "lang.italian",
+      "reference_record": "selector-observations.json: selector=it_it"
+    },
+    {
+      "case_id": "LANG-SELECT-23",
+      "selector": "Norwegian",
+      "language_id": "lang.norwegian",
+      "reference_record": "selector-observations.json: selector=Norwegian"
+    },
+    {
+      "case_id": "LANG-SELECT-24",
+      "selector": "nb",
+      "language_id": "lang.norwegian",
+      "reference_record": "selector-observations.json: selector=nb"
+    },
+    {
+      "case_id": "LANG-SELECT-25",
+      "selector": "nb_no",
+      "language_id": "lang.norwegian",
+      "reference_record": "selector-observations.json: selector=nb_no"
+    },
+    {
+      "case_id": "LANG-SELECT-26",
+      "selector": "Polish",
+      "language_id": "lang.polish",
+      "reference_record": "selector-observations.json: selector=Polish"
+    },
+    {
+      "case_id": "LANG-SELECT-27",
+      "selector": "pl",
+      "language_id": "lang.polish",
+      "reference_record": "selector-observations.json: selector=pl"
+    },
+    {
+      "case_id": "LANG-SELECT-28",
+      "selector": "pl_pl",
+      "language_id": "lang.polish",
+      "reference_record": "selector-observations.json: selector=pl_pl"
+    },
+    {
+      "case_id": "LANG-SELECT-29",
+      "selector": "Portuguese",
+      "language_id": "lang.portuguese",
+      "reference_record": "selector-observations.json: selector=Portuguese"
+    },
+    {
+      "case_id": "LANG-SELECT-30",
+      "selector": "pt",
+      "language_id": "lang.portuguese",
+      "reference_record": "selector-observations.json: selector=pt"
+    },
+    {
+      "case_id": "LANG-SELECT-31",
+      "selector": "pt_pt",
+      "language_id": "lang.portuguese",
+      "reference_record": "selector-observations.json: selector=pt_pt"
+    },
+    {
+      "case_id": "LANG-SELECT-32",
+      "selector": "Romanian",
+      "language_id": "lang.romanian",
+      "reference_record": "selector-observations.json: selector=Romanian"
+    },
+    {
+      "case_id": "LANG-SELECT-33",
+      "selector": "ro",
+      "language_id": "lang.romanian",
+      "reference_record": "selector-observations.json: selector=ro"
+    },
+    {
+      "case_id": "LANG-SELECT-34",
+      "selector": "ro_ro",
+      "language_id": "lang.romanian",
+      "reference_record": "selector-observations.json: selector=ro_ro"
+    },
+    {
+      "case_id": "LANG-SELECT-35",
+      "selector": "Russian",
+      "language_id": "lang.russian",
+      "reference_record": "selector-observations.json: selector=Russian"
+    },
+    {
+      "case_id": "LANG-SELECT-36",
+      "selector": "ru",
+      "language_id": "lang.russian",
+      "reference_record": "selector-observations.json: selector=ru"
+    },
+    {
+      "case_id": "LANG-SELECT-37",
+      "selector": "ru_ru",
+      "language_id": "lang.russian",
+      "reference_record": "selector-observations.json: selector=ru_ru"
+    },
+    {
+      "case_id": "LANG-SELECT-38",
+      "selector": "Spanish",
+      "language_id": "lang.spanish",
+      "reference_record": "selector-observations.json: selector=Spanish"
+    },
+    {
+      "case_id": "LANG-SELECT-39",
+      "selector": "es",
+      "language_id": "lang.spanish",
+      "reference_record": "selector-observations.json: selector=es"
+    },
+    {
+      "case_id": "LANG-SELECT-40",
+      "selector": "es_es",
+      "language_id": "lang.spanish",
+      "reference_record": "selector-observations.json: selector=es_es"
+    },
+    {
+      "case_id": "LANG-SELECT-41",
+      "selector": "Swedish",
+      "language_id": "lang.swedish",
+      "reference_record": "selector-observations.json: selector=Swedish"
+    },
+    {
+      "case_id": "LANG-SELECT-42",
+      "selector": "sv",
+      "language_id": "lang.swedish",
+      "reference_record": "selector-observations.json: selector=sv"
+    },
+    {
+      "case_id": "LANG-SELECT-43",
+      "selector": "Turkish",
+      "language_id": "lang.turkish",
+      "reference_record": "selector-observations.json: selector=Turkish"
+    },
+    {
+      "case_id": "LANG-SELECT-44",
+      "selector": "tr",
+      "language_id": "lang.turkish",
+      "reference_record": "selector-observations.json: selector=tr"
+    },
+    {
+      "case_id": "LANG-SELECT-45",
+      "selector": "tr_tr",
+      "language_id": "lang.turkish",
+      "reference_record": "selector-observations.json: selector=tr_tr"
+    }
+  ]
+}

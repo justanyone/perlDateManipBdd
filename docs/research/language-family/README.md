@@ -84,7 +84,15 @@ provenance; all 64 observation records were unchanged. Current-value feature ste
 now explicitly use fresh configured values; legacy steps follow the recorded order
 (render, optional special parse, full date, weekday date, relative date).
 
-The 45-selector corpus is preliminary configuration research, without standalone
-English scenarios or the canonical corpus's full provenance checks. It does not
-discharge all selector behavior or prove alias equivalence. Neither this reviewer
-nor the structure checker is an executable BDD harness.
+The45-selector corpus now has45 explicit English scenarios for every inventoried
+canonical name and alias under the current OO/UTF-8 profile. Each selector is
+configured in two fresh processes and exercised with an original localized full
+date plus full weekday/month rendering. Every result matches the previously
+reviewed canonical-language literal. The selected-language getter preserves the
+supplied selector spelling. Tool/input/module hashes and per-attempt isolation
+are recorded. `selector-feature-map.json` links all45 cases to public bindings.
+
+This closes only those exact selector spellings in the current OO/UTF-8 profile.
+Case variants, invalid selectors, reconfiguration sequences, other encodings and
+legacy alias behavior remain distinct obligations. Neither the consistency
+reviewer nor the structure checker is an executable BDD harness.

@@ -7,7 +7,7 @@
         "ca"
       ],
       "candidate_fixture": "Select the canonical name, then select ca; parse one separately reviewed Catalan-only token once an original fixture is approved.",
-      "status": "unobserved"
+      "status": "bounded independent-selector observation available; candidate transition sequence unobserved"
     },
     {
       "id": "lang.danish",
@@ -16,7 +16,7 @@
         "da"
       ],
       "candidate_fixture": "Select the canonical name, then select da; parse one separately reviewed Danish-only token once an original fixture is approved.",
-      "status": "unobserved"
+      "status": "bounded independent-selector observation available; candidate transition sequence unobserved"
     },
     {
       "id": "lang.dutch",
@@ -26,7 +26,7 @@
         "nl"
       ],
       "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed Dutch-only token once an original fixture is approved.",
-      "status": "unobserved"
+      "status": "bounded independent-selector observation available; candidate transition sequence unobserved"
     },
     {
       "id": "lang.english",
@@ -36,7 +36,7 @@
         "en_us"
       ],
       "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed English-only token once an original fixture is approved.",
-      "status": "unobserved"
+      "status": "bounded independent-selector observation available; candidate transition sequence unobserved"
     },
     {
       "id": "lang.finnish",
@@ -46,7 +46,7 @@
         "fi_fi"
       ],
       "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed Finnish-only token once an original fixture is approved.",
-      "status": "unobserved"
+      "status": "bounded independent-selector observation available; candidate transition sequence unobserved"
     },
     {
       "id": "lang.french",
@@ -56,7 +56,7 @@
         "fr_fr"
       ],
       "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed French-only token once an original fixture is approved.",
-      "status": "unobserved"
+      "status": "bounded independent-selector observation available; candidate transition sequence unobserved"
     },
     {
       "id": "lang.german",
@@ -66,7 +66,7 @@
         "de_de"
       ],
       "candidate_fixture": "Select the canonical name and aliases; include a trailing-period normalization partition.",
-      "status": "unobserved"
+      "status": "bounded independent-selector observation available; candidate transition sequence unobserved"
     },
     {
       "id": "lang.italian",
@@ -76,7 +76,7 @@
         "it_it"
       ],
       "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed Italian-only token once an original fixture is approved.",
-      "status": "unobserved"
+      "status": "bounded independent-selector observation available; candidate transition sequence unobserved"
     },
     {
       "id": "lang.norwegian",
@@ -86,7 +86,7 @@
         "nb_no"
       ],
       "candidate_fixture": "Select the canonical name and aliases; include a trailing-period normalization partition.",
-      "status": "unobserved"
+      "status": "bounded independent-selector observation available; candidate transition sequence unobserved"
     },
     {
       "id": "lang.polish",
@@ -96,7 +96,7 @@
         "pl_pl"
       ],
       "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed Polish-only token once an original fixture is approved.",
-      "status": "unobserved"
+      "status": "bounded independent-selector observation available; candidate transition sequence unobserved"
     },
     {
       "id": "lang.portuguese",
@@ -106,7 +106,7 @@
         "pt_pt"
       ],
       "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed Portuguese-only token once an original fixture is approved.",
-      "status": "unobserved"
+      "status": "bounded independent-selector observation available; candidate transition sequence unobserved"
     },
     {
       "id": "lang.romanian",
@@ -116,7 +116,7 @@
         "ro_ro"
       ],
       "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed Romanian-only token once an original fixture is approved.",
-      "status": "unobserved"
+      "status": "bounded independent-selector observation available; candidate transition sequence unobserved"
     },
     {
       "id": "lang.russian",
@@ -126,7 +126,7 @@
         "ru_ru"
       ],
       "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed Russian-only token once an original fixture is approved.",
-      "status": "unobserved"
+      "status": "bounded independent-selector observation available; candidate transition sequence unobserved"
     },
     {
       "id": "lang.spanish",
@@ -136,7 +136,7 @@
         "es_es"
       ],
       "candidate_fixture": "Select the canonical name, then each alias; parse one separately reviewed Spanish-only token once an original fixture is approved.",
-      "status": "unobserved"
+      "status": "bounded independent-selector observation available; candidate transition sequence unobserved"
     },
     {
       "id": "lang.swedish",
@@ -145,7 +145,7 @@
         "sv"
       ],
       "candidate_fixture": "Select the canonical name, then sv; parse one separately reviewed Swedish-only token once an original fixture is approved.",
-      "status": "unobserved"
+      "status": "bounded independent-selector observation available; candidate transition sequence unobserved"
     },
     {
       "id": "lang.turkish",
@@ -155,7 +155,7 @@
         "tr_tr"
       ],
       "candidate_fixture": "Select the canonical name and aliases; include a trailing-period normalization partition.",
-      "status": "unobserved"
+      "status": "bounded independent-selector observation available; candidate transition sequence unobserved"
     }
   ],
   "selectors": 45

@@ -1,1087 +1,2501 @@
 {
+  "schema_version": 2,
+  "status": "research; not approved portable expectations",
+  "repetitions": 2,
+  "parallel_workers": 4,
+  "timeout_seconds": 15,
+  "fresh_temporary_working_directory_per_attempt": true,
+  "environment": {
+    "PATH": "/home/kevin/.local/bin:/home/kevin/.codex/tmp/arg0/codex-arg0F2Ouqr:/home/kevin/.local/bin:/home/kevin/.cargo/bin:/home/kevin/.local/bin:/home/kevin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/kevin/.vscode/extensions/openai.chatgpt-26.908.40401-linux-x64/bin/linux-x86_64",
+    "PERL5LIB": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5",
+    "TZ": "Etc/UTC",
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8"
+  },
+  "sha256": {
+    "docs/research/language-family/selector-inventory.json": "71f64f96120a9cd689cfb424a4952d08e4eb0af41c736f53d3834bc5eb27f2e8",
+    "docs/research/language-family/cases.json": "4d7f3bc175c15ef50750bdeabb31a7f513de524dd16b8b56dc2b1d9e898d2d31",
+    "tools/probes/language-family/selectors.pl": "7b987c2a5b659fd4a100a5e56e5fe468bda81dc54c0b7bc6fe0452039d03db6d",
+    "tools/probes/language-family/run.py": "d051ee4c46d1eded4dce4eb8fa8065ed47941cd52217144b3a98b9cd6583c705",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm": "5fe1f12a7b59c57baf71c86e266b4ea06851eac0ec203a3507d019bcadbea97c",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm": "c181a8d908efbc2c18cc0a59e10e90628161dc3acf811c9c0292985280953d85",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm": "5ece620f80b039048d09b72fcb30f0e09ce8bb1151a0720db80ebdd2f9d7686f"
+  },
   "observations": [
     {
-      "observation": {
-        "canonical": "Catalan",
-        "language_id": "lang.catalan",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "Catalan",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "Catalan",
-          "text": "2040-02-29"
-        },
-        "selector": "Catalan",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "Catalan",
-      "stderr": ""
-    },
-    {
+      "repeatable": true,
+      "exit_status": 0,
       "observation": {
+        "call_stdout": "",
         "canonical": "Catalan",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "Catalan",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
         "language_id": "lang.catalan",
-        "operation_id": "config.apply-settings",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
         "perl_version": "v5.40.1",
         "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "ca",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
+        "rendered": "Dimecres|Febrer",
         "request": {
-          "selector": "ca",
-          "text": "2040-02-29"
+          "pattern": "%A|%B",
+          "text": "29 Febrer 2040"
         },
-        "selector": "ca",
+        "selected_language": "Catalan",
+        "selector": "Catalan",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
         "warnings": []
       },
-      "repeatable": true,
+      "stderr": ""
+    },
+    {
       "selector": "ca",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Catalan",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "ca",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.catalan",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "Dimecres|Febrer",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 Febrer 2040"
+        },
+        "selected_language": "ca",
+        "selector": "ca",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Danish",
-        "language_id": "lang.danish",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "Danish",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "Danish",
-          "text": "2040-02-29"
-        },
-        "selector": "Danish",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "Danish",
-      "stderr": ""
-    },
-    {
+      "repeatable": true,
+      "exit_status": 0,
       "observation": {
+        "call_stdout": "",
         "canonical": "Danish",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "Danish",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
         "language_id": "lang.danish",
-        "operation_id": "config.apply-settings",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
         "perl_version": "v5.40.1",
         "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "da",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
+        "rendered": "Onsdag|Februar",
         "request": {
-          "selector": "da",
-          "text": "2040-02-29"
+          "pattern": "%A|%B",
+          "text": "29 Februar 2040"
         },
-        "selector": "da",
+        "selected_language": "Danish",
+        "selector": "Danish",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
         "warnings": []
       },
-      "repeatable": true,
+      "stderr": ""
+    },
+    {
       "selector": "da",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Danish",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "da",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.danish",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "Onsdag|Februar",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 Februar 2040"
+        },
+        "selected_language": "da",
+        "selector": "da",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Dutch",
-        "language_id": "lang.dutch",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "Dutch",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "Dutch",
-          "text": "2040-02-29"
-        },
-        "selector": "Dutch",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "Dutch",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Dutch",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "Dutch",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.dutch",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "woensdag|februari",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 februari 2040"
+        },
+        "selected_language": "Dutch",
+        "selector": "Dutch",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Dutch",
-        "language_id": "lang.dutch",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "Nederlands",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "Nederlands",
-          "text": "2040-02-29"
-        },
-        "selector": "Nederlands",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "Nederlands",
-      "stderr": ""
-    },
-    {
+      "repeatable": true,
+      "exit_status": 0,
       "observation": {
+        "call_stdout": "",
         "canonical": "Dutch",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "Nederlands",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
         "language_id": "lang.dutch",
-        "operation_id": "config.apply-settings",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
         "perl_version": "v5.40.1",
         "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "nl",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
+        "rendered": "woensdag|februari",
         "request": {
-          "selector": "nl",
-          "text": "2040-02-29"
+          "pattern": "%A|%B",
+          "text": "29 februari 2040"
         },
-        "selector": "nl",
+        "selected_language": "Nederlands",
+        "selector": "Nederlands",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
         "warnings": []
       },
-      "repeatable": true,
+      "stderr": ""
+    },
+    {
       "selector": "nl",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Dutch",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "nl",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.dutch",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "woensdag|februari",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 februari 2040"
+        },
+        "selected_language": "nl",
+        "selector": "nl",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "English",
-        "language_id": "lang.english",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "English",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "English",
-          "text": "2040-02-29"
-        },
-        "selector": "English",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "English",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "English",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "English",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.english",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "Wednesday|February",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 February 2040"
+        },
+        "selected_language": "English",
+        "selector": "English",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "English",
-        "language_id": "lang.english",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "en",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "en",
-          "text": "2040-02-29"
-        },
-        "selector": "en",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "en",
-      "stderr": ""
-    },
-    {
+      "repeatable": true,
+      "exit_status": 0,
       "observation": {
+        "call_stdout": "",
         "canonical": "English",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "en",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
         "language_id": "lang.english",
-        "operation_id": "config.apply-settings",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
         "perl_version": "v5.40.1",
         "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "en_us",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
+        "rendered": "Wednesday|February",
         "request": {
-          "selector": "en_us",
-          "text": "2040-02-29"
+          "pattern": "%A|%B",
+          "text": "29 February 2040"
         },
-        "selector": "en_us",
+        "selected_language": "en",
+        "selector": "en",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
         "warnings": []
       },
-      "repeatable": true,
+      "stderr": ""
+    },
+    {
       "selector": "en_us",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "English",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "en_us",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.english",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "Wednesday|February",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 February 2040"
+        },
+        "selected_language": "en_us",
+        "selector": "en_us",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Finnish",
-        "language_id": "lang.finnish",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "Finnish",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "Finnish",
-          "text": "2040-02-29"
-        },
-        "selector": "Finnish",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "Finnish",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Finnish",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "Finnish",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.finnish",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "keskiviikko|helmikuu",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 helmikuuta 2040"
+        },
+        "selected_language": "Finnish",
+        "selector": "Finnish",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Finnish",
-        "language_id": "lang.finnish",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "fi",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "fi",
-          "text": "2040-02-29"
-        },
-        "selector": "fi",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "fi",
-      "stderr": ""
-    },
-    {
+      "repeatable": true,
+      "exit_status": 0,
       "observation": {
+        "call_stdout": "",
         "canonical": "Finnish",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "fi",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
         "language_id": "lang.finnish",
-        "operation_id": "config.apply-settings",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
         "perl_version": "v5.40.1",
         "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "fi_fi",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
+        "rendered": "keskiviikko|helmikuu",
         "request": {
-          "selector": "fi_fi",
-          "text": "2040-02-29"
+          "pattern": "%A|%B",
+          "text": "29 helmikuuta 2040"
         },
-        "selector": "fi_fi",
+        "selected_language": "fi",
+        "selector": "fi",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
         "warnings": []
       },
-      "repeatable": true,
+      "stderr": ""
+    },
+    {
       "selector": "fi_fi",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Finnish",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "fi_fi",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.finnish",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "keskiviikko|helmikuu",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 helmikuuta 2040"
+        },
+        "selected_language": "fi_fi",
+        "selector": "fi_fi",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "French",
-        "language_id": "lang.french",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "French",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "French",
-          "text": "2040-02-29"
-        },
-        "selector": "French",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "French",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "French",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "French",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.french",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "mercredi|février",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 février 2040"
+        },
+        "selected_language": "French",
+        "selector": "French",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "French",
-        "language_id": "lang.french",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "fr",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "fr",
-          "text": "2040-02-29"
-        },
-        "selector": "fr",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "fr",
-      "stderr": ""
-    },
-    {
+      "repeatable": true,
+      "exit_status": 0,
       "observation": {
+        "call_stdout": "",
         "canonical": "French",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "fr",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
         "language_id": "lang.french",
-        "operation_id": "config.apply-settings",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
         "perl_version": "v5.40.1",
         "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "fr_fr",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
+        "rendered": "mercredi|février",
         "request": {
-          "selector": "fr_fr",
-          "text": "2040-02-29"
+          "pattern": "%A|%B",
+          "text": "29 février 2040"
         },
-        "selector": "fr_fr",
+        "selected_language": "fr",
+        "selector": "fr",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
         "warnings": []
       },
-      "repeatable": true,
+      "stderr": ""
+    },
+    {
       "selector": "fr_fr",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "French",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "fr_fr",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.french",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "mercredi|février",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 février 2040"
+        },
+        "selected_language": "fr_fr",
+        "selector": "fr_fr",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "German",
-        "language_id": "lang.german",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "German",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "German",
-          "text": "2040-02-29"
-        },
-        "selector": "German",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "German",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "German",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "German",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.german",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "Mittwoch|Februar",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 Februar 2040"
+        },
+        "selected_language": "German",
+        "selector": "German",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "German",
-        "language_id": "lang.german",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "de",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "de",
-          "text": "2040-02-29"
-        },
-        "selector": "de",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "de",
-      "stderr": ""
-    },
-    {
+      "repeatable": true,
+      "exit_status": 0,
       "observation": {
+        "call_stdout": "",
         "canonical": "German",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "de",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
         "language_id": "lang.german",
-        "operation_id": "config.apply-settings",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
         "perl_version": "v5.40.1",
         "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "de_de",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
+        "rendered": "Mittwoch|Februar",
         "request": {
-          "selector": "de_de",
-          "text": "2040-02-29"
+          "pattern": "%A|%B",
+          "text": "29 Februar 2040"
         },
-        "selector": "de_de",
+        "selected_language": "de",
+        "selector": "de",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
         "warnings": []
       },
-      "repeatable": true,
+      "stderr": ""
+    },
+    {
       "selector": "de_de",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "German",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "de_de",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.german",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "Mittwoch|Februar",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 Februar 2040"
+        },
+        "selected_language": "de_de",
+        "selector": "de_de",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Italian",
-        "language_id": "lang.italian",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "Italian",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "Italian",
-          "text": "2040-02-29"
-        },
-        "selector": "Italian",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "Italian",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Italian",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "Italian",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.italian",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "Mercoledì|Febbraio",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 Febbraio 2040"
+        },
+        "selected_language": "Italian",
+        "selector": "Italian",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Italian",
-        "language_id": "lang.italian",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "it",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "it",
-          "text": "2040-02-29"
-        },
-        "selector": "it",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "it",
-      "stderr": ""
-    },
-    {
+      "repeatable": true,
+      "exit_status": 0,
       "observation": {
+        "call_stdout": "",
         "canonical": "Italian",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "it",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
         "language_id": "lang.italian",
-        "operation_id": "config.apply-settings",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
         "perl_version": "v5.40.1",
         "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "it_it",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
+        "rendered": "Mercoledì|Febbraio",
         "request": {
-          "selector": "it_it",
-          "text": "2040-02-29"
+          "pattern": "%A|%B",
+          "text": "29 Febbraio 2040"
         },
-        "selector": "it_it",
+        "selected_language": "it",
+        "selector": "it",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
         "warnings": []
       },
-      "repeatable": true,
+      "stderr": ""
+    },
+    {
       "selector": "it_it",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Italian",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "it_it",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.italian",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "Mercoledì|Febbraio",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 Febbraio 2040"
+        },
+        "selected_language": "it_it",
+        "selector": "it_it",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Norwegian",
-        "language_id": "lang.norwegian",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "Norwegian",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "Norwegian",
-          "text": "2040-02-29"
-        },
-        "selector": "Norwegian",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "Norwegian",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Norwegian",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "Norwegian",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.norwegian",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "onsdag|februar",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 februar 2040"
+        },
+        "selected_language": "Norwegian",
+        "selector": "Norwegian",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Norwegian",
-        "language_id": "lang.norwegian",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "nb",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "nb",
-          "text": "2040-02-29"
-        },
-        "selector": "nb",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "nb",
-      "stderr": ""
-    },
-    {
+      "repeatable": true,
+      "exit_status": 0,
       "observation": {
+        "call_stdout": "",
         "canonical": "Norwegian",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "nb",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
         "language_id": "lang.norwegian",
-        "operation_id": "config.apply-settings",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
         "perl_version": "v5.40.1",
         "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "nb_no",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
+        "rendered": "onsdag|februar",
         "request": {
-          "selector": "nb_no",
-          "text": "2040-02-29"
+          "pattern": "%A|%B",
+          "text": "29 februar 2040"
         },
-        "selector": "nb_no",
+        "selected_language": "nb",
+        "selector": "nb",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
         "warnings": []
       },
-      "repeatable": true,
+      "stderr": ""
+    },
+    {
       "selector": "nb_no",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Norwegian",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "nb_no",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.norwegian",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "onsdag|februar",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 februar 2040"
+        },
+        "selected_language": "nb_no",
+        "selector": "nb_no",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Polish",
-        "language_id": "lang.polish",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "Polish",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "Polish",
-          "text": "2040-02-29"
-        },
-        "selector": "Polish",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "Polish",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Polish",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "Polish",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.polish",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "środa|luty",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 lutego 2040"
+        },
+        "selected_language": "Polish",
+        "selector": "Polish",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Polish",
-        "language_id": "lang.polish",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "pl",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "pl",
-          "text": "2040-02-29"
-        },
-        "selector": "pl",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "pl",
-      "stderr": ""
-    },
-    {
+      "repeatable": true,
+      "exit_status": 0,
       "observation": {
+        "call_stdout": "",
         "canonical": "Polish",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "pl",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
         "language_id": "lang.polish",
-        "operation_id": "config.apply-settings",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
         "perl_version": "v5.40.1",
         "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "pl_pl",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
+        "rendered": "środa|luty",
         "request": {
-          "selector": "pl_pl",
-          "text": "2040-02-29"
+          "pattern": "%A|%B",
+          "text": "29 lutego 2040"
         },
-        "selector": "pl_pl",
+        "selected_language": "pl",
+        "selector": "pl",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
         "warnings": []
       },
-      "repeatable": true,
+      "stderr": ""
+    },
+    {
       "selector": "pl_pl",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Polish",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "pl_pl",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.polish",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "środa|luty",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 lutego 2040"
+        },
+        "selected_language": "pl_pl",
+        "selector": "pl_pl",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Portuguese",
-        "language_id": "lang.portuguese",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "Portuguese",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "Portuguese",
-          "text": "2040-02-29"
-        },
-        "selector": "Portuguese",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "Portuguese",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Portuguese",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "Portuguese",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.portuguese",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "quarta|Fevereiro",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 Fevereiro 2040"
+        },
+        "selected_language": "Portuguese",
+        "selector": "Portuguese",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Portuguese",
-        "language_id": "lang.portuguese",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "pt",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "pt",
-          "text": "2040-02-29"
-        },
-        "selector": "pt",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "pt",
-      "stderr": ""
-    },
-    {
+      "repeatable": true,
+      "exit_status": 0,
       "observation": {
+        "call_stdout": "",
         "canonical": "Portuguese",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "pt",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
         "language_id": "lang.portuguese",
-        "operation_id": "config.apply-settings",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
         "perl_version": "v5.40.1",
         "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "pt_pt",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
+        "rendered": "quarta|Fevereiro",
         "request": {
-          "selector": "pt_pt",
-          "text": "2040-02-29"
+          "pattern": "%A|%B",
+          "text": "29 Fevereiro 2040"
         },
-        "selector": "pt_pt",
+        "selected_language": "pt",
+        "selector": "pt",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
         "warnings": []
       },
-      "repeatable": true,
+      "stderr": ""
+    },
+    {
       "selector": "pt_pt",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Portuguese",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "pt_pt",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.portuguese",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "quarta|Fevereiro",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 Fevereiro 2040"
+        },
+        "selected_language": "pt_pt",
+        "selector": "pt_pt",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Romanian",
-        "language_id": "lang.romanian",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "Romanian",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "Romanian",
-          "text": "2040-02-29"
-        },
-        "selector": "Romanian",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "Romanian",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Romanian",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "Romanian",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.romanian",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "miercuri|februarie",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 februarie 2040"
+        },
+        "selected_language": "Romanian",
+        "selector": "Romanian",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Romanian",
-        "language_id": "lang.romanian",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "ro",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "ro",
-          "text": "2040-02-29"
-        },
-        "selector": "ro",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "ro",
-      "stderr": ""
-    },
-    {
+      "repeatable": true,
+      "exit_status": 0,
       "observation": {
+        "call_stdout": "",
         "canonical": "Romanian",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "ro",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
         "language_id": "lang.romanian",
-        "operation_id": "config.apply-settings",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
         "perl_version": "v5.40.1",
         "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "ro_ro",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
+        "rendered": "miercuri|februarie",
         "request": {
-          "selector": "ro_ro",
-          "text": "2040-02-29"
+          "pattern": "%A|%B",
+          "text": "29 februarie 2040"
         },
-        "selector": "ro_ro",
+        "selected_language": "ro",
+        "selector": "ro",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
         "warnings": []
       },
-      "repeatable": true,
+      "stderr": ""
+    },
+    {
       "selector": "ro_ro",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Romanian",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "ro_ro",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.romanian",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "miercuri|februarie",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 februarie 2040"
+        },
+        "selected_language": "ro_ro",
+        "selector": "ro_ro",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Russian",
-        "language_id": "lang.russian",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "Russian",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "Russian",
-          "text": "2040-02-29"
-        },
-        "selector": "Russian",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "Russian",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Russian",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "Russian",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.russian",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "среда|февраля",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 февраля 2040"
+        },
+        "selected_language": "Russian",
+        "selector": "Russian",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Russian",
-        "language_id": "lang.russian",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "ru",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "ru",
-          "text": "2040-02-29"
-        },
-        "selector": "ru",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "ru",
-      "stderr": ""
-    },
-    {
+      "repeatable": true,
+      "exit_status": 0,
       "observation": {
+        "call_stdout": "",
         "canonical": "Russian",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "ru",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
         "language_id": "lang.russian",
-        "operation_id": "config.apply-settings",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
         "perl_version": "v5.40.1",
         "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "ru_ru",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
+        "rendered": "среда|февраля",
         "request": {
-          "selector": "ru_ru",
-          "text": "2040-02-29"
+          "pattern": "%A|%B",
+          "text": "29 февраля 2040"
         },
-        "selector": "ru_ru",
+        "selected_language": "ru",
+        "selector": "ru",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
         "warnings": []
       },
-      "repeatable": true,
+      "stderr": ""
+    },
+    {
       "selector": "ru_ru",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Russian",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "ru_ru",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.russian",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "среда|февраля",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 февраля 2040"
+        },
+        "selected_language": "ru_ru",
+        "selector": "ru_ru",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Spanish",
-        "language_id": "lang.spanish",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "Spanish",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "Spanish",
-          "text": "2040-02-29"
-        },
-        "selector": "Spanish",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "Spanish",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Spanish",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "Spanish",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.spanish",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "Miércoles|Febrero",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 Febrero 2040"
+        },
+        "selected_language": "Spanish",
+        "selector": "Spanish",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Spanish",
-        "language_id": "lang.spanish",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "es",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "es",
-          "text": "2040-02-29"
-        },
-        "selector": "es",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "es",
-      "stderr": ""
-    },
-    {
+      "repeatable": true,
+      "exit_status": 0,
       "observation": {
+        "call_stdout": "",
         "canonical": "Spanish",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "es",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
         "language_id": "lang.spanish",
-        "operation_id": "config.apply-settings",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
         "perl_version": "v5.40.1",
         "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "es_es",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
+        "rendered": "Miércoles|Febrero",
         "request": {
-          "selector": "es_es",
-          "text": "2040-02-29"
+          "pattern": "%A|%B",
+          "text": "29 Febrero 2040"
         },
-        "selector": "es_es",
+        "selected_language": "es",
+        "selector": "es",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
         "warnings": []
       },
-      "repeatable": true,
+      "stderr": ""
+    },
+    {
       "selector": "es_es",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Spanish",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "es_es",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.spanish",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "Miércoles|Febrero",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 Febrero 2040"
+        },
+        "selected_language": "es_es",
+        "selector": "es_es",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Swedish",
-        "language_id": "lang.swedish",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "Swedish",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "Swedish",
-          "text": "2040-02-29"
-        },
-        "selector": "Swedish",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "Swedish",
-      "stderr": ""
-    },
-    {
+      "repeatable": true,
+      "exit_status": 0,
       "observation": {
+        "call_stdout": "",
         "canonical": "Swedish",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "Swedish",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
         "language_id": "lang.swedish",
-        "operation_id": "config.apply-settings",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
         "perl_version": "v5.40.1",
         "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "sv",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
+        "rendered": "Onsdag|Februari",
         "request": {
-          "selector": "sv",
-          "text": "2040-02-29"
+          "pattern": "%A|%B",
+          "text": "29 Februari 2040"
         },
-        "selector": "sv",
+        "selected_language": "Swedish",
+        "selector": "Swedish",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
         "warnings": []
       },
-      "repeatable": true,
+      "stderr": ""
+    },
+    {
       "selector": "sv",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Swedish",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "sv",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.swedish",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "Onsdag|Februari",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 Februari 2040"
+        },
+        "selected_language": "sv",
+        "selector": "sv",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Turkish",
-        "language_id": "lang.turkish",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "Turkish",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "Turkish",
-          "text": "2040-02-29"
-        },
-        "selector": "Turkish",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "Turkish",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Turkish",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "Turkish",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.turkish",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "çarşamba|şubat",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 şubat 2040"
+        },
+        "selected_language": "Turkish",
+        "selector": "Turkish",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
-      "observation": {
-        "canonical": "Turkish",
-        "language_id": "lang.turkish",
-        "operation_id": "config.apply-settings",
-        "perl_version": "v5.40.1",
-        "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "tr",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
-        "request": {
-          "selector": "tr",
-          "text": "2040-02-29"
-        },
-        "selector": "tr",
-        "warnings": []
-      },
-      "repeatable": true,
       "selector": "tr",
+      "repeatable": true,
+      "exit_status": 0,
+      "observation": {
+        "call_stdout": "",
+        "canonical": "Turkish",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "tr",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
+        "language_id": "lang.turkish",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "rendered": "çarşamba|şubat",
+        "request": {
+          "pattern": "%A|%B",
+          "text": "29 şubat 2040"
+        },
+        "selected_language": "tr",
+        "selector": "tr",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
+        "warnings": []
+      },
       "stderr": ""
     },
     {
+      "selector": "tr_tr",
+      "repeatable": true,
+      "exit_status": 0,
       "observation": {
+        "call_stdout": "",
         "canonical": "Turkish",
+        "configuration": [
+          "Defaults",
+          1,
+          "ForceDate",
+          "2040-02-28-10:20:30,Etc/UTC",
+          "Language",
+          "tr_tr",
+          "Encoding",
+          "UTF-8",
+          "DateFormat",
+          "non-US"
+        ],
+        "configuration_error": "",
+        "configuration_return": null,
+        "contract_ids": [
+          "config.apply-settings",
+          "config.read-settings",
+          "date.parse-text",
+          "date.read-value",
+          "date.render-pattern"
+        ],
+        "dependent_reads_executed": true,
+        "distribution_version": "7.00",
+        "error_after_render": "",
+        "error_after_value": "",
+        "exception": null,
         "language_id": "lang.turkish",
-        "operation_id": "config.apply-settings",
+        "parse_error": "",
+        "parse_status": 0,
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
         "perl_version": "v5.40.1",
         "profile": "oo",
-        "raw_return": {
-          "error": "",
-          "language": "tr_tr",
-          "status": 0,
-          "value": "2040022900:00:00"
-        },
+        "rendered": "çarşamba|şubat",
         "request": {
-          "selector": "tr_tr",
-          "text": "2040-02-29"
+          "pattern": "%A|%B",
+          "text": "29 şubat 2040"
         },
+        "selected_language": "tr_tr",
         "selector": "tr_tr",
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "value": "2040022900:00:00",
         "warnings": []
       },
-      "repeatable": true,
-      "selector": "tr_tr",
       "stderr": ""
     }
-  ],
-  "parallel_workers": 4,
-  "repetitions": 2,
-  "timeout_seconds": 15
+  ]
 }

@@ -405,3 +405,20 @@ language_completion terminated with a model-capacity error during coverage setup
 replacement coverage_setup (terra/high) owns tools/coverage and
 docs/research/public-call-coverage, inspecting existing partial work before
 continuing. This is an authoritative terminal failure, not a timeout restart.
+
+## Language-selector integration checkpoint
+
+Coordinator replaced preliminary45-selector numeric-only probes with isolated
+localized parse/render requests for every inventoried canonical name and alias.
+Each repeats twice; outputs agree with the previously reviewed canonical language
+literals. Original English selectors.feature and selector-feature-map.json cover
+all45. Tool/input/module hashes, actual config return/errors, parse and observer
+errors, warnings and stdout are preserved. language_literals.py now checks these
+45 rows as well as the earlier64records/68rows. Candidate transition sequences in
+the inventory remain unobserved; broader language domains still block completion.
+
+Independent lifecycle review found mapping omissions, ambiguous raw-versus-readable
+wording, a no-op isolation check, and compatibility classification gaps.
+partial_parsing now owns the lifecycle repair, retaining readable portable dates
+with explicit representation semantics. pattern_repair reviews52parsingedges;
+coverage_setup continues instrumentation. Respect these owned paths.
