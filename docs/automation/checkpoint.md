@@ -995,3 +995,17 @@ tools/coverage-corpus/broad-manifest.json --output /tmp/public-coverage-corpus-b
 timeout; poll this handle and preserve raw outputs. No metrics/final report yet.
 Keep these committed probe sources stable until terminal. Workers edit only NEW
 leap-year/calendar-length/weekday directories, so no conflict. All final gates open.
+
+## Coverage artifact reviewer
+
+Root added tools/coverage-corpus/review.py without changing live collector sources.
+It verifies full manifest membership, each raw output/hash/fidelity flag, exact
+normalization policy from pinned collector, loaded/unloaded inventory and report
+denominators/percentages. Historical --source-commit f5889cb validates472-case prior
+capture. Deliberate temporary corruptions to raw hash, denominator and case identity
+were rejected. Exit codes are not independently recoverable from historical raw
+files; reviewer explicitly reports that limit.
+
+Session20949 remains live on last poll;965-case broad run has no final report yet.
+Continue polling same handle, do not restart. Prior terminal captures remain unchanged.
+Workers retain new calendar-family ownership. Full goal remains incomplete.

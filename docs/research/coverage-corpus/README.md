@@ -111,3 +111,12 @@ The exact existing DM5 deprecation-location normalization also recognizes the
 counts, exceptions, returned values and stderr remain exact. Raw outputs remain
 saved. Expanded fidelity tests cover every recognized warning channel. The initial
 broader run is pending; no coverage improvement is claimed before it completes.
+
+Validate a completed artifact with `python3 tools/coverage-corpus/review.py RUN_DIR`.
+For historical captures, add `--source-commit COMMIT` to verify tracked source hashes
+against that exact Git tree while checking installed dependency bytes locally.
+The reviewer checks all request identities, raw output hashes, permitted warning
+normalization, loaded/unloaded module membership, report totals and raw percentages.
+It does not infer process exit status from stdout files or claim suite completeness.
+It was verified against the472-request capture at f5889cb and rejected three isolated
+corruptions of output hash, denominator, and case identity.
