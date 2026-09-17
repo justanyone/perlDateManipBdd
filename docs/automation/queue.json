@@ -7,7 +7,8 @@
   },
   "coordination": {
     "queue_update_owner": "coordinator",
-    "rule": "Only the coordinator changes this queue or the checkpoint. Contributors report evidence and proposed status changes to the coordinator."
+    "rule": "Only the coordinator changes this queue or the checkpoint. Contributors report evidence and proposed status changes to the coordinator.",
+    "completion_rule": "Every function, every usage type, and every identifiable edge case must have executable test evidence; sampled partitions and known untested cases prevent completion."
   },
   "baseline": {
     "id": "workspace-setup",
@@ -213,7 +214,8 @@
       "acceptance": [
         "Every in-scope public operation has direct behavioral coverage and every private declaration has an indirect mapping or reviewed exclusion. Binding-only and unsupported operations have explicit, justified dispositions; deferred or unobserved in-scope work prevents completion.",
         "Coverage denominators retain skipped, unsupported, and disputed entries.",
-        "The handoff excludes upstream source/tests/data, translated algorithms, and Perl binding code."
+        "The handoff excludes upstream source/tests/data, translated algorithms, and Perl binding code.",
+        "Audit source-level function and branch execution and logic-predicted cases against the user definition of done; review prior exclusions, including tooling, rather than treating old dispositions as sufficient."
       ]
     },
     {
@@ -289,5 +291,6 @@
         "The final portable handoff remains limited to approved original English materials and excludes Perl binding artifacts."
       ]
     }
-  ]
+  ],
+  "definition_of_done": "docs/automation/definition-of-done.md"
 }

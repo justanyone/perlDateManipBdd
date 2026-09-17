@@ -180,3 +180,19 @@ rejected joined two-digit-year form need semantic disposition. See
 Next coordinator task: review completed rendering/configuration/zones batches,
 then expand remaining text/time/language grammar and calendar features while the
 three current workers proceed in their separate directories. No harness exists.
+
+## User completion requirement and rendering review
+
+The user explicitly requires every function, every usage type, and every
+identifiable edge case, whether predicted from logic or source. Read
+`docs/automation/definition-of-done.md`; it supersedes weaker interpretations of
+sampling, private-function mapping, or earlier tooling exclusions. Queue coverage
+acceptance now includes source execution/branch audit and review of exclusions.
+
+Rendering coordinator review replaced evidence-row placeholders with explicit
+literals and disambiguated text/list and empty-result wording. The new
+`tools/review/rendering_literals.py` verifies 99 table literals, 24 mapped evidence
+cases, provenance hashes, and independent epoch/week facts. The rendering family
+remains draft with known untested boundaries. Arithmetic, recurrence, and explicit
+pattern-parsing workers remain assigned to independent expansions. Next root work
+is configuration/zones review and remaining parsing/language/calendar coverage.

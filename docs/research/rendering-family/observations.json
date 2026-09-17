@@ -1,0 +1,1351 @@
+{
+  "schema_version": 1,
+  "status": "research evidence; no expected value is approved",
+  "command": "python3 tools/probes/rendering-family/run-rendering-family.py",
+  "repetitions": 2,
+  "timeout_seconds": 15,
+  "parallel_workers": 4,
+  "environment": {
+    "PATH": "/home/kevin/.local/bin:/home/kevin/.codex/tmp/arg0/codex-arg0F2Ouqr:/home/kevin/.local/bin:/home/kevin/.cargo/bin:/home/kevin/.local/bin:/home/kevin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/kevin/.vscode/extensions/openai.chatgpt-26.908.40401-linux-x64/bin/linux-x86_64",
+    "PERL5LIB": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5",
+    "TZ": "Etc/UTC",
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8"
+  },
+  "sha256": {
+    "docs/research/rendering-family/cases.json": "3ac8197f61bc37923266a3de7039e71ba6b1fc30a97115a3b9ecfc25f1b63bf7",
+    "tools/probes/rendering-family/rendering-family.pl": "741c0e23ee4f4758f5b2f281dbabb72f6d642f5cd4789c149376773358b42253",
+    "docs/automation/reference-profiles.json": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
+    "tools/probes/rendering-family/run-rendering-family.py": "2013590796ccbab5788e071be0d4f69f241b805d0d70f9a4bd832f08983ff657"
+  },
+  "observations": [
+    {
+      "case_id": "RENDER-NATIVE-BASICS",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-NATIVE-BASICS",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "oo",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "literal-and-directive"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "error_state": "",
+          "list_texts": [
+            "2040",
+            "40",
+            "02",
+            " 2",
+            "Feb",
+            "Feb",
+            "February",
+            "060",
+            "29",
+            "29",
+            "W",
+            "Wed",
+            "Wednesday",
+            "3",
+            "29th",
+            "16",
+            "16",
+            " 4",
+            "04",
+            "PM",
+            "05",
+            "09",
+            "UTC",
+            "+0000",
+            "+00:00:00",
+            "2214144309",
+            "2214144309",
+            "2040",
+            "09",
+            "2040",
+            "09",
+            "2040-W09-3"
+          ],
+          "parse_status": 0,
+          "scalar_text": "",
+          "value": "2040022916:05:09"
+        },
+        "request": {
+          "date": "2040-02-29 16:05:09",
+          "patterns": [
+            "%Y",
+            "%y",
+            "%m",
+            "%f",
+            "%b",
+            "%h",
+            "%B",
+            "%j",
+            "%d",
+            "%e",
+            "%v",
+            "%a",
+            "%A",
+            "%w",
+            "%E",
+            "%H",
+            "%k",
+            "%i",
+            "%I",
+            "%p",
+            "%M",
+            "%S",
+            "%Z",
+            "%z",
+            "%N",
+            "%s",
+            "%o",
+            "%G",
+            "%W",
+            "%L",
+            "%U",
+            "%J"
+          ]
+        },
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "warnings": []
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-NATIVE-COMPOSITES",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-NATIVE-COMPOSITES",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "oo",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "literal-and-directive"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "error_state": "",
+          "list_texts": [
+            "Wed Feb 29 16:05:09 2040",
+            "Wed Feb 29 16:05:09 UTC 2040",
+            "Wed Feb 29 16:05:09 UTC 2040",
+            "Wed, 29 Feb 2040 16:05:09 UTC",
+            "02/29/40",
+            "02/29/40",
+            "Feb 29 16:05",
+            "04:05:09 PM",
+            "16:05",
+            "16:05:09",
+            "16:05:09",
+            "0229160540",
+            "20400229",
+            "20400229160509",
+            "2040022916:05:09",
+            "2040-02-29T16:05:09",
+            "Wednesday, February 29, 2040",
+            "2040-060"
+          ],
+          "parse_status": 0,
+          "scalar_text": "",
+          "value": "2040022916:05:09"
+        },
+        "request": {
+          "date": "2040-02-29 16:05:09",
+          "patterns": [
+            "%c",
+            "%C",
+            "%u",
+            "%g",
+            "%D",
+            "%x",
+            "%l",
+            "%r",
+            "%R",
+            "%T",
+            "%X",
+            "%V",
+            "%Q",
+            "%q",
+            "%P",
+            "%O",
+            "%F",
+            "%K"
+          ]
+        },
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "warnings": []
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-NATIVE-LITERALS",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-NATIVE-LITERALS",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "oo",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "literal-and-directive"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "error_state": "",
+          "list_texts": [
+            "\n",
+            "\t",
+            "%",
+            "+"
+          ],
+          "parse_status": 0,
+          "scalar_text": "",
+          "value": "2040022916:05:09"
+        },
+        "request": {
+          "date": "2040-02-29 16:05:09",
+          "patterns": [
+            "%n",
+            "%t",
+            "%%",
+            "%+"
+          ]
+        },
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "warnings": []
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-EXTENDED-ENDPOINTS",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-EXTENDED-ENDPOINTS",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "oo",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "literal-and-directive"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "error_state": "",
+          "list_texts": [
+            "Monday",
+            "Sunday",
+            "Mon",
+            "Sun",
+            "M",
+            "S",
+            "January",
+            "December",
+            "Jan",
+            "Dec",
+            "AM",
+            "PM",
+            "1st",
+            "53rd"
+          ],
+          "parse_status": 0,
+          "scalar_text": "",
+          "value": "2040022916:05:09"
+        },
+        "request": {
+          "date": "2040-02-29 16:05:09",
+          "patterns": [
+            "%<A=1>",
+            "%<A=7>",
+            "%<a=1>",
+            "%<a=7>",
+            "%<v=1>",
+            "%<v=7>",
+            "%<B=1>",
+            "%<B=12>",
+            "%<b=01>",
+            "%<b=12>",
+            "%<p=1>",
+            "%<p=2>",
+            "%<E=1>",
+            "%<E=53>"
+          ]
+        },
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "warnings": []
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-EXTENDED-OUTSIDE-DOMAIN",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-EXTENDED-OUTSIDE-DOMAIN",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "oo",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "literal-and-directive"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "error_state": "",
+          "list_texts": [
+            "%<A=0>",
+            "%<A=8>",
+            "%<B=00>",
+            "%<B=13>",
+            "%<E=54>"
+          ],
+          "parse_status": 0,
+          "scalar_text": "",
+          "value": "2040022916:05:09"
+        },
+        "request": {
+          "date": "2040-02-29 16:05:09",
+          "patterns": [
+            "%<A=0>",
+            "%<A=8>",
+            "%<B=00>",
+            "%<B=13>",
+            "%<E=54>"
+          ]
+        },
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "warnings": []
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-UNKNOWN-AND-TRAILING-PERCENT",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-UNKNOWN-AND-TRAILING-PERCENT",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "oo",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "literal-and-directive"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "error_state": "",
+          "list_texts": [
+            "before?after",
+            "end",
+            "%<nope>"
+          ],
+          "parse_status": 0,
+          "scalar_text": "",
+          "value": "2040022916:05:09"
+        },
+        "request": {
+          "date": "2040-02-29 16:05:09",
+          "patterns": [
+            "before%?after",
+            "end%",
+            "%<nope>"
+          ]
+        },
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "warnings": []
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-OO-SCALAR-AND-LIST",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-OO-SCALAR-AND-LIST",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "oo",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "pattern-count-context"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "error_state": "",
+          "list_texts": [
+            "2040",
+            "02",
+            "29"
+          ],
+          "parse_status": 0,
+          "scalar_text": "",
+          "value": "2040022916:05:09"
+        },
+        "request": {
+          "date": "2040-02-29 16:05:09",
+          "patterns": [
+            "%Y",
+            "%m",
+            "%d"
+          ]
+        },
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "warnings": []
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-DM6-SCALAR-AND-LIST",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-DM6-SCALAR-AND-LIST",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "dm6",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "pattern-count-context"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "configuration_diagnostic": "",
+          "list_texts": [
+            "2040",
+            "02",
+            "29"
+          ],
+          "scalar_text": "2040 02 29"
+        },
+        "request": {
+          "date": "2040-02-29 16:05:09",
+          "patterns": [
+            "%Y",
+            "%m",
+            "%d"
+          ]
+        },
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "warnings": []
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-DM5-SCALAR-AND-LIST",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-DM5-SCALAR-AND-LIST",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "dm5",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "pattern-count-context"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "list_texts": [
+            "2040",
+            "02",
+            "29"
+          ],
+          "scalar_text": "2040 02 29"
+        },
+        "request": {
+          "date": "02/29/2040 16:05:09",
+          "patterns": [
+            "%Y",
+            "%m",
+            "%d"
+          ]
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 42.\n"
+        ]
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-DM5-UNSUPPORTED-N-EXTENDED",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-DM5-UNSUPPORTED-N-EXTENDED",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "dm5",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "literal-and-directive"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "list_texts": [
+            "N",
+            "<A=1>"
+          ],
+          "scalar_text": "N <A=1>"
+        },
+        "request": {
+          "date": "02/29/2040 16:05:09",
+          "patterns": [
+            "%N",
+            "%<A=1>"
+          ]
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 42.\n"
+        ]
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-POSIX-DEFAULT",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-POSIX-DEFAULT",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "oo",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "literal-and-directive"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "error_state": "",
+          "list_texts": [
+            "Sun Jan  1 00:05:09 UTC 2040",
+            "Sunday, January  1, 2040",
+            "Jan  1 00:05",
+            "2040010100:05:09",
+            "Sun Jan  1 00:05:09 UTC 2040",
+            "2039",
+            "Sun, 01 Jan 2040 00:05:09 UTC",
+            "52",
+            "0101000540",
+            "2040",
+            "01",
+            "2039-W52-7"
+          ],
+          "parse_status": 0,
+          "scalar_text": "",
+          "value": "2040010100:05:09"
+        },
+        "request": {
+          "date": "2040-01-01 00:05:09",
+          "patterns": [
+            "%C",
+            "%F",
+            "%l",
+            "%P",
+            "%u",
+            "%G",
+            "%g",
+            "%W",
+            "%V",
+            "%L",
+            "%U",
+            "%J"
+          ]
+        },
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "warnings": []
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-POSIX-OVERRIDES",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-POSIX-OVERRIDES",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "oo",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "literal-and-directive"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo-posix",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "error_state": "",
+          "list_texts": [
+            "20",
+            "2040-01-01",
+            "12",
+            "am",
+            "7",
+            "2039",
+            "39",
+            "52",
+            "52",
+            "2040",
+            "01",
+            "2039-W52-7"
+          ],
+          "parse_status": 0,
+          "scalar_text": "",
+          "value": "2040010100:05:09"
+        },
+        "request": {
+          "date": "2040-01-01 00:05:09",
+          "patterns": [
+            "%C",
+            "%F",
+            "%l",
+            "%P",
+            "%u",
+            "%G",
+            "%g",
+            "%W",
+            "%V",
+            "%L",
+            "%U",
+            "%J"
+          ]
+        },
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "warnings": []
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-ZONE-OFFSET",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-ZONE-OFFSET",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "oo",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "localized-zone"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo-zone",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "error_state": "",
+          "list_texts": [
+            "EDT",
+            "-0400",
+            "-04:00:00",
+            "2222179200",
+            "2222161200"
+          ],
+          "parse_status": 0,
+          "scalar_text": "",
+          "value": "2040060112:00:00"
+        },
+        "request": {
+          "date": "2040-06-01 12:00:00 America/New_York",
+          "patterns": [
+            "%Z",
+            "%z",
+            "%N",
+            "%s",
+            "%o"
+          ]
+        },
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "warnings": [
+          "WARNING: the TZ Date::Manip config variable is deprecated\n         and will be removed in version 7.00.  Please use\n         the SetDate or ForceDate config variables instead.\n at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm line 286.\n"
+        ]
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-OO-ZERO-PATTERNS",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-OO-ZERO-PATTERNS",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "oo",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "pattern-count-context"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "error_state": "",
+          "list_texts": [],
+          "parse_status": 0,
+          "scalar_text": "",
+          "value": "2040022916:05:09"
+        },
+        "request": {
+          "date": "2040-02-29 16:05:09",
+          "patterns": []
+        },
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "warnings": []
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-OO-ONE-PATTERN",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-OO-ONE-PATTERN",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "oo",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "pattern-count-context"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "error_state": "",
+          "list_texts": [
+            "2040"
+          ],
+          "parse_status": 0,
+          "scalar_text": "2040",
+          "value": "2040022916:05:09"
+        },
+        "request": {
+          "date": "2040-02-29 16:05:09",
+          "patterns": [
+            "%Y"
+          ]
+        },
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "warnings": []
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-DM6-ZERO-PATTERNS",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-DM6-ZERO-PATTERNS",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "dm6",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "pattern-count-context"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "configuration_diagnostic": "",
+          "list_texts": [],
+          "scalar_text": ""
+        },
+        "request": {
+          "date": "2040-02-29 16:05:09",
+          "patterns": []
+        },
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "warnings": []
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-DM6-ONE-PATTERN",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-DM6-ONE-PATTERN",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "dm6",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "pattern-count-context"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm6",
+        "raw_return": {
+          "configuration_diagnostic": "",
+          "list_texts": [
+            "2040"
+          ],
+          "scalar_text": "2040"
+        },
+        "request": {
+          "date": "2040-02-29 16:05:09",
+          "patterns": [
+            "%Y"
+          ]
+        },
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "warnings": []
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-DM5-ZERO-PATTERNS",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-DM5-ZERO-PATTERNS",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "dm5",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "pattern-count-context"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "list_texts": [],
+          "scalar_text": ""
+        },
+        "request": {
+          "date": "02/29/2040 16:05:09",
+          "patterns": []
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 42.\n"
+        ]
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-DM5-ONE-PATTERN",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-DM5-ONE-PATTERN",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "dm5",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "pattern-count-context"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "list_texts": [
+            "2040"
+          ],
+          "scalar_text": "2040"
+        },
+        "request": {
+          "date": "02/29/2040 16:05:09",
+          "patterns": [
+            "%Y"
+          ]
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 42.\n"
+        ]
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-DM5-NATIVE-BASICS",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-DM5-NATIVE-BASICS",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "dm5",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "literal-and-directive"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "list_texts": [
+            "2040",
+            "40",
+            "02",
+            " 2",
+            "Feb",
+            "Feb",
+            "February",
+            "060",
+            "29",
+            "29",
+            " W",
+            "Wed",
+            "Wednesday",
+            "3",
+            "29th",
+            "16",
+            "16",
+            " 4",
+            "04",
+            "PM",
+            "05",
+            "09",
+            "UTC",
+            "+0000",
+            "2214144309",
+            "2214144309",
+            "2040",
+            "09",
+            "2040",
+            "09",
+            "2040-W09-3"
+          ],
+          "scalar_text": "2040 40 02  2 Feb Feb February 060 29 29  W Wed Wednesday 3 29th 16 16  4 04 PM 05 09 UTC +0000 2214144309 2214144309 2040 09 2040 09 2040-W09-3"
+        },
+        "request": {
+          "date": "02/29/2040 16:05:09",
+          "patterns": [
+            "%Y",
+            "%y",
+            "%m",
+            "%f",
+            "%b",
+            "%h",
+            "%B",
+            "%j",
+            "%d",
+            "%e",
+            "%v",
+            "%a",
+            "%A",
+            "%w",
+            "%E",
+            "%H",
+            "%k",
+            "%i",
+            "%I",
+            "%p",
+            "%M",
+            "%S",
+            "%Z",
+            "%z",
+            "%s",
+            "%o",
+            "%G",
+            "%W",
+            "%L",
+            "%U",
+            "%J"
+          ]
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 42.\n"
+        ]
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-DM5-NATIVE-COMPOSITES",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-DM5-NATIVE-COMPOSITES",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "dm5",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "literal-and-directive"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "list_texts": [
+            "Wed Feb 29 16:05:09 2040",
+            "Wed Feb 29 16:05:09 +0000 2040",
+            "Wed Feb 29 16:05:09 +0000 2040",
+            "Wed, 29 Feb 2040 16:05:09 +0000",
+            "02/29/40",
+            "02/29/40",
+            "Feb 29 16:05",
+            "04:05:09 PM",
+            "16:05",
+            "16:05:09",
+            "16:05:09",
+            "0229160540",
+            "20400229",
+            "20400229160509",
+            "2040022916:05:09",
+            "2040-02-29T16:05:09",
+            "Wednesday, February 29, 2040",
+            "2040-060"
+          ],
+          "scalar_text": "Wed Feb 29 16:05:09 2040 Wed Feb 29 16:05:09 +0000 2040 Wed Feb 29 16:05:09 +0000 2040 Wed, 29 Feb 2040 16:05:09 +0000 02/29/40 02/29/40 Feb 29 16:05 04:05:09 PM 16:05 16:05:09 16:05:09 0229160540 20400229 20400229160509 2040022916:05:09 2040-02-29T16:05:09 Wednesday, February 29, 2040 2040-060"
+        },
+        "request": {
+          "date": "02/29/2040 16:05:09",
+          "patterns": [
+            "%c",
+            "%C",
+            "%u",
+            "%g",
+            "%D",
+            "%x",
+            "%l",
+            "%r",
+            "%R",
+            "%T",
+            "%X",
+            "%V",
+            "%Q",
+            "%q",
+            "%P",
+            "%O",
+            "%F",
+            "%K"
+          ]
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 42.\n"
+        ]
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-DM5-NATIVE-LITERALS",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-DM5-NATIVE-LITERALS",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "dm5",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "literal-and-directive"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "dm5",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "list_texts": [
+            "\n",
+            "\t",
+            "%",
+            "+"
+          ],
+          "scalar_text": "\n \t % +"
+        },
+        "request": {
+          "date": "02/29/2040 16:05:09",
+          "patterns": [
+            "%n",
+            "%t",
+            "%%",
+            "%+"
+          ]
+        },
+        "warnings": [
+          "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 42.\n"
+        ]
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-POSIX-UNSUPPORTED-DEFAULT",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-POSIX-UNSUPPORTED-DEFAULT",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "oo",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "literal-and-directive"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "error_state": "",
+          "list_texts": [
+            "Sun Jan  1 00:05:09 2040",
+            "01/01/40",
+            "00:05:09",
+            "1st",
+            "2040-01-01T00:05:09",
+            "+"
+          ],
+          "parse_status": 0,
+          "scalar_text": "",
+          "value": "2040010100:05:09"
+        },
+        "request": {
+          "date": "2040-01-01 00:05:09",
+          "patterns": [
+            "%c",
+            "%x",
+            "%X",
+            "%E",
+            "%O",
+            "%+"
+          ]
+        },
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "warnings": []
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    },
+    {
+      "case_id": "RENDER-POSIX-UNSUPPORTED-POSIX",
+      "repeatable": true,
+      "research_status": "repeatable",
+      "observation": {
+        "call_stdout": "",
+        "case_id": "RENDER-POSIX-UNSUPPORTED-POSIX",
+        "contract_ids": [
+          "date.render-pattern"
+        ],
+        "distribution_version": "7.00",
+        "exception": null,
+        "fixture_profile": "oo",
+        "operation_id": "date.render-pattern",
+        "partition_ids": [
+          "literal-and-directive"
+        ],
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1",
+        "profile": "oo-posix",
+        "raw_return": {
+          "configuration_diagnostic": null,
+          "error_state": "",
+          "list_texts": [
+            "Sun Jan  1 00:05:09 2040",
+            "01/01/40",
+            "00:05:09",
+            "1st",
+            "2040-01-01T00:05:09",
+            "+"
+          ],
+          "parse_status": 0,
+          "scalar_text": "",
+          "value": "2040010100:05:09"
+        },
+        "request": {
+          "date": "2040-01-01 00:05:09",
+          "patterns": [
+            "%c",
+            "%x",
+            "%X",
+            "%E",
+            "%O",
+            "%+"
+          ]
+        },
+        "timezone_data": {
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c"
+        },
+        "warnings": []
+      },
+      "stderr": "Name \"Date::Manip::DM6::dmt\" used only once: possible typo at /home/kevin/my_code/perlDateManipBdd/tools/probes/rendering-family/rendering-family.pl line 38.\n"
+    }
+  ]
+}

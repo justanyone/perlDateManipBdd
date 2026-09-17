@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "operation_id": "date.render-pattern",
+  "coverage": [
+    {"case_id":"RENDER-NATIVE-BASICS","profile":"oo","contract_ids":["date.render-pattern"],"syntax_ids":["DATE.FMT.Y","DATE.FMT.y","DATE.FMT.m","DATE.FMT.f","DATE.FMT.b","DATE.FMT.h","DATE.FMT.B","DATE.FMT.j","DATE.FMT.d","DATE.FMT.e","DATE.FMT.v","DATE.FMT.a","DATE.FMT.A","DATE.FMT.w","DATE.FMT.E","DATE.FMT.H","DATE.FMT.k","DATE.FMT.i","DATE.FMT.I","DATE.FMT.p","DATE.FMT.M","DATE.FMT.S","DATE.FMT.Z","DATE.FMT.z","DATE.FMT.N","DATE.FMT.s","DATE.FMT.o","DATE.FMT.G","DATE.FMT.W","DATE.FMT.L","DATE.FMT.U","DATE.FMT.J"]},
+    {"case_id":"RENDER-NATIVE-COMPOSITES","profile":"oo","contract_ids":["date.render-pattern"],"syntax_ids":["DATE.FMT.COMPOSITES"]},
+    {"case_id":"RENDER-NATIVE-LITERALS","profile":"oo","contract_ids":["date.render-pattern"],"syntax_ids":["DATE.FMT.LITERALS"]},
+    {"case_id":"RENDER-EXTENDED-ENDPOINTS","profile":"oo","contract_ids":["date.render-pattern"],"syntax_ids":["DATE.FMT.EXTENDED"]},
+    {"case_id":"RENDER-EXTENDED-OUTSIDE-DOMAIN","profile":"oo","contract_ids":["date.render-pattern"],"syntax_ids":["DATE.FMT.EXTENDED"]},
+    {"case_id":"RENDER-UNKNOWN-AND-TRAILING-PERCENT","profile":"oo","contract_ids":["date.render-pattern"],"syntax_ids":["DATE.FMT.LITERALS"]},
+    {"case_id":"RENDER-OO-SCALAR-AND-LIST","profile":"oo","contract_ids":["date.render-pattern"],"syntax_ids":["DATE.FMT.Y","DATE.FMT.m","DATE.FMT.d"]},
+    {"case_id":"RENDER-DM6-SCALAR-AND-LIST","profile":"dm6","contract_ids":["date.render-pattern"],"syntax_ids":["DATE.FMT.Y","DATE.FMT.m","DATE.FMT.d"]},
+    {"case_id":"RENDER-DM5-SCALAR-AND-LIST","profile":"dm5-compatibility","contract_ids":["date.render-pattern"],"syntax_ids":["DATE.FMT.Y","DATE.FMT.m","DATE.FMT.d"]},
+    {"case_id":"RENDER-DM5-UNSUPPORTED-N-EXTENDED","profile":"dm5-compatibility","contract_ids":["date.render-pattern"],"syntax_ids":["DATE.FMT.N","DATE.FMT.EXTENDED"],"dm5_status":"unsupported fallback"},
+    {"case_id":"RENDER-POSIX-DEFAULT","profile":"oo","contract_ids":["date.render-pattern"],"syntax_ids":["DATE.POSIX.C","DATE.POSIX.F","DATE.POSIX.l","DATE.POSIX.P","DATE.POSIX.u","DATE.POSIX.G","DATE.POSIX.g","DATE.POSIX.W","DATE.POSIX.V","DATE.POSIX.L","DATE.POSIX.U","DATE.POSIX.J"]},
+    {"case_id":"RENDER-POSIX-OVERRIDES","profile":"oo-posix","contract_ids":["date.render-pattern"],"syntax_ids":["DATE.POSIX.C","DATE.POSIX.F","DATE.POSIX.l","DATE.POSIX.P","DATE.POSIX.u","DATE.POSIX.G","DATE.POSIX.g","DATE.POSIX.W","DATE.POSIX.V","DATE.POSIX.L","DATE.POSIX.U","DATE.POSIX.J"]},
+    {"case_id":"RENDER-ZONE-OFFSET","profile":"oo-zone","contract_ids":["date.render-pattern"],"syntax_ids":["DATE.FMT.Z","DATE.FMT.z","DATE.FMT.N","DATE.FMT.s","DATE.FMT.o"]}
+  ],
+  "unobserved_syntax_partitions": ["Every ordinary directive's documented low/high numeric boundary, where the baseline date does not exercise it.","All 12 POSIX override comparisons in DM5, which has no POSIX mode and is recorded as a compatibility limitation rather than a missing portable call.","DATE.FMT.COMPOSITES six-month upper endpoint: DM6 and DM5 differ by one endpoint.","Language and DateFormat alternatives, incomplete/invalid receivers, facade parse failures, DST gaps/overlaps, and non-whole-hour/second offsets."],
+  "completed_evidence_groups": ["feature-map.json records zero/one/many requests for OO, DM6, and DM5.","feature-map.json records complete DM5 basic, composite, and literal groups.","feature-map.json records default and POSIX-mode requests for DATE.POSIX.UNSUPPORTED."]
+}
