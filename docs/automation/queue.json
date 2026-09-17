@@ -92,7 +92,7 @@
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
       ],
-      "owner": "coordinator + configuration_features (languages)",
+      "owner": "coordinator + language_completion",
       "progress": "Calendar batch retained. New parsing corpus: 291 repeated binding cases, 283 authored candidate literals checked against saved evidence, 8 legacy configuration exceptions separate. Rendering worker revised 24 repeated invocations and draft features; coordinator review pending. Pattern parsing assigned; remaining natural-language/time/language and calendar partitions open.",
       "evidence": [
         "docs/research/observations/calendar.json",
@@ -125,7 +125,7 @@
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
       ],
-      "owner": "rendering_features (independent review)",
+      "owner": "arithmetic_features (final fidelity repairs)",
       "progress": "107 repeatable cases returned, including20 grammar productions, field/range/mode samples and17DST/business/state edges. Independent arithmetic review active; known gaps remain."
     },
     {
@@ -170,7 +170,7 @@
         "Feature text remains language-neutral."
       ],
       "owner": "coordinator-review",
-      "progress": "Worker returned 33 repeated cases sampling all 23 operation IDs, including non-whole-hour wrappers and error controls. None of the broad partitions is discharged; review and further boundaries remain."
+      "progress": "33 repeated raw cases retained after coordinator fixes to exact event/period assertions, backend profile selection, missing DM6 working-date call, absent holiday result and raw nested carriers. Targeted literals checked; all broader partitions still incomplete."
     },
     {
       "id": "spec-configuration-objects",

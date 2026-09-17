@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "reference": "Date::Manip 7.00; DM5 compatibility API version 5.66; DM6/OO timezone data tzdata2026c",
+  "case_record": "cases.json",
+  "observation_record": "observations.json",
+  "counts": {"selected_cases":33,"repeatable_cases":33,"reviewed_cases":0,"feature_case_ids":33,"catalogue_operations":23,"operations_with_selected_observation":23},
+  "selected_observation_note": "Every operation has at least one selected observation, but no operation or partition is discharged by that fact. The complete catalogue remains the denominator for review.",
+  "observed_operations": ["zone.convert-canonical-text","zone.convert-value","zone.convert-to-utc","zone.convert-from-utc","zone.convert-to-local","zone.convert-from-local","zone.current","zone.current-discovery-methods","zone.resolve","zone.define-alias","zone.define-abbreviation","zone.define-fixed-offset","zone.list-all-periods","zone.list-periods","zone.period-for-date","business.is-working-date","business.holiday-labels","business.list-holidays","business.next-working-date","business.previous-working-date","business.nearest-working-date","events.list","legacy.erase-holidays"],
+  "unobserved_operations": [],
+  "remaining_partitions": [
+    "zone conversion omission/default-local routes, named-zone DST behavior in each wrapper, fixed-offset and abbreviation conversions, scalar/list return differences, and every documented error level",
+    "custom alias all-reset and invalid inputs; abbreviation duplicate ordering; every offset spelling, DST preference, and membership failure",
+    "current-zone unavailable and discovery-method taint protection; period ranges, future rules, and invalid-zone diagnostics",
+    "business invalid values beyond one malformed text value, nonstandard workweeks, leap/month boundaries, positive next offsets across a configured holiday, and a true nearest-day tie",
+    "holiday absent/invalid and default-year paths; recurrence holiday behavior; functional list-holidays compatibility",
+    "event reversed ranges, delta/end-date and recurrence definitions, empty active sets, invalid grammar and unsupported formats",
+    "DM5 event and conversion shapes beyond the one recorded named-zone compatibility result"
+  ],
+  "compatibility_or_environment_notes": [
+    "The DM5 profile emits its deprecation warning and records a no-change result for the selected named-zone conversion. This is observed compatibility behavior, not a portable expectation.",
+    "With the original fixtures, DM6/OO returns both March 1 labels in order, while DM5 returns only Audit Day. This is a profile-specific observation pending semantic review.",
+    "The current-zone result is tied to the explicit UTC execution environment. Host discovery without that profile remains environment-dependent."
+  ]
+}

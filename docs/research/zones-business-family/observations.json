@@ -1,0 +1,1042 @@
+{
+  "execution": {
+    "command": "python3 tools/probes/zones-business-family/run.py",
+    "environment": {
+      "LANG": "C.UTF-8",
+      "LC_ALL": "C.UTF-8",
+      "PERL5LIB": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5",
+      "TZ": "Etc/UTC"
+    },
+    "maximum_parallel_processes": 4,
+    "repetitions": 2,
+    "separate_process_per_case": true,
+    "timeout_seconds": 15
+  },
+  "normalization": "Date object values are explicitly serialized to compact civil text. Other raw scalar, list, and nested record types are retained; no source return is silently rearranged.",
+  "observations": [
+    {
+      "case_id": "ZB-ZONE-CANONICAL-DM6",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": "",
+        "converted": "2040031017:00:00"
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-ZONE-CANONICAL-DM5",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "converted": "2040031012:00:00"
+      },
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/zones-business-family/probe.pl line 73.\n"
+      ]
+    },
+    {
+      "case_id": "ZB-ZONE-TZ-NAMED",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "reply": [
+          0,
+          [
+            2040,
+            3,
+            10,
+            17,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          0,
+          "GMT"
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-ZONE-TZ-OVERLAP",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "daylight": [
+          0,
+          [
+            2040,
+            11,
+            4,
+            5,
+            30,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          0,
+          "UTC"
+        ],
+        "standard": [
+          0,
+          [
+            2040,
+            11,
+            4,
+            6,
+            30,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          0,
+          "UTC"
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-ZONE-TZ-GAP",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "reply": [
+          4
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-ZONE-OO-MUTATES",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "after": "2040031007:00:00",
+        "before": "2040031012:00:00",
+        "configuration_return": null,
+        "convert_status": 0,
+        "error": "",
+        "parse_status": 0
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-ZONE-RESOLVE",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "no_match": null,
+        "ordered_matches": [
+          "America/New_York",
+          "America/Toronto",
+          "America/Detroit",
+          "America/Kentucky/Louisville",
+          "America/Indiana/Indianapolis",
+          "America/Indiana/Marengo",
+          "America/Indiana/Vevay",
+          "America/Indiana/Vincennes",
+          "America/Indiana/Winamac",
+          "America/Iqaluit",
+          "America/Grand_Turk",
+          "America/Port-au-Prince",
+          "America/Kentucky/Monticello",
+          "America/Indiana/Petersburg",
+          "America/Cancun",
+          "America/Jamaica",
+          "America/Indiana/Tell_City",
+          "America/Santo_Domingo"
+        ],
+        "scalar_default": "America/New_York"
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-ZONE-ALIAS",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "add": 0,
+        "after_reset": null,
+        "configuration_return": null,
+        "reset": 0,
+        "resolved": "America/Chicago"
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-ZONE-ABBREVIATION",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "invalid_member": [
+          3,
+          "Etc/UTC"
+        ],
+        "reset": [
+          0
+        ],
+        "valid": []
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-ZONE-OFFSET",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "invalid": [
+          9
+        ],
+        "reset": [
+          0
+        ],
+        "valid": [
+          0
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-ZONE-PERIODS",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "all_periods": [
+          [
+            [
+              2039,
+              11,
+              6,
+              6,
+              0,
+              0
+            ],
+            [
+              2039,
+              11,
+              6,
+              1,
+              0,
+              0
+            ],
+            "-05:00:00",
+            [
+              -5,
+              0,
+              0
+            ],
+            "EST",
+            0,
+            [
+              2040,
+              3,
+              11,
+              6,
+              59,
+              59
+            ],
+            [
+              2040,
+              3,
+              11,
+              1,
+              59,
+              59
+            ],
+            "2039110606:00:00",
+            "2039110601:00:00",
+            "2040031106:59:59",
+            "2040031101:59:59"
+          ],
+          [
+            [
+              2040,
+              3,
+              11,
+              7,
+              0,
+              0
+            ],
+            [
+              2040,
+              3,
+              11,
+              3,
+              0,
+              0
+            ],
+            "-04:00:00",
+            [
+              -4,
+              0,
+              0
+            ],
+            "EDT",
+            1,
+            [
+              2040,
+              11,
+              4,
+              5,
+              59,
+              59
+            ],
+            [
+              2040,
+              11,
+              4,
+              1,
+              59,
+              59
+            ],
+            "2040031107:00:00",
+            "2040031103:00:00",
+            "2040110405:59:59",
+            "2040110401:59:59"
+          ],
+          [
+            [
+              2040,
+              11,
+              4,
+              6,
+              0,
+              0
+            ],
+            [
+              2040,
+              11,
+              4,
+              1,
+              0,
+              0
+            ],
+            "-05:00:00",
+            [
+              -5,
+              0,
+              0
+            ],
+            "EST",
+            0,
+            [
+              2041,
+              3,
+              10,
+              6,
+              59,
+              59
+            ],
+            [
+              2041,
+              3,
+              10,
+              1,
+              59,
+              59
+            ],
+            "2040110406:00:00",
+            "2040110401:00:00",
+            "2041031006:59:59",
+            "2041031001:59:59"
+          ]
+        ],
+        "configuration_return": null,
+        "gap": null,
+        "overlap_daylight": [
+          [
+            2040,
+            3,
+            11,
+            7,
+            0,
+            0
+          ],
+          [
+            2040,
+            3,
+            11,
+            3,
+            0,
+            0
+          ],
+          "-04:00:00",
+          [
+            -4,
+            0,
+            0
+          ],
+          "EDT",
+          1,
+          [
+            2040,
+            11,
+            4,
+            5,
+            59,
+            59
+          ],
+          [
+            2040,
+            11,
+            4,
+            1,
+            59,
+            59
+          ],
+          "2040031107:00:00",
+          "2040031103:00:00",
+          "2040110405:59:59",
+          "2040110401:59:59"
+        ],
+        "overlap_standard": [
+          [
+            2040,
+            11,
+            4,
+            6,
+            0,
+            0
+          ],
+          [
+            2040,
+            11,
+            4,
+            1,
+            0,
+            0
+          ],
+          "-05:00:00",
+          [
+            -5,
+            0,
+            0
+          ],
+          "EST",
+          0,
+          [
+            2041,
+            3,
+            10,
+            6,
+            59,
+            59
+          ],
+          [
+            2041,
+            3,
+            10,
+            1,
+            59,
+            59
+          ],
+          "2040110406:00:00",
+          "2040110401:00:00",
+          "2041031006:59:59",
+          "2041031001:59:59"
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-ZONE-CURRENT",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "first": "Etc/UTC",
+        "reset": "Etc/UTC"
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-ZONE-INVALID",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "bad_arguments": [
+          1
+        ],
+        "bad_target": [
+          3
+        ],
+        "configuration_return": null
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-ZONE-FROM-UTC-NONWHOLE",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "reply": [
+          0,
+          [
+            2040,
+            3,
+            10,
+            17,
+            45,
+            0
+          ],
+          [
+            5,
+            45,
+            0
+          ],
+          0,
+          "+0545"
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-ZONE-TO-LOCAL-NONWHOLE",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "reply": [
+          0,
+          [
+            2040,
+            3,
+            10,
+            6,
+            15,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          0,
+          "UTC"
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-ZONE-FROM-LOCAL-NONWHOLE",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "reply": [
+          0,
+          [
+            2040,
+            3,
+            10,
+            17,
+            45,
+            0
+          ],
+          [
+            5,
+            45,
+            0
+          ],
+          0,
+          "+0545"
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-ZONE-DISCOVERY-METHODS",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "rediscovered": "Etc/UTC",
+        "set_return": [
+          "env",
+          "zone",
+          "TZ"
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-ZONE-LIST-PERIODS",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "kathmandu": [],
+        "new_york": [
+          [
+            [
+              2040,
+              3,
+              11,
+              7,
+              0,
+              0
+            ],
+            [
+              2040,
+              3,
+              11,
+              3,
+              0,
+              0
+            ],
+            "-04:00:00",
+            [
+              -4,
+              0,
+              0
+            ],
+            "EDT",
+            1,
+            [
+              2040,
+              11,
+              4,
+              5,
+              59,
+              59
+            ],
+            [
+              2040,
+              11,
+              4,
+              1,
+              59,
+              59
+            ],
+            "2040031107:00:00",
+            "2040031103:00:00",
+            "2040110405:59:59",
+            "2040110401:59:59"
+          ],
+          [
+            [
+              2040,
+              11,
+              4,
+              6,
+              0,
+              0
+            ],
+            [
+              2040,
+              11,
+              4,
+              1,
+              0,
+              0
+            ],
+            "-05:00:00",
+            [
+              -5,
+              0,
+              0
+            ],
+            "EST",
+            0,
+            [
+              2041,
+              3,
+              10,
+              6,
+              59,
+              59
+            ],
+            [
+              2041,
+              3,
+              10,
+              1,
+              59,
+              59
+            ],
+            "2040110406:00:00",
+            "2040110401:00:00",
+            "2041031006:59:59",
+            "2041031001:59:59"
+          ]
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-ZONE-CUSTOM-ALIAS-ERROR",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "add": 0,
+        "after_reset": null,
+        "configuration_return": null,
+        "invalid": 1,
+        "reset_all": 0
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-BUSINESS-HOLIDAYS-OO",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "business_day": 0,
+        "configuration_return": null,
+        "labels": [
+          "Launch Day",
+          "Audit Day"
+        ],
+        "parse_status": 0,
+        "scalar_label": "Launch Day"
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-BUSINESS-HOLIDAYS-DM6",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "business_day": 0,
+        "configuration_return": "",
+        "labels": [
+          "Launch Day",
+          "Audit Day"
+        ],
+        "scalar_label": "Launch Day",
+        "unnamed_label": ""
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-BUSINESS-HOLIDAYS-DM5",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "business_day": 0,
+        "configuration_return": null,
+        "labels": [
+          "Audit Day"
+        ],
+        "scalar_label": "Audit Day"
+      },
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/zones-business-family/probe.pl line 73.\n"
+      ]
+    },
+    {
+      "case_id": "ZB-BUSINESS-WORK-HOURS",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "rows": [
+          {
+            "date_only": 1,
+            "input": "2040-03-05 08:59:59",
+            "parse_status": 0,
+            "time_checked": 0
+          },
+          {
+            "date_only": 1,
+            "input": "2040-03-05 09:00:00",
+            "parse_status": 0,
+            "time_checked": 1
+          },
+          {
+            "date_only": 1,
+            "input": "2040-03-05 17:00:00",
+            "parse_status": 0,
+            "time_checked": 1
+          },
+          {
+            "date_only": 1,
+            "input": "2040-03-05 17:00:01",
+            "parse_status": 0,
+            "time_checked": 0
+          },
+          {
+            "date_only": 0,
+            "input": "2040-03-04 12:00:00",
+            "parse_status": 0,
+            "time_checked": 0
+          }
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-BUSINESS-NEXT-PREV",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "next": {
+          "parse_status": 0,
+          "status": null,
+          "value": "2040030509:00:00"
+        },
+        "previous_one": {
+          "parse_status": 0,
+          "status": null,
+          "value": "2040022910:00:00"
+        },
+        "previous_zero": {
+          "parse_status": 0,
+          "status": null,
+          "value": "2040030509:00:00"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-BUSINESS-NEAREST",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "earlier": {
+          "parse_status": 0,
+          "value": "2040030510:00:00"
+        },
+        "later": {
+          "parse_status": 0,
+          "value": "2040030510:00:00"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-BUSINESS-LIST-HOLIDAYS",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "dates": [
+          "2040010200:00:00",
+          "2040030100:00:00",
+          "2040030200:00:00",
+          "2040123100:00:00"
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-BUSINESS-INVALID-STATE",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "error": "[parse] Invalid date string",
+        "parse_status": 1,
+        "working": null
+      },
+      "warnings": [
+        "WARNING: [is_business_day] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/zones-business-family/probe.pl line 204.\n"
+      ]
+    },
+    {
+      "case_id": "ZB-BUSINESS-NEXT-HOURS",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "parse_status": 0,
+        "status": null,
+        "value": "2040030609:00:00"
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-EVENTS-OO-INSTANT",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "events": [
+          [
+            "2040030100:00:00",
+            "2040030123:59:59",
+            "All-Day Office Event"
+          ],
+          [
+            "2040030110:00:00",
+            "2040030110:59:59",
+            "One-Hour Briefing"
+          ]
+        ],
+        "parse_status": 0
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-EVENTS-OO-DAY",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "events": [
+          [
+            "2040030100:00:00",
+            "All-Day Office Event"
+          ],
+          [
+            "2040030110:00:00",
+            "All-Day Office Event",
+            "One-Hour Briefing"
+          ],
+          [
+            "2040030111:00:00",
+            "All-Day Office Event"
+          ],
+          [
+            "2040030113:00:00",
+            "All-Day Office Event",
+            "Two-Hour Review"
+          ],
+          [
+            "2040030115:00:00",
+            "All-Day Office Event"
+          ]
+        ],
+        "parse_status": 0
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-EVENTS-OO-RANGE",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": null,
+        "events": [
+          [
+            "2040030110:00:00",
+            "All-Day Office Event",
+            "One-Hour Briefing"
+          ],
+          [
+            "2040030111:00:00",
+            "All-Day Office Event"
+          ],
+          [
+            "2040030113:00:00",
+            "All-Day Office Event",
+            "Two-Hour Review"
+          ]
+        ],
+        "parse_status": 0
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-EVENTS-DM6-DATES",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "configuration_return": "",
+        "events": [
+          "2040030100:00:00",
+          [
+            "All-Day Office Event"
+          ],
+          "2040030110:00:00",
+          [
+            "All-Day Office Event",
+            "One-Hour Briefing"
+          ],
+          "2040030111:00:00",
+          [
+            "All-Day Office Event"
+          ],
+          "2040030113:00:00",
+          [
+            "All-Day Office Event",
+            "Two-Hour Review"
+          ],
+          "2040030115:00:00",
+          [
+            "All-Day Office Event"
+          ]
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "case_id": "ZB-LEGACY-ERASE-HOLIDAYS",
+      "exception": "",
+      "process_stderr": "",
+      "research_status": "repeatable",
+      "result": {
+        "after": null,
+        "before": "Audit Day",
+        "business_day_after": 1,
+        "configuration_return": null,
+        "erase_return": {
+          "2040": {}
+        }
+      },
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at /home/kevin/my_code/perlDateManipBdd/tools/probes/zones-business-family/probe.pl line 73.\n"
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "sha256": {
+    "tools/probes/zones-business-family/fixture-dm5.conf": "cf1f62be53cca720e266b2a7b7eafe9c6aa2158aade6a742f6898461776cb032",
+    "tools/probes/zones-business-family/fixture.conf": "e3ee48c486b35ae3713de473b990d193029f9077f714af29d2d436a0703e02ac",
+    "tools/probes/zones-business-family/probe.pl": "ba9d14e5ec269cfb66a3d6ae83a56a4fcc7f46abf6c0f079dfb45aecc1d56220",
+    "tools/probes/zones-business-family/run.py": "97e5ccdfca405a46127a8eb6999fe5493ec19f4a53e4bfc9fc29e6777f288b56"
+  },
+  "status": "research-only; every case is repeatable but awaits coordinator review"
+}

@@ -214,3 +214,21 @@ language-family corpus. Arithmetic returned107 repeated cases including DST and
 business boundaries. Pattern parsing returned52 directive samples and10 edge
 observations; review remains pending. Next root task is zones/business and pattern
 review, then remaining grammar/calendar edges and comprehensive coverage audit.
+
+## Zones/business fidelity checkpoint
+
+Coordinator corrected zones/business drafts to assert exact event records/change
+points, period starts, and explicit calendar profiles. Added the DM6 working-date
+call previously asserted without evidence. Legacy holiday erasure returns absent,
+not empty text. Saved observations now retain actual raw nested result shapes
+and setup channels rather than hand-rearranged records. Probe/fixture hashes,
+release checks and temporary working directories are recorded. All33 cases repeat;
+selected exact event/absence assertions pass tools/review/zones_business_literals.py.
+This remains an incomplete draft family.
+
+Independent arithmetic review found backend, setup, operand-status and feature
+carrier mismatches. Worker has repaired these and bulk-request mappings; final
+option-wording cleanup is active. Recurrence expansion returned69 draft IDs from
+36 repeated multi-action probes. Language work is now assigned to
+language_completion (sol/high) after the prior worker completed selector checks
+but stopped short of language-specific cases. Pattern review remains pending.
