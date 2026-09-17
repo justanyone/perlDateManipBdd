@@ -827,3 +827,18 @@ without warnings/errors. Original observations/probes are unchanged.
 week_edges_finish delivered236 request edge batch for root review (not yet accepted).
 partial_parsing repairs parse-cache exception-return evidence; pattern_repair owns
 language portability. Complete specification and harness gates remain open.
+
+## Construction observer vocabulary and week-edge review
+
+Root replaced construction-feature scalar/list terms with named serialized-text
+and ordered-field operations, defining date/duration field order explicitly. All
+quoted literals/table bytes unchanged; lifecycle reviewer20 cases passes and real
+parser accepts10 construction scenarios. Native binding remains described only
+in research README. Value-state feature still awaits its separate repair.
+
+Root independently reproduced all236 week-edge requests in session9632, terminal
+exit0; /tmp/week-rules-edges-root-review.json byte-equals delivered observations.
+Batch remains unaccepted because reviewer used whole-file result presence rather
+than row-keyed request/outcome equality, and profiles lacked portable definitions.
+week_edges_finish owns those repairs after release of capture hold. Other owners:
+partial_parsing parse-cache correction; pattern_repair language portability.

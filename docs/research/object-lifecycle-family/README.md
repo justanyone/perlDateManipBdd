@@ -109,3 +109,11 @@ Method-availability assertions remain binding-only. The
 component-versus-whole-date validation scenario remains disputed. These are
 repeatable reviewed research observations and draft feature expectations, not
 executable BDD results.
+
+Construction-feature portability repair: serialized text and ordered field records
+replace native scalar/list value terminology. The feature explicitly names the
+date and duration field orders. For the Perl adapter, read-serialized-text maps
+to `value` in scalar context and read-ordered-fields to `value` in list context.
+Those native contexts remain research mapping, not required implementation
+structure. Existing input/output literals and case IDs are unchanged. The separate
+value-state feature still needs its own portability repair.

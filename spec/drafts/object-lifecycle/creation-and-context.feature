@@ -8,6 +8,9 @@ Feature: Object construction chooses a value kind and a configuration context
     And an English ASCII configuration with non-US numeric-date order
     And the fixed local clock "2040-02-28 10:20:30 Etc/UTC"
     And a date carrier is presented portably by losslessly rendering its six civil fields as "YYYY-MM-DD HH:MM:SS"
+    And read-serialized-text returns text while read-ordered-fields returns an ordered field record
+    And date fields are year, month, day, hour, minute, second
+    And duration fields are year, month, week, day, hour, minute, second
     And valid date, duration, and recurrence source values use these initial texts:
       | kind | initial text |
       | date | 2040-02-29 16:05:09 |
@@ -20,9 +23,9 @@ Feature: Object construction chooses a value kind and a configuration context
     And I directly construct a recurrence from "0:0:1:0:0:0:0"
     Then the carrier classes are "date", "duration", and "recurrence"
     And the date's normalized civil date-time is "2040-02-29 16:05:09"
-    And the date list value is "2040, 2, 29, 16, 5, 9"
-    And the duration scalar value is "0:0:0:1:2:3:4"
-    And the duration list value is "0, 0, 0, 1, 2, 3, 4"
+    And the date ordered field record is "2040, 2, 29, 16, 5, 9"
+    And the duration serialized text is "0:0:0:1:2:3:4"
+    And the duration ordered field record is "0, 0, 0, 1, 2, 3, 4"
     And the recurrence frequency is "0:0:1:0:0:0:0"
     And every error state is empty
     And this is case "OBJ-001-DIRECT-CONSTRUCTORS"
@@ -30,10 +33,10 @@ Feature: Object construction chooses a value kind and a configuration context
   Scenario: Receiver construction keeps the kind and starts with a fresh carrier
     Given date, duration, and recurrence receivers with the stated initial texts
     When each receiver creates another value without initial text
-    Then the date child is a date with scalar value "" and list value count 0
+    Then the date child is a date with serialized text "" and ordered field record containing no fields
     And the date child error is "[value] Object does not contain a date"
-    And the duration child is a duration with scalar value "0:0:0:0:0:0:0"
-    And the duration child list value is "0, 0, 0, 0, 0, 0, 0"
+    And the duration child is a duration with serialized text "0:0:0:0:0:0:0"
+    And the duration child ordered field record is "0, 0, 0, 0, 0, 0, 0"
     And the recurrence child is a recurrence with frequency ""
     And each source retains its original value
     And this is case "OBJ-002-RECEIVER-NEW-EMPTY"
@@ -53,11 +56,11 @@ Feature: Object construction chooses a value kind and a configuration context
     When the date receiver creates a duration from "0:0:0:2:3:4:5"
     And the duration receiver creates a recurrence from "0:0:0:1:0:0:0"
     And the recurrence receiver creates a date from "2040-03-01 05:06:07"
-    Then the duration scalar value is "0:0:0:2:3:4:5"
-    And the duration list value is "0, 0, 0, 2, 3, 4, 5"
+    Then the duration serialized text is "0:0:0:2:3:4:5"
+    And the duration ordered field record is "0, 0, 0, 2, 3, 4, 5"
     And the recurrence frequency is "0:0:0:1:0:0:0"
     And the date's normalized civil date-time is "2040-03-01 05:06:07"
-    And the date list value is "2040, 3, 1, 5, 6, 7"
+    And the date ordered field record is "2040, 3, 1, 5, 6, 7"
     And this is case "OBJ-004-SHORTCUT-INITIAL-VALUES"
 
   Scenario: A class constructor accepts a source receiver of another kind
@@ -66,7 +69,7 @@ Feature: Object construction chooses a value kind and a configuration context
     And a recurrence receiver supplies the context for a duration constructed from "0:0:0:3:4:5:6"
     And a date receiver supplies the context for a recurrence constructed from "0:0:0:1:0:0:0"
     Then the date's normalized civil date-time is "2040-03-02 06:07:08"
-    And the duration scalar value is "0:0:0:3:4:5:6"
+    And the duration serialized text is "0:0:0:3:4:5:6"
     And the recurrence frequency is "0:0:0:1:0:0:0"
     And this is case "OBJ-005-CROSS-KIND-CLASS-NEW"
 
