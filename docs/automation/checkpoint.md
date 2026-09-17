@@ -9,7 +9,8 @@ the durable state of the planning queue, rather than claiming that its work has 
 - Workspace baseline: `workspace-setup` is `current`, owned by `root`.
 - Completed batches: `reference-setup` and `api-reconciliation`, reviewed by the coordinator.
 - Active batches: `spec-interpretation-formatting`, `spec-arithmetic-deltas`, and
-  `spec-recurrence`. Other project batches remain `pending`.
+  `spec-recurrence`, `spec-zones-business`, and `spec-configuration-objects`.
+  Coverage review and harness stages remain `pending`.
 - Scope: English, language-neutral specification and reference observations, followed
   by the original Perl BDD harness, step definitions, adapter, and full-suite
   verification. A future non-Perl implementation remains out of scope.
@@ -45,10 +46,15 @@ Current independent worker outputs:
   397 unobserved method-partition obligations, not 397 executed cases.
 - `configuration-domains.json` records 38 configuration keys and documented
   domains/defaults; runtime-only ambiguities and file-section grammar remain open.
-- Active workers: `recurrence_features` owns `spec/drafts/recurrence/`,
-  `tools/probes/recurrence-family/`, and `docs/research/recurrence-family/`;
-  `arithmetic_features` owns the corresponding `arithmetic` directories. Inspect
-  live agent status before restarting either; partial files are not completion evidence.
+- Active workers: `zones_business_features`, `rendering_features`, and
+  `configuration_features`. Each owns its corresponding `spec/drafts/` family,
+  `tools/probes/*-family/`, and `docs/research/*-family/` directories. Inspect live
+  agent status before restarting workers; partial files are not completion evidence.
+- Completed worker batches awaiting coordinator review and commit: arithmetic has
+  59 repeated cases spanning 16 operation IDs; recurrence has 35 candidate IDs in
+  three drafts, 31 repeatable observations, and mappings spanning 12 operation IDs.
+  Their README files list substantial remaining obligations. A partition-ID link
+  is not evidence that every dimension in that partition has been discharged.
 
 Independent read-only audit found exact correspondence with all 423 declaration
 rows, mappings for 164 public declaration bindings and 96 generic operation IDs,
@@ -58,9 +64,10 @@ not complete behavioral coverage: signatures, option partitions, reference
 observations and English features still need completion and review.
 
 Current next actions: continue English feature authoring and literal-observation
-review against the accepted catalogues. Recurrence and arithmetic workers are
-active. The coordinator owns calendar, parsing/rendering, and language work;
-zone/business and configuration/object feature batches are not started yet.
+review against the accepted catalogues. Review arithmetic and recurrence worker
+artifacts first, including fixture fidelity, literal results, English step meaning,
+and incomplete coverage. The coordinator also owns calendar, parsing, and language
+work; rendering, zone/business, and configuration/object workers are active.
 Do not re-enumerate finished syntax inventories. Required input/option variants
 and unobserved partitions stay visible during feature authoring.
 

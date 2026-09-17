@@ -91,7 +91,7 @@
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
       ],
-      "owner": "coordinator",
+      "owner": "coordinator + rendering_features",
       "progress": "231 calendar/epoch binding observations repeated; independent review190 reviewed,28 compatibility,3 invalid,10 unreviewed.52 original English candidate cases linked to116 calls,50 fact-reviewed and2 compatibility review. Date/time syntax, rendering, language and remaining calendar partitions still need cases.",
       "evidence": [
         "docs/research/observations/calendar.json",
@@ -121,7 +121,8 @@
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
       ],
-      "owner": "arithmetic_features"
+      "owner": "coordinator-review",
+      "progress": "Worker delivered59 repeated cases and draft features spanning16operation IDs. Detailed method/binding/partition coverage and literal review pending; reported gaps remain."
     },
     {
       "id": "spec-recurrence",
@@ -142,12 +143,13 @@
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
       ],
-      "owner": "recurrence_features"
+      "owner": "coordinator-review",
+      "progress": "Worker delivered35 candidate case IDs across3draft files,31fresh repeatable observations, and mappings spanning12operation IDs. Full grammar/context grids and method variant coverage remain; review pending."
     },
     {
       "id": "spec-zones-business",
       "title": "Specify timezones, business calendars, holidays, and events",
-      "status": "pending",
+      "status": "in_progress",
       "depends_on": [
         "reference-setup",
         "api-reconciliation"
@@ -162,12 +164,13 @@
         "Cases cover DST gaps and overlaps, zone resolution, customization, business-day rules, holidays/events, and environment-dependent dispositions.",
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
-      ]
+      ],
+      "owner": "zones_business_features"
     },
     {
       "id": "spec-configuration-objects",
       "title": "Specify configuration and observable object/value lifecycle behavior",
-      "status": "pending",
+      "status": "in_progress",
       "depends_on": [
         "reference-setup",
         "api-reconciliation"
@@ -182,7 +185,8 @@
         "Cases isolate configuration and backend state, distinguish absent/empty/invalid/no-match results, and cover observable lifecycle transitions.",
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
-      ]
+      ],
+      "owner": "configuration_features"
     },
     {
       "id": "coverage-review",
