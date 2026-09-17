@@ -92,8 +92,8 @@
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
       ],
-      "owner": "coordinator + language_completion",
-      "progress": "Calendar batch retained. New parsing corpus: 291 repeated binding cases, 283 authored candidate literals checked against saved evidence, 8 legacy configuration exceptions separate. Rendering worker revised 24 repeated invocations and draft features; coordinator review pending. Pattern parsing assigned; remaining natural-language/time/language and calendar partitions open.",
+      "owner": "coordinator + language_completion + pattern_repair",
+      "progress": "Calendar batch retained. New parsing corpus: 291 repeated binding cases, 283 authored candidate literals checked against saved evidence, 8 legacy configuration exceptions separate. Rendering worker revised 24 repeated invocations and draft features; coordinator review pending. Pattern parsing assigned; remaining natural-language/time/language and calendar partitions open. Coordinator authored69 additional calendar/epoch candidate cases from existing observations; exact saved literals and independent epoch/week facts checked. Pattern fidelity repair and full original language batch active.",
       "evidence": [
         "docs/research/observations/calendar.json",
         "docs/research/observations/calendar-review.json",
@@ -103,7 +103,10 @@
         "docs/research/calendar-validation-map.json",
         "docs/research/parsing-family/README.md",
         "docs/research/parsing-family/feature-map.json",
-        "tools/review/parsing_literals.py"
+        "tools/review/parsing_literals.py",
+        "docs/research/calendar-additional-feature-map.json",
+        "spec/drafts/epoch.feature",
+        "spec/drafts/calendar-positions.feature"
       ]
     },
     {
@@ -125,7 +128,7 @@
         "Each promoted expectation has isolated reference evidence, profile, and semantic disposition.",
         "Feature text remains language-neutral."
       ],
-      "owner": "arithmetic_features (final fidelity repairs)",
+      "owner": "coordinator-review",
       "progress": "107 repeatable cases returned, including20 grammar productions, field/range/mode samples and17DST/business/state edges. Independent arithmetic review active; known gaps remain."
     },
     {

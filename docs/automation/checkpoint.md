@@ -232,3 +232,24 @@ option-wording cleanup is active. Recurrence expansion returned69 draft IDs from
 36 repeated multi-action probes. Language work is now assigned to
 language_completion (sol/high) after the prior worker completed selector checks
 but stopped short of language-specific cases. Pattern review remains pending.
+
+## Additional calendar feature checkpoint
+
+Coordinator authored69 further English cases in `spec/drafts/epoch.feature` and
+`calendar-positions.feature`, with exact source-side links in
+`docs/research/calendar-additional-feature-map.json`. They assert positive and
+negative epoch values, the 2038 boundary, inverse conversions and stored-instant
+replacement, ordinal queries/inverses including fractional days, absent weekday
+occurrences, week-year starts and week counts. Zero occurrence is separately
+tagged compatibility. `tools/review/calendar_additional_literals.py` verifies all
+69 saved literal correspondences and independent epoch/week facts; structural
+checks pass. No new reference execution was needed for this already observed
+corpus. All new features remain draft pending complete semantic/coverage review.
+
+Pattern parsing now belongs to `pattern_repair` (sol/high) after coordinator found
+uninitialized facade fixtures, placeholder epoch inputs, incorrectly exercised
+directives, and mostly missing English cases. `language_completion` continues its
+original language-specific runtime batch. Arithmetic fidelity repair returned
+corrected option wording; root review/integration remains. Next root work: review
+recurrence expansion and arithmetic corrections, then continue unobserved parsing
+and object-usage edges and source-level coverage audit.

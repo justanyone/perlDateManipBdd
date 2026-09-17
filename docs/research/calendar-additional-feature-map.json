@@ -1,0 +1,1255 @@
+{
+  "schema_version": 1,
+  "status": "draft literals matched saved observations; full semantic review pending",
+  "reference": "docs/research/observations/calendar.json",
+  "normalization": "Compact date strings separated into civil fields. Integer/fractional scalar values unchanged. Absent weekday result remains distinct from empty text.",
+  "cases": [
+    {
+      "case_id": "EPOCH-001",
+      "reference_case": "CAL-epoch.local-civil-seconds-epoch-1970-1-1-0-0-0-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "base",
+      "request": {
+        "date_time": [
+          1970,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 0,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-002",
+      "reference_case": "CAL-epoch.local-civil-seconds-epoch-1970-1-1-0-0-0-dm6-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "dm6",
+      "request": {
+        "date_time": [
+          1970,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 0,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-003",
+      "reference_case": "CAL-epoch.local-civil-seconds-epoch-1970-1-1-0-0-0-dm5-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "dm5",
+      "request": {
+        "date_time": [
+          1970,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 0,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-004",
+      "reference_case": "CAL-epoch.utc-civil-seconds-epoch-1970-1-1-0-0-0-dm6-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "profile": "dm6",
+      "request": {
+        "date_time": [
+          1970,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 0,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-005",
+      "reference_case": "CAL-epoch.utc-civil-seconds-epoch-1970-1-1-0-0-0-dm5-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "profile": "dm5",
+      "request": {
+        "date_time": [
+          1970,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 0,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-006",
+      "reference_case": "CAL-epoch.utc-instant-seconds-epoch-1970-1-1-0-0-0-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "profile": "oo",
+      "request": {
+        "date_time": [
+          1970,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": 0,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-007",
+      "reference_case": "CAL-epoch.local-civil-seconds-epoch-1969-12-31-23-59-59-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "base",
+      "request": {
+        "date_time": [
+          1969,
+          12,
+          31,
+          23,
+          59,
+          59
+        ]
+      },
+      "expected": -1,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-008",
+      "reference_case": "CAL-epoch.local-civil-seconds-epoch-1969-12-31-23-59-59-dm6-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "dm6",
+      "request": {
+        "date_time": [
+          1969,
+          12,
+          31,
+          23,
+          59,
+          59
+        ]
+      },
+      "expected": -1,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-009",
+      "reference_case": "CAL-epoch.local-civil-seconds-epoch-1969-12-31-23-59-59-dm5-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "dm5",
+      "request": {
+        "date_time": [
+          1969,
+          12,
+          31,
+          23,
+          59,
+          59
+        ]
+      },
+      "expected": -1,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-010",
+      "reference_case": "CAL-epoch.utc-civil-seconds-epoch-1969-12-31-23-59-59-dm6-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "profile": "dm6",
+      "request": {
+        "date_time": [
+          1969,
+          12,
+          31,
+          23,
+          59,
+          59
+        ]
+      },
+      "expected": -1,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-011",
+      "reference_case": "CAL-epoch.utc-civil-seconds-epoch-1969-12-31-23-59-59-dm5-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "profile": "dm5",
+      "request": {
+        "date_time": [
+          1969,
+          12,
+          31,
+          23,
+          59,
+          59
+        ]
+      },
+      "expected": -1,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-012",
+      "reference_case": "CAL-epoch.utc-instant-seconds-epoch-1969-12-31-23-59-59-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "profile": "oo",
+      "request": {
+        "date_time": [
+          1969,
+          12,
+          31,
+          23,
+          59,
+          59
+        ]
+      },
+      "expected": -1,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-013",
+      "reference_case": "CAL-epoch.local-civil-seconds-epoch-2040-2-29-12-34-56-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "base",
+      "request": {
+        "date_time": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ]
+      },
+      "expected": 2214131696,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-014",
+      "reference_case": "CAL-epoch.local-civil-seconds-epoch-2040-2-29-12-34-56-dm6-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "dm6",
+      "request": {
+        "date_time": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ]
+      },
+      "expected": 2214131696,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-015",
+      "reference_case": "CAL-epoch.local-civil-seconds-epoch-2040-2-29-12-34-56-dm5-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "dm5",
+      "request": {
+        "date_time": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ]
+      },
+      "expected": 2214131696,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-016",
+      "reference_case": "CAL-epoch.utc-civil-seconds-epoch-2040-2-29-12-34-56-dm6-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "profile": "dm6",
+      "request": {
+        "date_time": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ]
+      },
+      "expected": 2214131696,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-017",
+      "reference_case": "CAL-epoch.utc-civil-seconds-epoch-2040-2-29-12-34-56-dm5-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "profile": "dm5",
+      "request": {
+        "date_time": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ]
+      },
+      "expected": 2214131696,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-018",
+      "reference_case": "CAL-epoch.utc-instant-seconds-epoch-2040-2-29-12-34-56-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "profile": "oo",
+      "request": {
+        "date_time": [
+          2040,
+          2,
+          29,
+          12,
+          34,
+          56
+        ]
+      },
+      "expected": 2214131696,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-019",
+      "reference_case": "CAL-epoch.local-civil-seconds-epoch-2038-1-19-3-14-8-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "base",
+      "request": {
+        "date_time": [
+          2038,
+          1,
+          19,
+          3,
+          14,
+          8
+        ]
+      },
+      "expected": 2147483648,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-020",
+      "reference_case": "CAL-epoch.local-civil-seconds-epoch-2038-1-19-3-14-8-dm6-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "dm6",
+      "request": {
+        "date_time": [
+          2038,
+          1,
+          19,
+          3,
+          14,
+          8
+        ]
+      },
+      "expected": 2147483648,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-021",
+      "reference_case": "CAL-epoch.local-civil-seconds-epoch-2038-1-19-3-14-8-dm5-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "dm5",
+      "request": {
+        "date_time": [
+          2038,
+          1,
+          19,
+          3,
+          14,
+          8
+        ]
+      },
+      "expected": 2147483648,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-022",
+      "reference_case": "CAL-epoch.utc-civil-seconds-epoch-2038-1-19-3-14-8-dm6-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "profile": "dm6",
+      "request": {
+        "date_time": [
+          2038,
+          1,
+          19,
+          3,
+          14,
+          8
+        ]
+      },
+      "expected": 2147483648,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-023",
+      "reference_case": "CAL-epoch.utc-civil-seconds-epoch-2038-1-19-3-14-8-dm5-scalar",
+      "operation_id": "epoch.utc-civil-seconds",
+      "profile": "dm5",
+      "request": {
+        "date_time": [
+          2038,
+          1,
+          19,
+          3,
+          14,
+          8
+        ]
+      },
+      "expected": 2147483648,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-024",
+      "reference_case": "CAL-epoch.utc-instant-seconds-epoch-2038-1-19-3-14-8-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "profile": "oo",
+      "request": {
+        "date_time": [
+          2038,
+          1,
+          19,
+          3,
+          14,
+          8
+        ]
+      },
+      "expected": 2147483648,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-INVERSE--1",
+      "reference_case": "CAL-epoch.local-civil-seconds-epoch-inverse--1-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "base",
+      "request": {
+        "seconds": -1
+      },
+      "expected": [
+        1969,
+        12,
+        31,
+        23,
+        59,
+        59
+      ],
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-INVERSE-0",
+      "reference_case": "CAL-epoch.local-civil-seconds-epoch-inverse-0-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "base",
+      "request": {
+        "seconds": 0
+      },
+      "expected": [
+        1970,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-INVERSE-1",
+      "reference_case": "CAL-epoch.local-civil-seconds-epoch-inverse-1-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "base",
+      "request": {
+        "seconds": 1
+      },
+      "expected": [
+        1970,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-INVERSE-2147483648",
+      "reference_case": "CAL-epoch.local-civil-seconds-epoch-inverse-2147483648-base-scalar",
+      "operation_id": "epoch.local-civil-seconds",
+      "profile": "base",
+      "request": {
+        "seconds": 2147483648
+      },
+      "expected": [
+        2038,
+        1,
+        19,
+        3,
+        14,
+        8
+      ],
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-REPLACE--1",
+      "reference_case": "CAL-epoch.utc-instant-seconds-epoch-set--1-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "profile": "oo",
+      "request": {
+        "seconds": -1
+      },
+      "expected": {
+        "status": 0,
+        "date_time": [
+          1969,
+          12,
+          31,
+          23,
+          59,
+          59
+        ],
+        "error": ""
+      },
+      "assertion_kind": "stored-instant",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-REPLACE-0",
+      "reference_case": "CAL-epoch.utc-instant-seconds-epoch-set-0-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "profile": "oo",
+      "request": {
+        "seconds": 0
+      },
+      "expected": {
+        "status": 0,
+        "date_time": [
+          1970,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "error": ""
+      },
+      "assertion_kind": "stored-instant",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-REPLACE-1",
+      "reference_case": "CAL-epoch.utc-instant-seconds-epoch-set-1-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "profile": "oo",
+      "request": {
+        "seconds": 1
+      },
+      "expected": {
+        "status": 0,
+        "date_time": [
+          1970,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "error": ""
+      },
+      "assertion_kind": "stored-instant",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "EPOCH-REPLACE-2147483648",
+      "reference_case": "CAL-epoch.utc-instant-seconds-epoch-set-2147483648-oo-scalar",
+      "operation_id": "epoch.utc-instant-seconds",
+      "profile": "oo",
+      "request": {
+        "seconds": 2147483648
+      },
+      "expected": {
+        "status": 0,
+        "date_time": [
+          2038,
+          1,
+          19,
+          3,
+          14,
+          8
+        ],
+        "error": ""
+      },
+      "assertion_kind": "stored-instant",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-033",
+      "reference_case": "CAL-calendar.day-of-year-ordinal-1-1-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "base",
+      "request": {
+        "date": [
+          2040,
+          1,
+          1
+        ]
+      },
+      "expected": 1,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-034",
+      "reference_case": "CAL-calendar.day-of-year-ordinal-1-1-dm6-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "dm6",
+      "request": {
+        "date": [
+          2040,
+          1,
+          1
+        ]
+      },
+      "expected": 1,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-035",
+      "reference_case": "CAL-calendar.day-of-year-ordinal-1-1-dm5-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "dm5",
+      "request": {
+        "date": [
+          2040,
+          1,
+          1
+        ]
+      },
+      "expected": 1,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-036",
+      "reference_case": "CAL-calendar.day-of-year-ordinal-2-29-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "base",
+      "request": {
+        "date": [
+          2040,
+          2,
+          29
+        ]
+      },
+      "expected": 60,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-037",
+      "reference_case": "CAL-calendar.day-of-year-ordinal-2-29-dm6-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "dm6",
+      "request": {
+        "date": [
+          2040,
+          2,
+          29
+        ]
+      },
+      "expected": 60,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-038",
+      "reference_case": "CAL-calendar.day-of-year-ordinal-2-29-dm5-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "dm5",
+      "request": {
+        "date": [
+          2040,
+          2,
+          29
+        ]
+      },
+      "expected": 60,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-039",
+      "reference_case": "CAL-calendar.day-of-year-ordinal-12-31-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "base",
+      "request": {
+        "date": [
+          2040,
+          12,
+          31
+        ]
+      },
+      "expected": 366,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-040",
+      "reference_case": "CAL-calendar.day-of-year-ordinal-12-31-dm6-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "dm6",
+      "request": {
+        "date": [
+          2040,
+          12,
+          31
+        ]
+      },
+      "expected": 366,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-041",
+      "reference_case": "CAL-calendar.day-of-year-ordinal-12-31-dm5-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "dm5",
+      "request": {
+        "date": [
+          2040,
+          12,
+          31
+        ]
+      },
+      "expected": 366,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "NTH-WEEKDAY-1",
+      "reference_case": "CAL-calendar.nth-weekday-nth-2040-1-2-4-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "profile": "base",
+      "request": {
+        "year": 2040,
+        "occurrence": 1,
+        "weekday": 2,
+        "month": 4
+      },
+      "expected": [
+        2040,
+        4,
+        3
+      ],
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "NTH-WEEKDAY-2",
+      "reference_case": "CAL-calendar.nth-weekday-nth-2040--1-2-4-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "profile": "base",
+      "request": {
+        "year": 2040,
+        "occurrence": -1,
+        "weekday": 2,
+        "month": 4
+      },
+      "expected": [
+        2040,
+        4,
+        24
+      ],
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "NTH-WEEKDAY-3",
+      "reference_case": "CAL-calendar.nth-weekday-nth-2040-5-2-4-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "profile": "base",
+      "request": {
+        "year": 2040,
+        "occurrence": 5,
+        "weekday": 2,
+        "month": 4
+      },
+      "expected": null,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "NTH-WEEKDAY-4",
+      "reference_case": "CAL-calendar.nth-weekday-nth-2040-5-7-2-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "profile": "base",
+      "request": {
+        "year": 2040,
+        "occurrence": 5,
+        "weekday": 7,
+        "month": 2
+      },
+      "expected": null,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "NTH-WEEKDAY-5",
+      "reference_case": "CAL-calendar.nth-weekday-nth-2040-0-2-4-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "profile": "base",
+      "request": {
+        "year": 2040,
+        "occurrence": 0,
+        "weekday": 2,
+        "month": 4
+      },
+      "expected": [
+        2040,
+        4,
+        3
+      ],
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "NTH-WEEKDAY-6",
+      "reference_case": "CAL-calendar.nth-weekday-nth-2040-54-2-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "profile": "base",
+      "request": {
+        "year": 2040,
+        "occurrence": 54,
+        "weekday": 2,
+        "month": null
+      },
+      "expected": null,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "NTH-WEEKDAY-7",
+      "reference_case": "CAL-calendar.nth-weekday-nth-2040--53-2-base-scalar",
+      "operation_id": "calendar.nth-weekday",
+      "profile": "base",
+      "request": {
+        "year": 2040,
+        "occurrence": -53,
+        "weekday": 2,
+        "month": null
+      },
+      "expected": null,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-INVERSE-1-BASE",
+      "reference_case": "CAL-calendar.day-of-year-ordinal-inverse-1-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "base",
+      "request": {
+        "year": 2040,
+        "ordinal": 1
+      },
+      "expected": [
+        2040,
+        1,
+        1
+      ],
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-INVERSE-1-DM6",
+      "reference_case": "CAL-calendar.date-from-day-of-year-ordinal-date-1-dm6-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "profile": "dm6",
+      "request": {
+        "year": 2040,
+        "ordinal": 1
+      },
+      "expected": [
+        2040,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "assertion_kind": "list",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-INVERSE-1-DM5",
+      "reference_case": "CAL-calendar.date-from-day-of-year-ordinal-date-1-dm5-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "profile": "dm5",
+      "request": {
+        "year": 2040,
+        "ordinal": 1
+      },
+      "expected": [
+        2040,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "assertion_kind": "list",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-INVERSE-60-BASE",
+      "reference_case": "CAL-calendar.day-of-year-ordinal-inverse-60-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "base",
+      "request": {
+        "year": 2040,
+        "ordinal": 60
+      },
+      "expected": [
+        2040,
+        2,
+        29
+      ],
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-INVERSE-60-DM6",
+      "reference_case": "CAL-calendar.date-from-day-of-year-ordinal-date-60-dm6-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "profile": "dm6",
+      "request": {
+        "year": 2040,
+        "ordinal": 60
+      },
+      "expected": [
+        2040,
+        2,
+        29,
+        0,
+        0,
+        0
+      ],
+      "assertion_kind": "list",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-INVERSE-60-DM5",
+      "reference_case": "CAL-calendar.date-from-day-of-year-ordinal-date-60-dm5-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "profile": "dm5",
+      "request": {
+        "year": 2040,
+        "ordinal": 60
+      },
+      "expected": [
+        2040,
+        2,
+        29,
+        0,
+        0,
+        0
+      ],
+      "assertion_kind": "list",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-INVERSE-60.5-BASE",
+      "reference_case": "CAL-calendar.day-of-year-ordinal-inverse-60.5-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "base",
+      "request": {
+        "year": 2040,
+        "ordinal": 60.5
+      },
+      "expected": [
+        2040,
+        2,
+        29,
+        12,
+        0,
+        0
+      ],
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-INVERSE-60.5-DM6",
+      "reference_case": "CAL-calendar.date-from-day-of-year-ordinal-date-60.5-dm6-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "profile": "dm6",
+      "request": {
+        "year": 2040,
+        "ordinal": 60.5
+      },
+      "expected": [
+        2040,
+        2,
+        29,
+        12,
+        0,
+        0
+      ],
+      "assertion_kind": "list",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-INVERSE-60.5-DM5",
+      "reference_case": "CAL-calendar.date-from-day-of-year-ordinal-date-60.5-dm5-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "profile": "dm5",
+      "request": {
+        "year": 2040,
+        "ordinal": 60.5
+      },
+      "expected": [
+        2040,
+        2,
+        29,
+        12,
+        0,
+        0
+      ],
+      "assertion_kind": "list",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-INVERSE-366-BASE",
+      "reference_case": "CAL-calendar.day-of-year-ordinal-inverse-366-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "base",
+      "request": {
+        "year": 2040,
+        "ordinal": 366
+      },
+      "expected": [
+        2040,
+        12,
+        31
+      ],
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-INVERSE-366-DM6",
+      "reference_case": "CAL-calendar.date-from-day-of-year-ordinal-date-366-dm6-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "profile": "dm6",
+      "request": {
+        "year": 2040,
+        "ordinal": 366
+      },
+      "expected": [
+        2040,
+        12,
+        31,
+        0,
+        0,
+        0
+      ],
+      "assertion_kind": "list",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-INVERSE-366-DM5",
+      "reference_case": "CAL-calendar.date-from-day-of-year-ordinal-date-366-dm5-list",
+      "operation_id": "calendar.date-from-day-of-year",
+      "profile": "dm5",
+      "request": {
+        "year": 2040,
+        "ordinal": 366
+      },
+      "expected": [
+        2040,
+        12,
+        31,
+        0,
+        0,
+        0
+      ],
+      "assertion_kind": "list",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "ORDINAL-FRACTIONAL",
+      "reference_case": "CAL-calendar.day-of-year-fractional-ordinal-base-scalar",
+      "operation_id": "calendar.day-of-year",
+      "profile": "base",
+      "request": {
+        "date_time": [
+          2040,
+          2,
+          29,
+          12,
+          0,
+          0
+        ]
+      },
+      "expected": 60.5,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "WEEK-YEAR-START-2039",
+      "reference_case": "CAL-calendar.week-year-start-week-year-start-2039-base-scalar",
+      "operation_id": "calendar.week-year-start",
+      "profile": "base",
+      "request": {
+        "year": 2039
+      },
+      "expected": [
+        2039,
+        1,
+        3
+      ],
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "WEEK-YEAR-START-2040",
+      "reference_case": "CAL-calendar.week-year-start-week-year-start-2040-base-scalar",
+      "operation_id": "calendar.week-year-start",
+      "profile": "base",
+      "request": {
+        "year": 2040
+      },
+      "expected": [
+        2040,
+        1,
+        2
+      ],
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "WEEK-YEAR-START-2041",
+      "reference_case": "CAL-calendar.week-year-start-week-year-start-2041-base-scalar",
+      "operation_id": "calendar.week-year-start",
+      "profile": "base",
+      "request": {
+        "year": 2041
+      },
+      "expected": [
+        2040,
+        12,
+        31
+      ],
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "WEEK-YEAR-START-2042",
+      "reference_case": "CAL-calendar.week-year-start-week-year-start-2042-base-scalar",
+      "operation_id": "calendar.week-year-start",
+      "profile": "base",
+      "request": {
+        "year": 2042
+      },
+      "expected": [
+        2041,
+        12,
+        30
+      ],
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "WEEK-YEAR-LENGTH-2039",
+      "reference_case": "CAL-calendar.weeks-in-year-weeks-in-year-2039-base-scalar",
+      "operation_id": "calendar.weeks-in-year",
+      "profile": "base",
+      "request": {
+        "year": 2039
+      },
+      "expected": 52,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "WEEK-YEAR-LENGTH-2040",
+      "reference_case": "CAL-calendar.weeks-in-year-weeks-in-year-2040-base-scalar",
+      "operation_id": "calendar.weeks-in-year",
+      "profile": "base",
+      "request": {
+        "year": 2040
+      },
+      "expected": 52,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "WEEK-YEAR-LENGTH-2041",
+      "reference_case": "CAL-calendar.weeks-in-year-weeks-in-year-2041-base-scalar",
+      "operation_id": "calendar.weeks-in-year",
+      "profile": "base",
+      "request": {
+        "year": 2041
+      },
+      "expected": 52,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    },
+    {
+      "case_id": "WEEK-YEAR-LENGTH-2042",
+      "reference_case": "CAL-calendar.weeks-in-year-weeks-in-year-2042-base-scalar",
+      "operation_id": "calendar.weeks-in-year",
+      "profile": "base",
+      "request": {
+        "year": 2042
+      },
+      "expected": 52,
+      "assertion_kind": "scalar",
+      "status": "literal-evidence-checked; draft semantic review"
+    }
+  ]
+}
