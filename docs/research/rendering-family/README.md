@@ -50,3 +50,11 @@ case/tag mappings, 99 native/legacy table literals, successful reference setup,
 and independent UTC epoch and ISO-week facts. This is targeted draft verification,
 not proof that every rendering edge is covered. The remaining partitions above
 still prevent completion under `docs/automation/definition-of-done.md`.
+
+Extended-rendering fixture repair: its Background now independently defines the
+English ASCII UTC clock, date order, omitted time, week rules, work calendar,
+empty holidays/events, isolation, and default rendering mode. The zone case changes
+only the local zone to America/New_York, matching the saved probe. No expectation,
+probe, or observation changed. The reviewer additionally checks the seven extended
+request/result groups and date literals against frozen evidence. This is draft
+validation, not execution of a BDD adapter.

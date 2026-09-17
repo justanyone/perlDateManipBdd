@@ -815,3 +815,15 @@ Parse-cache batch remains unaccepted: root found that two thrown calls falsely
 record undefined returned values. partial_parsing owns correction and fresh capture;
 pattern_repair now repairs language portability, week_edges_finish continues week
 boundaries. Root owns integration only. Final gates remain open.
+
+## Extended-rendering fixture repair
+
+Root made extended-posix-rendering.feature self-contained with its actual fixed
+profile and explicit New York override. Seven request/result groups and date
+literals now have evidence checks in rendering_literals.py. Existing99 native
+literal checks and24 case/tag checks still pass; real parser accepts five scenarios
+without warnings/errors. Original observations/probes are unchanged.
+
+week_edges_finish delivered236 request edge batch for root review (not yet accepted).
+partial_parsing repairs parse-cache exception-return evidence; pattern_repair owns
+language portability. Complete specification and harness gates remain open.

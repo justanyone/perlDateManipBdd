@@ -2,7 +2,13 @@
 Feature: Render extended selectors and POSIX-mode forms
 
   Background:
-    Given the "utc-english-2040" rendering profile
+    Given a fresh "utc-english-2040" rendering profile using English ASCII text
+    And the local zone is "Etc/UTC" and the fixed reference clock is "2040-02-28 10:20:30 Etc/UTC"
+    And numeric dates use month-before-day order and omitted times use midnight
+    And weeks begin Monday and the first week contains January 4
+    And working days are Monday through Friday from 09:00 through 17:00 with 24-hour workdays disabled
+    And holidays and events are empty and external configuration is ignored
+    And POSIX rendering is disabled unless explicitly enabled in the scenario
 
   @RENDER-EXTENDED-ENDPOINTS
   Scenario: Render extended selector endpoints as one ordered request
@@ -33,6 +39,7 @@ Feature: Render extended selectors and POSIX-mode forms
 
   @RENDER-ZONE-OFFSET
   Scenario: A zone-specific profile renders offset and epoch fields
-    Given the "new-york-2040" rendering profile and date "2040-06-01 12:00:00 America/New_York"
+    Given the same rendering profile with local zone changed to "America/New_York"
+    And a complete date-time "2040-06-01 12:00:00 America/New_York"
     When I request patterns "%Z", "%z", "%N", "%s", and "%o"
     Then the ordered text result is "EDT", "-0400", "-04:00:00", "2222179200", and "2222161200"
