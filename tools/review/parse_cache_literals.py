@@ -23,6 +23,8 @@ for path, expected in mapping.items():
     text = (ROOT/path).read_text()
     found = set(re.findall(r'PC-[A-Z-]+',text))
     assert found == set(expected), (path, found ^ set(expected))
+interrupted_calls=[]
+completed_absent_calls=[]
 for case, row in rows.items():
     assert row['research_status']=='repeatable' and row['process_stderr']==''
     o=row['observation']; assert o['exception'] is None and o['call_stdout']==''
@@ -30,12 +32,28 @@ for case, row in rows.items():
     assert o['distribution_version']=='7.00' and o['tzdata']=='tzdata2026c'
     assert o['request']==cases[case]
     sequence=o['sequence']; assert sequence[0]['result']==0 and sequence[0]['error_after']==''
+    assert sequence[0]['call_completed'] is True and sequence[0]['action_exception'] is None
     assert len(sequence)==len(cases[case]['actions'])+1
     for action, step in zip(cases[case]['actions'], sequence[1:]):
         assert [step['action'],*step['arguments']]==action
+        if step['call_completed']:
+            assert step['action_exception'] is None
+            assert 'result' in step and 'result_type' in step
+            if step['result'] is None: completed_absent_calls.append((case,step['index']))
+        else:
+            assert step['action_exception']
+            assert 'result' not in step and 'result_type' not in step
+            interrupted_calls.append((case,step['index']))
         if step['action']=='clear_error':
-            assert step['result'] is None and step['error_after']==''
+            assert step['call_completed'] is True
+            assert step['result'] is None and step['result_type']=='absent'
+            assert step['error_after']==''
     assert sum((s['warnings'] for s in sequence[1:]),[])==o['warnings']
+assert interrupted_calls==[
+    ('PC-PARSE-FAIL-LOCAL-OBSERVER',3),
+    ('PC-PARSE-FAIL-GMT-OBSERVER',3),
+]
+assert len(completed_absent_calls)==8
 
 def sequence(case):
     return rows[case]['observation']['sequence']
@@ -73,8 +91,12 @@ for carrier in ('LOCAL','GMT'):
     assert len(failures)==1
     step=failures[0]
     assert step['arguments']==[carrier.lower(),'scalar']
-    assert step['result'] is None and 'undefined' in step['action_exception']
+    assert step['call_completed'] is False
+    assert 'result' not in step and 'result_type' not in step
+    assert 'undefined' in step['action_exception']
     assert len(step['warnings'])==8 and step['error_before']==step['error_after']==''
     assert steps[-1]['result']=='2040030214:10:11'
 print(json.dumps({'mapped_sequences':30,'stale_value_literals_checked':stale_checks,
-                  'exception_sequences_checked':2,'approved_specification_cases':0},indent=2))
+                  'exception_sequences_checked':2,'interrupted_calls_without_return':2,
+                  'completed_absent_returns':len(completed_absent_calls),
+                  'approved_specification_cases':0},indent=2))

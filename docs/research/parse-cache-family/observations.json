@@ -1,6 +1,7 @@
 {
-  "schema_version": 1,
-  "status": "research observations; feature literals manually reviewed, disputed compatibility behavior",
+  "schema_version": 2,
+  "status": "research observations with explicit call completion; feature literals manually reviewed, disputed compatibility behavior",
+  "sequence_result_rule": "result and result_type exist only when call_completed is true; an interrupted call records its exception and has no return fields",
   "reference": {
     "release": "Date-Manip-7.00",
     "distribution_version": "7.00",
@@ -9,9 +10,9 @@
   },
   "sha256": {
     "docs/research/parse-cache-family/cases.json": "11431cd1b37277cefdc9c94ecd4360be18016f95b2e1e3147d4ff29bd11319bc",
-    "tools/probes/parse-cache-family/probe.pl": "f897f17ea64e0f6b871e19c20c3c2cc45975d1e0e333a979b0ac4e8d1c90d6eb",
+    "tools/probes/parse-cache-family/probe.pl": "23304b3326b92ce67d5de6cc08944c6b1a3fab7054f48a187ee675fe29caf43f",
     "docs/automation/reference-profiles.json": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
-    "tools/probes/parse-cache-family/run.py": "d2c3b0ea3a1649ef73aa3594d81c48d0ce1dc13be0e689ae216ea04f86a1a1cd",
+    "tools/probes/parse-cache-family/run.py": "83df88f7c50657d546351524cf982c35d387bc910aa4bf6de96f4b0d2f19adc2",
     "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm": "c181a8d908efbc2c18cc0a59e10e90628161dc3acf811c9c0292985280953d85",
     "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm": "5ece620f80b039048d09b72fcb30f0e09ce8bb1151a0720db80ebdd2f9d7686f"
   },
@@ -21,7 +22,7 @@
     "parallel_workers": 4,
     "fresh_temporary_working_directory_per_case": true,
     "environment": {
-      "PATH": "/home/kevin/.local/bin:/home/kevin/.codex/tmp/arg0/codex-arg0F2Ouqr:/home/kevin/.local/bin:/home/kevin/.cargo/bin:/home/kevin/.local/bin:/home/kevin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/kevin/.vscode/extensions/openai.chatgpt-26.908.40401-linux-x64/bin/linux-x86_64",
+      "PATH": "/usr/bin:/bin",
       "PERL5LIB": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5",
       "TZ": "Etc/UTC",
       "LANG": "C.UTF-8",
@@ -78,6 +79,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -91,6 +94,7 @@
             "arguments": [
               "2040-02-29"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -105,6 +109,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -119,6 +124,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -133,6 +139,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -210,6 +217,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -224,6 +233,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -237,6 +247,7 @@
             "arguments": [
               "2040-02-29"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -251,6 +262,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -265,6 +277,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -279,6 +292,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -293,6 +307,7 @@
               "local",
               "list"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 6,
@@ -314,6 +329,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 7,
@@ -376,6 +392,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -390,6 +408,7 @@
               "local",
               "list"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -410,6 +429,7 @@
             "arguments": [
               "2040-02-29"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -424,6 +444,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -438,6 +459,7 @@
               "local",
               "list"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -522,6 +544,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -536,6 +560,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -549,6 +574,7 @@
             "arguments": [
               "2040-02-29"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -563,6 +589,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -577,6 +604,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -591,6 +619,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -605,6 +634,7 @@
               "gmt",
               "list"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 6,
@@ -626,6 +656,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 7,
@@ -688,6 +719,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -702,6 +735,7 @@
               "gmt",
               "list"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -722,6 +756,7 @@
             "arguments": [
               "2040-02-29"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -736,6 +771,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -750,6 +786,7 @@
               "gmt",
               "list"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -829,6 +866,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -843,6 +882,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -857,6 +897,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -870,6 +911,7 @@
             "arguments": [
               "2040-02-29"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -884,6 +926,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -898,6 +941,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -912,6 +956,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 6,
@@ -979,6 +1024,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -993,6 +1040,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -1006,6 +1054,7 @@
             "arguments": [
               "2040-02-29"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -1020,6 +1069,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -1034,6 +1084,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -1048,6 +1099,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -1118,6 +1170,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -1132,6 +1186,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -1145,6 +1200,7 @@
             "arguments": [
               "2040-02-30"
             ],
+            "call_completed": true,
             "error_after": "[parse_date] Invalid date",
             "error_before": "",
             "index": 2,
@@ -1159,6 +1215,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "[parse_date] Invalid date",
             "error_before": "[parse_date] Invalid date",
             "index": 3,
@@ -1170,6 +1227,7 @@
             "action": "clear_error",
             "action_exception": null,
             "arguments": [],
+            "call_completed": true,
             "error_after": "",
             "error_before": "[parse_date] Invalid date",
             "index": 4,
@@ -1184,6 +1242,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -1198,6 +1257,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 6,
@@ -1264,6 +1324,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -1278,6 +1340,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -1291,6 +1354,7 @@
             "arguments": [
               "2040-02-30"
             ],
+            "call_completed": true,
             "error_after": "[parse_date] Invalid date",
             "error_before": "",
             "index": 2,
@@ -1304,6 +1368,7 @@
             "arguments": [
               "2040-03-01"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "[parse_date] Invalid date",
             "index": 3,
@@ -1318,6 +1383,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -1332,6 +1398,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -1401,6 +1468,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -1415,6 +1484,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -1428,6 +1498,7 @@
             "arguments": [
               "2040-02-30"
             ],
+            "call_completed": true,
             "error_after": "[parse_date] Invalid date",
             "error_before": "",
             "index": 2,
@@ -1439,6 +1510,7 @@
             "action": "clear_error",
             "action_exception": null,
             "arguments": [],
+            "call_completed": true,
             "error_after": "",
             "error_before": "[parse_date] Invalid date",
             "index": 3,
@@ -1452,6 +1524,7 @@
             "arguments": [
               "2040-03-01"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -1466,6 +1539,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -1480,6 +1554,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 6,
@@ -1551,6 +1626,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -1565,6 +1642,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -1578,6 +1656,7 @@
             "arguments": [
               "2040-02-29"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -1592,6 +1671,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -1605,6 +1685,7 @@
             "arguments": [
               "2040-03-02 09:10:11 America/New_York"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -1619,6 +1700,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -1633,6 +1715,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 6,
@@ -1695,6 +1778,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -1708,6 +1793,7 @@
             "arguments": [
               "16:05:09"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -1722,6 +1808,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -1736,6 +1823,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -1750,6 +1838,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -1827,6 +1916,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -1841,6 +1932,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -1854,6 +1946,7 @@
             "arguments": [
               "16:05:09"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -1868,6 +1961,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -1882,6 +1976,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -1896,6 +1991,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -1910,6 +2006,7 @@
               "local",
               "list"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 6,
@@ -1931,6 +2028,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 7,
@@ -1993,6 +2091,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -2007,6 +2107,7 @@
               "local",
               "list"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -2027,6 +2128,7 @@
             "arguments": [
               "16:05:09"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -2041,6 +2143,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -2055,6 +2158,7 @@
               "local",
               "list"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -2139,6 +2243,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -2153,6 +2259,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -2166,6 +2273,7 @@
             "arguments": [
               "16:05:09"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -2180,6 +2288,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -2194,6 +2303,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -2208,6 +2318,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -2222,6 +2333,7 @@
               "gmt",
               "list"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 6,
@@ -2243,6 +2355,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 7,
@@ -2305,6 +2418,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -2319,6 +2434,7 @@
               "gmt",
               "list"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -2339,6 +2455,7 @@
             "arguments": [
               "16:05:09"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -2353,6 +2470,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -2367,6 +2485,7 @@
               "gmt",
               "list"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -2446,6 +2565,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -2460,6 +2581,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -2474,6 +2596,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -2487,6 +2610,7 @@
             "arguments": [
               "16:05:09"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -2501,6 +2625,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -2515,6 +2640,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -2529,6 +2655,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 6,
@@ -2596,6 +2723,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -2610,6 +2739,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -2623,6 +2753,7 @@
             "arguments": [
               "16:05:09"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -2637,6 +2768,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -2651,6 +2783,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -2665,6 +2798,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -2735,6 +2869,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -2749,6 +2885,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -2762,6 +2899,7 @@
             "arguments": [
               "25:61:70"
             ],
+            "call_completed": true,
             "error_after": "[parse_time] Invalid time string",
             "error_before": "",
             "index": 2,
@@ -2776,6 +2914,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "[parse_time] Invalid time string",
             "error_before": "[parse_time] Invalid time string",
             "index": 3,
@@ -2787,6 +2926,7 @@
             "action": "clear_error",
             "action_exception": null,
             "arguments": [],
+            "call_completed": true,
             "error_after": "",
             "error_before": "[parse_time] Invalid time string",
             "index": 4,
@@ -2801,6 +2941,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -2815,6 +2956,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 6,
@@ -2881,6 +3023,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -2895,6 +3039,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -2908,6 +3053,7 @@
             "arguments": [
               "25:61:70"
             ],
+            "call_completed": true,
             "error_after": "[parse_time] Invalid time string",
             "error_before": "",
             "index": 2,
@@ -2921,6 +3067,7 @@
             "arguments": [
               "16:05:09"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "[parse_time] Invalid time string",
             "index": 3,
@@ -2935,6 +3082,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -2949,6 +3097,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -3018,6 +3167,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -3032,6 +3183,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -3045,6 +3197,7 @@
             "arguments": [
               "25:61:70"
             ],
+            "call_completed": true,
             "error_after": "[parse_time] Invalid time string",
             "error_before": "",
             "index": 2,
@@ -3056,6 +3209,7 @@
             "action": "clear_error",
             "action_exception": null,
             "arguments": [],
+            "call_completed": true,
             "error_after": "",
             "error_before": "[parse_time] Invalid time string",
             "index": 3,
@@ -3069,6 +3223,7 @@
             "arguments": [
               "16:05:09"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -3083,6 +3238,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -3097,6 +3253,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 6,
@@ -3168,6 +3325,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -3182,6 +3341,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -3195,6 +3355,7 @@
             "arguments": [
               "16:05:09"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -3209,6 +3370,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -3222,6 +3384,7 @@
             "arguments": [
               "2040-03-02 09:10:11 America/New_York"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -3236,6 +3399,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -3250,6 +3414,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 6,
@@ -3311,6 +3476,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -3324,6 +3491,7 @@
             "arguments": [
               "2040-02-29 16:05:09 America/New_York"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -3338,6 +3506,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -3352,6 +3521,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -3366,6 +3536,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -3437,6 +3608,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -3451,6 +3624,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -3464,6 +3638,7 @@
             "arguments": [
               "2040-02-29 16:05:09 America/New_York"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -3478,6 +3653,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -3492,6 +3668,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -3506,6 +3683,7 @@
               "local",
               "list"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -3527,6 +3705,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 6,
@@ -3598,6 +3777,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -3612,6 +3793,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -3625,6 +3807,7 @@
             "arguments": [
               "2040-02-29 16:05:09 America/New_York"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -3639,6 +3822,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -3653,6 +3837,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -3667,6 +3852,7 @@
               "gmt",
               "list"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -3688,6 +3874,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 6,
@@ -3759,6 +3946,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -3773,6 +3962,7 @@
               "local",
               "list"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -3794,6 +3984,7 @@
               "gmt",
               "list"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 2,
@@ -3814,6 +4005,7 @@
             "arguments": [
               "2040-02-29 16:05:09 America/New_York"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 3,
@@ -3828,6 +4020,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -3842,6 +4035,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -3856,6 +4050,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 6,
@@ -3920,6 +4115,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -3934,6 +4131,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -3947,6 +4145,7 @@
             "arguments": [
               "2040-02-30 16:05:09 America/New_York"
             ],
+            "call_completed": true,
             "error_after": "[parse] Invalid date",
             "error_before": "",
             "index": 2,
@@ -3961,6 +4160,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "[parse] Invalid date",
             "error_before": "[parse] Invalid date",
             "index": 3,
@@ -3972,6 +4172,7 @@
             "action": "clear_error",
             "action_exception": null,
             "arguments": [],
+            "call_completed": true,
             "error_after": "",
             "error_before": "[parse] Invalid date",
             "index": 4,
@@ -3986,6 +4187,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -4049,6 +4251,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -4062,6 +4266,7 @@
             "arguments": [
               "2040-02-30 16:05:09 America/New_York"
             ],
+            "call_completed": true,
             "error_after": "[parse] Invalid date",
             "error_before": "",
             "index": 1,
@@ -4073,6 +4278,7 @@
             "action": "clear_error",
             "action_exception": null,
             "arguments": [],
+            "call_completed": true,
             "error_after": "",
             "error_before": "[parse] Invalid date",
             "index": 2,
@@ -4087,11 +4293,10 @@
               "local",
               "scalar"
             ],
+            "call_completed": false,
             "error_after": "",
             "error_before": "",
             "index": 3,
-            "result": null,
-            "result_type": "absent",
             "warnings": [
               "Use of uninitialized value $year in numeric lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1360.\n",
               "Use of uninitialized value $year in numeric gt (>) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1360.\n",
@@ -4109,6 +4314,7 @@
             "arguments": [
               "2040-03-02 09:10:11 America/New_York"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -4123,6 +4329,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -4195,6 +4402,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -4208,6 +4417,7 @@
             "arguments": [
               "2040-02-30 16:05:09 America/New_York"
             ],
+            "call_completed": true,
             "error_after": "[parse] Invalid date",
             "error_before": "",
             "index": 1,
@@ -4219,6 +4429,7 @@
             "action": "clear_error",
             "action_exception": null,
             "arguments": [],
+            "call_completed": true,
             "error_after": "",
             "error_before": "[parse] Invalid date",
             "index": 2,
@@ -4233,11 +4444,10 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": false,
             "error_after": "",
             "error_before": "",
             "index": 3,
-            "result": null,
-            "result_type": "absent",
             "warnings": [
               "Use of uninitialized value $year in numeric lt (<) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1360.\n",
               "Use of uninitialized value $year in numeric gt (>) at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm line 1360.\n",
@@ -4255,6 +4465,7 @@
             "arguments": [
               "2040-03-02 09:10:11 America/New_York"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -4269,6 +4480,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -4348,6 +4560,8 @@
         "sequence": [
           {
             "action": "initialize",
+            "action_exception": null,
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 0,
@@ -4362,6 +4576,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 1,
@@ -4375,6 +4590,7 @@
             "arguments": [
               "2040-02-30 16:05:09 America/New_York"
             ],
+            "call_completed": true,
             "error_after": "[parse] Invalid date",
             "error_before": "",
             "index": 2,
@@ -4388,6 +4604,7 @@
             "arguments": [
               "2040-03-02 09:10:11 America/New_York"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "[parse] Invalid date",
             "index": 3,
@@ -4402,6 +4619,7 @@
               "parsed",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 4,
@@ -4416,6 +4634,7 @@
               "local",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 5,
@@ -4430,6 +4649,7 @@
               "gmt",
               "scalar"
             ],
+            "call_completed": true,
             "error_after": "",
             "error_before": "",
             "index": 6,

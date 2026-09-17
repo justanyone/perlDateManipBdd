@@ -1,21 +1,475 @@
 {
-  "schema_version": 1,
-  "status": "manually reviewed case-to-draft map",
+  "schema_version": 2,
+  "status": "reviewed case-to-portable-draft and excluded-binding map; disputed reference behavior remains unapproved",
+  "binding_features": {
+    "spec/drafts/parse-cache/perl-binding.feature": [
+      "PC-BIND-EXCEPTIONS",
+      "PC-BIND-WARNINGS"
+    ]
+  },
+  "case_mappings": [
+    {
+      "case_id": "PC-DATE-PRISTINE",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "Partial parsing yields current representations when none was read first",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "date.parse-date-only"
+      ]
+    },
+    {
+      "case_id": "PC-DATE-PRE-LOCAL-SCALAR",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "A previously read converted serialized value remains visible after partial parsing",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "date.parse-date-only"
+      ]
+    },
+    {
+      "case_id": "PC-DATE-PRE-LOCAL-LIST",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "Previously read converted fields remain visible after partial parsing",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "date.parse-date-only"
+      ]
+    },
+    {
+      "case_id": "PC-DATE-PRE-GMT-SCALAR",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "A previously read converted serialized value remains visible after partial parsing",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "date.parse-date-only"
+      ]
+    },
+    {
+      "case_id": "PC-DATE-PRE-GMT-LIST",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "Previously read converted fields remain visible after partial parsing",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "date.parse-date-only"
+      ]
+    },
+    {
+      "case_id": "PC-DATE-PRE-BOTH",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "Reading both converted representations leaves both earlier values visible",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "date.parse-date-only"
+      ]
+    },
+    {
+      "case_id": "PC-DATE-PRE-PARSED",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "A prior parsed-zone read leaves converted results current",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "date.parse-date-only"
+      ]
+    },
+    {
+      "case_id": "PC-DATE-FAIL-PRE-LOCAL",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "A failed partial parse preserves the prior value behind its error",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "date.parse-date-only"
+      ]
+    },
+    {
+      "case_id": "PC-DATE-FAIL-RESET",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "Retrying without clearing the error resets partial-parse defaults",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "date.parse-date-only"
+      ]
+    },
+    {
+      "case_id": "PC-DATE-FAIL-CLEAR-THEN-SUCCESS",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "Clearing the error preserves fields and an earlier converted value",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "date.parse-date-only"
+      ]
+    },
+    {
+      "case_id": "PC-DATE-RECOVER-WITH-PARSE",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "Complete parsing recovers from an earlier converted partial-parse result",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "date.parse-date-only"
+      ]
+    },
+    {
+      "case_id": "PC-TIME-PRISTINE",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "Partial parsing yields current representations when none was read first",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "time.parse-text"
+      ]
+    },
+    {
+      "case_id": "PC-TIME-PRE-LOCAL-SCALAR",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "A previously read converted serialized value remains visible after partial parsing",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "time.parse-text"
+      ]
+    },
+    {
+      "case_id": "PC-TIME-PRE-LOCAL-LIST",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "Previously read converted fields remain visible after partial parsing",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "time.parse-text"
+      ]
+    },
+    {
+      "case_id": "PC-TIME-PRE-GMT-SCALAR",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "A previously read converted serialized value remains visible after partial parsing",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "time.parse-text"
+      ]
+    },
+    {
+      "case_id": "PC-TIME-PRE-GMT-LIST",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "Previously read converted fields remain visible after partial parsing",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "time.parse-text"
+      ]
+    },
+    {
+      "case_id": "PC-TIME-PRE-BOTH",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "Reading both converted representations leaves both earlier values visible",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "time.parse-text"
+      ]
+    },
+    {
+      "case_id": "PC-TIME-PRE-PARSED",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "A prior parsed-zone read leaves converted results current",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "time.parse-text"
+      ]
+    },
+    {
+      "case_id": "PC-TIME-FAIL-PRE-GMT",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "A failed partial parse preserves the prior value behind its error",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "time.parse-text"
+      ]
+    },
+    {
+      "case_id": "PC-TIME-FAIL-RESET",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "Retrying without clearing the error resets partial-parse defaults",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "time.parse-text"
+      ]
+    },
+    {
+      "case_id": "PC-TIME-FAIL-CLEAR-THEN-SUCCESS",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "Clearing the error preserves fields and an earlier converted value",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "time.parse-text"
+      ]
+    },
+    {
+      "case_id": "PC-TIME-RECOVER-WITH-PARSE",
+      "feature": "partial-mutation-cache.feature",
+      "scenario": "Complete parsing recovers from an earlier converted partial-parse result",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state",
+        "time.parse-text"
+      ]
+    },
+    {
+      "case_id": "PC-PARSE-PRISTINE",
+      "feature": "full-parse-reset.feature",
+      "scenario": "Complete parsing refreshes all serialized values when none was read first",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "PC-PARSE-PRE-LOCAL",
+      "feature": "full-parse-reset.feature",
+      "scenario": "Complete parsing refreshes a previously read converted representation",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "PC-PARSE-PRE-GMT",
+      "feature": "full-parse-reset.feature",
+      "scenario": "Complete parsing refreshes a previously read converted representation",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "PC-PARSE-PRE-BOTH-LIST",
+      "feature": "full-parse-reset.feature",
+      "scenario": "Complete parsing refreshes values after both converted field records were read",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "PC-PARSE-FAIL",
+      "feature": "full-parse-reset.feature",
+      "scenario": "A failed complete parse leaves no parsed-zone value after error clearing",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "PC-PARSE-FAIL-LOCAL-OBSERVER",
+      "feature": "full-parse-reset.feature",
+      "scenario": "A converted read after clearing a complete-parse error fails without a value",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "PC-PARSE-FAIL-GMT-OBSERVER",
+      "feature": "full-parse-reset.feature",
+      "scenario": "A converted read after clearing a complete-parse error fails without a value",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "case_id": "PC-PARSE-FAIL-RECOVER",
+      "feature": "full-parse-reset.feature",
+      "scenario": "A successful complete parse recovers directly from a prior complete-parse error",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state"
+      ]
+    }
+  ],
+  "binding_assertions": [
+    {
+      "assertion_id": "PC-BIND-EXCEPTIONS",
+      "feature": "perl-binding.feature",
+      "scenario": "Perl raises the captured array-reference exception for a converted scalar read",
+      "source_case_ids": [
+        "PC-PARSE-FAIL-LOCAL-OBSERVER",
+        "PC-PARSE-FAIL-GMT-OBSERVER"
+      ],
+      "return_semantics": "the public value call is interrupted; it has no returned value or return-type field"
+    },
+    {
+      "assertion_id": "PC-BIND-WARNINGS",
+      "feature": "perl-binding.feature",
+      "scenario": "Perl emits the captured warning sequence before each array-reference exception",
+      "source_case_ids": [
+        "PC-DATE-PRISTINE",
+        "PC-DATE-PRE-LOCAL-SCALAR",
+        "PC-DATE-PRE-LOCAL-LIST",
+        "PC-DATE-PRE-GMT-SCALAR",
+        "PC-DATE-PRE-GMT-LIST",
+        "PC-DATE-PRE-BOTH",
+        "PC-DATE-PRE-PARSED",
+        "PC-DATE-FAIL-PRE-LOCAL",
+        "PC-DATE-FAIL-RESET",
+        "PC-DATE-FAIL-CLEAR-THEN-SUCCESS",
+        "PC-DATE-RECOVER-WITH-PARSE",
+        "PC-TIME-PRISTINE",
+        "PC-TIME-PRE-LOCAL-SCALAR",
+        "PC-TIME-PRE-LOCAL-LIST",
+        "PC-TIME-PRE-GMT-SCALAR",
+        "PC-TIME-PRE-GMT-LIST",
+        "PC-TIME-PRE-BOTH",
+        "PC-TIME-PRE-PARSED",
+        "PC-TIME-FAIL-PRE-GMT",
+        "PC-TIME-FAIL-RESET",
+        "PC-TIME-FAIL-CLEAR-THEN-SUCCESS",
+        "PC-TIME-RECOVER-WITH-PARSE",
+        "PC-PARSE-PRISTINE",
+        "PC-PARSE-PRE-LOCAL",
+        "PC-PARSE-PRE-GMT",
+        "PC-PARSE-PRE-BOTH-LIST",
+        "PC-PARSE-FAIL",
+        "PC-PARSE-FAIL-LOCAL-OBSERVER",
+        "PC-PARSE-FAIL-GMT-OBSERVER",
+        "PC-PARSE-FAIL-RECOVER"
+      ]
+    }
+  ],
+  "binding_case_mappings": [
+    {
+      "binding_case_id": "PC-BIND-EXCEPTION-LOCAL",
+      "assertion_id": "PC-BIND-EXCEPTIONS",
+      "source_case_id": "PC-PARSE-FAIL-LOCAL-OBSERVER",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state"
+      ],
+      "call_completed": false,
+      "return_fields": "omitted"
+    },
+    {
+      "binding_case_id": "PC-BIND-EXCEPTION-GMT",
+      "assertion_id": "PC-BIND-EXCEPTIONS",
+      "source_case_id": "PC-PARSE-FAIL-GMT-OBSERVER",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state"
+      ],
+      "call_completed": false,
+      "return_fields": "omitted"
+    },
+    {
+      "binding_case_id": "PC-BIND-WARNINGS-LOCAL",
+      "assertion_id": "PC-BIND-WARNINGS",
+      "source_case_id": "PC-PARSE-FAIL-LOCAL-OBSERVER",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state"
+      ]
+    },
+    {
+      "binding_case_id": "PC-BIND-WARNINGS-GMT",
+      "assertion_id": "PC-BIND-WARNINGS",
+      "source_case_id": "PC-PARSE-FAIL-GMT-OBSERVER",
+      "operation_ids": [
+        "date.parse-text",
+        "date.read-value",
+        "error.read-state"
+      ]
+    }
+  ],
+  "binding_source": "docs/research/parse-cache-family/bindings.json",
+  "mapping_gaps": [],
   "features": {
     "spec/drafts/parse-cache/partial-mutation-cache.feature": [
-      "PC-DATE-PRISTINE", "PC-DATE-PRE-LOCAL-SCALAR", "PC-DATE-PRE-LOCAL-LIST",
-      "PC-DATE-PRE-GMT-SCALAR", "PC-DATE-PRE-GMT-LIST", "PC-DATE-PRE-BOTH",
-      "PC-DATE-PRE-PARSED", "PC-DATE-FAIL-PRE-LOCAL", "PC-DATE-FAIL-RESET",
-      "PC-DATE-FAIL-CLEAR-THEN-SUCCESS", "PC-DATE-RECOVER-WITH-PARSE",
-      "PC-TIME-PRISTINE", "PC-TIME-PRE-LOCAL-SCALAR", "PC-TIME-PRE-LOCAL-LIST",
-      "PC-TIME-PRE-GMT-SCALAR", "PC-TIME-PRE-GMT-LIST", "PC-TIME-PRE-BOTH",
-      "PC-TIME-PRE-PARSED", "PC-TIME-FAIL-PRE-GMT", "PC-TIME-FAIL-RESET",
-      "PC-TIME-FAIL-CLEAR-THEN-SUCCESS", "PC-TIME-RECOVER-WITH-PARSE"
+      "PC-DATE-PRISTINE",
+      "PC-DATE-PRE-LOCAL-SCALAR",
+      "PC-DATE-PRE-LOCAL-LIST",
+      "PC-DATE-PRE-GMT-SCALAR",
+      "PC-DATE-PRE-GMT-LIST",
+      "PC-DATE-PRE-BOTH",
+      "PC-DATE-PRE-PARSED",
+      "PC-DATE-FAIL-PRE-LOCAL",
+      "PC-DATE-FAIL-RESET",
+      "PC-DATE-FAIL-CLEAR-THEN-SUCCESS",
+      "PC-DATE-RECOVER-WITH-PARSE",
+      "PC-TIME-PRISTINE",
+      "PC-TIME-PRE-LOCAL-SCALAR",
+      "PC-TIME-PRE-LOCAL-LIST",
+      "PC-TIME-PRE-GMT-SCALAR",
+      "PC-TIME-PRE-GMT-LIST",
+      "PC-TIME-PRE-BOTH",
+      "PC-TIME-PRE-PARSED",
+      "PC-TIME-FAIL-PRE-GMT",
+      "PC-TIME-FAIL-RESET",
+      "PC-TIME-FAIL-CLEAR-THEN-SUCCESS",
+      "PC-TIME-RECOVER-WITH-PARSE"
     ],
     "spec/drafts/parse-cache/full-parse-reset.feature": [
-      "PC-PARSE-PRISTINE", "PC-PARSE-PRE-LOCAL", "PC-PARSE-PRE-GMT",
-      "PC-PARSE-PRE-BOTH-LIST", "PC-PARSE-FAIL", "PC-PARSE-FAIL-LOCAL-OBSERVER",
-      "PC-PARSE-FAIL-GMT-OBSERVER", "PC-PARSE-FAIL-RECOVER"
+      "PC-PARSE-PRISTINE",
+      "PC-PARSE-PRE-LOCAL",
+      "PC-PARSE-PRE-GMT",
+      "PC-PARSE-PRE-BOTH-LIST",
+      "PC-PARSE-FAIL",
+      "PC-PARSE-FAIL-LOCAL-OBSERVER",
+      "PC-PARSE-FAIL-GMT-OBSERVER",
+      "PC-PARSE-FAIL-RECOVER"
+    ]
+  },
+  "observation_schema": {
+    "call_completed_true": "result and result_type record the completed public call, including an absent value",
+    "call_completed_false": "action_exception records interruption; result and result_type are omitted because no value returned",
+    "interrupted_source_case_ids": [
+      "PC-PARSE-FAIL-LOCAL-OBSERVER",
+      "PC-PARSE-FAIL-GMT-OBSERVER"
     ]
   }
 }

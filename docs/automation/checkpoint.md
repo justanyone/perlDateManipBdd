@@ -855,3 +855,24 @@ and new7-row reviewer pass; real parser accepts10 scenarios without warnings.
 Parse-cache worker delivered corrected two-attempt schema evidence for root review;
 partial_parsing now owns recurrence portability, pattern_repair languages, and
 week_edges_finish week-edge row/profile repairs. All final gates remain open.
+
+## Parse/value-history integration
+
+Root accepted the30-case parsing-state portability repair after correcting fake
+returns for two interrupted converted-value calls. Completed absent returns remain
+explicit (eight); interrupted calls omit return fields. Root fixed PATH, captured
+two attempts per case in session42850 (terminal exit0), and compared every prior
+request/warning/error/exception/completed result/recovery outcome to HEAD evidence:
+all unchanged after removing only new completion metadata and old fake returns.
+Current observations copied from /tmp/parse-cache-root-final.json with correct
+probe/runner hashes. Historical coverage evidence is untouched.
+
+Native diagnostics now live in four excluded binding rows/two scenarios; all30
+public sequences retain exact actions, reads, error timing and recovery without
+private/context requirements. Conditional no-call rows are split. Root explicitly
+referenced action-sequence columns from outline steps. Real parser initially
+rejected an inserted blank before a step; root removed it and all8+22+2 expanded
+cases parse without warnings. Both family and independent literal reviewers pass.
+
+Remaining workers: languages, recurrence, and week-edge profiles/row validation.
+No active capture process remains for this batch. All final gates remain open.

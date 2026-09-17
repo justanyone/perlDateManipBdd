@@ -66,6 +66,7 @@ my $stdout = '';
       push @{$out{'sequence'}}, {
          index => 0, action => 'initialize', input => $corpus->{'initial_text'},
          error_before => '', result => $initial_status, result_type => 'number',
+         call_completed => JSON::PP::true, action_exception => undef,
          error_after => scalar $date->err(),
       };
       die 'invalid initial value' if $initial_status;
@@ -104,10 +105,11 @@ my $stdout = '';
          1;
          };
          if (! $action_ok) {
+            $row{'call_completed'} = JSON::PP::false;
             $row{'action_exception'} = "$@";
-            $row{'result'} = undef;
-            $row{'result_type'} = 'absent';
+            delete @row{'result','result_type'};
          } else {
+            $row{'call_completed'} = JSON::PP::true;
             $row{'action_exception'} = undef;
          }
          $row{'warnings'} = [@warnings[$warning_start .. $#warnings]];

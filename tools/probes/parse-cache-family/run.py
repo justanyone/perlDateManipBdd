@@ -3,7 +3,6 @@
 from concurrent.futures import ThreadPoolExecutor
 import hashlib
 import json
-import os
 from pathlib import Path
 import subprocess
 import tempfile
@@ -13,7 +12,7 @@ CORPUS = ROOT / "docs/research/parse-cache-family/cases.json"
 PROBE = ROOT / "tools/probes/parse-cache-family/probe.pl"
 FIXTURE = ROOT / "docs/automation/reference-profiles.json"
 ENV = {
-    "PATH": os.environ["PATH"],
+    "PATH": "/usr/bin:/bin",
     "PERL5LIB": str(ROOT / "local/date-manip-7.00/lib/perl5"),
     "TZ": "Etc/UTC",
     "LANG": "C.UTF-8",
@@ -48,8 +47,12 @@ if __name__ == "__main__":
     with ThreadPoolExecutor(max_workers=4) as pool:
         rows = list(pool.map(observe, cases))
     print(json.dumps({
-        "schema_version": 1,
-        "status": "research observations; feature literals manually reviewed, disputed compatibility behavior",
+        "schema_version": 2,
+        "status": "research observations with explicit call completion; feature literals manually reviewed, disputed compatibility behavior",
+        "sequence_result_rule": (
+            "result and result_type exist only when call_completed is true; "
+            "an interrupted call records its exception and has no return fields"
+        ),
         "reference": fixture["reference"],
         "sha256": {
             str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()
