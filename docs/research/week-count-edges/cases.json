@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "operation_id": "calendar.weeks-in-year",
+  "fixture": "oo",
+  "cases": [
+    {
+      "case_id": "WCE-YEAR1",
+      "steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "WCE-YEAR9999",
+      "steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            9999
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "WCE-ZERO",
+      "steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "WCE-NEGATIVE",
+      "steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "WCE-HIGH",
+      "steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            10000
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "WCE-FRACTION",
+      "steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            2000.5
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "WCE-OMITTED",
+      "steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "case_id": "WCE-ABSENT",
+      "steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "WCE-EMPTY",
+      "steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "WCE-TEXT",
+      "steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            "year"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "WCE-SHORT",
+      "steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            "00"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "WCE-CONFIG-ABA",
+      "steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            2000
+          ]
+        },
+        {
+          "operation": "config",
+          "arguments": [
+            "Week1ofYear",
+            "jan1"
+          ]
+        },
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            2000
+          ]
+        },
+        {
+          "operation": "config",
+          "arguments": [
+            "Week1ofYear",
+            "jan4"
+          ]
+        },
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            2000
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "WCE-BAD-FIRSTDAY",
+      "steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            2000
+          ]
+        },
+        {
+          "operation": "config",
+          "arguments": [
+            "FirstDay",
+            8
+          ]
+        },
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            2000
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "WCE-BAD-WEEKRULE",
+      "steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            2000
+          ]
+        },
+        {
+          "operation": "config",
+          "arguments": [
+            "Week1ofYear",
+            "jan8"
+          ]
+        },
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            2000
+          ]
+        }
+      ]
+    }
+  ]
+}

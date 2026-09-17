@@ -1,0 +1,444 @@
+{
+  "schema_version": 1,
+  "canonical_operation": "calendar.weeks-in-year",
+  "case_map": [
+    {
+      "case_id": "WCE-YEAR1",
+      "operation_id": "calendar.weeks-in-year",
+      "portable_profile": {
+        "first_weekday": 1,
+        "first_weekday_name": "Monday",
+        "week_one_rule": "jan4"
+      },
+      "reference_fixture": "oo with ForceDate deliberately omitted for the direct Base service",
+      "request_steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            1
+          ]
+        }
+      ],
+      "partition_ids": [
+        "calendar.weeks-in-year.p1",
+        "calendar.weeks-in-year.p2"
+      ],
+      "portable_feature": "spec/drafts/week-count-edges/endpoint-years.feature",
+      "binding_steps": [
+        "WCE-YEAR1-S01"
+      ],
+      "binding_feature": "spec/drafts/week-count-edges/perl-binding.feature",
+      "observation": "docs/research/week-count-edges/observations.json"
+    },
+    {
+      "case_id": "WCE-YEAR9999",
+      "operation_id": "calendar.weeks-in-year",
+      "portable_profile": {
+        "first_weekday": 1,
+        "first_weekday_name": "Monday",
+        "week_one_rule": "jan4"
+      },
+      "reference_fixture": "oo with ForceDate deliberately omitted for the direct Base service",
+      "request_steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            9999
+          ]
+        }
+      ],
+      "partition_ids": [
+        "calendar.weeks-in-year.p1",
+        "calendar.weeks-in-year.p2"
+      ],
+      "portable_feature": "spec/drafts/week-count-edges/endpoint-years.feature",
+      "binding_steps": [
+        "WCE-YEAR9999-S01"
+      ],
+      "binding_feature": "spec/drafts/week-count-edges/perl-binding.feature",
+      "observation": "docs/research/week-count-edges/observations.json"
+    },
+    {
+      "case_id": "WCE-ZERO",
+      "operation_id": "calendar.weeks-in-year",
+      "portable_profile": {
+        "first_weekday": 1,
+        "first_weekday_name": "Monday",
+        "week_one_rule": "jan4"
+      },
+      "reference_fixture": "oo with ForceDate deliberately omitted for the direct Base service",
+      "request_steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            0
+          ]
+        }
+      ],
+      "partition_ids": [
+        "calendar.weeks-in-year.p4"
+      ],
+      "portable_feature": "spec/drafts/week-count-edges/year-input-compatibility.feature",
+      "binding_steps": [
+        "WCE-ZERO-S01"
+      ],
+      "binding_feature": "spec/drafts/week-count-edges/perl-binding.feature",
+      "observation": "docs/research/week-count-edges/observations.json"
+    },
+    {
+      "case_id": "WCE-NEGATIVE",
+      "operation_id": "calendar.weeks-in-year",
+      "portable_profile": {
+        "first_weekday": 1,
+        "first_weekday_name": "Monday",
+        "week_one_rule": "jan4"
+      },
+      "reference_fixture": "oo with ForceDate deliberately omitted for the direct Base service",
+      "request_steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            -1
+          ]
+        }
+      ],
+      "partition_ids": [
+        "calendar.weeks-in-year.p4"
+      ],
+      "portable_feature": "spec/drafts/week-count-edges/year-input-compatibility.feature",
+      "binding_steps": [
+        "WCE-NEGATIVE-S01"
+      ],
+      "binding_feature": "spec/drafts/week-count-edges/perl-binding.feature",
+      "observation": "docs/research/week-count-edges/observations.json"
+    },
+    {
+      "case_id": "WCE-HIGH",
+      "operation_id": "calendar.weeks-in-year",
+      "portable_profile": {
+        "first_weekday": 1,
+        "first_weekday_name": "Monday",
+        "week_one_rule": "jan4"
+      },
+      "reference_fixture": "oo with ForceDate deliberately omitted for the direct Base service",
+      "request_steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            10000
+          ]
+        }
+      ],
+      "partition_ids": [
+        "calendar.weeks-in-year.p4"
+      ],
+      "portable_feature": "spec/drafts/week-count-edges/year-input-compatibility.feature",
+      "binding_steps": [
+        "WCE-HIGH-S01"
+      ],
+      "binding_feature": "spec/drafts/week-count-edges/perl-binding.feature",
+      "observation": "docs/research/week-count-edges/observations.json"
+    },
+    {
+      "case_id": "WCE-FRACTION",
+      "operation_id": "calendar.weeks-in-year",
+      "portable_profile": {
+        "first_weekday": 1,
+        "first_weekday_name": "Monday",
+        "week_one_rule": "jan4"
+      },
+      "reference_fixture": "oo with ForceDate deliberately omitted for the direct Base service",
+      "request_steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            2000.5
+          ]
+        }
+      ],
+      "partition_ids": [
+        "calendar.weeks-in-year.p4"
+      ],
+      "portable_feature": "spec/drafts/week-count-edges/year-input-compatibility.feature",
+      "binding_steps": [
+        "WCE-FRACTION-S01"
+      ],
+      "binding_feature": "spec/drafts/week-count-edges/perl-binding.feature",
+      "observation": "docs/research/week-count-edges/observations.json"
+    },
+    {
+      "case_id": "WCE-OMITTED",
+      "operation_id": "calendar.weeks-in-year",
+      "portable_profile": {
+        "first_weekday": 1,
+        "first_weekday_name": "Monday",
+        "week_one_rule": "jan4"
+      },
+      "reference_fixture": "oo with ForceDate deliberately omitted for the direct Base service",
+      "request_steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": []
+        }
+      ],
+      "partition_ids": [
+        "calendar.weeks-in-year.p4"
+      ],
+      "portable_feature": "spec/drafts/week-count-edges/year-input-compatibility.feature",
+      "binding_steps": [
+        "WCE-OMITTED-S01"
+      ],
+      "binding_feature": "spec/drafts/week-count-edges/perl-binding.feature",
+      "observation": "docs/research/week-count-edges/observations.json"
+    },
+    {
+      "case_id": "WCE-ABSENT",
+      "operation_id": "calendar.weeks-in-year",
+      "portable_profile": {
+        "first_weekday": 1,
+        "first_weekday_name": "Monday",
+        "week_one_rule": "jan4"
+      },
+      "reference_fixture": "oo with ForceDate deliberately omitted for the direct Base service",
+      "request_steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            null
+          ]
+        }
+      ],
+      "partition_ids": [
+        "calendar.weeks-in-year.p4"
+      ],
+      "portable_feature": "spec/drafts/week-count-edges/year-input-compatibility.feature",
+      "binding_steps": [
+        "WCE-ABSENT-S01"
+      ],
+      "binding_feature": "spec/drafts/week-count-edges/perl-binding.feature",
+      "observation": "docs/research/week-count-edges/observations.json"
+    },
+    {
+      "case_id": "WCE-EMPTY",
+      "operation_id": "calendar.weeks-in-year",
+      "portable_profile": {
+        "first_weekday": 1,
+        "first_weekday_name": "Monday",
+        "week_one_rule": "jan4"
+      },
+      "reference_fixture": "oo with ForceDate deliberately omitted for the direct Base service",
+      "request_steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            ""
+          ]
+        }
+      ],
+      "partition_ids": [
+        "calendar.weeks-in-year.p4"
+      ],
+      "portable_feature": "spec/drafts/week-count-edges/year-input-compatibility.feature",
+      "binding_steps": [
+        "WCE-EMPTY-S01"
+      ],
+      "binding_feature": "spec/drafts/week-count-edges/perl-binding.feature",
+      "observation": "docs/research/week-count-edges/observations.json"
+    },
+    {
+      "case_id": "WCE-TEXT",
+      "operation_id": "calendar.weeks-in-year",
+      "portable_profile": {
+        "first_weekday": 1,
+        "first_weekday_name": "Monday",
+        "week_one_rule": "jan4"
+      },
+      "reference_fixture": "oo with ForceDate deliberately omitted for the direct Base service",
+      "request_steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            "year"
+          ]
+        }
+      ],
+      "partition_ids": [
+        "calendar.weeks-in-year.p4"
+      ],
+      "portable_feature": "spec/drafts/week-count-edges/year-input-compatibility.feature",
+      "binding_steps": [
+        "WCE-TEXT-S01"
+      ],
+      "binding_feature": "spec/drafts/week-count-edges/perl-binding.feature",
+      "observation": "docs/research/week-count-edges/observations.json"
+    },
+    {
+      "case_id": "WCE-SHORT",
+      "operation_id": "calendar.weeks-in-year",
+      "portable_profile": {
+        "first_weekday": 1,
+        "first_weekday_name": "Monday",
+        "week_one_rule": "jan4"
+      },
+      "reference_fixture": "oo with ForceDate deliberately omitted for the direct Base service",
+      "request_steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            "00"
+          ]
+        }
+      ],
+      "partition_ids": [
+        "calendar.weeks-in-year.p4"
+      ],
+      "portable_feature": "spec/drafts/week-count-edges/year-input-compatibility.feature",
+      "binding_steps": [
+        "WCE-SHORT-S01"
+      ],
+      "binding_feature": "spec/drafts/week-count-edges/perl-binding.feature",
+      "observation": "docs/research/week-count-edges/observations.json"
+    },
+    {
+      "case_id": "WCE-CONFIG-ABA",
+      "operation_id": "calendar.weeks-in-year",
+      "portable_profile": {
+        "first_weekday": 1,
+        "first_weekday_name": "Monday",
+        "week_one_rule": "jan4"
+      },
+      "reference_fixture": "oo with ForceDate deliberately omitted for the direct Base service",
+      "request_steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            2000
+          ]
+        },
+        {
+          "operation": "config",
+          "arguments": [
+            "Week1ofYear",
+            "jan1"
+          ]
+        },
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            2000
+          ]
+        },
+        {
+          "operation": "config",
+          "arguments": [
+            "Week1ofYear",
+            "jan4"
+          ]
+        },
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            2000
+          ]
+        }
+      ],
+      "partition_ids": [
+        "calendar.weeks-in-year.p3"
+      ],
+      "portable_feature": "spec/drafts/week-count-edges/configuration-state.feature",
+      "binding_steps": [
+        "WCE-CONFIG-ABA-S01",
+        "WCE-CONFIG-ABA-S02",
+        "WCE-CONFIG-ABA-S03",
+        "WCE-CONFIG-ABA-S04",
+        "WCE-CONFIG-ABA-S05"
+      ],
+      "binding_feature": "spec/drafts/week-count-edges/perl-binding.feature",
+      "observation": "docs/research/week-count-edges/observations.json"
+    },
+    {
+      "case_id": "WCE-BAD-FIRSTDAY",
+      "operation_id": "calendar.weeks-in-year",
+      "portable_profile": {
+        "first_weekday": 1,
+        "first_weekday_name": "Monday",
+        "week_one_rule": "jan4"
+      },
+      "reference_fixture": "oo with ForceDate deliberately omitted for the direct Base service",
+      "request_steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            2000
+          ]
+        },
+        {
+          "operation": "config",
+          "arguments": [
+            "FirstDay",
+            8
+          ]
+        },
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            2000
+          ]
+        }
+      ],
+      "partition_ids": [
+        "calendar.weeks-in-year.p4"
+      ],
+      "portable_feature": "spec/drafts/week-count-edges/configuration-state.feature",
+      "binding_steps": [
+        "WCE-BAD-FIRSTDAY-S01",
+        "WCE-BAD-FIRSTDAY-S02",
+        "WCE-BAD-FIRSTDAY-S03"
+      ],
+      "binding_feature": "spec/drafts/week-count-edges/perl-binding.feature",
+      "observation": "docs/research/week-count-edges/observations.json"
+    },
+    {
+      "case_id": "WCE-BAD-WEEKRULE",
+      "operation_id": "calendar.weeks-in-year",
+      "portable_profile": {
+        "first_weekday": 1,
+        "first_weekday_name": "Monday",
+        "week_one_rule": "jan4"
+      },
+      "reference_fixture": "oo with ForceDate deliberately omitted for the direct Base service",
+      "request_steps": [
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            2000
+          ]
+        },
+        {
+          "operation": "config",
+          "arguments": [
+            "Week1ofYear",
+            "jan8"
+          ]
+        },
+        {
+          "operation": "weeks_in_year",
+          "arguments": [
+            2000
+          ]
+        }
+      ],
+      "partition_ids": [
+        "calendar.weeks-in-year.p4"
+      ],
+      "portable_feature": "spec/drafts/week-count-edges/configuration-state.feature",
+      "binding_steps": [
+        "WCE-BAD-WEEKRULE-S01",
+        "WCE-BAD-WEEKRULE-S02",
+        "WCE-BAD-WEEKRULE-S03"
+      ],
+      "binding_feature": "spec/drafts/week-count-edges/perl-binding.feature",
+      "observation": "docs/research/week-count-edges/observations.json"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "status": "Research-only source binding; native carriers and diagnostics are excluded from the portable handoff.",
+  "reference": "Date-Manip 7.00",
+  "primary_operation_ids": [
+    "calendar.day-of-year",
+    "calendar.date-from-day-of-year"
+  ],
+  "bindings": [
+    {
+      "profile": "base",
+      "module": "Date::Manip::Base",
+      "callable": "day_of_year",
+      "declaration_id": "Date::Manip::Base:day_of_year:463",
+      "operation_id": "calendar.day-of-year",
+      "call_shapes": ["one array reference containing civil fields", "year and ordinal"]
+    },
+    {
+      "profile": "dm6",
+      "module": "Date::Manip::DM6",
+      "callable": "Date_DayOfYear",
+      "declaration_id": "Date::Manip::DM6:Date_DayOfYear:781",
+      "operation_id": "calendar.day-of-year",
+      "call_shapes": ["month, day, year"]
+    },
+    {
+      "profile": "dm5",
+      "module": "Date::Manip::DM5",
+      "callable": "Date_DayOfYear",
+      "declaration_id": "Date::Manip::DM5:Date_DayOfYear:3253",
+      "operation_id": "calendar.day-of-year",
+      "call_shapes": ["month, day, year"]
+    },
+    {
+      "profile": "dm6",
+      "module": "Date::Manip::DM6",
+      "callable": "Date_NthDayOfYear",
+      "declaration_id": "Date::Manip::DM6:Date_NthDayOfYear:786",
+      "operation_id": "calendar.date-from-day-of-year",
+      "call_shapes": ["year, ordinal"]
+    },
+    {
+      "profile": "dm5",
+      "module": "Date::Manip::DM5",
+      "callable": "Date_NthDayOfYear",
+      "declaration_id": "Date::Manip::DM5:Date_NthDayOfYear:3713",
+      "operation_id": "calendar.date-from-day-of-year",
+      "call_shapes": ["year, ordinal"]
+    }
+  ],
+  "supporting_public_calls": [
+    {"profiles":["base"],"module":"Date::Manip::Obj","callable":"new","operation_id":"object.create","purpose":"construct the Date receiver used to obtain the Base service"},
+    {"profiles":["base"],"module":"Date::Manip::Obj","callable":"config","operation_id":"config.apply-settings","purpose":"apply the isolated profile"},
+    {"profiles":["base"],"module":"Date::Manip::Obj","callable":"version","operation_id":"meta.reference-version","purpose":"verify the loaded reference"},
+    {"profiles":["base"],"module":"Date::Manip::Obj","callable":"tz","operation_id":"context.zone-service","purpose":"obtain public timezone metadata"},
+    {"profiles":["base"],"module":"Date::Manip::TZ","callable":"tzdata","operation_id":"meta.zone-data-version","purpose":"verify tzdata2026c"},
+    {"profiles":["base"],"module":"Date::Manip::TZ","callable":"tzcode","operation_id":"meta.zone-rule-version","purpose":"verify tzcode2026c"},
+    {"profiles":["base"],"module":"Date::Manip::Obj","callable":"base","operation_id":"context.base-service","purpose":"obtain the public Base service"},
+    {"profiles":["base"],"module":"Date::Manip::Obj","callable":"err","operation_id":"error.read-state","purpose":"read the error before and after every observed conversion"},
+    {"profiles":["dm6","dm5"],"module":"profile-specific functional module","callable":"Date_Init","operation_id":"config.apply-settings","purpose":"apply the isolated functional profile"},
+    {"profiles":["dm6","dm5"],"module":"profile-specific functional module","callable":"DateManipVersion","operation_id":"meta.reference-version","purpose":"verify the loaded backend version"}
+  ],
+  "call_order": {
+    "base": "construct; configure; read version; obtain zone service; read tzdata; read tzcode; obtain Base service; for scalar then list context, read error, invoke conversion, read error",
+    "functional": "configure; read version; invoke conversion in scalar context; invoke conversion in list context"
+  },
+  "return_fidelity": "A completed undefined scalar, empty list, one array reference, six returned fields, and an interrupted call with no return would be distinct. This batch observed no interrupted conversion calls and therefore creates no synthetic return fields.",
+  "diagnostic_fidelity": "Warnings, captured stdout, exceptions, and process stderr are separate. Perl warning text and context-sensitive carriers appear only in the excluded binding feature.",
+  "isolation": "Every case/profile pair ran twice in a new Perl process and new temporary working directory under a clean five-variable environment; no process exercised two profiles."
+}

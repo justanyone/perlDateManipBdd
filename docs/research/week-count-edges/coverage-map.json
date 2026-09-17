@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "operation_id": "calendar.weeks-in-year",
+  "partition_updates": [
+    {
+      "partition_id": "calendar.weeks-in-year.p1",
+      "status": "supplemented-supported-endpoints",
+      "case_ids": [
+        "WCE-YEAR1",
+        "WCE-YEAR9999"
+      ],
+      "scope": "Direct endpoint results supplement the accepted valid configuration matrix."
+    },
+    {
+      "partition_id": "calendar.weeks-in-year.p2",
+      "status": "supplemented-supported-endpoints",
+      "case_ids": [
+        "WCE-YEAR1",
+        "WCE-YEAR9999"
+      ],
+      "scope": "Both endpoints produce an independently checked 52-week result under jan4/Monday."
+    },
+    {
+      "partition_id": "calendar.weeks-in-year.p3",
+      "status": "observed-selected-state-sequence",
+      "case_ids": [
+        "WCE-CONFIG-ABA"
+      ],
+      "scope": "A jan4 to jan1 to jan4 sequence on the same service yields 52,53,52 and revisits cached configuration state."
+    },
+    {
+      "partition_id": "calendar.weeks-in-year.p4",
+      "status": "observed-selected-not-complete",
+      "case_ids": [
+        "WCE-ZERO",
+        "WCE-NEGATIVE",
+        "WCE-HIGH",
+        "WCE-FRACTION",
+        "WCE-OMITTED",
+        "WCE-ABSENT",
+        "WCE-EMPTY",
+        "WCE-TEXT",
+        "WCE-SHORT",
+        "WCE-BAD-FIRSTDAY",
+        "WCE-BAD-WEEKRULE"
+      ],
+      "scope": "Selected unsupported year shapes and two invalid configuration attempts retain literal outcomes and diagnostics."
+    }
+  ],
+  "branch_evidence": [
+    "Repeated scalar/list reads expose the same-key cached result and its warning differences.",
+    "The A-B-A rule sequence demonstrates configuration-keyed cache separation on a reused service.",
+    "Year 9999 exercises a public supported endpoint whose calculation also needs the following year's week boundary.",
+    "Invalid FirstDay and Week1ofYear attempts leave the prior valid week count observable."
+  ],
+  "remaining_domains": [
+    "Signed or whitespace-padded numeric text, scientific notation, extreme magnitudes, infinity, and NaN.",
+    "Reference, mapping, blessed, overloaded, and other native carrier shapes.",
+    "Missing or undefined configuration names/values and invalid settings beyond the two selected controls.",
+    "Additional reused-service sequences that change FirstDay or combine invalid attempts with uncached years.",
+    "Other Date-Manip and runtime versions."
+  ],
+  "completion_statement": "This closes the selected edge/state batch only. It does not promote partition p4 to complete, approve portable expectations, or constitute an executable harness result."
+}

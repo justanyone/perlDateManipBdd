@@ -171,7 +171,13 @@
         "docs/research/nth-weekday-family/README.md",
         "docs/research/nth-weekday-family/feature-map.json",
         "docs/research/nth-weekday-family/observations.json",
-        "docs/research/nth-weekday-family/coverage-map.json"
+        "docs/research/nth-weekday-family/coverage-map.json",
+        "docs/research/week-count-edges/README.md",
+        "docs/research/week-count-edges/feature-map.json",
+        "docs/research/week-count-edges/observations.json",
+        "docs/research/year-day-conversion-family/README.md",
+        "docs/research/year-day-conversion-family/feature-map.json",
+        "docs/research/year-day-conversion-family/observations.json"
       ],
       "partial_parsing_edges_review": "52 repeatable public edge requests integrated after independent repair and root review. Explicit setup, 48 outline-row comparisons, native failure lifecycle and binding-only warnings checked; broader domains and source coverage remain open.",
       "input_history_review": "17 repeatable public Date::input cases integrated after provenance repair, canonical-binding correction and explicit not-called configuration metadata. Reviewer requires runtime/profile/module/process evidence and checks feature literals. Constructor retention added; wider transitions remain open.",
@@ -180,12 +186,14 @@
       "calendar_lengths_leap_year_review": "Root independently reproduced 84 leap-year requests (including three 400-year cycles) and 171 month/year-length requests; captures byte-identical. Exact literal reviewers and nine-feature Gherkin parser pass. Remaining domains explicit; drafts only, no BDD execution or completeness claim.",
       "weekday_review": "190 public requests replay byte-identical; 265 independent Gregorian checks,350 completed calls and8 failures. Exact190 portable/190 binding rows and all14year types verified. Explicit remaining domains; not complete.",
       "active_calendar_workers": {
-        "pattern_repair": "week-count-edges: root14-case probe handed off for full mapping/Gherkin review; calendar-check-family released for root review",
-        "partial_parsing": "year-day-conversion-family: forward/inverse/fractional day-of-year",
-        "week_edges_finish": "read-only investigation of DevelCover zero-hit validation branches; nth-weekday-family released for root review"
+        "week_edges_finish": "week-year-start-family directpublicreturneddate semantics",
+        "partial_parsing": "zone-period-family publicperiodqueries",
+        "pattern_repair": "zone-names-family alias/abbreviation customization"
       },
       "calendar_check_review": "36public requests independently replayed; strict row/provenance reviewer and parser pass. Target coverage10/10statements but0/6branch outcomes despite valid/invalid results; allpartitions observed-partial, instrument discrepancy investigation active.",
-      "nth_weekday_review": "28new public cases replay byte-identical;16 independent Gregorian facts;20 date records8absent returns3warning cases. Exact28portable/28binding rows and parser pass. No completed partition or BDD claim."
+      "nth_weekday_review": "28new public cases replay byte-identical;16 independent Gregorian facts;20 date records8absent returns3warning cases. Exact28portable/28binding rows and parser pass. No completed partition or BDD claim.",
+      "week_count_edges_review": "14cases22steps58native calls independently replayed byte-equal; config52\u219253\u219252, rejected config retention and cache warning counts preserved. Exact profiles/literals/provenance/independent facts/parser verified; p4partial.",
+      "year_day_conversion_review": "40cases80conversion calls replayed; root added explicit requested profiles and field order/decimal comparison policy. All earlier observable behavior unchanged after provenance-only recapture. Exact native/portable literals, independent facts and parser pass. Disputed malformed date values remain unapproved."
     },
     {
       "id": "spec-arithmetic-deltas",

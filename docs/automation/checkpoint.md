@@ -1173,3 +1173,39 @@ week_edges_finish now owns NEW tools/coverage-healthcheck/,
 tests/coverage/test_instrumentation_health.py and docs/research/coverage-instrumentation.md
 for original two-mode regression fixture and source explanation. Other workers
 retain week-count-edges and year-day conversions. All final gates open.
+
+## Corrected expanded coverage capture running
+
+ACTIVE root exec session92137 launched committed f557a83 collector:
+python3 tools/coverage-corpus/collect.py --manifest
+tools/coverage-corpus/calendar-expanded-manifest.json --output
+/tmp/public-coverage-calendar-condition-root --normalize-dm5-deprecation-sites
+1474requests20families. Last call confirmed live. Poll samehandle; do not restart
+on observation timeout. Keep collector and20probe sources stable until terminal.
+Workers own only new dirs not included in this manifest. No final metrics yet.
+
+## Week-count edge and year/day conversion integration
+
+Root week-count-edges replay /tmp/week-count-edges-root-final.json byte-equals
+frozen14cases22steps58nativecalls. Exact review validates fixed externalprofile,
+52→53→52 configurationsequence, rejectionretention, cachewarnings12/2/2and3/0/0,
+independentGregorianfacts and parser. No completedpartition claim.
+
+Year-day40cases80calls replay36790 byte-equal initialevidence. Root added actual
+fixture_profile/requested_configuration capture and recaptured via98126 exit0
+to /tmp/year-day-conversion-root-profile.json; underlying outcomesallunchanged
+after excluding onlynewprofilefields/processhashes/toolhash. Frozennew evidence
+includes profilemetadata, exactfieldorders, fractionalordinal12decimal ties-even
+comparison and exactinverse decimalvalues. Reviewer rejects malformedcolumns and
+uses abs-only tolerance for inputserialization; observedfeaturevalues exact.
+Parser9/10/15/48 passes. Disputed month13/day0/negative remain unapproved.
+
+Original coverage healthcheck root suite17tests passes after wrong-versionfail
+and duplicatemarker fixes. Sourceexplanation+fixture+runner+3regressions ready.
+Root standalone health capture exited0 with statuspassed; result persisted in
+docs/research/coverage-healthcheck-result.json. No health process remains live.
+
+Root coverage92137 remains live:462rawpairs retained atlatestcheck. Continue
+samehandle, preserve20committedprobes/collector. No summary or metrics yet.
+New workers: partial_parsing zone-period-family, pattern_repair zone-names-family,
+week_edges_finish week-year-start-family. Each owns onlynewdirs. Allfinalgatesopen.

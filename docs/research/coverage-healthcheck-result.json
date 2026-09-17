@@ -1,0 +1,59 @@
+{
+  "branch_only_zero_hit_control": {
+    "chain": [
+      0,
+      0
+    ],
+    "simple": [
+      0,
+      0
+    ]
+  },
+  "commands": {
+    "branch_only": [
+      "/usr/bin/perl",
+      "-MDevel::Cover=-db,<temporary>/branch-db,-coverage,statement,branch,-silent,1,-select,/home/kevin/my_code/perlDateManipBdd/tools/coverage-healthcheck/fixture.pl",
+      "/home/kevin/my_code/perlDateManipBdd/tools/coverage-healthcheck/fixture.pl"
+    ],
+    "condition_enabled": [
+      "/usr/bin/perl",
+      "-MDevel::Cover=-db,<temporary>/condition-db,-coverage,statement,branch,condition,-silent,1,-select,/home/kevin/my_code/perlDateManipBdd/tools/coverage-healthcheck/fixture.pl",
+      "/home/kevin/my_code/perlDateManipBdd/tools/coverage-healthcheck/fixture.pl"
+    ]
+  },
+  "condition_enabled_branch_counts": {
+    "chain": [
+      2,
+      1
+    ],
+    "simple": [
+      1,
+      1
+    ]
+  },
+  "environment": {
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8",
+    "PATH": "/usr/bin:/bin",
+    "PERL5LIB": "<pinned Devel::Cover library paths>",
+    "TZ": "Etc/UTC",
+    "inherited_environment": false
+  },
+  "fixture_markers": {
+    "chain": 12,
+    "simple": 6
+  },
+  "fixture_stdout": "rejected|accepted|rejected|accepted|accepted",
+  "runtime": {
+    "archname": "x86_64-linux-gnu-thread-multi",
+    "devel_cover_version": "1.52",
+    "perl_version": "5.40.1"
+  },
+  "schema_version": 1,
+  "sha256": {
+    "tools/coverage-healthcheck/extract-branches.pl": "fda9136635a5bb8bfd1616428fda1be292ac159af0b46def8e3eca100c14f04a",
+    "tools/coverage-healthcheck/fixture.pl": "3b5d36f028028e2636f0b852ef02751518c4d6ccbc0665bf9d506c7e426c60af",
+    "tools/coverage-healthcheck/run.py": "82f006e2af92384a3293669f97a1e29f5c8ca7417c86589566a0ec969fcc6587"
+  },
+  "status": "passed"
+}

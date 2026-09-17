@@ -1,0 +1,406 @@
+{
+  "schema_version": 1,
+  "status": "Reviewed research-to-draft correspondence; not executable BDD results or portable approval.",
+  "reference": "Date-Manip 7.00",
+  "operation_ids": [
+    "calendar.day-of-year",
+    "calendar.date-from-day-of-year"
+  ],
+  "profile_fixture": "docs/automation/reference-profiles.json; base uses oo, dm6 uses dm6, dm5 uses dm5; only the two C19 cases append YYtoYYYY=C19",
+  "binding_feature": "spec/drafts/year-day-conversions/perl-binding.feature",
+  "artifact_sha256": {
+    "docs/research/year-day-conversion-family/cases.json": "d3057288a737d53de34436379f56c6f9cbe3aa3aebd10938cc4fe73a503f0d40",
+    "docs/research/year-day-conversion-family/observations.json": "eedcc0261b6c6ff5c88ef23cbf626df59f3737b5b2011d85692d3613a7dcf0dd",
+    "docs/research/year-day-conversion-family/bindings.json": "bec0cfd7a8d15aee0f172d1eaedfcb65efd8600da5f61f60882d412437f0fc8b",
+    "docs/research/year-day-conversion-family/README.md": "15e1012d3d3db7d83cb98d971ed5eea142ce9995ca95424197be0436396c121c",
+    "spec/drafts/year-day-conversions/compatibility.feature": "2e7240408fc05095cb647f39f53f19933ff2a4aa8a2b04509542b204ab348aab",
+    "spec/drafts/year-day-conversions/forward.feature": "7fc2279e5312baa2ae92668687b8aea886b264206124f0f0b7ebb4d4d3a414ae",
+    "spec/drafts/year-day-conversions/inverse.feature": "85660067eb686bc9abb47fa1267f634f542f3733d50e685ddee6ede7238d3aee",
+    "spec/drafts/year-day-conversions/perl-binding.feature": "14bcb7df3e8a27363f9fd7ed295c650daf28e940ddf78231633ce1a6bb59ddd2"
+  },
+  "partition_evidence": [
+    {
+      "partition_id": "calendar.day-of-year.p1",
+      "status": "evidence-present",
+      "case_ids": [
+        "YDC-FWD-BASE-COMMON-JAN1",
+        "YDC-FWD-BASE-COMMON-MAR1",
+        "YDC-FWD-DM6-LEAP-FEB29",
+        "YDC-FWD-DM5-LEAP-FEB29"
+      ]
+    },
+    {
+      "partition_id": "calendar.day-of-year.p2",
+      "status": "evidence-present",
+      "case_ids": [
+        "YDC-FWD-BASE-COMMON-END",
+        "YDC-FWD-BASE-LEAP-END",
+        "YDC-INV-BASE-COMMON-END",
+        "YDC-INV-BASE-LEAP-END"
+      ]
+    },
+    {
+      "partition_id": "calendar.day-of-year.p3",
+      "status": "evidence-present",
+      "case_ids": [
+        "YDC-FWD-BASE-NOON",
+        "YDC-FWD-BASE-HALF-SECOND",
+        "YDC-INV-BASE-FIRST-NOON",
+        "YDC-INV-BASE-SUBSECOND"
+      ]
+    },
+    {
+      "partition_id": "calendar.day-of-year.p4",
+      "status": "disputed-reference-evidence",
+      "case_ids": [
+        "YDC-EDGE-BASE-COMMON-366",
+        "YDC-EDGE-BASE-LEAP-367",
+        "YDC-EDGE-BASE-ZERO",
+        "YDC-EDGE-BASE-NEGATIVE"
+      ]
+    },
+    {
+      "partition_id": "calendar.day-of-year.p5",
+      "status": "representative-evidence-present",
+      "case_ids": [
+        "YDC-FWD-BASE-INVALID-CIVIL",
+        "YDC-FWD-BASE-MISSING-DAY",
+        "YDC-FWD-BASE-NONNUMERIC-MONTH"
+      ]
+    },
+    {
+      "partition_id": "calendar.date-from-day-of-year.p1",
+      "status": "evidence-present",
+      "case_ids": [
+        "YDC-INV-DM6-COMMON-END",
+        "YDC-INV-DM5-COMMON-END"
+      ]
+    },
+    {
+      "partition_id": "calendar.date-from-day-of-year.p2",
+      "status": "evidence-present",
+      "case_ids": [
+        "YDC-INV-DM6-LEAP-LAST-NOON",
+        "YDC-INV-DM5-LEAP-LAST-NOON"
+      ]
+    },
+    {
+      "partition_id": "calendar.date-from-day-of-year.p3",
+      "status": "evidence-present",
+      "case_ids": [
+        "YDC-INV-DM6-FRACTION",
+        "YDC-INV-DM5-FRACTION"
+      ]
+    },
+    {
+      "partition_id": "calendar.date-from-day-of-year.p4",
+      "status": "portable-and-disputed-evidence",
+      "case_ids": [
+        "YDC-EDGE-DM6-COMMON-366",
+        "YDC-EDGE-DM5-COMMON-366"
+      ]
+    },
+    {
+      "partition_id": "calendar.date-from-day-of-year.p5",
+      "status": "representative-evidence-present",
+      "case_ids": [
+        "YDC-FWD-DM6-SHORT-C19",
+        "YDC-FWD-DM5-SHORT-C19",
+        "YDC-EDGE-DM6-OMITTED",
+        "YDC-EDGE-DM5-OMITTED",
+        "YDC-EDGE-DM6-ABSENT",
+        "YDC-EDGE-DM6-NONNUMERIC",
+        "YDC-EDGE-DM5-NONNUMERIC"
+      ]
+    }
+  ],
+  "case_map": [
+    {
+      "case_id": "YDC-FWD-BASE-COMMON-JAN1",
+      "profile": "base",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/forward.feature",
+      "scenario": "Convert date-only civil fields"
+    },
+    {
+      "case_id": "YDC-FWD-BASE-COMMON-MAR1",
+      "profile": "base",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/forward.feature",
+      "scenario": "Convert date-only civil fields"
+    },
+    {
+      "case_id": "YDC-FWD-BASE-LEAP-FEB29",
+      "profile": "base",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/forward.feature",
+      "scenario": "Convert date-only civil fields"
+    },
+    {
+      "case_id": "YDC-FWD-BASE-LEAP-MAR1",
+      "profile": "base",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/forward.feature",
+      "scenario": "Convert date-only civil fields"
+    },
+    {
+      "case_id": "YDC-FWD-BASE-COMMON-END",
+      "profile": "base",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/forward.feature",
+      "scenario": "Convert date-only civil fields"
+    },
+    {
+      "case_id": "YDC-FWD-BASE-LEAP-END",
+      "profile": "base",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/forward.feature",
+      "scenario": "Convert date-only civil fields"
+    },
+    {
+      "case_id": "YDC-FWD-BASE-NOON",
+      "profile": "base",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/forward.feature",
+      "scenario": "Include the clock fraction"
+    },
+    {
+      "case_id": "YDC-FWD-BASE-HALF-SECOND",
+      "profile": "base",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/forward.feature",
+      "scenario": "Include the clock fraction"
+    },
+    {
+      "case_id": "YDC-FWD-DM6-LEAP-FEB29",
+      "profile": "dm6",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/forward.feature",
+      "scenario": "Convert date-only civil fields"
+    },
+    {
+      "case_id": "YDC-FWD-DM5-LEAP-FEB29",
+      "profile": "dm5",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/forward.feature",
+      "scenario": "Convert date-only civil fields"
+    },
+    {
+      "case_id": "YDC-FWD-DM6-SHORT-C19",
+      "profile": "dm6",
+      "classification": "observed-compatibility",
+      "feature": "spec/drafts/year-day-conversions/compatibility.feature",
+      "scenario": "Short-year interpretation remains profile-specific"
+    },
+    {
+      "case_id": "YDC-FWD-DM5-SHORT-C19",
+      "profile": "dm5",
+      "classification": "observed-compatibility",
+      "feature": "spec/drafts/year-day-conversions/compatibility.feature",
+      "scenario": "Short-year interpretation remains profile-specific"
+    },
+    {
+      "case_id": "YDC-FWD-BASE-INVALID-CIVIL",
+      "profile": "base",
+      "classification": "disputed",
+      "feature": "spec/drafts/year-day-conversions/compatibility.feature",
+      "scenario": "A nonexistent common-year leap day is not validated"
+    },
+    {
+      "case_id": "YDC-FWD-BASE-MISSING-DAY",
+      "profile": "base",
+      "classification": "binding-only",
+      "feature": "spec/drafts/year-day-conversions/perl-binding.feature",
+      "scenario": "Native scalar and list carriers remain exact"
+    },
+    {
+      "case_id": "YDC-FWD-BASE-NONNUMERIC-MONTH",
+      "profile": "base",
+      "classification": "binding-only",
+      "feature": "spec/drafts/year-day-conversions/perl-binding.feature",
+      "scenario": "Native scalar and list carriers remain exact"
+    },
+    {
+      "case_id": "YDC-INV-BASE-COMMON-FIRST",
+      "profile": "base",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/inverse.feature",
+      "scenario": "Convert an integral ordinal"
+    },
+    {
+      "case_id": "YDC-INV-BASE-COMMON-FEB28",
+      "profile": "base",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/inverse.feature",
+      "scenario": "Convert an integral ordinal"
+    },
+    {
+      "case_id": "YDC-INV-BASE-COMMON-MAR1",
+      "profile": "base",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/inverse.feature",
+      "scenario": "Convert an integral ordinal"
+    },
+    {
+      "case_id": "YDC-INV-BASE-LEAP-FEB29",
+      "profile": "base",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/inverse.feature",
+      "scenario": "Convert an integral ordinal"
+    },
+    {
+      "case_id": "YDC-INV-BASE-COMMON-END",
+      "profile": "base",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/inverse.feature",
+      "scenario": "Convert an integral ordinal"
+    },
+    {
+      "case_id": "YDC-INV-BASE-LEAP-END",
+      "profile": "base",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/inverse.feature",
+      "scenario": "Convert an integral ordinal"
+    },
+    {
+      "case_id": "YDC-INV-BASE-FIRST-NOON",
+      "profile": "base",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/inverse.feature",
+      "scenario": "Convert a fractional ordinal"
+    },
+    {
+      "case_id": "YDC-INV-BASE-SUBSECOND",
+      "profile": "base",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/inverse.feature",
+      "scenario": "Convert a fractional ordinal"
+    },
+    {
+      "case_id": "YDC-INV-DM6-COMMON-END",
+      "profile": "dm6",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/inverse.feature",
+      "scenario": "Convert an integral ordinal"
+    },
+    {
+      "case_id": "YDC-INV-DM5-COMMON-END",
+      "profile": "dm5",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/inverse.feature",
+      "scenario": "Convert an integral ordinal"
+    },
+    {
+      "case_id": "YDC-INV-DM6-FRACTION",
+      "profile": "dm6",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/inverse.feature",
+      "scenario": "Convert a fractional ordinal"
+    },
+    {
+      "case_id": "YDC-INV-DM5-FRACTION",
+      "profile": "dm5",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/inverse.feature",
+      "scenario": "Convert a fractional ordinal"
+    },
+    {
+      "case_id": "YDC-INV-DM6-LEAP-LAST-NOON",
+      "profile": "dm6",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/inverse.feature",
+      "scenario": "Convert a fractional ordinal"
+    },
+    {
+      "case_id": "YDC-INV-DM5-LEAP-LAST-NOON",
+      "profile": "dm5",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/inverse.feature",
+      "scenario": "Convert a fractional ordinal"
+    },
+    {
+      "case_id": "YDC-EDGE-BASE-COMMON-366",
+      "profile": "base",
+      "classification": "disputed",
+      "feature": "spec/drafts/year-day-conversions/compatibility.feature",
+      "scenario": "Out-of-domain inverse inputs expose unchecked fields"
+    },
+    {
+      "case_id": "YDC-EDGE-BASE-LEAP-367",
+      "profile": "base",
+      "classification": "disputed",
+      "feature": "spec/drafts/year-day-conversions/compatibility.feature",
+      "scenario": "Out-of-domain inverse inputs expose unchecked fields"
+    },
+    {
+      "case_id": "YDC-EDGE-BASE-ZERO",
+      "profile": "base",
+      "classification": "disputed",
+      "feature": "spec/drafts/year-day-conversions/compatibility.feature",
+      "scenario": "Out-of-domain inverse inputs expose unchecked fields"
+    },
+    {
+      "case_id": "YDC-EDGE-DM6-COMMON-366",
+      "profile": "dm6",
+      "classification": "disputed",
+      "feature": "spec/drafts/year-day-conversions/compatibility.feature",
+      "scenario": "Out-of-domain inverse inputs expose unchecked fields"
+    },
+    {
+      "case_id": "YDC-EDGE-DM5-COMMON-366",
+      "profile": "dm5",
+      "classification": "portable",
+      "feature": "spec/drafts/year-day-conversions/inverse.feature",
+      "scenario": "Reject the first ordinal beyond a common legacy year"
+    },
+    {
+      "case_id": "YDC-EDGE-DM6-OMITTED",
+      "profile": "dm6",
+      "classification": "binding-only",
+      "feature": "spec/drafts/year-day-conversions/perl-binding.feature",
+      "scenario": "Native scalar and list carriers remain exact"
+    },
+    {
+      "case_id": "YDC-EDGE-DM5-OMITTED",
+      "profile": "dm5",
+      "classification": "observed-compatibility",
+      "feature": "spec/drafts/year-day-conversions/compatibility.feature",
+      "scenario": "Omitted legacy inputs default through the fixed profile"
+    },
+    {
+      "case_id": "YDC-EDGE-DM6-ABSENT",
+      "profile": "dm6",
+      "classification": "binding-only",
+      "feature": "spec/drafts/year-day-conversions/perl-binding.feature",
+      "scenario": "Native scalar and list carriers remain exact"
+    },
+    {
+      "case_id": "YDC-EDGE-BASE-NEGATIVE",
+      "profile": "base",
+      "classification": "disputed",
+      "feature": "spec/drafts/year-day-conversions/compatibility.feature",
+      "scenario": "Out-of-domain inverse inputs expose unchecked fields"
+    },
+    {
+      "case_id": "YDC-EDGE-DM6-NONNUMERIC",
+      "profile": "dm6",
+      "classification": "binding-only",
+      "feature": "spec/drafts/year-day-conversions/perl-binding.feature",
+      "scenario": "Native scalar and list carriers remain exact"
+    },
+    {
+      "case_id": "YDC-EDGE-DM5-NONNUMERIC",
+      "profile": "dm5",
+      "classification": "binding-only",
+      "feature": "spec/drafts/year-day-conversions/perl-binding.feature",
+      "scenario": "Native scalar and list carriers remain exact"
+    }
+  ],
+  "remaining_domains": [
+    "scientific-notation ordinal text without a decimal point",
+    "explicit empty year or ordinal text",
+    "supported endpoint years 0001 and 9999",
+    "fractional values whose native rounding may carry to midnight",
+    "extra-arity and reference-valued Perl arguments"
+  ]
+}

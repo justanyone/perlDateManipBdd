@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "operation_id": "calendar.weeks-in-year",
+  "review_disposition": "public binding confirmed; selected edge observations only",
+  "documented_public_binding": {
+    "module": "Date::Manip::Base",
+    "callable": "weeks_in_year",
+    "call_shape": "(year)",
+    "documentation": "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pod:476-481",
+    "implementation": "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm:684-710"
+  },
+  "supporting_public_bindings": [
+    {
+      "module": "Date::Manip::Base",
+      "callable": "new",
+      "use": "create one fresh calendar service per case"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "config",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:273-289",
+      "use": "apply the initial profile and the explicit state-change requests"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "err",
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm:331-338",
+      "use": "read the public error text immediately before and after each step"
+    }
+  ],
+  "private_calls_made_by_probe": [],
+  "private_logic_inspected_for_case_selection": [
+    {
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm:632-681",
+      "finding": "The week-start boundary is cached by first weekday, week-one rule, and year; it also has separate jan and weekday-rule paths. The probe reaches this logic only through the public week-count method."
+    },
+    {
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm:684-710",
+      "finding": "The public method has a cached-return path and otherwise derives the count from this-year and next-year starts. Repeated reads and the A-B-A rule sequence target those observable distinctions."
+    },
+    {
+      "source": "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm:1130-1136,1346-1367",
+      "finding": "FirstDay and Week1ofYear have distinct validation paths. Values 8 and jan8 select one rejection from each path."
+    }
+  ],
+  "fixture_review": {
+    "source_profile": "docs/automation/reference-profiles.json#oo",
+    "applied_entries": "Every oo configuration entry except ForceDate, in original order.",
+    "reason_force_date_is_omitted": "The directly constructed Base service has no timezone service, and the count operation has no clock input. The omission is explicit in every observation rather than hidden by the probe.",
+    "portable_relevant_state": {
+      "first_weekday": 1,
+      "first_weekday_name": "Monday",
+      "week_one_rule": "jan4"
+    }
+  },
+  "branch_evidence": [
+    "The first read and same-key repeated reads have identical count values; unsupported empty, text, omitted, and absent inputs have fewer warnings after the first read.",
+    "Changing Week1ofYear jan4 to jan1 and back to jan4 on one service yields 52, 53, 52 for year 2000.",
+    "Invalid FirstDay 8 and Week1ofYear jan8 requests warn and leave the following year-2000 count at 52.",
+    "Year 9999 returns 52 even though the public implementation requests the next year's boundary internally."
+  ],
+  "hash_source": "docs/research/week-count-edges/observations.json#research_source_sha256",
+  "completion": "The public binding and these selected paths are reviewed. This does not prove all branches or approve the draft as an executable harness."
+}

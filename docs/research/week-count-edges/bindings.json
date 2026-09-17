@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "operation": {
+    "operation_id": "calendar.weeks-in-year",
+    "module": "Date::Manip::Base",
+    "callable": "weeks_in_year",
+    "call_shape": "(year)",
+    "disposition": "public-oo-method"
+  },
+  "supporting_public_calls": [
+    {
+      "operation_id": "object.create",
+      "binding": "Date::Manip::Base->new"
+    },
+    {
+      "operation_id": "config.apply-settings",
+      "binding": "Date::Manip::Base->config"
+    },
+    {
+      "operation_id": "object.read-error",
+      "binding": "Date::Manip::Base->err"
+    }
+  ],
+  "fixture": "docs/automation/reference-profiles.json#oo with ForceDate deliberately omitted",
+  "aliases": []
+}
