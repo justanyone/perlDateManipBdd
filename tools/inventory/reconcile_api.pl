@@ -91,7 +91,7 @@ my %object = (
       week1_day1 => 'calendar.week-year-start', weeks_in_year => 'calendar.weeks-in-year',
       week_of_year => 'calendar.week-number', calc_date_date => 'arithmetic.date-difference',
       calc_date_days => 'arithmetic.date-plus-days', calc_date_delta => 'arithmetic.date-plus-delta',
-      calc_date_time => 'arithmetic.date-plus-time', calc_time_time => 'arithmetic.time-difference',
+      calc_date_time => 'arithmetic.date-plus-time', calc_time_time => 'arithmetic.combine-times',
       cmp => 'date.compare', split => 'value.split-fields', join => 'value.join-fields',
    },
    'Date::Manip::Date' => {

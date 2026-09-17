@@ -1,0 +1,1161 @@
+{
+  "schema_version": 1,
+  "family": "calendar-and-epoch",
+  "reference": {
+    "distribution": "Date::Manip",
+    "version": "7.00"
+  },
+  "scope": {
+    "operation_count": 16,
+    "calendar_count": 13,
+    "epoch_count": 3,
+    "exclusions": [
+      "Private helpers and algorithms are excluded because the contract map routes only public call surfaces.",
+      "Date parsing, formatting, timezone configuration, and context mutation are outside the calendar.* and epoch.* operation IDs assigned here.",
+      "No portable feature or literal expected value is exported from this API-reconciliation catalogue."
+    ]
+  },
+  "shared": {
+    "date_fields": "Civil fields are year, month, day; a Base date list may additionally contain hour, minute, second.",
+    "weekday": "Numeric weekday uses 1 through 7, Monday through Sunday.",
+    "year": "Functional DM5/DM6 helpers document a two- or four-digit year, resolved by the profile's YYtoYYYY setting. Base methods take a year value directly.",
+    "research_status": "Documented interfaces and source call routing have been reconciled. Exact outcomes for invalid arity, nonnumeric values, out-of-range fields, scalar/list context, DST, precision, and cross-profile differences remain unobserved unless stated below.",
+    "binding_carriers": "Base civil date/time/delta tuples are Perl array references, not flattened argument lists. A returned tuple is an array reference unless the operation explicitly documents a list return (for example week-year/week or all month lengths). Generic portable records represent the fields; they do not expose Perl references."
+  },
+  "operations": [
+    {
+      "purpose": "Map a year and ordinal day, including a fractional day, to civil date and clock fields.",
+      "bindings": [
+        {
+          "module": "Date::Manip::DM6",
+          "callable": "Date_NthDayOfYear",
+          "call_shapes": [
+            "(year, day)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-functional-export"
+        },
+        {
+          "module": "Date::Manip::DM5",
+          "callable": "Date_NthDayOfYear",
+          "call_shapes": [
+            "(year, day)"
+          ],
+          "profile": "dm5-compatibility",
+          "disposition": "public-functional-export"
+        }
+      ],
+      "operation_id": "calendar.date-from-day-of-year",
+      "portable_inputs": [
+        {
+          "name": "year",
+          "type": "integer-like year",
+          "required": true
+        },
+        {
+          "name": "day",
+          "type": "numeric ordinal day",
+          "required": true
+        }
+      ],
+      "outputs": "A six-field ordered result: year, month, day, hour, minute, decimal second. Functional calls return the fields as a list; scalar-context behavior is unobserved.",
+      "partitions": [
+        {
+          "id": "calendar.date-from-day-of-year.p1",
+          "description": "normal: integral ordinal",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.date-from-day-of-year.p2",
+          "description": "boundary: first ordinal and final valid ordinal in common and leap years",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.date-from-day-of-year.p3",
+          "description": "normal: fractional ordinal and second precision",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.date-from-day-of-year.p4",
+          "description": "invalid: ordinal below 1 or at/after the documented upper bound",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.date-from-day-of-year.p5",
+          "description": "invalid: missing, nonnumeric, and short-year inputs; compare DM5 and DM6 year resolution",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "The documented fractional-day convention begins the timeline at ordinal 1, rather than treating it as elapsed days from ordinal 1.",
+        "DM5 source supplies defaults for a false year and absent/empty day; DM6 wrapper delegates to Base and has no corresponding documented defaults. This compatibility difference needs probes."
+      ]
+    },
+    {
+      "purpose": "Read an ordinal day from civil fields or a date-time, with an OO inverse form.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "day_of_year",
+          "call_shapes": [
+            "(date-list)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        },
+        {
+          "module": "Date::Manip::Base",
+          "callable": "day_of_year",
+          "call_shapes": [
+            "(year, day) [inverse]"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        },
+        {
+          "module": "Date::Manip::DM6",
+          "callable": "Date_DayOfYear",
+          "call_shapes": [
+            "(month, day, year)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-functional-export"
+        },
+        {
+          "module": "Date::Manip::DM5",
+          "callable": "Date_DayOfYear",
+          "call_shapes": [
+            "(month, day, year)"
+          ],
+          "profile": "dm5-compatibility",
+          "disposition": "public-functional-export"
+        }
+      ],
+      "operation_id": "calendar.day-of-year",
+      "portable_inputs": [
+        {
+          "name": "civil_date_or_date_time",
+          "type": "ordered field list",
+          "required_by": "Base forward"
+        },
+        {
+          "name": "year",
+          "type": "year",
+          "required_by": "Base inverse and functional"
+        },
+        {
+          "name": "month",
+          "type": "month number",
+          "required_by": "functional"
+        },
+        {
+          "name": "day",
+          "type": "day number or ordinal, by form",
+          "required": true
+        }
+      ],
+      "outputs": "Forward civil-date form returns an integral ordinal; Base date-time form returns a fractional ordinal. Base inverse returns a three-field date for an integral input and six fields for a fractional input. Functional form returns one scalar ordinal.",
+      "partitions": [
+        {
+          "id": "calendar.day-of-year.p1",
+          "description": "normal: ordinary civil date",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.day-of-year.p2",
+          "description": "boundary: start/end of common and leap years",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.day-of-year.p3",
+          "description": "normal: Base date-time fraction and inverse round trip",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.day-of-year.p4",
+          "description": "invalid: ordinal outside documented interval for Base inverse",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.day-of-year.p5",
+          "description": "invalid: malformed list shape, missing fields, nonnumeric fields, and invalid civil dates",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "Base documentation sets the inverse lower bound at 1 and an exclusive upper bound dependent on leap status. Validation behavior is not provided by this helper and must be observed."
+      ],
+      "binding_return_carrier": "Base inverse/date-valued return: one array reference; numeric forward return: scalar where defined. Functional routes keep their separately documented return conventions."
+    },
+    {
+      "purpose": "Convert a civil date to a calendar ordinal, or invert an ordinal in Base.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "days_since_1BC",
+          "call_shapes": [
+            "(date-list)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        },
+        {
+          "module": "Date::Manip::Base",
+          "callable": "days_since_1BC",
+          "call_shapes": [
+            "(day-ordinal) [inverse]"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        },
+        {
+          "module": "Date::Manip::DM6",
+          "callable": "Date_DaysSince1BC",
+          "call_shapes": [
+            "(month, day, year)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-functional-export"
+        },
+        {
+          "module": "Date::Manip::DM5",
+          "callable": "Date_DaysSince1BC",
+          "call_shapes": [
+            "(month, day, year)"
+          ],
+          "profile": "dm5-compatibility",
+          "disposition": "public-functional-export"
+        }
+      ],
+      "operation_id": "calendar.day-ordinal",
+      "portable_inputs": [
+        {
+          "name": "civil_date",
+          "type": "three-field date list or functional fields",
+          "required_by": "forward"
+        },
+        {
+          "name": "day_ordinal",
+          "type": "numeric integral ordinal",
+          "required_by": "Base inverse"
+        }
+      ],
+      "outputs": "Forward forms return one numeric ordinal. Base inverse returns a three-field date array reference. Calling-context behavior must be observed without confusing an array reference with a list return.",
+      "partitions": [
+        {
+          "id": "calendar.day-ordinal.p1",
+          "description": "normal: regular date and Base inverse",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.day-ordinal.p2",
+          "description": "boundary: first supported year/date and Gregorian century/leap boundaries",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.day-ordinal.p3",
+          "description": "invalid: Base date list shape, invalid civil fields, nonintegral/negative ordinal, and functional malformed inputs",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.day-ordinal.p4",
+          "description": "compatibility: distinguish DM5's documented inclusion of year 0000 from DM6/Base documentation",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "This is a projected-calendar ordinal and is not a historical-calendar claim. Its exact range and invalid-input behavior require probes."
+      ],
+      "binding_return_carrier": "Base inverse/date-valued return: one array reference; numeric forward return: scalar where defined. Functional routes keep their separately documented return conventions."
+    },
+    {
+      "purpose": "Report the length of one month; Base also reports a year's twelve lengths.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "days_in_month",
+          "call_shapes": [
+            "(year, month)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        },
+        {
+          "module": "Date::Manip::DM6",
+          "callable": "Date_DaysInMonth",
+          "call_shapes": [
+            "(month, year)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-functional-export"
+        },
+        {
+          "module": "Date::Manip::DM5",
+          "callable": "Date_DaysInMonth",
+          "call_shapes": [
+            "(month, year)"
+          ],
+          "profile": "dm5-compatibility",
+          "disposition": "public-functional-export"
+        }
+      ],
+      "operation_id": "calendar.days-in-month",
+      "portable_inputs": [
+        {
+          "name": "year",
+          "type": "year",
+          "required": true
+        },
+        {
+          "name": "month",
+          "type": "month number; Base zero has a special list form",
+          "required": true
+        }
+      ],
+      "outputs": "One numeric month length for a nonzero month. Base with month zero returns an ordered twelve-element list; scalar-context treatment of that list is unobserved.",
+      "partitions": [
+        {
+          "id": "calendar.days-in-month.p1",
+          "description": "normal: 31-, 30-, and February months",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.days-in-month.p2",
+          "description": "boundary: February in common and leap years",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.days-in-month.p3",
+          "description": "normal: Base month-zero list and ordering",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.days-in-month.p4",
+          "description": "invalid: month below/above range, noninteger, missing, and year variants",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "Month zero is documented only for Base; functional behavior for it is not portable until observed."
+      ]
+    },
+    {
+      "purpose": "Report common- or leap-year length.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "days_in_year",
+          "call_shapes": [
+            "(year)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        },
+        {
+          "module": "Date::Manip::DM6",
+          "callable": "Date_DaysInYear",
+          "call_shapes": [
+            "(year)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-functional-export"
+        },
+        {
+          "module": "Date::Manip::DM5",
+          "callable": "Date_DaysInYear",
+          "call_shapes": [
+            "(year)"
+          ],
+          "profile": "dm5-compatibility",
+          "disposition": "public-functional-export"
+        }
+      ],
+      "operation_id": "calendar.days-in-year",
+      "portable_inputs": [
+        {
+          "name": "year",
+          "type": "year",
+          "required": true
+        }
+      ],
+      "outputs": "One numeric year length.",
+      "partitions": [
+        {
+          "id": "calendar.days-in-year.p1",
+          "description": "normal: common year",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.days-in-year.p2",
+          "description": "boundary: leap and century rules",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.days-in-year.p3",
+          "description": "invalid: missing, nonnumeric, zero/negative, out-of-supported-range, and two-digit functional year",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "No validation or coercion contract should be inferred from this arithmetic helper before observation."
+      ]
+    },
+    {
+      "purpose": "Classify a supplied year under the profile calendar rule.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "leapyear",
+          "call_shapes": [
+            "(year)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        },
+        {
+          "module": "Date::Manip::DM6",
+          "callable": "Date_LeapYear",
+          "call_shapes": [
+            "(year)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-functional-export"
+        },
+        {
+          "module": "Date::Manip::DM5",
+          "callable": "Date_LeapYear",
+          "call_shapes": [
+            "(year)"
+          ],
+          "profile": "dm5-compatibility",
+          "disposition": "public-functional-export"
+        }
+      ],
+      "operation_id": "calendar.is-leap-year",
+      "portable_inputs": [
+        {
+          "name": "year",
+          "type": "year",
+          "required": true
+        }
+      ],
+      "outputs": "Boolean-like numeric flag; documented success flag is 1 for a leap year. The exact false representation is source-accounted but must be observed before a literal contract.",
+      "partitions": [
+        {
+          "id": "calendar.is-leap-year.p1",
+          "description": "normal: divisible-by-four and ordinary common years",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.is-leap-year.p2",
+          "description": "boundary: century divisible by 100 and 400",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.is-leap-year.p3",
+          "description": "invalid: missing, nonnumeric, signed/zero, out-of-range, and two-digit functional year",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "Functional profiles resolve short years through YYtoYYYY; Base does not document that conversion."
+      ]
+    },
+    {
+      "purpose": "Find an ordinal weekday occurrence within a year or a selected month.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "nth_day_of_week",
+          "call_shapes": [
+            "(year, occurrence, weekday [, month])"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        }
+      ],
+      "operation_id": "calendar.nth-weekday",
+      "portable_inputs": [
+        {
+          "name": "year",
+          "type": "year",
+          "required": true
+        },
+        {
+          "name": "occurrence",
+          "type": "signed ordinal; positive counts forward, negative backward",
+          "required": true
+        },
+        {
+          "name": "weekday",
+          "type": "integer 1..7",
+          "required": true
+        },
+        {
+          "name": "month",
+          "type": "optional month",
+          "default": "omitted means whole year"
+        }
+      ],
+      "outputs": "A three-field civil-date array reference, or absent result when the requested occurrence does not exist. Scalar-context behavior is unobserved.",
+      "partitions": [
+        {
+          "id": "calendar.nth-weekday.p1",
+          "description": "normal: forward and reverse occurrence in a year",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.nth-weekday.p2",
+          "description": "normal: forward and reverse occurrence in a month",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.nth-weekday.p3",
+          "description": "boundary: documented year limits \u00b153 and month limits \u00b15",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.nth-weekday.p4",
+          "description": "no-match: occurrence within documented limit but absent",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.nth-weekday.p5",
+          "description": "invalid: zero occurrence, out-of-limit occurrence, weekday/month outside range, missing and nonnumeric fields",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "The documented no-match outcome is absence; distinguish it from malformed inputs by probe."
+      ],
+      "binding_return_carrier": "Base inverse/date-valued return: one array reference; numeric forward return: scalar where defined. Functional routes keep their separately documented return conventions."
+    },
+    {
+      "purpose": "Validate date-time fields as a GMT-style civil value without timezone resolution.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "check",
+          "call_shapes": [
+            "(date-time-list)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        }
+      ],
+      "operation_id": "calendar.validate-date",
+      "portable_inputs": [
+        {
+          "name": "date_time",
+          "type": "six-field ordered list: year, month, day, hour, minute, second",
+          "required": true
+        }
+      ],
+      "outputs": "Boolean-like validation result: documentation says 1 when fields are valid and 0 otherwise.",
+      "partitions": [
+        {
+          "id": "calendar.validate-date.p1",
+          "description": "normal: valid ordinary and leap date",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.validate-date.p2",
+          "description": "boundary: documented supported year endpoints; final valid day; 24:00:00",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.validate-date.p3",
+          "description": "invalid: bad month/day, non-leap February 29, bad time, 24 with nonzero remainder",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.validate-date.p4",
+          "description": "invalid: list arity, missing/undefined, decimal, signed, whitespace, and nonnumeric fields",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "This deliberately ignores timezone gaps and overlaps. Source indicates a four-digit year range, but literal endpoint behavior must be confirmed by a probe."
+      ]
+    },
+    {
+      "purpose": "Validate wall-clock fields without a date or zone.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "check_time",
+          "call_shapes": [
+            "(time-list)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        }
+      ],
+      "operation_id": "calendar.validate-time",
+      "portable_inputs": [
+        {
+          "name": "time",
+          "type": "three-field ordered list: hour, minute, second",
+          "required": true
+        }
+      ],
+      "outputs": "Boolean-like validation result: documentation says 1 when valid and 0 otherwise.",
+      "partitions": [
+        {
+          "id": "calendar.validate-time.p1",
+          "description": "normal: midnight and ordinary clock time",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.validate-time.p2",
+          "description": "boundary: 24:00:00",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.validate-time.p3",
+          "description": "invalid: values above allowed clock limits and 24 with nonzero minute/second",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.validate-time.p4",
+          "description": "invalid: list arity, one-digit versus padded text, decimal, signed, whitespace, and nonnumeric fields",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "Documentation permits 00:00:00 through 24:00:00. Acceptance of field text representations is source-observed only after probes."
+      ]
+    },
+    {
+      "purpose": "Map a date to a week number, with distinct Base ISO-pair/inverse and legacy single-number forms.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "week_of_year",
+          "call_shapes": [
+            "(date-list)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        },
+        {
+          "module": "Date::Manip::Base",
+          "callable": "week_of_year",
+          "call_shapes": [
+            "(year, week) [inverse]"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        },
+        {
+          "module": "Date::Manip::Date",
+          "callable": "week_of_year",
+          "call_shapes": [
+            "([first_weekday])"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method"
+        },
+        {
+          "module": "Date::Manip::DM6",
+          "callable": "Date_WeekOfYear",
+          "call_shapes": [
+            "(month, day, year, first_weekday)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-functional-export"
+        },
+        {
+          "module": "Date::Manip::DM5",
+          "callable": "Date_WeekOfYear",
+          "call_shapes": [
+            "(month, day, year, first_weekday)"
+          ],
+          "profile": "dm5-compatibility",
+          "disposition": "public-functional-export"
+        }
+      ],
+      "operation_id": "calendar.week-number",
+      "portable_inputs": [
+        {
+          "name": "civil_date",
+          "type": "date list or functional fields",
+          "required_by": "forward"
+        },
+        {
+          "name": "year",
+          "type": "week-year",
+          "required_by": "Base inverse"
+        },
+        {
+          "name": "week",
+          "type": "week number",
+          "required_by": "Base inverse"
+        },
+        {
+          "name": "first_weekday",
+          "type": "optional 1..7 override",
+          "default": "configured FirstDay where supported"
+        }
+      ],
+      "outputs": "Base forward returns ordered week-year and week number; Base inverse returns the first date of that configured week. Date and functional forms return one legacy week number whose documented range includes 0 and 53.",
+      "partitions": [
+        {
+          "id": "calendar.week-number.p1",
+          "description": "normal: interior date and Base inverse",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.week-number.p2",
+          "description": "boundary: dates at calendar-year/week-year transitions",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.week-number.p3",
+          "description": "configuration: FirstDay and Week1ofYear variants for Base; first_weekday override/default for Date/functional",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.week-number.p4",
+          "description": "invalid: week outside valid configured range, invalid first weekday, malformed date/list, and missing fields",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.week-number.p5",
+          "description": "compatibility: compare DM5/DM6 legacy routines and distinguish Base week-year pair from legacy number",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "Date's optional first-weekday override is described as historical; its omission and invalid-value behavior must be probed. Base documentation calls its definition ISO, while its implementation uses configurable week rules; preserve that tension as an ambiguity."
+      ],
+      "binding_return_carrier": "Base forward: two-element Perl list (week-year, week-number); Base inverse: one three-field array reference; Date/functional forms: scalar number."
+    },
+    {
+      "purpose": "Find the first civil date of the configured first week of a year.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "week1_day1",
+          "call_shapes": [
+            "(year)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        }
+      ],
+      "operation_id": "calendar.week-year-start",
+      "portable_inputs": [
+        {
+          "name": "year",
+          "type": "week-rule year",
+          "required": true
+        },
+        {
+          "name": "FirstDay",
+          "type": "context integer 1..7",
+          "default": "profile default"
+        },
+        {
+          "name": "Week1ofYear",
+          "type": "context jan1..jan7, dow1..dow7, or firstday",
+          "default": "profile default"
+        }
+      ],
+      "outputs": "A three-field civil-date array reference; scalar-context behavior is unobserved.",
+      "partitions": [
+        {
+          "id": "calendar.week-year-start.p1",
+          "description": "normal: default context",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.week-year-start.p2",
+          "description": "configuration: each Week1ofYear family and different FirstDay",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.week-year-start.p3",
+          "description": "boundary: start may fall in preceding calendar year",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.week-year-start.p4",
+          "description": "invalid: unsupported year and invalid context values",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "The Base defaults are FirstDay=1 and Week1ofYear=jan4. Context-setting errors and cache/isolation behavior are outside this operation and need dedicated probes."
+      ],
+      "binding_return_carrier": "Base inverse/date-valued return: one array reference; numeric forward return: scalar where defined. Functional routes keep their separately documented return conventions."
+    },
+    {
+      "purpose": "Return the numeric weekday for a civil date.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "day_of_week",
+          "call_shapes": [
+            "(date-list)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        },
+        {
+          "module": "Date::Manip::DM6",
+          "callable": "Date_DayOfWeek",
+          "call_shapes": [
+            "(month, day, year)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-functional-export"
+        },
+        {
+          "module": "Date::Manip::DM5",
+          "callable": "Date_DayOfWeek",
+          "call_shapes": [
+            "(month, day, year)"
+          ],
+          "profile": "dm5-compatibility",
+          "disposition": "public-functional-export"
+        }
+      ],
+      "operation_id": "calendar.weekday",
+      "portable_inputs": [
+        {
+          "name": "civil_date",
+          "type": "three-field date list or functional fields",
+          "required": true
+        }
+      ],
+      "outputs": "One numeric weekday, documented as Monday=1 through Sunday=7.",
+      "partitions": [
+        {
+          "id": "calendar.weekday.p1",
+          "description": "normal: each weekday partition",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.weekday.p2",
+          "description": "boundary: Gregorian leap/century and year transitions",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.weekday.p3",
+          "description": "invalid: invalid date, list shape, missing/non-numeric fields, and functional short-year resolution",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "No internal validation guarantee is documented for these low-level arithmetic helpers."
+      ]
+    },
+    {
+      "purpose": "Count configured weeks in a year.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "weeks_in_year",
+          "call_shapes": [
+            "(year)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        }
+      ],
+      "operation_id": "calendar.weeks-in-year",
+      "portable_inputs": [
+        {
+          "name": "year",
+          "type": "week-rule year",
+          "required": true
+        },
+        {
+          "name": "FirstDay",
+          "type": "context integer 1..7",
+          "default": "profile default"
+        },
+        {
+          "name": "Week1ofYear",
+          "type": "context week-one rule",
+          "default": "profile default"
+        }
+      ],
+      "outputs": "One numeric count. Documentation says ISO years have 52 or 53 weeks; behavior under nondefault configurable rules must be observed.",
+      "partitions": [
+        {
+          "id": "calendar.weeks-in-year.p1",
+          "description": "normal: default rules",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.weeks-in-year.p2",
+          "description": "boundary: candidate 52- and 53-week years",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.weeks-in-year.p3",
+          "description": "configuration: FirstDay/Week1ofYear alternatives",
+          "status": "unobserved"
+        },
+        {
+          "id": "calendar.weeks-in-year.p4",
+          "description": "invalid: unsupported year and invalid context",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "The documented ISO wording and configurable implementation may differ outside defaults; do not promote a universal range without probes."
+      ]
+    },
+    {
+      "purpose": "Convert between civil fields and seconds referenced to 1970-01-01 local civil midnight, without timezone conversion in Base/functional local form.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "secs_since_1970",
+          "call_shapes": [
+            "(date-time-list)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        },
+        {
+          "module": "Date::Manip::Base",
+          "callable": "secs_since_1970",
+          "call_shapes": [
+            "(seconds) [inverse]"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        },
+        {
+          "module": "Date::Manip::DM6",
+          "callable": "Date_SecsSince1970",
+          "call_shapes": [
+            "(month, day, year, hour, minute, second)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-functional-export"
+        },
+        {
+          "module": "Date::Manip::DM5",
+          "callable": "Date_SecsSince1970",
+          "call_shapes": [
+            "(month, day, year, hour, minute, second)"
+          ],
+          "profile": "dm5-compatibility",
+          "disposition": "public-functional-export"
+        }
+      ],
+      "operation_id": "epoch.local-civil-seconds",
+      "portable_inputs": [
+        {
+          "name": "civil_date_time",
+          "type": "six fields or list",
+          "required_by": "forward"
+        },
+        {
+          "name": "seconds",
+          "type": "numeric seconds",
+          "required_by": "Base inverse"
+        }
+      ],
+      "outputs": "Forward forms return numeric seconds, negative before the reference. Base inverse returns a six-field date-time array reference. Fractional-second and scalar/list details are unobserved.",
+      "partitions": [
+        {
+          "id": "epoch.local-civil-seconds.p1",
+          "description": "normal: reference-era positive and negative civil values",
+          "status": "unobserved"
+        },
+        {
+          "id": "epoch.local-civil-seconds.p2",
+          "description": "boundary: midnight rollover, leap day, and fractional seconds",
+          "status": "unobserved"
+        },
+        {
+          "id": "epoch.local-civil-seconds.p3",
+          "description": "inverse: Base forward/inverse round trips",
+          "status": "unobserved"
+        },
+        {
+          "id": "epoch.local-civil-seconds.p4",
+          "description": "timezone: confirm independence from configured zone and DST",
+          "status": "unobserved"
+        },
+        {
+          "id": "epoch.local-civil-seconds.p5",
+          "description": "invalid: malformed fields/list, invalid date/time, nonnumeric seconds, and out-of-range years",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "Despite the legacy name, DM6 documentation says the functional form uses current timezone; Base source treats supplied fields as civil arithmetic. Reconcile by observation before exporting a portable meaning."
+      ],
+      "binding_return_carrier": "Base inverse/date-valued return: one array reference; numeric forward return: scalar where defined. Functional routes keep their separately documented return conventions."
+    },
+    {
+      "purpose": "Convert local-zone civil fields to seconds referenced to UTC epoch midnight through the functional compatibility surface.",
+      "bindings": [
+        {
+          "module": "Date::Manip::DM6",
+          "callable": "Date_SecsSince1970GMT",
+          "call_shapes": [
+            "(month, day, year, hour, minute, second)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-functional-export"
+        },
+        {
+          "module": "Date::Manip::DM5",
+          "callable": "Date_SecsSince1970GMT",
+          "call_shapes": [
+            "(month, day, year, hour, minute, second)"
+          ],
+          "profile": "dm5-compatibility",
+          "disposition": "public-functional-export"
+        }
+      ],
+      "operation_id": "epoch.utc-civil-seconds",
+      "portable_inputs": [
+        {
+          "name": "civil_date_time",
+          "type": "six numeric-like functional fields",
+          "required": true
+        },
+        {
+          "name": "timezone_context",
+          "type": "current configured timezone/conversion mode",
+          "required": true
+        }
+      ],
+      "outputs": "One numeric seconds value, negative before the epoch. No inverse functional form is listed.",
+      "partitions": [
+        {
+          "id": "epoch.utc-civil-seconds.p1",
+          "description": "normal: UTC context and non-UTC fixed-offset context",
+          "status": "unobserved"
+        },
+        {
+          "id": "epoch.utc-civil-seconds.p2",
+          "description": "boundary: before/after epoch and fractional seconds",
+          "status": "unobserved"
+        },
+        {
+          "id": "epoch.utc-civil-seconds.p3",
+          "description": "timezone: DST-standard, DST-daylight, gap, overlap, and DM5 IGNORE conversion mode",
+          "status": "unobserved"
+        },
+        {
+          "id": "epoch.utc-civil-seconds.p4",
+          "description": "invalid: malformed fields, invalid civil time, unsupported zone, and two-digit year resolution",
+          "status": "unobserved"
+        },
+        {
+          "id": "epoch.utc-civil-seconds.p5",
+          "description": "compatibility: compare DM5 and DM6 wording and return/error channels",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "DM6 describes the supplied civil date as current-zone data while measuring from GMT; DM5 explicitly documents IGNORE equivalence to its local-civil function. Exact ambiguous-time policy is unobserved."
+      ]
+    },
+    {
+      "purpose": "Read or set a Date object as seconds on the GMT timeline.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Date",
+          "callable": "secs_since_1970_GMT",
+          "call_shapes": [
+            "() [read]"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method"
+        },
+        {
+          "module": "Date::Manip::Date",
+          "callable": "secs_since_1970_GMT",
+          "call_shapes": [
+            "(seconds) [mutating set]"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method"
+        }
+      ],
+      "operation_id": "epoch.utc-instant-seconds",
+      "portable_inputs": [
+        {
+          "name": "receiver",
+          "type": "Date object with a valid set date for read",
+          "required": true
+        },
+        {
+          "name": "seconds",
+          "type": "optional numeric seconds; presence selects mutating form",
+          "default": "omitted selects read"
+        }
+      ],
+      "outputs": "Read returns numeric seconds. Set returns an error status and changes the object to the corresponding local-zone date. Invalid/unset receiver returns absence and emits a warning according to source behavior; exact warning/error protocol needs observation.",
+      "partitions": [
+        {
+          "id": "epoch.utc-instant-seconds.p1",
+          "description": "normal: read valid zoned object",
+          "status": "unobserved"
+        },
+        {
+          "id": "epoch.utc-instant-seconds.p2",
+          "description": "normal: set then inspect local fields and instant",
+          "status": "unobserved"
+        },
+        {
+          "id": "epoch.utc-instant-seconds.p3",
+          "description": "boundary: negative epoch values and fractional seconds",
+          "status": "unobserved"
+        },
+        {
+          "id": "epoch.utc-instant-seconds.p4",
+          "description": "timezone: fixed offset, DST gap/overlap, and local conversion",
+          "status": "unobserved"
+        },
+        {
+          "id": "epoch.utc-instant-seconds.p5",
+          "description": "invalid: unset/errored receiver, malformed/non-numeric seconds, and setter conversion failure",
+          "status": "unobserved"
+        },
+        {
+          "id": "epoch.utc-instant-seconds.p6",
+          "description": "state: verify mutation only on successful set and whether receiver zone/context is retained",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "This is the only routed epoch operation with explicit object mutation. Its documented local-zone result requires a pinned zone fixture."
+      ]
+    }
+  ],
+  "gaps": [
+    "Every routed operation ID is catalogued, but all behavioral partitions remain unobserved.",
+    "No fresh-process probe records establish invalid-input returns, diagnostics, scalar/list context, fractional precision, or profile differences.",
+    "Timezone and DST semantics remain open for epoch.utc-civil-seconds and epoch.utc-instant-seconds.",
+    "The configured-week wording, DM5/DM6 ordinal-era difference, and Base versus functional local-seconds wording require reconciliation by observation."
+  ]
+}

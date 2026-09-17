@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "reference": {
+    "distribution": "Date-Manip",
+    "version": "7.00",
+    "profiles": ["dm6-reference (backend 7.00)", "dm5-compatibility (backend 5.66 in distribution 7.00)"],
+    "evidence": "POD and public source signature review only; no reference observations in this catalogue."
+  },
+  "scope": "Date parsing, rendering, navigation, values, errors, configuration and object/context lifecycle. Arithmetic, calendar, epoch, business, events, zone resolution, delta and recurrence semantics are assigned elsewhere.",
+  "operations": [
+    {
+      "operation_id": "date.parse-text",
+      "bindings": [
+        {"module":"Date::Manip::Date","callable":"parse","call_shapes":["date-object, text, optional parser-option tokens -> status"]},
+        {"module":"Date::Manip::DM6","callable":"ParseDateString","call_shapes":["text, optional parser-option tokens -> local serialized value or empty failure value"]},
+        {"module":"Date::Manip::DM5","callable":"ParseDateString","call_shapes":["text -> compatibility serialized value or empty failure value"]}
+      ],
+      "portable_inputs": ["date text", "context", "enabled grammar families"],
+      "outputs": ["parsed date-time stored in receiver or serialized local value", "failure status/category"],
+      "partitions": [
+        {"id":"text-empty","description":"absent, empty, and nonempty text are distinct inputs","status":"unobserved"},
+        {"id":"grammar-gates","description":"each noiso8601, nodow, nocommon, noother, nospecial, nodelta, and noholidays option independently disables one parser family","status":"unobserved"},
+        {"id":"context-defaults","description":"missing fields, default time, two-digit years, language, encoding, numeric order, reference clock, and zone","status":"unobserved"},
+        {"id":"invalid-and-ambiguous","description":"invalid fields, leftover text, DST gap/overlap, and ambiguous zone inputs","status":"unobserved"}
+      ],
+      "ambiguities": ["The catalogue does not yet normalize the OO numeric status, functional empty return, diagnostics, and retained receiver value into one outcome protocol."]
+    },
+    {
+      "operation_id":"date.parse-leading-tokens",
+      "bindings":[{"module":"Date::Manip::DM6","callable":"ParseDate","call_shapes":["scalar text or scalar-reference text or token-array reference, optional parser options -> serialized value or empty failure; token array is shortened on success"]},{"module":"Date::Manip::DM5","callable":"ParseDate","call_shapes":["one scalar, scalar-reference, or token-array reference -> compatibility serialized value or empty failure; token array may be shortened"]}],
+      "portable_inputs":["text or ordered tokens","context","enabled grammar families"], "outputs":["date-time","consumed prefix count","remaining tokens","failure"],
+      "partitions":[{"id":"carrier","description":"plain text, mutable token collection, mutable scalar holder, and unsupported reference kind","status":"unobserved"},{"id":"prefix","description":"whole input parses, a longest leading prefix parses, and no prefix parses","status":"unobserved"},{"id":"mutation","description":"success and failure effects on supplied mutable token collection","status":"unobserved"}],
+      "ambiguities":["Whether DM5 and DM6 consume exactly the same prefix is unobserved."]
+    },
+    {
+      "operation_id":"date.parse-date-only",
+      "bindings":[{"module":"Date::Manip::Date","callable":"parse_date","call_shapes":["date-object, date text, optional parser-option tokens -> status"]}],
+      "portable_inputs":["date text","receiver prior state","context"], "outputs":["receiver date fields","status/error"],
+      "partitions":[{"id":"prior-time","description":"valid receiver retains time; unset receiver starts at midnight","status":"unobserved"},{"id":"date-grammar","description":"ISO, common, other, truncated, weekday, and option-gated forms","status":"unobserved"},{"id":"failure-state","description":"empty or invalid input and resulting receiver/error state","status":"unobserved"}],
+      "ambiguities":["Timezone treatment and mutation after a failure need observation."]
+    },
+    {
+      "operation_id":"time.parse-text",
+      "bindings":[{"module":"Date::Manip::Date","callable":"parse_time","call_shapes":["date-object, time text, optional noiso8601/noother tokens -> status"]}],
+      "portable_inputs":["time text","receiver prior state","context"], "outputs":["receiver time and possibly zone","status/error"],
+      "partitions":[{"id":"prior-date","description":"valid receiver retains date; unset receiver uses reference current date","status":"unobserved"},{"id":"time-precision","description":"hour, hour-minute, hour-minute-second, named/special, ISO and offset forms","status":"unobserved"},{"id":"failure-state","description":"empty, invalid, and option-disabled forms","status":"unobserved"}],
+      "ambiguities":["The exact defaulting of omitted minute/second and timezone mutation remain unobserved."]
+    },
+    {
+      "operation_id":"date.parse-pattern",
+      "bindings":[{"module":"Date::Manip::Date","callable":"parse_format","call_shapes":["date-object, pattern, text -> scalar status","date-object, pattern, text in list context -> status followed by named capture pairs from the caller pattern"]},{"module":"Date::Manip::DM6","callable":"ParseDateFormat","call_shapes":["pattern, text -> local serialized value or empty failure value"]}],
+      "portable_inputs":["text","pattern syntax version","context"], "outputs":["date-time","pattern-invalid versus no-match failure","caller-defined named-capture map in OO list context"],
+      "partitions":[{"id":"pattern-validity","description":"valid, duplicate/overspecified, forbidden-directive, and invalid regular-expression patterns","status":"unobserved"},{"id":"match","description":"full match, no match, missing required fields, optional year/zone/day-name","status":"unobserved"},{"id":"return-context","description":"scalar status versus list-context named captures; positional captures are not returned through this channel","status":"unobserved"},{"id":"cache-context","description":"DateFormat-dependent pattern before and after configuration change","status":"unobserved"}],
+      "ambiguities":["Directive and parser-regexp details are deliberately tracked by docs/research/api; this entry records only operation-level obligations."]
+    },
+    {
+      "operation_id":"date.render-pattern",
+      "bindings":[{"module":"Date::Manip::Date","callable":"printf","call_shapes":["date-object, one or more patterns -> one text or ordered texts by calling context"]},{"module":"Date::Manip::DM6","callable":"UnixDate","call_shapes":["date text, one or more patterns -> joined text in scalar context or ordered texts in list context"]},{"module":"Date::Manip::DM5","callable":"UnixDate","call_shapes":["date text, one or more patterns -> compatibility text(s)"]}],
+      "portable_inputs":["typed date-time or date text at facade","one or more patterns","output language/mode"], "outputs":["ordered rendered text","parse failure for facades"],
+      "partitions":[{"id":"pattern-count-context","description":"zero, one, and multiple patterns; scalar and list result forms","status":"unobserved"},{"id":"literal-and-directive","description":"literal text, percent escaping, directive combinations, invalid directives, and configured POSIX mode","status":"unobserved"},{"id":"localized-zone","description":"language-sensitive names, zone/offset fields, and incomplete date values","status":"unobserved"}],
+      "ambiguities":["Formatting directive inventory and exact syntax remain linked to the API reconciliation work rather than duplicated here."]
+    },
+    {
+      "operation_id":"date.read-input", "bindings":[{"module":"Date::Manip::Date","callable":"input","call_shapes":["date-object -> source text"]}],
+      "portable_inputs":["date receiver"], "outputs":["source text or unset representation"],
+      "partitions":[{"id":"origin","description":"text parse, date-only parse, time-only parse, pattern parse, explicit field set, and failed parse","status":"unobserved"}], "ambiguities":["Unset and subsequent-mutation behavior is unobserved."]
+    },
+    {
+      "operation_id":"date.read-value", "bindings":[{"module":"Date::Manip::Date","callable":"value","call_shapes":["date-object with selector omitted, empty, or unrecognized -> parsed-zone value","date-object, 'local' -> local-zone value","date-object, 'gmt' -> GMT value","scalar context -> YYYYMMDDHH:MN:SS-style serialized value or empty failure text","list context -> Y,M,D,H,MN,S fields or empty failure list"]}],
+      "portable_inputs":["date receiver","selector: omitted, empty, 'local', 'gmt', or other text","calling context"], "outputs":["serialized or six-field value","empty scalar/list plus receiver error on failure"],
+      "partitions":[{"id":"representation","description":"omitted/empty/unrecognized parsed-zone selector, exact 'local', and exact 'gmt'","status":"unobserved"},{"id":"return-context","description":"scalar serialization versus six fields in list context","status":"unobserved"},{"id":"receiver-state","description":"valid, truncated, unset, and error-bearing receiver","status":"unobserved"}], "ambiguities":["Selector matching appears source-defined and case-sensitive; no observation has confirmed treatment of mixed-case selector text."]
+    },
+    {
+      "operation_id":"date.complete-missing-fields", "bindings":[{"module":"Date::Manip::Date","callable":"complete","call_shapes":["date-object with selector omitted or false -> whole-value completeness boolean","date-object, one of 'm', 'd', 'h', 'mn', 's' -> whether that field was supplied boolean","date-object, any other truthy selector -> false"]}],
+      "portable_inputs":["date receiver","selector: omitted/false or 'm'/'d'/'h'/'mn'/'s'/other"], "outputs":["whole-value completeness, field-supplied boolean, false for unsupported truthy selector, or absent result for invalid receiver"],
+      "partitions":[{"id":"field","description":"omitted/false and each finite selector 'm', 'd', 'h', 'mn', 's', plus unsupported truthy selector","status":"unobserved"},{"id":"origin","description":"fully explicit, date-truncated, time-truncated, and pattern-derived values","status":"unobserved"},{"id":"invalid","description":"unset or error-bearing receiver","status":"unobserved"}], "ambiguities":["Whether configuration-defaulted fields and parser-defaulted fields have identical completeness flags is unobserved."]
+    },
+    {
+      "operation_id":"date.replace-field", "bindings":[{"module":"Date::Manip::Date","callable":"set","call_shapes":["date-object, 'zone' -> local zone; or 'zone', zone; or 'zone', isdst 0|1; or 'zone', zone, isdst 0|1 -> status","date-object, 'zdate', [Y,M,D,H,MN,S]; or 'zdate', date, isdst 0|1; or 'zdate', zone, date; or 'zdate', zone, date, isdst 0|1 -> status","date-object, 'date', [Y,M,D,H,MN,S], optional isdst 0|1 -> status","date-object, 'time', [H,MN,S], optional isdst 0|1 -> status","date-object, one of 'y','m','d','h','mn','s', scalar, optional isdst -> status"]},{"module":"Date::Manip::DM6","callable":"Date_SetDateField","call_shapes":["date text, field selector, scalar value -> serialized value or empty failure value"]},{"module":"Date::Manip::DM5","callable":"Date_SetDateField","call_shapes":["date text, one of y/m/d/h/mn/s, scalar value, optional nocheck flag -> compatibility serialized value or empty failure value"]}],
+      "portable_inputs":["date-time","selector: zone/zdate/date/time/y/m/d/h/mn/s","replacement scalar or fixed field array","optional isdst 0|1"], "outputs":["changed date-time","status/error"],
+      "partitions":[{"id":"field-kind","description":"finite OO selectors zone, zdate, date, time, y, m, d, h, mn, s; DM5 facade accepts only the six individual selectors","status":"unobserved"},{"id":"arity","description":"zone has 0/1/2 values; zdate has the four source-defined shapes; date/time each have one field-array plus optional isdst; individual selector has scalar plus optional isdst","status":"unobserved"},{"id":"validation","description":"ordinary bounds, impossible civil date, invalid zone, invalid selector, and DST gap/overlap","status":"unobserved"},{"id":"mutation","description":"success/failure state and input/output representation difference across OO and facades","status":"unobserved"}], "ambiguities":["DM6 Date_SetDateField forwards an arbitrary selector to OO set but supplies only one scalar value, so its behavior for multi-value selectors is source-visible but unobserved. Source validates 0/1 specially in ambiguous zdate and zone two-argument forms; exact treatment of other isdst values needs observation."]
+    },
+    {
+      "operation_id":"date.replace-time", "bindings":[{"module":"Date::Manip::DM6","callable":"Date_SetTime","call_shapes":["date text, one time text or hour/minute/second fields -> serialized value or empty failure value"]},{"module":"Date::Manip::DM5","callable":"Date_SetTime","call_shapes":["date text, hour/minute/second fields -> compatibility serialized value or empty failure value"]}],
+      "portable_inputs":["date text","time as text or components"], "outputs":["serialized date-time or failure"],
+      "partitions":[{"id":"time-shape","description":"one text, one/two/three numeric components, omitted trailing components","status":"unobserved"},{"id":"validation","description":"valid boundary, invalid time, invalid source date, and DST transition","status":"unobserved"}], "ambiguities":["DM5/DM6 accepted arities and normalization are pending observation."]
+    },
+    {
+      "operation_id":"date.compare", "bindings":[{"module":"Date::Manip::Date","callable":"cmp","call_shapes":["date-object, other valid date-object -> -1/0/1"]},{"module":"Date::Manip::Base","callable":"cmp","call_shapes":["base-service, date field arrays -> ordering result"]},{"module":"Date::Manip::DM6","callable":"Date_Cmp","call_shapes":["two date texts -> -1/0/1 or absent failure"]},{"module":"Date::Manip::DM5","callable":"Date_Cmp","call_shapes":["two date texts -> compatibility lexical/temporal comparison"]}],
+      "portable_inputs":["two identified date-time values","comparison mode"], "outputs":["before/equal/after or failure"],
+      "partitions":[{"id":"order","description":"before, equal, and after","status":"unobserved"},{"id":"zone","description":"same instant different zones and same local fields different offsets","status":"unobserved"},{"id":"invalid","description":"invalid facade text and invalid/unset OO receiver","status":"unobserved"}], "ambiguities":["DM5 versus DM6 semantics on malformed data and cross-zone inputs require explicit compatibility observations."]
+    },
+    {
+      "operation_id":"date.find-previous", "bindings":[{"module":"Date::Manip::Date","callable":"prev","call_shapes":["date-object, weekday 1..7, curr 0|1|2, optional [H,MN,S] -> status and mutation","date-object, absent/false weekday, curr 0|nonzero, required three-slot [H|absent,MN|absent,S|absent] -> status and mutation"]},{"module":"Date::Manip::DM6","callable":"Date_GetPrev","call_shapes":["date text, weekday text/number or absent, curr flag, optional one hms text or optional H,MN,S fields -> serialized value"]},{"module":"Date::Manip::DM5","callable":"Date_GetPrev","call_shapes":["date text, weekday text/number or absent, today flag, optional H,MN,S fields -> compatibility serialized value"]}],
+      "portable_inputs":["starting date-time","weekday 1..7 or absent","curr: 0 strict, 1 current-or-previous, 2 last occurrence excluding the exact instant","time: full weekday clock or three-slot partial clock"], "outputs":["mutated or returned matching date-time","failure"],
+      "partitions":[{"id":"predicate","description":"weekday 1..7, full clock with weekday, and hour/minute/second partial-clock forms without weekday","status":"unobserved"},{"id":"inclusion","description":"OO finite domain 0/1/2; functional truthy/nontruthy compatibility forms","status":"unobserved"},{"id":"time-shape","description":"OO weekday clock accepts an hms-normalizable array; OO clock-only form requires exactly three slots with leading absent fields permitted; DM6 one text versus components; DM5 components","status":"unobserved"},{"id":"invalid","description":"weekday outside 1..7, bad clock, missing predicate, unset receiver, and DST boundary","status":"unobserved"}], "ambiguities":["OO source gives special meaning only to curr 0 and 2; all other truthy values follow current-inclusive paths. Facade mapping of arbitrary truthy values is unobserved."]
+    },
+    {
+      "operation_id":"date.find-next", "bindings":[{"module":"Date::Manip::Date","callable":"next","call_shapes":["date-object, weekday 1..7, curr 0|1|2, optional [H,MN,S] -> status and mutation","date-object, absent/false weekday, curr 0|nonzero, required three-slot [H|absent,MN|absent,S|absent] -> status and mutation"]},{"module":"Date::Manip::DM6","callable":"Date_GetNext","call_shapes":["date text, weekday text/number or absent, curr flag, optional one hms text or optional H,MN,S fields -> serialized value"]},{"module":"Date::Manip::DM5","callable":"Date_GetNext","call_shapes":["date text, weekday text/number or absent, today flag, optional H,MN,S fields -> compatibility serialized value"]}],
+      "portable_inputs":["starting date-time","weekday 1..7 or absent","curr: 0 strict, 1 current-or-next, 2 first occurrence excluding the exact instant","time: full weekday clock or three-slot partial clock"], "outputs":["mutated or returned matching date-time","failure"],
+      "partitions":[{"id":"predicate","description":"weekday 1..7, full clock with weekday, and hour/minute/second partial-clock forms without weekday","status":"unobserved"},{"id":"inclusion","description":"OO finite domain 0/1/2; functional truthy/nontruthy compatibility forms","status":"unobserved"},{"id":"time-shape","description":"OO weekday clock accepts an hms-normalizable array; OO clock-only form requires exactly three slots with leading absent fields permitted; DM6 one text versus components; DM5 components","status":"unobserved"},{"id":"invalid","description":"weekday outside 1..7, bad clock, missing predicate, unset receiver, and DST boundary","status":"unobserved"}], "ambiguities":["OO source gives special meaning only to curr 0 and 2; all other truthy values follow current-inclusive paths. The navigation outcome around nonexistent local times is unobserved."]
+    },
+    {
+      "operation_id":"date.localized-day-ordinal", "bindings":[{"module":"Date::Manip::DM6","callable":"Date_DaySuffix","call_shapes":["day-of-month -> localized ordinal text"]},{"module":"Date::Manip::DM5","callable":"Date_DaySuffix","call_shapes":["day-of-month -> compatibility ordinal text"]}],
+      "portable_inputs":["day-of-month","language context"], "outputs":["ordinal/suffix text"], "partitions":[{"id":"day","description":"1, ordinary values, teen endings, 21/31 endings, zero, and out-of-range values","status":"unobserved"},{"id":"language","description":"default English and each supported language","status":"unobserved"}], "ambiguities":["Out-of-range behavior and localization coverage are unobserved."]
+    },
+    {
+      "operation_id":"object.create", "bindings":[{"module":"Date::Manip::Obj","callable":"new","call_shapes":["target class or existing receiver, optional source object, optional initial text, parser options, optional configuration-pair collection -> new object"]}],
+      "portable_inputs":["target value kind","optional source context/value","optional initial text","optional context overrides"], "outputs":["new typed object","sharing/isolation relation","initial parse outcome"],
+      "partitions":[{"id":"target","description":"Base, TZ, Date, Delta, and Recur target kinds","status":"unobserved"},{"id":"source","description":"no source, same/high-level source, TZ source, Base source, and cross-kind source","status":"unobserved"},{"id":"overrides","description":"no overrides versus supplied configuration collection requiring a derived Base context","status":"unobserved"},{"id":"initial-value","description":"supported value kinds with text, unsupported Base/TZ text, parse success, and parse failure","status":"unobserved"}], "ambiguities":["Object identity is nonportable; only observable shared configuration/cache invalidation and derived-context isolation should become feature obligations."]
+    },
+    {
+      "operation_id":"context.create", "bindings":[{"module":"Date::Manip::Obj","callable":"new_config","call_shapes":["existing receiver, optional initial text, optional configuration-pair collection -> same-kind object with derived Base context"]}],
+      "portable_inputs":["source object","optional initial text","optional context overrides"], "outputs":["same-kind object","derived context","initial parse outcome"], "partitions":[{"id":"inheritance","description":"inherits settings then accepts no, one, or many overrides","status":"unobserved"},{"id":"isolation","description":"later setting change on source versus derived object","status":"unobserved"},{"id":"receiver-kind","description":"Base, TZ, Date, Delta, and Recur sources","status":"unobserved"}], "ambiguities":["Observable cache effects are performance facts, not a portable outcome unless a setting change affects a subsequent result."]
+    },
+    {
+      "operation_id":"date.create", "bindings":[{"module":"Date::Manip::Obj","callable":"new_date","call_shapes":["existing receiver, optional date text, parser options, optional configuration-pair collection -> Date object"]}],
+      "portable_inputs":["optional source context","optional date text","optional context overrides"], "outputs":["date object","sharing/isolation relation","initial parse outcome"], "partitions":[{"id":"source-context","description":"same or cross-kind source and no source","status":"unobserved"},{"id":"initialization","description":"unset, valid text, invalid text, parser options, and context overrides","status":"unobserved"}], "ambiguities":["Failure return versus a created object carrying error state must be observed."]
+    },
+    {
+      "operation_id":"context.base-service", "bindings":[{"module":"Date::Manip::Obj","callable":"base","call_shapes":["object -> associated Base service; Base receiver returns absent"]}],
+      "portable_inputs":["Base, TZ, Date, Delta, or Recur object"], "outputs":["associated context service or absent"], "partitions":[{"id":"receiver-kind","description":"Base, TZ, and high-level receiver kinds","status":"unobserved"},{"id":"sharing","description":"siblings made from shared versus derived context","status":"unobserved"}], "ambiguities":["Portable adapter should expose context relation rather than raw object identity."]
+    },
+    {
+      "operation_id":"context.zone-service", "bindings":[{"module":"Date::Manip::Obj","callable":"tz","call_shapes":["high-level object -> associated TZ service; Base/TZ receiver returns absent"]}],
+      "portable_inputs":["Base, TZ, Date, Delta, or Recur object"], "outputs":["associated zone service or absent"], "partitions":[{"id":"receiver-kind","description":"Base, TZ, and high-level receiver kinds","status":"unobserved"},{"id":"sharing","description":"siblings made from shared versus derived context","status":"unobserved"}], "ambiguities":["Zone service query is lifecycle scope only; zone-resolution behavior belongs to the zone catalogue."]
+    },
+    {
+      "operation_id":"object.kind-check", "bindings":[{"module":"Date::Manip::Obj","callable":"is_date","call_shapes":["object -> Date-kind boolean"]},{"module":"Date::Manip::Obj","callable":"is_delta","call_shapes":["object -> Delta-kind boolean"]},{"module":"Date::Manip::Obj","callable":"is_recur","call_shapes":["object -> Recur-kind boolean"]},{"module":"Date::Manip::Date","callable":"is_date","call_shapes":["Date object -> true"]},{"module":"Date::Manip::Delta","callable":"is_delta","call_shapes":["Delta object -> true"]},{"module":"Date::Manip::Recur","callable":"is_recur","call_shapes":["Recur object -> true"]}],
+      "portable_inputs":["object","requested kind"], "outputs":["boolean"], "partitions":[{"id":"kind-matrix","description":"Date, Delta, Recur, Base, and TZ receivers against each predicate","status":"unobserved"}], "ambiguities":["Behavior on foreign/non-object receivers is outside the portable contract until an adapter policy is chosen."]
+    },
+    {
+      "operation_id":"config.apply-settings", "bindings":[{"module":"Date::Manip::Obj","callable":"config","call_shapes":["object, alternating setting name/value sequence -> no direct return"]},{"module":"Date::Manip::Delta","callable":"config","call_shapes":["Delta object, alternating setting name/value sequence -> no direct return"]},{"module":"Date::Manip::DM6","callable":"Date_Init","call_shapes":["zero or more 'name=value' texts -> error text"]},{"module":"Date::Manip::DM5","callable":"Date_Init","call_shapes":["zero or more 'name=value' texts -> compatibility initialization result"]}],
+      "portable_inputs":["ordered settings","target context","optional configuration-file path"], "outputs":["changed context","return/diagnostic/error state"],
+      "partitions":[{"id":"pairing","description":"zero settings, one pair, multiple ordered pairs, missing value, invalid name, and invalid value","status":"unobserved"},{"id":"reset-load","description":"Defaults reset, immediate ConfigFile processing, nested/missing files, and order-dependent overrides","status":"unobserved"},{"id":"parse-context","description":"Language, Encoding, DateFormat, YYtoYYYY, DefaultTime, PeriodTimeSep, Format_MMMYYYY, SetDate, ForceDate, POSIX formatting, and deprecated settings","status":"unobserved"},{"id":"cross-object","description":"objects sharing a Base context versus derived Base contexts","status":"unobserved"}],
+      "ambiguities":["Business, recurrence, and zone-specific keys are catalogued by their owning families; their lifecycle effects remain a cross-family integration obligation."]
+    },
+    {
+      "operation_id":"config.read-settings", "bindings":[{"module":"Date::Manip::Obj","callable":"get_config","call_shapes":["object -> ordered lowercase setting names","object, one setting name -> one value","object, multiple setting names -> ordered values"]}],
+      "portable_inputs":["context object","zero or more setting names"], "outputs":["setting-name collection, one value, ordered values, or invalid-name diagnostic"], "partitions":[{"id":"arity-context","description":"zero, one, and multiple requested names","status":"unobserved"},{"id":"name-case","description":"canonical/lowercase, mixed case, and invalid name","status":"unobserved"},{"id":"value-kind","description":"scalar, list-like configuration value, and values after reset/file loading","status":"unobserved"}], "ambiguities":["Exact invalid-name return channel and config-list completeness must be observed."]
+    },
+    {
+      "operation_id":"error.read-state", "bindings":[{"module":"Date::Manip::Obj","callable":"err","call_shapes":["object -> current error text","object, truthy clear flag -> clears error"]}],
+      "portable_inputs":["object","optional clear request"], "outputs":["error text or changed error state"], "partitions":[{"id":"state","description":"new object, successful operation, failed parse/format/set operation, and post-clear","status":"unobserved"},{"id":"clear-argument","description":"omitted, false, and truthy values","status":"unobserved"},{"id":"sharing","description":"errors across sibling objects sharing context","status":"unobserved"}], "ambiguities":["Whether an error is cleared before every operation and whether nonfatal configuration diagnostics populate err remain unobserved."]
+    },
+    {
+      "operation_id":"meta.reference-version", "bindings":[{"module":"Date::Manip::Obj","callable":"version","call_shapes":["Base object, any flag -> distribution version","TZ/Date/Delta/Recur object, omitted/false flag -> distribution version","TZ/Date/Delta/Recur object, truthy flag -> distribution version plus host-system-zone detail"]},{"module":"Date::Manip::DM6","callable":"DateManipVersion","call_shapes":["optional flag delegates to DM6 Date object version"]},{"module":"Date::Manip::DM5","callable":"DateManipVersion","call_shapes":["optional flag -> DM5 compatibility backend version"]}],
+      "portable_inputs":["receiver/interface","optional detail request"], "outputs":["distribution or compatibility backend version metadata"], "partitions":[{"id":"detail","description":"omitted/false versus truthy flag","status":"unobserved"},{"id":"receiver","description":"Base, TZ, and high-level object; DM5 and DM6 facade","status":"unobserved"}], "ambiguities":["The reviewed reference profile identifies DM6/OO backend 7.00 and DM5 backend 5.66 within distribution 7.00. Detailed OO text includes host zone information and is environment-dependent."]
+    },
+    {
+      "operation_id":"meta.zone-data-version", "bindings":[{"module":"Date::Manip::TZ","callable":"tzdata","call_shapes":["TZ service -> timezone-data version text"]}],
+      "portable_inputs":["zone service"], "outputs":["timezone-data version metadata"], "partitions":[{"id":"service-state","description":"fresh versus configured/used zone service","status":"unobserved"}], "ambiguities":["Exact availability through high-level facade and output normalization are unobserved."]
+    },
+    {
+      "operation_id":"meta.zone-rule-version", "bindings":[{"module":"Date::Manip::TZ","callable":"tzcode","call_shapes":["TZ service -> timezone-rule-code version text"]}],
+      "portable_inputs":["zone service"], "outputs":["timezone-rule-code version metadata"], "partitions":[{"id":"service-state","description":"fresh versus configured/used zone service","status":"unobserved"}], "ambiguities":["Exact availability through high-level facade and output normalization are unobserved."]
+    },
+    {
+      "operation_id":"value.join-fields", "bindings":[{"module":"Date::Manip::Base","callable":"join","call_shapes":["Base service, 'date', [Y,M,D,H,MN,S] -> configured printable date text","Base service, 'hms', [H,MN,S] -> H:MN:S text","Base service, 'offset', [H,MN,S] -> signed offset text","Base service, 'time', [signed-H,signed-MN,signed-S], optional {nonorm: boolean} -> elapsed-time text","Base service, 'delta', seven delta fields, optional {mode: standard|business, nonorm: boolean} -> delta text","deprecated: 'business' aliases 'delta' with mode business"]}],
+      "portable_inputs":["kind: date/hms/offset/time/delta (or deprecated business)","fixed field array","optional options map"], "outputs":["serialized value or absent failure"], "partitions":[{"id":"kind","description":"finite kinds date, hms, offset, time, delta, and deprecated business alias","status":"unobserved"},{"id":"field-shape","description":"date six fields; hms/offset/time three fields; delta seven fields; wrong arity and invalid fields","status":"unobserved"},{"id":"normalization","description":"time/delta with omitted options, nonorm true/false, and delta mode standard/business","status":"unobserved"}], "ambiguities":["The public Base helper accepts only these source branches; portability exposure remains an adapter decision."]
+    },
+    {
+      "operation_id":"value.split-fields", "bindings":[{"module":"Date::Manip::Base","callable":"split","call_shapes":["Base service, 'date', one of three fixed date serial forms -> [Y,M,D,H,MN,S] or absent","Base service, 'hms', compact HH[MN[SS]] or colon H[:MN[:SS]] -> [H,MN,S] or absent","Base service, 'offset', compact signed HH[MN[SS]] or colon signed H[:MN[:SS]] -> [H,MN,S] or absent","Base service, 'time', signed colon one-to-three fields, optional {nonorm: boolean} -> [H,MN,S] or absent","Base service, 'delta', colon one-to-seven fields, optional {mode: standard|business, nonorm: boolean} -> seven fields or absent","deprecated: 'business' aliases 'delta' with mode business"]}],
+      "portable_inputs":["kind: date/hms/offset/time/delta (or deprecated business)","serialized value","optional options map"], "outputs":["fixed field array or absent failure"], "partitions":[{"id":"kind","description":"finite kinds date, hms, offset, time, delta, and deprecated business alias","status":"unobserved"},{"id":"text-shape","description":"each documented compact/colon form, malformed separator, invalid field, and trailing data","status":"unobserved"},{"id":"normalization","description":"time/delta with omitted options, nonorm true/false, and delta mode standard/business","status":"unobserved"}], "ambiguities":["The source lists accepted lexical forms but no observations yet establish complete validation and normalization outcomes; do not use it as an expectation oracle."]
+    }
+  ],
+  "gaps": [
+    "Every listed partition is unobserved; no literal expected values, repeatability claims, or portable features are created here.",
+    "Source-level parser productions and printf directive inventory are intentionally owned by docs/research/api and must be linked before probes.",
+    "DM5/DM6 compatibility differences need separate fresh-process observations; DM5 is a compatibility profile, not a fallback for DM6 results.",
+    "A normalized outcome protocol must distinguish absent input, empty text, no match, numeric status, empty facade return, warning/diagnostic, and receiver error state.",
+    "Configuration keys need a per-key defaults and validation matrix; cross-family keys remain for their assigned catalogues plus integration cases."
+  ]
+}

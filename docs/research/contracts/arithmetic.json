@@ -1,0 +1,1010 @@
+{
+  "schema_version": 1,
+  "family": "arithmetic-and-delta",
+  "reference": {
+    "distribution": "Date::Manip",
+    "version": "7.00"
+  },
+  "scope": {
+    "operation_count": 16,
+    "arithmetic_count": 6,
+    "delta_count": 10,
+    "research_status": "API/POD/source reconciliation only. No literal result, diagnostic, scalar/list-context result, or mutation has been observed or approved."
+  },
+  "shared": {
+    "delta_fields": [
+      "year",
+      "month",
+      "week",
+      "day",
+      "hour",
+      "minute",
+      "second"
+    ],
+    "delta_field_codes": [
+      "y",
+      "M",
+      "w",
+      "d",
+      "h",
+      "m",
+      "s"
+    ],
+    "delta_modes": [
+      "standard",
+      "business"
+    ],
+    "delta_types": [
+      "exact",
+      "semi",
+      "approx",
+      "estimated"
+    ],
+    "outcome_channels": "Probe value/return shape, object error state, warning/stderr, stdout from compatibility wrappers, mutation, and scalar/list context separately.",
+    "binding_carriers": "Base civil date/time/delta tuples are Perl array references, not flattened argument lists. A returned tuple is an array reference unless the operation explicitly documents a list return (for example week-year/week or all month lengths). Generic portable records represent the fields; they do not expose Perl references."
+  },
+  "operations": [
+    {
+      "operation_id": "arithmetic.calculate",
+      "purpose": "Dispatch a legacy text calculation or OO calculation after operand kinds have been established.",
+      "bindings": [
+        {
+          "module": "Date::Manip::DM6",
+          "callable": "DateCalc",
+          "call_shapes": [
+            "(left_text_or_token_list, right_text_or_token_list [, error_reference] [, mode])"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-functional-export"
+        },
+        {
+          "module": "Date::Manip::DM5",
+          "callable": "DateCalc",
+          "call_shapes": [
+            "(left_text, right_text [, error_reference_or_mode] [, mode])"
+          ],
+          "profile": "dm5-compatibility",
+          "disposition": "public-functional-export"
+        },
+        {
+          "module": "Date::Manip::Date",
+          "callable": "calc",
+          "call_shapes": [
+            "(Date [, subtract_or_mode] [, mode])",
+            "(Delta [, subtract])"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method"
+        },
+        {
+          "module": "Date::Manip::Delta",
+          "callable": "calc",
+          "call_shapes": [
+            "(Date [, subtract])",
+            "(Delta [, subtract] [, nonormalize])"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method"
+        }
+      ],
+      "portable_inputs": [
+        {
+          "name": "left",
+          "type": "typed date or delta; legacy route accepts text"
+        },
+        {
+          "name": "right",
+          "type": "typed date or delta; legacy route accepts text"
+        },
+        {
+          "name": "subtract",
+          "type": "omitted, false/true, or the documented approximate-calculation selector"
+        },
+        {
+          "name": "mode",
+          "type": "date/date mode: exact, semi, approx, business, bsemi, or bapprox"
+        }
+      ],
+      "outputs": "A new Date or Delta object in OO routes; legacy routes return canonical delta/date text or empty text. Error-reference, object error, warning, and wrapper diagnostic channels require probes.",
+      "partitions": [
+        {
+          "id": "arithmetic.calculate.p1",
+          "description": "normal: each date/date, date/delta, and delta/delta operand pairing",
+          "status": "unobserved"
+        },
+        {
+          "id": "arithmetic.calculate.p2",
+          "description": "normal: add and subtract selectors, including approximate selector 2",
+          "status": "unobserved"
+        },
+        {
+          "id": "arithmetic.calculate.p3",
+          "description": "boundary: month end, leap date, DST gap/overlap, and cross-zone date/date",
+          "status": "unobserved"
+        },
+        {
+          "id": "arithmetic.calculate.p4",
+          "description": "boundary: business schedule, weekend, holiday, and workday endpoint",
+          "status": "unobserved"
+        },
+        {
+          "id": "arithmetic.calculate.p5",
+          "description": "invalid: unparseable legacy operands, invalid objects, unsupported operand kind, invalid arity/mode, and mixed delta modes",
+          "status": "unobserved"
+        },
+        {
+          "id": "arithmetic.calculate.p6",
+          "description": "compatibility: DM5 versus DM6 text dispatch, mode aliases/numerics, diagnostics, and error reference",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "The legacy wrappers infer date versus delta from text, while OO calls use object class; identical-looking text must be probed through each profile.",
+        "The exact behavior for false, omitted, and non-boolean subtract values is not a portable claim until observed."
+      ]
+    },
+    {
+      "operation_id": "arithmetic.date-difference",
+      "purpose": "Base-level difference between two ordered civil date-time field lists.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "calc_date_date",
+          "call_shapes": [
+            "(date_time_fields, date_time_fields)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        }
+      ],
+      "portable_inputs": [
+        {
+          "name": "from",
+          "type": "six ordered numeric civil fields"
+        },
+        {
+          "name": "to",
+          "type": "six ordered numeric civil fields"
+        }
+      ],
+      "outputs": "Three ordered signed fields: hours, minutes, seconds. Input validation and non-list behavior are unobserved.",
+      "partitions": [
+        {
+          "id": "arithmetic.date-difference.p1",
+          "description": "normal: same-day and multi-day forward differences",
+          "status": "unobserved"
+        },
+        {
+          "id": "arithmetic.date-difference.p2",
+          "description": "boundary: equality, reverse order, midnight crossing, leap date, and month/year boundary",
+          "status": "unobserved"
+        },
+        {
+          "id": "arithmetic.date-difference.p3",
+          "description": "invalid: short/malformed lists and invalid civil/time fields",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "This low-level Base route has no zone argument; its relationship to OO zoned Date calculation needs separate evidence."
+      ],
+      "binding_return_carrier": "One array reference containing ordered result fields."
+    },
+    {
+      "operation_id": "arithmetic.date-plus-days",
+      "purpose": "Move a Base date list by a signed count of calendar days.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "calc_date_days",
+          "call_shapes": [
+            "(date_or_date_time_fields, day_count [, subtract])"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        }
+      ],
+      "portable_inputs": [
+        {
+          "name": "date",
+          "type": "three or six ordered civil fields"
+        },
+        {
+          "name": "day_count",
+          "type": "numeric day count"
+        },
+        {
+          "name": "subtract",
+          "type": "optional truthy selector"
+        }
+      ],
+      "outputs": "Three fields when supplied a date-only list, otherwise six fields; coercion, precision, and invalid-input outcome remain unobserved.",
+      "partitions": [
+        {
+          "id": "arithmetic.date-plus-days.p1",
+          "description": "normal: forward and backward integral movement",
+          "status": "unobserved"
+        },
+        {
+          "id": "arithmetic.date-plus-days.p2",
+          "description": "boundary: zero, leap day, month/year rollover, and date-only versus date-time shape",
+          "status": "unobserved"
+        },
+        {
+          "id": "arithmetic.date-plus-days.p3",
+          "description": "invalid: missing/non-numeric day count and malformed/invalid field list",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "Whether fractional day counts are accepted by this Base entry point needs a probe."
+      ],
+      "binding_return_carrier": "One array reference containing ordered result fields."
+    },
+    {
+      "operation_id": "arithmetic.date-plus-delta",
+      "purpose": "Apply seven signed delta fields to a Base date-time list.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "calc_date_delta",
+          "call_shapes": [
+            "(date_or_date_time_fields, seven_delta_fields [, subtract])"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        }
+      ],
+      "portable_inputs": [
+        {
+          "name": "date",
+          "type": "three or six ordered civil fields"
+        },
+        {
+          "name": "delta",
+          "type": "seven ordered numeric fields y,M,w,d,h,m,s"
+        },
+        {
+          "name": "subtract",
+          "type": "optional truthy selector"
+        }
+      ],
+      "outputs": "Resulting ordered date-time fields; date-only preservation, normalization, and invalid-input behavior are unobserved.",
+      "partitions": [
+        {
+          "id": "arithmetic.date-plus-delta.p1",
+          "description": "normal: one nonzero field in each calendar and clock unit",
+          "status": "unobserved"
+        },
+        {
+          "id": "arithmetic.date-plus-delta.p2",
+          "description": "boundary: end-of-month truncation, leap day, mixed signs, and carry across midnight",
+          "status": "unobserved"
+        },
+        {
+          "id": "arithmetic.date-plus-delta.p3",
+          "description": "invalid: malformed list shape, nonnumeric fields, and omitted subtract distinction",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "This Base helper lacks Date/Delta mode and timezone metadata, so it must not be substituted for an OO business or zoned calculation."
+      ],
+      "binding_return_carrier": "One array reference containing ordered result fields."
+    },
+    {
+      "operation_id": "arithmetic.date-plus-time",
+      "purpose": "Apply an hour/minute/second tuple to Base civil fields.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "calc_date_time",
+          "call_shapes": [
+            "(date_time_fields, time_delta_fields [, subtract])"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        }
+      ],
+      "portable_inputs": [
+        {
+          "name": "date_time",
+          "type": "six ordered civil fields"
+        },
+        {
+          "name": "time_delta",
+          "type": "three ordered numeric fields hour, minute, second"
+        },
+        {
+          "name": "subtract",
+          "type": "optional truthy selector"
+        }
+      ],
+      "outputs": "Six ordered civil fields after carry/borrow; field coercion and invalid input behavior are unobserved.",
+      "partitions": [
+        {
+          "id": "arithmetic.date-plus-time.p1",
+          "description": "normal: positive and negative clock tuples",
+          "status": "unobserved"
+        },
+        {
+          "id": "arithmetic.date-plus-time.p2",
+          "description": "boundary: seconds/minutes/hours outside nominal range, midnight, month end, and leap date",
+          "status": "unobserved"
+        },
+        {
+          "id": "arithmetic.date-plus-time.p3",
+          "description": "invalid: malformed list shapes, missing fields, and nonnumeric values",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "No zone/DST information is supplied to this Base form; it is a civil-field operation until comparison with OO routes is observed."
+      ],
+      "binding_return_carrier": "One array reference containing ordered result fields."
+    },
+    {
+      "operation_id": "arithmetic.combine-times",
+      "purpose": "Combine or subtract two hour/minute/second tuples.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Base",
+          "callable": "calc_time_time",
+          "call_shapes": [
+            "(time_fields, time_fields [, subtract])"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method",
+          "tuple_carrier": "Each tuple argument is one array reference. Return carrier is recorded per operation."
+        }
+      ],
+      "portable_inputs": [
+        {
+          "name": "left_time",
+          "type": "three ordered numeric fields"
+        },
+        {
+          "name": "right_time",
+          "type": "three ordered numeric fields"
+        },
+        {
+          "name": "subtract",
+          "type": "optional truthy selector"
+        }
+      ],
+      "outputs": "Three signed fields: hours, minutes, seconds.",
+      "partitions": [
+        {
+          "id": "arithmetic.combine-times.p1",
+          "description": "normal: addition and subtraction",
+          "status": "unobserved"
+        },
+        {
+          "id": "arithmetic.combine-times.p2",
+          "description": "boundary: zero, negative result, and values requiring carry/borrow",
+          "status": "unobserved"
+        },
+        {
+          "id": "arithmetic.combine-times.p3",
+          "description": "invalid: malformed lists and nonnumeric entries",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "The public source accepts two array-reference operands despite a flattened-list notation in the POD signature. Observe both valid carrier and malformed flattened calls separately."
+      ],
+      "binding_return_carrier": "One array reference containing ordered result fields."
+    },
+    {
+      "operation_id": "delta.create",
+      "purpose": "Construct a Delta object associated with an existing Date::Manip object/context.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Obj",
+          "callable": "new_delta",
+          "call_shapes": [
+            "([constructor arguments inherited by Delta])"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method"
+        }
+      ],
+      "portable_inputs": [
+        {
+          "name": "constructor_arguments",
+          "type": "optional Delta constructor input(s), including parseable input where supported"
+        },
+        {
+          "name": "context",
+          "type": "inherited configuration/timezone object state"
+        }
+      ],
+      "outputs": "A Delta object initially carrying seven zero fields, standard mode, exact type, normalized state, and empty error according to implementation initialization; constructor parsing/warnings need probes.",
+      "partitions": [
+        {
+          "id": "delta.create.p1",
+          "description": "normal: empty construction and construction from parseable input",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.create.p2",
+          "description": "boundary: constructor context/config inheritance and independent objects",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.create.p3",
+          "description": "invalid: malformed constructor arguments and warning/error state",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "The public Obj constructor protocol is shared across object families and must be characterized without assuming private initialization details as a portable contract."
+      ]
+    },
+    {
+      "operation_id": "delta.parse-text",
+      "purpose": "Parse compact or localized expanded interval text into mutable Delta state.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Delta",
+          "callable": "parse",
+          "call_shapes": [
+            "(text [, options_hash])",
+            "(text [, business_or_standard] [, nonormalize]) [deprecated]"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method"
+        },
+        {
+          "module": "Date::Manip::DM6",
+          "callable": "ParseDateDelta",
+          "call_shapes": [
+            "(text_or_scalar_reference_or_token_array_reference [, exact_or_semi_or_approx])"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-functional-export"
+        },
+        {
+          "module": "Date::Manip::DM5",
+          "callable": "ParseDateDelta",
+          "call_shapes": [
+            "(text_or_scalar_reference_or_token_array_reference)"
+          ],
+          "profile": "dm5-compatibility",
+          "disposition": "public-functional-export"
+        }
+      ],
+      "portable_inputs": [
+        {
+          "name": "text",
+          "type": "compact colon fields or localized expanded delta text"
+        },
+        {
+          "name": "options",
+          "type": "mode standard/business, nonorm 0/1, type exact/semi/approx/estimated"
+        },
+        {
+          "name": "functional_container",
+          "type": "scalar, scalar reference, or array reference where wrapper supports it"
+        }
+      ],
+      "outputs": "OO route returns status code and mutates Delta value/input/mode/type/error state. Functional routes return canonical text or empty text and may consume token-array elements. Diagnostics and all failure channels require observation.",
+      "grammar": {
+        "compact": {
+          "field_order": [
+            "y",
+            "M",
+            "w",
+            "d",
+            "h",
+            "m",
+            "s"
+          ],
+          "field_count": "1 through 7",
+          "separator": ":",
+          "omission": "empty positions represent zero; no embedded spaces"
+        },
+        "expanded": {
+          "field_order": [
+            "year",
+            "month",
+            "week",
+            "day",
+            "hour",
+            "minute",
+            "second"
+          ],
+          "components": "optional sign, number or recognized small number word, localized field name; fields remain ordered",
+          "relative_terms": "localized future/past terms may affect sign in expanded form",
+          "mode_terms": "localized standard/business term may occur in text"
+        },
+        "normalization": {
+          "default": "enabled",
+          "override": "nonorm",
+          "fractional_fields": "accepted text must be probed; conversion/normalization uses estimated relationships and fractional-second handling needs literal evidence"
+        }
+      },
+      "partitions": [
+        {
+          "id": "delta.parse-text.p1",
+          "description": "normal: compact one-field through seven-field forms, omitted compact positions, signs, and standard mode",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.parse-text.p2",
+          "description": "normal: English expanded fields, whitespace/comma separators, future/past terms, and business marker",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.parse-text.p3",
+          "description": "boundary: fractional non-second field, fractional second, mixed signs, normalization versus nonorm, and all four types",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.parse-text.p4",
+          "description": "invalid: empty text, invalid compact syntax, out-of-order expanded fields, mode conflict, unsupported option/type, and type/field incompatibility",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.parse-text.p5",
+          "description": "compatibility: DM5/DM6 containers, consumption, scalar/list returns, diagnostics, and DM6 deprecated parse forms",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "The finite English vocabulary and other-language vocabulary belong to language data; this catalogue records grammar classes rather than importing token tables.",
+        "The wrappers' optional conversion selector and OO parse type option are distinct mechanisms and need cross-route probes."
+      ]
+    },
+    {
+      "operation_id": "delta.read-value",
+      "purpose": "Read Delta fields as canonical text or an ordered field list.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Delta",
+          "callable": "value",
+          "call_shapes": [
+            "() in scalar context",
+            "() in list context"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method"
+        }
+      ],
+      "portable_inputs": [
+        {
+          "name": "delta",
+          "type": "Delta object including valid/invalid state"
+        },
+        {
+          "name": "context",
+          "type": "scalar or list calling context"
+        }
+      ],
+      "outputs": "Valid scalar route yields canonical colon text; valid list route yields seven fields in y,M,w,d,h,m,s order. Invalid-object empty scalar/list behavior is documented but unobserved.",
+      "partitions": [
+        {
+          "id": "delta.read-value.p1",
+          "description": "normal: normalized and non-normalized valid delta in scalar and list context",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.read-value.p2",
+          "description": "boundary: signed/mixed-sign and fractional-origin delta",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.read-value.p3",
+          "description": "invalid: error-bearing delta and context-specific empty result",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "The unused optional source parameter in the implementation is not documented as a public input and is excluded pending a public contract."
+      ]
+    },
+    {
+      "operation_id": "delta.read-input",
+      "purpose": "Read the original successfully parsed input text retained by a Delta object.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Delta",
+          "callable": "input",
+          "call_shapes": [
+            "()"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method"
+        }
+      ],
+      "portable_inputs": [
+        {
+          "name": "delta",
+          "type": "Delta object after construction, parse, set, calculation, or failure"
+        }
+      ],
+      "outputs": "One text value representing retained parse input or an empty state; exact lifecycle behavior is unobserved.",
+      "partitions": [
+        {
+          "id": "delta.read-input.p1",
+          "description": "normal: successful compact and expanded parse",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.read-input.p2",
+          "description": "boundary: leading/trailing whitespace and wrapper-mediated parse",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.read-input.p3",
+          "description": "state: empty construction, set, calc, convert, and failed parse after prior valid state",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "Whether returned text preserves raw whitespace or trimmed/normalized text must be observed."
+      ]
+    },
+    {
+      "operation_id": "delta.replace-fields",
+      "purpose": "Set all or selected Delta fields and metadata in place.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Delta",
+          "callable": "set",
+          "call_shapes": [
+            "(options_hash)",
+            "(field, value [, nonormalize]) [deprecated]"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method"
+        }
+      ],
+      "portable_inputs": [
+        {
+          "name": "options",
+          "type": "delta/business/standard field array or individual y,M,w,d,h,m,s numeric values; optional nonorm, mode, type"
+        },
+        {
+          "name": "legacy_field_and_value",
+          "type": "single field key and scalar value"
+        }
+      ],
+      "outputs": "Status code and in-place Delta state update on success; failure error state and preservation/partial-update behavior require probes.",
+      "partitions": [
+        {
+          "id": "delta.replace-fields.p1",
+          "description": "normal: whole seven-field and partial field replacement, each mode, each type, and normalization selector",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.replace-fields.p2",
+          "description": "boundary: short whole-field array, signed/mixed fields, fractions, exact/semi/approx/estimated compatibility",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.replace-fields.p3",
+          "description": "invalid: duplicate/conflicting field sources, invalid key/mode/type, non-array whole delta, referenced individual value, nonnumeric value, and incompatible type",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.replace-fields.p4",
+          "description": "compatibility: deprecated normal alias and positional form",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "The source shows error state is set on validation failure; atomicity across option validation and value update must be observed."
+      ]
+    },
+    {
+      "operation_id": "delta.render-pattern",
+      "purpose": "Render one or more text patterns against a valid Delta object.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Delta",
+          "callable": "printf",
+          "call_shapes": [
+            "(pattern) in scalar context",
+            "(pattern, ...) in list context"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method"
+        }
+      ],
+      "portable_inputs": [
+        {
+          "name": "delta",
+          "type": "valid Delta object"
+        },
+        {
+          "name": "patterns",
+          "type": "one or more text patterns"
+        },
+        {
+          "name": "context",
+          "type": "scalar or list calling context"
+        }
+      ],
+      "outputs": "One rendered text for one pattern in scalar context, ordered texts in list context, and documented empty scalar behavior for multiple patterns; invalid-object warning/undef behavior remains unobserved.",
+      "format_directives": {
+        "literal_percent": "%%",
+        "single_field": "%[+][pad][width]Xv; X is y,M,w,d,h,m,s; pad is <, >, or 0",
+        "range_as_field": "%[+][pad][width][.precision]XYZ; X is target unit and Y..Z is an inclusive ordered source range",
+        "delta": "%[+][pad][width]Dt for all fields; % [ + ] [pad] [width] DXY for inclusive ordered field range (spaces shown only as grammar separators)"
+      },
+      "partitions": [
+        {
+          "id": "delta.render-pattern.p1",
+          "description": "normal: literal text, literal percent, every single field, each field range, full delta, and partial delta",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.render-pattern.p2",
+          "description": "boundary: positive/negative/mixed signs, width shorter/equal/longer, three padding choices, precision, and multi-pattern scalar/list context",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.render-pattern.p3",
+          "description": "configuration: standard/business relationship conversion and workday/workweek length",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.render-pattern.p4",
+          "description": "invalid: malformed/unsupported directives, reverse field range, invalid object, and warning channel",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "Unrecognized percent sequences appear to be retained by the implementation but are not frozen without probes.",
+        "Directive grammar is recorded as finite forms; output values and spacing are not copied or approved expectations."
+      ]
+    },
+    {
+      "operation_id": "delta.render-fields",
+      "purpose": "Compatibility functional formatting, including translation of older field-format conventions.",
+      "bindings": [
+        {
+          "module": "Date::Manip::DM6",
+          "callable": "Delta_Format",
+          "call_shapes": [
+            "(delta_text [, mode_or_decimal_or_pattern] ...)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-functional-export"
+        },
+        {
+          "module": "Date::Manip::DM5",
+          "callable": "Delta_Format",
+          "call_shapes": [
+            "(delta_text [, mode_or_decimal_or_pattern] ...)"
+          ],
+          "profile": "dm5-compatibility",
+          "disposition": "public-functional-export"
+        }
+      ],
+      "portable_inputs": [
+        {
+          "name": "delta_text",
+          "type": "parseable legacy delta text"
+        },
+        {
+          "name": "mode",
+          "type": "optional exact, semi, or approx selector"
+        },
+        {
+          "name": "decimal_places",
+          "type": "optional nonnegative integer-like selector"
+        },
+        {
+          "name": "patterns",
+          "type": "zero or more old or current formatting patterns"
+        }
+      ],
+      "outputs": "One space-joined scalar text or ordered list texts; parse failure returns an empty route-specific result. Argument dispatch and diagnostics require probes.",
+      "partitions": [
+        {
+          "id": "delta.render-fields.p1",
+          "description": "normal: current directives and each recognized legacy d/h/t scope translation",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.render-fields.p2",
+          "description": "boundary: omitted mode/decimal/pattern, zero/positive decimal, multiple patterns, scalar/list context, business delta",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.render-fields.p3",
+          "description": "invalid: unparseable delta, invalid selector, malformed directives, and unsupported arity",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.render-fields.p4",
+          "description": "compatibility: DM5/DM6 legacy translation and scalar joining",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "The wrapper accepts arguments through precedence-based dispatch; false versus absent selector behavior needs a dedicated matrix."
+      ]
+    },
+    {
+      "operation_id": "delta.read-type",
+      "purpose": "Test Delta mode or type membership.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Delta",
+          "callable": "type",
+          "call_shapes": [
+            "(mode_or_type_text)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method"
+        }
+      ],
+      "portable_inputs": [
+        {
+          "name": "query",
+          "type": "case-insensitive mode standard/business or type exact/semi/approx/estimated"
+        },
+        {
+          "name": "delta",
+          "type": "Delta object"
+        }
+      ],
+      "outputs": "Numeric boolean membership result; unsupported query behavior is unobserved.",
+      "partitions": [
+        {
+          "id": "delta.read-type.p1",
+          "description": "normal: every supported mode/type query and case variation",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.read-type.p2",
+          "description": "boundary: delta whose apparent fields permit more than one interpretation but stored type is explicit",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.read-type.p3",
+          "description": "invalid: unknown, omitted, non-text query and invalid delta state",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "Type is stored/determined metadata, not reliably derivable from field values alone."
+      ]
+    },
+    {
+      "operation_id": "delta.convert-type",
+      "purpose": "Mutate a Delta into a requested accuracy type.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Delta",
+          "callable": "convert",
+          "call_shapes": [
+            "(target_type)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method"
+        }
+      ],
+      "portable_inputs": [
+        {
+          "name": "delta",
+          "type": "valid Delta object"
+        },
+        {
+          "name": "target_type",
+          "type": "exact, semi, approx, or estimated"
+        }
+      ],
+      "outputs": "In-place Delta mutation with no documented value return. Fields, type, normalization and error/warning behavior must be captured as state observations.",
+      "partitions": [
+        {
+          "id": "delta.convert-type.p1",
+          "description": "normal: identity and conversions toward less exact type",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.convert-type.p2",
+          "description": "boundary: standard/business delta, fractional-origin delta, and conversion that changes field groups",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.convert-type.p3",
+          "description": "compatibility: conversion toward more exact type, documented as legacy/ill-defined",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.convert-type.p4",
+          "description": "invalid: unknown/missing target and invalid source object",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "The implementation's target lookup does not visibly validate unknown names before numeric comparison; actual failure mode must be probed safely."
+      ]
+    },
+    {
+      "operation_id": "delta.compare",
+      "purpose": "Compare two valid same-mode Delta objects by configured approximate length.",
+      "bindings": [
+        {
+          "module": "Date::Manip::Delta",
+          "callable": "cmp",
+          "call_shapes": [
+            "(other_delta)"
+          ],
+          "profile": "dm6-reference",
+          "disposition": "public-oo-method"
+        }
+      ],
+      "portable_inputs": [
+        {
+          "name": "left",
+          "type": "valid Delta object"
+        },
+        {
+          "name": "right",
+          "type": "valid Delta object in same standard/business mode"
+        },
+        {
+          "name": "context",
+          "type": "business schedule when mode is business"
+        }
+      ],
+      "outputs": "Negative, zero, or positive comparison value on eligible operands; undefined result plus warning is documented for invalid/incompatible operands but not observed.",
+      "partitions": [
+        {
+          "id": "delta.compare.p1",
+          "description": "normal: shorter/equal/longer exact deltas",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.compare.p2",
+          "description": "boundary: mixed type comparison, approximate calendar fields, signed fields, and cached repeated comparison",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.compare.p3",
+          "description": "configuration: business mode with varied workday/workweek settings",
+          "status": "unobserved"
+        },
+        {
+          "id": "delta.compare.p4",
+          "description": "invalid: first/second invalid delta, non-Delta operand, mixed standard/business modes, and warning channel",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "Comparison uses estimated fixed relationships rather than a date-anchored interval interpretation; exact ordering around calendar units needs literal probes."
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "id": "GAP.ARITH.OBSERVATIONS",
+      "description": "All 16 operations require fresh-process DM6 and DM5 probes for values, object error state, warnings/stdout, scalar/list context, and state mutation."
+    },
+    {
+      "id": "GAP.ARITH.PROFILES",
+      "description": "DM5/DM6 DateCalc, ParseDateDelta, and Delta_Format compatibility differences need the same original cases under isolated profiles."
+    },
+    {
+      "id": "GAP.ARITH.CONTEXT",
+      "description": "Arithmetic needs fixed UTC and transition-zone fixtures plus explicit business schedules, holidays, language, and reference clock before expectations can be reviewed."
+    },
+    {
+      "id": "GAP.DELTA.GRAMMAR",
+      "description": "Compact omission/sign/fraction grammar, localized expanded vocabulary, relative/mode terms, and malformed-input boundaries need finite case tables and observations."
+    },
+    {
+      "id": "GAP.DELTA.FORMAT",
+      "description": "Each directive family, field/range combination, precision, sign, padding, unsupported directive, multi-pattern context, and business conversion interaction needs observed output."
+    }
+  ]
+}

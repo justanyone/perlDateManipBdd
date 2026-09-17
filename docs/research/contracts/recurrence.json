@@ -1,0 +1,1166 @@
+{
+  "schema_version": 1,
+  "reference": {
+    "distribution": "Date-Manip",
+    "version": "7.00"
+  },
+  "sources": [
+    "lib/Date/Manip/Recur.pod",
+    "lib/Date/Manip/Recur.pm public method boundaries",
+    "lib/Date/Manip/Obj.pod",
+    "lib/Date/Manip/DM5.pod",
+    "lib/Date/Manip/DM6.pod",
+    "lib/Date/Manip/Config.pod"
+  ],
+  "operations": [
+    {
+      "operation_id": "recur.create",
+      "bindings": [
+        {
+          "callable": "new_recur",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Obj",
+          "profile": "dm6-reference",
+          "call_shapes": [
+            "receiver.new_recur()",
+            "receiver.new_recur(initial_text, configuration_pairs_reference)"
+          ]
+        }
+      ],
+      "portable_inputs": [
+        "source context or value",
+        "optional recurrence text",
+        "optional context overrides"
+      ],
+      "outputs": [
+        "new recurrence handle",
+        "initialization error state",
+        "observable sharing or isolation of configuration"
+      ],
+      "partitions": [
+        {
+          "id": "recur.create.01",
+          "description": "Empty new recurrence reports its kind and unset fields.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.create.02",
+          "description": "Initialize with valid text, invalid text, and omitted text.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.create.03",
+          "description": "Create from each supported receiver type.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.create.04",
+          "description": "Change the new value and check the original value separately.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.create.05",
+          "description": "Apply context overrides before parsing; examine whether subsequent context changes propagate.",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "Obj documentation describes optional constructor arguments tersely; verify recurrence parse-option forwarding and configuration placement with calls."
+      ]
+    },
+    {
+      "operation_id": "recur.parse",
+      "bindings": [
+        {
+          "callable": "parse",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Recur",
+          "profile": "dm6-reference",
+          "call_shapes": [
+            "receiver.parse(text)",
+            "receiver.parse(text, optional_modifiers, optional_base, optional_start, optional_end, optional_unmodified_bounds)"
+          ]
+        }
+      ],
+      "portable_inputs": [
+        "frequency or serialized recurrence text",
+        "optional ordered modifiers",
+        "optional anchor",
+        "optional bounds",
+        "bounds target: original or modified occurrences"
+      ],
+      "outputs": [
+        "zero success status or nonzero parse status",
+        "stored frequency, modifiers, requested/effective anchor and bounds",
+        "object error channel"
+      ],
+      "partitions": [
+        {
+          "id": "recur.parse.01",
+          "description": "Frequency-only text for every syntax family.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.parse.02",
+          "description": "Serialized components with each trailing omission and each interior empty position.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.parse.03",
+          "description": "Date strings and typed dates in each date slot.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.parse.04",
+          "description": "Explicit arguments replace embedded anchor and bounds.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.parse.05",
+          "description": "Explicit modifiers replace or append embedded modifiers.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.parse.06",
+          "description": "Omit modifier argument entirely versus empty text versus absent value; do not shift generic named fields accidentally.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.parse.07",
+          "description": "Extra serialized fields and extra positional arguments.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.parse.08",
+          "description": "Invalid frequency, modifier, anchor, start, and end separately.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.parse.09",
+          "description": "Parse replaces existing recurrence state, including valid-to-invalid-to-valid sequences.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.parse.10",
+          "description": "RecurRange supplies defaults under a fixed clock.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.parse.11",
+          "description": "Before/after modifier bounds with an occurrence crossing each endpoint.",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "Optional modifier argument is recognized by its content; malformed modifiers and date arguments need isolated classification rather than assumed positional decoding."
+      ]
+    },
+    {
+      "operation_id": "recur.set-frequency",
+      "bindings": [
+        {
+          "callable": "frequency",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Recur",
+          "profile": "dm6-reference",
+          "call_shapes": [
+            "receiver.frequency()",
+            "receiver.frequency(text)"
+          ]
+        }
+      ],
+      "portable_inputs": [
+        "read or replace mode",
+        "frequency text when replacing"
+      ],
+      "outputs": [
+        "frequency text or absent value when reading",
+        "zero/nonzero update status",
+        "reset recurrence fields after replacement"
+      ],
+      "partitions": [
+        {
+          "id": "recur.set-frequency.01",
+          "description": "Read before initialization.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-frequency.02",
+          "description": "Read after numeric and written frequency parsing.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-frequency.03",
+          "description": "Replace a valid frequency after setting anchor, bounds, modifiers, and moving the navigation cursor.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-frequency.04",
+          "description": "Invalid replacement and subsequent recovery.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-frequency.05",
+          "description": "Every frequency grammar partition.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-frequency.06",
+          "description": "Omitted argument, absent argument and empty string are separate requests.",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": []
+    },
+    {
+      "operation_id": "recur.set-start",
+      "bindings": [
+        {
+          "callable": "start",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Recur",
+          "profile": "dm6-reference",
+          "call_shapes": [
+            "receiver.start()",
+            "receiver.start(date_or_text)",
+            "receiver.start(date_or_text, unmodified_bounds)"
+          ]
+        }
+      ],
+      "portable_inputs": [
+        "read or replace mode",
+        "optional date or date text",
+        "bounds target"
+      ],
+      "outputs": [
+        "read returns optional typed date",
+        "replacement returns zero/nonzero status",
+        "observable error and navigation state"
+      ],
+      "partitions": [
+        {
+          "id": "recur.set-start.01",
+          "description": "Read an unset field.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-start.02",
+          "description": "Set from date text and an equivalent date value.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-start.03",
+          "description": "Omitted or absent argument requests read; characterize empty text independently.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-start.04",
+          "description": "Invalid date and wrong value kind.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-start.05",
+          "description": "Set before and after frequency replacement.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-start.06",
+          "description": "Set while navigation has progressed and check subsequent navigation.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-start.07",
+          "description": "Change zone or time in the supplied value and inspect stored result.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-start.08",
+          "description": "Start equals end; start before end; start after end.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-start.09",
+          "description": "Occurrence exactly on the stored endpoint and one second outside.",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": []
+    },
+    {
+      "operation_id": "recur.set-end",
+      "bindings": [
+        {
+          "callable": "end",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Recur",
+          "profile": "dm6-reference",
+          "call_shapes": [
+            "receiver.end()",
+            "receiver.end(date_or_text)"
+          ]
+        }
+      ],
+      "portable_inputs": [
+        "read or replace mode",
+        "optional date or date text"
+      ],
+      "outputs": [
+        "read returns optional typed date",
+        "replacement returns zero/nonzero status",
+        "observable error and navigation state"
+      ],
+      "partitions": [
+        {
+          "id": "recur.set-end.01",
+          "description": "Read an unset field.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-end.02",
+          "description": "Set from date text and an equivalent date value.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-end.03",
+          "description": "Omitted or absent argument requests read; characterize empty text independently.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-end.04",
+          "description": "Invalid date and wrong value kind.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-end.05",
+          "description": "Set before and after frequency replacement.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-end.06",
+          "description": "Set while navigation has progressed and check subsequent navigation.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-end.07",
+          "description": "Change zone or time in the supplied value and inspect stored result.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-end.08",
+          "description": "Start equals end; start before end; start after end.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-end.09",
+          "description": "Occurrence exactly on the stored endpoint and one second outside.",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": []
+    },
+    {
+      "operation_id": "recur.set-base-date",
+      "bindings": [
+        {
+          "callable": "basedate",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Recur",
+          "profile": "dm6-reference",
+          "call_shapes": [
+            "receiver.basedate()",
+            "receiver.basedate(date_or_text)"
+          ]
+        }
+      ],
+      "portable_inputs": [
+        "read or replace mode",
+        "optional date or date text"
+      ],
+      "outputs": [
+        "read returns optional typed date pair: requested and effective anchor",
+        "replacement returns zero/nonzero status",
+        "observable error and navigation state"
+      ],
+      "partitions": [
+        {
+          "id": "recur.set-base-date.01",
+          "description": "Read an unset field.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-base-date.02",
+          "description": "Set from date text and an equivalent date value.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-base-date.03",
+          "description": "Omitted or absent argument requests read; characterize empty text independently.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-base-date.04",
+          "description": "Invalid date and wrong value kind.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-base-date.05",
+          "description": "Set before and after frequency replacement.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-base-date.06",
+          "description": "Set while navigation has progressed and check subsequent navigation.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-base-date.07",
+          "description": "Change zone or time in the supplied value and inspect stored result.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-base-date.08",
+          "description": "Read requested and effective anchors before and after enumeration.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-base-date.09",
+          "description": "A finite selection with no advancing interval ignores an explicit anchor.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-base-date.10",
+          "description": "Anchors within the same selection period and anchors on adjacent period boundaries.",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": []
+    },
+    {
+      "operation_id": "recur.set-modifiers",
+      "bindings": [
+        {
+          "callable": "modifiers",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Recur",
+          "profile": "dm6-reference",
+          "call_shapes": [
+            "receiver.modifiers()",
+            "receiver.modifiers(comma_separated_text)",
+            "receiver.modifiers(modifier_1, modifier_2, ...)"
+          ]
+        }
+      ],
+      "portable_inputs": [
+        "read, replace, or append mode",
+        "ordered modifier collection"
+      ],
+      "outputs": [
+        "ordered modifier list when reading",
+        "zero/nonzero update status",
+        "updated recurrence and error state"
+      ],
+      "partitions": [
+        {
+          "id": "recur.set-modifiers.01",
+          "description": "Read no modifiers and multiple modifiers.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-modifiers.02",
+          "description": "Every modifier family and its parameter bounds.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-modifiers.03",
+          "description": "String input versus multiple arguments for the same modifiers.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-modifiers.04",
+          "description": "Lowercase, uppercase, and mixed case in both input forms.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-modifiers.05",
+          "description": "Replace existing modifiers; append with leading plus marker; append to empty list.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-modifiers.06",
+          "description": "Empty text, absent value, plus only, trailing comma, embedded spaces, and an unknown token.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-modifiers.07",
+          "description": "Ordering of a movement and a filter changes whether an occurrence survives.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-modifiers.08",
+          "description": "Rejected update leaves or changes old modifiers: inspect rather than assume.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.set-modifiers.09",
+          "description": "Update after nth/next/previous and check cursor/reset effects.",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "POD says modifiers are case-sensitive, while source suggests single-string normalization differs from multi-argument handling. Observe both forms.",
+        "POD weekday numbering for PD/PT/ND/NT/WD contradicts its examples. Test every weekday against independent calendar facts before assigning names."
+      ]
+    },
+    {
+      "operation_id": "recur.occurrence-at-index",
+      "bindings": [
+        {
+          "callable": "nth",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Recur",
+          "profile": "dm6-reference",
+          "call_shapes": [
+            "(date, error) = receiver.nth(integer_index)"
+          ]
+        }
+      ],
+      "portable_inputs": [
+        "signed zero-based occurrence index"
+      ],
+      "outputs": [
+        "optional occurrence value",
+        "separate zero-or-error return channel",
+        "object error state inspected separately"
+      ],
+      "partitions": [
+        {
+          "id": "recur.occurrence-at-index.01",
+          "description": "Index zero, positive, and negative for interval-based recurrence.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.occurrence-at-index.02",
+          "description": "Finite selection indices just below zero and at/after its length.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.occurrence-at-index.03",
+          "description": "A selected calendar position that does not exist is absent without a generic parse failure.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.occurrence-at-index.04",
+          "description": "Mixed positive/negative ranges with variable occurrence counts.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.occurrence-at-index.05",
+          "description": "Multiple selection fields and their index ordering.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.occurrence-at-index.06",
+          "description": "Incomplete recurrence; invalid range; invalid anchor/start/end; existing error.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.occurrence-at-index.07",
+          "description": "No matching occurrence within a finite MaxRecurAttempts.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.occurrence-at-index.08",
+          "description": "Bounds and modifiers at the indexed event.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.occurrence-at-index.09",
+          "description": "Missing, empty, fractional, nonnumeric, and very large index inputs use separate bounded probes.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.occurrence-at-index.10",
+          "description": "Read object error state before/after a returned lookup error.",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "POD describes a zero-th occurrence while also saying a positive index is required for finite selections; establish actual zero behavior.",
+        "Malformed/large indices must have process time limits; a timeout is an unresolved result, never a passing contract."
+      ]
+    },
+    {
+      "operation_id": "recur.next-occurrence",
+      "bindings": [
+        {
+          "callable": "next",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Recur",
+          "profile": "dm6-reference",
+          "call_shapes": [
+            "(date, error) = receiver.next()"
+          ]
+        }
+      ],
+      "portable_inputs": [
+        "recurrence navigation state"
+      ],
+      "outputs": [
+        "optional defined occurrence",
+        "separate zero-or-error channel",
+        "updated navigation position"
+      ],
+      "partitions": [
+        {
+          "id": "recur.next-occurrence.01",
+          "description": "First call on a bounded recurrence.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.next-occurrence.02",
+          "description": "First call on an anchored recurrence without bounds.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.next-occurrence.03",
+          "description": "Repeat calls across a missing calendar position.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.next-occurrence.04",
+          "description": "Alternate forward and backward calls.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.next-occurrence.05",
+          "description": "Finite selection exhaustion and a repeated call after exhaustion.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.next-occurrence.06",
+          "description": "Occurrence exactly at the start/end bound.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.next-occurrence.07",
+          "description": "Navigation after field updates, parse replacement, and indexed lookup.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.next-occurrence.08",
+          "description": "No-match filter, incomplete recurrence, reversed bounds, and MaxRecurAttempts limit.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.next-occurrence.09",
+          "description": "Modified events out of temporal order or multiple candidates moved to the same date.",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "Do not treat these methods as stateless search-after-input-date operations; the public method has no such input.",
+        "POD first-call wording around bounds needs exact inclusive/exclusive observation."
+      ]
+    },
+    {
+      "operation_id": "recur.previous-occurrence",
+      "bindings": [
+        {
+          "callable": "prev",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Recur",
+          "profile": "dm6-reference",
+          "call_shapes": [
+            "(date, error) = receiver.prev()"
+          ]
+        }
+      ],
+      "portable_inputs": [
+        "recurrence navigation state"
+      ],
+      "outputs": [
+        "optional defined occurrence",
+        "separate zero-or-error channel",
+        "updated navigation position"
+      ],
+      "partitions": [
+        {
+          "id": "recur.previous-occurrence.01",
+          "description": "First call on a bounded recurrence.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.previous-occurrence.02",
+          "description": "First call on an anchored recurrence without bounds.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.previous-occurrence.03",
+          "description": "Repeat calls across a missing calendar position.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.previous-occurrence.04",
+          "description": "Alternate forward and backward calls.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.previous-occurrence.05",
+          "description": "Finite selection exhaustion and a repeated call after exhaustion.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.previous-occurrence.06",
+          "description": "Occurrence exactly at the start/end bound.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.previous-occurrence.07",
+          "description": "Navigation after field updates, parse replacement, and indexed lookup.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.previous-occurrence.08",
+          "description": "No-match filter, incomplete recurrence, reversed bounds, and MaxRecurAttempts limit.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.previous-occurrence.09",
+          "description": "Modified events out of temporal order or multiple candidates moved to the same date.",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "Do not treat these methods as stateless search-after-input-date operations; the public method has no such input.",
+        "POD first-call wording around bounds needs exact inclusive/exclusive observation."
+      ]
+    },
+    {
+      "operation_id": "recur.list-occurrences",
+      "bindings": [
+        {
+          "callable": "dates",
+          "disposition": "public-oo-method",
+          "module": "Date::Manip::Recur",
+          "profile": "dm6-reference",
+          "call_shapes": [
+            "receiver.dates()",
+            "receiver.dates(optional_start, optional_end, optional_unmodified_bounds)"
+          ]
+        }
+      ],
+      "portable_inputs": [
+        "stored recurrence",
+        "optional temporary lower/upper bounds",
+        "bounds target"
+      ],
+      "outputs": [
+        "ordered collection of date values, possibly empty",
+        "object error state distinguishes lookup error from empty match",
+        "stored recurrence state after temporary query"
+      ],
+      "partitions": [
+        {
+          "id": "recur.list-occurrences.01",
+          "description": "Stored bounds only, supplied bounds only, or both.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.list-occurrences.02",
+          "description": "One temporary bound absent versus both absent.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.list-occurrences.03",
+          "description": "Temporary interval inside, overlapping, or wholly outside stored bounds.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.list-occurrences.04",
+          "description": "Exact start/end matches and reversed range.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.list-occurrences.05",
+          "description": "Temporary limits do not persist into a second query.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.list-occurrences.06",
+          "description": "Empty finite result versus invalid recurrence both have empty list: inspect error channel.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.list-occurrences.07",
+          "description": "Original versus modified endpoint comparisons.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.list-occurrences.08",
+          "description": "Duplicate modified dates and modified dates whose order changes.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.list-occurrences.09",
+          "description": "Enumeration after cursor movement and cursor movement after enumeration.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.list-occurrences.10",
+          "description": "Finite maximum date range and finite process budget for all probes.",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "The documentation uses override language but also describes clipping by stored bounds. The exact intersection behavior requires observations."
+      ]
+    },
+    {
+      "operation_id": "recur.parse-and-enumerate",
+      "bindings": [
+        {
+          "callable": "ParseRecur",
+          "disposition": "public-functional-export",
+          "module": "Date::Manip::DM5",
+          "profile": "dm5-compatibility",
+          "call_shapes": [
+            "scalar = ParseRecur(text, optional_base, optional_start, optional_end, optional_flags)",
+            "list = ParseRecur(text, optional_base, optional_start, optional_end, optional_flags)"
+          ]
+        },
+        {
+          "callable": "ParseRecur",
+          "disposition": "public-functional-export",
+          "module": "Date::Manip::DM6",
+          "profile": "dm6-reference",
+          "call_shapes": [
+            "scalar = ParseRecur(text, optional_base, optional_start, optional_end, optional_flags)",
+            "list = ParseRecur(text, optional_base, optional_start, optional_end, optional_flags)"
+          ]
+        }
+      ],
+      "portable_inputs": [
+        "recurrence text",
+        "optional anchor and bounds",
+        "optional modifier override",
+        "explicit result mode: normalized description or occurrence collection"
+      ],
+      "outputs": [
+        "normalized recurrence text in description mode",
+        "ordered native date strings in collection mode",
+        "invalid/empty result convention and diagnostics per backend"
+      ],
+      "partitions": [
+        {
+          "id": "recur.parse-and-enumerate.01",
+          "description": "Description mode and collection mode for every supported frequency family.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.parse-and-enumerate.02",
+          "description": "Each missing/empty/absent override slot.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.parse-and-enumerate.03",
+          "description": "Embedded versus separately supplied bounds and anchor.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.parse-and-enumerate.04",
+          "description": "Modifier replacement versus append.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.parse-and-enumerate.05",
+          "description": "Invalid frequency, flags, and dates; insufficient range or anchor.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.parse-and-enumerate.06",
+          "description": "Exact endpoint occurrence under DM5 and DM6 independently.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.parse-and-enumerate.07",
+          "description": "Multiple occurrences, no occurrence, duplicate/order behavior.",
+          "status": "unobserved"
+        },
+        {
+          "id": "recur.parse-and-enumerate.08",
+          "description": "Equivalent OO and functional routes only where their declared profiles agree.",
+          "status": "unobserved"
+        }
+      ],
+      "ambiguities": [
+        "DM5 POD states an exclusive upper bound while OO POD states inclusive bounds. Never use one backend result as the other backend expectation.",
+        "Functional argument ordering differs from OO parse; adapters must preserve the generic named request."
+      ]
+    }
+  ],
+  "modifier_inventory": [
+    {
+      "token": "PDn",
+      "meaning": "previous chosen weekday, strict",
+      "parameter": "weekday 1..7; exact numbering pending observation",
+      "status": "unobserved"
+    },
+    {
+      "token": "PTn",
+      "meaning": "previous chosen weekday, inclusive",
+      "parameter": "weekday 1..7; exact numbering pending observation",
+      "status": "unobserved"
+    },
+    {
+      "token": "NDn",
+      "meaning": "next chosen weekday, strict",
+      "parameter": "weekday 1..7; exact numbering pending observation",
+      "status": "unobserved"
+    },
+    {
+      "token": "NTn",
+      "meaning": "next chosen weekday, inclusive",
+      "parameter": "weekday 1..7; exact numbering pending observation",
+      "status": "unobserved"
+    },
+    {
+      "token": "WDn",
+      "meaning": "chosen weekday in the current week",
+      "parameter": "weekday 1..7; exact numbering pending observation",
+      "status": "unobserved"
+    },
+    {
+      "token": "FDn",
+      "meaning": "advance a number of calendar days",
+      "parameter": "decimal nonnegative count; bounds and zero pending observation",
+      "status": "unobserved"
+    },
+    {
+      "token": "BDn",
+      "meaning": "retreat a number of calendar days",
+      "parameter": "decimal nonnegative count; bounds and zero pending observation",
+      "status": "unobserved"
+    },
+    {
+      "token": "FWn",
+      "meaning": "advance working dates",
+      "parameter": "decimal nonnegative count; bounds and zero pending observation",
+      "status": "unobserved"
+    },
+    {
+      "token": "BWn",
+      "meaning": "retreat working dates",
+      "parameter": "decimal nonnegative count; bounds and zero pending observation",
+      "status": "unobserved"
+    },
+    {
+      "token": "CWD",
+      "meaning": "nearest different working date with configured tie direction",
+      "parameter": null,
+      "status": "unobserved"
+    },
+    {
+      "token": "CWN",
+      "meaning": "nearest different working date preferring forward ties",
+      "parameter": null,
+      "status": "unobserved"
+    },
+    {
+      "token": "CWP",
+      "meaning": "nearest different working date preferring backward ties",
+      "parameter": null,
+      "status": "unobserved"
+    },
+    {
+      "token": "NWD",
+      "meaning": "working date on or after the candidate",
+      "parameter": null,
+      "status": "unobserved"
+    },
+    {
+      "token": "PWD",
+      "meaning": "working date on or before the candidate",
+      "parameter": null,
+      "status": "unobserved"
+    },
+    {
+      "token": "DWD",
+      "meaning": "nearest working date including the candidate with configured tie direction",
+      "parameter": null,
+      "status": "unobserved"
+    },
+    {
+      "token": "IBD",
+      "meaning": "keep only working dates",
+      "parameter": null,
+      "status": "unobserved"
+    },
+    {
+      "token": "NBD",
+      "meaning": "keep only nonworking dates",
+      "parameter": null,
+      "status": "unobserved"
+    },
+    {
+      "token": "IWn",
+      "meaning": "keep only a selected weekday",
+      "parameter": "weekday 1..7; exact numbering pending observation",
+      "status": "unobserved"
+    },
+    {
+      "token": "NWn",
+      "meaning": "discard a selected weekday",
+      "parameter": "weekday 1..7; exact numbering pending observation",
+      "status": "unobserved"
+    },
+    {
+      "token": "EASTER",
+      "meaning": "select Easter in the candidate year",
+      "parameter": null,
+      "status": "unobserved"
+    }
+  ],
+  "grammar_partitions": [
+    {
+      "id": "REC-GRAMMAR-SPLIT",
+      "dimensions": {
+        "interval_selection_separator": [
+          "none",
+          "before-year",
+          "after-year",
+          "after-month",
+          "after-week",
+          "after-day",
+          "after-hour",
+          "after-minute"
+        ]
+      },
+      "obligation": "Probe every split with original valid and invalid inputs; distinguish advancing periods from selected calendar fields.",
+      "status": "unobserved"
+    },
+    {
+      "id": "REC-GRAMMAR-YMWD",
+      "dimensions": {
+        "year_nonzero": [
+          false,
+          true
+        ],
+        "month_nonzero": [
+          false,
+          true
+        ],
+        "week_nonzero": [
+          false,
+          true
+        ],
+        "day_nonzero": [
+          false,
+          true
+        ],
+        "split": [
+          "before-year",
+          "after-year",
+          "after-month",
+          "after-week",
+          "after-day"
+        ]
+      },
+      "obligation": "Discharge each structural combination as supported with its field meaning or observed rejection; do not copy the upstream example table.",
+      "status": "unobserved"
+    },
+    {
+      "id": "REC-GRAMMAR-SELECT",
+      "dimensions": {
+        "selection": [
+          "single",
+          "ascending-range",
+          "comma-list",
+          "list-of-ranges",
+          "descending-range",
+          "duplicates",
+          "negative-position",
+          "negative-range",
+          "positive-to-negative-range"
+        ]
+      },
+      "obligation": "Cross meaningful forms with month/week/day/hour/minute/second fields; verify valid domains and cartesian combinations.",
+      "status": "unobserved"
+    },
+    {
+      "id": "REC-GRAMMAR-DEFAULTS",
+      "terms": [
+        "all interval fields zero",
+        "selected year zero",
+        "day zero with week set",
+        "month and week zero with day set",
+        "week and day zero",
+        "no interval",
+        "no selection"
+      ],
+      "obligation": "Determine implicit period and calendar-field meanings using a fixed clock and original probes.",
+      "status": "unobserved"
+    },
+    {
+      "id": "REC-GRAMMAR-WRITTEN",
+      "terms": [
+        "all weekdays in named month",
+        "ordinal weekday in named month",
+        "last weekday in named month",
+        "all weekdays of each month",
+        "ordinal weekday of each month",
+        "last weekday of each month",
+        "all dates of each month",
+        "ordinal date of each month",
+        "last date of each month",
+        "daily",
+        "ordinal day interval",
+        "cardinal day interval"
+      ],
+      "obligation": "Probe each form with and without a year, all languages through independent fixtures, ordinal bounds 1 and 31 plus adjacent invalid values.",
+      "status": "unobserved"
+    },
+    {
+      "id": "REC-GRAMMAR-INVALID",
+      "terms": [
+        "too few fields",
+        "too many fields",
+        "multiple frequency separators",
+        "signed interval",
+        "fractional interval",
+        "empty field",
+        "invalid selection domain",
+        "invalid modifiers",
+        "extra serialized components"
+      ],
+      "obligation": "Capture rejection, diagnostics and post-failure state under finite process budgets.",
+      "status": "unobserved"
+    },
+    {
+      "id": "REC-CONTEXT",
+      "terms": [
+        "RecurRange:none",
+        "RecurRange:year",
+        "RecurRange:month",
+        "RecurRange:week",
+        "RecurRange:day",
+        "RecurRange:all",
+        "FirstDay",
+        "Week1ofYear",
+        "MaxRecurAttempts",
+        "TomorrowFirst",
+        "work schedule",
+        "holidays",
+        "zone and DST",
+        "reference clock"
+      ],
+      "obligation": "Record each independent setting and material interactions; all-range tests must be deliberately bounded.",
+      "status": "unobserved"
+    }
+  ],
+  "gaps": [
+    "All behavioral outputs and raw error conventions still need isolated observations; these records are not approved feature expectations.",
+    "DM5 recurrence grammar and modifier equivalence cannot be inferred from the OO reference; a separate accepted/rejected term matrix remains required.",
+    "All structural grammar combinations must be discharged with actual probes before claiming full recurrence coverage.",
+    "Weekday numbering, case handling, bounds, duplicate ordering and cursor reset ambiguities require focused investigation."
+  ]
+}

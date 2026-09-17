@@ -1,0 +1,874 @@
+{
+  "schema_version": 1,
+  "reference": {
+    "distribution": "Date-Manip",
+    "version": "7.00"
+  },
+  "sources": [
+    "lib/Date/Manip/Config.pod",
+    "lib/Date/Manip/DM6.pod configuration references",
+    "lib/Date/Manip/DM5.pod: CUSTOMIZING DATE::MANIP and DATE::MANIP VARIABLES"
+  ],
+  "keys": [
+    {
+      "key": "Defaults",
+      "profiles": [
+        "dm6-reference"
+      ],
+      "domain": "any value; value is ignored and restores all configuration defaults",
+      "documented_default": "unknown",
+      "portable_meaning": "restore the configuration context to its documented defaults at this point in the ordered settings",
+      "source": "Config.pod:143-160; DM6.pod:106-117",
+      "partitions": [
+        "trigger with arbitrary value",
+        "trigger after one and after several preceding settings",
+        "empty or omitted value",
+        "interaction with settings following the reset",
+        "invalid or inaccessible configuration context"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Whether an empty value is accepted by each binding and the exact error/warning channel are runtime questions."
+      ]
+    },
+    {
+      "key": "ConfigFile",
+      "profiles": [
+        "dm6-reference"
+      ],
+      "domain": "one operating-system-valid full file path per occurrence; nested and repeated files are documented",
+      "documented_default": "unknown (no file is specified by Config.pod)",
+      "portable_meaning": "load configuration assignments and special sections from a named file immediately in ordered configuration processing",
+      "source": "Config.pod:65-129,162-188; DM6.pod:106-117",
+      "partitions": [
+        "existing file",
+        "missing file",
+        "empty path",
+        "multiple files",
+        "nested ConfigFile",
+        "file with blank/comment lines",
+        "file with unknown assignment",
+        "file with section marker",
+        "partial failure after earlier settings"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Exact path normalization and warning text are runtime-only."
+      ]
+    },
+    {
+      "key": "Language",
+      "profiles": [
+        "dm6-reference",
+        "dm5-compatibility"
+      ],
+      "domain": "case-insensitive supported language name; finite language list is defined by the release language documentation",
+      "documented_default": "English",
+      "portable_meaning": "select the language used for language-sensitive date parsing and localized output",
+      "source": "Config.pod:190-202; DM5.pod:1665-1688",
+      "partitions": [
+        "English",
+        "each supported language",
+        "case variants",
+        "unsupported language",
+        "language change after encoding setting",
+        "non-ASCII language input"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "The complete DM6 list is delegated to Lang.pod; DM5.pod lists a historical subset. Exact accepted aliases need runtime reconciliation."
+      ]
+    },
+    {
+      "key": "Encoding",
+      "profiles": [
+        "dm6-reference"
+      ],
+      "domain": "one encoding name, or input and output encoding names separated by one comma; either side may be empty; names are supported by Perl Encoding; special input/output name perl is documented",
+      "documented_default": "input tries language-common encodings and Perl escapes; output UTF-8",
+      "portable_meaning": "control character decoding of inputs and encoding of outputs",
+      "source": "Config.pod:204-249",
+      "partitions": [
+        "single valid encoding",
+        "input and output pair",
+        "input-only with trailing comma",
+        "output-only with leading comma",
+        "perl special name",
+        "unknown encoding",
+        "language change resets encoding",
+        "empty setting"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "The portable contract needs an encoding registry and exact malformed-comma behavior; Config.pod does not define them."
+      ]
+    },
+    {
+      "key": "FirstDay",
+      "profiles": [
+        "dm6-reference",
+        "dm5-compatibility"
+      ],
+      "domain": "integer digit 1-7, where 1=Monday and 7=Sunday",
+      "documented_default": "Monday (1)",
+      "portable_meaning": "choose the first weekday for week calculations",
+      "source": "Config.pod:251-257; DM5.pod:1737-1743",
+      "partitions": [
+        "1",
+        "7",
+        "interior values 2-6",
+        "0",
+        "8",
+        "non-integer text",
+        "empty value"
+      ],
+      "status": "unobserved",
+      "ambiguities": []
+    },
+    {
+      "key": "Week1ofYear",
+      "profiles": [
+        "dm6-reference"
+      ],
+      "domain": "janX or dowX for digit X 1-7, or firstday",
+      "documented_default": "jan4",
+      "portable_meaning": "define which week contains the first week of a calendar year, together with FirstDay",
+      "source": "Config.pod:259-276",
+      "partitions": [
+        "jan1",
+        "jan4",
+        "jan7",
+        "dow1",
+        "dow7",
+        "firstday",
+        "invalid digit",
+        "unknown word",
+        "empty value",
+        "interaction with FirstDay"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Case sensitivity of the tokens and invalid-setting behavior are not specified."
+      ]
+    },
+    {
+      "key": "Printable",
+      "profiles": [
+        "dm6-reference"
+      ],
+      "domain": "documented numeric modes 0/default, 1, and 2",
+      "documented_default": "0/default format YYYYMMDDHH:MN:SS",
+      "portable_meaning": "select the legacy printable date serialization",
+      "source": "Config.pod:278-300",
+      "partitions": [
+        "default/zero",
+        "1",
+        "2",
+        "other integer",
+        "non-numeric text",
+        "date with absent or invalid fields"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Config.pod describes the default format but does not explicitly state whether the setting accepts only integers.",
+        "Documented as backward compatibility and potentially deprecated; removal timing is unspecified."
+      ]
+    },
+    {
+      "key": "DateFormat",
+      "profiles": [
+        "dm6-reference",
+        "dm5-compatibility"
+      ],
+      "domain": "case-insensitive US or any other value",
+      "documented_default": "US",
+      "portable_meaning": "choose month/day ordering for ambiguous numeric dates",
+      "source": "Config.pod:306-313; DM5.pod:1690-1696",
+      "partitions": [
+        "US",
+        "us",
+        "non-US value",
+        "empty value",
+        "ambiguous date",
+        "unambiguous date"
+      ],
+      "status": "unobserved",
+      "ambiguities": []
+    },
+    {
+      "key": "YYtoYYYY",
+      "profiles": [
+        "dm6-reference",
+        "dm5-compatibility"
+      ],
+      "domain": "any integer (including outside 0-99), C, C##, or C####; integer N maps to CURR-N through CURR+(99-N)",
+      "documented_default": "CURR-89 through CURR+10",
+      "portable_meaning": "expand a two-digit year into a selected 100-year period",
+      "source": "Config.pod:315-341; DM5.pod:1797-1812",
+      "partitions": [
+        "default",
+        "negative integer",
+        "0",
+        "99",
+        "integer above 99",
+        "C",
+        "C##",
+        "C####",
+        "malformed C form",
+        "non-numeric text",
+        "two-digit year at period boundaries"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Whether whitespace, signs, and malformed century forms are accepted is runtime-only."
+      ]
+    },
+    {
+      "key": "DefaultTime",
+      "profiles": [
+        "dm6-reference"
+      ],
+      "domain": "midnight or curr",
+      "documented_default": "midnight",
+      "portable_meaning": "supply midnight or the current clock time when a parseable date omits a time",
+      "source": "Config.pod:343-356",
+      "partitions": [
+        "midnight",
+        "curr",
+        "case variants",
+        "other value",
+        "parse method versus parse_date method",
+        "explicit time"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Case sensitivity and invalid-setting behavior are not documented."
+      ]
+    },
+    {
+      "key": "PeriodTimeSep",
+      "profiles": [
+        "dm6-reference"
+      ],
+      "domain": "boolean-like numeric setting; 1 enables period as a time separator, default disables it",
+      "documented_default": "0/disabled (inferred from documented default behavior; exact stored value unknown)",
+      "portable_meaning": "allow a period in addition to language-defined time separators",
+      "source": "Config.pod:358-371",
+      "partitions": [
+        "disabled/default",
+        "1",
+        "other nonzero",
+        "0",
+        "period time input",
+        "period date input conflict",
+        "malformed time"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Accepted truth values and whether nonzero text is accepted are unspecified."
+      ]
+    },
+    {
+      "key": "Format_MMMYYYY",
+      "profiles": [
+        "dm6-reference"
+      ],
+      "domain": "first or last",
+      "documented_default": "Legacy day/short-year interpretation rather than direct month/year interpretation; exact stored selector unknown.",
+      "portable_meaning": "choose first-day or last-day interpretation for month/year forms in the documented grammar",
+      "source": "Config.pod:373-382",
+      "partitions": [
+        "default",
+        "first",
+        "last",
+        "case variants",
+        "other value",
+        "Jun YYYY",
+        "YYYY Jun",
+        "boundary month/year"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "The default's internal setting and invalid-setting behavior are not documented."
+      ]
+    },
+    {
+      "key": "WorkWeekBeg",
+      "profiles": [
+        "dm6-reference",
+        "dm5-compatibility"
+      ],
+      "domain": "integer digit 1-7; must be numerically no later than WorkWeekEnd",
+      "documented_default": "Monday (1)",
+      "portable_meaning": "first weekday included in the configured work week",
+      "source": "Config.pod:392-415; DM5.pod:1745-1752",
+      "partitions": [
+        "1",
+        "7",
+        "interior value",
+        "outside 1-7",
+        "greater than WorkWeekEnd",
+        "equal to WorkWeekEnd",
+        "non-integer"
+      ],
+      "status": "unobserved",
+      "ambiguities": []
+    },
+    {
+      "key": "WorkWeekEnd",
+      "profiles": [
+        "dm6-reference",
+        "dm5-compatibility"
+      ],
+      "domain": "integer digit 1-7; must be numerically no earlier than WorkWeekBeg",
+      "documented_default": "Friday (5)",
+      "portable_meaning": "last weekday included in the configured work week",
+      "source": "Config.pod:392-415; DM5.pod:1745-1752",
+      "partitions": [
+        "1",
+        "7",
+        "interior value",
+        "outside 1-7",
+        "less than WorkWeekBeg",
+        "equal to WorkWeekBeg",
+        "non-integer"
+      ],
+      "status": "unobserved",
+      "ambiguities": []
+    },
+    {
+      "key": "WorkDay24Hr",
+      "profiles": [
+        "dm6-reference",
+        "dm5-compatibility"
+      ],
+      "domain": "boolean-like; any nonzero value selects a 24-hour work day",
+      "documented_default": "0",
+      "portable_meaning": "select a work day treated as normally 24 hours, taking DST changes into account",
+      "source": "Config.pod:417-441; DM5.pod:1754-1757",
+      "partitions": [
+        "0/default",
+        "1",
+        "other nonzero",
+        "zero text",
+        "interaction with WorkDayBeg/End",
+        "automatic boundary reset"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Exact accepted boolean forms and error behavior are not documented."
+      ]
+    },
+    {
+      "key": "WorkDayBeg",
+      "profiles": [
+        "dm6-reference",
+        "dm5-compatibility"
+      ],
+      "domain": "valid time in H, H:M, or H:M:S form in DM6; DM5 permits any valid time format and ignores seconds; must precede WorkDayEnd",
+      "documented_default": "unknown",
+      "portable_meaning": "start of the configured non-24-hour work day",
+      "source": "Config.pod:419-441; DM5.pod:1759-1767",
+      "partitions": [
+        "valid hour",
+        "valid minute/second form",
+        "00:00:00",
+        "24:00:00",
+        "invalid time",
+        "equal to end",
+        "after end",
+        "setting turns off WorkDay24Hr"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Defaults are not stated; DM5 international time-format acceptance and one-hour minimum need runtime checks."
+      ]
+    },
+    {
+      "key": "WorkDayEnd",
+      "profiles": [
+        "dm6-reference",
+        "dm5-compatibility"
+      ],
+      "domain": "valid time in H, H:M, or H:M:S form in DM6; DM5 permits any valid time format and ignores seconds; must follow WorkDayBeg",
+      "documented_default": "unknown",
+      "portable_meaning": "end of the configured non-24-hour work day",
+      "source": "Config.pod:419-441; DM5.pod:1759-1767",
+      "partitions": [
+        "valid hour",
+        "valid minute/second form",
+        "24:00:00",
+        "invalid time",
+        "equal to beginning",
+        "before beginning",
+        "setting turns off WorkDay24Hr"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Defaults are not stated; DM5 international time-format acceptance and one-hour minimum need runtime checks."
+      ]
+    },
+    {
+      "key": "TomorrowFirst",
+      "profiles": [
+        "dm6-reference",
+        "dm5-compatibility"
+      ],
+      "domain": "boolean-like; default/nonzero searches tomorrow first, zero searches yesterday first",
+      "documented_default": "nonzero (tomorrow first)",
+      "portable_meaning": "tie-break direction when selecting the nearest business day",
+      "source": "Config.pod:443-451; DM5.pod:1770-1776",
+      "partitions": [
+        "default/nonzero",
+        "0",
+        "negative/nonzero",
+        "nearest date equidistant",
+        "non-business input",
+        "override by method argument"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Exact accepted values are not documented."
+      ]
+    },
+    {
+      "key": "EraseHolidays",
+      "profiles": [
+        "dm6-reference",
+        "dm5-compatibility"
+      ],
+      "domain": "presence with any supplied value; supplied value is ignored",
+      "documented_default": "not active unless supplied",
+      "portable_meaning": "clear the currently defined holiday set before subsequent configuration-file loading",
+      "source": "Config.pod:453-461; DM5.pod:1621-1628",
+      "partitions": [
+        "present with arbitrary value",
+        "empty value",
+        "absent",
+        "before and after ConfigFile",
+        "shared versus separate configuration context"
+      ],
+      "status": "unobserved",
+      "ambiguities": []
+    },
+    {
+      "key": "EraseEvents",
+      "profiles": [
+        "dm6-reference"
+      ],
+      "domain": "presence with any supplied value; supplied value is ignored",
+      "documented_default": "not active unless supplied",
+      "portable_meaning": "clear the currently defined event set before subsequent configuration-file loading",
+      "source": "Config.pod:455-461",
+      "partitions": [
+        "present with arbitrary value",
+        "empty value",
+        "absent",
+        "before and after ConfigFile",
+        "shared versus separate configuration context"
+      ],
+      "status": "unobserved",
+      "ambiguities": []
+    },
+    {
+      "key": "RecurRange",
+      "profiles": [
+        "dm6-reference"
+      ],
+      "domain": "none, year, month, week, day, or all",
+      "documented_default": "none",
+      "portable_meaning": "choose the default recurrence search range",
+      "source": "Config.pod:473-486",
+      "partitions": [
+        "none",
+        "year",
+        "month",
+        "week",
+        "day",
+        "all",
+        "case variants",
+        "other value",
+        "fixed current date at each boundary"
+      ],
+      "status": "unobserved",
+      "ambiguities": []
+    },
+    {
+      "key": "MaxRecurAttempts",
+      "profiles": [
+        "dm6-reference"
+      ],
+      "domain": "maximum number of search attempts; accepted numeric domain and default are not documented",
+      "documented_default": "unknown",
+      "portable_meaning": "bound recurrence search before declaring a recurrence invalid",
+      "source": "Config.pod:488-497",
+      "partitions": [
+        "default",
+        "positive integer",
+        "zero",
+        "negative integer",
+        "large integer",
+        "non-integer text",
+        "no matching occurrence before limit"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "The POD explains the role but gives neither default nor validation rules."
+      ]
+    },
+    {
+      "key": "SetDate",
+      "profiles": [
+        "dm6-reference"
+      ],
+      "domain": "now[,ZONE], now,DSTFLAG,ZONE, zone,ZONE, zone,DSTFLAG,ZONE, DATE[,ZONE], or DATE,DSTFLAG,ZONE; DATE is YYYY-MM-DD-HH:MN:SS or YYYYMMDDHH:MN:SS; DSTFLAG std, dst, stdonly, dstonly",
+      "documented_default": "system current date/time, zone, and DST state",
+      "portable_meaning": "set an advancing reference clock and optionally its interpretation zone",
+      "source": "Config.pod:499-630",
+      "partitions": [
+        "now",
+        "now with named zone",
+        "zone view",
+        "explicit date",
+        "DST flags",
+        "fixed offset",
+        "ambiguous local time",
+        "nonexistent local time",
+        "invalid date",
+        "reset to now",
+        "repeated setting"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Zone resolution precedence and exact error state are delegated to timezone behavior."
+      ]
+    },
+    {
+      "key": "ForceDate",
+      "profiles": [
+        "dm6-reference",
+        "dm5-compatibility"
+      ],
+      "domain": "same forms as SetDate in DM6; DM5 documented fixed DATE YYYY-MM-DD-HH:MN:SS",
+      "documented_default": "system current date/time unless forced",
+      "portable_meaning": "set a non-advancing reference clock and optionally its interpretation zone",
+      "source": "Config.pod:631-670; DM5.pod:1835-1840",
+      "partitions": [
+        "now",
+        "explicit date",
+        "zone",
+        "DST flags",
+        "invalid date",
+        "ambiguous/nonexistent local time",
+        "repeat setting",
+        "passage of time"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "DM5 does not document the DM6 zone/DST forms; compatibility boundaries need runtime checks."
+      ]
+    },
+    {
+      "key": "Use_POSIX_Printf",
+      "profiles": [
+        "dm6-reference"
+      ],
+      "domain": "boolean-like; 1 makes date printf directives match POSIX directives",
+      "documented_default": "unknown",
+      "portable_meaning": "select POSIX interpretation for otherwise differing date formatting directives",
+      "source": "Config.pod:676-684; DM6.pod: date printf references",
+      "partitions": [
+        "default",
+        "1",
+        "other nonzero",
+        "0",
+        "directive affected by option",
+        "unaffected directive",
+        "invalid directive"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "The default value and accepted truth-value forms are not documented."
+      ]
+    },
+    {
+      "key": "TZ",
+      "profiles": [
+        "dm6-reference",
+        "dm5-compatibility"
+      ],
+      "domain": "time zone name, alias, abbreviation, or offset",
+      "documented_default": "system-local zone discovery (DM6); DM5 leaves local zone unless set",
+      "portable_meaning": "legacy way to select the local/current time zone",
+      "source": "Config.pod:686-707; DM5.pod:1698-1701",
+      "partitions": [
+        "canonical zone",
+        "alias/abbreviation",
+        "numeric offset",
+        "invalid zone",
+        "DST transition",
+        "interaction with SetDate/ForceDate"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Config.pod says deprecated and scheduled for removal in 7.00 although it remains documented; actual release behavior and precedence need runtime confirmation."
+      ]
+    },
+    {
+      "key": "Jan1Week1",
+      "profiles": [
+        "dm6-reference",
+        "dm5-compatibility"
+      ],
+      "domain": "boolean-like; non-nil selects a first week containing January 1",
+      "documented_default": "ISO behavior (non-Jan-1 first week)",
+      "portable_meaning": "legacy override for week-one selection",
+      "source": "Config.pod:709-719; DM5.pod:1788-1795",
+      "partitions": [
+        "absent/default",
+        "nonzero",
+        "0",
+        "week containing Jan 1",
+        "week containing Jan 4",
+        "interaction with Week1ofYear/FirstDay"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Deprecated compatibility precedence against Week1ofYear is undocumented and runtime-only."
+      ]
+    },
+    {
+      "key": "IgnoreGlobalCnf",
+      "profiles": [
+        "dm5-compatibility"
+      ],
+      "domain": "presence with any value; value ignored; must occur in initial Date_Init call",
+      "documented_default": "global configuration is read unless this is supplied",
+      "portable_meaning": "suppress loading of the DM5 global configuration file",
+      "source": "DM5.pod:1615-1619",
+      "partitions": [
+        "present initially",
+        "present after initialization",
+        "absent",
+        "empty value",
+        "global file exists/missing"
+      ],
+      "status": "unobserved",
+      "ambiguities": []
+    },
+    {
+      "key": "PathSep",
+      "profiles": [
+        "dm5-compatibility"
+      ],
+      "domain": "regular expression separating paths",
+      "documented_default": "colon on Unix; semicolon on Win32",
+      "portable_meaning": "define the separator used in configuration-file search paths",
+      "source": "DM5.pod:1630-1635",
+      "partitions": [
+        "platform default",
+        "custom regex",
+        "empty regex",
+        "multiple paths",
+        "path containing separator metacharacters"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Platform set and regex dialect are environment-dependent."
+      ]
+    },
+    {
+      "key": "GlobalCnf",
+      "profiles": [
+        "dm5-compatibility"
+      ],
+      "domain": "complete path to a configuration file; tilde expansion on supported platforms",
+      "documented_default": "no global file",
+      "portable_meaning": "select the optional DM5 global configuration file",
+      "source": "DM5.pod:1637-1646",
+      "partitions": [
+        "absent",
+        "existing path",
+        "missing path",
+        "tilde path",
+        "empty path",
+        "holiday reset when loaded"
+      ],
+      "status": "unobserved",
+      "ambiguities": []
+    },
+    {
+      "key": "PersonalCnf",
+      "profiles": [
+        "dm5-compatibility"
+      ],
+      "domain": "configuration-file name",
+      "documented_default": ".DateManip.cnf on Unix; Manip.cnf on non-Unix",
+      "portable_meaning": "select the personal configuration filename searched in PersonalCnfPath",
+      "source": "DM5.pod:1648-1655",
+      "partitions": [
+        "default name",
+        "custom name",
+        "empty name",
+        "file found/not found",
+        "platform-specific default"
+      ],
+      "status": "unobserved",
+      "ambiguities": []
+    },
+    {
+      "key": "PersonalCnfPath",
+      "profiles": [
+        "dm5-compatibility"
+      ],
+      "domain": "list of paths separated by PathSep; tilde expansion where supported",
+      "documented_default": "unknown",
+      "portable_meaning": "define directories searched for the personal configuration file",
+      "source": "DM5.pod:1657-1663",
+      "partitions": [
+        "one path",
+        "multiple paths",
+        "empty path",
+        "missing file",
+        "custom PathSep",
+        "tilde path"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Default search path is not documented."
+      ]
+    },
+    {
+      "key": "ConvTZ",
+      "profiles": [
+        "dm5-compatibility"
+      ],
+      "domain": "blank, a time zone, or IGNORE",
+      "documented_default": "blank (convert to local TZ)",
+      "portable_meaning": "choose the zone in which parsed dates are stored, or ignore zone information",
+      "source": "DM5.pod:1700-1716",
+      "partitions": [
+        "blank",
+        "canonical zone",
+        "alias/abbreviation",
+        "IGNORE",
+        "invalid zone",
+        "explicit source zone",
+        "DST transition"
+      ],
+      "status": "unobserved",
+      "ambiguities": []
+    },
+    {
+      "key": "Internal",
+      "profiles": [
+        "dm5-compatibility"
+      ],
+      "domain": "0 or 1",
+      "documented_default": "unknown",
+      "portable_meaning": "select the legacy internal date text shape",
+      "source": "DM5.pod:1718-1735",
+      "partitions": [
+        "0",
+        "1",
+        "other numeric",
+        "non-numeric",
+        "round trip through parse and formatting"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Default is not stated in the section."
+      ]
+    },
+    {
+      "key": "DeltaSigns",
+      "profiles": [
+        "dm5-compatibility"
+      ],
+      "domain": "boolean-like; nonzero restores a sign on every delta component",
+      "documented_default": "zero/new 5.07 sign convention",
+      "portable_meaning": "select legacy versus consolidated signs when representing negative deltas",
+      "source": "DM5.pod:1778-1786",
+      "partitions": [
+        "default/zero",
+        "nonzero",
+        "negative delta with zero components",
+        "mixed signs",
+        "invalid value"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Exact accepted truth values are not documented."
+      ]
+    },
+    {
+      "key": "UpdateCurrTZ",
+      "profiles": [
+        "dm5-compatibility"
+      ],
+      "domain": "boolean-like; nonzero checks the current zone for every date parse",
+      "documented_default": "zero (checking off)",
+      "portable_meaning": "control whether long-running processes refresh detected current timezone on each parse",
+      "source": "DM5.pod:1814-1826",
+      "partitions": [
+        "default/zero",
+        "nonzero",
+        "timezone change between parses",
+        "invalid value",
+        "performance/state isolation"
+      ],
+      "status": "unobserved",
+      "ambiguities": []
+    },
+    {
+      "key": "IntCharSet",
+      "profiles": [
+        "dm5-compatibility"
+      ],
+      "domain": "0 or 1",
+      "documented_default": "unknown",
+      "portable_meaning": "select ASCII or international character output for localized names",
+      "source": "DM5.pod:1828-1833",
+      "partitions": [
+        "0",
+        "1",
+        "other value",
+        "accented language output",
+        "encoding interaction"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Default is not stated."
+      ]
+    },
+    {
+      "key": "TodayIsMidnight",
+      "profiles": [
+        "dm5-compatibility"
+      ],
+      "domain": "boolean-like; true makes today mean midnight today, otherwise current time",
+      "documented_default": "false/now behavior",
+      "portable_meaning": "choose the reference time assigned to the relative token today",
+      "source": "DM5.pod:1842-1847",
+      "partitions": [
+        "absent/default",
+        "true",
+        "false",
+        "other nonzero",
+        "today at fixed clock",
+        "midnight boundary"
+      ],
+      "status": "unobserved",
+      "ambiguities": [
+        "Exact accepted truth values are not documented."
+      ]
+    }
+  ],
+  "gaps": [
+    "Runtime acceptance, warnings, and error channels remain unobserved for every key.",
+    "DM6 language names and aliases require reconciliation with Lang.pod and release language modules; this contract records the configuration domain without copying token data.",
+    "DM5 defaults inherited from Manip.pm are not all stated in DM5.pod and remain unknown unless the portable contract explicitly labels them unknown.",
+    "Configuration-file special-section grammar is a separate obligation; this file records only the ConfigFile entry point and key domains.",
+    "Precedence and reset interactions among deprecated DM5 keys and DM6 replacements (TZ/SetDate/ForceDate and Jan1Week1/Week1ofYear) require isolated runtime cases."
+  ]
+}

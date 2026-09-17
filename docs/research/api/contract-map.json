@@ -703,7 +703,7 @@
          "line" : "965",
          "module" : "Date::Manip::Base",
          "pod_named" : "yes",
-         "portable_operation_id" : "arithmetic.time-difference",
+         "portable_operation_id" : "arithmetic.combine-times",
          "profile" : "dm6-reference",
          "scenario_ids" : "",
          "source_discovery" : {
@@ -12439,7 +12439,7 @@
                "profile" : "dm6-reference"
             }
          ],
-         "id" : "arithmetic.time-difference",
+         "id" : "arithmetic.combine-times",
          "specification_status" : "inventory-routed; behavioral partitions pending"
       },
       {

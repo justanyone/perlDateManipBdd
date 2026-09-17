@@ -39,11 +39,14 @@ Current independent worker outputs:
 - Accepted entrypoint accounting: `tools/inventory/`, `docs/research/api/`.
   Both enumerator checks pass (423 declarations, 153 OO receiver routes).
   The auxiliary catalogue has visible outstanding term-extraction obligations.
-- `calendar_contracts`: `docs/research/contracts/calendar.json` and `calendar.md`
-  (detailed calendar/epoch call-shape and partition research, in progress).
-- `value_contracts`: `docs/research/contracts/values.json` and `values.md`
-  (date/time parsing, rendering, navigation, configuration, and lifecycle
-  call-shape/partition research, in progress).
+- Completed worker drafts: `docs/research/contracts/{calendar,values,arithmetic,
+  recurrence,zones-business}.json` and companion Markdown. The coordinator
+  checked all 96 operation IDs and binding sets against the API map. These contain
+  397 unobserved method-partition obligations, not 397 executed cases.
+- `configuration-domains.json` records 38 configuration keys and documented
+  domains/defaults; runtime-only ambiguities and file-section grammar remain open.
+- No workers remain active at this checkpoint. Resume by assigning the bounded
+  research tasks below; avoid duplicating the finished family drafts.
 
 Independent read-only audit found exact correspondence with all 423 declaration
 rows, mappings for 164 public declaration bindings and 96 generic operation IDs,
@@ -52,11 +55,26 @@ lists (34 DM6, 33 DM5) are accounted for. This establishes entrypoint accounting
 not complete behavioral coverage: signatures, option partitions, reference
 observations, and English features still need completion and review.
 
-Next unassigned research work: interval/arithmetic method shapes; recurrence
-method shapes and finite grammar/modifier inventories; zone/business/event shapes;
-date/delta directives and parsing productions; per-key configuration domains and
-language/token-class partitions. Each gets original research records with explicit
-unobserved partitions, then concrete probes and English scenarios after the gate.
+Next unassigned research work: enumerate finite date formatting/pattern-parsing
+directives and accepted date/time productions; refine delta grammar/directive
+families into explicit cases; enumerate legacy DM5 syntax differences; complete
+language/token-class and config-file grammar partitions; discharge recurrence
+structural grids. Review the method catalogues for any remaining vague selectors
+or signatures. The API batch is not complete until these auxiliary obligations
+are explicit. Then assign the five feature families in parallel with original
+probes, reviewed literal observations, and English scenarios.
+
+Coordinator review corrected Base tuple carriers (array references differ from
+list returns) and renamed `arithmetic.time-difference` to
+`arithmetic.combine-times`, since the method supports both addition and
+subtraction. The generator and map use the corrected ID.
+
+Sixteen focused recurrence cases now repeat in isolated processes; seven weekday
+facts were independently checked. See
+[recurrence observations](../research/observations/recurrence-ambiguities.md).
+They expose backend endpoint differences, modifier case/carrier differences,
+modifier-induced anchor clearing, and a suspected positional-anchor parse bug.
+These remain research observations, not approved portable feature expectations.
 
 `reference-preflight.json` is historical partial evidence. Use
 `reference-profiles.json` for the reviewed setup. In particular, DM5 exposes

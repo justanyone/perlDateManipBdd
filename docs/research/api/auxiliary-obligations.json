@@ -80,7 +80,7 @@
       "id": "AUX.ARITHMETIC-MODES",
       "status": "terms-enumerated",
       "source": "lib/Date/Manip/Calc.pod: calculation modes",
-      "contract_ids": ["arithmetic.calculate", "arithmetic.date-difference", "arithmetic.date-plus-delta", "arithmetic.date-plus-days", "arithmetic.time-difference", "delta.compare"],
+      "contract_ids": ["arithmetic.calculate", "arithmetic.date-difference", "arithmetic.date-plus-delta", "arithmetic.date-plus-days", "arithmetic.combine-times", "delta.compare"],
       "terms": ["date-date", "date-delta", "delta-delta", "standard", "business", "exact", "semi", "approx", "estimated"],
       "case_dimensions": ["operand order", "positive/negative", "month boundary", "leap date", "DST transition", "holiday calendar", "mode-specific error"]
     },
