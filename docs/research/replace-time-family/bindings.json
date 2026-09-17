@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "operation": {
+    "id": "date.replace-time",
+    "kind": "public functional date replacement",
+    "documented_call_shapes": [
+      "Date_SetTime(date text, hour, minute, second)",
+      "Date_SetTime(date text, time text) where time text is HH, HH:MN, or HH:MN:SS"
+    ],
+    "result": "serialized date text on success; defined empty text for the observed completed invalid requests"
+  },
+  "bindings": [
+    {"profile":"dm6","public_symbol":"Date::Manip::DM6::Date_SetTime","source_reference":"Date::Manip::DM6 POD Date_SetTime; local Date/Manip/DM6.pm"},
+    {"profile":"dm5","public_symbol":"Date::Manip::DM5::Date_SetTime","source_reference":"Date::Manip::DM5 POD Date_SetTime; local Date/Manip/DM5.pm","status":"legacy compatibility interface"}
+  ],
+  "diagnostic_model": "The documented functional call has no per-call error object in this batch. A completed call records its scalar or list carrier. A thrown call records no return field or list-items field, and records the Perl exception separately. Captured warnings, call stdout, and whole-process exit/stderr are separate native channels.",
+  "reference_binding_diagnostic_cases": [
+    {"case_id":"RT-DM6-TEXT-MERIDIAN","binding":"Date::Manip::DM6::Date_SetTime","scalar_context":"no return","list_context":"no returned items","exception_prefix":"Can't use an undefined value as an ARRAY reference","warnings":"none","feature":"spec/drafts/replace-time/replace-time.feature"},
+    {"case_id":"RT-DM6-TEXT-EXTRA-FIELD","binding":"Date::Manip::DM6::Date_SetTime","scalar_context":"no return","list_context":"no returned items","exception_prefix":"Can't use an undefined value as an ARRAY reference","warnings":"none","feature":"spec/drafts/replace-time/replace-time.feature"}
+  ]
+}

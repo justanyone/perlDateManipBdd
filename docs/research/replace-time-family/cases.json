@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "operation_id": "date.replace-time",
+  "cases": [
+    {"case_id":"RT-DM6-FIELDS-ORDINARY","backend":"dm6","form":"three fields","arguments":["2040-02-29 16:05:09",7,8,9],"classification":"portable"},
+    {"case_id":"RT-DM6-TEXT-HOUR","backend":"dm6","form":"time text HH","arguments":["2040-02-29 16:05:09","05"],"classification":"portable"},
+    {"case_id":"RT-DM6-TEXT-MINUTE","backend":"dm6","form":"time text HH:MN","arguments":["2040-02-29 16:05:09","05:06"],"classification":"portable"},
+    {"case_id":"RT-DM6-TEXT-SECOND","backend":"dm6","form":"time text HH:MN:SS","arguments":["2040-02-29 16:05:09","05:06:07"],"classification":"portable"},
+    {"case_id":"RT-DM6-FIELDS-LOWER","backend":"dm6","form":"three fields at lower boundary","arguments":["2040-02-29 16:05:09",0,0,0],"classification":"portable"},
+    {"case_id":"RT-DM6-FIELDS-UPPER","backend":"dm6","form":"three fields at ordinary upper boundary","arguments":["2040-02-29 16:05:09",23,59,59],"classification":"portable"},
+    {"case_id":"RT-DM6-FIELDS-24","backend":"dm6","form":"three fields at 24:00:00","arguments":["2040-02-29 16:05:09",24,0,0],"classification":"observed-compatibility"},
+    {"case_id":"RT-DM6-FIELDS-BAD-MINUTE","backend":"dm6","form":"three fields with minute 60","arguments":["2040-02-29 16:05:09",7,60,0],"classification":"portable"},
+    {"case_id":"RT-DM6-FIELDS-NEGATIVE-HOUR","backend":"dm6","form":"three fields with a negative hour","arguments":["2040-02-29 16:05:09",-1,0,0],"classification":"portable"},
+    {"case_id":"RT-DM6-BAD-DATE","backend":"dm6","form":"unparseable date with ordinary fields","arguments":["not a calendar date",7,8,9],"classification":"portable"},
+    {"case_id":"RT-DM6-TEXT-MERIDIAN","backend":"dm6","form":"undocumented meridian time text","arguments":["2040-02-29 16:05:09","1:30 PM"],"classification":"observed-compatibility"},
+    {"case_id":"RT-DM6-TEXT-EXTRA-FIELD","backend":"dm6","form":"undocumented four-component time text","arguments":["2040-02-29 16:05:09","05:06:07:08"],"classification":"observed-compatibility"},
+    {"case_id":"RT-DM6-FIELDS-TWO","backend":"dm6","form":"undocumented two numeric fields","arguments":["2040-02-29 16:05:09",7,8],"classification":"observed-compatibility"},
+    {"case_id":"RT-DM5-FIELDS-ORDINARY","backend":"dm5","form":"three fields","arguments":["2040-02-29 16:05:09",7,8,9],"classification":"portable"},
+    {"case_id":"RT-DM5-TEXT-HOUR","backend":"dm5","form":"time text HH","arguments":["2040-02-29 16:05:09","05"],"classification":"portable"},
+    {"case_id":"RT-DM5-TEXT-MINUTE","backend":"dm5","form":"time text HH:MN","arguments":["2040-02-29 16:05:09","05:06"],"classification":"portable"},
+    {"case_id":"RT-DM5-TEXT-SECOND","backend":"dm5","form":"time text HH:MN:SS","arguments":["2040-02-29 16:05:09","05:06:07"],"classification":"portable"},
+    {"case_id":"RT-DM5-FIELDS-LOWER","backend":"dm5","form":"three fields at lower boundary","arguments":["2040-02-29 16:05:09",0,0,0],"classification":"portable"},
+    {"case_id":"RT-DM5-FIELDS-UPPER","backend":"dm5","form":"three fields at ordinary upper boundary","arguments":["2040-02-29 16:05:09",23,59,59],"classification":"portable"},
+    {"case_id":"RT-DM5-FIELDS-24","backend":"dm5","form":"three fields at 24:00:00","arguments":["2040-02-29 16:05:09",24,0,0],"classification":"observed-compatibility"},
+    {"case_id":"RT-DM5-FIELDS-BAD-MINUTE","backend":"dm5","form":"three fields with minute 60","arguments":["2040-02-29 16:05:09",7,60,0],"classification":"portable"},
+    {"case_id":"RT-DM5-FIELDS-NEGATIVE-HOUR","backend":"dm5","form":"three fields with a negative hour","arguments":["2040-02-29 16:05:09",-1,0,0],"classification":"portable"},
+    {"case_id":"RT-DM5-BAD-DATE","backend":"dm5","form":"unparseable date with ordinary fields","arguments":["not a calendar date",7,8,9],"classification":"portable"},
+    {"case_id":"RT-DM5-TEXT-MERIDIAN","backend":"dm5","form":"undocumented meridian time text","arguments":["2040-02-29 16:05:09","1:30 PM"],"classification":"observed-compatibility"},
+    {"case_id":"RT-DM5-TEXT-EXTRA-FIELD","backend":"dm5","form":"undocumented four-component time text","arguments":["2040-02-29 16:05:09","05:06:07:08"],"classification":"observed-compatibility"},
+    {"case_id":"RT-DM5-FIELDS-TWO","backend":"dm5","form":"undocumented two numeric fields","arguments":["2040-02-29 16:05:09",7,8],"classification":"observed-compatibility"}
+  ]
+}

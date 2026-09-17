@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "operation_id": "date.replace-time",
+  "portable_feature": "spec/drafts/replace-time/replace-time-portable.feature",
+  "source_binding_feature": "spec/drafts/replace-time/replace-time.feature",
+  "cases": [
+    {"portable_case_id":"RT-PORT-CURRENT-FIELDS-ORDINARY","observation_case_id":"RT-DM6-FIELDS-ORDINARY"},
+    {"portable_case_id":"RT-PORT-CURRENT-TEXT-HOUR","observation_case_id":"RT-DM6-TEXT-HOUR"},
+    {"portable_case_id":"RT-PORT-CURRENT-TEXT-MINUTE","observation_case_id":"RT-DM6-TEXT-MINUTE"},
+    {"portable_case_id":"RT-PORT-CURRENT-TEXT-SECOND","observation_case_id":"RT-DM6-TEXT-SECOND"},
+    {"portable_case_id":"RT-PORT-CURRENT-FIELDS-LOWER","observation_case_id":"RT-DM6-FIELDS-LOWER"},
+    {"portable_case_id":"RT-PORT-CURRENT-FIELDS-UPPER","observation_case_id":"RT-DM6-FIELDS-UPPER"},
+    {"portable_case_id":"RT-PORT-CURRENT-FIELDS-BAD-MINUTE","observation_case_id":"RT-DM6-FIELDS-BAD-MINUTE"},
+    {"portable_case_id":"RT-PORT-CURRENT-FIELDS-NEGATIVE-HOUR","observation_case_id":"RT-DM6-FIELDS-NEGATIVE-HOUR"},
+    {"portable_case_id":"RT-PORT-CURRENT-BAD-DATE","observation_case_id":"RT-DM6-BAD-DATE"},
+    {"portable_case_id":"RT-PORT-LEGACY-FIELDS-ORDINARY","observation_case_id":"RT-DM5-FIELDS-ORDINARY"},
+    {"portable_case_id":"RT-PORT-LEGACY-TEXT-HOUR","observation_case_id":"RT-DM5-TEXT-HOUR"},
+    {"portable_case_id":"RT-PORT-LEGACY-TEXT-MINUTE","observation_case_id":"RT-DM5-TEXT-MINUTE"},
+    {"portable_case_id":"RT-PORT-LEGACY-TEXT-SECOND","observation_case_id":"RT-DM5-TEXT-SECOND"},
+    {"portable_case_id":"RT-PORT-LEGACY-FIELDS-LOWER","observation_case_id":"RT-DM5-FIELDS-LOWER"},
+    {"portable_case_id":"RT-PORT-LEGACY-FIELDS-UPPER","observation_case_id":"RT-DM5-FIELDS-UPPER"},
+    {"portable_case_id":"RT-PORT-LEGACY-FIELDS-BAD-MINUTE","observation_case_id":"RT-DM5-FIELDS-BAD-MINUTE"},
+    {"portable_case_id":"RT-PORT-LEGACY-FIELDS-NEGATIVE-HOUR","observation_case_id":"RT-DM5-FIELDS-NEGATIVE-HOUR"},
+    {"portable_case_id":"RT-PORT-LEGACY-BAD-DATE","observation_case_id":"RT-DM5-BAD-DATE"}
+  ]
+}

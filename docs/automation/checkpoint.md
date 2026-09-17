@@ -691,3 +691,27 @@ disputed; remaining aliases/encodings/sequences/numeric partitions remain open.
 Active owners unchanged: coverage_setup repairs replace-time; partial_parsing builds
 behavior-gap-ledger; pattern_repair audits portable drafts. Await their stable
 results before integration. Full executable BDD suite and final coverage incomplete.
+
+
+## Time replacement integration and expanded coverage run
+
+Integrated26 native time-replacement cases plus18 separate portable documented-form
+examples after repairs and root rerun. All inputs include their actual date text;
+exceptions have no invented scalar return/list items. Source-binding diagnostics
+are excluded from portable export. Reviewer verifies both feature layers and
+artifact/module hashes; fresh two-attempt root capture byte-matches and real parser
+accepts44 expanded examples. Remaining argument/configuration partitions remain open.
+
+Root started472-case source diagnostic across eight committed families. First run
+terminated at a fidelity mismatch: Devel::Cover adds eval-site attribution to DM5's
+load deprecation warning. Root added opt-in normalization limited to that known
+warning location, retains raw outputs, and reports every adjustment. Ten coverage
+unit tests pass, including checks rejecting changed return values and warning text.
+Current collector process session61966 is live at /tmp/public-coverage-corpus-expanded-root-v2.
+Poll this exact handle before treating it as stopped; do not restart on timeout.
+Expanded collector/manifest/tests are not committed until run review is complete.
+
+pattern_repair owns date-set source-separation repair but must remain read-only
+until the collector is terminal; root must explicitly release edits. coverage_setup
+owns NEW week-rules-family finite105-setting matrix; partial_parsing owns behavior
+gap ledger. Portable-draft-audit returned for root review. No completion claim.

@@ -1,0 +1,2483 @@
+{
+  "environment": {
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8",
+    "PATH": "/usr/bin:/bin",
+    "PERL5LIB": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5",
+    "TZ": "Etc/UTC"
+  },
+  "export_status": "Reference-only evidence; exclude Perl binding, profile, and native diagnostic records from a future independent implementation handoff.",
+  "loaded_module_sha256_by_backend": {
+    "dm5": {
+      "Date/Manip/DM5.pm": "c31d2bf42f317bb811fa5e838778d12b0e5ff8dd38b012114fe9fa4471845c2e",
+      "Date/Manip/DM5abbrevs.pm": "fc9a983c82699b5df63a9f14bb6a7cfe9817fc79e1f336b7803549e120691b5f"
+    },
+    "dm6": {
+      "Date/Manip/Base.pm": "5fe1f12a7b59c57baf71c86e266b4ea06851eac0ec203a3507d019bcadbea97c",
+      "Date/Manip/DM6.pm": "bce0c2d92075928e1c6f3a4cf1fa01740ea15d2da64470265a1b616ef352b6e1",
+      "Date/Manip/Date.pm": "c181a8d908efbc2c18cc0a59e10e90628161dc3acf811c9c0292985280953d85",
+      "Date/Manip/Delta.pm": "f977a78616d58d288d7d9f862876677a7bd1edcb8a1658ecc9bae5c7a68bbf00",
+      "Date/Manip/Lang/english.pm": "4ab18ff883b65c3bb0d8b0a875d929117480409b4491e20f55811d5a13a70a94",
+      "Date/Manip/Lang/index.pm": "5052b2c740b190d228ef4a2e87cf248610f90519d75db2fdc723ecaa9ac679d8",
+      "Date/Manip/Obj.pm": "5ece620f80b039048d09b72fcb30f0e09ce8bb1151a0720db80ebdd2f9d7686f",
+      "Date/Manip/Recur.pm": "6daf668372ada128ea8a0ada4ca1b5fb79096ed7fb8977b98658eb1b51f141cc",
+      "Date/Manip/TZ.pm": "bc28ca7fc2b3cc57793cd5d3d5f956a48c8438b9738dc045fd9ee7f51d61f469",
+      "Date/Manip/TZ/etgmt00.pm": "40731072ac33ff4a319053d0b5a856b33c7acc62f0b080d5345b7c61bda80d0e",
+      "Date/Manip/TZ/etutc00.pm": "ba6d88da06f00d4f2053c1186f63341efa2e2231bcb93a4f01ba5db0c698eb4e",
+      "Date/Manip/TZ_Base.pm": "ae888d89540e0a35dca67a8e1f8f3f420cda95c84aaf8a6d29844e792c262362",
+      "Date/Manip/Zones.pm": "363adb17d51c28fea9ca66b9716d01ccc193b88c36be24da85323d351f53f6e6"
+    }
+  },
+  "observations": [
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM6-FIELDS-ORDINARY",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": ""
+      },
+      "configured_zone": "etc/utc",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "7.00",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": "2040022907:08:09"
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+      "loaded_module_paths": {
+        "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+        "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+        "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+        "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+        "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+        "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+        "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+        "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+        "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+        "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+        "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+        "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+      },
+      "native_payload_sha256": "f5090896b19cd7bdfab21fe3ef173d553536a2ba61f4a369163b4f2248d036d1",
+      "observed_backend_version": "7.00",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "Defaults=1",
+        "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+        "Language=English",
+        "Encoding=ASCII",
+        "DateFormat=US",
+        "Printable=0",
+        "FirstDay=1",
+        "Week1ofYear=jan4",
+        "DefaultTime=midnight",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "EraseHolidays=1",
+        "EraseEvents=1"
+      ],
+      "public_symbol": "Date::Manip::DM6::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          7,
+          8,
+          9
+        ],
+        "backend": "dm6",
+        "case_id": "RT-DM6-FIELDS-ORDINARY",
+        "classification": "portable",
+        "form": "three fields"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": "2040022907:08:09"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM6-TEXT-HOUR",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": ""
+      },
+      "configured_zone": "etc/utc",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "7.00",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": "2040022905:00:00"
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+      "loaded_module_paths": {
+        "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+        "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+        "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+        "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+        "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+        "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+        "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+        "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+        "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+        "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+        "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+        "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+      },
+      "native_payload_sha256": "dde0c2f9b55cc5ad6b3323ebbca42cefd1af34763ccce4daed3fd1754f56e8fd",
+      "observed_backend_version": "7.00",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "Defaults=1",
+        "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+        "Language=English",
+        "Encoding=ASCII",
+        "DateFormat=US",
+        "Printable=0",
+        "FirstDay=1",
+        "Week1ofYear=jan4",
+        "DefaultTime=midnight",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "EraseHolidays=1",
+        "EraseEvents=1"
+      ],
+      "public_symbol": "Date::Manip::DM6::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          "05"
+        ],
+        "backend": "dm6",
+        "case_id": "RT-DM6-TEXT-HOUR",
+        "classification": "portable",
+        "form": "time text HH"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": "2040022905:00:00"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM6-TEXT-MINUTE",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": ""
+      },
+      "configured_zone": "etc/utc",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "7.00",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": "2040022905:06:00"
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+      "loaded_module_paths": {
+        "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+        "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+        "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+        "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+        "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+        "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+        "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+        "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+        "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+        "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+        "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+        "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+      },
+      "native_payload_sha256": "7989a2d8e8beebb4137e6d9bc4b4dc9250fe2f9bbf451e6c27c49e05753f6162",
+      "observed_backend_version": "7.00",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "Defaults=1",
+        "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+        "Language=English",
+        "Encoding=ASCII",
+        "DateFormat=US",
+        "Printable=0",
+        "FirstDay=1",
+        "Week1ofYear=jan4",
+        "DefaultTime=midnight",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "EraseHolidays=1",
+        "EraseEvents=1"
+      ],
+      "public_symbol": "Date::Manip::DM6::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          "05:06"
+        ],
+        "backend": "dm6",
+        "case_id": "RT-DM6-TEXT-MINUTE",
+        "classification": "portable",
+        "form": "time text HH:MN"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": "2040022905:06:00"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM6-TEXT-SECOND",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": ""
+      },
+      "configured_zone": "etc/utc",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "7.00",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": "2040022905:06:07"
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+      "loaded_module_paths": {
+        "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+        "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+        "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+        "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+        "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+        "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+        "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+        "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+        "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+        "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+        "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+        "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+      },
+      "native_payload_sha256": "cd007b634ed7d15f2d0f1dc8fd8d42a351cc758280c14b66cfc2a60d703dee63",
+      "observed_backend_version": "7.00",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "Defaults=1",
+        "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+        "Language=English",
+        "Encoding=ASCII",
+        "DateFormat=US",
+        "Printable=0",
+        "FirstDay=1",
+        "Week1ofYear=jan4",
+        "DefaultTime=midnight",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "EraseHolidays=1",
+        "EraseEvents=1"
+      ],
+      "public_symbol": "Date::Manip::DM6::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          "05:06:07"
+        ],
+        "backend": "dm6",
+        "case_id": "RT-DM6-TEXT-SECOND",
+        "classification": "portable",
+        "form": "time text HH:MN:SS"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": "2040022905:06:07"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM6-FIELDS-LOWER",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": ""
+      },
+      "configured_zone": "etc/utc",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "7.00",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": "2040022900:00:00"
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+      "loaded_module_paths": {
+        "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+        "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+        "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+        "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+        "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+        "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+        "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+        "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+        "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+        "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+        "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+        "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+      },
+      "native_payload_sha256": "ec3e7994f8b15fb1498e9538a8f362578f4c282b500b0bff65b3a6c53dabdb35",
+      "observed_backend_version": "7.00",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "Defaults=1",
+        "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+        "Language=English",
+        "Encoding=ASCII",
+        "DateFormat=US",
+        "Printable=0",
+        "FirstDay=1",
+        "Week1ofYear=jan4",
+        "DefaultTime=midnight",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "EraseHolidays=1",
+        "EraseEvents=1"
+      ],
+      "public_symbol": "Date::Manip::DM6::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          0,
+          0,
+          0
+        ],
+        "backend": "dm6",
+        "case_id": "RT-DM6-FIELDS-LOWER",
+        "classification": "portable",
+        "form": "three fields at lower boundary"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": "2040022900:00:00"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM6-FIELDS-UPPER",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": ""
+      },
+      "configured_zone": "etc/utc",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "7.00",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": "2040022923:59:59"
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+      "loaded_module_paths": {
+        "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+        "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+        "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+        "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+        "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+        "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+        "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+        "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+        "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+        "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+        "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+        "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+      },
+      "native_payload_sha256": "786ed9567763c8f15368472221dac898e00b639fd60131fb81f26b89aac27d21",
+      "observed_backend_version": "7.00",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "Defaults=1",
+        "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+        "Language=English",
+        "Encoding=ASCII",
+        "DateFormat=US",
+        "Printable=0",
+        "FirstDay=1",
+        "Week1ofYear=jan4",
+        "DefaultTime=midnight",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "EraseHolidays=1",
+        "EraseEvents=1"
+      ],
+      "public_symbol": "Date::Manip::DM6::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          23,
+          59,
+          59
+        ],
+        "backend": "dm6",
+        "case_id": "RT-DM6-FIELDS-UPPER",
+        "classification": "portable",
+        "form": "three fields at ordinary upper boundary"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": "2040022923:59:59"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM6-FIELDS-24",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": ""
+      },
+      "configured_zone": "etc/utc",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "7.00",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": "2040022924:00:00"
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+      "loaded_module_paths": {
+        "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+        "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+        "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+        "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+        "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+        "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+        "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+        "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+        "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+        "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+        "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+        "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+      },
+      "native_payload_sha256": "816b6cdb8d747ac9835359e9c47040e72c6ea9df3a7bcfa150fe4afe83a50114",
+      "observed_backend_version": "7.00",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "Defaults=1",
+        "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+        "Language=English",
+        "Encoding=ASCII",
+        "DateFormat=US",
+        "Printable=0",
+        "FirstDay=1",
+        "Week1ofYear=jan4",
+        "DefaultTime=midnight",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "EraseHolidays=1",
+        "EraseEvents=1"
+      ],
+      "public_symbol": "Date::Manip::DM6::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          24,
+          0,
+          0
+        ],
+        "backend": "dm6",
+        "case_id": "RT-DM6-FIELDS-24",
+        "classification": "observed-compatibility",
+        "form": "three fields at 24:00:00"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": "2040022924:00:00"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM6-FIELDS-BAD-MINUTE",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": ""
+      },
+      "configured_zone": "etc/utc",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "7.00",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": ""
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+      "loaded_module_paths": {
+        "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+        "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+        "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+        "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+        "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+        "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+        "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+        "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+        "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+        "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+        "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+        "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+      },
+      "native_payload_sha256": "de0aff3b67adee785078b5a4e9afebec45cbb7ef08f91eb1c7bc50703f43fd4e",
+      "observed_backend_version": "7.00",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "Defaults=1",
+        "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+        "Language=English",
+        "Encoding=ASCII",
+        "DateFormat=US",
+        "Printable=0",
+        "FirstDay=1",
+        "Week1ofYear=jan4",
+        "DefaultTime=midnight",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "EraseHolidays=1",
+        "EraseEvents=1"
+      ],
+      "public_symbol": "Date::Manip::DM6::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          7,
+          60,
+          0
+        ],
+        "backend": "dm6",
+        "case_id": "RT-DM6-FIELDS-BAD-MINUTE",
+        "classification": "portable",
+        "form": "three fields with minute 60"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": ""
+        }
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM6-FIELDS-NEGATIVE-HOUR",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": ""
+      },
+      "configured_zone": "etc/utc",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "7.00",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": ""
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+      "loaded_module_paths": {
+        "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+        "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+        "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+        "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+        "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+        "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+        "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+        "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+        "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+        "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+        "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+        "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+      },
+      "native_payload_sha256": "11e7ebf8698be95afb1b883e7eb94c48f8e4d7f58de6de21d4851bb894fd95db",
+      "observed_backend_version": "7.00",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "Defaults=1",
+        "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+        "Language=English",
+        "Encoding=ASCII",
+        "DateFormat=US",
+        "Printable=0",
+        "FirstDay=1",
+        "Week1ofYear=jan4",
+        "DefaultTime=midnight",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "EraseHolidays=1",
+        "EraseEvents=1"
+      ],
+      "public_symbol": "Date::Manip::DM6::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          -1,
+          0,
+          0
+        ],
+        "backend": "dm6",
+        "case_id": "RT-DM6-FIELDS-NEGATIVE-HOUR",
+        "classification": "portable",
+        "form": "three fields with a negative hour"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": ""
+        }
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM6-BAD-DATE",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": ""
+      },
+      "configured_zone": "etc/utc",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "7.00",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": ""
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+      "loaded_module_paths": {
+        "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+        "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+        "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+        "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+        "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+        "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+        "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+        "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+        "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+        "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+        "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+        "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+      },
+      "native_payload_sha256": "24fd6ea62a0bcbf21c5898c790bb725d1ab7924f7268bc49b83b984270ad78b3",
+      "observed_backend_version": "7.00",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "Defaults=1",
+        "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+        "Language=English",
+        "Encoding=ASCII",
+        "DateFormat=US",
+        "Printable=0",
+        "FirstDay=1",
+        "Week1ofYear=jan4",
+        "DefaultTime=midnight",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "EraseHolidays=1",
+        "EraseEvents=1"
+      ],
+      "public_symbol": "Date::Manip::DM6::Date_SetTime",
+      "request": {
+        "arguments": [
+          "not a calendar date",
+          7,
+          8,
+          9
+        ],
+        "backend": "dm6",
+        "case_id": "RT-DM6-BAD-DATE",
+        "classification": "portable",
+        "form": "unparseable date with ordinary fields"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": ""
+        }
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM6-TEXT-MERIDIAN",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": ""
+      },
+      "configured_zone": "etc/utc",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "7.00",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": "Can't use an undefined value as an ARRAY reference at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm line 551.\n"
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+      "loaded_module_paths": {
+        "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+        "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+        "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+        "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+        "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+        "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+        "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+        "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+        "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+        "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+        "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+        "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+      },
+      "native_payload_sha256": "6338853b479496c75ad8f4bf0ef56c8250d60cc5632825eb9b758063926639f2",
+      "observed_backend_version": "7.00",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "Defaults=1",
+        "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+        "Language=English",
+        "Encoding=ASCII",
+        "DateFormat=US",
+        "Printable=0",
+        "FirstDay=1",
+        "Week1ofYear=jan4",
+        "DefaultTime=midnight",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "EraseHolidays=1",
+        "EraseEvents=1"
+      ],
+      "public_symbol": "Date::Manip::DM6::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          "1:30 PM"
+        ],
+        "backend": "dm6",
+        "case_id": "RT-DM6-TEXT-MERIDIAN",
+        "classification": "observed-compatibility",
+        "form": "undocumented meridian time text"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": "Can't use an undefined value as an ARRAY reference at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm line 551.\n"
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM6-TEXT-EXTRA-FIELD",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": ""
+      },
+      "configured_zone": "etc/utc",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "7.00",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": "Can't use an undefined value as an ARRAY reference at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm line 551.\n"
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+      "loaded_module_paths": {
+        "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+        "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+        "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+        "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+        "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+        "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+        "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+        "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+        "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+        "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+        "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+        "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+      },
+      "native_payload_sha256": "df47bdedaec06f9e4e0700546a59426ab31b7ec151bd9bf50f49b484f85faf3e",
+      "observed_backend_version": "7.00",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "Defaults=1",
+        "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+        "Language=English",
+        "Encoding=ASCII",
+        "DateFormat=US",
+        "Printable=0",
+        "FirstDay=1",
+        "Week1ofYear=jan4",
+        "DefaultTime=midnight",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "EraseHolidays=1",
+        "EraseEvents=1"
+      ],
+      "public_symbol": "Date::Manip::DM6::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          "05:06:07:08"
+        ],
+        "backend": "dm6",
+        "case_id": "RT-DM6-TEXT-EXTRA-FIELD",
+        "classification": "observed-compatibility",
+        "form": "undocumented four-component time text"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": "Can't use an undefined value as an ARRAY reference at /home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm line 551.\n"
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM6-FIELDS-TWO",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": ""
+      },
+      "configured_zone": "etc/utc",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "7.00",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": "2040022907:08:00"
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+      "loaded_module_paths": {
+        "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+        "Date/Manip/DM6.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM6.pm",
+        "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+        "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+        "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+        "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+        "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+        "Date/Manip/Recur.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Recur.pm",
+        "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+        "Date/Manip/TZ/etgmt00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etgmt00.pm",
+        "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+        "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+        "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+      },
+      "native_payload_sha256": "e7738f847ad4daa0f000158719d77a253cb745badc41b3788342f243a4b5ce1f",
+      "observed_backend_version": "7.00",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "Defaults=1",
+        "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+        "Language=English",
+        "Encoding=ASCII",
+        "DateFormat=US",
+        "Printable=0",
+        "FirstDay=1",
+        "Week1ofYear=jan4",
+        "DefaultTime=midnight",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "EraseHolidays=1",
+        "EraseEvents=1"
+      ],
+      "public_symbol": "Date::Manip::DM6::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          7,
+          8
+        ],
+        "backend": "dm6",
+        "case_id": "RT-DM6-FIELDS-TWO",
+        "classification": "observed-compatibility",
+        "form": "undocumented two numeric fields"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": "2040022907:08:00"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM5-FIELDS-ORDINARY",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": "IgnoreGlobalCnf=1"
+      },
+      "configured_zone": "UTC",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "5.66",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": "2040022907:08:09"
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+      "loaded_module_paths": {
+        "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+        "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+      },
+      "native_payload_sha256": "6ee8ad191040c90548264a781e332df284fb34957af49a7bd429572c5704f2bd",
+      "observed_backend_version": "5.66",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "IgnoreGlobalCnf=1",
+        "PersonalCnf=",
+        "PersonalCnfPath=",
+        "ForceDate=2040-02-28-10:20:30",
+        "TZ=Etc/UTC",
+        "Language=English",
+        "DateFormat=US",
+        "Internal=0",
+        "FirstDay=1",
+        "Jan1Week1=0",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "TodayIsMidnight=1",
+        "EraseHolidays=1"
+      ],
+      "public_symbol": "Date::Manip::DM5::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          7,
+          8,
+          9
+        ],
+        "backend": "dm5",
+        "case_id": "RT-DM5-FIELDS-ORDINARY",
+        "classification": "portable",
+        "form": "three fields"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": "2040022907:08:09"
+        }
+      },
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+      ]
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM5-TEXT-HOUR",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": "IgnoreGlobalCnf=1"
+      },
+      "configured_zone": "UTC",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "5.66",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": "2040022905:00:00"
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+      "loaded_module_paths": {
+        "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+        "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+      },
+      "native_payload_sha256": "01bcbf04147f7a8e447b6b207dbc3aa79024287ae1e3b2bd43a46de7f63a2a16",
+      "observed_backend_version": "5.66",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "IgnoreGlobalCnf=1",
+        "PersonalCnf=",
+        "PersonalCnfPath=",
+        "ForceDate=2040-02-28-10:20:30",
+        "TZ=Etc/UTC",
+        "Language=English",
+        "DateFormat=US",
+        "Internal=0",
+        "FirstDay=1",
+        "Jan1Week1=0",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "TodayIsMidnight=1",
+        "EraseHolidays=1"
+      ],
+      "public_symbol": "Date::Manip::DM5::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          "05"
+        ],
+        "backend": "dm5",
+        "case_id": "RT-DM5-TEXT-HOUR",
+        "classification": "portable",
+        "form": "time text HH"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": "2040022905:00:00"
+        }
+      },
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+      ]
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM5-TEXT-MINUTE",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": "IgnoreGlobalCnf=1"
+      },
+      "configured_zone": "UTC",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "5.66",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": "2040022905:06:00"
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+      "loaded_module_paths": {
+        "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+        "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+      },
+      "native_payload_sha256": "f97d843f97f0799c90503c2b74da5b732f2cc27682c5acd606313a1f55f5f61e",
+      "observed_backend_version": "5.66",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "IgnoreGlobalCnf=1",
+        "PersonalCnf=",
+        "PersonalCnfPath=",
+        "ForceDate=2040-02-28-10:20:30",
+        "TZ=Etc/UTC",
+        "Language=English",
+        "DateFormat=US",
+        "Internal=0",
+        "FirstDay=1",
+        "Jan1Week1=0",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "TodayIsMidnight=1",
+        "EraseHolidays=1"
+      ],
+      "public_symbol": "Date::Manip::DM5::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          "05:06"
+        ],
+        "backend": "dm5",
+        "case_id": "RT-DM5-TEXT-MINUTE",
+        "classification": "portable",
+        "form": "time text HH:MN"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": "2040022905:06:00"
+        }
+      },
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+      ]
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM5-TEXT-SECOND",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": "IgnoreGlobalCnf=1"
+      },
+      "configured_zone": "UTC",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "5.66",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": "2040022905:06:07"
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+      "loaded_module_paths": {
+        "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+        "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+      },
+      "native_payload_sha256": "38fd5defd8a3b1b7ff611a1d19a396181952c2909433cbb5c46cf560dcf2d2c5",
+      "observed_backend_version": "5.66",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "IgnoreGlobalCnf=1",
+        "PersonalCnf=",
+        "PersonalCnfPath=",
+        "ForceDate=2040-02-28-10:20:30",
+        "TZ=Etc/UTC",
+        "Language=English",
+        "DateFormat=US",
+        "Internal=0",
+        "FirstDay=1",
+        "Jan1Week1=0",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "TodayIsMidnight=1",
+        "EraseHolidays=1"
+      ],
+      "public_symbol": "Date::Manip::DM5::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          "05:06:07"
+        ],
+        "backend": "dm5",
+        "case_id": "RT-DM5-TEXT-SECOND",
+        "classification": "portable",
+        "form": "time text HH:MN:SS"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": "2040022905:06:07"
+        }
+      },
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+      ]
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM5-FIELDS-LOWER",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": "IgnoreGlobalCnf=1"
+      },
+      "configured_zone": "UTC",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "5.66",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": "2040022900:00:00"
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+      "loaded_module_paths": {
+        "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+        "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+      },
+      "native_payload_sha256": "f10b830f89f09dfb42e27f3723783dd982444c8618b6027a0043d9be64d1c20e",
+      "observed_backend_version": "5.66",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "IgnoreGlobalCnf=1",
+        "PersonalCnf=",
+        "PersonalCnfPath=",
+        "ForceDate=2040-02-28-10:20:30",
+        "TZ=Etc/UTC",
+        "Language=English",
+        "DateFormat=US",
+        "Internal=0",
+        "FirstDay=1",
+        "Jan1Week1=0",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "TodayIsMidnight=1",
+        "EraseHolidays=1"
+      ],
+      "public_symbol": "Date::Manip::DM5::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          0,
+          0,
+          0
+        ],
+        "backend": "dm5",
+        "case_id": "RT-DM5-FIELDS-LOWER",
+        "classification": "portable",
+        "form": "three fields at lower boundary"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": "2040022900:00:00"
+        }
+      },
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+      ]
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM5-FIELDS-UPPER",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": "IgnoreGlobalCnf=1"
+      },
+      "configured_zone": "UTC",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "5.66",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": "2040022923:59:59"
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+      "loaded_module_paths": {
+        "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+        "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+      },
+      "native_payload_sha256": "2504e530a8fcf707b35e7786cb0eff21762e81cc8f8e2e6b7a2b1c6e63ed6482",
+      "observed_backend_version": "5.66",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "IgnoreGlobalCnf=1",
+        "PersonalCnf=",
+        "PersonalCnfPath=",
+        "ForceDate=2040-02-28-10:20:30",
+        "TZ=Etc/UTC",
+        "Language=English",
+        "DateFormat=US",
+        "Internal=0",
+        "FirstDay=1",
+        "Jan1Week1=0",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "TodayIsMidnight=1",
+        "EraseHolidays=1"
+      ],
+      "public_symbol": "Date::Manip::DM5::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          23,
+          59,
+          59
+        ],
+        "backend": "dm5",
+        "case_id": "RT-DM5-FIELDS-UPPER",
+        "classification": "portable",
+        "form": "three fields at ordinary upper boundary"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": "2040022923:59:59"
+        }
+      },
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+      ]
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM5-FIELDS-24",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": "IgnoreGlobalCnf=1"
+      },
+      "configured_zone": "UTC",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "5.66",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": ""
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+      "loaded_module_paths": {
+        "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+        "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+      },
+      "native_payload_sha256": "dcfcb6b3a416181073b4ea3fc7433d57a0b370c6b7b5a3162c313e7751a0f0e8",
+      "observed_backend_version": "5.66",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "IgnoreGlobalCnf=1",
+        "PersonalCnf=",
+        "PersonalCnfPath=",
+        "ForceDate=2040-02-28-10:20:30",
+        "TZ=Etc/UTC",
+        "Language=English",
+        "DateFormat=US",
+        "Internal=0",
+        "FirstDay=1",
+        "Jan1Week1=0",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "TodayIsMidnight=1",
+        "EraseHolidays=1"
+      ],
+      "public_symbol": "Date::Manip::DM5::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          24,
+          0,
+          0
+        ],
+        "backend": "dm5",
+        "case_id": "RT-DM5-FIELDS-24",
+        "classification": "observed-compatibility",
+        "form": "three fields at 24:00:00"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": ""
+        }
+      },
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+      ]
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM5-FIELDS-BAD-MINUTE",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": "IgnoreGlobalCnf=1"
+      },
+      "configured_zone": "UTC",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "5.66",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": ""
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+      "loaded_module_paths": {
+        "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+        "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+      },
+      "native_payload_sha256": "5eb532428f020dd0fba9137f94b7e9667ac02049fdacc0cfdd021dc66224d19c",
+      "observed_backend_version": "5.66",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "IgnoreGlobalCnf=1",
+        "PersonalCnf=",
+        "PersonalCnfPath=",
+        "ForceDate=2040-02-28-10:20:30",
+        "TZ=Etc/UTC",
+        "Language=English",
+        "DateFormat=US",
+        "Internal=0",
+        "FirstDay=1",
+        "Jan1Week1=0",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "TodayIsMidnight=1",
+        "EraseHolidays=1"
+      ],
+      "public_symbol": "Date::Manip::DM5::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          7,
+          60,
+          0
+        ],
+        "backend": "dm5",
+        "case_id": "RT-DM5-FIELDS-BAD-MINUTE",
+        "classification": "portable",
+        "form": "three fields with minute 60"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": ""
+        }
+      },
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+      ]
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM5-FIELDS-NEGATIVE-HOUR",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": "IgnoreGlobalCnf=1"
+      },
+      "configured_zone": "UTC",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "5.66",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": ""
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+      "loaded_module_paths": {
+        "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+        "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+      },
+      "native_payload_sha256": "d5e42f6732f8b2e9eb9f367e927aeb5c4a6e317ad19a46c3ea62d1037207a7ae",
+      "observed_backend_version": "5.66",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "IgnoreGlobalCnf=1",
+        "PersonalCnf=",
+        "PersonalCnfPath=",
+        "ForceDate=2040-02-28-10:20:30",
+        "TZ=Etc/UTC",
+        "Language=English",
+        "DateFormat=US",
+        "Internal=0",
+        "FirstDay=1",
+        "Jan1Week1=0",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "TodayIsMidnight=1",
+        "EraseHolidays=1"
+      ],
+      "public_symbol": "Date::Manip::DM5::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          -1,
+          0,
+          0
+        ],
+        "backend": "dm5",
+        "case_id": "RT-DM5-FIELDS-NEGATIVE-HOUR",
+        "classification": "portable",
+        "form": "three fields with a negative hour"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": ""
+        }
+      },
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+      ]
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM5-BAD-DATE",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": "IgnoreGlobalCnf=1"
+      },
+      "configured_zone": "UTC",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "5.66",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": ""
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+      "loaded_module_paths": {
+        "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+        "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+      },
+      "native_payload_sha256": "f9788f12548f4546ff6ef94d88b57ebddcebd876abeac975ed7d3c619b84c5ab",
+      "observed_backend_version": "5.66",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "IgnoreGlobalCnf=1",
+        "PersonalCnf=",
+        "PersonalCnfPath=",
+        "ForceDate=2040-02-28-10:20:30",
+        "TZ=Etc/UTC",
+        "Language=English",
+        "DateFormat=US",
+        "Internal=0",
+        "FirstDay=1",
+        "Jan1Week1=0",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "TodayIsMidnight=1",
+        "EraseHolidays=1"
+      ],
+      "public_symbol": "Date::Manip::DM5::Date_SetTime",
+      "request": {
+        "arguments": [
+          "not a calendar date",
+          7,
+          8,
+          9
+        ],
+        "backend": "dm5",
+        "case_id": "RT-DM5-BAD-DATE",
+        "classification": "portable",
+        "form": "unparseable date with ordinary fields"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": ""
+        }
+      },
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+      ]
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM5-TEXT-MERIDIAN",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": "IgnoreGlobalCnf=1"
+      },
+      "configured_zone": "UTC",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "5.66",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": ""
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+      "loaded_module_paths": {
+        "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+        "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+      },
+      "native_payload_sha256": "85b899abbd30c466504673d8b2fc578508c92d77cba069f39a5fecaf179aad21",
+      "observed_backend_version": "5.66",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "IgnoreGlobalCnf=1",
+        "PersonalCnf=",
+        "PersonalCnfPath=",
+        "ForceDate=2040-02-28-10:20:30",
+        "TZ=Etc/UTC",
+        "Language=English",
+        "DateFormat=US",
+        "Internal=0",
+        "FirstDay=1",
+        "Jan1Week1=0",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "TodayIsMidnight=1",
+        "EraseHolidays=1"
+      ],
+      "public_symbol": "Date::Manip::DM5::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          "1:30 PM"
+        ],
+        "backend": "dm5",
+        "case_id": "RT-DM5-TEXT-MERIDIAN",
+        "classification": "observed-compatibility",
+        "form": "undocumented meridian time text"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": ""
+        }
+      },
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+      ]
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM5-TEXT-EXTRA-FIELD",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": "IgnoreGlobalCnf=1"
+      },
+      "configured_zone": "UTC",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "5.66",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": "2040022905:06:07"
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+      "loaded_module_paths": {
+        "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+        "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+      },
+      "native_payload_sha256": "f3e296bd4c0d20362e18b2313dec7557aca690e12663d0aa6d7a457ce1a6f285",
+      "observed_backend_version": "5.66",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "IgnoreGlobalCnf=1",
+        "PersonalCnf=",
+        "PersonalCnfPath=",
+        "ForceDate=2040-02-28-10:20:30",
+        "TZ=Etc/UTC",
+        "Language=English",
+        "DateFormat=US",
+        "Internal=0",
+        "FirstDay=1",
+        "Jan1Week1=0",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "TodayIsMidnight=1",
+        "EraseHolidays=1"
+      ],
+      "public_symbol": "Date::Manip::DM5::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          "05:06:07:08"
+        ],
+        "backend": "dm5",
+        "case_id": "RT-DM5-TEXT-EXTRA-FIELD",
+        "classification": "observed-compatibility",
+        "form": "undocumented four-component time text"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": "2040022905:06:07"
+        }
+      },
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+      ]
+    },
+    {
+      "call_stdout": "",
+      "case_id": "RT-DM5-FIELDS-TWO",
+      "configuration_return": {
+        "defined": true,
+        "type": "text",
+        "value": "IgnoreGlobalCnf=1"
+      },
+      "configured_zone": "UTC",
+      "exception": null,
+      "exception_stage": null,
+      "fixture_expected_backend_version": "5.66",
+      "fixture_expected_distribution_version": "7.00",
+      "list_context": {
+        "exception": null,
+        "items": [
+          {
+            "defined": true,
+            "type": "text",
+            "value": "2040022907:08:00"
+          }
+        ]
+      },
+      "loaded_binding_file": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+      "loaded_module_paths": {
+        "Date/Manip/DM5.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5.pm",
+        "Date/Manip/DM5abbrevs.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/DM5abbrevs.pm"
+      },
+      "native_payload_sha256": "b6b894813d0ef36f056d113f0fb3aaef46c00362c132c051a26bef0b93695d8a",
+      "observed_backend_version": "5.66",
+      "observed_distribution_version": "7.00",
+      "operation_id": "date.replace-time",
+      "process_runs": [
+        {
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ],
+      "profile_expected": [
+        "IgnoreGlobalCnf=1",
+        "PersonalCnf=",
+        "PersonalCnfPath=",
+        "ForceDate=2040-02-28-10:20:30",
+        "TZ=Etc/UTC",
+        "Language=English",
+        "DateFormat=US",
+        "Internal=0",
+        "FirstDay=1",
+        "Jan1Week1=0",
+        "WorkWeekBeg=1",
+        "WorkWeekEnd=5",
+        "WorkDayBeg=09:00",
+        "WorkDayEnd=17:00",
+        "WorkDay24Hr=0",
+        "TodayIsMidnight=1",
+        "EraseHolidays=1"
+      ],
+      "public_symbol": "Date::Manip::DM5::Date_SetTime",
+      "request": {
+        "arguments": [
+          "2040-02-29 16:05:09",
+          7,
+          8
+        ],
+        "backend": "dm5",
+        "case_id": "RT-DM5-FIELDS-TWO",
+        "classification": "observed-compatibility",
+        "form": "undocumented two numeric fields"
+      },
+      "runtime": {
+        "os_name": "linux",
+        "perl_archname": "x86_64-linux-gnu-thread-multi",
+        "perl_version": "v5.40.1"
+      },
+      "scalar_context": {
+        "exception": null,
+        "return": {
+          "defined": true,
+          "type": "text",
+          "value": "2040022907:08:00"
+        }
+      },
+      "warnings": [
+        "Date::Manip::DM5 is deprecated and will be removed from the Date::Manip package starting in version 7.00 at (eval 42) line 1.\n"
+      ]
+    }
+  ],
+  "purpose": "fresh-process public Date_SetTime reference observations; not an executable BDD result",
+  "reference": {
+    "archive_sha256": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+    "archive_url": "https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-7.00.tar.gz",
+    "distribution_version": "7.00",
+    "release": "Date-Manip-7.00"
+  },
+  "repetitions": 2,
+  "runtime": {
+    "os_name": "linux",
+    "perl_archname": "x86_64-linux-gnu-thread-multi",
+    "perl_version": "v5.40.1"
+  },
+  "schema_version": 1,
+  "sha256": {
+    "docs/automation/reference-profiles.json": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
+    "docs/research/replace-time-family/bindings.json": "703847b5432eeaf29a7abfe669db289ddded5666211272070af1aee85710de44",
+    "docs/research/replace-time-family/cases.json": "b561755bcf0ea0f9abc37a516260d005bbe58f35b8f2365d273ce77fb76f123b",
+    "docs/research/replace-time-family/portable-case-map.json": "615bdd137dcb2dd4d990a646222aa6c3c7e0fb51aa2709879dd252dcf7a75fe2",
+    "spec/drafts/replace-time/replace-time-portable.feature": "7362dfe77f46b32d4e3c855dda9a74e0b3f5d20070423a15c698e925b2b9f504",
+    "spec/drafts/replace-time/replace-time.feature": "18b5851ffcc39c4472cbfcebbdab17116814645b5bab287d72a3a6d3e7aca9ef",
+    "tools/probes/replace-time-family/probe.pl": "2012a68390d9ed79da3c22ad3cf793a71141910141f67f690d8c2d4ed9888b64",
+    "tools/probes/replace-time-family/review.py": "d0eabf44398ad1e73b8b3da75c017cd00baeca93a1eff123fe4fa82827839973",
+    "tools/probes/replace-time-family/run.py": "c68756cc8d13095950b71c7111ad66ac8dd3bf71fe98115c752a50110033a9b8"
+  },
+  "timeout_seconds": 15
+}
