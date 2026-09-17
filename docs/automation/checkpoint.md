@@ -36,9 +36,14 @@ Current independent worker outputs:
   `reference-profiles.json`. All three profiles repeated successfully; script
   hashes, leap-day facts, and weekday facts were independently checked.
 - Accepted monitor: `tools/automation/`, `tests/automation/`, watchdog instructions.
-- `api_reconciliation`: `tools/inventory/`, `docs/research/api/` (in progress).
+- Accepted entrypoint accounting: `tools/inventory/`, `docs/research/api/`.
+  Both enumerator checks pass (423 declarations, 153 OO receiver routes).
+  The auxiliary catalogue has visible outstanding term-extraction obligations.
 - `calendar_contracts`: `docs/research/contracts/calendar.json` and `calendar.md`
   (detailed calendar/epoch call-shape and partition research, in progress).
+- `value_contracts`: `docs/research/contracts/values.json` and `values.md`
+  (date/time parsing, rendering, navigation, configuration, and lifecycle
+  call-shape/partition research, in progress).
 
 Independent read-only audit found exact correspondence with all 423 declaration
 rows, mappings for 164 public declaration bindings and 96 generic operation IDs,
@@ -46,6 +51,12 @@ and runtime evidence for 153 concrete OO receiver/method combinations. Both expo
 lists (34 DM6, 33 DM5) are accounted for. This establishes entrypoint accounting,
 not complete behavioral coverage: signatures, option partitions, reference
 observations, and English features still need completion and review.
+
+Next unassigned research work: interval/arithmetic method shapes; recurrence
+method shapes and finite grammar/modifier inventories; zone/business/event shapes;
+date/delta directives and parsing productions; per-key configuration domains and
+language/token-class partitions. Each gets original research records with explicit
+unobserved partitions, then concrete probes and English scenarios after the gate.
 
 `reference-preflight.json` is historical partial evidence. Use
 `reference-profiles.json` for the reviewed setup. In particular, DM5 exposes

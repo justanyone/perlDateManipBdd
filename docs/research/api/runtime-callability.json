@@ -1,0 +1,6220 @@
+{
+   "callables" : [
+      {
+         "callable" : "__normalize_hms",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "__normalize_wd",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "__normalize_ym",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_calc_bdlength",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_calc_date_time_strings",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_calc_date_ymwd",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_calc_hms_hms",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_calc_workweek",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_check_delta_type",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_config_var_base",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_config_var_defaulttime",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_config_var_encoding",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_config_var_firstday",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_config_var_format_mmmyyyy",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_config_var_recurrange",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_config_var_week1ofyear",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_config_var_workday24hr",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_config_var_workdaybegend",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_config_var_workweekbeg",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_config_var_workweekend",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_critical_date",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_date_fields",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_delta_convert",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_delta_fields",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_encoding",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_hms_fields",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init_business_length",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init_cache",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init_config",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init_data",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init_events",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init_holidays",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init_language",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init_now",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_is_int",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_is_num",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_language",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_method",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_mod_add",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_normalize_approx",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_normalize_bus_approx",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_normalize_bus_est",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_normalize_bus_exact",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_normalize_est",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_normalize_exact",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_offset_fields",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_os",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_qe_quote",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rx_replace",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rx_simple",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rx_wordlist",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rx_wordlists",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_section",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_sign_fields",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_sign_source",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_sortByLength",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_split_delta",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_time_fields",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_week1_day1",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_week_of_year",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "calc_date_date",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "calc_date_days",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "calc_date_delta",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "calc_date_time",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "calc_time_time",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "check",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "check_time",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "cmp",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "day_of_week",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "day_of_year",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "days_in_month",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "days_in_year",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "days_since_1BC",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "join",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "leapyear",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "nth_day_of_week",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "secs_since_1970",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "split",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "week1_day1",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "week_of_year",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "weeks_in_year",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "DateCalc",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "DateManipVersion",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_Cmp",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_ConvTZ",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_DayOfWeek",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_DayOfYear",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_DaySuffix",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_DaysInMonth",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_DaysInYear",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_DaysSince1BC",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_GetNext",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_GetPrev",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_Init",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_IsHoliday",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_IsWorkDay",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_LeapYear",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_NearestWorkDay",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_NextWorkDay",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_NthDayOfYear",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_PrevWorkDay",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_SecsSince1970",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_SecsSince1970GMT",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_SetDateField",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_SetTime",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_TimeZone",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_WeekOfYear",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Delta_Format",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "EraseHolidays",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Events_List",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "ParseDate",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "ParseDateDelta",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "ParseDateString",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "ParseRecur",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "UnixDate",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "_Char_8Bit",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_CheckFilePath",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_CheckTime",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_CleanFile",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_DateCalc_DateDate",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_DateCalc_DateDelta",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_DateCalc_DeltaDelta",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_DateCheck",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Easter",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_FixYear",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_InitFile",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_InitHash",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_InitLists",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_InitStrings",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Init_Catalan",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Init_Danish",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Init_Dutch",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Init_English",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Init_French",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Init_German",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Init_Italian",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Init_Polish",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Init_Portuguese",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Init_Romanian",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Init_Russian",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Init_Spanish",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Init_Swedish",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Init_Turkish",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Join",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_NthWeekOfYear",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_ParseTime",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Recur",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_RecurSetTime",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Recur_WoM",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Regexp",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_SetConfigVariable",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_Split",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_TimeCheck",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Date_UpdateHolidays",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Delta_Normalize",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Delta_Split",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Events_Calc",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Events_ParseRaw",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_ExpandTilde",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_FixPath",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_FullFilePath",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_IsInt",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_ModuloAddition",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_Recur_Split",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_ReturnList",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_SearchPath",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_sortByLength",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "DateCalc",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "DateManipVersion",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_Cmp",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_ConvTZ",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_DayOfWeek",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_DayOfYear",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_DaySuffix",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_DaysInMonth",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_DaysInYear",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_DaysSince1BC",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_GetNext",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_GetPrev",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_Init",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_IsHoliday",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_IsWorkDay",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_LeapYear",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_NearestWorkDay",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_NextWorkDay",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_NthDayOfYear",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_PrevWorkDay",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_SecsSince1970",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_SecsSince1970GMT",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_SetDateField",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_SetTime",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_TimeZone",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Date_WeekOfYear",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Delta_Format",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "Events_List",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "ParseDate",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "ParseDateDelta",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "ParseDateFormat",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "ParseDateString",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "ParseRecur",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "UnixDate",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : true,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "_Delta_Format_old",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "__calc_date_date",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "__calc_date_delta",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "__calc_date_delta_approx",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "__calc_date_delta_exact",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "__calc_date_delta_inverse",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "__is_business_day",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "__nearest_business_day",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "__next_prev",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "__nextprev_business_day",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "__parse_check",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_calc_date_check_dst",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_calc_date_date",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_calc_date_delta",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_cmp_date",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_def_date",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_def_date_dow",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_def_date_doy",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_def_time",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_event_objs",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_events_year",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_format_regexp",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_holiday_objs",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_holidays",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init_args",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_iso8601_rx",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_other_rx",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_parse_check",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_parse_date",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_parse_date_common",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_parse_date_iso8601",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_parse_date_other",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_parse_date_truncated",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_parse_datetime_iso8601",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_parse_datetime_other",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_parse_delta",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_parse_dow",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_parse_holidays",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_parse_rule",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_parse_time",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_parse_tz",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_time",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "calc",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "cmp",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "complete",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "convert",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "holiday",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "input",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "is_business_day",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "is_date",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "list_events",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "list_holidays",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "nearest_business_day",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "next",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "next_business_day",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "parse",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "parse_date",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "parse_format",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "parse_time",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "prev",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "prev_business_day",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "printf",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "secs_since_1970_GMT",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "set",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "value",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "week_of_year",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "__type_max",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_calc_delta_delta",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init_args",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_printf_delta",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_printf_field",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_printf_field_val",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rx",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "calc",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "cmp",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "config",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "convert",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "input",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "is_delta",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "parse",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "printf",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "set",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "type",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "value",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "_clone",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init_args",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init_final",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "base",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "config",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "err",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "get_config",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "is_date",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "is_delta",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "is_recur",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "new",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "new_config",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "new_date",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "new_delta",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "new_recur",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "tz",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "version",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "__rtime_values",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_actual_base",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_apply_rtime_mods",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_date",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_easter",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_error",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_field_add_values",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_field_empty",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_frequency_values",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init_args",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init_dates",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_locate_n",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_nth_interval",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_parse_lang",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rtime_values",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rx",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "basedate",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "dates",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "end",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "frequency",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "is_recur",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "modifiers",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "next",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "nth",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "parse",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "prev",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "start",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "__zone",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_all_periods",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_check_abbrev_isdst",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_check_offset_abbrev_isdst",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_cmd",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_config_var_setdate",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_config_var_tz",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_convert",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_convert_args",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_get_curr_zone",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_get_zoneinfo_zone",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_init_final",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_lastrule",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_list_add",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_list_union",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_module",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_offmod",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_periods",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_set_curr_zone",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_sortByLength",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_windows_registry_val",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_zone",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_zoneinfo_file_name_to_zone",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_zoneinfo_file_slurp",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_zoneinfo_find_file",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_zrx",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "all_periods",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "convert",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "convert_from_gmt",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "convert_from_local",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "convert_to_gmt",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "convert_to_local",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "curr_zone",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "curr_zone_methods",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "date_period",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "define_abbrev",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "define_alias",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "define_offset",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "periods",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "tzcode",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "tzdata",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "zone",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "public_candidate" : true
+      },
+      {
+         "callable" : "_config",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ_Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_config_file",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ_Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_config_file_section",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ_Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_config_file_var",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ_Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_config_var",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ_Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_fix_year",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ_Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_now",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ_Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_sortByLength",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ_Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_update_now",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZ_Base",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_ruleInfo",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rule_At",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rule_DOM",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rule_From",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rule_In",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rule_Letters",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rule_Month",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rule_On",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rule_Save",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rule_Time",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rule_To",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_rule_Type",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_Alias",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_AliasKeys",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_CheckAliases",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_CheckData",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_CheckRules",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_CheckZones",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_DeleteAlias",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_DeleteRule",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_DeleteZone",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_ParseFile",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_ParseFiles",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_ParseLink",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_ParseRule",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_ParseRuleDate",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_ParseZone",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_Rule",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_RuleNames",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_Zone",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_ZoneKeys",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_tzd_ZoneLines",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_zoneInfo",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_zone_Format",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_zone_GMTOff",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_zone_Rule",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "_zone_Until",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : false
+      },
+      {
+         "callable" : "new",
+         "can_call" : true,
+         "direct_code" : true,
+         "exported_at_runtime" : false,
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "public_candidate" : true
+      }
+   ],
+   "facade_probes" : [
+      {
+         "exports" : [
+            "DateManipVersion",
+            "Date_Init",
+            "ParseDate",
+            "ParseDateString",
+            "ParseDateDelta",
+            "ParseDateFormat",
+            "ParseRecur",
+            "Date_IsHoliday",
+            "Date_IsWorkDay",
+            "Date_Cmp",
+            "DateCalc",
+            "UnixDate",
+            "Delta_Format",
+            "Date_GetPrev",
+            "Date_GetNext",
+            "Date_SetTime",
+            "Date_SetDateField",
+            "Events_List",
+            "Date_NextWorkDay",
+            "Date_PrevWorkDay",
+            "Date_NearestWorkDay",
+            "Date_DayOfWeek",
+            "Date_SecsSince1970",
+            "Date_SecsSince1970GMT",
+            "Date_DaysSince1BC",
+            "Date_DayOfYear",
+            "Date_NthDayOfYear",
+            "Date_DaysInMonth",
+            "Date_DaysInYear",
+            "Date_WeekOfYear",
+            "Date_LeapYear",
+            "Date_DaySuffix",
+            "Date_ConvTZ",
+            "Date_TimeZone"
+         ],
+         "isa" : [
+            "Date::Manip::DM6"
+         ],
+         "profile" : "dm6-default",
+         "unresolved" : []
+      },
+      {
+         "exports" : [
+            "DateManipVersion",
+            "Date_Init",
+            "ParseDateString",
+            "ParseDate",
+            "ParseRecur",
+            "Date_Cmp",
+            "DateCalc",
+            "ParseDateDelta",
+            "UnixDate",
+            "Delta_Format",
+            "Date_GetPrev",
+            "Date_GetNext",
+            "Date_SetTime",
+            "Date_SetDateField",
+            "Date_IsHoliday",
+            "Events_List",
+            "Date_DaysInMonth",
+            "Date_DayOfWeek",
+            "Date_SecsSince1970",
+            "Date_SecsSince1970GMT",
+            "Date_DaysSince1BC",
+            "Date_DayOfYear",
+            "Date_DaysInYear",
+            "Date_WeekOfYear",
+            "Date_LeapYear",
+            "Date_DaySuffix",
+            "Date_ConvTZ",
+            "Date_TimeZone",
+            "Date_IsWorkDay",
+            "Date_NextWorkDay",
+            "Date_PrevWorkDay",
+            "Date_NearestWorkDay",
+            "Date_NthDayOfYear"
+         ],
+         "isa" : [
+            "Date::Manip::DM5"
+         ],
+         "profile" : "dm5-selected",
+         "unresolved" : []
+      }
+   ],
+   "limits" : [
+      "can() confirms runtime resolution only; it does not establish argument shapes, behavior, or support status.",
+      "Undeclared direct symbols are retained for review because a symbol-table scan cannot itself distinguish imported support, generated code, and intentional public aliases."
+   ],
+   "method" : "Package loading plus direct symbol-table and can() checks; no API method was invoked.",
+   "modules" : [
+      {
+         "direct_code_symbols" : [
+            "__normalize_hms",
+            "__normalize_wd",
+            "__normalize_ym",
+            "_calc_bdlength",
+            "_calc_date_time_strings",
+            "_calc_date_ymwd",
+            "_calc_hms_hms",
+            "_calc_workweek",
+            "_check_delta_type",
+            "_config_var_base",
+            "_config_var_defaulttime",
+            "_config_var_encoding",
+            "_config_var_firstday",
+            "_config_var_format_mmmyyyy",
+            "_config_var_recurrange",
+            "_config_var_week1ofyear",
+            "_config_var_workday24hr",
+            "_config_var_workdaybegend",
+            "_config_var_workweekbeg",
+            "_config_var_workweekend",
+            "_critical_date",
+            "_date_fields",
+            "_delta_convert",
+            "_delta_fields",
+            "_encoding",
+            "_hms_fields",
+            "_init",
+            "_init_business_length",
+            "_init_cache",
+            "_init_config",
+            "_init_data",
+            "_init_events",
+            "_init_holidays",
+            "_init_language",
+            "_init_now",
+            "_is_int",
+            "_is_num",
+            "_language",
+            "_method",
+            "_mod_add",
+            "_normalize_approx",
+            "_normalize_bus_approx",
+            "_normalize_bus_est",
+            "_normalize_bus_exact",
+            "_normalize_est",
+            "_normalize_exact",
+            "_offset_fields",
+            "_os",
+            "_qe_quote",
+            "_rx_replace",
+            "_rx_simple",
+            "_rx_wordlist",
+            "_rx_wordlists",
+            "_section",
+            "_sign_fields",
+            "_sign_source",
+            "_sortByLength",
+            "_split_delta",
+            "_time_fields",
+            "_utf8_off",
+            "_utf8_on",
+            "_week1_day1",
+            "_week_of_year",
+            "calc_date_date",
+            "calc_date_days",
+            "calc_date_delta",
+            "calc_date_time",
+            "calc_time_time",
+            "carp",
+            "check",
+            "check_time",
+            "cmp",
+            "confess",
+            "croak",
+            "day_of_week",
+            "day_of_year",
+            "days_in_month",
+            "days_in_year",
+            "days_since_1BC",
+            "decode",
+            "encode_utf8",
+            "find_encoding",
+            "from_to",
+            "is_utf8",
+            "join",
+            "leapyear",
+            "nth_day_of_week",
+            "secs_since_1970",
+            "split",
+            "week1_day1",
+            "week_of_year",
+            "weeks_in_year"
+         ],
+         "error" : null,
+         "exports" : [],
+         "isa" : [
+            "Date::Manip::Obj",
+            "Date::Manip::TZ_Base"
+         ],
+         "loaded" : true,
+         "module" : "Date::Manip::Base",
+         "undeclared_direct_code_symbols" : [
+            "_utf8_off",
+            "_utf8_on",
+            "carp",
+            "confess",
+            "croak",
+            "decode",
+            "encode_utf8",
+            "find_encoding",
+            "from_to",
+            "is_utf8"
+         ]
+      },
+      {
+         "direct_code_symbols" : [
+            "DateCalc",
+            "DateManipVersion",
+            "Date_Cmp",
+            "Date_ConvTZ",
+            "Date_DayOfWeek",
+            "Date_DayOfYear",
+            "Date_DaySuffix",
+            "Date_DaysInMonth",
+            "Date_DaysInYear",
+            "Date_DaysSince1BC",
+            "Date_GetNext",
+            "Date_GetPrev",
+            "Date_Init",
+            "Date_IsHoliday",
+            "Date_IsWorkDay",
+            "Date_LeapYear",
+            "Date_NearestWorkDay",
+            "Date_NextWorkDay",
+            "Date_NthDayOfYear",
+            "Date_PrevWorkDay",
+            "Date_SecsSince1970",
+            "Date_SecsSince1970GMT",
+            "Date_SetDateField",
+            "Date_SetTime",
+            "Date_TimeZone",
+            "Date_WeekOfYear",
+            "Delta_Format",
+            "EraseHolidays",
+            "Events_List",
+            "O_ACCMODE",
+            "O_ALIAS",
+            "O_APPEND",
+            "O_ASYNC",
+            "O_BINARY",
+            "O_CREAT",
+            "O_DEFER",
+            "O_DIRECT",
+            "O_DIRECTORY",
+            "O_DSYNC",
+            "O_EXCL",
+            "O_EXLOCK",
+            "O_LARGEFILE",
+            "O_NDELAY",
+            "O_NOCTTY",
+            "O_NOFOLLOW",
+            "O_NOINHERIT",
+            "O_NONBLOCK",
+            "O_RANDOM",
+            "O_RAW",
+            "O_RDONLY",
+            "O_RDWR",
+            "O_RSRC",
+            "O_RSYNC",
+            "O_SEQUENTIAL",
+            "O_SHLOCK",
+            "O_SYNC",
+            "O_TEMPORARY",
+            "O_TEXT",
+            "O_TRUNC",
+            "O_WRONLY",
+            "ParseDate",
+            "ParseDateDelta",
+            "ParseDateString",
+            "ParseRecur",
+            "SEEK_CUR",
+            "SEEK_END",
+            "SEEK_SET",
+            "UnixDate",
+            "_Char_8Bit",
+            "_CheckFilePath",
+            "_CheckTime",
+            "_CleanFile",
+            "_DateCalc_DateDate",
+            "_DateCalc_DateDelta",
+            "_DateCalc_DeltaDelta",
+            "_Date_DateCheck",
+            "_Date_Easter",
+            "_Date_FixYear",
+            "_Date_InitFile",
+            "_Date_InitHash",
+            "_Date_InitLists",
+            "_Date_InitStrings",
+            "_Date_Init_Catalan",
+            "_Date_Init_Danish",
+            "_Date_Init_Dutch",
+            "_Date_Init_English",
+            "_Date_Init_French",
+            "_Date_Init_German",
+            "_Date_Init_Italian",
+            "_Date_Init_Polish",
+            "_Date_Init_Portuguese",
+            "_Date_Init_Romanian",
+            "_Date_Init_Russian",
+            "_Date_Init_Spanish",
+            "_Date_Init_Swedish",
+            "_Date_Init_Turkish",
+            "_Date_Join",
+            "_Date_NthWeekOfYear",
+            "_Date_ParseTime",
+            "_Date_Recur",
+            "_Date_RecurSetTime",
+            "_Date_Recur_WoM",
+            "_Date_Regexp",
+            "_Date_SetConfigVariable",
+            "_Date_Split",
+            "_Date_TimeCheck",
+            "_Date_UpdateHolidays",
+            "_Delta_Normalize",
+            "_Delta_Split",
+            "_Events_Calc",
+            "_Events_ParseRaw",
+            "_ExpandTilde",
+            "_FixPath",
+            "_FullFilePath",
+            "_IsInt",
+            "_ModuloAddition",
+            "_Recur_Split",
+            "_ReturnList",
+            "_SearchPath",
+            "_sortByLength",
+            "carp",
+            "confess",
+            "croak"
+         ],
+         "error" : null,
+         "exports" : [
+            "DateManipVersion",
+            "Date_Init",
+            "ParseDateString",
+            "ParseDate",
+            "ParseRecur",
+            "Date_Cmp",
+            "DateCalc",
+            "ParseDateDelta",
+            "UnixDate",
+            "Delta_Format",
+            "Date_GetPrev",
+            "Date_GetNext",
+            "Date_SetTime",
+            "Date_SetDateField",
+            "Date_IsHoliday",
+            "Events_List",
+            "Date_DaysInMonth",
+            "Date_DayOfWeek",
+            "Date_SecsSince1970",
+            "Date_SecsSince1970GMT",
+            "Date_DaysSince1BC",
+            "Date_DayOfYear",
+            "Date_DaysInYear",
+            "Date_WeekOfYear",
+            "Date_LeapYear",
+            "Date_DaySuffix",
+            "Date_ConvTZ",
+            "Date_TimeZone",
+            "Date_IsWorkDay",
+            "Date_NextWorkDay",
+            "Date_PrevWorkDay",
+            "Date_NearestWorkDay",
+            "Date_NthDayOfYear"
+         ],
+         "isa" : [
+            "Exporter"
+         ],
+         "loaded" : true,
+         "module" : "Date::Manip::DM5",
+         "undeclared_direct_code_symbols" : [
+            "O_ACCMODE",
+            "O_ALIAS",
+            "O_APPEND",
+            "O_ASYNC",
+            "O_BINARY",
+            "O_CREAT",
+            "O_DEFER",
+            "O_DIRECT",
+            "O_DIRECTORY",
+            "O_DSYNC",
+            "O_EXCL",
+            "O_EXLOCK",
+            "O_LARGEFILE",
+            "O_NDELAY",
+            "O_NOCTTY",
+            "O_NOFOLLOW",
+            "O_NOINHERIT",
+            "O_NONBLOCK",
+            "O_RANDOM",
+            "O_RAW",
+            "O_RDONLY",
+            "O_RDWR",
+            "O_RSRC",
+            "O_RSYNC",
+            "O_SEQUENTIAL",
+            "O_SHLOCK",
+            "O_SYNC",
+            "O_TEMPORARY",
+            "O_TEXT",
+            "O_TRUNC",
+            "O_WRONLY",
+            "SEEK_CUR",
+            "SEEK_END",
+            "SEEK_SET",
+            "carp",
+            "confess",
+            "croak"
+         ]
+      },
+      {
+         "direct_code_symbols" : [
+            "DateCalc",
+            "DateManipVersion",
+            "Date_Cmp",
+            "Date_ConvTZ",
+            "Date_DayOfWeek",
+            "Date_DayOfYear",
+            "Date_DaySuffix",
+            "Date_DaysInMonth",
+            "Date_DaysInYear",
+            "Date_DaysSince1BC",
+            "Date_GetNext",
+            "Date_GetPrev",
+            "Date_Init",
+            "Date_IsHoliday",
+            "Date_IsWorkDay",
+            "Date_LeapYear",
+            "Date_NearestWorkDay",
+            "Date_NextWorkDay",
+            "Date_NthDayOfYear",
+            "Date_PrevWorkDay",
+            "Date_SecsSince1970",
+            "Date_SecsSince1970GMT",
+            "Date_SetDateField",
+            "Date_SetTime",
+            "Date_TimeZone",
+            "Date_WeekOfYear",
+            "Delta_Format",
+            "Events_List",
+            "ParseDate",
+            "ParseDateDelta",
+            "ParseDateFormat",
+            "ParseDateString",
+            "ParseRecur",
+            "UnixDate",
+            "_Delta_Format_old",
+            "carp",
+            "confess",
+            "croak"
+         ],
+         "error" : null,
+         "exports" : [
+            "DateManipVersion",
+            "Date_Init",
+            "ParseDate",
+            "ParseDateString",
+            "ParseDateDelta",
+            "ParseDateFormat",
+            "ParseRecur",
+            "Date_IsHoliday",
+            "Date_IsWorkDay",
+            "Date_Cmp",
+            "DateCalc",
+            "UnixDate",
+            "Delta_Format",
+            "Date_GetPrev",
+            "Date_GetNext",
+            "Date_SetTime",
+            "Date_SetDateField",
+            "Events_List",
+            "Date_NextWorkDay",
+            "Date_PrevWorkDay",
+            "Date_NearestWorkDay",
+            "Date_DayOfWeek",
+            "Date_SecsSince1970",
+            "Date_SecsSince1970GMT",
+            "Date_DaysSince1BC",
+            "Date_DayOfYear",
+            "Date_NthDayOfYear",
+            "Date_DaysInMonth",
+            "Date_DaysInYear",
+            "Date_WeekOfYear",
+            "Date_LeapYear",
+            "Date_DaySuffix",
+            "Date_ConvTZ",
+            "Date_TimeZone"
+         ],
+         "isa" : [
+            "Exporter"
+         ],
+         "loaded" : true,
+         "module" : "Date::Manip::DM6",
+         "undeclared_direct_code_symbols" : [
+            "carp",
+            "confess",
+            "croak"
+         ]
+      },
+      {
+         "direct_code_symbols" : [
+            "O_ACCMODE",
+            "O_ALIAS",
+            "O_APPEND",
+            "O_ASYNC",
+            "O_BINARY",
+            "O_CREAT",
+            "O_DEFER",
+            "O_DIRECT",
+            "O_DIRECTORY",
+            "O_DSYNC",
+            "O_EXCL",
+            "O_EXLOCK",
+            "O_LARGEFILE",
+            "O_NDELAY",
+            "O_NOCTTY",
+            "O_NOFOLLOW",
+            "O_NOINHERIT",
+            "O_NONBLOCK",
+            "O_RANDOM",
+            "O_RAW",
+            "O_RDONLY",
+            "O_RDWR",
+            "O_RSRC",
+            "O_RSYNC",
+            "O_SEQUENTIAL",
+            "O_SHLOCK",
+            "O_SYNC",
+            "O_TEMPORARY",
+            "O_TEXT",
+            "O_TRUNC",
+            "O_WRONLY",
+            "SEEK_CUR",
+            "SEEK_END",
+            "SEEK_SET",
+            "__calc_date_date",
+            "__calc_date_delta",
+            "__calc_date_delta_approx",
+            "__calc_date_delta_exact",
+            "__calc_date_delta_inverse",
+            "__is_business_day",
+            "__nearest_business_day",
+            "__next_prev",
+            "__nextprev_business_day",
+            "__parse_check",
+            "_calc_date_check_dst",
+            "_calc_date_date",
+            "_calc_date_delta",
+            "_cmp_date",
+            "_def_date",
+            "_def_date_dow",
+            "_def_date_doy",
+            "_def_time",
+            "_event_objs",
+            "_events_year",
+            "_format_regexp",
+            "_holiday_objs",
+            "_holidays",
+            "_init",
+            "_init_args",
+            "_iso8601_rx",
+            "_other_rx",
+            "_parse_check",
+            "_parse_date",
+            "_parse_date_common",
+            "_parse_date_iso8601",
+            "_parse_date_other",
+            "_parse_date_truncated",
+            "_parse_datetime_iso8601",
+            "_parse_datetime_other",
+            "_parse_delta",
+            "_parse_dow",
+            "_parse_holidays",
+            "_parse_rule",
+            "_parse_time",
+            "_parse_tz",
+            "_time",
+            "calc",
+            "carp",
+            "cmp",
+            "complete",
+            "confess",
+            "convert",
+            "croak",
+            "dclone",
+            "holiday",
+            "input",
+            "is_business_day",
+            "is_date",
+            "list_events",
+            "list_holidays",
+            "nearest_business_day",
+            "next",
+            "next_business_day",
+            "parse",
+            "parse_date",
+            "parse_format",
+            "parse_time",
+            "prev",
+            "prev_business_day",
+            "printf",
+            "secs_since_1970_GMT",
+            "set",
+            "value",
+            "week_of_year"
+         ],
+         "error" : null,
+         "exports" : [],
+         "isa" : [
+            "Date::Manip::Obj"
+         ],
+         "loaded" : true,
+         "module" : "Date::Manip::Date",
+         "undeclared_direct_code_symbols" : [
+            "O_ACCMODE",
+            "O_ALIAS",
+            "O_APPEND",
+            "O_ASYNC",
+            "O_BINARY",
+            "O_CREAT",
+            "O_DEFER",
+            "O_DIRECT",
+            "O_DIRECTORY",
+            "O_DSYNC",
+            "O_EXCL",
+            "O_EXLOCK",
+            "O_LARGEFILE",
+            "O_NDELAY",
+            "O_NOCTTY",
+            "O_NOFOLLOW",
+            "O_NOINHERIT",
+            "O_NONBLOCK",
+            "O_RANDOM",
+            "O_RAW",
+            "O_RDONLY",
+            "O_RDWR",
+            "O_RSRC",
+            "O_RSYNC",
+            "O_SEQUENTIAL",
+            "O_SHLOCK",
+            "O_SYNC",
+            "O_TEMPORARY",
+            "O_TEXT",
+            "O_TRUNC",
+            "O_WRONLY",
+            "SEEK_CUR",
+            "SEEK_END",
+            "SEEK_SET",
+            "carp",
+            "confess",
+            "croak",
+            "dclone"
+         ]
+      },
+      {
+         "direct_code_symbols" : [
+            "O_ACCMODE",
+            "O_ALIAS",
+            "O_APPEND",
+            "O_ASYNC",
+            "O_BINARY",
+            "O_CREAT",
+            "O_DEFER",
+            "O_DIRECT",
+            "O_DIRECTORY",
+            "O_DSYNC",
+            "O_EXCL",
+            "O_EXLOCK",
+            "O_LARGEFILE",
+            "O_NDELAY",
+            "O_NOCTTY",
+            "O_NOFOLLOW",
+            "O_NOINHERIT",
+            "O_NONBLOCK",
+            "O_RANDOM",
+            "O_RAW",
+            "O_RDONLY",
+            "O_RDWR",
+            "O_RSRC",
+            "O_RSYNC",
+            "O_SEQUENTIAL",
+            "O_SHLOCK",
+            "O_SYNC",
+            "O_TEMPORARY",
+            "O_TEXT",
+            "O_TRUNC",
+            "O_WRONLY",
+            "SEEK_CUR",
+            "SEEK_END",
+            "SEEK_SET",
+            "__type_max",
+            "_calc_delta_delta",
+            "_init",
+            "_init_args",
+            "_printf_delta",
+            "_printf_field",
+            "_printf_field_val",
+            "_rx",
+            "calc",
+            "carp",
+            "cmp",
+            "confess",
+            "config",
+            "convert",
+            "croak",
+            "input",
+            "is_delta",
+            "parse",
+            "printf",
+            "set",
+            "type",
+            "value"
+         ],
+         "error" : null,
+         "exports" : [],
+         "isa" : [
+            "Date::Manip::Obj"
+         ],
+         "loaded" : true,
+         "module" : "Date::Manip::Delta",
+         "undeclared_direct_code_symbols" : [
+            "O_ACCMODE",
+            "O_ALIAS",
+            "O_APPEND",
+            "O_ASYNC",
+            "O_BINARY",
+            "O_CREAT",
+            "O_DEFER",
+            "O_DIRECT",
+            "O_DIRECTORY",
+            "O_DSYNC",
+            "O_EXCL",
+            "O_EXLOCK",
+            "O_LARGEFILE",
+            "O_NDELAY",
+            "O_NOCTTY",
+            "O_NOFOLLOW",
+            "O_NOINHERIT",
+            "O_NONBLOCK",
+            "O_RANDOM",
+            "O_RAW",
+            "O_RDONLY",
+            "O_RDWR",
+            "O_RSRC",
+            "O_RSYNC",
+            "O_SEQUENTIAL",
+            "O_SHLOCK",
+            "O_SYNC",
+            "O_TEMPORARY",
+            "O_TEXT",
+            "O_TRUNC",
+            "O_WRONLY",
+            "SEEK_CUR",
+            "SEEK_END",
+            "SEEK_SET",
+            "carp",
+            "confess",
+            "croak"
+         ]
+      },
+      {
+         "direct_code_symbols" : [
+            "O_ACCMODE",
+            "O_ALIAS",
+            "O_APPEND",
+            "O_ASYNC",
+            "O_BINARY",
+            "O_CREAT",
+            "O_DEFER",
+            "O_DIRECT",
+            "O_DIRECTORY",
+            "O_DSYNC",
+            "O_EXCL",
+            "O_EXLOCK",
+            "O_LARGEFILE",
+            "O_NDELAY",
+            "O_NOCTTY",
+            "O_NOFOLLOW",
+            "O_NOINHERIT",
+            "O_NONBLOCK",
+            "O_RANDOM",
+            "O_RAW",
+            "O_RDONLY",
+            "O_RDWR",
+            "O_RSRC",
+            "O_RSYNC",
+            "O_SEQUENTIAL",
+            "O_SHLOCK",
+            "O_SYNC",
+            "O_TEMPORARY",
+            "O_TEXT",
+            "O_TRUNC",
+            "O_WRONLY",
+            "SEEK_CUR",
+            "SEEK_END",
+            "SEEK_SET",
+            "_clone",
+            "_init_args",
+            "_init_final",
+            "base",
+            "carp",
+            "confess",
+            "config",
+            "croak",
+            "dclone",
+            "err",
+            "get_config",
+            "is_date",
+            "is_delta",
+            "is_recur",
+            "new",
+            "new_config",
+            "new_date",
+            "new_delta",
+            "new_recur",
+            "tz",
+            "version"
+         ],
+         "error" : null,
+         "exports" : [],
+         "isa" : [],
+         "loaded" : true,
+         "module" : "Date::Manip::Obj",
+         "undeclared_direct_code_symbols" : [
+            "O_ACCMODE",
+            "O_ALIAS",
+            "O_APPEND",
+            "O_ASYNC",
+            "O_BINARY",
+            "O_CREAT",
+            "O_DEFER",
+            "O_DIRECT",
+            "O_DIRECTORY",
+            "O_DSYNC",
+            "O_EXCL",
+            "O_EXLOCK",
+            "O_LARGEFILE",
+            "O_NDELAY",
+            "O_NOCTTY",
+            "O_NOFOLLOW",
+            "O_NOINHERIT",
+            "O_NONBLOCK",
+            "O_RANDOM",
+            "O_RAW",
+            "O_RDONLY",
+            "O_RDWR",
+            "O_RSRC",
+            "O_RSYNC",
+            "O_SEQUENTIAL",
+            "O_SHLOCK",
+            "O_SYNC",
+            "O_TEMPORARY",
+            "O_TEXT",
+            "O_TRUNC",
+            "O_WRONLY",
+            "SEEK_CUR",
+            "SEEK_END",
+            "SEEK_SET",
+            "carp",
+            "confess",
+            "croak",
+            "dclone"
+         ]
+      },
+      {
+         "direct_code_symbols" : [
+            "O_ACCMODE",
+            "O_ALIAS",
+            "O_APPEND",
+            "O_ASYNC",
+            "O_BINARY",
+            "O_CREAT",
+            "O_DEFER",
+            "O_DIRECT",
+            "O_DIRECTORY",
+            "O_DSYNC",
+            "O_EXCL",
+            "O_EXLOCK",
+            "O_LARGEFILE",
+            "O_NDELAY",
+            "O_NOCTTY",
+            "O_NOFOLLOW",
+            "O_NOINHERIT",
+            "O_NONBLOCK",
+            "O_RANDOM",
+            "O_RAW",
+            "O_RDONLY",
+            "O_RDWR",
+            "O_RSRC",
+            "O_RSYNC",
+            "O_SEQUENTIAL",
+            "O_SHLOCK",
+            "O_SYNC",
+            "O_TEMPORARY",
+            "O_TEXT",
+            "O_TRUNC",
+            "O_WRONLY",
+            "SEEK_CUR",
+            "SEEK_END",
+            "SEEK_SET",
+            "__rtime_values",
+            "_actual_base",
+            "_apply_rtime_mods",
+            "_date",
+            "_easter",
+            "_error",
+            "_field_add_values",
+            "_field_empty",
+            "_frequency_values",
+            "_init",
+            "_init_args",
+            "_init_dates",
+            "_locate_n",
+            "_nth_interval",
+            "_parse_lang",
+            "_rtime_values",
+            "_rx",
+            "basedate",
+            "dates",
+            "end",
+            "frequency",
+            "is_recur",
+            "modifiers",
+            "next",
+            "nth",
+            "parse",
+            "prev",
+            "start"
+         ],
+         "error" : null,
+         "exports" : [],
+         "isa" : [
+            "Date::Manip::Obj"
+         ],
+         "loaded" : true,
+         "module" : "Date::Manip::Recur",
+         "undeclared_direct_code_symbols" : [
+            "O_ACCMODE",
+            "O_ALIAS",
+            "O_APPEND",
+            "O_ASYNC",
+            "O_BINARY",
+            "O_CREAT",
+            "O_DEFER",
+            "O_DIRECT",
+            "O_DIRECTORY",
+            "O_DSYNC",
+            "O_EXCL",
+            "O_EXLOCK",
+            "O_LARGEFILE",
+            "O_NDELAY",
+            "O_NOCTTY",
+            "O_NOFOLLOW",
+            "O_NOINHERIT",
+            "O_NONBLOCK",
+            "O_RANDOM",
+            "O_RAW",
+            "O_RDONLY",
+            "O_RDWR",
+            "O_RSRC",
+            "O_RSYNC",
+            "O_SEQUENTIAL",
+            "O_SHLOCK",
+            "O_SYNC",
+            "O_TEMPORARY",
+            "O_TEXT",
+            "O_TRUNC",
+            "O_WRONLY",
+            "SEEK_CUR",
+            "SEEK_END",
+            "SEEK_SET"
+         ]
+      },
+      {
+         "direct_code_symbols" : [
+            "Dumper",
+            "O_ACCMODE",
+            "O_ALIAS",
+            "O_APPEND",
+            "O_ASYNC",
+            "O_BINARY",
+            "O_CREAT",
+            "O_DEFER",
+            "O_DIRECT",
+            "O_DIRECTORY",
+            "O_DSYNC",
+            "O_EXCL",
+            "O_EXLOCK",
+            "O_LARGEFILE",
+            "O_NDELAY",
+            "O_NOCTTY",
+            "O_NOFOLLOW",
+            "O_NOINHERIT",
+            "O_NONBLOCK",
+            "O_RANDOM",
+            "O_RAW",
+            "O_RDONLY",
+            "O_RDWR",
+            "O_RSRC",
+            "O_RSYNC",
+            "O_SEQUENTIAL",
+            "O_SHLOCK",
+            "O_SYNC",
+            "O_TEMPORARY",
+            "O_TEXT",
+            "O_TRUNC",
+            "O_WRONLY",
+            "SEEK_CUR",
+            "SEEK_END",
+            "SEEK_SET",
+            "__zone",
+            "_all_periods",
+            "_check_abbrev_isdst",
+            "_check_offset_abbrev_isdst",
+            "_cmd",
+            "_config_var_setdate",
+            "_config_var_tz",
+            "_convert",
+            "_convert_args",
+            "_get_curr_zone",
+            "_get_zoneinfo_zone",
+            "_init",
+            "_init_final",
+            "_lastrule",
+            "_list_add",
+            "_list_union",
+            "_module",
+            "_offmod",
+            "_periods",
+            "_set_curr_zone",
+            "_sortByLength",
+            "_windows_registry_val",
+            "_zone",
+            "_zoneinfo_file_name_to_zone",
+            "_zoneinfo_file_slurp",
+            "_zoneinfo_find_file",
+            "_zrx",
+            "all_periods",
+            "carp",
+            "confess",
+            "convert",
+            "convert_from_gmt",
+            "convert_from_local",
+            "convert_to_gmt",
+            "convert_to_local",
+            "croak",
+            "curr_zone",
+            "curr_zone_methods",
+            "date_period",
+            "define_abbrev",
+            "define_alias",
+            "define_offset",
+            "periods",
+            "tzcode",
+            "tzdata",
+            "zone"
+         ],
+         "error" : null,
+         "exports" : [],
+         "isa" : [
+            "Date::Manip::Obj",
+            "Date::Manip::TZ_Base"
+         ],
+         "loaded" : true,
+         "module" : "Date::Manip::TZ",
+         "undeclared_direct_code_symbols" : [
+            "Dumper",
+            "O_ACCMODE",
+            "O_ALIAS",
+            "O_APPEND",
+            "O_ASYNC",
+            "O_BINARY",
+            "O_CREAT",
+            "O_DEFER",
+            "O_DIRECT",
+            "O_DIRECTORY",
+            "O_DSYNC",
+            "O_EXCL",
+            "O_EXLOCK",
+            "O_LARGEFILE",
+            "O_NDELAY",
+            "O_NOCTTY",
+            "O_NOFOLLOW",
+            "O_NOINHERIT",
+            "O_NONBLOCK",
+            "O_RANDOM",
+            "O_RAW",
+            "O_RDONLY",
+            "O_RDWR",
+            "O_RSRC",
+            "O_RSYNC",
+            "O_SEQUENTIAL",
+            "O_SHLOCK",
+            "O_SYNC",
+            "O_TEMPORARY",
+            "O_TEXT",
+            "O_TRUNC",
+            "O_WRONLY",
+            "SEEK_CUR",
+            "SEEK_END",
+            "SEEK_SET",
+            "carp",
+            "confess",
+            "croak"
+         ]
+      },
+      {
+         "direct_code_symbols" : [
+            "O_ACCMODE",
+            "O_ALIAS",
+            "O_APPEND",
+            "O_ASYNC",
+            "O_BINARY",
+            "O_CREAT",
+            "O_DEFER",
+            "O_DIRECT",
+            "O_DIRECTORY",
+            "O_DSYNC",
+            "O_EXCL",
+            "O_EXLOCK",
+            "O_LARGEFILE",
+            "O_NDELAY",
+            "O_NOCTTY",
+            "O_NOFOLLOW",
+            "O_NOINHERIT",
+            "O_NONBLOCK",
+            "O_RANDOM",
+            "O_RAW",
+            "O_RDONLY",
+            "O_RDWR",
+            "O_RSRC",
+            "O_RSYNC",
+            "O_SEQUENTIAL",
+            "O_SHLOCK",
+            "O_SYNC",
+            "O_TEMPORARY",
+            "O_TEXT",
+            "O_TRUNC",
+            "O_WRONLY",
+            "SEEK_CUR",
+            "SEEK_END",
+            "SEEK_SET",
+            "_config",
+            "_config_file",
+            "_config_file_section",
+            "_config_file_var",
+            "_config_var",
+            "_fix_year",
+            "_now",
+            "_sortByLength",
+            "_update_now",
+            "carp",
+            "confess",
+            "croak"
+         ],
+         "error" : null,
+         "exports" : [],
+         "isa" : [],
+         "loaded" : true,
+         "module" : "Date::Manip::TZ_Base",
+         "undeclared_direct_code_symbols" : [
+            "O_ACCMODE",
+            "O_ALIAS",
+            "O_APPEND",
+            "O_ASYNC",
+            "O_BINARY",
+            "O_CREAT",
+            "O_DEFER",
+            "O_DIRECT",
+            "O_DIRECTORY",
+            "O_DSYNC",
+            "O_EXCL",
+            "O_EXLOCK",
+            "O_LARGEFILE",
+            "O_NDELAY",
+            "O_NOCTTY",
+            "O_NOFOLLOW",
+            "O_NOINHERIT",
+            "O_NONBLOCK",
+            "O_RANDOM",
+            "O_RAW",
+            "O_RDONLY",
+            "O_RDWR",
+            "O_RSRC",
+            "O_RSYNC",
+            "O_SEQUENTIAL",
+            "O_SHLOCK",
+            "O_SYNC",
+            "O_TEMPORARY",
+            "O_TEXT",
+            "O_TRUNC",
+            "O_WRONLY",
+            "SEEK_CUR",
+            "SEEK_END",
+            "SEEK_SET",
+            "carp",
+            "confess",
+            "croak"
+         ]
+      },
+      {
+         "direct_code_symbols" : [
+            "O_ACCMODE",
+            "O_ALIAS",
+            "O_APPEND",
+            "O_ASYNC",
+            "O_BINARY",
+            "O_CREAT",
+            "O_DEFER",
+            "O_DIRECT",
+            "O_DIRECTORY",
+            "O_DSYNC",
+            "O_EXCL",
+            "O_EXLOCK",
+            "O_LARGEFILE",
+            "O_NDELAY",
+            "O_NOCTTY",
+            "O_NOFOLLOW",
+            "O_NOINHERIT",
+            "O_NONBLOCK",
+            "O_RANDOM",
+            "O_RAW",
+            "O_RDONLY",
+            "O_RDWR",
+            "O_RSRC",
+            "O_RSYNC",
+            "O_SEQUENTIAL",
+            "O_SHLOCK",
+            "O_SYNC",
+            "O_TEMPORARY",
+            "O_TEXT",
+            "O_TRUNC",
+            "O_WRONLY",
+            "SEEK_CUR",
+            "SEEK_END",
+            "SEEK_SET",
+            "_ruleInfo",
+            "_rule_At",
+            "_rule_DOM",
+            "_rule_From",
+            "_rule_In",
+            "_rule_Letters",
+            "_rule_Month",
+            "_rule_On",
+            "_rule_Save",
+            "_rule_Time",
+            "_rule_To",
+            "_rule_Type",
+            "_tzd_Alias",
+            "_tzd_AliasKeys",
+            "_tzd_CheckAliases",
+            "_tzd_CheckData",
+            "_tzd_CheckRules",
+            "_tzd_CheckZones",
+            "_tzd_DeleteAlias",
+            "_tzd_DeleteRule",
+            "_tzd_DeleteZone",
+            "_tzd_ParseFile",
+            "_tzd_ParseFiles",
+            "_tzd_ParseLink",
+            "_tzd_ParseRule",
+            "_tzd_ParseRuleDate",
+            "_tzd_ParseZone",
+            "_tzd_Rule",
+            "_tzd_RuleNames",
+            "_tzd_Zone",
+            "_tzd_ZoneKeys",
+            "_tzd_ZoneLines",
+            "_zoneInfo",
+            "_zone_Format",
+            "_zone_GMTOff",
+            "_zone_Rule",
+            "_zone_Until",
+            "carp",
+            "confess",
+            "croak",
+            "new"
+         ],
+         "error" : null,
+         "exports" : [],
+         "isa" : [],
+         "loaded" : true,
+         "module" : "Date::Manip::TZdata",
+         "undeclared_direct_code_symbols" : [
+            "O_ACCMODE",
+            "O_ALIAS",
+            "O_APPEND",
+            "O_ASYNC",
+            "O_BINARY",
+            "O_CREAT",
+            "O_DEFER",
+            "O_DIRECT",
+            "O_DIRECTORY",
+            "O_DSYNC",
+            "O_EXCL",
+            "O_EXLOCK",
+            "O_LARGEFILE",
+            "O_NDELAY",
+            "O_NOCTTY",
+            "O_NOFOLLOW",
+            "O_NOINHERIT",
+            "O_NONBLOCK",
+            "O_RANDOM",
+            "O_RAW",
+            "O_RDONLY",
+            "O_RDWR",
+            "O_RSRC",
+            "O_RSYNC",
+            "O_SEQUENTIAL",
+            "O_SHLOCK",
+            "O_SYNC",
+            "O_TEMPORARY",
+            "O_TEXT",
+            "O_TRUNC",
+            "O_WRONLY",
+            "SEEK_CUR",
+            "SEEK_END",
+            "SEEK_SET",
+            "carp",
+            "confess",
+            "croak"
+         ]
+      }
+   ],
+   "receiver_matrix" : [
+      {
+         "callable" : "base",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "config",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "err",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "get_config",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "is_date",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "is_delta",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "is_recur",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "new",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "new_config",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "new_date",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "new_delta",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "new_recur",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "tz",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "version",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "calc_date_date",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "calc_date_days",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "calc_date_delta",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "calc_date_time",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "calc_time_time",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "check",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "check_time",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "cmp",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "day_of_week",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "day_of_year",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "days_in_month",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "days_in_year",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "days_since_1BC",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "join",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "leapyear",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "nth_day_of_week",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "secs_since_1970",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "split",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "week1_day1",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "week_of_year",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "weeks_in_year",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Base",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Base"
+      },
+      {
+         "callable" : "base",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "config",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "err",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "get_config",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "is_date",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "is_delta",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "is_recur",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "new",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "new_config",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "new_date",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "new_delta",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "new_recur",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "tz",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "version",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "calc",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "cmp",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "complete",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "convert",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "holiday",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "input",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "is_business_day",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "is_date",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "list_events",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "list_holidays",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "nearest_business_day",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "next",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "next_business_day",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "parse",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "parse_date",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "parse_format",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "parse_time",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "prev",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "prev_business_day",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "printf",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "secs_since_1970_GMT",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "set",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "value",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "week_of_year",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Date",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Date"
+      },
+      {
+         "callable" : "base",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "config",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "err",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "get_config",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "is_date",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "is_delta",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "is_recur",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "new",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "new_config",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "new_date",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "new_delta",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "new_recur",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "tz",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "version",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "calc",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Delta",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "cmp",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Delta",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "config",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Delta",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "convert",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Delta",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "input",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Delta",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "is_delta",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Delta",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "parse",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Delta",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "printf",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Delta",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "set",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Delta",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "type",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Delta",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "value",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Delta",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Delta"
+      },
+      {
+         "callable" : "base",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "config",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "err",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "get_config",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "is_date",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "is_delta",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "is_recur",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "new",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "new_config",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "new_date",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "new_delta",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "new_recur",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "tz",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "version",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "basedate",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Recur",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "dates",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Recur",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "end",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Recur",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "frequency",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Recur",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "is_recur",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Recur",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "modifiers",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Recur",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "next",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Recur",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "nth",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Recur",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "parse",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Recur",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "prev",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Recur",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "start",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Recur",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::Recur"
+      },
+      {
+         "callable" : "base",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "config",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "err",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "get_config",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "is_date",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "is_delta",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "is_recur",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "new",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "new_config",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "new_date",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "new_delta",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "new_recur",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "tz",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "version",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::Obj",
+         "direct_on_receiver" : false,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "all_periods",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::TZ",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "convert",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::TZ",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "convert_from_gmt",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::TZ",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "convert_from_local",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::TZ",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "convert_to_gmt",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::TZ",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "convert_to_local",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::TZ",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "curr_zone",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::TZ",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "curr_zone_methods",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::TZ",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "date_period",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::TZ",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "define_abbrev",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::TZ",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "define_alias",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::TZ",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "define_offset",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::TZ",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "periods",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::TZ",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "tzcode",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::TZ",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "tzdata",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::TZ",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::TZ"
+      },
+      {
+         "callable" : "zone",
+         "can_call" : true,
+         "declared_in" : "Date::Manip::TZ",
+         "direct_on_receiver" : true,
+         "receiver" : "Date::Manip::TZ"
+      }
+   ],
+   "reference" : {
+      "distribution" : "Date-Manip",
+      "source_root" : "/tmp/Date-Manip-7.00",
+      "version" : "7.00"
+   },
+   "schema_version" : 1
+}

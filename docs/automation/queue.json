@@ -57,8 +57,14 @@
         "Every inventory row has a visible disposition; each public operation has a portable mapping or a stated exclusion.",
         "No completeness claim is derived solely from scenario counts."
       ],
-      "owner": "api_reconciliation + calendar_contracts",
-      "progress": "423 declaration identities, 164 public declarations, 96 operation IDs and 153 OO receiver bindings independently audited. Remaining signature and auxiliary partition catalogues are being enumerated."
+      "owner": "coordinator + calendar_contracts + value_contracts",
+      "progress": "423 declaration identities, 164 public declarations, 96 operation IDs and 153 OO receiver bindings independently audited. Remaining signature and auxiliary partition catalogues are being enumerated.",
+      "evidence": [
+        "docs/research/api/README.md",
+        "docs/research/api/contract-map.json",
+        "docs/research/api/runtime-callability.json",
+        "docs/research/api/auxiliary-obligations.json"
+      ]
     },
     {
       "id": "spec-interpretation-formatting",
