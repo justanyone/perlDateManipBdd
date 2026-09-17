@@ -10,7 +10,9 @@ private implementation from analysis or measurement. Inspect private helpers for
 public behavior cases and measure library statement/branch execution through
 public calls. Do not restore direct private tests. Earlier statements below that
 exclude all private execution measurement are superseded. Near-total coverage is
-the aim; proposed99%/95% numbers have not been accepted as hard thresholds.
+the aim; the user has now explicitly accepted at least99% statement and95% branch
+coverage targets. Review every uncovered statement and branch and document
+evidenced unreachable or out-of-scope exclusions.
 
 ## Current state
 
@@ -368,3 +370,22 @@ partial-parsing-family paths; inspect its live handle before editing. The
 partial_parsing worker continues NEW partial-parsing-edges, while
 language_completion continues object-lifecycle-family. No private coverage work
 is authorized or required.
+
+## Current review owners after coverage clarification
+
+Object lifecycle20-case batch returned; root corrected full-catalogue mappings,
+provenance and concrete feature wording. Independent read-only review belongs to
+partial_parsing (report object-lifecycle-review.md). Its52-case
+partial-parsing-edges batch is stable and awaits root review. pattern_repair still
+owns original partial-parsing repairs. language_completion now owns NEW
+tools/coverage and docs/research/public-call-coverage for instrumentation trial
+through public calls, including private implementation measurement. No numeric
+coverage gate is claimed accepted and no private test entrypoint is authorized.
+
+## Accepted numeric coverage targets
+
+The user explicitly accepted the proposed specification: public API test calls,
+at least99% statement and95% branch coverage including private implementation,
+and review of every uncovered statement/branch with documented exclusions.
+Earlier notes saying the numbers were unconfirmed are superseded. No current
+coverage result is claimed. The instrumentation worker has been notified.

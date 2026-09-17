@@ -8,7 +8,14 @@
   "coordination": {
     "queue_update_owner": "coordinator",
     "rule": "Only the coordinator changes this queue or the checkpoint. Contributors report evidence and proposed status changes to the coordinator.",
-    "completion_rule": "Every public API, supported usage type and identifiable observable edge case needs executable evidence. Inspect private helpers and measure library statement/branch coverage through public calls; portable features require no private structure."
+    "completion_rule": "Every public API, supported usage type and identifiable observable edge case needs executable evidence. Inspect private helpers and measure library statement/branch coverage through public calls; portable features require no private structure.",
+    "coverage_targets": {
+      "statement_percent_minimum": 99,
+      "branch_percent_minimum": 95,
+      "scope": "Pinned Date-Manip library including private code reached through public calls",
+      "entrypoints": "Public APIs only",
+      "uncovered_review": "Every uncovered statement and branch; evidence for unreachable or out-of-scope exclusions; explicit denominators"
+    }
   },
   "baseline": {
     "id": "workspace-setup",
@@ -227,7 +234,7 @@
         "Every public API and supported usage type has executable behavioral evidence. Known untested public cases prevent completion. Private code is measured only through public calls; internal generation tools remain excluded.",
         "Coverage denominators retain skipped, unsupported, and disputed entries.",
         "The handoff excludes upstream source/tests/data, translated algorithms, and Perl binding code.",
-        "Inspect public and private library logic; report statement and branch coverage including private code reached through public calls. Review uncovered paths and document unreachability or exclusions. Numeric99%/95% targets remain proposals; no direct private-function tests."
+        "Audit the library coverage denominator and public cases needed for the accepted targets: at least99% statement and95% branch coverage including private code. Review observed gaps and document evidenced unreachable/out-of-scope paths. Final harness coverage proof is required in perl-validation; no direct private calls or portable private-structure requirements."
       ]
     },
     {
@@ -300,7 +307,8 @@
       "acceptance": [
         "Relevant tests and the full suite pass, with any skips or unsupported variants explicitly reported.",
         "Results distinguish executable BDD verification from planning/documentation checks.",
-        "The final portable handoff remains limited to approved original English materials and excludes Perl binding artifacts."
+        "The final portable handoff remains limited to approved original English materials and excludes Perl binding artifacts.",
+        "Verify at least99% statement and95% branch coverage across the pinned library including private code through public calls, and review/document every uncovered statement and branch and all exclusions."
       ]
     }
   ],

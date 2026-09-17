@@ -20,8 +20,11 @@ and branch execution reached through public calls, including private implementat
 code, and review uncovered paths. Internal generation tools remain outside the
 public library scope. Public API usage variants and identifiable edge cases remain
 required. Coverage percentages and scenario counts do not prove behavioral completeness.
-Numeric coverage thresholds proposed in conversation are not accepted hard gates;
-report actual coverage and unresolved gaps without claiming an unverified percentage.
+The user accepted targets of at least 99% statement and 95% branch coverage of
+the pinned library, including private code reached through public calls. Review
+every uncovered statement and branch; document evidenced unreachable or out-of-scope
+code explicitly. Report actual coverage and exclusions without silently trimming
+the denominator. Do not claim completion from percentages alone.
 
 ## Licensing and attribution
 

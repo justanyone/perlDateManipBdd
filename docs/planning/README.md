@@ -176,7 +176,8 @@ compatibility tests stay in a separate binding profile.
 Report capability, partition, profile, directive, language, configuration and state
 coverage separately. Every public operation and supported usage type needs direct
 behavioral coverage. Include private library code reached through public calls in
-statement and branch coverage. Review uncovered paths for missing public cases or
+statement and branch coverage, targeting at least99% statements and95% branches
+as explicitly accepted by the user. Review every uncovered statement and branch for missing public cases or
 evidenced unreachability; keep exclusions explicit. Internal generation tools are
 outside the library denominator. Portable features never require private structure.
 Public skips, unsupported variants and disputed cases remain visible.

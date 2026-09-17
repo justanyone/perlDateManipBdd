@@ -36,9 +36,12 @@ Completion requires all of the following evidence:
   private code reached through public calls, and review every uncovered path for
   missing public tests or evidenced unreachability. Record exclusions explicitly;
   never improve the reported percentage by silently removing uncovered code.
-  Near-total coverage is the aim. The suggested 99% statement/95% branch targets
-  remain proposals, not user-confirmed numeric gates. High coverage alone does
-  not prove that the assertions test all relevant behavior.
+  The user accepted targets of **at least 99% statement coverage and 95% branch
+  coverage** of the pinned library, including private code exercised through public
+  calls. Review every uncovered statement and branch and document genuinely
+  unreachable or out-of-scope code with evidence. Report measured totals and every
+  exclusion explicitly. High coverage alone does not prove that the assertions
+  test all relevant behavior.
 - Suspected bugs have minimal characterization tests, recorded actual results,
   and explicit semantic dispositions. They must not disappear from coverage or
   become silently mandated behavior in the portable default profile.
