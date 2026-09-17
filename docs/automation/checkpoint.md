@@ -539,3 +539,17 @@ Date-set108case batch returned and awaits independent/root review. partial_parsi
 now independently reviews67zone-transition examples; pattern_repair independently
 reviews408offset loading evidence; coverage_setup repairs input-history findings.
 Keep returned batch paths separate from active repair ownership.
+
+## Completeness-query batch
+
+Root added11 receiver setups with132 public completeness queries. Explicit
+English ordered requests preserve omitted/empty/zero/absent/unsupported selectors,
+exact booleans, errors and36bindingwarnings. Runs repeat in isolated processes;
+reviewer checks every outcome and provenance. Bothfeatures parse under the pinned
+runner. Partial mutation/default/configuration interactions remain open.
+
+Date-set repair owned by partial_parsing after finding implicit fixture inputs and
+Perl warnings in portable scenarios. Independent zone review returned concrete
+binding/error-boundary/provenance issues; root must assign repair before integration.
+pattern_repair owns fixed-offset four-finding repair. coverage_setup returned
+17case input-history repair; root review/integration next. No completeness claimed.

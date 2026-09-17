@@ -1,0 +1,219 @@
+{
+  "primary_operation": "date.complete-missing-fields",
+  "primary_binding": {
+    "module": "Date::Manip::Date",
+    "method": "complete",
+    "source": "Date/Manip/Date.pm:3990",
+    "documentation": "Date/Manip/Date.pod:76",
+    "return_context": "scalar",
+    "documented_selectors": [
+      "omitted",
+      "m",
+      "d",
+      "h",
+      "mn",
+      "s"
+    ],
+    "compatibility_selectors": [
+      "empty text",
+      0,
+      null,
+      "y",
+      "M",
+      "bogus"
+    ]
+  },
+  "supporting_public_calls": {
+    "Date::Manip::Date": [
+      "new",
+      "config",
+      "parse",
+      "version",
+      "tz",
+      "err"
+    ],
+    "Date::Manip::TZ": [
+      "zone",
+      "tzdata",
+      "tzcode"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "COMP-FULL",
+      "operations": [
+        "date.complete-missing-fields",
+        "date.create",
+        "date.parse-text",
+        "config.apply-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "error.read-state"
+      ],
+      "feature": "spec/drafts/completeness/supplied-fields.feature",
+      "queries": 12
+    },
+    {
+      "case_id": "COMP-MINUTE",
+      "operations": [
+        "date.complete-missing-fields",
+        "date.create",
+        "date.parse-text",
+        "config.apply-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "error.read-state"
+      ],
+      "feature": "spec/drafts/completeness/supplied-fields.feature",
+      "queries": 12
+    },
+    {
+      "case_id": "COMP-DATE",
+      "operations": [
+        "date.complete-missing-fields",
+        "date.create",
+        "date.parse-text",
+        "config.apply-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "error.read-state"
+      ],
+      "feature": "spec/drafts/completeness/supplied-fields.feature",
+      "queries": 12
+    },
+    {
+      "case_id": "COMP-YEAR-MONTH",
+      "operations": [
+        "date.complete-missing-fields",
+        "date.create",
+        "date.parse-text",
+        "config.apply-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "error.read-state"
+      ],
+      "feature": "spec/drafts/completeness/supplied-fields.feature",
+      "queries": 12
+    },
+    {
+      "case_id": "COMP-YEAR",
+      "operations": [
+        "date.complete-missing-fields",
+        "date.create",
+        "date.parse-text",
+        "config.apply-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "error.read-state"
+      ],
+      "feature": "spec/drafts/completeness/supplied-fields.feature",
+      "queries": 12
+    },
+    {
+      "case_id": "COMP-MONTH-DAY",
+      "operations": [
+        "date.complete-missing-fields",
+        "date.create",
+        "date.parse-text",
+        "config.apply-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "error.read-state"
+      ],
+      "feature": "spec/drafts/completeness/supplied-fields.feature",
+      "queries": 12
+    },
+    {
+      "case_id": "COMP-TIME",
+      "operations": [
+        "date.complete-missing-fields",
+        "date.create",
+        "date.parse-text",
+        "config.apply-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "error.read-state"
+      ],
+      "feature": "spec/drafts/completeness/supplied-fields.feature",
+      "queries": 12
+    },
+    {
+      "case_id": "COMP-RELATIVE",
+      "operations": [
+        "date.complete-missing-fields",
+        "date.create",
+        "date.parse-text",
+        "config.apply-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "error.read-state"
+      ],
+      "feature": "spec/drafts/completeness/supplied-fields.feature",
+      "queries": 12
+    },
+    {
+      "case_id": "COMP-UNSET",
+      "operations": [
+        "date.complete-missing-fields",
+        "date.create",
+        "config.apply-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "error.read-state"
+      ],
+      "feature": "spec/drafts/completeness/supplied-fields.feature",
+      "queries": 12
+    },
+    {
+      "case_id": "COMP-INVALID",
+      "operations": [
+        "date.complete-missing-fields",
+        "date.create",
+        "date.parse-text",
+        "config.apply-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "error.read-state"
+      ],
+      "feature": "spec/drafts/completeness/supplied-fields.feature",
+      "queries": 12
+    },
+    {
+      "case_id": "COMP-EMPTY",
+      "operations": [
+        "date.complete-missing-fields",
+        "date.create",
+        "date.parse-text",
+        "config.apply-settings",
+        "context.zone-service",
+        "meta.reference-version",
+        "meta.zone-data-version",
+        "meta.zone-rule-version",
+        "error.read-state"
+      ],
+      "feature": "spec/drafts/completeness/supplied-fields.feature",
+      "queries": 12
+    }
+  ],
+  "binding_warning_feature": "spec/drafts/completeness/binding-warnings.feature"
+}

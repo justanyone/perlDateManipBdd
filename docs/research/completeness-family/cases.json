@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "configuration": [
+    "Defaults=1",
+    "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+    "Language=English",
+    "Encoding=ASCII",
+    "DateFormat=US",
+    "DefaultTime=midnight"
+  ],
+  "selectors": [
+    {
+      "name": "all",
+      "arguments": []
+    },
+    {
+      "name": "month",
+      "arguments": [
+        "m"
+      ]
+    },
+    {
+      "name": "day",
+      "arguments": [
+        "d"
+      ]
+    },
+    {
+      "name": "hour",
+      "arguments": [
+        "h"
+      ]
+    },
+    {
+      "name": "minute",
+      "arguments": [
+        "mn"
+      ]
+    },
+    {
+      "name": "second",
+      "arguments": [
+        "s"
+      ]
+    },
+    {
+      "name": "empty",
+      "arguments": [
+        ""
+      ]
+    },
+    {
+      "name": "zero",
+      "arguments": [
+        0
+      ]
+    },
+    {
+      "name": "absent",
+      "arguments": [
+        null
+      ]
+    },
+    {
+      "name": "year-unsupported",
+      "arguments": [
+        "y"
+      ]
+    },
+    {
+      "name": "uppercase",
+      "arguments": [
+        "M"
+      ]
+    },
+    {
+      "name": "unknown",
+      "arguments": [
+        "bogus"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "COMP-FULL",
+      "parse_text": "2040-02-29 16:05:09",
+      "parse_requested": true
+    },
+    {
+      "case_id": "COMP-MINUTE",
+      "parse_text": "2040-02-29 16:05",
+      "parse_requested": true
+    },
+    {
+      "case_id": "COMP-DATE",
+      "parse_text": "2040-02-29",
+      "parse_requested": true
+    },
+    {
+      "case_id": "COMP-YEAR-MONTH",
+      "parse_text": "2040-02",
+      "parse_requested": true
+    },
+    {
+      "case_id": "COMP-YEAR",
+      "parse_text": "2040",
+      "parse_requested": true
+    },
+    {
+      "case_id": "COMP-MONTH-DAY",
+      "parse_text": "February 29",
+      "parse_requested": true
+    },
+    {
+      "case_id": "COMP-TIME",
+      "parse_text": "16:05:09",
+      "parse_requested": true
+    },
+    {
+      "case_id": "COMP-RELATIVE",
+      "parse_text": "tomorrow",
+      "parse_requested": true
+    },
+    {
+      "case_id": "COMP-UNSET",
+      "parse_text": null,
+      "parse_requested": false
+    },
+    {
+      "case_id": "COMP-INVALID",
+      "parse_text": "not a date",
+      "parse_requested": true
+    },
+    {
+      "case_id": "COMP-EMPTY",
+      "parse_text": "",
+      "parse_requested": true
+    }
+  ]
+}

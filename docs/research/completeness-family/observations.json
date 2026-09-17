@@ -1,0 +1,2346 @@
+{
+  "repetitions": 2,
+  "timeout_seconds": 15,
+  "workers": 4,
+  "fresh_cwd": true,
+  "environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8",
+    "TZ": "Etc/UTC",
+    "PERL5LIB": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5"
+  },
+  "sha256": {
+    "docs/research/completeness-family/cases.json": "9690cdb01aa833d6d8d1ce0581b51a78f03509be3aac0b37162bef14513aaaa4",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm": "5fe1f12a7b59c57baf71c86e266b4ea06851eac0ec203a3507d019bcadbea97c",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm": "c181a8d908efbc2c18cc0a59e10e90628161dc3acf811c9c0292985280953d85",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm": "f977a78616d58d288d7d9f862876677a7bd1edcb8a1658ecc9bae5c7a68bbf00",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm": "4ab18ff883b65c3bb0d8b0a875d929117480409b4491e20f55811d5a13a70a94",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm": "5052b2c740b190d228ef4a2e87cf248610f90519d75db2fdc723ecaa9ac679d8",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm": "5ece620f80b039048d09b72fcb30f0e09ce8bb1151a0720db80ebdd2f9d7686f",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm": "ba6d88da06f00d4f2053c1186f63341efa2e2231bcb93a4f01ba5db0c698eb4e",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm": "bc28ca7fc2b3cc57793cd5d3d5f956a48c8438b9738dc045fd9ee7f51d61f469",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm": "ae888d89540e0a35dca67a8e1f8f3f420cda95c84aaf8a6d29844e792c262362",
+    "local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm": "363adb17d51c28fea9ca66b9716d01ccc193b88c36be24da85323d351f53f6e6",
+    "tools/probes/completeness-family/probe.pl": "461f8335b3b82369fb9bc67e0d8b0ea77c787cadd943d83f68adf80d4946b5e4",
+    "tools/probes/completeness-family/run.py": "ee54226a8e476ca2bf9401e503929335512878dd3d0e0d58f15f810c86d71f1e"
+  },
+  "rows": [
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "arch": "x86_64-linux-gnu-thread-multi",
+        "case": {
+          "case_id": "COMP-FULL",
+          "parse_requested": true,
+          "parse_text": "2040-02-29 16:05:09"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "DefaultTime=midnight"
+        ],
+        "distribution": "7.00",
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "configuration_error": "",
+          "configuration_return": null,
+          "error_after_setup": "",
+          "parse_status": 0,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00",
+          "zone": "Etc/UTC"
+        },
+        "os": "linux",
+        "perl": "v5.40.1",
+        "queries": [
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [],
+              "name": "all"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "m"
+              ],
+              "name": "month"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "d"
+              ],
+              "name": "day"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "h"
+              ],
+              "name": "hour"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "mn"
+              ],
+              "name": "minute"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "s"
+              ],
+              "name": "second"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                ""
+              ],
+              "name": "empty"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                0
+              ],
+              "name": "zero"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                null
+              ],
+              "name": "absent"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "y"
+              ],
+              "name": "year-unsupported"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "M"
+              ],
+              "name": "uppercase"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "bogus"
+              ],
+              "name": "unknown"
+            },
+            "value": 0,
+            "warnings": []
+          }
+        ],
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "arch": "x86_64-linux-gnu-thread-multi",
+        "case": {
+          "case_id": "COMP-MINUTE",
+          "parse_requested": true,
+          "parse_text": "2040-02-29 16:05"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "DefaultTime=midnight"
+        ],
+        "distribution": "7.00",
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "configuration_error": "",
+          "configuration_return": null,
+          "error_after_setup": "",
+          "parse_status": 0,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00",
+          "zone": "Etc/UTC"
+        },
+        "os": "linux",
+        "perl": "v5.40.1",
+        "queries": [
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [],
+              "name": "all"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "m"
+              ],
+              "name": "month"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "d"
+              ],
+              "name": "day"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "h"
+              ],
+              "name": "hour"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "mn"
+              ],
+              "name": "minute"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "s"
+              ],
+              "name": "second"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                ""
+              ],
+              "name": "empty"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                0
+              ],
+              "name": "zero"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                null
+              ],
+              "name": "absent"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "y"
+              ],
+              "name": "year-unsupported"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "M"
+              ],
+              "name": "uppercase"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "bogus"
+              ],
+              "name": "unknown"
+            },
+            "value": 0,
+            "warnings": []
+          }
+        ],
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "arch": "x86_64-linux-gnu-thread-multi",
+        "case": {
+          "case_id": "COMP-DATE",
+          "parse_requested": true,
+          "parse_text": "2040-02-29"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "DefaultTime=midnight"
+        ],
+        "distribution": "7.00",
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "configuration_error": "",
+          "configuration_return": null,
+          "error_after_setup": "",
+          "parse_status": 0,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00",
+          "zone": "Etc/UTC"
+        },
+        "os": "linux",
+        "perl": "v5.40.1",
+        "queries": [
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [],
+              "name": "all"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "m"
+              ],
+              "name": "month"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "d"
+              ],
+              "name": "day"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "h"
+              ],
+              "name": "hour"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "mn"
+              ],
+              "name": "minute"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "s"
+              ],
+              "name": "second"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                ""
+              ],
+              "name": "empty"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                0
+              ],
+              "name": "zero"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                null
+              ],
+              "name": "absent"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "y"
+              ],
+              "name": "year-unsupported"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "M"
+              ],
+              "name": "uppercase"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "bogus"
+              ],
+              "name": "unknown"
+            },
+            "value": 0,
+            "warnings": []
+          }
+        ],
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "arch": "x86_64-linux-gnu-thread-multi",
+        "case": {
+          "case_id": "COMP-YEAR-MONTH",
+          "parse_requested": true,
+          "parse_text": "2040-02"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "DefaultTime=midnight"
+        ],
+        "distribution": "7.00",
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "configuration_error": "",
+          "configuration_return": null,
+          "error_after_setup": "",
+          "parse_status": 0,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00",
+          "zone": "Etc/UTC"
+        },
+        "os": "linux",
+        "perl": "v5.40.1",
+        "queries": [
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [],
+              "name": "all"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "m"
+              ],
+              "name": "month"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "d"
+              ],
+              "name": "day"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "h"
+              ],
+              "name": "hour"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "mn"
+              ],
+              "name": "minute"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "s"
+              ],
+              "name": "second"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                ""
+              ],
+              "name": "empty"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                0
+              ],
+              "name": "zero"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                null
+              ],
+              "name": "absent"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "y"
+              ],
+              "name": "year-unsupported"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "M"
+              ],
+              "name": "uppercase"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "bogus"
+              ],
+              "name": "unknown"
+            },
+            "value": 0,
+            "warnings": []
+          }
+        ],
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "arch": "x86_64-linux-gnu-thread-multi",
+        "case": {
+          "case_id": "COMP-YEAR",
+          "parse_requested": true,
+          "parse_text": "2040"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "DefaultTime=midnight"
+        ],
+        "distribution": "7.00",
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "configuration_error": "",
+          "configuration_return": null,
+          "error_after_setup": "",
+          "parse_status": 0,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00",
+          "zone": "Etc/UTC"
+        },
+        "os": "linux",
+        "perl": "v5.40.1",
+        "queries": [
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [],
+              "name": "all"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "m"
+              ],
+              "name": "month"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "d"
+              ],
+              "name": "day"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "h"
+              ],
+              "name": "hour"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "mn"
+              ],
+              "name": "minute"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "s"
+              ],
+              "name": "second"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                ""
+              ],
+              "name": "empty"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                0
+              ],
+              "name": "zero"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                null
+              ],
+              "name": "absent"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "y"
+              ],
+              "name": "year-unsupported"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "M"
+              ],
+              "name": "uppercase"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "bogus"
+              ],
+              "name": "unknown"
+            },
+            "value": 0,
+            "warnings": []
+          }
+        ],
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "arch": "x86_64-linux-gnu-thread-multi",
+        "case": {
+          "case_id": "COMP-MONTH-DAY",
+          "parse_requested": true,
+          "parse_text": "February 29"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "DefaultTime=midnight"
+        ],
+        "distribution": "7.00",
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "configuration_error": "",
+          "configuration_return": null,
+          "error_after_setup": "",
+          "parse_status": 0,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00",
+          "zone": "Etc/UTC"
+        },
+        "os": "linux",
+        "perl": "v5.40.1",
+        "queries": [
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [],
+              "name": "all"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "m"
+              ],
+              "name": "month"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "d"
+              ],
+              "name": "day"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "h"
+              ],
+              "name": "hour"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "mn"
+              ],
+              "name": "minute"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "s"
+              ],
+              "name": "second"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                ""
+              ],
+              "name": "empty"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                0
+              ],
+              "name": "zero"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                null
+              ],
+              "name": "absent"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "y"
+              ],
+              "name": "year-unsupported"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "M"
+              ],
+              "name": "uppercase"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "bogus"
+              ],
+              "name": "unknown"
+            },
+            "value": 0,
+            "warnings": []
+          }
+        ],
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "arch": "x86_64-linux-gnu-thread-multi",
+        "case": {
+          "case_id": "COMP-TIME",
+          "parse_requested": true,
+          "parse_text": "16:05:09"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "DefaultTime=midnight"
+        ],
+        "distribution": "7.00",
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "configuration_error": "",
+          "configuration_return": null,
+          "error_after_setup": "",
+          "parse_status": 0,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00",
+          "zone": "Etc/UTC"
+        },
+        "os": "linux",
+        "perl": "v5.40.1",
+        "queries": [
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [],
+              "name": "all"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "m"
+              ],
+              "name": "month"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "d"
+              ],
+              "name": "day"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "h"
+              ],
+              "name": "hour"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "mn"
+              ],
+              "name": "minute"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "s"
+              ],
+              "name": "second"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                ""
+              ],
+              "name": "empty"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                0
+              ],
+              "name": "zero"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                null
+              ],
+              "name": "absent"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "y"
+              ],
+              "name": "year-unsupported"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "M"
+              ],
+              "name": "uppercase"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "bogus"
+              ],
+              "name": "unknown"
+            },
+            "value": 0,
+            "warnings": []
+          }
+        ],
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "arch": "x86_64-linux-gnu-thread-multi",
+        "case": {
+          "case_id": "COMP-RELATIVE",
+          "parse_requested": true,
+          "parse_text": "tomorrow"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "DefaultTime=midnight"
+        ],
+        "distribution": "7.00",
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "configuration_error": "",
+          "configuration_return": null,
+          "error_after_setup": "",
+          "parse_status": 0,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00",
+          "zone": "Etc/UTC"
+        },
+        "os": "linux",
+        "perl": "v5.40.1",
+        "queries": [
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [],
+              "name": "all"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "m"
+              ],
+              "name": "month"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "d"
+              ],
+              "name": "day"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "h"
+              ],
+              "name": "hour"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "mn"
+              ],
+              "name": "minute"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "s"
+              ],
+              "name": "second"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                ""
+              ],
+              "name": "empty"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                0
+              ],
+              "name": "zero"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                null
+              ],
+              "name": "absent"
+            },
+            "value": 1,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "y"
+              ],
+              "name": "year-unsupported"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "M"
+              ],
+              "name": "uppercase"
+            },
+            "value": 0,
+            "warnings": []
+          },
+          {
+            "defined": 1,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "bogus"
+              ],
+              "name": "unknown"
+            },
+            "value": 0,
+            "warnings": []
+          }
+        ],
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "arch": "x86_64-linux-gnu-thread-multi",
+        "case": {
+          "case_id": "COMP-UNSET",
+          "parse_requested": false,
+          "parse_text": null
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "DefaultTime=midnight"
+        ],
+        "distribution": "7.00",
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "configuration_error": "",
+          "configuration_return": null,
+          "error_after_setup": "",
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00",
+          "zone": "Etc/UTC"
+        },
+        "os": "linux",
+        "perl": "v5.40.1",
+        "queries": [
+          {
+            "defined": 0,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [],
+              "name": "all"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "m"
+              ],
+              "name": "month"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "d"
+              ],
+              "name": "day"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "h"
+              ],
+              "name": "hour"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "mn"
+              ],
+              "name": "minute"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "s"
+              ],
+              "name": "second"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                ""
+              ],
+              "name": "empty"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                0
+              ],
+              "name": "zero"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                null
+              ],
+              "name": "absent"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "y"
+              ],
+              "name": "year-unsupported"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "M"
+              ],
+              "name": "uppercase"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "",
+            "error_before": "",
+            "request": {
+              "arguments": [
+                "bogus"
+              ],
+              "name": "unknown"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          }
+        ],
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "arch": "x86_64-linux-gnu-thread-multi",
+        "case": {
+          "case_id": "COMP-INVALID",
+          "parse_requested": true,
+          "parse_text": "not a date"
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "DefaultTime=midnight"
+        ],
+        "distribution": "7.00",
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Delta.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Delta.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "configuration_error": "",
+          "configuration_return": null,
+          "error_after_setup": "[parse] Invalid date string",
+          "parse_status": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00",
+          "zone": "Etc/UTC"
+        },
+        "os": "linux",
+        "perl": "v5.40.1",
+        "queries": [
+          {
+            "defined": 0,
+            "error_after": "[parse] Invalid date string",
+            "error_before": "[parse] Invalid date string",
+            "request": {
+              "arguments": [],
+              "name": "all"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Invalid date string",
+            "error_before": "[parse] Invalid date string",
+            "request": {
+              "arguments": [
+                "m"
+              ],
+              "name": "month"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Invalid date string",
+            "error_before": "[parse] Invalid date string",
+            "request": {
+              "arguments": [
+                "d"
+              ],
+              "name": "day"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Invalid date string",
+            "error_before": "[parse] Invalid date string",
+            "request": {
+              "arguments": [
+                "h"
+              ],
+              "name": "hour"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Invalid date string",
+            "error_before": "[parse] Invalid date string",
+            "request": {
+              "arguments": [
+                "mn"
+              ],
+              "name": "minute"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Invalid date string",
+            "error_before": "[parse] Invalid date string",
+            "request": {
+              "arguments": [
+                "s"
+              ],
+              "name": "second"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Invalid date string",
+            "error_before": "[parse] Invalid date string",
+            "request": {
+              "arguments": [
+                ""
+              ],
+              "name": "empty"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Invalid date string",
+            "error_before": "[parse] Invalid date string",
+            "request": {
+              "arguments": [
+                0
+              ],
+              "name": "zero"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Invalid date string",
+            "error_before": "[parse] Invalid date string",
+            "request": {
+              "arguments": [
+                null
+              ],
+              "name": "absent"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Invalid date string",
+            "error_before": "[parse] Invalid date string",
+            "request": {
+              "arguments": [
+                "y"
+              ],
+              "name": "year-unsupported"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Invalid date string",
+            "error_before": "[parse] Invalid date string",
+            "request": {
+              "arguments": [
+                "M"
+              ],
+              "name": "uppercase"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Invalid date string",
+            "error_before": "[parse] Invalid date string",
+            "request": {
+              "arguments": [
+                "bogus"
+              ],
+              "name": "unknown"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          }
+        ],
+        "stdout": "",
+        "warnings": []
+      }
+    },
+    {
+      "repeatable": true,
+      "exit": 0,
+      "stderr": "",
+      "result": {
+        "arch": "x86_64-linux-gnu-thread-multi",
+        "case": {
+          "case_id": "COMP-EMPTY",
+          "parse_requested": true,
+          "parse_text": ""
+        },
+        "configuration": [
+          "Defaults=1",
+          "ForceDate=2040-02-28-10:20:30,Etc/UTC",
+          "Language=English",
+          "Encoding=ASCII",
+          "DateFormat=US",
+          "DefaultTime=midnight"
+        ],
+        "distribution": "7.00",
+        "exception": null,
+        "loaded": {
+          "Date/Manip/Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Base.pm",
+          "Date/Manip/Date.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Date.pm",
+          "Date/Manip/Lang/english.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/english.pm",
+          "Date/Manip/Lang/index.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Lang/index.pm",
+          "Date/Manip/Obj.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Obj.pm",
+          "Date/Manip/TZ.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ.pm",
+          "Date/Manip/TZ/etutc00.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ/etutc00.pm",
+          "Date/Manip/TZ_Base.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/TZ_Base.pm",
+          "Date/Manip/Zones.pm": "/home/kevin/my_code/perlDateManipBdd/local/date-manip-7.00/lib/perl5/Date/Manip/Zones.pm"
+        },
+        "observation": {
+          "configuration_error": "",
+          "configuration_return": null,
+          "error_after_setup": "[parse] Empty date string",
+          "parse_status": 1,
+          "tzcode": "tzcode2026c",
+          "tzdata": "tzdata2026c",
+          "version": "7.00",
+          "zone": "Etc/UTC"
+        },
+        "os": "linux",
+        "perl": "v5.40.1",
+        "queries": [
+          {
+            "defined": 0,
+            "error_after": "[parse] Empty date string",
+            "error_before": "[parse] Empty date string",
+            "request": {
+              "arguments": [],
+              "name": "all"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Empty date string",
+            "error_before": "[parse] Empty date string",
+            "request": {
+              "arguments": [
+                "m"
+              ],
+              "name": "month"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Empty date string",
+            "error_before": "[parse] Empty date string",
+            "request": {
+              "arguments": [
+                "d"
+              ],
+              "name": "day"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Empty date string",
+            "error_before": "[parse] Empty date string",
+            "request": {
+              "arguments": [
+                "h"
+              ],
+              "name": "hour"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Empty date string",
+            "error_before": "[parse] Empty date string",
+            "request": {
+              "arguments": [
+                "mn"
+              ],
+              "name": "minute"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Empty date string",
+            "error_before": "[parse] Empty date string",
+            "request": {
+              "arguments": [
+                "s"
+              ],
+              "name": "second"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Empty date string",
+            "error_before": "[parse] Empty date string",
+            "request": {
+              "arguments": [
+                ""
+              ],
+              "name": "empty"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Empty date string",
+            "error_before": "[parse] Empty date string",
+            "request": {
+              "arguments": [
+                0
+              ],
+              "name": "zero"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Empty date string",
+            "error_before": "[parse] Empty date string",
+            "request": {
+              "arguments": [
+                null
+              ],
+              "name": "absent"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Empty date string",
+            "error_before": "[parse] Empty date string",
+            "request": {
+              "arguments": [
+                "y"
+              ],
+              "name": "year-unsupported"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Empty date string",
+            "error_before": "[parse] Empty date string",
+            "request": {
+              "arguments": [
+                "M"
+              ],
+              "name": "uppercase"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          },
+          {
+            "defined": 0,
+            "error_after": "[parse] Empty date string",
+            "error_before": "[parse] Empty date string",
+            "request": {
+              "arguments": [
+                "bogus"
+              ],
+              "name": "unknown"
+            },
+            "value": null,
+            "warnings": [
+              "WARNING: [complete] Object must contain a valid date at /home/kevin/my_code/perlDateManipBdd/tools/probes/completeness-family/probe.pl line 28.\n"
+            ]
+          }
+        ],
+        "stdout": "",
+        "warnings": []
+      }
+    }
+  ]
+}
