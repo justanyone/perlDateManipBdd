@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "operation_id": "business.list-holidays",
+  "cases": [
+    {
+      "case_id": "HL-UNSET-DEFAULT",
+      "receiver_input": null,
+      "arguments": [],
+      "fixture": "standard"
+    },
+    {
+      "case_id": "HL-SET-DEFAULT",
+      "receiver_input": "2039-08-17 13:20:00",
+      "arguments": [],
+      "fixture": "standard"
+    },
+    {
+      "case_id": "HL-EXPLICIT-LEAP",
+      "receiver_input": "2039-08-17 13:20:00",
+      "arguments": [
+        2040
+      ],
+      "fixture": "standard"
+    },
+    {
+      "case_id": "HL-EXPLICIT-COMMON",
+      "receiver_input": null,
+      "arguments": [
+        2039
+      ],
+      "fixture": "standard"
+    },
+    {
+      "case_id": "HL-AFTER-LEAP",
+      "receiver_input": null,
+      "arguments": [
+        2041
+      ],
+      "fixture": "standard"
+    },
+    {
+      "case_id": "HL-ABSENT",
+      "receiver_input": "2039-08-17 13:20:00",
+      "arguments": [
+        null
+      ],
+      "fixture": "standard"
+    },
+    {
+      "case_id": "HL-ZERO",
+      "receiver_input": "2039-08-17 13:20:00",
+      "arguments": [
+        0
+      ],
+      "fixture": "standard"
+    },
+    {
+      "case_id": "HL-EMPTY",
+      "receiver_input": "2039-08-17 13:20:00",
+      "arguments": [
+        ""
+      ],
+      "fixture": "standard"
+    },
+    {
+      "case_id": "HL-INVALID-RECEIVER",
+      "receiver_input": "not a date",
+      "arguments": [],
+      "fixture": "standard"
+    },
+    {
+      "case_id": "HL-NEGATIVE",
+      "receiver_input": null,
+      "arguments": [
+        -1
+      ],
+      "fixture": "standard"
+    },
+    {
+      "case_id": "HL-YEAR1",
+      "receiver_input": null,
+      "arguments": [
+        1
+      ],
+      "fixture": "standard"
+    },
+    {
+      "case_id": "HL-YEAR9999",
+      "receiver_input": null,
+      "arguments": [
+        9999
+      ],
+      "fixture": "standard"
+    },
+    {
+      "case_id": "HL-OUTSIDE",
+      "receiver_input": null,
+      "arguments": [
+        10000
+      ],
+      "fixture": "standard"
+    },
+    {
+      "case_id": "HL-FRACTION",
+      "receiver_input": null,
+      "arguments": [
+        2040.5
+      ],
+      "fixture": "standard"
+    },
+    {
+      "case_id": "HL-TEXT",
+      "receiver_input": null,
+      "arguments": [
+        "year"
+      ],
+      "fixture": "standard"
+    },
+    {
+      "case_id": "HL-LEAP-DEFINITION-COMMON",
+      "receiver_input": null,
+      "arguments": [
+        2039
+      ],
+      "fixture": "leap"
+    },
+    {
+      "case_id": "HL-LEAP-DEFINITION-LEAP",
+      "receiver_input": null,
+      "arguments": [
+        2040
+      ],
+      "fixture": "leap"
+    },
+    {
+      "case_id": "HL-NO-DEFINITIONS",
+      "receiver_input": null,
+      "arguments": [],
+      "fixture": "empty"
+    }
+  ]
+}

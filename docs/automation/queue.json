@@ -271,7 +271,8 @@
         "spec/drafts/zone-transition-boundaries"
       ],
       "fixed_offset_review": "408 public loading routes verified with40parse successes/368rejections and3672/3672 generated-offset statement criteria. Seven durable English examples verified; remaining401 routes are research-only. Not whole-library or behavior completeness.",
-      "zone_transition_review": "67 mapped examples integrated from8 isolated repeated observations:24 UTC instants,37 wall queries,8 exact period enumerations. Per-call boundaries, canonical bindings, independent zoneinfo provenance and per-row literals verified. Broader zone domains remain open."
+      "zone_transition_review": "67 mapped examples integrated from8 isolated repeated observations:24 UTC instants,37 wall queries,8 exact period enumerations. Per-call boundaries, canonical bindings, independent zoneinfo provenance and per-row literals verified. Broader zone domains remain open.",
+      "holiday_list_work": "Root owns new holiday-list-family:18 public requests,3fixtures, two full captures byte-identical. Probe/observations only; exact scenarios/reviewer/independent facts still required. Ordinary listing separated from annual February29 warning behavior."
     },
     {
       "id": "spec-configuration-objects",

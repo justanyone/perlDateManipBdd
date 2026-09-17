@@ -1209,3 +1209,25 @@ Root coverage92137 remains live:462rawpairs retained atlatestcheck. Continue
 samehandle, preserve20committedprobes/collector. No summary or metrics yet.
 New workers: partial_parsing zone-period-family, pattern_repair zone-names-family,
 week_edges_finish week-year-start-family. Each owns onlynewdirs. Allfinalgatesopen.
+
+## Holiday-list research started
+
+Root owns NEW docs/research/holiday-list-family and tools/probes/holiday-list-family.
+18 original public list_holidays cases, three complete fixture files (ordinary,
+annual February29, empty). Each case has scalar/list calls on separately
+configured receivers, public result text/error/label observers and receiver
+error snapshots. Two full captures v2/v3 are byte-identical, two fresh process
+attempts each. Final candidate /tmp/holiday-list-root-candidate-v3.json copied
+to observations.json. Probe hashes, loaded modules, runtime/env/attempt hashes
+retained. No direct private calls.
+
+Ordinary profiles yield sorted deduplicated dates without warnings; annual
+February29 causes warnings from neighboring common years. Invalid years can
+yield empty lists or malformed result values; classify before portable approval.
+Remaining root work: independent facts, exact English Gherkin+bindings, mapping,
+strict reviewer and remaining-domain ledger. This is unfinished research only.
+
+Coverage92137 remains live; independent interim raw review verified905pairs
+(73knownDM5warning-location differences), no fidelity mismatch. Continue same
+handle and keep its20probe/collector sources unchanged. Worker assignments
+remain zone-period, zone-names and week-year-start. No other root process live.
