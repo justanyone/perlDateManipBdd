@@ -282,3 +282,24 @@ Next root work: integrate repaired pattern/language outputs once the authoritati
 worker handles finish, then add missing date-only/time-only/token-prefix usage
 and remaining configuration/object/state/grammar cases. Source execution coverage
 and the final complete-spec review still precede conformance harness completion.
+
+## Source execution pilot checkpoint
+
+Added an original debugger hook and bounded driver under tools/research-coverage.
+The pilot compares each traced research request with an uninstrumented request,
+repeated twice in clean processes, and records declaration names only. Seven of
+eight requests have identical output/error/exit channels. Those traces observe125
+of423 inventoried declarations;298 remain unobserved by this pilot. Setup execution
+is not behavior coverage. No branch or statement coverage is claimed.
+
+The DM5 pilot is excluded because tracing adds source-location metadata to its
+deprecation warning; the mismatch is retained. See
+`docs/research/execution-coverage/{README.md,pilot.json}`. Provenance hashes and
+counts were checked. This source-side research improves private-call evidence but
+is neither the BDD harness nor a complete coverage audit.
+
+Active new batch: partial_parsing (sol/high) owns NEW partial-parsing-family dirs
+and spec/drafts/partial-parsing, for date-only/time-only and token-prefix carrier
+usage. Language worker is correcting failed-init versus unexecuted-call semantics,
+profile vocabulary, duplicate IDs and exact request wording. Pattern repair remains
+active. Check live handles before reassigning those paths.

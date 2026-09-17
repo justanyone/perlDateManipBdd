@@ -1,0 +1,2737 @@
+{
+  "schema_version": 1,
+  "status": "research call-coverage pilot; not full coverage or BDD verification",
+  "limitations": [
+    "Subroutine entries only; no branch or statement coverage.",
+    "Fixture/setup calls are included and are not behavioral assertions.",
+    "Only channel-identical repeatable runs contribute to covered declarations.",
+    "Anonymous calls and source-side tooling need separate accounting."
+  ],
+  "sha256": {
+    "docs/automation/reference-profiles.json": "42d0a9d5401451862d62b8ffc3cd3a9c14b411ce9b54cc489df4412722869d4e",
+    "docs/planning/perl-api-inventory.csv": "ded78d3213a83dfea875f0cdb2ab76b81e401c1699826e83c0974861631fca63",
+    "docs/research/arithmetic-family/cases.json": "d1bdd6a6d0562ae91fa7eb9be5bb01d390767ba1d70000a31d94a8943fd462f6",
+    "docs/research/arithmetic-family/edge-cases.json": "b98464cfd08e23688ce82f29dce98e1f7e8cce8febe24f8cd6195fa828db2d88",
+    "docs/research/arithmetic-family/extended-cases.json": "51ae931b596862f28ae249348319d885fba103bb46dded88e5fd66ec400cc033",
+    "docs/research/inputs/calendar.json": "45c672182b217aae7a40e9c8194c60114fd96702504de8405abdd9ee7f0050e9",
+    "docs/research/parsing-family/cases.json": "2c7b99066c3fa3a4e733291d98397d78e08b5af90f52b8c475837a67f9faa651",
+    "tools/probes/arithmetic-family/arithmetic-family.pl": "6f64960526f4eac0606aea12c794becdcb0fab711be690561b8cebca34e117aa",
+    "tools/probes/calendar-contracts.pl": "6250f0a2822a2c1b5b1ae751dfc10fbe401d9e8c9ac546646ef70a9ccf70984c",
+    "tools/probes/parsing-family/probe.pl": "334e7d31a9b325627b4716b0601740cb4fc628ea010313f0a863ffc0d3a52291",
+    "tools/probes/recurrence-family/probe.pl": "b20c68a3bd63884a21c89c8eebf645d1625dfb56e37e236bcbebd594fdcf8ad0",
+    "tools/research-coverage/run-pilot.py": "1bf6ff4aa82d9bf8cdd27ccae47b859fc6d6176819de436f560553794697c825",
+    "tools/research-coverage/trace-calls.pl": "a1380b1fdbad60def82344283b35162934eb5b930e92bcee8acba2b1f902c825"
+  },
+  "probes": [
+    {
+      "family": "calendar",
+      "probe": "tools/probes/calendar-contracts.pl",
+      "case_id": "CAL-calendar.is-leap-year-leap-2000-base-scalar",
+      "repeatable": true,
+      "accepted_trace": true,
+      "channels_identical": true,
+      "plain_exit": 0,
+      "traced_exit": 0,
+      "plain_stdout_sha256": "933deebac455bf2db8249469d16c2f7f1ec63097847734f3785b96eb49a08f6c",
+      "traced_stdout_sha256": "933deebac455bf2db8249469d16c2f7f1ec63097847734f3785b96eb49a08f6c",
+      "plain_stderr": "",
+      "traced_stderr": "",
+      "calls": {
+        "Date::Manip::Base::_calc_bdlength": 8,
+        "Date::Manip::Base::_calc_workweek": 8,
+        "Date::Manip::Base::_config_var_base": 45,
+        "Date::Manip::Base::_config_var_defaulttime": 3,
+        "Date::Manip::Base::_config_var_encoding": 4,
+        "Date::Manip::Base::_config_var_firstday": 3,
+        "Date::Manip::Base::_config_var_recurrange": 2,
+        "Date::Manip::Base::_config_var_week1ofyear": 3,
+        "Date::Manip::Base::_config_var_workday24hr": 5,
+        "Date::Manip::Base::_config_var_workdaybegend": 6,
+        "Date::Manip::Base::_config_var_workweekbeg": 3,
+        "Date::Manip::Base::_config_var_workweekend": 3,
+        "Date::Manip::Base::_date_fields": 1,
+        "Date::Manip::Base::_hms_fields": 12,
+        "Date::Manip::Base::_init": 1,
+        "Date::Manip::Base::_init_business_length": 14,
+        "Date::Manip::Base::_init_cache": 1,
+        "Date::Manip::Base::_init_config": 2,
+        "Date::Manip::Base::_init_data": 2,
+        "Date::Manip::Base::_init_events": 2,
+        "Date::Manip::Base::_init_holidays": 2,
+        "Date::Manip::Base::_init_language": 4,
+        "Date::Manip::Base::_init_now": 1,
+        "Date::Manip::Base::_is_int": 45,
+        "Date::Manip::Base::_language": 3,
+        "Date::Manip::Base::_os": 3,
+        "Date::Manip::Base::_qe_quote": 1248,
+        "Date::Manip::Base::_rx_replace": 9,
+        "Date::Manip::Base::_rx_simple": 9,
+        "Date::Manip::Base::_rx_wordlist": 15,
+        "Date::Manip::Base::_rx_wordlists": 39,
+        "Date::Manip::Base::cmp": 2,
+        "Date::Manip::Base::join": 6,
+        "Date::Manip::Base::leapyear": 1,
+        "Date::Manip::Base::split": 6,
+        "Date::Manip::Date::_init": 1,
+        "Date::Manip::Obj::_init_final": 2,
+        "Date::Manip::Obj::base": 1,
+        "Date::Manip::Obj::config": 1,
+        "Date::Manip::Obj::err": 1,
+        "Date::Manip::Obj::new": 3,
+        "Date::Manip::TZ::__zone": 1,
+        "Date::Manip::TZ::_all_periods": 2,
+        "Date::Manip::TZ::_config_var_setdate": 1,
+        "Date::Manip::TZ::_config_var_tz": 1,
+        "Date::Manip::TZ::_get_curr_zone": 1,
+        "Date::Manip::TZ::_init": 1,
+        "Date::Manip::TZ::_init_final": 1,
+        "Date::Manip::TZ::_module": 1,
+        "Date::Manip::TZ::_periods": 1,
+        "Date::Manip::TZ::_set_curr_zone": 1,
+        "Date::Manip::TZ::_zone": 4,
+        "Date::Manip::TZ::date_period": 1,
+        "Date::Manip::TZ_Base::_config": 16,
+        "Date::Manip::TZ_Base::_config_var": 46
+      }
+    },
+    {
+      "family": "calendar",
+      "probe": "tools/probes/calendar-contracts.pl",
+      "case_id": "CAL-calendar.is-leap-year-leap-2000-dm6-scalar",
+      "repeatable": true,
+      "accepted_trace": true,
+      "channels_identical": true,
+      "plain_exit": 0,
+      "traced_exit": 0,
+      "plain_stdout_sha256": "47e06404ca031b783a1adcf019b11917e545a07867a4da4232658921c876a1c7",
+      "traced_stdout_sha256": "47e06404ca031b783a1adcf019b11917e545a07867a4da4232658921c876a1c7",
+      "plain_stderr": "",
+      "traced_stderr": "",
+      "calls": {
+        "Date::Manip::Base::_calc_bdlength": 11,
+        "Date::Manip::Base::_calc_workweek": 11,
+        "Date::Manip::Base::_config_var_base": 60,
+        "Date::Manip::Base::_config_var_defaulttime": 4,
+        "Date::Manip::Base::_config_var_encoding": 5,
+        "Date::Manip::Base::_config_var_firstday": 4,
+        "Date::Manip::Base::_config_var_recurrange": 3,
+        "Date::Manip::Base::_config_var_week1ofyear": 4,
+        "Date::Manip::Base::_config_var_workday24hr": 7,
+        "Date::Manip::Base::_config_var_workdaybegend": 8,
+        "Date::Manip::Base::_config_var_workweekbeg": 4,
+        "Date::Manip::Base::_config_var_workweekend": 4,
+        "Date::Manip::Base::_date_fields": 3,
+        "Date::Manip::Base::_hms_fields": 16,
+        "Date::Manip::Base::_init": 2,
+        "Date::Manip::Base::_init_business_length": 19,
+        "Date::Manip::Base::_init_cache": 2,
+        "Date::Manip::Base::_init_config": 3,
+        "Date::Manip::Base::_init_data": 3,
+        "Date::Manip::Base::_init_events": 3,
+        "Date::Manip::Base::_init_holidays": 3,
+        "Date::Manip::Base::_init_language": 6,
+        "Date::Manip::Base::_init_now": 2,
+        "Date::Manip::Base::_is_int": 60,
+        "Date::Manip::Base::_language": 4,
+        "Date::Manip::Base::_os": 5,
+        "Date::Manip::Base::_qe_quote": 1664,
+        "Date::Manip::Base::_rx_replace": 12,
+        "Date::Manip::Base::_rx_simple": 12,
+        "Date::Manip::Base::_rx_wordlist": 20,
+        "Date::Manip::Base::_rx_wordlists": 52,
+        "Date::Manip::Base::cmp": 4,
+        "Date::Manip::Base::join": 8,
+        "Date::Manip::Base::leapyear": 1,
+        "Date::Manip::Base::split": 8,
+        "Date::Manip::DM6::Date_Init": 1,
+        "Date::Manip::DM6::Date_LeapYear": 1,
+        "Date::Manip::Date::_init": 3,
+        "Date::Manip::Delta::_init": 1,
+        "Date::Manip::Obj::_init_final": 7,
+        "Date::Manip::Obj::base": 1,
+        "Date::Manip::Obj::config": 2,
+        "Date::Manip::Obj::err": 1,
+        "Date::Manip::Obj::new": 9,
+        "Date::Manip::Obj::new_date": 1,
+        "Date::Manip::Obj::new_delta": 1,
+        "Date::Manip::Obj::new_recur": 1,
+        "Date::Manip::Obj::tz": 1,
+        "Date::Manip::Recur::_init": 1,
+        "Date::Manip::TZ::__zone": 2,
+        "Date::Manip::TZ::_all_periods": 5,
+        "Date::Manip::TZ::_config_var_setdate": 2,
+        "Date::Manip::TZ::_config_var_tz": 2,
+        "Date::Manip::TZ::_convert": 1,
+        "Date::Manip::TZ::_convert_args": 1,
+        "Date::Manip::TZ::_get_curr_zone": 2,
+        "Date::Manip::TZ::_init": 2,
+        "Date::Manip::TZ::_init_final": 2,
+        "Date::Manip::TZ::_module": 2,
+        "Date::Manip::TZ::_periods": 2,
+        "Date::Manip::TZ::_set_curr_zone": 2,
+        "Date::Manip::TZ::_zone": 11,
+        "Date::Manip::TZ::convert_to_gmt": 1,
+        "Date::Manip::TZ::date_period": 3,
+        "Date::Manip::TZ_Base::_config": 23,
+        "Date::Manip::TZ_Base::_config_var": 62
+      }
+    },
+    {
+      "family": "calendar",
+      "probe": "tools/probes/calendar-contracts.pl",
+      "case_id": "CAL-calendar.is-leap-year-leap-2000-dm5-scalar",
+      "repeatable": true,
+      "accepted_trace": false,
+      "channels_identical": false,
+      "plain_exit": 0,
+      "traced_exit": 0,
+      "plain_stdout_sha256": "ed9c9dcd9263a6550484a38a5148a1655864964e4bf8d8c581933136712c7f9b",
+      "traced_stdout_sha256": "3144f1ea2ef3fbdb7ed1155f8906076b48e730ff7638bb8f809247630e404a14",
+      "plain_stderr": "",
+      "traced_stderr": "",
+      "calls": {
+        "Date::Manip::DM5::Date_Init": 1,
+        "Date::Manip::DM5::Date_LeapYear": 2,
+        "Date::Manip::DM5::Date_TimeZone": 1,
+        "Date::Manip::DM5::EraseHolidays": 1,
+        "Date::Manip::DM5::_CheckTime": 2,
+        "Date::Manip::DM5::_Date_DateCheck": 1,
+        "Date::Manip::DM5::_Date_InitHash": 3,
+        "Date::Manip::DM5::_Date_InitLists": 4,
+        "Date::Manip::DM5::_Date_InitStrings": 26,
+        "Date::Manip::DM5::_Date_Init_English": 1,
+        "Date::Manip::DM5::_Date_Join": 2,
+        "Date::Manip::DM5::_Date_Regexp": 2,
+        "Date::Manip::DM5::_Date_SetConfigVariable": 13,
+        "Date::Manip::DM5::_Date_TimeCheck": 1,
+        "Date::Manip::DM5::_IsInt": 9
+      }
+    },
+    {
+      "family": "parse",
+      "probe": "tools/probes/parsing-family/probe.pl",
+      "case_id": "PARSE-ISO-DATE-COMPLETE-02-DEFAULT-OO",
+      "repeatable": true,
+      "accepted_trace": true,
+      "channels_identical": true,
+      "plain_exit": 0,
+      "traced_exit": 0,
+      "plain_stdout_sha256": "b1cafe348931370fcadd0c761cdae7a3a84272270bf5c4ae73a771753c38d6a8",
+      "traced_stdout_sha256": "b1cafe348931370fcadd0c761cdae7a3a84272270bf5c4ae73a771753c38d6a8",
+      "plain_stderr": "",
+      "traced_stderr": "",
+      "calls": {
+        "Date::Manip::Base::_calc_bdlength": 8,
+        "Date::Manip::Base::_calc_workweek": 8,
+        "Date::Manip::Base::_config_var_base": 45,
+        "Date::Manip::Base::_config_var_defaulttime": 3,
+        "Date::Manip::Base::_config_var_encoding": 4,
+        "Date::Manip::Base::_config_var_firstday": 3,
+        "Date::Manip::Base::_config_var_recurrange": 2,
+        "Date::Manip::Base::_config_var_week1ofyear": 3,
+        "Date::Manip::Base::_config_var_workday24hr": 5,
+        "Date::Manip::Base::_config_var_workdaybegend": 6,
+        "Date::Manip::Base::_config_var_workweekbeg": 3,
+        "Date::Manip::Base::_config_var_workweekend": 3,
+        "Date::Manip::Base::_date_fields": 4,
+        "Date::Manip::Base::_encoding": 1,
+        "Date::Manip::Base::_hms_fields": 12,
+        "Date::Manip::Base::_init": 1,
+        "Date::Manip::Base::_init_business_length": 14,
+        "Date::Manip::Base::_init_cache": 1,
+        "Date::Manip::Base::_init_config": 2,
+        "Date::Manip::Base::_init_data": 2,
+        "Date::Manip::Base::_init_events": 2,
+        "Date::Manip::Base::_init_holidays": 2,
+        "Date::Manip::Base::_init_language": 4,
+        "Date::Manip::Base::_init_now": 1,
+        "Date::Manip::Base::_is_int": 45,
+        "Date::Manip::Base::_language": 3,
+        "Date::Manip::Base::_os": 3,
+        "Date::Manip::Base::_qe_quote": 1248,
+        "Date::Manip::Base::_rx_replace": 9,
+        "Date::Manip::Base::_rx_simple": 9,
+        "Date::Manip::Base::_rx_wordlist": 15,
+        "Date::Manip::Base::_rx_wordlists": 39,
+        "Date::Manip::Base::check": 2,
+        "Date::Manip::Base::check_time": 2,
+        "Date::Manip::Base::cmp": 2,
+        "Date::Manip::Base::days_in_month": 2,
+        "Date::Manip::Base::join": 7,
+        "Date::Manip::Base::leapyear": 2,
+        "Date::Manip::Base::split": 7,
+        "Date::Manip::Date::__parse_check": 1,
+        "Date::Manip::Date::_def_date": 1,
+        "Date::Manip::Date::_def_time": 1,
+        "Date::Manip::Date::_init": 2,
+        "Date::Manip::Date::_iso8601_rx": 5,
+        "Date::Manip::Date::_parse_check": 1,
+        "Date::Manip::Date::_parse_datetime_iso8601": 1,
+        "Date::Manip::Date::_parse_rule": 3,
+        "Date::Manip::Date::_time": 1,
+        "Date::Manip::Date::parse": 1,
+        "Date::Manip::Date::set": 1,
+        "Date::Manip::Date::value": 1,
+        "Date::Manip::Obj::_init_final": 2,
+        "Date::Manip::Obj::base": 4,
+        "Date::Manip::Obj::config": 1,
+        "Date::Manip::Obj::err": 3,
+        "Date::Manip::Obj::new": 3,
+        "Date::Manip::Obj::tz": 2,
+        "Date::Manip::TZ::__zone": 1,
+        "Date::Manip::TZ::_all_periods": 4,
+        "Date::Manip::TZ::_config_var_setdate": 1,
+        "Date::Manip::TZ::_config_var_tz": 1,
+        "Date::Manip::TZ::_get_curr_zone": 1,
+        "Date::Manip::TZ::_init": 1,
+        "Date::Manip::TZ::_init_final": 1,
+        "Date::Manip::TZ::_module": 1,
+        "Date::Manip::TZ::_periods": 1,
+        "Date::Manip::TZ::_set_curr_zone": 1,
+        "Date::Manip::TZ::_zone": 7,
+        "Date::Manip::TZ::_zrx": 1,
+        "Date::Manip::TZ::date_period": 3,
+        "Date::Manip::TZ::tzdata": 1,
+        "Date::Manip::TZ::zone": 1,
+        "Date::Manip::TZ_Base::_config": 18,
+        "Date::Manip::TZ_Base::_config_var": 46,
+        "Date::Manip::TZ_Base::_fix_year": 1,
+        "Date::Manip::TZ_Base::_now": 3
+      }
+    },
+    {
+      "family": "parse",
+      "probe": "tools/probes/parsing-family/probe.pl",
+      "case_id": "PARSE-INVALID-INVALID-LEAP-OO",
+      "repeatable": true,
+      "accepted_trace": true,
+      "channels_identical": true,
+      "plain_exit": 0,
+      "traced_exit": 0,
+      "plain_stdout_sha256": "a37a96c94510b94d3fb66b79c4350f5f8548f5ed1b93fcde184f2a0527d0ec1f",
+      "traced_stdout_sha256": "a37a96c94510b94d3fb66b79c4350f5f8548f5ed1b93fcde184f2a0527d0ec1f",
+      "plain_stderr": "",
+      "traced_stderr": "",
+      "calls": {
+        "Date::Manip::Base::_calc_bdlength": 8,
+        "Date::Manip::Base::_calc_workweek": 8,
+        "Date::Manip::Base::_config_var_base": 45,
+        "Date::Manip::Base::_config_var_defaulttime": 3,
+        "Date::Manip::Base::_config_var_encoding": 4,
+        "Date::Manip::Base::_config_var_firstday": 3,
+        "Date::Manip::Base::_config_var_recurrange": 2,
+        "Date::Manip::Base::_config_var_week1ofyear": 3,
+        "Date::Manip::Base::_config_var_workday24hr": 5,
+        "Date::Manip::Base::_config_var_workdaybegend": 6,
+        "Date::Manip::Base::_config_var_workweekbeg": 3,
+        "Date::Manip::Base::_config_var_workweekend": 3,
+        "Date::Manip::Base::_date_fields": 1,
+        "Date::Manip::Base::_encoding": 1,
+        "Date::Manip::Base::_hms_fields": 12,
+        "Date::Manip::Base::_init": 1,
+        "Date::Manip::Base::_init_business_length": 14,
+        "Date::Manip::Base::_init_cache": 1,
+        "Date::Manip::Base::_init_config": 2,
+        "Date::Manip::Base::_init_data": 2,
+        "Date::Manip::Base::_init_events": 2,
+        "Date::Manip::Base::_init_holidays": 2,
+        "Date::Manip::Base::_init_language": 4,
+        "Date::Manip::Base::_init_now": 1,
+        "Date::Manip::Base::_is_int": 45,
+        "Date::Manip::Base::_language": 3,
+        "Date::Manip::Base::_os": 3,
+        "Date::Manip::Base::_qe_quote": 1248,
+        "Date::Manip::Base::_rx_replace": 9,
+        "Date::Manip::Base::_rx_simple": 9,
+        "Date::Manip::Base::_rx_wordlist": 15,
+        "Date::Manip::Base::_rx_wordlists": 39,
+        "Date::Manip::Base::check": 1,
+        "Date::Manip::Base::check_time": 1,
+        "Date::Manip::Base::cmp": 2,
+        "Date::Manip::Base::days_in_month": 1,
+        "Date::Manip::Base::join": 6,
+        "Date::Manip::Base::leapyear": 1,
+        "Date::Manip::Base::split": 7,
+        "Date::Manip::Date::_def_date": 1,
+        "Date::Manip::Date::_def_time": 1,
+        "Date::Manip::Date::_init": 2,
+        "Date::Manip::Date::_iso8601_rx": 5,
+        "Date::Manip::Date::_parse_check": 1,
+        "Date::Manip::Date::_parse_datetime_iso8601": 1,
+        "Date::Manip::Date::_parse_rule": 3,
+        "Date::Manip::Date::_time": 1,
+        "Date::Manip::Date::parse": 1,
+        "Date::Manip::Obj::_init_final": 2,
+        "Date::Manip::Obj::base": 1,
+        "Date::Manip::Obj::config": 1,
+        "Date::Manip::Obj::err": 2,
+        "Date::Manip::Obj::new": 3,
+        "Date::Manip::Obj::tz": 1,
+        "Date::Manip::TZ::__zone": 1,
+        "Date::Manip::TZ::_all_periods": 2,
+        "Date::Manip::TZ::_config_var_setdate": 1,
+        "Date::Manip::TZ::_config_var_tz": 1,
+        "Date::Manip::TZ::_get_curr_zone": 1,
+        "Date::Manip::TZ::_init": 1,
+        "Date::Manip::TZ::_init_final": 1,
+        "Date::Manip::TZ::_module": 1,
+        "Date::Manip::TZ::_periods": 1,
+        "Date::Manip::TZ::_set_curr_zone": 1,
+        "Date::Manip::TZ::_zone": 4,
+        "Date::Manip::TZ::_zrx": 1,
+        "Date::Manip::TZ::date_period": 1,
+        "Date::Manip::TZ::tzdata": 1,
+        "Date::Manip::TZ_Base::_config": 17,
+        "Date::Manip::TZ_Base::_config_var": 46,
+        "Date::Manip::TZ_Base::_fix_year": 1
+      }
+    },
+    {
+      "family": "recurrence",
+      "probe": "tools/probes/recurrence-family/probe.pl",
+      "case_id": "modifier-pd",
+      "repeatable": true,
+      "accepted_trace": true,
+      "channels_identical": true,
+      "plain_exit": 0,
+      "traced_exit": 0,
+      "plain_stdout_sha256": "c44ba13f36ff197964d33dcda67ffe43664df8d7cd9490c6e74f34367dc66061",
+      "traced_stdout_sha256": "c44ba13f36ff197964d33dcda67ffe43664df8d7cd9490c6e74f34367dc66061",
+      "plain_stderr": "",
+      "traced_stderr": "",
+      "calls": {
+        "Date::Manip::Base::__normalize_hms": 1,
+        "Date::Manip::Base::__normalize_wd": 1,
+        "Date::Manip::Base::__normalize_ym": 1,
+        "Date::Manip::Base::_calc_bdlength": 8,
+        "Date::Manip::Base::_calc_workweek": 8,
+        "Date::Manip::Base::_check_delta_type": 1,
+        "Date::Manip::Base::_config_var_base": 45,
+        "Date::Manip::Base::_config_var_defaulttime": 3,
+        "Date::Manip::Base::_config_var_encoding": 4,
+        "Date::Manip::Base::_config_var_firstday": 3,
+        "Date::Manip::Base::_config_var_recurrange": 2,
+        "Date::Manip::Base::_config_var_week1ofyear": 3,
+        "Date::Manip::Base::_config_var_workday24hr": 5,
+        "Date::Manip::Base::_config_var_workdaybegend": 6,
+        "Date::Manip::Base::_config_var_workweekbeg": 3,
+        "Date::Manip::Base::_config_var_workweekend": 3,
+        "Date::Manip::Base::_date_fields": 7,
+        "Date::Manip::Base::_delta_fields": 1,
+        "Date::Manip::Base::_encoding": 1,
+        "Date::Manip::Base::_hms_fields": 12,
+        "Date::Manip::Base::_init": 1,
+        "Date::Manip::Base::_init_business_length": 14,
+        "Date::Manip::Base::_init_cache": 1,
+        "Date::Manip::Base::_init_config": 2,
+        "Date::Manip::Base::_init_data": 2,
+        "Date::Manip::Base::_init_events": 2,
+        "Date::Manip::Base::_init_holidays": 2,
+        "Date::Manip::Base::_init_language": 4,
+        "Date::Manip::Base::_init_now": 1,
+        "Date::Manip::Base::_is_int": 53,
+        "Date::Manip::Base::_is_num": 7,
+        "Date::Manip::Base::_language": 3,
+        "Date::Manip::Base::_normalize_approx": 1,
+        "Date::Manip::Base::_os": 3,
+        "Date::Manip::Base::_qe_quote": 1248,
+        "Date::Manip::Base::_rx_replace": 9,
+        "Date::Manip::Base::_rx_simple": 9,
+        "Date::Manip::Base::_rx_wordlist": 15,
+        "Date::Manip::Base::_rx_wordlists": 39,
+        "Date::Manip::Base::_sign_fields": 1,
+        "Date::Manip::Base::_sign_source": 1,
+        "Date::Manip::Base::calc_date_days": 1,
+        "Date::Manip::Base::check": 4,
+        "Date::Manip::Base::check_time": 4,
+        "Date::Manip::Base::cmp": 3,
+        "Date::Manip::Base::day_of_week": 1,
+        "Date::Manip::Base::days_in_month": 4,
+        "Date::Manip::Base::days_since_1BC": 2,
+        "Date::Manip::Base::join": 8,
+        "Date::Manip::Base::split": 7,
+        "Date::Manip::Date::__next_prev": 1,
+        "Date::Manip::Date::__parse_check": 1,
+        "Date::Manip::Date::_def_date": 1,
+        "Date::Manip::Date::_def_time": 1,
+        "Date::Manip::Date::_init": 7,
+        "Date::Manip::Date::_iso8601_rx": 5,
+        "Date::Manip::Date::_parse_check": 1,
+        "Date::Manip::Date::_parse_datetime_iso8601": 1,
+        "Date::Manip::Date::_parse_rule": 3,
+        "Date::Manip::Date::_time": 1,
+        "Date::Manip::Date::parse": 1,
+        "Date::Manip::Date::set": 3,
+        "Date::Manip::Date::value": 4,
+        "Date::Manip::Delta::_init": 2,
+        "Date::Manip::Delta::set": 1,
+        "Date::Manip::Obj::_init_final": 7,
+        "Date::Manip::Obj::base": 7,
+        "Date::Manip::Obj::config": 1,
+        "Date::Manip::Obj::err": 6,
+        "Date::Manip::Obj::new": 8,
+        "Date::Manip::Obj::new_date": 4,
+        "Date::Manip::Obj::new_delta": 1,
+        "Date::Manip::Obj::tz": 1,
+        "Date::Manip::Recur::_actual_base": 1,
+        "Date::Manip::Recur::_apply_rtime_mods": 1,
+        "Date::Manip::Recur::_date": 1,
+        "Date::Manip::Recur::_error": 1,
+        "Date::Manip::Recur::_field_empty": 3,
+        "Date::Manip::Recur::_init": 2,
+        "Date::Manip::Recur::_init_dates": 2,
+        "Date::Manip::Recur::_nth_interval": 1,
+        "Date::Manip::Recur::_rx": 3,
+        "Date::Manip::Recur::basedate": 2,
+        "Date::Manip::Recur::end": 1,
+        "Date::Manip::Recur::frequency": 2,
+        "Date::Manip::Recur::modifiers": 2,
+        "Date::Manip::Recur::nth": 1,
+        "Date::Manip::Recur::start": 1,
+        "Date::Manip::TZ::__zone": 1,
+        "Date::Manip::TZ::_all_periods": 6,
+        "Date::Manip::TZ::_config_var_setdate": 1,
+        "Date::Manip::TZ::_config_var_tz": 1,
+        "Date::Manip::TZ::_get_curr_zone": 1,
+        "Date::Manip::TZ::_init": 1,
+        "Date::Manip::TZ::_init_final": 1,
+        "Date::Manip::TZ::_module": 1,
+        "Date::Manip::TZ::_periods": 1,
+        "Date::Manip::TZ::_set_curr_zone": 1,
+        "Date::Manip::TZ::_zone": 9,
+        "Date::Manip::TZ::_zrx": 1,
+        "Date::Manip::TZ::date_period": 5,
+        "Date::Manip::TZ::tzdata": 1,
+        "Date::Manip::TZ_Base::_config": 21,
+        "Date::Manip::TZ_Base::_config_var": 46,
+        "Date::Manip::TZ_Base::_fix_year": 1,
+        "Date::Manip::TZ_Base::_now": 5,
+        "Date::Manip::TZ_Base::_update_now": 1
+      }
+    },
+    {
+      "family": "recurrence",
+      "probe": "tools/probes/recurrence-family/probe.pl",
+      "case_id": "typed-setter-equivalence",
+      "repeatable": true,
+      "accepted_trace": true,
+      "channels_identical": true,
+      "plain_exit": 0,
+      "traced_exit": 0,
+      "plain_stdout_sha256": "bcb3f5484aaa347732bf59569520a5d1e8909247922ae480b9529d8ded2dc14f",
+      "traced_stdout_sha256": "bcb3f5484aaa347732bf59569520a5d1e8909247922ae480b9529d8ded2dc14f",
+      "plain_stderr": "",
+      "traced_stderr": "",
+      "calls": {
+        "Date::Manip::Base::__normalize_hms": 6,
+        "Date::Manip::Base::__normalize_wd": 6,
+        "Date::Manip::Base::__normalize_ym": 6,
+        "Date::Manip::Base::_calc_bdlength": 48,
+        "Date::Manip::Base::_calc_workweek": 48,
+        "Date::Manip::Base::_check_delta_type": 6,
+        "Date::Manip::Base::_config_var_base": 270,
+        "Date::Manip::Base::_config_var_defaulttime": 18,
+        "Date::Manip::Base::_config_var_encoding": 24,
+        "Date::Manip::Base::_config_var_firstday": 18,
+        "Date::Manip::Base::_config_var_recurrange": 12,
+        "Date::Manip::Base::_config_var_week1ofyear": 18,
+        "Date::Manip::Base::_config_var_workday24hr": 30,
+        "Date::Manip::Base::_config_var_workdaybegend": 36,
+        "Date::Manip::Base::_config_var_workweekbeg": 18,
+        "Date::Manip::Base::_config_var_workweekend": 18,
+        "Date::Manip::Base::_date_fields": 24,
+        "Date::Manip::Base::_delta_fields": 6,
+        "Date::Manip::Base::_encoding": 6,
+        "Date::Manip::Base::_hms_fields": 72,
+        "Date::Manip::Base::_init": 6,
+        "Date::Manip::Base::_init_business_length": 84,
+        "Date::Manip::Base::_init_cache": 6,
+        "Date::Manip::Base::_init_config": 12,
+        "Date::Manip::Base::_init_data": 12,
+        "Date::Manip::Base::_init_events": 12,
+        "Date::Manip::Base::_init_holidays": 12,
+        "Date::Manip::Base::_init_language": 24,
+        "Date::Manip::Base::_init_now": 6,
+        "Date::Manip::Base::_is_int": 312,
+        "Date::Manip::Base::_is_num": 42,
+        "Date::Manip::Base::_language": 18,
+        "Date::Manip::Base::_normalize_approx": 6,
+        "Date::Manip::Base::_os": 18,
+        "Date::Manip::Base::_qe_quote": 7488,
+        "Date::Manip::Base::_rx_replace": 54,
+        "Date::Manip::Base::_rx_simple": 54,
+        "Date::Manip::Base::_rx_wordlist": 90,
+        "Date::Manip::Base::_rx_wordlists": 234,
+        "Date::Manip::Base::_sign_fields": 6,
+        "Date::Manip::Base::_sign_source": 6,
+        "Date::Manip::Base::check": 12,
+        "Date::Manip::Base::check_time": 12,
+        "Date::Manip::Base::cmp": 12,
+        "Date::Manip::Base::days_in_month": 12,
+        "Date::Manip::Base::join": 42,
+        "Date::Manip::Base::split": 42,
+        "Date::Manip::Date::__parse_check": 6,
+        "Date::Manip::Date::_def_date": 6,
+        "Date::Manip::Date::_def_time": 6,
+        "Date::Manip::Date::_init": 12,
+        "Date::Manip::Date::_iso8601_rx": 30,
+        "Date::Manip::Date::_parse_check": 6,
+        "Date::Manip::Date::_parse_datetime_iso8601": 6,
+        "Date::Manip::Date::_parse_rule": 18,
+        "Date::Manip::Date::_time": 6,
+        "Date::Manip::Date::parse": 6,
+        "Date::Manip::Date::set": 6,
+        "Date::Manip::Date::value": 6,
+        "Date::Manip::Delta::_init": 12,
+        "Date::Manip::Delta::set": 6,
+        "Date::Manip::Obj::_init_final": 24,
+        "Date::Manip::Obj::base": 18,
+        "Date::Manip::Obj::config": 6,
+        "Date::Manip::Obj::err": 6,
+        "Date::Manip::Obj::new": 30,
+        "Date::Manip::Obj::new_date": 6,
+        "Date::Manip::Obj::new_delta": 6,
+        "Date::Manip::Obj::tz": 6,
+        "Date::Manip::Recur::_date": 6,
+        "Date::Manip::Recur::_init": 12,
+        "Date::Manip::Recur::_init_dates": 6,
+        "Date::Manip::Recur::_rx": 18,
+        "Date::Manip::Recur::basedate": 8,
+        "Date::Manip::Recur::end": 8,
+        "Date::Manip::Recur::frequency": 12,
+        "Date::Manip::Recur::modifiers": 6,
+        "Date::Manip::Recur::start": 8,
+        "Date::Manip::TZ::__zone": 6,
+        "Date::Manip::TZ::_all_periods": 24,
+        "Date::Manip::TZ::_config_var_setdate": 6,
+        "Date::Manip::TZ::_config_var_tz": 6,
+        "Date::Manip::TZ::_get_curr_zone": 6,
+        "Date::Manip::TZ::_init": 6,
+        "Date::Manip::TZ::_init_final": 6,
+        "Date::Manip::TZ::_module": 6,
+        "Date::Manip::TZ::_periods": 6,
+        "Date::Manip::TZ::_set_curr_zone": 6,
+        "Date::Manip::TZ::_zone": 42,
+        "Date::Manip::TZ::_zrx": 6,
+        "Date::Manip::TZ::date_period": 18,
+        "Date::Manip::TZ::tzdata": 6,
+        "Date::Manip::TZ_Base::_config": 120,
+        "Date::Manip::TZ_Base::_config_var": 276,
+        "Date::Manip::TZ_Base::_fix_year": 6,
+        "Date::Manip::TZ_Base::_now": 12
+      }
+    },
+    {
+      "family": "arithmetic",
+      "probe": "tools/probes/arithmetic-family/arithmetic-family.pl",
+      "case_id": "ARITH-OO-DATE-DATE-EXACT",
+      "repeatable": true,
+      "accepted_trace": true,
+      "channels_identical": true,
+      "plain_exit": 0,
+      "traced_exit": 0,
+      "plain_stdout_sha256": "c56cdb02ef57249c07aecb97873d0507a42c1f36422dfeece1e97e78702f1ade",
+      "traced_stdout_sha256": "c56cdb02ef57249c07aecb97873d0507a42c1f36422dfeece1e97e78702f1ade",
+      "plain_stderr": "",
+      "traced_stderr": "",
+      "calls": {
+        "Date::Manip::Base::__normalize_hms": 1,
+        "Date::Manip::Base::_calc_bdlength": 8,
+        "Date::Manip::Base::_calc_workweek": 8,
+        "Date::Manip::Base::_check_delta_type": 1,
+        "Date::Manip::Base::_config_var_base": 45,
+        "Date::Manip::Base::_config_var_defaulttime": 3,
+        "Date::Manip::Base::_config_var_encoding": 4,
+        "Date::Manip::Base::_config_var_firstday": 3,
+        "Date::Manip::Base::_config_var_recurrange": 2,
+        "Date::Manip::Base::_config_var_week1ofyear": 3,
+        "Date::Manip::Base::_config_var_workday24hr": 5,
+        "Date::Manip::Base::_config_var_workdaybegend": 6,
+        "Date::Manip::Base::_config_var_workweekbeg": 3,
+        "Date::Manip::Base::_config_var_workweekend": 3,
+        "Date::Manip::Base::_date_fields": 13,
+        "Date::Manip::Base::_delta_fields": 2,
+        "Date::Manip::Base::_encoding": 2,
+        "Date::Manip::Base::_hms_fields": 12,
+        "Date::Manip::Base::_init": 1,
+        "Date::Manip::Base::_init_business_length": 14,
+        "Date::Manip::Base::_init_cache": 1,
+        "Date::Manip::Base::_init_config": 2,
+        "Date::Manip::Base::_init_data": 2,
+        "Date::Manip::Base::_init_events": 2,
+        "Date::Manip::Base::_init_holidays": 2,
+        "Date::Manip::Base::_init_language": 4,
+        "Date::Manip::Base::_init_now": 1,
+        "Date::Manip::Base::_is_int": 52,
+        "Date::Manip::Base::_is_num": 14,
+        "Date::Manip::Base::_language": 3,
+        "Date::Manip::Base::_mod_add": 12,
+        "Date::Manip::Base::_normalize_exact": 1,
+        "Date::Manip::Base::_os": 3,
+        "Date::Manip::Base::_qe_quote": 1248,
+        "Date::Manip::Base::_rx_replace": 9,
+        "Date::Manip::Base::_rx_simple": 9,
+        "Date::Manip::Base::_rx_wordlist": 15,
+        "Date::Manip::Base::_rx_wordlists": 39,
+        "Date::Manip::Base::_sign_fields": 2,
+        "Date::Manip::Base::_sign_source": 2,
+        "Date::Manip::Base::calc_date_time": 4,
+        "Date::Manip::Base::check": 4,
+        "Date::Manip::Base::check_time": 4,
+        "Date::Manip::Base::cmp": 2,
+        "Date::Manip::Base::days_in_month": 8,
+        "Date::Manip::Base::days_since_1BC": 2,
+        "Date::Manip::Base::join": 10,
+        "Date::Manip::Base::leapyear": 4,
+        "Date::Manip::Base::secs_since_1970": 2,
+        "Date::Manip::Base::split": 8,
+        "Date::Manip::Date::__calc_date_date": 1,
+        "Date::Manip::Date::__parse_check": 2,
+        "Date::Manip::Date::_calc_date_date": 1,
+        "Date::Manip::Date::_def_date": 2,
+        "Date::Manip::Date::_def_time": 2,
+        "Date::Manip::Date::_init": 5,
+        "Date::Manip::Date::_iso8601_rx": 6,
+        "Date::Manip::Date::_parse_check": 2,
+        "Date::Manip::Date::_parse_datetime_iso8601": 2,
+        "Date::Manip::Date::_parse_rule": 6,
+        "Date::Manip::Date::_time": 2,
+        "Date::Manip::Date::calc": 1,
+        "Date::Manip::Date::input": 2,
+        "Date::Manip::Date::is_date": 2,
+        "Date::Manip::Date::parse": 2,
+        "Date::Manip::Date::set": 2,
+        "Date::Manip::Date::value": 8,
+        "Date::Manip::Delta::_init": 2,
+        "Date::Manip::Delta::set": 1,
+        "Date::Manip::Delta::value": 1,
+        "Date::Manip::Obj::_init_final": 5,
+        "Date::Manip::Obj::base": 5,
+        "Date::Manip::Obj::config": 1,
+        "Date::Manip::Obj::err": 9,
+        "Date::Manip::Obj::new": 6,
+        "Date::Manip::Obj::new_date": 2,
+        "Date::Manip::Obj::new_delta": 1,
+        "Date::Manip::TZ::__zone": 1,
+        "Date::Manip::TZ::_all_periods": 10,
+        "Date::Manip::TZ::_config_var_setdate": 1,
+        "Date::Manip::TZ::_config_var_tz": 1,
+        "Date::Manip::TZ::_convert": 2,
+        "Date::Manip::TZ::_convert_args": 2,
+        "Date::Manip::TZ::_get_curr_zone": 1,
+        "Date::Manip::TZ::_init": 1,
+        "Date::Manip::TZ::_init_final": 1,
+        "Date::Manip::TZ::_module": 2,
+        "Date::Manip::TZ::_periods": 2,
+        "Date::Manip::TZ::_set_curr_zone": 1,
+        "Date::Manip::TZ::_zone": 18,
+        "Date::Manip::TZ::_zrx": 1,
+        "Date::Manip::TZ::convert_to_gmt": 2,
+        "Date::Manip::TZ::date_period": 9,
+        "Date::Manip::TZ_Base::_config": 22,
+        "Date::Manip::TZ_Base::_config_var": 46,
+        "Date::Manip::TZ_Base::_fix_year": 2,
+        "Date::Manip::TZ_Base::_now": 2
+      }
+    }
+  ],
+  "declaration_counts": {
+    "total": 423,
+    "observed": 125,
+    "unobserved": 298
+  },
+  "observed_declarations": [
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_init"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_init_cache"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_init_data"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_init_config"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_calc_workweek"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_calc_bdlength"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_init_business_length"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_init_events"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_init_holidays"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_init_now"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_init_language"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "days_since_1BC"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "day_of_week"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "leapyear"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "days_in_month"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "secs_since_1970"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "check"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "check_time"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "calc_date_days"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "calc_date_time"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "cmp"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_os"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_config_var_base"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_config_var_encoding"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_config_var_recurrange"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_config_var_workweekbeg"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_config_var_workweekend"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_config_var_workday24hr"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_config_var_workdaybegend"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_config_var_firstday"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_config_var_week1ofyear"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_config_var_defaulttime"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_language"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_rx_simple"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_qe_quote"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_rx_wordlist"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_rx_replace"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_rx_wordlists"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_mod_add"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_is_int"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_is_num"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "split"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "join"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_check_delta_type"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_delta_fields"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_sign_source"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_sign_fields"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_hms_fields"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_date_fields"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "__normalize_ym"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "__normalize_wd"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "__normalize_hms"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_normalize_approx"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_normalize_exact"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_encoding"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_Init"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_LeapYear"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "is_date"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_init"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "input"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "parse"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_parse_rule"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_parse_check"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "__parse_check"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_iso8601_rx"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_parse_datetime_iso8601"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_time"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_def_date"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_def_time"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "value"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "set"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "__next_prev"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "calc"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_calc_date_date"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "__calc_date_date"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "_init"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "value"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "set"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "new"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "_init_final"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "new_date"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "new_delta"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "new_recur"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "base"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "tz"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "config"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "err"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "_init"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "_init_dates"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "frequency"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "_date"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "start"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "end"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "basedate"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "modifiers"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "nth"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "_error"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "_actual_base"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "_rx"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "_apply_rtime_mods"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "_nth_interval"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "_field_empty"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_init"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_init_final"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_module"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_zone"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "tzdata"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_set_curr_zone"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_get_curr_zone"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "zone"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "__zone"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_all_periods"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_periods"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "date_period"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "convert_to_gmt"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_convert_args"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_convert"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_zrx"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_config_var_tz"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_config_var_setdate"
+    },
+    {
+      "module": "Date::Manip::TZ_Base",
+      "callable": "_config_var"
+    },
+    {
+      "module": "Date::Manip::TZ_Base",
+      "callable": "_config"
+    },
+    {
+      "module": "Date::Manip::TZ_Base",
+      "callable": "_fix_year"
+    },
+    {
+      "module": "Date::Manip::TZ_Base",
+      "callable": "_now"
+    },
+    {
+      "module": "Date::Manip::TZ_Base",
+      "callable": "_update_now"
+    }
+  ],
+  "unobserved_declarations": [
+    {
+      "module": "Date::Manip::Base",
+      "callable": "days_in_year",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "day_of_year",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "nth_day_of_week",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "week1_day1",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_week1_day1",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "weeks_in_year",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "week_of_year",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_week_of_year",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "calc_date_date",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "calc_date_delta",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_calc_date_time_strings",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_calc_date_ymwd",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_calc_hms_hms",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "calc_time_time",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_section",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_config_var_format_mmmyyyy",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_sortByLength",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_method",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_split_delta",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_time_fields",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_offset_fields",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_delta_convert",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_normalize_est",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_normalize_bus_est",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_normalize_bus_approx",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_normalize_bus_exact",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Base",
+      "callable": "_critical_date",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_sortByLength",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "DateManipVersion",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_Init",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "ParseDateString",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "ParseDate",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_Cmp",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "DateCalc",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "ParseDateDelta",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "UnixDate",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Delta_Format",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "ParseRecur",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_GetPrev",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_GetNext",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_IsHoliday",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Events_List",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_SetTime",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_SetDateField",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_DaysInMonth",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_DayOfWeek",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_SecsSince1970",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_SecsSince1970GMT",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_DaysSince1BC",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_DayOfYear",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_DaysInYear",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_WeekOfYear",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_LeapYear",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_DaySuffix",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_ConvTZ",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_TimeZone",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_IsWorkDay",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_NextWorkDay",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_PrevWorkDay",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_NearestWorkDay",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "Date_NthDayOfYear",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_InitHash",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_InitLists",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_InitStrings",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Regexp",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Delta_Normalize",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Delta_Split",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_ParseTime",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Join",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_CheckTime",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Recur_Split",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Split",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Easter",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Recur_WoM",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Recur",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_RecurSetTime",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_DateCalc_DateDate",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_DateCalc_DeltaDelta",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_DateCalc_DateDelta",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_UpdateHolidays",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_SetConfigVariable",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "EraseHolidays",
+      "disposition": "unexported-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Events_Calc",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Events_ParseRaw",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_InitFile",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_TimeCheck",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_DateCheck",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_FixYear",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_NthWeekOfYear",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Char_8Bit",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Init_English",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Init_Italian",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Init_French",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Init_Romanian",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Init_Swedish",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Init_German",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Init_Dutch",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Init_Polish",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Init_Spanish",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Init_Portuguese",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Init_Russian",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Init_Turkish",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Init_Danish",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_Date_Init_Catalan",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_ModuloAddition",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_IsInt",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_CleanFile",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_ExpandTilde",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_FullFilePath",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_CheckFilePath",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_FixPath",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_SearchPath",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM5",
+      "callable": "_ReturnList",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "DateManipVersion",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "ParseDateString",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "ParseDateFormat",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "ParseDate",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "ParseDateDelta",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "UnixDate",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Delta_Format",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "_Delta_Format_old",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "DateCalc",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_GetPrev",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_GetNext",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_SetTime",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_SetDateField",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_NextWorkDay",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_PrevWorkDay",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_NearestWorkDay",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "ParseRecur",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Events_List",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_DayOfWeek",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_SecsSince1970",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_SecsSince1970GMT",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_DaysSince1BC",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_DayOfYear",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_NthDayOfYear",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_DaysInMonth",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_DaysInYear",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_WeekOfYear",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_DaySuffix",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_TimeZone",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_ConvTZ",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_IsWorkDay",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_IsHoliday",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::DM6",
+      "callable": "Date_Cmp",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_init_args",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "parse_time",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "parse_date",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_parse_date",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "parse_format",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_format_regexp",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_parse_date_iso8601",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_other_rx",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_parse_time",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_parse_date_common",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_parse_date_truncated",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_parse_tz",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_parse_dow",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_parse_holidays",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_parse_delta",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_parse_datetime_other",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_parse_date_other",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_def_date_doy",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_def_date_dow",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "cmp",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "prev",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "next",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_calc_date_delta",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "__calc_date_delta",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "__calc_date_delta_inverse",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_cmp_date",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "__calc_date_delta_approx",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "__calc_date_delta_exact",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_calc_date_check_dst",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "secs_since_1970_GMT",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "week_of_year",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "complete",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "convert",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "is_business_day",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "__is_business_day",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "list_holidays",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "holiday",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "next_business_day",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "prev_business_day",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "__nextprev_business_day",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "nearest_business_day",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "__nearest_business_day",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_holiday_objs",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_holidays",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "printf",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "list_events",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_events_year",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Date",
+      "callable": "_event_objs",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "is_delta",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "config",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "_init_args",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "input",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "_rx",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "parse",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "printf",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "_printf_delta",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "_printf_field",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "_printf_field_val",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "type",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "calc",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "__type_max",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "_calc_delta_delta",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "convert",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Delta",
+      "callable": "cmp",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "_clone",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "_init_args",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "new_config",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "get_config",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "is_date",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "is_delta",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "is_recur",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Obj",
+      "callable": "version",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "is_recur",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "_init_args",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "parse",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "_frequency_values",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "_parse_lang",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "next",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "prev",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "dates",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "_locate_n",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "_easter",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "_rtime_values",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "__rtime_values",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::Recur",
+      "callable": "_field_add_values",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_offmod",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "tzcode",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "define_alias",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "define_abbrev",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "define_offset",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "curr_zone",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "curr_zone_methods",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_get_zoneinfo_zone",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_zoneinfo_find_file",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_zoneinfo_file_name_to_zone",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_zoneinfo_file_slurp",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_windows_registry_val",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_cmd",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_check_abbrev_isdst",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_check_offset_abbrev_isdst",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_list_union",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_list_add",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "all_periods",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "periods",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_lastrule",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "convert",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "convert_from_gmt",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "convert_to_local",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "convert_from_local",
+      "disposition": "public-candidate"
+    },
+    {
+      "module": "Date::Manip::TZ",
+      "callable": "_sortByLength",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZ_Base",
+      "callable": "_config_file",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZ_Base",
+      "callable": "_config_file_section",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZ_Base",
+      "callable": "_config_file_var",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZ_Base",
+      "callable": "_sortByLength",
+      "disposition": "indirect-behavior-review"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "new",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_ruleInfo",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_zoneInfo",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_ParseFiles",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_ParseFile",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_ParseLink",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_ParseRule",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_ParseZone",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_CheckData",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_Alias",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_DeleteAlias",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_AliasKeys",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_CheckAliases",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_Rule",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_DeleteRule",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_RuleNames",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_CheckRules",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_rule_DOM",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_rule_Month",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_rule_Time",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_rule_From",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_rule_To",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_rule_Type",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_rule_In",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_rule_On",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_rule_At",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_rule_Save",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_rule_Letters",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_Zone",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_DeleteZone",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_ZoneKeys",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_CheckZones",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_zone_GMTOff",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_zone_Rule",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_zone_Format",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_zone_Until",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_ZoneLines",
+      "disposition": "internal-generator"
+    },
+    {
+      "module": "Date::Manip::TZdata",
+      "callable": "_tzd_ParseRuleDate",
+      "disposition": "internal-generator"
+    }
+  ]
+}

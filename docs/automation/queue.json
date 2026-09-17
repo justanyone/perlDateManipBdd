@@ -219,7 +219,12 @@
         "Coverage denominators retain skipped, unsupported, and disputed entries.",
         "The handoff excludes upstream source/tests/data, translated algorithms, and Perl binding code.",
         "Audit source-level function and branch execution and logic-predicted cases against the user definition of done; review prior exclusions, including tooling, rather than treating old dispositions as sufficient."
-      ]
+      ],
+      "preparatory_evidence": [
+        "docs/research/execution-coverage/README.md",
+        "docs/research/execution-coverage/pilot.json"
+      ],
+      "preparatory_progress": "Source-call pilot only:7channel-identical traces observe125/423 declarations, including setup;298notobserved. DM5instrumentation warningmismatch excluded. Coverage-review remains pending fullfeaturefamilies."
     },
     {
       "id": "internal-spec-review",
