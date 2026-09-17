@@ -245,7 +245,13 @@
         "Coverage denominators retain skipped, unsupported, and disputed entries.",
         "The handoff excludes upstream source/tests/data, translated algorithms, and Perl binding code.",
         "Audit the library coverage denominator and public cases needed for the accepted targets: at least99% statement and95% branch coverage including private code. Review observed gaps and document evidenced unreachable/out-of-scope paths. Final harness coverage proof is required in perl-validation; no direct private calls or portable private-structure requirements."
-      ]
+      ],
+      "evidence": [
+        "docs/research/public-call-coverage/README.md",
+        "docs/research/public-call-coverage/pilot-result.json",
+        "tests/coverage/test_summary.py"
+      ],
+      "preparatory_review": "Public-call instrumentation verified for OO, DM6 and DM5 with identical plain/instrumented channels. Seven coverage-summary safeguard tests pass. Only 16 of 804 modules loaded: no whole-library coverage claim. Denominator audit returned and awaits coordinator integration; coverage review remains pending."
     },
     {
       "id": "internal-spec-review",

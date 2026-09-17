@@ -438,3 +438,19 @@ pilotresult; root review/global dependency notice/integration remains next.
 coverage_setup now owns NEW coverage-denominator-audit and tools/coverage-denominator
 for legitimate public loading routes for788 unloaded modules. pattern_repair owns
 52-case edge repairs; partial_parsing owns lifecycle repairs.
+
+## Public-call coverage instrumentation checkpoint
+
+Integrated the separately installed Devel::Cover1.52 pilot and dependency notice.
+Root fresh run reproduced byte-identical public OO/DM6/DM5 outputs and stderr.
+Seven summarizer regression tests pass: invalid denominators, absent library rows,
+failed calls and output differences are rejected. Raw percentages remain separate
+from tool-adjusted percentages; upstream annotations are not approved exclusions.
+Only16 of804 modules were loaded. These pilot totals do not measure the full suite.
+
+Returned denominator-audit,20-case lifecycle repair and52-case parsing-edge repair
+await coordinator integration. Lifecycle reviewer and feature structure checks pass;
+semantic integration is still next. partial_parsing now owns NEW date-set-family
+paths. Other workers have returned; check live handles before reassigning them.
+The accepted99% statement/95% branch gate and review of every uncovered path remain
+unchanged. There is still no executable BDD harness, and the goal remains active.

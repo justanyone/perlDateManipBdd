@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-09-17",
+  "status": "public-call instrumentation pilot; not a full-suite or completion coverage result",
+  "archives": {
+    "Date-Manip-7.00.tar.gz": "37133eeb09d36da6d461546cc216b8f6a2297a43331c680a6848f3fff925975c",
+    "Devel-Cover-1.52.tar.gz": "9d90b44ab602ca373fa221255708de4d19df86026f4d7110bef608846eed44fb"
+  },
+  "verified_runtime": {
+    "date_manip_version": "7.00",
+    "devel_cover_version": "1.52",
+    "perl_archname": "x86_64-linux-gnu-thread-multi",
+    "clean_environment": {
+      "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "LANG": "C.UTF-8",
+      "LC_ALL": "C.UTF-8",
+      "TZ": "Etc/UTC",
+      "inherited_environment": false,
+      "fresh_working_directory_per_plain_and_covered_profile": true
+    },
+    "installed_module_sha256": {
+      "Date/Manip.pm": "4cd2da318687b9b820244c875efef9f484e690270d649ecf64de65bb1b7640e9",
+      "Devel/Cover.pm": "ae1600669575616d506b80ddb0ebb061871da0de7e9f40cab8eea6d17564bc5e"
+    }
+  },
+  "tooling_sha256": {
+    "tools/coverage/public_call_pilot.pl": "1cf1446a07804bfcd5b0a9c45beadda282727dbbfe8c3e3090585c4fc0fce6f0",
+    "tools/coverage/run_public_call_pilot.sh": "f5139c04514e2807409b56a683673ded7f3a1f088a06e867c79b69a47e9655b6",
+    "tools/coverage/summarize_public_call_coverage.pl": "f5a9b983e2f40424b5cf7c8e7331c3f30ddbb8a82171c8c951cc75a2e872c367"
+  },
+  "source_inventory": {
+    "module_file_count": 804,
+    "manifest_sha256": "54808954355c15638f4c3e1929c5d97897cf66dd06af24644275212d5a1ee68f",
+    "loaded_file_count": 16,
+    "unloaded_file_count": 788,
+    "note": "The generated summary enumerates every loaded and unloaded module. This compact result preserves its manifest hash; the coverage database and full enumeration remain external run artifacts."
+  },
+  "fidelity": {
+    "profiles": [
+      "oo",
+      "dm6",
+      "dm5"
+    ],
+    "json_stdout_byte_identical": true,
+    "process_stderr_byte_identical": true,
+    "process_stderr_empty": true,
+    "result_exception_warnings_and_call_stdout_identical": true
+  },
+  "date_manip_only_totals": {
+    "statement": {
+      "covered": 3830,
+      "error": 7543,
+      "upstream_uncoverable": 2,
+      "raw_structural_total": 11375,
+      "devel_cover_effective_denominator": 11373,
+      "raw_percentage": 33.6703296703297,
+      "tool_effective_percentage": 33.676250769366
+    },
+    "branch": {
+      "covered": 460,
+      "error": 5915,
+      "upstream_uncoverable": 1,
+      "raw_structural_total": 6376,
+      "devel_cover_effective_denominator": 6375,
+      "raw_percentage": 7.21455457967378,
+      "tool_effective_percentage": 7.2156862745098
+    }
+  },
+  "review_required": [
+    "This is only a pilot and does not meet the required 99% statement or 95% branch coverage targets.",
+    "All 788 unloaded modules must be accounted for through public calls or explicit evidence-backed scope decisions before any final whole-library claim.",
+    "Date::Manip::Obj contains two upstream 'uncoverable statement' annotations and one 'uncoverable branch false' annotation at lines 309, 313, and 315; they are not approved exclusions."
+  ],
+  "review_checks": {
+    "summary_regressions_passed": 7,
+    "command": "python3 -m unittest discover -s tests/coverage -v",
+    "scope": "denominator consistency, raw versus tool-adjusted percentages, absent instrumentation, failed pilot, value/stderr divergence"
+  }
+}
