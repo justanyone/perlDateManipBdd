@@ -181,7 +181,7 @@ for native in native_dates:
     assert normalized_civil(native) in feature_text, native
 
 value_feature = (FEATURE_DIR / "value-state-and-errors.feature").read_text(encoding="utf-8")
-selector_at = value_feature.index("Scenario: Date value selectors preserve scalar and list return forms")
+selector_at = value_feature.index("Scenario: Date value selectors preserve serialized text and ordered fields")
 assert "@observed-compatibility" in value_feature[max(0, selector_at - 80):selector_at]
 creation_feature = (FEATURE_DIR / "creation-and-context.feature").read_text(encoding="utf-8")
 method_at = creation_feature.index("Scenario: Lifecycle method availability follows the public receiver surfaces")

@@ -117,3 +117,11 @@ to `value` in scalar context and read-ordered-fields to `value` in list context.
 Those native contexts remain research mapping, not required implementation
 structure. Existing input/output literals and case IDs are unchanged. The separate
 value-state feature still needs its own portability repair.
+
+Value-state portability repair: named text, ordered-field, and frequency-collection
+reads replace native context requirements; absence is explicit, and all seven
+selector/duration table errors now say `empty text`. Native scalar/list bindings
+remain in the frozen observations. `python3 tools/review/lifecycle_portability.py`
+runs the original evidence review and checks those seven rows by selector/state
+against exact text, fields, counts, and before/after errors. No probe, observation,
+quoted input/output literal, or case ID changed.

@@ -117,7 +117,7 @@
     {
       "case_id": "OBJ-009-DATE-VALUE-CONTEXTS",
       "feature": "value-state-and-errors.feature",
-      "scenario": "Date value selectors preserve scalar and list return forms",
+      "scenario": "Date value selectors preserve serialized text and ordered fields",
       "contract_ids": [
         "date.create",
         "date.read-value",
@@ -127,7 +127,7 @@
     {
       "case_id": "OBJ-010-DATE-VALUE-UNSET",
       "feature": "value-state-and-errors.feature",
-      "scenario": "An unset date distinguishes empty scalar text from an empty list",
+      "scenario": "An unset date distinguishes empty text from an empty field record",
       "contract_ids": [
         "date.create",
         "date.read-value",
@@ -137,7 +137,7 @@
     {
       "case_id": "OBJ-011-DELTA-VALUE-CONTEXTS",
       "feature": "value-state-and-errors.feature",
-      "scenario": "Duration values expose seven fields in list context",
+      "scenario": "Duration values expose seven ordered fields",
       "contract_ids": [
         "delta.create",
         "delta.read-value",
@@ -148,7 +148,7 @@
     {
       "case_id": "OBJ-012-DELTA-VALUE-ERROR",
       "feature": "value-state-and-errors.feature",
-      "scenario": "A failed duration parse leaves empty scalar and list results",
+      "scenario": "A failed duration parse leaves empty text and an empty field record",
       "contract_ids": [
         "delta.create",
         "error.read-state",

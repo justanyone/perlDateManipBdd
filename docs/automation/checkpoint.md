@@ -842,3 +842,16 @@ Batch remains unaccepted because reviewer used whole-file result presence rather
 than row-keyed request/outcome equality, and profiles lacked portable definitions.
 week_edges_finish owns those repairs after release of capture hold. Other owners:
 partial_parsing parse-cache correction; pattern_repair language portability.
+
+## Value-state portability repair
+
+Root replaced remaining value-state native context vocabulary with named text,
+ordered-field and frequency-collection operations, explicit field order and absent
+values. Seven selector/duration rows now declare empty error text; new supplemental
+reviewer compares each exact row to frozen evidence. All quoted literals and IDs
+preserved, original evidence/probes unchanged. Existing20-case lifecycle reviewer
+and new7-row reviewer pass; real parser accepts10 scenarios without warnings.
+
+Parse-cache worker delivered corrected two-attempt schema evidence for root review;
+partial_parsing now owns recurrence portability, pattern_repair languages, and
+week_edges_finish week-edge row/profile repairs. All final gates remain open.
